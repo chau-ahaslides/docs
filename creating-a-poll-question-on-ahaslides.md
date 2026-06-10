@@ -26,9 +26,17 @@ description: "A poll slide is a quick and easy way to get live opinions in poll 
 
 A poll slide is a quick and easy way to get live opinions in poll format from your audience.
 
+Watch how to create a poll from start to finish — including previewing it before you go live:
+
+{% embed url="https://www.youtube.com/watch?v=jlrqgxLETTg" %}
+How to create a Poll question on AhaSlides
+{% endembed %}
+
 Below is an interactive demo, which will help you experience this function:
 
-> 📹 [Watch video](https://capture.navattic.com/cmnho6ycy002x04l1hcxk0ob4)
+{% embed url="https://capture.navattic.com/cmnho6ycy002x04l1hcxk0ob4" %}
+Interactive demo: try the Poll slide
+{% endembed %}
 
 ## How does a Poll slide Work?
 
@@ -72,4 +80,6 @@ While running the poll slides, you have the option to turn off the timer or chan
 
 **For more on polls, check out this tutorial. Please bear in mind that the tutorial is a little outdated, but the process it shows in creating a poll slide is still very similar.**
 
-> 📹 [Watch video](https://www.youtube.com/embed/l6OXGVZg45M?feature=oembed)
+{% embed url="https://www.youtube.com/watch?v=l6OXGVZg45M" %}
+Poll tutorial (older interface)
+{% endembed %}
