@@ -43,6 +43,20 @@ remote mode.
 3. Verify before moving on: the log must say `walk finished — N/N step(s)
    executed`, and visually check `out/shots/step-*.png` with the Read tool.
    The webm lands in `out/*.webm`.
+4. Trim the boot/loading segment before uploading — the app's emoji loader can
+   run 20s+ at the start despite the recorder's warm-up. ffmpeg is available
+   via the workspace's `ffmpeg-static` npm package (Homebrew is not writable
+   on this machine). Find where the first tooltip appears (extract 1fps frames
+   and Read them: `node_modules/ffmpeg-static/ffmpeg -i out/<take>.webm -t 25
+   -vf fps=1 /tmp/frames/f%02d.png`), then cut and re-encode — stream copy
+   seeks badly on Playwright's sparse-keyframe webms:
+
+   ```bash
+   node_modules/ffmpeg-static/ffmpeg -ss <loader-end> -i out/<take>.webm \
+     -c:v libvpx-vp9 -crf 32 -b:v 0 -cpu-used 4 -row-mt 1 -an -y out/<topic>-final.webm
+   ```
+
+   Verify the new first frame (extract at 0.5s and Read it) before uploading.
 
 Gotchas (each cost real debugging time):
 - **Never use local mode** (`STEPS_FILE` + `onboarding=<key>` only): the app
