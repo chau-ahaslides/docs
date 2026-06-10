@@ -57,15 +57,34 @@ remote mode.
    ```
 
    Verify the new first frame (extract at 0.5s and Read it) before uploading.
+5. Tighten low-motion stretches — heal gaps and loading waits leave long
+   fully-static runs. Detect them strictly (so typing/cursor still counts as
+   motion), then cap each span at ~2s (keeps tooltips readable):
+
+   ```bash
+   node_modules/ffmpeg-static/ffmpeg -i in.webm -vf freezedetect=n=-55dB:d=1.8 \
+     -map 0:v -f null - 2>&1 | grep -oE 'freeze_(start|end): [0-9.]+'
+   ```
+
+   Merge spans separated by <0.3s, keep first 1.7s + last 0.3s of each, cut
+   the middle via `select='not(between(t,a,b)+…)',setpts=N/FRAME_RATE/TB` and
+   re-encode (same VP9 flags). Then sample one frame every ~6s and Read them
+   to confirm every step's tooltip still appears. This took the poll video
+   from 1:38 to 0:48 with nothing meaningful lost.
 
 Gotchas (each cost real debugging time):
 - **Never use local mode** (`STEPS_FILE` + `onboarding=<key>` only): the app
   renders its built-in tour, not yours, and its overlay swallows clicks.
 - **No explicit kickstart step.** After "create presentation" the editor shows
-  a "Choose a slide" kickstart screen. An explicit click step for it advances
-  the overlay but the click is swallowed. Go straight from the create step to
-  clicking the slide type (e.g. `[aria-label="Poll"]`) — the recorder's
-  auto-heal clicks through kickstart on its own.
+  a "Choose a slide" kickstart screen. An explicit click step anchors fine and
+  the click passes through the spotlight (the picker visibly opens), but the
+  app's overlay never registers the step as completed — the kickstart button
+  unmounts on click and the completion listener dies with it, so the tour
+  stalls on that step (reproduced twice, incl. with a 1.5s pauseMs settle).
+  Until the app handles self-unmounting targets, go straight from the create
+  step to clicking the slide type (e.g. `[aria-label="Poll"]`) — the recorder's
+  auto-heal clicks through kickstart on its own. The heal gap is silent dead
+  time on screen; the freeze-trim step below removes it.
 - **Selector discovery**: write a probe script IN the workspace dir, fresh
   profile dir, `force: true` clicks (leftover onboarding panels intercept
   pointer events), no `?onboarding` param. Crib from `probe2.mjs`. Known

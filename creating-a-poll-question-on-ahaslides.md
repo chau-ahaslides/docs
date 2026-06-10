@@ -28,7 +28,7 @@ A poll slide is a quick and easy way to get live opinions in poll format from yo
 
 Watch how to create a poll from start to finish — including previewing it before you go live:
 
-{% embed url="https://www.youtube.com/watch?v=Sy-mNdyY3GE" %}
+{% embed url="https://www.youtube.com/watch?v=GK6fQhHYybo" %}
 How to create a Poll question on AhaSlides
 {% endembed %}
 
