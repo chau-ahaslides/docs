@@ -6,7 +6,7 @@ permalink: creating-a-poll-question-on-ahaslides
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-05-12
+last_updated: 2026-06-10
 tags: ["image", "voters", "multiple", "ahaslides", "multiple choice", "anonymous", "survey", "poll", "vote"]
 keywords: []
 summary: A poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes.
@@ -38,23 +38,18 @@ Below is an interactive demo, which will help you experience this function:
 Interactive demo: try the Poll slide
 {% endembed %}
 
-## How does a Poll slide Work?
+## How does a poll slide work?
 
-In a poll, you ask a question and provide between 2 and 30 answer options. Your audience vote for one or more of the answer options on their phones. The poll is updated live, so on the presenter screen you see a chart displaying the results.
+In a poll, you ask a question and provide between 2 and 30 answer options. Your audience vote for one or more of the answer options on their phones. The poll is updated live, so on the presenter screen you see a chart displaying the results. Once a participant has voted on their phone, they'll see the results on their screen too — you can see both views side by side in the Preview section of the video above.
 
-Here is the **presenter's screen**, showing the voting results:
+## How to make a poll question
 
-Here is the **participants' screen**. Once a participant has voted via their phone, they will also see the results on their screen.
-
-## **How to make a Poll question?**
-
-1. On the AhaSlides editor, add new slide button in the top left corner.
-2. Select the slide type in the list - 'Poll'.
-
-3. Fill in your question.
+1. On the AhaSlides editor, click **+ New slide** in the top-left corner. (On a brand-new presentation, you can also click **Choose a slide** right on the canvas.)
+2. Pick **Poll** from the slide type list — you'll find it in the **Unscored** section.
+3. Fill in your question in the **Your question** box on the right.
 4. Fill in or upload images as your answer options. You can have between 2 and 30 answer options.
 
-This is the **minimum** you need to do for any poll slide to work. When your slide is ready for your audience to vote on, [invite your audience to your presentation](https://help.ahaslides.com/sharing-your-presentation-to-your-participants) and press the 'Present' button in the top-right corner.
+This is the **minimum** you need to do for any poll slide to work. Want to see exactly what your audience will see before going live? Hit **Preview** in the top-right corner — [here's how previewing works](how-to-preview-and-test-your-presentation.md). When your slide is ready for your audience to vote on, [invite your audience to your presentation](sharing-your-presentation-for-participants-to-join.md) and press the 'Present' button in the top-right corner.
 
 ## Other Settings on your Poll
 
@@ -76,10 +71,4 @@ When presenting, you can click the "Submission closed" icon to enable the audien
 
 While running the poll slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
 
-**💡** *__Note:__ If you're using a multiple choice slide for a do-at-home survey, you can allow your participants to cast their votes in the poll without needing you to present it live. For more info, [check out our article on self-paced presentations](https://help.ahaslides.com/setting-up-a-self-paced-quiz).*
-
-**For more on polls, check out this tutorial. Please bear in mind that the tutorial is a little outdated, but the process it shows in creating a poll slide is still very similar.**
-
-{% embed url="https://www.youtube.com/watch?v=l6OXGVZg45M" %}
-Poll tutorial (older interface)
-{% endembed %}
+**💡** *__Note:__ If you're using a multiple choice slide for a do-at-home survey, you can allow your participants to cast their votes in the poll without needing you to present it live. For more info, [check out our article on self-paced presentations](setting-up-a-self-paced-presentation-on-ahaslides.md).*
