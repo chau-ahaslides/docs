@@ -17,7 +17,9 @@ related_articles: ["resetting-the-results"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The AhaSlides Presentation Report provides detailed insights into your audience's engagement with your presentation. It includes statistics on participant interactions and written feedback, helping you evaluate your presentation's impact."
 ---
+
 
 The AhaSlides Presentation Report provides detailed insights into your audience's engagement with your presentation. It includes statistics on participant interactions and written feedback, helping you evaluate your presentation's impact.
 

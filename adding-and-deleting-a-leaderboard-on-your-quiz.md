@@ -15,12 +15,13 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/adding-and-deleting-a-leaderboard-on-your-quiz
 related_articles: ["how-to-make-and-run-a-quiz"]
 mcp_actions:
-  ```yaml
   create: "create_slides(slide_type: \"leaderboard\")"
   delete: "update_slide_properties_tool(type: \"leaderboard\", deleted: true)"
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The Leaderboard displays the rankings and scores of participants in a quiz. After the final question, the leaderboard will display the winner. Leaderboards will only work with quiz slides (Pick Answer, Short Answer, Match Pairs, Correct Order, and Categorize)."
 ---
+
+# Adding and Deleting a Leaderboard on your Quiz
 
 The Leaderboard displays the rankings and scores of participants in a quiz. After the final question, the leaderboard will display the winner.
 
@@ -28,7 +29,7 @@ The Leaderboard displays the rankings and scores of participants in a quiz. Afte
 >
 > They also **don't update in real-time. They only fetch the latest results when you refresh them or return/move to them from another slide**, as they are designed for live presentations.
 >
-> For more info on creating a quiz, please check out this article: [How to Make and Run a Quiz]([[how-to-make-and-run-a-quiz]])
+> For more info on creating a quiz, please check out this article: [How to Make and Run a Quiz](how-to-make-and-run-a-quiz.md)
 
 Below is an interactive demo, which will help you experience this function:
 

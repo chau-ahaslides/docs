@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Choose your plan and proceed to the Checkout page. On the Checkout page, locate the 'Add promotion code' text under the 'Subtotal' section, enter your discount code, and click 'Apply'."
 ---
+
+# How to add discount code to your purchase?
 
 **1. Choose Your Plan**
 Select the plan you'd like to purchase and proceed to the **Checkout** page.

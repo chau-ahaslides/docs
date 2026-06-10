@@ -17,14 +17,17 @@ related_articles: ["purchasing-multiple-licenses-for-ahaslides-team-plan-subscri
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type — presenter role managed via web UI only"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "You can now allow multiple presenters to run the same presentation at the same time, without affecting each other. You can also view reports of their sessions separately, while they can only view their own sessions."
 ---
+
+# Multiple Presenters, One Presentation with the Presenter Role
 
 You can now allow multiple presenters to run the same presentation at the same time, without affecting each other. You can also view reports of their sessions separately, while they can only view their own sessions.
 
 > **Important note:**
 >
 > - The **Present role** **will not work on the PowerPoint add-in**. If you would like multiple users to use the same presentation at once, they will need their own copies.
-> - **Features of the owner's plan/subscription will not be shared through the collaboration feature**. If you require a plan for multiple users, we recommend checking out our Team Plan: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription]([[purchasing-multiple-licenses-for-ahaslides-team-plan-subscription]])
+> - **Features of the owner's plan/subscription will not be shared through the collaboration feature**. If you require a plan for multiple users, we recommend checking out our Team Plan: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 
 ## Invite your collaborators as Presenter
 
@@ -62,7 +65,7 @@ They will not be able to edit the presentation. When the presentation owner make
 
 As the **Presentation Owner**, you can view reports for sessions conducted by both you and your collaborators. A new session is recorded each time anyone resets the presentation's results.
 
-To see all sessions, you can open the report page of the presentation: [Your AhaSlides Presentation Report]([[your-ahaslides-presentation-report]]), and click the **Session list** box next to the presentation owner's name. A pop-up window with the list of sessions will appear for you to select:
+To see all sessions, you can open the report page of the presentation: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md), and click the **Session list** box next to the presentation owner's name. A pop-up window with the list of sessions will appear for you to select:
 
 ![Session list pop-up on report page](https://help.ahaslides.com/galleryDocuments/edbsn25c92982933a7d59f0add4d09d8d514e1cf5343188af96dd32ebe663db2e1289f0e4d2c29aabb6cc288605ce74978e9c?inline=true)
 

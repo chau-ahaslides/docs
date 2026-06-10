@@ -17,11 +17,14 @@ related_articles: ["your-ahaslides-presentation-report"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Resetting results (or 'clearing the responses') on your presentation means that all submissions made by participants will be erased from your presentation. This allows you to reuse presentations for different audiences."
 ---
+
+# Resetting the Results
 
 Resetting results (or 'clearing the responses') on your presentation means that all submissions made by participants (for example votes on a poll, questions on a Q&A or emoji reactions) will be erased from your presentation. Any content created by you (questions, poll options, etc.) will be unaffected.
 
-This allows you to reuse presentations for different audiences. Each reset will also **create a new session** in the Report: [Your AhaSlides Presentation Report]([[your-ahaslides-presentation-report]])
+This allows you to reuse presentations for different audiences. Each reset will also **create a new session** in the Report: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
 
 ![Reset results overview](https://help.ahaslides.com/galleryDocuments/edbsnb0b4c971ef4c9b562e3f94297e4e9cd2ff1447804b4c46a74c8425e8df980a8071d2692e2fe467a91ba4fc3ec231c16f?inline=true)
 

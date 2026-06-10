@@ -15,13 +15,14 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-correct-order-slide
 related_articles: ["how-to-make-and-run-a-quiz"]
 mcp_actions:
-  ```yaml
   create: "create_slides(slide_type: \"correct_order_quiz\", heading: \"...\", options: [{position, text}], max: 7)"
   configure: "update_slide_properties_tool(type: \"correctOrderQuizQuestion\", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)"
   delete: "update_slide_properties_tool(type: \"correctOrderQuizQuestion\", deleted: true)"
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to use the Correct Order slide in an AhaSlides quiz. The Correct Order quiz slide asks participants to place randomized statements in the correct order."
 ---
+
+# Using the Correct Order Slide
 
 The Correct Order quiz slide asks participants to place randomized statements in the correct order.
 
@@ -29,7 +30,7 @@ The Correct Order quiz slide asks participants to place randomized statements in
 
 ## How does a Correct Order Slide work?
 
-A Correct Order slide is a quiz slide type and forms part of a [quiz]([[how-to-make-and-run-a-quiz]]).
+A Correct Order slide is a quiz slide type and forms part of a [quiz](how-to-make-and-run-a-quiz.md).
 
 On a Correct Order slide, players are presented with a question, as well as a column of statements. Players have the time limit you give them in order to arrange all statements in the correct order.
 
@@ -53,4 +54,4 @@ On the AhaSlides editor, choose the Correct Order slide from the *'Quiz and game
    - **Reward points**: The maximum and the minimum number of points it is possible to get on that question. If the *'Faster answers get more points'* box is unchecked, then any correct answer will receive the maximum number of points.
    - **Faster answers get more points**: Check this box to encourage players to answer quicker. For example, if the *'time to answer'* is 100 seconds and the *'reward points'* is set to 100 maximum and 0 minimum, then a player submitting their answer with 80 seconds left will receive 80 points.
 
-> 💡 For more help on quizzes, learn [how to make and run a quiz]([[how-to-make-and-run-a-quiz]]).
+> 💡 For more help on quizzes, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).

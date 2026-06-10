@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "For the best image quality on AhaSlides, please follow the recommendations below. AhaSlides supports JPEG, PNG, and GIF formats, with a maximum upload size of 15 MB and recommended 2K resolution (2560 \u00d7 1440) for full-screen background images."
 ---
+
+# Upload Image Guidelines for AhaSlides
 
 For the best image quality on AhaSlides, please follow the recommendations below.
 

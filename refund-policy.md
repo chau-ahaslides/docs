@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Find out if you are eligible for a refund during our 14-day refund period. If you wish to cancel within fourteen (14) days from the day you subscribed, and you have not successfully used AhaSlides at a live event, you will receive a full refund."
 ---
+
+# Refund Policy
 
 Find out if you are eligible for a refund during our 14-day refund period.
 

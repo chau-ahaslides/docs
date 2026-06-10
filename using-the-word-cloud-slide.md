@@ -19,7 +19,10 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "wordCloudQuestion", entriesPerParticipant: int)'
   delete: 'update_slide_properties_tool(type: "wordCloudQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "A word cloud lets you pose a question and have participants submit short written responses. All the responses are displayed on one screen, with the most popular responses appearing larger in the cloud."
 ---
+
+# Using the Word Cloud Slide
 
 A word cloud lets you pose a question and have participants submit short written responses. All the responses are displayed on one screen, with the most popular responses appearing larger in the cloud.
 

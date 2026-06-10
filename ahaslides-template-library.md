@@ -17,7 +17,10 @@ related_articles: ["resetting-the-results"]
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The AhaSlides Template Library is a time-saving feature that allows you to download and customize ready-made templates for your presentations."
 ---
+
+# AhaSlides Template Library
 
 The AhaSlides Template Library is a time-saving feature that allows you to download and customize ready-made templates for your presentations.
 
@@ -38,7 +41,7 @@ The AhaSlides Template Library is a time-saving feature that allows you to downl
 
 - **Use the search bar**: If you're looking for something specific, just type your keywords in the search bar to find the template that matches your needs.
 
-**📣 Important Note:** Any downloaded template will also include response data. Remember to reset the results before you use it. Find out how to reset results [here]([[resetting-the-results]]).
+**📣 Important Note:** Any downloaded template will also include response data. Remember to reset the results before you use it. Find out how to reset results [here](resetting-the-results.md).
 
 ## Start Editing or Presenting
 

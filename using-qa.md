@@ -18,7 +18,10 @@ mcp_actions:
   create: "create_slides(slide_type: \"q&a\", heading: \"...\")"
   delete: "update_slide_properties_tool(type: \"q&a\", deleted: true)"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to use the Q&A feature in your AhaSlides presentation, as well as the settings to get the most out of it."
 ---
+
+# Using Q&A
 
 The Q&A feature lets you gather questions from your audience. You can then organise all these questions and answer them all one-by-one.
 
@@ -90,7 +93,7 @@ Regardless of whether you hold your Q&A on all slides or only on Q&A slides, you
 
 ### 1. Filter profanity
 
-You can use the profanity filter to ensure that swear words submitted by the audience to your Q&A slide will be blocked out. You can discover [how to use the profanity filter here]([[how-to-use-profanity-filter]]).
+You can use the profanity filter to ensure that swear words submitted by the audience to your Q&A slide will be blocked out. You can discover [how to use the profanity filter here](how-to-use-profanity-filter.md).
 
 ### 2. Moderate audience's questions
 

@@ -19,7 +19,10 @@ mcp_actions:
   configure: "update_slide_properties_tool(type: \"matchPairsQuizQuestion\", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)"
   delete: "update_slide_properties_tool(type: \"matchPairsQuizQuestion\", deleted: true)"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to use the Match Pairs slide type in an AhaSlides quiz. The Match Pairs slide is a quiz slide type where players must match a set of prompts with a set of answers."
 ---
+
+# Using the Match Pairs Slide
 
 The Match Pairs slide is a quiz slide type where players must match a set of prompts with a set of answers.
 
@@ -53,4 +56,4 @@ On the AhaSlides editor, choose the Match Pairs slide and do the following...
   - **Partial scoring**: If this box is checked, players will be rewarded for the amount of pairs they correctly match, even if they don't correctly match each pair. For example, if a player matches one out of four questions correct, they will receive 25% of the points.
   - **Time limit**: The time limit for that question in seconds.
 
-For more help, learn [how to make and run a quiz]([[how-to-make-and-run-a-quiz]]).
+For more help, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).

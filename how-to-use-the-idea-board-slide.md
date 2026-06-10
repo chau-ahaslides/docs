@@ -17,7 +17,10 @@ related_articles: ["collecting-participants-information", "hide-results"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "An Idea Board slide lets your audience submit ideas and see them organized into themes, not just read a scattered list of responses. Results are updated in real time, helping you spot patterns and turn raw feedback into structured insights instantly."
 ---
+
+# How to use the Idea Board slide
 
 An Idea Board slide lets your audience submit ideas and see them organized into themes, not just read a scattered list of responses. Instead of asking "What do you think?", you're asking: "What themes emerge from our collective thinking?"
 
@@ -54,12 +57,12 @@ Results are updated in real time, helping you spot patterns and turn raw feedbac
 
 You can customize your Idea Board slide with these settings:
 
-1. **Collect audience info**: Gather participant details before they submit ideas (name, email, etc). Skip this if you've already enabled [Collecting Audience Information]([[collecting-participants-information]]) in your presentation settings.
+1. **Collect audience info**: Gather participant details before they submit ideas (name, email, etc). Skip this if you've already enabled [Collecting Audience Information](collecting-audience-information.md) in your presentation settings.
 2. **Groups**: Enable this option to create groups in advance for participants to submit to. See below for a detailed guide.
 3. **Vote**: Enable or disable idea voting. When enabled, users can set the number of votes each participant can use, ranging from 1 to 20. See below for a detailed guide.
 4. **Time limit**: Apply a time limit to submissions. When enabled, choose between 5 seconds and 20 minutes (1200 seconds).
 5. **Close submission**: Close submissions if you need to clarify the question or pause before participants submit.
-6. [**Hide results**]([[hide-results]]): Hide submitted responses from the presenter's screen as they come in. A button in the middle lets you reveal responses when ready.
+6. [**Hide results**](https://help.ahaslides.com/portal/en/kb/articles/hide-results): Hide submitted responses from the presenter's screen as they come in. A button in the middle lets you reveal responses when ready.
 7. **Show on audience's devices**: Allow your audience to see the vote count on their devices. Leave unchecked to prevent voting bias.
 8. **Allow audience to submit more than once:** Participants can submit multiple times.
 9. **Allow audience to submit images:** Participants can submit images alongside their answers.

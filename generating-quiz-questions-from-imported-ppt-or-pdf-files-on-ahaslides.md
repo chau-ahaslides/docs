@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "AhaSlides offers a seamless feature that lets users effortlessly turn their documents, images, PowerPoint (PPT), or PDF files into interactive quizzes with our AI-powered tool."
 ---
+
+# Generating Slides from Imported Files on AhaSlides
 
 AhaSlides offers a seamless feature that lets users effortlessly turn their documents, images, PowerPoint (PPT), or PDF files into interactive quizzes with our AI-powered tool. This functionality not only saves time but also enhances engagement during training sessions. Here's how it works:
 

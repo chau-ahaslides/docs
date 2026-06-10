@@ -19,11 +19,14 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)'
   delete: 'update_slide_properties_tool(type: "openEndedQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide."
 ---
+
+# Collecting Audience Information
 
 Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide.
 
-**Please note** that while this feature is available on all paid plans, only **certain paid plans** can see collected participant information in the [Excel export]([[exporting-to-excel]]) after the presentation is over: [Your AhaSlides Presentation Report]([[your-ahaslides-presentation-report]])
+**Please note** that while this feature is available on all paid plans, only **certain paid plans** can see collected participant information in the [Excel export](https://help.ahaslides.com/portal/en/kb/articles/exporting-to-excel) after the presentation is over: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
 
 ## How to Collect Audience Info
 

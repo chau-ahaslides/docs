@@ -17,7 +17,10 @@ related_articles: ["cancelling-your-ahaslides-subscription"]
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to check and purchase a special Educational Plan at a discounted rate on AhaSlides. If you're a teacher, student, NGO or plan to use AhaSlides in some educational capacity, you can claim an Educational Plan at a discounted rate, billed annually."
 ---
+
+# Educational Subscriptions
 
 If you're a teacher, student, NGO or plan to use AhaSlides in some educational capacity, you can claim an Educational Plan at a discounted rate. These plans are all **billed annually**.
 
@@ -29,6 +32,6 @@ If you're a teacher, student, NGO or plan to use AhaSlides in some educational c
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsnd27da1d91f5c2dd478c4bd59135f11ad82f0851bb4d8b9c2d22c6c9f1b36eecca1c9277f5ee2d5021242ae785e149aab?inline=true)
 
-After purchasing an Edu plan, you can **turn off auto-renewal** right away, following this guide: [Cancelling your AhaSlides Subscription]([[cancelling-your-ahaslides-subscription]]) to **avoid being charged for your second year**.
+After purchasing an Edu plan, you can **turn off auto-renewal** right away, following this guide: [Cancelling your AhaSlides Subscription](cancelling-your-ahaslides-subscription.md) to **avoid being charged for your second year**.
 
 > Want more information regarding different subscriptions? [Visit our plans page](http://ahaslides.com/pricing): [https://ahaslides.com/pricing/](https://ahaslides.com/pricing/)

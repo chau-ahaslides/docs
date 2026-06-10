@@ -17,7 +17,9 @@ related_articles: []
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The AhaSlides MCP (Model Context Protocol) server lets AI assistants like Claude talk directly to AhaSlides on your behalf \u2014 so you can create presentations, build quizzes, manage slides, analyze audience responses, and more just by describing what you want in plain language."
 ---
+
 
 The AhaSlides MCP (Model Context Protocol) server lets AI assistants like Claude talk directly to AhaSlides on your behalf — so you can create presentations, build quizzes, manage slides, analyze audience responses, and more just by describing what you want in plain language.
 

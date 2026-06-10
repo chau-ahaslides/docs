@@ -17,7 +17,9 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to set up Slide Audio and Presentation Audio on AhaSlides. Enhance your presentations with slide or presentation-level audio, along with sound effects for greater control over the experience."
 ---
+
 
 Enhance your presentations on AhaSlides with slide or presentation-level audio, along with sound effects for greater control over the experience.
 

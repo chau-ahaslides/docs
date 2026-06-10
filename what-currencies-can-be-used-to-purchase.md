@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "AhaSlides accepts USD, however when you make your payment with an international card, your bank will automatically convert it to your currency. The rate will depend on your bank."
 ---
+
+# What currencies can be used to purchase?
 
 AhaSlides accepts USD, however when you make your payment with an international card, your bank will automatically convert it to your currency.
 

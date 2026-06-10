@@ -17,7 +17,9 @@ related_articles: ["managing-your-team-members"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The AhaSlides Team Plan offers a powerful collaborative experience, allowing users to seamlessly work together using various features. Follow the step-by-step guide to purchase multiple licenses for the team plan subscription."
 ---
+
 
 The AhaSlides Team Plan offers a powerful collaborative experience, allowing users to seamlessly work together using various features. If you're looking to purchase multiple licenses for the team plan subscription, follow the step-by-step guide below to ensure a smooth and efficient process.
 
@@ -73,7 +75,7 @@ Follow the instructions in the confirmation email to set up your team plans. Add
 
 > **Before You Make Changes**
 >
-> - If you currently **have a single license** and want to add more, if you haven't already, you'll need to **create a team before purchasing additional licenses**. For guidance on creating and managing a team, see [Managing your Team Members]([[managing-your-team-members]]).
+> - If you currently **have a single license** and want to add more, if you haven't already, you'll need to **create a team before purchasing additional licenses**. For guidance on creating and managing a team, see [Managing your Team Members](managing-your-team-members.md).
 > - If you're **reducing the number of licenses** on your plan, you'll need to **remove team members first** so that your **team size matches the new license count** you're switching to.
 
 1. To change your subscription, start by logging in to your AhaSlides account and navigating to the **Billing** section:

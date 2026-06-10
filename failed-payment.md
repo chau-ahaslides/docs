@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Your subscription payment fails or credit card was declined. Find out how to manage payment failure problems. If your credit card was declined while making a payment, this is normally a result of your bank's automated systems."
 ---
+
+# Failed Payment
 
 Your subscription payment fails or credit card was declined. Find out how to manage payment failure problems.
 

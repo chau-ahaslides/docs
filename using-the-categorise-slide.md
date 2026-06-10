@@ -19,7 +19,10 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "categoriseQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)'
   delete: 'update_slide_properties_tool(type: "categoriseQuizQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The Categorize slide is a slide type that allows you to create interactive quizzes where participants must categorize items into predefined groups. It's a great way to test your audience's knowledge and engagement."
 ---
+
+# Using the Categorise Slide
 
 The Categorize slide is a slide type that allows you to create interactive quizzes where participants must categorize items into predefined groups. It's a great way to test your audience's knowledge and engagement.
 

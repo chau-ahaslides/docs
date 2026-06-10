@@ -17,7 +17,10 @@ related_articles: ["how-to-censor-inappropriate-names"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The profanity filter setting blocks swear words inputted by your participants at any point during your presentation. It works across word clouds, open-ended slides, Q&A slides, short answer quiz slides, and participant name fields."
 ---
+
+# How to Use the Profanity Filter
 
 The profanity filter setting blocks swear words inputted by your participants at any point during your presentation.
 

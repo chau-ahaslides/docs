@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event."
 ---
+
+# How to Preview and Test your Presentation
 
 Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event.
 

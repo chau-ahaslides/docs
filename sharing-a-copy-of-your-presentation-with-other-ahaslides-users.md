@@ -17,7 +17,10 @@ related_articles: ["sharing-a-presentation-to-your-participants", "sharing-your-
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Don't know how to share your presentation with other users on AhaSlides? Or how they can copy it to their accounts? Check out the guide below!"
 ---
+
+# Sharing a Copy of your Presentation with Other AhaSlides Users
 
 With AhaSlides, you can share your presentation with other users, and they can copy that presentation to their accounts.
 
@@ -46,5 +49,5 @@ The new user of the presentation will be able to edit that presentation in any w
 
 Are you looking for other ways to share on AhaSlides? - Check out these helpful guides:
 
-- [Sharing a Presentation with your Participants]([[sharing-a-presentation-to-your-participants]])
-- [Sharing your AhaSlides account]([[sharing-your-ahaslides-account]])
+- [Sharing a Presentation with your Participants](sharing-your-presentation-for-participants-to-join.md)
+- [Sharing your AhaSlides account](sharing-your-ahaslides-account.md)

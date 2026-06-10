@@ -17,7 +17,10 @@ related_articles: ["remote-control"]
 mcp_actions:
   note: "move_slide / skip_slide_when_presenting tools available for slide management; notes are editor-only"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "You can write your own notes for each slide. During your presentation, these notes will be visible on your monitor through Remote control; your audience won't be able to see them."
 ---
+
+# Adding notes to your presentation
 
 You can write your own notes for each slide. During your presentation, these notes will be visible on your monitor through Remote control; your audience won't be able to see them.
 
@@ -29,7 +32,7 @@ On the editor, you will find a space for notes below each slide preview. You can
 
 ## Presenting with your notes
 
-To be able to see your notes while presenting, you will need to present with **Remote control**: [How to use the Remote Control function]([[remote-control]])
+To be able to see your notes while presenting, you will need to present with **Remote control**: [How to use the Remote Control function](https://help.ahaslides.com/portal/en/kb/articles/remote-control)
 
 Remote control is a separate screen in which you can control your presentation. This is so you can project the window containing your presentation to your audience, which you can control through the window containing Remote control.
 

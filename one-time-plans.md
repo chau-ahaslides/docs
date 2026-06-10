@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The One-Time plan triggers when one of your presentations reaches 8 participants and stays active for 24 hours, allowing unlimited presentations during that period. You can purchase it beforehand and the 24-hour duration won't start until an 8th participant joins."
 ---
+
+# One-Time Plans
 
 ## 15-Second Explainer ⏰: One-Time Plan
 

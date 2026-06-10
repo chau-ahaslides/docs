@@ -19,7 +19,10 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)'
   delete: 'update_slide_properties_tool(type: "openEndedQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "An Open Ended slide helps you see things from others' perspectives as you get feedback in their own words instead of stock answers. Open-ended questions allow respondents to answer in open text format so that they can answer based on their complete knowledge, feeling, and understanding."
 ---
+
+# Using the Open Ended Slide
 
 An Open Ended slide help you see things from others' perspectives as you get feedback in their own words instead of stock answers.
 
@@ -39,7 +42,7 @@ Start by creating a new slide and selecting the Open Ended slide type from the o
 
 ### Step 2: Add Additional fields
 
-You can collect additional info from each response such as the responder's name, team name, etc. Want to know more about Additional fields on AhaSlides? [See here for more]([[collecting-participants-information]]).
+You can collect additional info from each response such as the responder's name, team name, etc. Want to know more about Additional fields on AhaSlides? [See here for more](collecting-audience-information.md).
 
 ![Additional fields settings](https://help.ahaslides.com/galleryDocuments/edbsn1debfa0af506795b00d53ad555075b32b22a6894f787574b70bb0ecb31c80a76bc4300c68176fe1c55dfa72ff9d54176?inline=true)
 
@@ -54,7 +57,7 @@ Change the settings of your Open Ended slide to your liking. There are 7 setting
 3. **Change layout:** You can choose how the result is displayed on the presenter screen. There are 2 layouts available: Grid or One by one
 4. **Lock submission (available for Edu Medium, Edu Large, Essential, Pro, Enterprise):** This blocks participant from submitting any more responses to your Open Ended slide.
 5. **Allow audience to submit more than once:** This allows each participant to submit their responses an unlimited amount of times.
-6. **Allow audience to submit images:** Participants can share images as answers instead of submitting normal answers. [See here]([[sharing-images-with-open-ended-slide]]) for how participants can share images with Open Ended slide
+6. **Allow audience to submit images:** Participants can share images as answers instead of submitting normal answers. [See here](https://help.ahaslides.com/portal/en/kb/articles/sharing-images-with-open-ended-slide) for how participants can share images with Open Ended slide
 7. **Filter profanity:** This turns on the profanity filter, which automatically censors English language swear words when they're submitted by your audience. *(Note: checking this box will apply the profanity filter throughout your entire presentation.)*
 
 ### Step 4: Present and get Responses
@@ -65,7 +68,7 @@ You can manually delete any response in the Open Ended slide, simply find that s
 
 ![Deleting a response with the X icon](https://help.ahaslides.com/galleryDocuments/edbsn14a9bd588f445df581152c99575ba85284dd6db88112abe4c6be89b874c3fa193117e4f1f7e2f64aca6365f05083afc5?inline=true)
 
-Like with any slide, you can re-use your Open Ended slide by [clearing its data]([[resetting-the-results-clearing-the-responses]]).
+Like with any slide, you can re-use your Open Ended slide by [clearing its data](resetting-the-results.md).
 
 ## Smart Grouping for Open Ended submissions
 

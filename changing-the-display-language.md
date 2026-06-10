@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "You can create, navigate, and display presentations in multiple languages on AhaSlides. This tutorial will guide you through the simple steps to change your language settings on the presenter interface and audience app."
 ---
+
+# Changing the Display Language
 
 You can create, navigate, and display presentations in multiple languages on AhaSlides. This tutorial will guide you through the simple steps to change your language settings on the presenter interface and audience app.
 

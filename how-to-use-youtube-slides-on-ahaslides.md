@@ -15,12 +15,13 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-use-youtube-slides-on-ahaslides
 related_articles: []
 mcp_actions:
-  ```yaml
   create: "create_slides(slide_type: \"content\", heading: \"...\", paragraphs: [\"...\"])"
   note: "YouTube embed handled via content slide. No dedicated YouTube slide type in MCP."
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "AhaSlides YouTube Slides let you play YouTube videos on both the presenter and audience screen. Audience members need to click the Play button on the video themselves."
 ---
+
+# How to Use YouTube Slides on AhaSlides
 
 ## AhaSlides YouTube Slides let you play YouTube videos on both the presenter and audience screen.
 

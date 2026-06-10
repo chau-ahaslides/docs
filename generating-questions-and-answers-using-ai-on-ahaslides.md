@@ -17,11 +17,14 @@ related_articles: ["how-to-make-and-run-a-quiz"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "AhaSlides now offers AI-powered answer generation for quizzes and polls, helping you quickly create questions and answer options."
 ---
+
+# Generating Questions and Answers using AI on AhaSlides
 
 AhaSlides now offers AI-powered answer generation for quizzes and poll helping you quickly create questions and answer options.
 
-> For a complete guide to creating and running quizzes on AhaSlides, see our article: [How to Make and Run a Quiz]([[how-to-make-and-run-a-quiz]]).
+> For a complete guide to creating and running quizzes on AhaSlides, see our article: [How to Make and Run a Quiz](how-to-make-and-run-a-quiz.md).
 
 ## How to Generate Questions Using AI
 

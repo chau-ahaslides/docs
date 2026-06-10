@@ -19,7 +19,10 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "spinnerWheelQuestion", metadata.spinningDuration: int max 1200, metadata.autoFillParticipantName: bool)'
   delete: 'update_slide_properties_tool(type: "spinnerWheelQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to use the AhaSlides spinner wheel in your presentations. The spinner wheel is a slide type that lets a presenter pick any entry at random by spinning the wheel."
 ---
+
+# Using the Spinner Wheel
 
 ## What is the Spinner Wheel?
 
@@ -64,14 +67,14 @@ You can also turn on this option while on presenting mode
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsn51291605759cff985f795bddf2d195c6d417311f6e782898a0cccffed97fd4cba46f20bb42bd19f78b8b5fff9507a327?inline=true)
 
-With this box checked, when participants reach this slide, they will be prompted for their names and an avatar, the same way they are when they are [joining a quiz]([[how-to-make-and-run-a-quiz]]).
+With this box checked, when participants reach this slide, they will be prompted for their names and an avatar, the same way they are when they are [joining a quiz](how-to-make-and-run-a-quiz.md).
 
 If you had any **quiz slide** before your spinner wheel slide, then checking the *Participant name autofill* box will automatically fill in the names of your quiz players - they won't need to write them again.
 
 > **Protip**
 > With a quick workaround, participants can put entries into the wheel themselves.
 >
-> To set this up, create a [word cloud]([[making-a-live-word-cloud]]) slide and get your participants to submit their wheel entries into the cloud. Next, change the slide type from word cloud to spinner wheel; every submission from the word cloud will be automatically uploaded as entries in the wheel.
+> To set this up, create a [word cloud](using-the-word-cloud-slide.md) slide and get your participants to submit their wheel entries into the cloud. Next, change the slide type from word cloud to spinner wheel; every submission from the word cloud will be automatically uploaded as entries in the wheel.
 >
 > ![](https://help.ahaslides.com/galleryDocuments/edbsn49101f674da1e52389ead3b1c23a119aec9a66ef05516a16c52285fd56d96bf227ee7aab8ec9f162aba5da9f05cc5a1f?inline=true)
 

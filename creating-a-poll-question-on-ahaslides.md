@@ -19,7 +19,10 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")'
   delete: 'update_slide_properties_tool(type: "pollQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "A poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes."
 ---
+
+# Creating a Poll question on AhaSlides
 
 A poll slide is a quick and easy way to get live opinions in poll format from your audience.
 

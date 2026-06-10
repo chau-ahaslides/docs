@@ -18,7 +18,10 @@ mcp_actions:
   create: 'create_slides(slide_type: "poll", heading: "...", options: [{text}])'
   note: 'Ranking is a poll variant — use poll slide_type'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "A Ranking slide lets your audience prioritize a list of options, not just pick their favorite. Instead of asking \"What do you like?\", you're asking \"What matters most?\" Results update instantly as responses come in."
 ---
+
+# How to Use the Ranking Slide in AhaSlides
 
 A Ranking slide lets your audience **prioritize a list of options**, not just pick their favorite. Instead of asking "What do you like?", you're asking: **"What matters most?"**
 
@@ -63,7 +66,7 @@ Change the settings of your Ranking slide to your liking. There are 4 settings t
 1. **Pick per participant**: The number of items that your participants can pick. This can range from 2 to 10.
 2. **Time limit**: Apply a time limit to the slide. When enabled, you can choose your time limit between 5 seconds and 20 minutes (1200 seconds).
 3. **Close submission**: Close submissions for specific slides can be useful if you need to clarify a question before your audience submits their answers, or for any other reason where you do not want the participants to submit their answers to a question at that moment.
-4. [**Hide results**]([[hide-results]]): This hides the submitted responses from the presenter's screen as they're submitted. While presenting and receiving submissions, there will be a button in the middle of the slide to reveal the responses whenever you want.
+4. [**Hide results**](https://help.ahaslides.com/portal/en/kb/articles/hide-results): This hides the submitted responses from the presenter's screen as they're submitted. While presenting and receiving submissions, there will be a button in the middle of the slide to reveal the responses whenever you want.
 
 ### How the ranking works
 

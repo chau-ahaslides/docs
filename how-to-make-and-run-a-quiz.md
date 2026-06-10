@@ -21,7 +21,10 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)'
   delete: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn everything about creating and hosting a live quiz for your audience. On AhaSlides, you can host a live quiz and have all of your participants competing for points using quiz question slides and a leaderboard."
 ---
+
+# How to Make and Run a Quiz
 
 On AhaSlides, you can host a live quiz and have all of your participants competing for points. Build a quiz using quiz question slides and see who ranks top of the leaderboard at the end!
 
@@ -67,7 +70,7 @@ You can also use a **Pop-up Leaderboard** by pressing **L** on your keyboard (or
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsn5c6d02f5652644a3b77bf3a2e0c22b4561607cee16c6b1827f4fec1ae929e65cf5f52ca395ae289f90e5db2132d64c3e?inline=true)
 
-More details can be found in this article: [Adding and Deleting a Leaderboard on your Quiz]([[adding-and-deleting-a-leaderboard-on-your-quiz]])
+More details can be found in this article: [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
 
 ### Step 2: Editing a Quiz Slide
 
@@ -77,7 +80,7 @@ Now you are able to edit your slide. Here's what a 'pick answer' slide will look
 
 **Write your question** - In the right-hand column, write your question in the box labelled 'Your question'.
 
-**Write your answer options or Generate options** - Write up to 8 answer options for your players to choose from. Mark at least one of the options as correct by checking the box next to it. Or generate answers with AI-powered, helping you quickly create answer options for your questions ([See here for more]([[generating-questions-and-answers-using-ai-on-ahaslides]])).
+**Write your answer options or Generate options** - Write up to 8 answer options for your players to choose from. Mark at least one of the options as correct by checking the box next to it. Or generate answers with AI-powered, helping you quickly create answer options for your questions ([See here for more](generating-questions-and-answers-using-ai-on-ahaslides.md)).
 
 With your question and answer options filled in, your slide will update automatically:
 
@@ -101,7 +104,7 @@ You can then choose if you want to toggle partial scoring On or Off.
 1. **On** - Players score points for each correct answer, but any incorrect answer will result in 0 points.
 2. **Off** - Players must select all correct answers to score points.
 
-It is also possible to toggle on partial scoring on the **Match Pairs** and **Categorise** slide types. [Click here to read how it works]([[using-the-match-pairs-slide]]).
+It is also possible to toggle on partial scoring on the **Match Pairs** and **Categorise** slide types. [Click here to read how it works](using-the-match-pairs-slide.md).
 
 **Adding Hints**
 
@@ -119,7 +122,7 @@ Hints will appear both on the presenter's screen and the audience's screens.
 
 🎧 **Adding Audio**
 
-If you are on the **Pro or Enterprise** plan, you can also add accompanying audio to your quiz questions. [Check this guide out for more]([[slide-and-presentation-audio#Audio_on_Quiz_Slides]]).
+If you are on the **Pro or Enterprise** plan, you can also add accompanying audio to your quiz questions. [Check this guide out for more](slide-audio-presentation-audio-and-sound-effects.md).
 
 ### Step 3: Joining a Quiz
 
@@ -129,7 +132,7 @@ To start, press the purple 'Present' button in the top-right corner of the edito
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsnfb8d02a542bb6953f248ca8785a06a00af02831059edc8dbc0147b709e6e4a4f80d9e371f3e75a7ed1a51b909467712f?inline=true)
 
-In the lobby, your players can [join your quiz]([[sharing-a-presentation-to-your-participants]]) using either the **URL code** or **QR code** in the left-hand column.
+In the lobby, your players can [join your quiz](sharing-your-presentation-for-participants-to-join.md) using either the **URL code** or **QR code** in the left-hand column.
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsn5de66707bfa034f44799c7d7e447fc14a6f7ccb6f8f34118d2fd41bbe3cb6372a8d788f4e91e17e69408f8a52703a6b0?inline=true)
 
@@ -160,7 +163,7 @@ Find the report by clicking 'View presentation report' button in the top right t
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsn7c9686a3d17e750219b2506140f39c4055c7933499baaab4ab9d18c62cd2ab1d1b9092f46f53c4a9839a82c29cb6bfa7?inline=true)
 
-[(Click here to see more about reports)]([[your-ahaslides-presentation-report]])
+[(Click here to see more about reports)](your-ahaslides-presentation-report.md)
 
 ## Other Settings for Quizzes
 
@@ -198,7 +201,7 @@ This feature is available for **Edu Medium, Edu large, Pro and Enterprise plans*
 
 Players can play the quiz in teams, rather than individuals.
 
-To set this up, please follow this article: [Running a Team Quiz]([[running-a-team-quiz]])
+To set this up, please follow this article: [Running a Team Quiz](running-a-team-quiz.md)
 
 ### 5. Shuffle Options
 
@@ -210,7 +213,7 @@ By enabling this setting, answer options for players on all Pick Answer, Match P
 
 This feature is available for **all paid plans**
 
-Please note that this feature will not work in [Self-paced mode]([[setting-up-a-self-paced-presentation-on-ahaslides]])
+Please note that this feature will not work in [Self-paced mode](setting-up-a-self-paced-presentation-on-ahaslides.md)
 
 When toggled on, the presenter will see this at the end of each quiz question 👇 This gives them the chance to explain the question in greater detail before revealing how everyone voted in the question.
 
@@ -231,7 +234,7 @@ You can also let your players play a quiz **without a host**.
 
 This is great for teachers who want to assign a quiz as homework, or for quiz masters who want to give their players freedom to complete a quiz at a time that suits them.
 
-To set this up, please check out our guide: [Setting up a Self-Paced presentation on AhaSlides]([[setting-up-a-self-paced-presentation-on-ahaslides]])
+To set this up, please check out our guide: [Setting up a Self-Paced presentation on AhaSlides](setting-up-a-self-paced-presentation-on-ahaslides.md)
 
 ## FAQ
 
@@ -246,11 +249,11 @@ Usually, your quiz isn't asking players to fill out their name for one of two re
 
 If you've just tested your quiz with a real device, want to reuse a quiz, or made a mistake and want to start a quiz over, you can clear any answers submitted to your quiz, all without affecting the content of your quiz.
 
-You can clear *all* responses in your quiz or *just* the responses from one question. [Check out this article to find out how.]([[resetting-the-results]])
+You can clear *all* responses in your quiz or *just* the responses from one question. [Check out this article to find out how.](resetting-the-results.md)
 
 ### 3. How can I test my quiz?
 
-The best way to test a quiz is by using [Preview Mode]([[how-to-preview-your-presentation]]). This is a test mode where you can try out your quiz from both the presenter screen and the player screen.
+The best way to test a quiz is by using [Preview Mode](how-to-preview-and-test-your-presentation.md). This is a test mode where you can try out your quiz from both the presenter screen and the player screen.
 
 You can also test out a quiz by simply joining it on your own phone or getting some friends to join, then playing along as if it were a real quiz. If you use this method, remember to [clear your own answers](https://help.ahaslides.com/how-to-reset-the-results) after you've tested your quiz.
 

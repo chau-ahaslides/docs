@@ -17,18 +17,21 @@ related_articles: ["purchasing-multiple-licenses-for-ahaslides-team-plan-subscri
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to manage the members of your team, change their roles and add more licences for Enterprise use. As the Owner of a team on AhaSlides, the Team Members tab allows you to add and remove team members, set team roles, and upgrade the team plan/add more licenses."
 ---
+
+# Managing your Team Members
 
 As the Owner of a team on AhaSlides, the Team Members tab allows you to add and remove team members, set team roles, and upgrade the team plan/add more licenses.
 
 > **Note:** A team plan and an individual plan are **2 different types of plans**. A **team owner can have their own paid plan, while the team is still under a free plan**.
-> The owner can **upgrade from an individual plan to a team plan**: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription]([[purchasing-multiple-licenses-for-ahaslides-team-plan-subscription]])
+> The owner can **upgrade from an individual plan to a team plan**: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 
 > **Info:** There are two types of teams:
 > 1. **Free Team**: The owner or admin can add up to 200 members. **These members will only have access to the Free plan unless they upgrade their individual accounts, or the owner upgrades to the team plan**.
 > 2. **Team Plan**: The owner or admin can add team members based on the number of licenses purchased (the owner/admin counts as one license). Team members will have access to the features of the team's plan (Essential or Pro) that the owner purchased.
 >
-> To purchase or get more licenses for your team plan, please check out this guide: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription]([[purchasing-multiple-licenses-for-ahaslides-team-plan-subscription]])
+> To purchase or get more licenses for your team plan, please check out this guide: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 
 ## Creating a Team
 

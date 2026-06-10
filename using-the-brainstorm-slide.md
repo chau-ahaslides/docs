@@ -19,7 +19,10 @@ mcp_actions:
   configure: "update_slide_properties_tool(type: \"brainstormActivity\", limitChoice: int)"
   delete: "update_slide_properties_tool(type: \"brainstormActivity\", deleted: true)"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "A brainstorm slide lets your participants put forward ideas and then vote for their favourites. It guides audiences through three stages \u2014 submitting ideas, voting, and viewing results."
 ---
+
+# Using the Brainstorm Slide
 
 A brainstorm slide lets your participants put forward ideas and then vote for their favourites.
 
@@ -70,7 +73,7 @@ You can click on any of the ideas to enlarge it on the screen.
 
 **Note: Brainstorm slide in self-paced mode**
 
-If your participants are accessing this slide in [self-paced mode]([[setting-up-a-self-paced-quiz-on-ahaslides]]), they will proceed through each of the 3 stages on their own.
+If your participants are accessing this slide in [self-paced mode](setting-up-a-self-paced-presentation-on-ahaslides.md), they will proceed through each of the 3 stages on their own.
 
 Because of this, there is an **unavoidable disadvantage** for participants who submit their ideas later, as participants who go through the slide earlier will not be able to see the later idea submissions, and therefore cannot vote for them.
 

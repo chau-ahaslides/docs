@@ -18,18 +18,20 @@ mcp_actions:
   create_presentation: 'create_presentation_tool(name: "...", lang: "en")'
   note: 'Folder/sharing management not available via MCP. Use AhaSlides web UI.'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Collaborative editing lets you work together on presentations or folders with other AhaSlides users. Whether you're collaborating within your team or with people outside it, here's how it works."
 ---
+
 
 Collaborative editing lets you work together on presentations or folders with other AhaSlides users.
 
 > **Info:** Whether you're collaborating within your team or with people outside it, here's how it works:
 >
-> - **Collaborating with team members in your team plan** is available on **all plans**, allowing smooth teamwork regardless of your subscription level. More info on team can be found here: [Managing your Team Members]([[managing-your-team-members]])
+> - **Collaborating with team members in your team plan** is available on **all plans**, allowing smooth teamwork regardless of your subscription level. More info on team can be found here: [Managing your Team Members](managing-your-team-members.md)
 > - **Collaborating with individuals outside your team** is supported on **Pro, Edu Large, and Enterprise plans**. However, for a limited time, **all users** can enjoy external collaboration as part of a special promotional offer.
 
 > **Note:** Please note that **features of the owner's plan/subscription will not be shared through the collaboration feature**.
 >
-> If you require a plan for multiple users, we recommend checking out our Team Plan: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription]([[purchasing-multiple-licenses-for-ahaslides-team-plan-subscription]])
+> If you require a plan for multiple users, we recommend checking out our Team Plan: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 
 # Adding your Collaborators
 
@@ -47,7 +49,7 @@ There are two ways to add collaborators to your presentation:
 
 Clicking either of these will bring up the invitation menu. From here, you can enter your collaborators' email addresses and choose **'Editor'** or **'Presenter'** role for them.
 
-> **Note:** You can find out more about the **Presenter** role here: [Multiple Presenters, One Presentation with the Presenter Role]([[presenter-role]])
+> **Note:** You can find out more about the **Presenter** role here: [Multiple Presenters, One Presentation with the Presenter Role](presenter-role.md)
 
 ![](https://help.ahaslides.com/galleryDocuments/edbsn5f18abc537f91f2684cb33483ed8d1e96e6b63a7632aa873255dc7961f37a4287f8fa0c2b9b9e3c367c01f58b7017fe9?inline=true)
 

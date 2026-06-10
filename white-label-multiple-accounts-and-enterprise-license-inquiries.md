@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "If you're considering buying more than 1 AhaSlides license at once, please contact us at hi@ahaslides.com. With the White Label license, there will be no mention of AhaSlides at all, so it's like you're using AhaSlides as your own software."
 ---
+
+# White Label, Multiple Accounts and Enterprise License inquiries
 
 ### Multiple accounts - Team accounts - Enterprise Deals
 

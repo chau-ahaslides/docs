@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "You can change or reset your password for security reasons or reset it if you forget it. Go to My Profile, scroll down to Change password, enter your Current Password and New password, then click Update password."
 ---
+
+# Change or reset your password
 
 You can change or reset your password for security reasons or reset it if you forget it.
 

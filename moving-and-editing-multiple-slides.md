@@ -15,13 +15,14 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/moving-and-editing-multiple-slides
 related_articles: []
 mcp_actions:
-  ```yaml
   move: "move_slide(slide_id: int, presentation_id: int, insert_after_slide_id: int)"
   delete: "update_slide_properties_tool(slides: [{id, type, deleted: true}])"
   skip: "skip_slide_when_presenting(slide_id: int, skip_when_presenting: bool)"
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to move, edit and delete multiple slides at once, both with and without using Grid View."
 ---
+
+# Moving and Editing Multiple Slides
 
 You can edit the design and embedded audio of multiple slides at the same time, either with or without Grid View.
 

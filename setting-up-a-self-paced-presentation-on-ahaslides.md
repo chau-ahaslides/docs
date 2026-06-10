@@ -17,7 +17,10 @@ related_articles: ["turning-on-private-mode-for-your-presentation"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type — self-paced mode configured via presentation settings in web UI"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Find out how your audience can play a quiz or complete a survey in their own time. Choosing the self-paced setting lets your audience proceed through a presentation without a host."
 ---
+
+# Setting up a Self-Paced presentation on AhaSlides
 
 Find out how your audience can play a quiz/complete a survey in their own time.
 
@@ -41,7 +44,7 @@ This is great for:
 
 ![Self-paced setting in Settings tab](https://help.ahaslides.com/galleryDocuments/edbsn13f7b0167b6acfc685f06de9973d5566e2147ba2239bb1a5681968e64bbc1efc4369c565e1667e13b31754941957030c?inline=true)
 
-> **Protip 💡** Remember to set your presentation to **public mode** first before sending your quiz out to participants. You can always set it back to **private mode** whenever you want by pressing the **lock** icon beside your presentation title: [Turning on private mode for your presentation]([[turning-on-private-mode-for-your-presentation]])
+> **Protip 💡** Remember to set your presentation to **public mode** first before sending your quiz out to participants. You can always set it back to **private mode** whenever you want by pressing the **lock** icon beside your presentation title: [Turning on private mode for your presentation](https://help.ahaslides.com/portal/en/kb/articles/turning-on-private-mode-for-your-presentation)
 >
 > ![Public/private mode lock icon](https://help.ahaslides.com/galleryDocuments/edbsn872ebb681aff161c1fdf89830d653161797338f3738248284a758cdbb7b3ccff31e7b536eb2edfc90094e401190c32b4?inline=true)
 

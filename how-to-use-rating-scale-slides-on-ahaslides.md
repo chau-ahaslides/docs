@@ -15,13 +15,14 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-use-rating-scale-slides-on-ahaslides
 related_articles: []
 mcp_actions:
-  ```yaml
   create: "create_slides(slide_type: \"scale\", heading: \"...\", options: [{text}], scale_config: {low_label, high_label, low_value, high_value, must_rate, show_average, show_mid_values})"
   configure: "update_slide_properties_tool(type: \"scaleQuestion\", hasTimeLimit: bool, timeToAnswer: int)"
   delete: "update_slide_properties_tool(type: \"scaleQuestion\", deleted: true)"
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Rating Scale slide is a great one to use if you're looking for more nuanced responses that you can't get from a simple 'yes or no' option on a multiple-choice slide. It allows the host to pose a broad question with specific statements that the audience rates on a sliding scale."
 ---
+
+# How to Use Rating Scale Slides on AhaSlides
 
 Rating Scale slide is a great one to use if you're looking for more nuanced responses that you can't get from a simple 'yes or no' option on a multiple-choice slide.
 

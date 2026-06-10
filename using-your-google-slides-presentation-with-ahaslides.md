@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: "Google Slides import not available via MCP. Use AhaSlides web UI."
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to import your Google Slides presentation into AhaSlides, navigate through it and add interactive elements to bring it to life!"
 ---
+
+# Using your Google Slides Presentation with AhaSlides
 
 You can embed a Google Slides presentation into AhaSlides. Once embedded, you can present it within AhaSlides.
 

@@ -15,11 +15,12 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/reactions-on-ahaslides
 related_articles: []
 mcp_actions:
-  ```yaml
   note: "Reactions are presentation-level settings, not slide-level. No direct MCP slide creation needed."
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "You can now let your audience send reactions during your presentation. Choose which reaction you want your audience to send (Like, Love, Haha, Wow, Sad) via the Settings menu under Other settings."
 ---
+
+# Reactions on AhaSlides
 
 You can now let your audience send reactions during your presentation
 

@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to share your presentation code with your participants so they can start responding to your questions."
 ---
+
+# Sharing your presentation for participants to join
 
 To get your participants to start submitting responses to your slides, you need to share the presentation with them. There are two ways to do that:
 

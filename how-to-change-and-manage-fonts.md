@@ -17,7 +17,10 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to change the font of your AhaSlides presentation and create a customised library of easy-access fonts. You can change the font used throughout your AhaSlides presentation and arrange your favourite fonts for easy, immediate access."
 ---
+
+# How to Change and Manage Fonts
 
 You can change the font used throughout your AhaSlides presentation and arrange your favourite fonts for easy, immediate access.
 

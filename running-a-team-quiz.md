@@ -15,13 +15,14 @@ zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/running-a-team-quiz
 related_articles: []
 mcp_actions:
-  ```yaml
   create: "create_slides(slide_type: \"pick_answer_quiz\", heading: \"...\", options: [{text, correct: bool}])"
   configure: "update_slide_properties_tool(type: \"multipleChoiceQuizQuestion\", minPoint, maxPoint, timeToAnswer)"
   note: "Team quiz settings configured via presentation settings, not slide-level MCP"
-  ```
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Learn how to run a team quiz on AhaSlides. You can set up your quiz to be played in teams, choose scoring rules and team names \u2014 this feature is available on Edu Medium, Edu Large, Pro, and Enterprise plans."
 ---
+
+# Running a Team Quiz
 
 You can set up your quiz to be played in teams. You can also choose the scoring rules and team names.
 

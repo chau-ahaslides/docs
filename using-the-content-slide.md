@@ -18,7 +18,10 @@ mcp_actions:
   create: 'create_slides(slide_type: "content", heading: "...", paragraphs: [])'
   delete: 'update_slide_properties_tool(type: "staticContent", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "The content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout."
 ---
+
+# Using the Content Slide
 
 The content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
 
