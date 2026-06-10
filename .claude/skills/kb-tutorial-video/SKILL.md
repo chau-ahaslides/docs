@@ -77,42 +77,40 @@ Preserve good takes before re-running (`mv out out-<label>`) — each run wipes
 accepted, don't clean up. Known quirk: new poll slides get "This question has
 correct answer(s)" pre-ticked by the app itself.
 
-## Phase 3 — Trim (always; both passes)
+## Phase 3 — Trim (always)
 
-ffmpeg is `node_modules/ffmpeg-static/ffmpeg` (Homebrew isn't writable on
-this machine).
+Use the bundled script — it does both passes in one re-encode:
+`scripts/trim_video.py` (relative to this skill). Run it FROM the recording
+workspace so it finds `node_modules/ffmpeg-static/ffmpeg` (Homebrew isn't
+writable on this machine; set `FFMPEG=` to override).
 
-**Pass A — cut the boot loader.** The app's emoji loader runs anywhere from
-3s to 20s+ at the start despite the recorder's warm-up. Find where the first
-tooltip appears (1fps frames, Read them):
+1. Find where the boot loader ends — the app's emoji loader runs anywhere
+   from 3s to 20s+ at the start despite the recorder's warm-up. Extract 1fps
+   frames and Read them:
 
-```bash
-node_modules/ffmpeg-static/ffmpeg -i out/<take>.webm -t 25 -vf fps=1 /tmp/frames/f%02d.png
-```
+   ```bash
+   node_modules/ffmpeg-static/ffmpeg -i out/<take>.webm -t 25 -vf fps=1 /tmp/frames/f%02d.png
+   ```
 
-Then cut and re-encode — stream copy seeks badly on Playwright's
-sparse-keyframe webms:
+2. Trim (use `--dry-run` first to sanity-check the cut list):
 
-```bash
-node_modules/ffmpeg-static/ffmpeg -ss <loader-end> -i out/<take>.webm \
-  -c:v libvpx-vp9 -crf 32 -b:v 0 -cpu-used 4 -row-mt 1 -an -y out/<slug>-cut.webm
-```
+   ```bash
+   python3 <skill-dir>/scripts/trim_video.py out/<take>.webm out/<slug>-final.webm \
+     --boot-cut <loader-end>
+   ```
 
-**Pass B — cap static stretches.** Heal gaps and loading waits leave long
-fully-static runs (the poll take had 68s of frozen frames in a 98s video).
-Detect strictly so typing/cursor still counts as motion:
+   The script freeze-detects at a strict threshold (typing/cursor still count
+   as motion — only literally identical frames are flagged), merges spans,
+   keeps the first 1.7s + last 0.3s of each static stretch (tooltips stay
+   readable), folds in the boot cut, and re-encodes VP9 once (stream copy
+   seeks badly on Playwright's sparse-keyframe webms).
 
-```bash
-node_modules/ffmpeg-static/ffmpeg -i out/<slug>-cut.webm -vf freezedetect=n=-55dB:d=1.8 \
-  -map 0:v -f null - 2>&1 | grep -oE 'freeze_(start|end): [0-9.]+'
-```
+3. Verify: sample one frame every ~6s and Read them — every step's tooltip
+   must still appear, plus the first frame at 0.5s (no loader).
 
-Merge spans separated by <0.3s, keep first 1.7s + last 0.3s of each (tooltips
-stay readable), cut the middle via
-`select='not(between(t,a,b)+…)',setpts=N/FRAME_RATE/TB` and re-encode with the
-same VP9 flags. Verify: sample one frame every ~6s and Read them — every
-step's tooltip must still appear. This took the poll video from 1:58 raw to
-0:48 final with nothing meaningful lost.
+On the poll take this went 1:58 raw → 0:48 final with nothing meaningful
+lost (68s of the raw video was literally frozen frames: heal gaps, loading
+waits, tooltip holds).
 
 ## Phase 4 — Upload to YouTube
 
