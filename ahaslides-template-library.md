@@ -24,8 +24,6 @@ description: "The AhaSlides Template Library is a time-saving feature that allow
 
 The AhaSlides Template Library is a time-saving feature that allows you to download and customize ready-made templates for your presentations.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn46db14a74afb157c277920f2a15ce79bb59388de09dd31308f76c7ef04d7d1419511ff21589371e43f65ce707884131a?inline=true)
-
 ## Accessing the Template Library
 
 1. **Log in to your AhaSlides account**: Once logged in, navigate to the left-side panel.

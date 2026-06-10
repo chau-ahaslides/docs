@@ -34,8 +34,6 @@ Preview mode is a separate mode in your presentation that allows you to see and 
 
 To access preview mode, head to the presentation editor and click the grey **'Preview'** button in the top bar.
 
-![Preview button in editor top bar](https://help.ahaslides.com/galleryDocuments/edbsn1fa706167f6beefdb5dd12f989d04d248a1439dad5f73ed63a591af712e13783fee75482455215d67bf34a2ccb34c3de?inline=true)
-
 Once in preview mode, you will see two screens:
 
 1. **The 'presenter screen'**. This is what your screen will look like during the presentation. You will be sharing this screen for all of your audience to see during your event.
@@ -43,10 +41,6 @@ Once in preview mode, you will see two screens:
 
 In preview mode, you can use the participant screen on the right to interact with the presenter screen on the left. This way, you can see how your participants will interact with your presentation in your real event.
 
-![Preview mode with presenter and participant screens](https://help.ahaslides.com/galleryDocuments/edbsnf899fa5b014dc376b2073c2cfbc05d95981001ddcd5cc8ef4a3ab828d5b51eca697dc8e1699ee306e4142d794d926d4d?inline=true)
-
 You can use the arrows to the side of the presenter screen, or the left/right arrow key on your keyboard to go through your presentation and test how the interaction works on different slides.
-
-![Navigation arrows in preview mode](https://help.ahaslides.com/galleryDocuments/edbsn30dd0caf2728bc1370636d6365f0e51b09cd9fd98962d493d02704597c138ca1e12dc359acf285f5695cb39fa551b419?inline=true)
 
 Once you've tested out your presentation, head back to the editor by clicking the **'Back to Editor'** button in the top-left corner.

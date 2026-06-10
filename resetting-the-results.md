@@ -26,8 +26,6 @@ Resetting results (or 'clearing the responses') on your presentation means that 
 
 This allows you to reuse presentations for different audiences. Each reset will also **create a new session** in the Report: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
 
-![Reset results overview](https://help.ahaslides.com/galleryDocuments/edbsnb0b4c971ef4c9b562e3f94297e4e9cd2ff1447804b4c46a74c8425e8df980a8071d2692e2fe467a91ba4fc3ec231c16f?inline=true)
-
 ## Video and Interactive demo: Resetting Results (Clearing Responses)
 
 This video explains how to reset the result of your presentation, or a single slide:
@@ -60,13 +58,9 @@ There are 2 ways to reset all the results from your entire presentation.
 
 Click the '**Reset results**' button below the slide canvas.
 
-![Reset results button on canvas](https://help.ahaslides.com/galleryDocuments/edbsnb0b4c971ef4c9b562e3f94297e4e9cd2c88e813181350d4a6d82b183ae598a82c59a18e055c49b9b7a819bc1d769b0f6?inline=true)
-
 2. **From the dashboard:**
 
 On the '**My Presentations**' page, click on the 3 dot icon on the right of your presentation (or right-click on the presentation) and choose 'Reset results'.
-
-![Reset results from dashboard](https://help.ahaslides.com/galleryDocuments/edbsn7159a3ac45761f1ea3354fac1209bcf2684e0c2dd7d4001b3855d060e3da1d2b7b744101d490509769c8cbddbf121442?inline=true)
 
 ## How to Reset Results from a Single Slide
 
@@ -78,10 +72,7 @@ To do this, there are 2 ways:
 
 Navigate to your slide in the left column of the editor, right-click on the slide, then click '**Reset results**'.
 
-![Reset single slide while editing](https://help.ahaslides.com/galleryDocuments/edbsn427711d1655dcce55318f2b2007d2496e9a5bf5069e9ef10b36af414d1aa83ab91b70b1666686a309c799a0aaba7dc9b?inline=true)
-
 **2. While presenting:**
 
 Hover the mouse cursor on the **Menu** icon, then click "**Reset this slide**"
 
-![Reset slide while presenting](https://help.ahaslides.com/galleryDocuments/edbsn427711d1655dcce55318f2b2007d2496ba0c358e062e8a84783c726fdb64dc1f62e218d1b6a073458d6df8374822789a?inline=true)

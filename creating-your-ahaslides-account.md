@@ -24,8 +24,6 @@ description: "Welcome to AhaSlides! Follow these simple steps to create your Aha
 
 Welcome to AhaSlides! Follow these simple steps to create your AhaSlides account, using the method that works best for you.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnd130526f3286c4fbcd18512c96f612a86f87596eab58e90f4b7153987263f9a825c6d4431e7a4d0da9d77e2eed0466fc?inline=true)
-
 ## 1. Create AhaSlides Account by Entering Your Email
 
 1. Go to the [sign-up page](https://presenter.ahaslides.com/pages/register).

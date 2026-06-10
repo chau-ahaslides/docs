@@ -36,4 +36,3 @@ If you are currently on a paid plan but need to increase your participant limit 
 
 You can purchase a one-time plan on the **'One-time'** tab on the [Pricing page](https://ahaslides.com/pricing/).
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn6f46b68c5546e624d57593778403a3be151ce740c139ae76ed738ee767b836753dfe6ffdbc2fb2c79229a2deb352457a?inline=true)

@@ -29,4 +29,4 @@ description: "The Log out everywhere function on AhaSlides will log you out from
 1. While in your AhaSlides account, go to [**My profile**](https://presenter.ahaslides.com/apps/user-profile)
 2. Choose **Log out everywhere else**
 3. Press **Log out** - This will log you out from all other devices and browsers.
-![](https://help.ahaslides.com/galleryDocuments/edbsnc473e408b9e9717347cfce6bf0243121db2c9fb584cb06d61d18ad3b10aa0af9a11b4433308eeb704dabf547728cead2?inline=true)
+

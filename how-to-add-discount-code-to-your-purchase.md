@@ -31,4 +31,3 @@ On the Checkout page, locate the **'Add promotion code'** text right under the *
 **3. Enter the Code**
 Enter your discount code in the field that appears, then click **'Apply'**.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn643d649dde5896f8518812a7a8ccd4233322d0fac72a3c6f149f4e776823278597b3e4f39eb915f137bc8fe1ab6df9bb?inline=true)

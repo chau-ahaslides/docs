@@ -28,4 +28,3 @@ While editing your presentation, go to the **Settings** menu. In there, you will
 
 Choose which reaction you want your audience to send during your presentation (Like, Love, Haha, Wow, Sad)
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn977e54cbf755fba66688975ec785d96a5196ad70c9d0e2930a311318a3b97432b8a0c6fd43bc2b1d99e10d656af89806?inline=true)

@@ -31,4 +31,3 @@ The presenter moreover needs their personal accounts for security reasons. Resul
 
 [Sign up here](https://presenter.ahaslides.com/pages/register) - It's free!
 
-![Interactive presentation software for your meetings and classroom - AhaSlides](https://ahaslides.com/wp-content/uploads/2019/07/audience-voting-2.jpg)

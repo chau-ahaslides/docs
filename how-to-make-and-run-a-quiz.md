@@ -46,8 +46,6 @@ You progress through the quiz, pausing at each slide for players to answer the q
 
 Here you can see the screens of the **quiz host** (on the left-hand computer) and the **quiz player** (on the right-hand phone).
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnfa365e53ee980c08fb39d223bf1325e21eef04d28046db065138b2c7af6b05931497da888f2128f5682c1c719bdf1bd0?inline=true)
-
 ### Step 1: Choosing a Quiz Slide
 
 On the presentation editor, create a new slide and select any of the 5 'quiz' slides as the format for that question (Spinner Wheel is *not* a scored quiz slide).
@@ -68,23 +66,17 @@ Once you have selected your quiz slide, a leaderboard slide will automatically g
 
 You can also use a **Pop-up Leaderboard** by pressing **L** on your keyboard (or clicking the **Trophy icon** in the control bar).
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn5c6d02f5652644a3b77bf3a2e0c22b4561607cee16c6b1827f4fec1ae929e65cf5f52ca395ae289f90e5db2132d64c3e?inline=true)
-
 More details can be found in this article: [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
 
 ### Step 2: Editing a Quiz Slide
 
 Now you are able to edit your slide. Here's what a 'pick answer' slide will look like when it's ready to edit:
 
-![](https://help.ahaslides.com/galleryDocuments/edbsne585ab5d1c28f5be1a5c1a81623dae58ebbfa792d9a474ce56622879b1aa72091eec594974ada28dfdaf53b9ca4316bc?inline=true)
-
 **Write your question** - In the right-hand column, write your question in the box labelled 'Your question'.
 
 **Write your answer options or Generate options** - Write up to 8 answer options for your players to choose from. Mark at least one of the options as correct by checking the box next to it. Or generate answers with AI-powered, helping you quickly create answer options for your questions ([See here for more](generating-questions-and-answers-using-ai-on-ahaslides.md)).
 
 With your question and answer options filled in, your slide will update automatically:
-
-![](https://help.ahaslides.com/galleryDocuments/edbsnf654294c3977f95bc6cd0990b43d70ac6cb9c28120abbe9aafeb7fd69500e28ae3b43a6acf0d034ad58542d5add07f62?inline=true)
 
 **3. Change the settings** - Each quiz slide in your quiz has its own settings. Scroll down in the right-hand column to find the settings for your quiz question:
 
@@ -96,8 +88,6 @@ With your question and answer options filled in, your slide will update automati
 🌘 **Partial Scoring**
 
 When you're setting up a Pick Answer slide, you can mark multiple answers as correct. If you do so, participants will be able to pick more than one answer, and the option for 'Partial scoring' will appear:
-
-![](https://help.ahaslides.com/galleryDocuments/edbsnf654294c3977f95bc6cd0990b43d70ac110bce50dcc26abaa637dd3e670c8a4738ebd9af9b24b2121399209484b6b443?inline=true)
 
 You can then choose if you want to toggle partial scoring On or Off.
 
@@ -114,8 +104,6 @@ You can add hints to your quiz questions to help out players. Only the presenter
 2. Write up to 3 hints in the boxes.
 3. Your first hint will appear in a yellow box below your question. When presenting, you can press the arrow to reveal your next hint.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn74ad38c707745bb83193fdb803ebbb3be2c47baac975bf0d6f69d6ff376b0f407fbc803930a03c2990d82a726cb00b24?inline=true)
-
 Hints will appear both on the presenter's screen and the audience's screens.
 
 💡 **Please note that this feature is currently only available on the Pick Answer slide.**
@@ -130,11 +118,7 @@ When you have created your quiz slides, you can either **invite your players** t
 
 To start, press the purple 'Present' button in the top-right corner of the editor. This will take you into the quiz lobby, where players join your quiz before you start hosting it.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnfb8d02a542bb6953f248ca8785a06a00af02831059edc8dbc0147b709e6e4a4f80d9e371f3e75a7ed1a51b909467712f?inline=true)
-
 In the lobby, your players can [join your quiz](sharing-your-presentation-for-participants-to-join.md) using either the **URL code** or **QR code** in the left-hand column.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn5de66707bfa034f44799c7d7e447fc14a6f7ccb6f8f34118d2fd41bbe3cb6372a8d788f4e91e17e69408f8a52703a6b0?inline=true)
 
 👉 **Important**
 
@@ -144,8 +128,6 @@ To join the quiz, **the host needs to present a quiz slide**. When they do...
 
 - The host will see the **lobby** on their screen. This is where they can see all the players who have joined the quiz and are waiting to play.
 - The player will be asked to **enter their name** and choose an avatar for the quiz. Once they have chosen, they will be shown in the quiz lobby.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsnac47fe8326d7383e8c81b56d3a631e9036c8a8ccf0f75689038227e44155c78c0e704e3a743f269393f9cc3449fd7503?inline=true)
 
 ### Step 4: Presenting a Quiz
 
@@ -161,27 +143,19 @@ Once you've finished presenting your quiz, you can check your presentation repor
 
 Find the report by clicking 'View presentation report' button in the top right toolbar and it will take you to the 'Participant Report', then you will be taken to your report page.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn7c9686a3d17e750219b2506140f39c4055c7933499baaab4ab9d18c62cd2ab1d1b9092f46f53c4a9839a82c29cb6bfa7?inline=true)
-
 [(Click here to see more about reports)](your-ahaslides-presentation-report.md)
 
 ## Other Settings for Quizzes
 
 Aside from the settings you can make on each slide (see step 2 for more details), you can also enable/disable the general settings for the whole quiz. These settings can be found by navigating to **'Settings'** in the right side menu bar, followed by **'General quiz settings'**.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn5e11fb7da80a562eb02eaac974a3e5cdc6ff32e50ada4e8f8017f938c75062333274ead060ba83295b5845785103957c?inline=true)
-
 ### 1. Live chat
 
 When the live chat is turned on, the presenter and participants can exchange messages, inspire friendly competition, and have lively discussions **on the quiz lobby screen**. This interactive feature cultivates a thriving and enthusiastic atmosphere, transforming the quiz into an exciting and bonding experience.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnb4bb780e6bfa9219571bbefb24f8bc3131386b50eb85a5b814f35edaaa78a5bcf9e201f86ba970e533bedbebc28cb566?inline=true)
-
 ### 2. Sound effects:
 
 You can turn on music and sound effect that automatically plays during the quiz lobby screen, quiz slides and each leaderboard screen. You can also toggle this off and on directly on the screen itself in the top left corner.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn2425110cc49e32e8d2b9afd2c450a9c232217707a8b990ed158330f227c19f243c14dd0f4516d3a77e278e9693f8daa5?inline=true)
 
 The music and sound effects are selected by AhaSlides and is **not customisable**.
 
@@ -192,8 +166,6 @@ On a leaderboard slide, a short jingle will play while the leaderboard is rearra
 ### 3. 5s Countdown
 
 When this setting is on, each question is preceded by a 5-second countdown timer, which gives your players time to read the question before they answer.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsnac47fe8326d7383e8c81b56d3a631e90deb8501f92164311ffec3346ec5f48f6eb752355cba5a3634ba9e475e021f496?inline=true)
 
 ### 4. Play as Teams
 
@@ -217,16 +189,12 @@ Please note that this feature will not work in [Self-paced mode](setting-up-a-se
 
 When toggled on, the presenter will see this at the end of each quiz question 👇 This gives them the chance to explain the question in greater detail before revealing how everyone voted in the question.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn79448b086e7f510dda52c677fda3a2f1ceefb789bd82ff482b26d2f599394646fa31fc46d54239220248b8329b9f884d?inline=true)
-
 ### 7. Participant avatars:
 
 This option gives you more control over the quiz experience:
 
 - **Enabled:** Participants will be asked to select an avatar when they join the quiz at the Lobby screen.
 - **Disabled:** Allow participants to join the quiz without avatars.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn5e11fb7da80a562eb02eaac974a3e5cd320973d6767d295e140350cf03d2da0f644b4a6d1d92951f2f309d9a5a907a06?inline=true)
 
 ## Audience-Paced/Self-Paced Quizzes
 
@@ -267,4 +235,3 @@ The count will only reset when the presenter exits presenting mode and clicks **
 
 The presenter can also manually end the quiz timer by hovering the cursor on the timer, then clicking **End now**
 
-![](https://help.ahaslides.com/galleryDocuments/edbsna1e486a068c00b0ed4e41a296aee1440df4dc2da193eb0a8f858444e4f1c0d0a8b924411490dad22344e4109906bbbaa?inline=true)

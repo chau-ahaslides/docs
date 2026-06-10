@@ -30,27 +30,19 @@ An Open Ended slide help you see things from others' perspectives as you get fee
 
 Open-ended questions allow respondents to answer in open text format so that they can answer based on their complete knowledge, feeling, and understanding. It means that the response to this question is not limited to a set of options.
 
-![Open-ended slide example](https://help.ahaslides.com/galleryDocuments/edbsn8cff410cfdb83a641d826493620042afb932702f6970b8ccb15451e2c1097af90f7c0edc580f0a6e98ba58483400bab5?inline=true)
-
 ## How to make an Open Ended question?
 
 ### Step 1: Create your Slide and Write your Question
 
 Start by creating a new slide and selecting the Open Ended slide type from the options. Write your question or statement in the 'your question' box.
 
-![Open ended slide type selection](https://help.ahaslides.com/galleryDocuments/edbsnee505a5d512437a039fba68c4a658397f47a9443b05a4547913bad45a3bfb77577f1e961c3434fc521cec47ac37d3535?inline=true)
-
 ### Step 2: Add Additional fields
 
 You can collect additional info from each response such as the responder's name, team name, etc. Want to know more about Additional fields on AhaSlides? [See here for more](collecting-audience-information.md).
 
-![Additional fields settings](https://help.ahaslides.com/galleryDocuments/edbsn1debfa0af506795b00d53ad555075b32b22a6894f787574b70bb0ecb31c80a76bc4300c68176fe1c55dfa72ff9d54176?inline=true)
-
 ### Step 3: Change your Open Ended slide's Settings
 
 Change the settings of your Open Ended slide to your liking. There are 7 settings that you can change:
-
-![Open ended slide settings panel](https://help.ahaslides.com/galleryDocuments/edbsn068cbf5393ac8341c2ebbe3ba7c3876d732120259fb5e3caf0b1a22f1f06736f4e4d24325e01421c705d11b73e8a6f77?inline=true)
 
 1. **Time limit (available for Edu Medium, Edu Large, Essential, Pro, Enterprise):** This applies a time limit to the slide. When checked, you can choose your time limit between 5 seconds and 20 minutes.
 2. **Hide results (available for Edu Large, Pro, Enterprise):** This hides the submitted responses from the presenter's screen as they're being submitted. On the slide, there will be a button to reveal the responses whenever you want.
@@ -66,8 +58,6 @@ Once you press the 'Present' button, your participants will be able to submit th
 
 You can manually delete any response in the Open Ended slide, simply find that submission and press the 'X' icon to remove the response.
 
-![Deleting a response with the X icon](https://help.ahaslides.com/galleryDocuments/edbsn14a9bd588f445df581152c99575ba85284dd6db88112abe4c6be89b874c3fa193117e4f1f7e2f64aca6365f05083afc5?inline=true)
-
 Like with any slide, you can re-use your Open Ended slide by [clearing its data](resetting-the-results.md).
 
 ## Smart Grouping for Open Ended submissions
@@ -81,7 +71,5 @@ AhaSlides lets you smart group Open-Ended submissions, making it easier for pres
 1. While presenting, go to the bottom of the presenter's screen.
 2. When everyone has submitted their answers, click the **'Group'** icon to cluster similar responses.
 3. Click the icon again to ungroup if needed.
-
-![Smart grouping icon in present mode](https://help.ahaslides.com/galleryDocuments/edbsndf7b21bff49036441862bbeca610147b14f4de6c11b59268884611d61f47b6c0bd8c20c2b8dbe90b9a05d8192314d45a?inline=true)
 
 > **The Open-Ended slide supports unlimited submissions.**

@@ -38,19 +38,13 @@ There are **two ways** you can import your PowerPoint file to AhaSlides:
 
 On the **My Presentations** dashboard, you can click the button labelled '**Import**'. Once you've done this, **a pop-up window** will ask you to browse your computer for your PPT, PPTX or PDF PowerPoint file. You can also drag and drop your file on to the pop-up window:
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn0f9a23a5cb9cfe0bb044c266cc7cb91df820c1963c7f4047dbd06bca762a0a8e6f32c059afb2c8333851cfea139f7453?inline=true)
-
 ### 2. Import on the presentation editor
 
 On the AhaSlides presentation editor, you can import your PowerPoint into your existing presentation. Simply go to the AhaSlides presentation in which you want to add your PowerPoint, then click the button labelled '**Import**'. Once the import is completed, your PowerPoint slides will be added to the end of your presentation.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn7fe28286263c90d0ae242bbeec0cce32761cc46ed7b86143b526f7e5e0095eec5436d55925f8f1e0401f737f4af1b307?inline=true)
-
 ## Import options
 
 After selecting/inserting the file to upload, you will have 3 options:
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn807363b3438a2d7af964808464bb37325d47c876bda5a1fe2ad2a38179357811ea4091dcc4819d2929c822adcef9a498?inline=true)
 
 1. **Import and generate slides with AI**: Import your file as slides, then AI will suggest and insert interactive ones after relevant sections.
 2. **Generate interactive slides**: Use AI to create interactive slides from your file content, without importing the originals.
@@ -70,4 +64,3 @@ The name of each of your PowerPoint slides in AhaSlides will simply be the slide
 
 While you can't make the PowerPoint slides interactive themselves (except for the default emoji reactions), you can [generate slides using AI](generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md), or **place AhaSlides interactive slides in between the slides of your PowerPoint** to encourage interaction from your audience.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnb34eb1a28b45a17ea7dd806cad8a21e15823b6e4a2687779fab56ec3508601a6ad7a015fcafe493caadfc32fd2ca3ee8?inline=true)

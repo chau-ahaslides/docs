@@ -42,14 +42,11 @@ This is great for:
 2. Click on **Who takes the lead**
 3. Choose **Audience (self-paced)**
 
-![Self-paced setting in Settings tab](https://help.ahaslides.com/galleryDocuments/edbsn13f7b0167b6acfc685f06de9973d5566e2147ba2239bb1a5681968e64bbc1efc4369c565e1667e13b31754941957030c?inline=true)
-
 > **Protip 💡** Remember to set your presentation to **public mode** first before sending your quiz out to participants. You can always set it back to **private mode** whenever you want by pressing the **lock** icon beside your presentation title: [Turning on private mode for your presentation](https://help.ahaslides.com/portal/en/kb/articles/turning-on-private-mode-for-your-presentation)
 >
-> ![Public/private mode lock icon](https://help.ahaslides.com/galleryDocuments/edbsn872ebb681aff161c1fdf89830d653161797338f3738248284a758cdbb7b3ccff31e7b536eb2edfc90094e401190c32b4?inline=true)
+> 
 
 ## On the audience's screen
 
 Once you turn on the **Self-paced** feature, your audience will be able to navigate through the slides at their own pace, without the need for a presenter. The **Back and Next navigation bars** can be used to move to the previous or next slide. This feature makes it easy for your audience to follow along with your presentation and complete it on their own time.
 
-![Audience self-paced navigation screen](https://help.ahaslides.com/galleryDocuments/edbsn49b3905a1cd7c5bce1ce6739385ac74c71b4c2c400a12642dada9562bcb33b250ac9262f9aad7814147a16aae0e4251c?inline=true)

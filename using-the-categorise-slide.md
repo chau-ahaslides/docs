@@ -42,8 +42,6 @@ In the "Content" tab of the Categorise slide, you'll find the following fields:
   - Add Options: Enter the options and separate them by commas.
   - Add Category: Click this button to add more categories if needed.
 
-![Categorise slide content tab setup](https://help.ahaslides.com/galleryDocuments/edbsnc8225e3a81fa590d8e7bd00e64de8ed1a3d81474d602b20607b8caf129137cabf94a34b39607726369593caa1a41a0ab?inline=true)
-
 ### Adjusting Settings
 
 - **Points**: Set the maximum and minimum number of points that can be earned for this question. If the "Faster answers get more points" box is unchecked, all correct answers will receive the maximum points.
@@ -55,7 +53,5 @@ In the "Content" tab of the Categorise slide, you'll find the following fields:
 ## Audience Screen
 
 Your audience will be able to see the categories and options on their devices and select the correct category for each option.
-
-![Audience view of categorise slide](https://help.ahaslides.com/galleryDocuments/edbsn4c30243c30aed1bff459835eb2dd9b957f2f932fd244f7ff1d25d6417dcec2d9bfdfc5fb90341e3569ac5a82a2efe02f?inline=true)
 
 By using Categorise quiz slides, you can create more dynamic and informative presentations that keep your audience interested and engaged.

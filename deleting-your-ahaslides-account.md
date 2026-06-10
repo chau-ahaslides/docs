@@ -41,4 +41,3 @@ If you don't wish to delete your account entirely, you can consider changing you
 5. Choose a reason for account deletion and confirm by typing your email address connected to your account.
 6. Click **Delete account**
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn18ba34fe36cf9cff193b6dc0b988dfa3605b514bce1dae515426a93d73509ae9ee8d84d03939c3e1008393322ea7432f?inline=true)

@@ -34,8 +34,6 @@ AhaSlides currently offers multiple language options for its presenter app inter
 
 Once you have selected your preferred language, the interface language will be updated accordingly.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn4481f96c1edb5927ffd9f3ad15b983e128273bc6c5b58aa085e06ed14fc3c422cadf3156d3ca4e2e953a70f233ddda88?inline=true)
-
 Currently, the presenter app is available in **27 languages**:
 
 Čeština, Deutsch, Nederlands, English, Español, Français, Hrvatski, Íslenska, Italiano, Latviešu, Lietuvių, Magyar, Norsk, Polski, Português, Română, Shqip, Slovenčina, Srbija (Latinica), Tiếng Việt, Български, Eλληνικά, Pусский, Српски (Ћирилица), 中文, 日本語, 한국어
@@ -45,8 +43,6 @@ Currently, the presenter app is available in **27 languages**:
 You can choose which language to display to your audience when they join the presentation from their devices.
 
 To change the display language to your audience, locate the 'Settings' menu and find 'Presentation Language'.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn5339374b351345896ad1cce4b2cbece76dd179832821db083ad1fd71014df5fc338bfae644718c9439d492f85e05261b?inline=true)
 
 Thanks to contributions from our amazing user community, AhaSlides presentation language is now available in **32 languages**:
 

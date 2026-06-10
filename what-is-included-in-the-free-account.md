@@ -24,8 +24,6 @@ description: "AhaSlides offers a free plan with access to a range of features fo
 
 AhaSlides offers a free plan with access to a range of features for as long as you like. Here's what you can enjoy with our free plan:
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn6ad4ec1e1ce626e5821da4d705f4349ded6225fdbf581eeee1cfef5299651ac70b4f225ef297572e47f5ca243a81a4aa?inline=true)
-
 1. **Up to fifty live participants:** Engage with up to 50 live participants during your presentations.
 2. **No monthly participant limit:** You can have as many participants as you like, as long as 50 or fewer participants join your quiz simultaneously.
 3. **Unlimited presentations per month:** There's no limit to the number of presentations you can create and use.

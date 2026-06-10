@@ -41,8 +41,6 @@ If you want questions from your audience to come at a certain time in your prese
 
 To set this up, simply add a new slide and select the Q&A slide as your slide type.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn9a4b2b9d902845e83a17b1ad3ed0d4c48e41d4c8c210a4ab9129bb92390dc6497e56f6cac0f2fc47fe51f3c66f5de435?inline=true)
-
 After that, all you have to do is add a heading for the slide and choose some of the settings (see an explanation for each setting below).
 
 **Q&A Questions Across Multiple Q&A Slides**
@@ -59,15 +57,9 @@ If you want your audience to send you questions whenever they think of them, not
 
 If you select this option, you will see a **counter of all unanswered questions** that have been submitted during your presentation.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn38dc50f978ba53c742800a669a4c0dc3bd620f2798e8eb06581219d0a9ac38b3b712990bd964447111c9030a9dcc2367?inline=true)
-
 To see and answer those questions right away, **click on that counter**. The Q&A interface will pop up and you can begin to organise and answer questions the same way you do on a Q&A slide.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsna4173a404a0b86a9bd48e39d7320e2234d4f75f856116d4352a601045c8b4df0b1d4ded74544684c48bdc7f09d61e3c2?inline=true)
-
 To set this up, click '**Settings**' in the right menu bar, followed by '**Q&A with your audience**'. Under the heading **'When can the audience send you questions?'**, select **'On all slides'**. From here you can also change all of the settings for your Q&A (see an explanation for each setting below).
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn132fc74358c37e20322457fd6c69f8110021fe7a39ef6afe249bd9ab029c332ca769b9bf7b3011362d255ec22828ebed?inline=true)
 
 It's possible to select the **On all slides** setting and have a dedicated Q&A slide at the same time. This way, your audience can send you questions throughout your presentation and you can address them all when you reach the slide.
 
@@ -85,8 +77,6 @@ When you open up the Q&A interface, you will see any unanswered questions in the
 
 5. **Answered** - All the questions you've **Marked as answered**. Once you're done answering a question, you can mark it as answered by hovering over it on the interface and clicking the button labelled 'mark as answered'.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn1405ae285c7180d64c0501a1be2792898d0c9f0486c6e14187f70d147efd25ebe76f527bf7f29bf28ae186279846d64e?inline=true)
-
 ## Q&A Settings
 
 Regardless of whether you hold your Q&A on all slides or only on Q&A slides, you will be able to change the same settings. You can either find these settings in the '**Content**' tab of the Q&A slide, or in '**Settings**' > '**Q&A with your Audience**'.
@@ -102,8 +92,6 @@ You can use the profanity filter to ensure that swear words submitted by the aud
 You can use the moderation feature to **approve and dismiss questions from your audience before they are submitted** to your Q&A slide.
 
 Turning this feature on will provide you with a link to **moderation mode**, which you can open in a different tab, or a dedicated moderator can open on their own computer, to filter incoming questions from your audience.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsnbad0fb803ba8c78cfba1b695cf9aa4724b143d682991dde0d87307c69429c2f7a572120e2c02fc9bb4c8e5e5a4a0876b?inline=true)
 
 Simply click the **'Approve'** button on the right-hand side to allow the question through to your presentation. Click the **'Dismiss'** button to erase it.
 

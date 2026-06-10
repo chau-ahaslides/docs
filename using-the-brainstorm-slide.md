@@ -39,8 +39,6 @@ On the AhaSlides editor, click *new slide*, choose the **brainstorm** slide and 
 3. Specify how many votes each participant will get to vote on others' ideas.
 4. Choose whether or not to allow participants to put forward one or multiple ideas.
 
-![Brainstorm slide setup](https://help.ahaslides.com/galleryDocuments/edbsn35b8480483113c026c542d29df8c6bdf14af3f3c5707176f5fdae28841186e7925eeacd5fe71abd21e333c7a9e067ac5?inline=true)
-
 When you present your Brainstorm slide, you'll take your audience through **3 different stages:**
 
 ### Stage 1: Submitting Ideas
@@ -48,8 +46,6 @@ When you present your Brainstorm slide, you'll take your audience through **3 di
 Your participants write their ideas and also offer up any other information you requested in the 'additional fields'. The ideas will be shown in the order they are submitted on the presenter's screen.
 
 Up to 200 ideas can be submitted.
-
-![Stage 1 - Submitting Ideas](https://help.ahaslides.com/galleryDocuments/edbsn7b1a9ed6806cf0ef918190765d9093c370f6ec43b411d967e35e70dadcdee16392f6c7e6251c6d3d7d4ffcc73091654c?inline=true)
 
 *Note:* You can choose to show or hide submissions on the screen by clicking the eye icon under 'submission'.
 
@@ -64,8 +60,6 @@ You can change how many votes each participant gets in the settings of your brai
 ### Stage 3: Result
 
 With all the votes in, you can click the button labelled *Next: Result* to order the submissions by the number of votes they received.
-
-![Stage 3 - Results](https://help.ahaslides.com/galleryDocuments/edbsn8ba8cd942f3beb73883fd13d6b5e45c0cda581326fdd3a407dd0c76f1092f8e1aef48e0e0aed68f9ecab4ef994c9740d?inline=true)
 
 You can click on any of the ideas to enlarge it on the screen.
 

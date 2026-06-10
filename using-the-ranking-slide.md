@@ -35,8 +35,6 @@ Results update instantly as responses come in, helping you quickly identify grou
 
 ## How to set up the Ranking slide
 
-![Ranking slide setup overview](https://help.ahaslides.com/galleryDocuments/edbsn699ee2522d2ca89148395a940d7f994db387d8f4783c6f19929a1af7d35d9515da66e244b5796260b420e8190359933b?inline=true)
-
 ### Create and set up the slide
 
 1. Open your presentation in AhaSlides.
@@ -70,8 +68,6 @@ Change the settings of your Ranking slide to your liking. There are 4 settings t
 
 ### How the ranking works
 
-![Ranking scoring explanation](https://help.ahaslides.com/galleryDocuments/edbsn5ec3baa587a107dcce7c48060a5523af995e93a7d1599fbaa7d944670aaf7e41c4a7944a8e4389cff6cc142e1be97e6a?inline=true)
-
 Ranking slide uses a weighted scoring system (Borda count):
 
 - Higher-ranked items get more points
@@ -82,8 +78,6 @@ All points are combined to determine the final order. The top result may not hav
 **For example:** In a list of 10 items, your #1 choice gets 10 points, #2 gets 9 points, #3 gets 8 points, and so on down to your last choice getting 1 point. We add up all the points from every participant, and the item with the highest total score wins.
 
 ## On the participant's side
-
-![Participant ranking screen on mobile](https://help.ahaslides.com/galleryDocuments/edbsnc6966b62bffba42441e37e0971875b35a8be51e36169ae28a19f11be8eaa5e576fe63e84616953688fcfcff542b45a30?inline=true)
 
 1. Join the presentation via link or QR code
 2. Select the items they want to rank. Tap an item again or drag it back to the list to unselect it

@@ -20,7 +20,6 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "Learn how to set up Slide Audio and Presentation Audio on AhaSlides. Enhance your presentations with slide or presentation-level audio, along with sound effects for greater control over the experience."
 ---
 
-
 Enhance your presentations on AhaSlides with slide or presentation-level audio, along with sound effects for greater control over the experience.
 
 > **Note:**
@@ -42,8 +41,6 @@ While you present, you will find the controls in the top-left corner of the slid
 
 > **Special case:** The **Lobby screen** for quiz (as shown in the image below) will always have its own music. It can only be turned off by clicking the **Musical note** icon
 
-![Lobby screen music](https://help.ahaslides.com/galleryDocuments/edbsnf9101f7c8b285ad31d251754c5e2168fe688aeb7bbbb807fa03ee581d808dd51d77dbd8ba0f0e978726f35c6a9427a8b?inline=true)
-
 It is possible to have both **Presentation Audio** and **Slide Audio** set up in your presentation. In this case, the **Slide Audio** will **take priority** over the **Presentation Audio** when you present that slide, but any slides without **Slide Audio** will revert to playing the **Presentation Audio**.
 
 > **Note:** Please note that it is not possible to set up audio on the **Spinner Wheel**, **YouTube slide**, and **QR Code slide**.
@@ -53,11 +50,7 @@ It is possible to have both **Presentation Audio** and **Slide Audio** set up in
 1. Select the slide on which you would like to play the audio and click the **Audio** section on the right side of the editing screen.
 2. Under the **Slide** tab, either click the dropdown menu to select a song from the AhaSlides audio library or press the **Upload** button to embed your own audio (**mp3** format only with a maximum file size of **15mb**).
 
-![Slide audio tab](https://help.ahaslides.com/galleryDocuments/edbsn366356a2bbce6902ec3cf09f6ce5f0f3cf5a69d0a64c811384451f4b55554e83d8cb2f354710422fef736206d667eede?inline=true)
-
 3. Once you have selected a slide audio track or uploaded your own, you will see checkboxes for the audio settings.
-
-![Audio settings checkboxes](https://help.ahaslides.com/galleryDocuments/edbsna9413a01420f88db30d1d21db31eca3e8615840833c42d543850ada5947b68b3045df96c0477d7d3ee3e91b9efc8bfc8?inline=true)
 
 - **Autoplay** - Check this box to have audio play immediately once you arrive at the slide in the presentation.
 - **On repeat** - Check this box to have the audio automatically play again once it finishes.
@@ -69,8 +62,6 @@ It is possible to have both **Presentation Audio** and **Slide Audio** set up in
 
 1. Select any slide in your presentation and click the **Audio** section on the right side of the editing screen.
 2. Under the **Presentation** tab, select a song from the dropdown menu.
-
-![Presentation audio tab](https://help.ahaslides.com/galleryDocuments/edbsne688e2c2f24ea01eefb5087b5574f1ed04da6c3053fb08f7d93446ab9afa26c4ffa0c58aca4a7a2ee3656f861aa779c2?inline=true)
 
 > **Note:**
 > At the moment, it is **not yet possible** to **upload your own audio file** as **Presentation Audio**.
@@ -102,4 +93,3 @@ Sound effects can play on both the presenter's and participants' sides, dependin
 1. Select any slide in your presentation and click the **Audio** section on the right side of the editing screen.
 2. Under the **Presentation** tab, click on the toggles under **Sound effects**, next to **On the presenting screen**, or **On participants' devices** to enable/disable them.
 
-![Sound effects toggles](https://help.ahaslides.com/galleryDocuments/edbsn8dce171f4e9b34405c4324fcc8c743f41a3d9084d5b9133c07e3d10fc37111bf20082face5c2ec48286dfcf510e3cf28?inline=true)

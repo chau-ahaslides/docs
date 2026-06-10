@@ -31,13 +31,9 @@ You can change or reset your password for security reasons or reset it if you fo
 3. Enter your **Current Password** and **New password**
 4. Click **Update password**
 
-![](https://help.ahaslides.com/galleryDocuments/edbsn628db2435e877cb0f42dc6d87fd4446597f82cbd68e1b3823f39705b14099fbdc2a84fdfe40b94a5047c260809d0db36?inline=true)
-
 That's it. You've successfully updated your password!
 
 ## Reset your password
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn89d6de5b690f0fdc0f26f6e4618ac5c84d1be4eff1eefdb80292972546a214ebe1d39b2461132c99ef3245703d3a97a6?inline=true)
 
 1. Go to this link: [https://presenter.ahaslides.com/pages/forgot-password](https://presenter.ahaslides.com/pages/forgot-password)
 2. Type in your email address using **only lowercase letters**. Capital letters might prevent the system from recognizing your address.

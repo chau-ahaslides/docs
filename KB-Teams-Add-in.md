@@ -21,8 +21,6 @@ Once the add-in is installed, you access your AhaSlides library from a dedicated
 2. Click **+** at the top to add a tab
 3. Search for **AhaSlides** and select it
 
-![AhaSlides in the Teams app store](Teams%20add-in/image-1777645811832.png)
-
 4. Sign in with your AhaSlides account
 
 ### In a Teams meeting (from the toolbar)
@@ -42,8 +40,6 @@ Click **AhaSlides** in the meeting toolbar. The panel opens on the right side of
 - Each item shows the number of slides and recent participants
 - Tap any folder to browse presentations inside it
 
-![AhaSlides panel showing presentation library in Teams](Teams%20add-in/image-1777645825362.png)
-
 ### Starting a presentation
 Click **Share** on any presentation to go live. Your slides appear in the main meeting view, visible to all participants.
 
@@ -52,8 +48,6 @@ Use the **← →** arrows or click any thumbnail in the slide strip at the bott
 
 ### Presenter notes
 A **Notes** panel sits to the right of the slide. Click to add or view speaker notes for the current slide — only you can see these.
-
-![Presenter view showing slide navigation, slide strip, and Notes panel](Teams%20add-in/image-1777645770322.jpg)
 
 ### Switching presentations
 The AhaSlides panel stays open alongside your presentation. Browse and switch to a different presentation at any time without leaving the meeting.
@@ -70,8 +64,6 @@ Participants open the AhaSlides panel on their own devices — no join code need
 | **List** | A scrollable list of all slides in the deck |
 | **Q&A** | Questions from the audience, sortable by Top / New / Answered / My questions |
 | **Profile** | Participant name and settings |
-
-![Participant panel showing the current slide, Ask a question button, and emoji reactions](Teams%20add-in/image-1777645787717.jpg)
 
 ### Responding to slides
 Participants interact directly from the panel:
@@ -90,8 +82,6 @@ At the bottom of the participant panel, five emoji reactions (👍 ❤️ 😂 �
 
 ### Ask a question
 An **Ask a question** button is always visible on the participant panel, regardless of which slide is active. This lets participants submit Q&A questions at any point — not just on a dedicated Q&A slide.
-
-![Q&A slide showing participant submitting a question and the presenter's live question board](Teams%20add-in/image-1777645796594.jpg)
 
 ---
 

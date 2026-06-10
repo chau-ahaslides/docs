@@ -31,11 +31,7 @@ Click on the presentation you would like to share. On the editor....
 1. Head to the **Share** menu in the top toolbar
 2. Under **Send a copy**, select **Send to...**
 
-![](https://help.ahaslides.com/galleryDocuments/edbsne6f6142c3b4c15647c74e9c3dea514ff4709232655ad694889b8e725f3a00ab81f7892a55c030c61a9fe713ea0596822?inline=true)
-
 Here you will see a list of the people in your team. Simply check the box of the member (or members) you would like to send the presentation to, then click **Send**.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn6ce0243800dbd01f1289834d3c953f84597e21a4bf8de8a8bedc3440df00b46cd9eaf49dfc7a5c033e7fa69c50e79c38?inline=true)
 
 Some of the other features here are...
 
@@ -47,15 +43,11 @@ Some of the other features here are...
 
 You can also do this from the dashboard by clicking the 3-dot menu on the right of the presentation name, then clicking **Share**. From here you can simply follow the steps above.
 
-![](https://help.ahaslides.com/galleryDocuments/edbsncbe01c5507b1560bedb690b1d35579ea84b00afe8b0a74b2f7c3fe6580aa404866f5fbdff066523a6b2398073087e8a1?inline=true)
-
 ## Where does the Presentation go?
 
 Once you've sent a copy of your presentation to your team member(s), it will arrive in their **Personal Workspace** in the usual **My Presentations** tab.
 
 A green icon on the thumbnail will specify that this presentation was received from you.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsna9604109fe0941fa2395eb310c506f3ec4ac8daf840c5af684782890522605dd234a863fc381db28c685628e2f2450e2?inline=true)
 
 💡 To see how to manage your team members, please check out [this article](sharing-a-presentation-with-specific-team-members.md).
 

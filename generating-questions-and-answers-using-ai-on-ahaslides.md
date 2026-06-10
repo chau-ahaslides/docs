@@ -35,8 +35,6 @@ AhaSlides now offers AI-powered answer generation for quizzes and poll helping y
 3. **Select a Generated Question**
    Under 'Your Question,' AI-generated questions will appear based on your presentation name. Simply choose the question you'd like to ask your audience.
 
-![AI-generated questions appearing under Your Question field](https://help.ahaslides.com/galleryDocuments/edbsn91f4361255ac1c1c817e3b654f85825e58f23aa0d2fbb402cd65cbac9bca17d325816ab12015859876a735802ec81865?inline=true)
-
 > Currently, AI question generation is available on all quiz slides.
 
 ## How to Generate Answers Using AI
@@ -47,8 +45,6 @@ AhaSlides now offers AI-powered answer generation for quizzes and poll helping y
    In the 'Content' tab, type the question you'd like to ask your audience.
 3. **Generate Answer Options**
    Click the **Generate options** button. This will activate the AI to produce suitable answer choices for your question.
-
-![Generate options button on quiz/poll slide](https://help.ahaslides.com/galleryDocuments/edbsn05ab80a472243476eef99835a458273e513b95f4c3c2c84c3d8959899e464466fac10ece0361f45e5095910096c4c390?inline=true)
 
 > AI answer generation is available on all quiz and poll slides.
 

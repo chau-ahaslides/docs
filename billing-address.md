@@ -26,8 +26,6 @@ Add billing address and other information into your receipt.
 
 **Here's how:**
 
-![](https://help.ahaslides.com/galleryDocuments/edbsndd9ddb8836427ac4aec3b4e341e60c85e1464bdb327faa11941cba87e2381fad10e1d39113067b0f922de98a53efc79d?inline=true)
-
 1. Log in to your account.
 2. Go to *'My Profile'* or use [this link](https://presenter.ahaslides.com/apps/user-profile)
 3. Fill in the *'Billing Address'* section

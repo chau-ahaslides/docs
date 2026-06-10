@@ -34,4 +34,3 @@ With the White Label license, there will be no mention of AhaSlides at all, so i
 
 > 📹 [Watch video](https://form.typeform.com/to/j2O9GXjI?typeform-medium=embed-sdk&typeform-embed=embed-widget&typeform-source=help.ahaslides.com&typeform-embed-id=4x3ed)
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnddd5587a5f1bd5055457a698b255dd4346a7d764fc9b1eb9ad2c6beb610f92405c014259105070af97e0252c994f52df?inline=true)

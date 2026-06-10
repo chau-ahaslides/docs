@@ -31,11 +31,7 @@ description: "AhaSlides YouTube Slides let you play YouTube videos on both the p
 2. Copy that YouTube link
 3. Paste the link of the Youtube video you want to insert to **YouTube link**
 
-![](https://help.ahaslides.com/galleryDocuments/edbsnc08947bbb419b8bb9c821b6e8b1cffcaaf67c693fea8bce36a491c3b537f705c9182dcad5620439669ca2a2e72bca866?inline=true)
-
 Remember to check the box **Also show on audience's smartphones** if you want to show the YouTube video to be shown on the audience's smartphones.
-
-![](https://help.ahaslides.com/galleryDocuments/edbsn9de3500cddf9f68993777dfa777020aef69cfcdfa567956e227543a6d2bbf084961f7c965b8087e71197b97a8fbe9374?inline=true)
 
 *Please note that your audience will need to click the Play button on the video themselves.*
 
