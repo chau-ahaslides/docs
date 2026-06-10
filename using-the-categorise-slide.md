@@ -26,8 +26,8 @@ description: "The Categorise slide is a quiz type where participants sort items 
 
 The Categorise slide turns sorting into a live quiz. Participants drag items into the right category buckets on their phones while results appear on your presenter screen in real time — no clickers, no paper, no chaos.
 
-{% embed url="https://www.youtube.com/watch?v=pNq9w5Mf7l0" %}
-How to create a Categorise quiz slide on AhaSlides — quick tutorial (0:50)
+{% embed url="https://www.youtube.com/watch?v=b1OqaLN21Vg" %}
+How to create a Categorise quiz slide on AhaSlides — quick tutorial (1:06)
 {% endembed %}
 
 ## How the Categorise slide works
