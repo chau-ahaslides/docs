@@ -1,8 +1,8 @@
-# Welcome
+# Welcome to the AhaSlides knowledge base
 
-Welcome to the **AhaSlides Knowledge Base** — your guide to creating interactive presentations with live polls, quizzes, word clouds, Q\&A and more.
+Everything you need to create interactive presentations with live polls, quizzes, word clouds, Q\&A and more — explained step by step.
 
-## New to AhaSlides?
+## New to AhaSlides
 
 Start here:
 
@@ -16,6 +16,6 @@ Start here:
 
 Use the sidebar to explore articles on slide types, presenting, branding, team features, plans and billing.
 
-## Need more help?
+## Need more help
 
-Visit the live help center at [help.ahaslides.com](https://help.ahaslides.com) or contact support from your AhaSlides dashboard.
+Visit the live help center at [help.ahaslides.com](https://help.ahaslides.com) or contact support from your AhaSlides dashboard — we're happy to help.
