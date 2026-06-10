@@ -110,7 +110,7 @@
 
 ### using-the-brainstorm-slide
 **Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** A brainstorm slide lets participants put forward ideas and vote for their favourites, guiding audiences through submitting ideas, voting, and viewing results.
+**Summary:** A Brainstorm slide lets participants put forward ideas and vote for their favourites, guiding audiences through submitting ideas, voting, and viewing results.
 **MCP:** `create_slides(slide_type: "brainstorm", heading: "...")` | `update_slide_properties_tool(type: "brainstormActivity", limitChoice: int)`
 **File:** `using-the-brainstorm-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-brainstorm-slide
 

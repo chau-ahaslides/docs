@@ -52,7 +52,7 @@ Those fonts you selected will now be available in the '**Text**' dropdown menu.
 
 ## How Fonts Work with the Content Slide
 
-The content slide has its own small font library, which is displayed in the top left corner of the editor when editing text.
+The Content slide has its own small font library, which is displayed in the top left corner of the editor when editing text.
 
 However, it is still possible to change to a font in your font library by selecting the '**Design**' tab and finding your preferred font in the '**Text**' dropdown menu.
 

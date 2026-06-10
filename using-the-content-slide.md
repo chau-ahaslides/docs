@@ -9,7 +9,7 @@ permission: ALL
 last_updated: 2025-10-03
 tags: ["add image", "powerpoint slide", "content", "content slide", "animation"]
 keywords: ["content", "content slide", "add image", "powerpoint slide"]
-summary: The content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
+summary: The Content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
 plan_required: All
 zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000012795111
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-content-slide
@@ -18,22 +18,22 @@ mcp_actions:
   create: 'create_slides(slide_type: "content", heading: "...", paragraphs: [])'
   delete: 'update_slide_properties_tool(type: "staticContent", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
-description: "The content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout."
+description: "The Content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout."
 ---
 
 # Using the Content Slide
 
-The content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
+The Content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
 
 ## How does the Content Slide work?
 
-The content slide is a non-interactive slide, meaning that your participants will see the slide on their phones, but cannot interact with it (besides sending reactions).
+The Content slide is a non-interactive slide, meaning that your participants will see the slide on their phones, but cannot interact with it (besides sending reactions).
 
 This slide works in **blocks**, just like a normal PowerPoint slide. You can add content within the blocks and move those blocks around freely to lay out the slide exactly how you want.
 
 > **Content Slide on smaller screens:**
 >
-> Please note that the content slide only works on laptops and PCs with a **minimum screen width of 1180 px**.
+> Please note that the Content slide only works on laptops and PCs with a **minimum screen width of 1180 px**.
 >
 > If you are using a laptop or PC but still see this message 👇 it is because your screen width is below 1180 px.
 >
@@ -45,14 +45,14 @@ This slide works in **blocks**, just like a normal PowerPoint slide. You can add
 
 ## Editing the Content Slide
 
-The content slide comes with two blocks as default. To edit...
+The Content slide comes with two blocks as default. To edit...
 
 1. **a block**, simply click the block once. This will allow you to move and rotate the block, as well as give you the options to *duplicate* the block and *delete* it.
 2. **the content within a block**, click the block twice. This will allow you to alter the text, formatting, colour, alignment, add images and more.
 
 ## Adding New Blocks
 
-To add a new block to your content slide, you can use any of the **5 icons at the top of the slide**.
+To add a new block to your Content slide, you can use any of the **5 icons at the top of the slide**.
 
 1. Clicking the **text icon** will create another text block.
 2. Clicking the **image icon** will open the uploading screen. From here you can upload an image from your computer or clipboard, or find one in the inbuilt library.
@@ -66,7 +66,7 @@ To add a new block to your content slide, you can use any of the **5 icons at th
 
 ## Positioning Blocks
 
-Blocks on the content slide have a **layered structure**. This means that a block 'on top' of another block will obscure it. You can change the layered structure of each block by bringing it 'forward' or sending it 'backward'.
+Blocks on the Content slide have a **layered structure**. This means that a block 'on top' of another block will obscure it. You can change the layered structure of each block by bringing it 'forward' or sending it 'backward'.
 
 You can also use the **alignment guides** to perfectly align your blocks along the vertical or horizontal centre. Simply drag your block into the middle of the canvas and it will snap into position along either the vertical line, the horizontal line, or both (if directly in the centre).
 
@@ -84,5 +84,5 @@ To remove any animation, simply select '**No animation**.'
 
 ## The Content Slide Preview
 
-The content slide is the only slide type that, in the left column on the editor, shows a **full preview** of the content within it. This is to help navigation of presentations with multiple content slides.
+The Content slide is the only slide type that, in the left column on the editor, shows a **full preview** of the content within it. This is to help navigation of presentations with multiple Content slides.
 

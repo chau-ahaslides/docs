@@ -108,12 +108,12 @@ Here are example prompts to get started:
 | Create a Presentation | *"Create a new AhaSlides presentation called 'Q2 Team Update' with a welcome slide and an agenda."* |
 | Add a Poll or Quiz | *"Add a multiple choice question to my presentation asking 'What's your biggest challenge at work?' with four options."* |
 | Build a Quiz | *"Create a 5-question trivia quiz about our product features for a team training session."* |
-| Add a Word Cloud | *"Add a word cloud slide asking participants 'What does great collaboration look like to you?'"* |
+| Add a Word Cloud | *"Add a Word Cloud slide asking participants 'What does great collaboration look like to you?'"* |
 | Edit Existing Slides | *"Update the title of slide 3 in my presentation to 'Quarterly Highlights'."* |
 | Rearrange Slides | *"Move the leaderboard slide to right after the last quiz question."* |
 | Change the Look | *"Show me all available themes, then apply a dark one to my presentation."* |
 | Analyze Audience Responses | *"How many people participated in my 'Sales Kickoff 2025' presentation? Show me the quiz scores breakdown."* |
-| Skip a Slide | *"Skip the brainstorm slide during the live session — I want to keep it but not show it today."* |
+| Skip a Slide | *"Skip the Brainstorm slide during the live session — I want to keep it but not show it today."* |
 
 # Tips for Best Results
 

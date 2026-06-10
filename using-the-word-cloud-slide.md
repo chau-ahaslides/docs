@@ -40,7 +40,7 @@ Check out this video for a 1-minute explainer on how to set up a live word cloud
 
 #### Step 1: Create your slide and question
 
-Start by creating a new slide and selecting the word cloud slide type from the options. Write your question or statement in the 'your question' box.
+Start by creating a new slide and selecting the Word Cloud slide type from the options. Write your question or statement in the 'your question' box.
 
 #### Step 2: Change your word cloud settings
 
@@ -50,7 +50,7 @@ Change the settings of your word cloud to your liking. There are 6 settings that
 
 **2. Time limit**: This applies a time limit to the slide. When checked, you can choose your time limit between 5 seconds and 20 minutes.
 
-While running the word cloud slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
+While running the Word Cloud slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
 
 **3. Close submission**: Close submissions for specific slides can be useful if you need to clarify a question before your audience submits their answers, or for any other reason where you do not want the participants to submit their answers to a question at that moment.
 

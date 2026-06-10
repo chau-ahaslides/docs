@@ -66,7 +66,7 @@ The *low label* and the *high label* are the lowest and highest values respectiv
 
 Introduces a time limit for the question, chosen by the host, between 5 seconds and 20 minutes.
 
-While running the rating scale slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
+While running the Rating Scale slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
 
 ### #5 – Close submission:
 

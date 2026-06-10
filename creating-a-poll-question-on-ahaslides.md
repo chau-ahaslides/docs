@@ -9,7 +9,7 @@ permission: ALL
 last_updated: 2026-06-10
 tags: ["image", "voters", "multiple", "ahaslides", "multiple choice", "anonymous", "survey", "poll", "vote"]
 keywords: []
-summary: A poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes.
+summary: A Poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes.
 plan_required: All
 zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000844051
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/creating-a-poll-question-on-ahaslides
@@ -19,12 +19,12 @@ mcp_actions:
   configure: 'update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")'
   delete: 'update_slide_properties_tool(type: "pollQuestion", deleted: true)'
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
-description: "A poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes."
+description: "A Poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes."
 ---
 
 # Creating a Poll question on AhaSlides
 
-A poll slide is a quick and easy way to get live opinions in poll format from your audience.
+A Poll slide is a quick and easy way to get live opinions in poll format from your audience.
 
 Watch how to create a poll from start to finish — including previewing it before you go live:
 
@@ -38,7 +38,7 @@ Below is an interactive demo, which will help you experience this function:
 Interactive demo: try the Poll slide
 {% endembed %}
 
-## How does a poll slide work?
+## How does a Poll slide work?
 
 In a poll, you ask a question and provide between 2 and 30 answer options. Your audience vote for one or more of the answer options on their phones. The poll is updated live, so on the presenter screen you see a chart displaying the results. Once a participant has voted on their phone, they'll see the results on their screen too — you can see both views side by side in the Preview section of the video above.
 
@@ -49,7 +49,7 @@ In a poll, you ask a question and provide between 2 and 30 answer options. Your 
 3. Fill in your question in the **Your question** box on the right.
 4. Fill in or upload images as your answer options. You can have between 2 and 30 answer options.
 
-This is the **minimum** you need to do for any poll slide to work. Want to see exactly what your audience will see before going live? Hit **Preview** in the top-right corner — [here's how previewing works](how-to-preview-and-test-your-presentation.md). When your slide is ready for your audience to vote on, [invite your audience to your presentation](sharing-your-presentation-for-participants-to-join.md) and press the 'Present' button in the top-right corner.
+This is the **minimum** you need to do for any Poll slide to work. Want to see exactly what your audience will see before going live? Hit **Preview** in the top-right corner — [here's how previewing works](how-to-preview-and-test-your-presentation.md). When your slide is ready for your audience to vote on, [invite your audience to your presentation](sharing-your-presentation-for-participants-to-join.md) and press the 'Present' button in the top-right corner.
 
 ## Other Settings on your Poll
 
@@ -69,6 +69,6 @@ When presenting, you can click the "Submission closed" icon to enable the audien
 
 - **Limit time to answer** - Allows you to set a time limit for answering for your audience. This can be between 5 seconds and 20 minutes.
 
-While running the poll slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
+While running the Poll slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
 
 **💡** *__Note:__ If you're using a multiple choice slide for a do-at-home survey, you can allow your participants to cast their votes in the poll without needing you to present it live. For more info, [check out our article on self-paced presentations](setting-up-a-self-paced-presentation-on-ahaslides.md).*

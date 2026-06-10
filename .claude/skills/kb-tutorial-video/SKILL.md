@@ -175,3 +175,55 @@ republishes automatically. Never edit articles in the GitBook UI.
 canonical Zoho article keeps the old copy — tell the user the two have
 diverged so the fixes can be ported to Zoho (per INDEX.md, never push local
 .md bodies to Zoho blindly; images/videos live there).
+
+## Article Writing Checklist
+
+Apply these rules to every article you write or update.
+
+### Slide type names are proper nouns — always capitalise
+
+AhaSlides slide type names are proper nouns and must be capitalised in prose.
+The first letter of the slide-type name is always upper-case when used as the
+direct name of the slide.
+
+| Wrong | Correct |
+|---|---|
+| the poll slide | the Poll slide |
+| a brainstorm slide | a Brainstorm slide |
+| the content slide | the Content slide |
+| the word cloud slide | the Word Cloud slide |
+| rating scale slides | Rating Scale slides |
+
+**Full list of slide type proper nouns** (derived from SUMMARY.md):
+Poll, Brainstorm, Categorise, Content, Correct Order, Match Pairs, Open Ended,
+Ranking, Rating Scale, Spinner Wheel, Word Cloud, Q&A, Idea Board, Pick Answer,
+YouTube.
+
+**Scope of the rule:** the construction `<article> <type> slide` (e.g. "a Poll
+slide", "the Brainstorm slide") and `<article> <type> type` (e.g. "the Word
+Cloud type"). Generic category descriptors such as "quiz slide" (meaning any
+scored question) are NOT slide-type names and remain lowercase.
+
+The rule applies to all prose fields: article body, `summary:`, `description:`,
+headings, and inline notes. It does NOT apply to YAML `tags:` / `keywords:`
+arrays (those are lowercase by convention).
+
+### Lint script — run before every commit
+
+A lint script catches violations before they reach the repo:
+
+```bash
+./scripts/lint-slide-names.sh
+```
+
+Exits 0 if clean; exits 1 and prints offending lines if violations are found.
+Run it on staged files before committing. To add it as a pre-commit hook:
+
+```bash
+echo '#!/bin/sh
+cd "$(git rev-parse --show-toplevel)" && ./scripts/lint-slide-names.sh' \
+  > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
+
+The script is conservative (low false-positive rate): it only flags the
+`the/a/an <type> slide/type` construction and skips generic words like "quiz".
