@@ -1,0 +1,138 @@
+{
+  "steps": [
+    {
+      "id": "poll-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's create your first Poll!",
+      "description": "A poll slide is a quick and easy way to get live opinions from your audience. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "poll-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to start a fresh deck for your poll.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "poll-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Poll slide type",
+      "description": "Select 'Poll' from the slide type list. Your audience will vote on their phones and results update live on screen.",
+      "targetSelector": "[aria-label=\"Poll\"]",
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Poll\"]",
+        "hint": "Click 'Poll' to continue"
+      }
+    },
+    {
+      "id": "poll-type-question",
+      "path": "/presentation/*",
+      "title": "Fill in your question",
+      "description": "Type the question you want your audience to vote on.",
+      "targetSelector": "[data-testid=\"slide-title-editor-with-latex-div\"]",
+      "action": {
+        "type": "input",
+        "value": "Which day works best for our team meeting?",
+        "hint": "Type your question, then press Enter or click away"
+      }
+    },
+    {
+      "id": "poll-option-1",
+      "path": "/presentation/*",
+      "title": "Add the first answer option",
+      "description": "Fill in your answer options — you can have between 2 and 30 of them.",
+      "targetSelector": "#multipleChoiceIndex0",
+      "action": {
+        "type": "input-match",
+        "selector": "#multipleChoiceIndex0",
+        "value": "Monday",
+        "hint": "Type 'Monday' as the first option"
+      }
+    },
+    {
+      "id": "poll-option-2",
+      "path": "/presentation/*",
+      "title": "Add the second answer option",
+      "description": "Add at least one more option for your audience to choose from.",
+      "targetSelector": "#multipleChoiceIndex1",
+      "action": {
+        "type": "input-match",
+        "selector": "#multipleChoiceIndex1",
+        "value": "Wednesday",
+        "hint": "Type 'Wednesday' as the second option"
+      }
+    },
+    {
+      "id": "poll-preview-open",
+      "path": "/presentation/*",
+      "title": "Rehearse with Preview",
+      "description": "Want to see how your poll will look before going live? Click 'Preview' to rehearse your presentation — no audience needed.",
+      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-preview-button\"]",
+        "hint": "Click 'Preview' to continue"
+      }
+    },
+    {
+      "id": "poll-preview-vote",
+      "path": "/presentation/*",
+      "title": "This is your audience's phone",
+      "description": "The participant screen on the right is exactly what your audience sees. Watch — we'll pick an answer and submit it, just like a participant would.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 8000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-quiz-option\"]:has-text(\"Monday\")",
+          "label": "pick Monday on participant screen",
+          "pauseAfterMs": 1800
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-quiz-submit-button\"]",
+          "label": "submit the vote",
+          "pauseAfterMs": 2200
+        }
+      ]
+    },
+    {
+      "id": "poll-preview-results",
+      "path": "/presentation/*",
+      "title": "Results update live",
+      "description": "And on the presenter screen, the chart moves the moment the vote lands. This is what your audience watches on the big screen — updating in real time as everyone votes.",
+      "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 3000,
+      "action": null
+    },
+    {
+      "id": "poll-preview-exit",
+      "path": "/presentation/*",
+      "title": "Head back to the editor",
+      "description": "Done rehearsing? Click the back arrow to return to the editor.",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+        "hint": "Click the back arrow to continue"
+      }
+    },
+    {
+      "id": "poll-present",
+      "path": "/presentation/*",
+      "title": "Ready to go live!",
+      "description": "That's the minimum for any poll slide — and you can always rehearse with Preview first. When it's showtime, press 'Present' in the top-right corner: your audience joins on their phones and results update live as they vote.",
+      "targetSelector": ".aha-button-present",
+      "action": null
+    }
+  ]
+}

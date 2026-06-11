@@ -1,0 +1,99 @@
+{
+  "steps": [
+    {
+      "id": "cat-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build a Categorise quiz slide!",
+      "description": "A Categorise slide turns sorting tasks into a live quiz — participants drag items into the right buckets on their phones while results update on your screen. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "cat-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to start a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "cat-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Categorise slide type",
+      "description": "Select 'Categorise' from the slide type picker. You'll find it in the Quiz section — it's the one that turns sorting into a scored game.",
+      "targetSelector": "[aria-label=\"Categorise\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Categorise\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click 'Categorise' to continue"
+      }
+    },
+    {
+      "id": "cat-type-question",
+      "path": "/presentation/*",
+      "title": "Write your question",
+      "description": "Type the sorting challenge for your audience. Keep it clear — they'll need to know exactly which items belong in which bucket.",
+      "targetSelector": "[aria-label=\"Question text\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": "[aria-label=\"Question text\"]",
+        "value": "Sort these animals into the correct group",
+        "hint": "Type your question, then click away"
+      }
+    },
+    {
+      "id": "cat-options-shared",
+      "path": "/presentation/*",
+      "title": "Add the items to sort",
+      "description": "Enter all the items participants will drag into categories. Separate them with commas — AhaSlides splits them automatically.",
+      "targetSelector": "[data-testid=\"editor-side-right-categorise-options-input\"]:first-of-type",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": "[data-testid=\"editor-side-right-categorise-options-input\"] input",
+        "value": "Lion, Eagle, Salmon, Frog, Whale, Hawk",
+        "hint": "Type the items, separated by commas"
+      }
+    },
+    {
+      "id": "cat-category-a",
+      "path": "/presentation/*",
+      "title": "Name your first category",
+      "description": "Give Category A a name — this is the first bucket participants will sort items into.",
+      "targetSelector": "[placeholder=\"Enter category name\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": "[placeholder=\"Enter category name\"]",
+        "value": "Land",
+        "hint": "Type a category name"
+      }
+    },
+    {
+      "id": "cat-add-category",
+      "path": "/presentation/*",
+      "title": "Add a second category",
+      "description": "Click 'Add Category' to create as many buckets as you need. You can have up to 8 categories in one slide.",
+      "targetSelector": "[data-testid=\"editor-side-right-categorise-add-category-button\"]",
+      "pauseMs": 1500,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-side-right-categorise-add-category-button\"]",
+        "hint": "Click 'Add Category' to continue"
+      }
+    },
+    {
+      "id": "cat-present",
+      "path": "/presentation/*",
+      "title": "Ready to go live!",
+      "description": "That's all it takes to build a Categorise quiz slide. When you're ready for showtime, hit 'Present' — your audience joins on their phones and sorts items into categories in real time.",
+      "targetSelector": ".aha-button-present",
+      "action": null
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "voice": "Shelley (English (US))",
+  "video_duration_sec": 40.18,
+  "generated_round": 6,
+  "pronunciation_map": {
+    "live (verb, /laɪv/)": "lyve",
+    "categorise (/ˈkæt.ə.ɡə.raɪz/)": "cat-a-guh-rize"
+  },
+  "notes": "Pronunciation fixes applied via phonetic respelling in tts_text only; display_text (on-screen/article copy) is unchanged. Rate varies per step to keep TTS audio within each step's visual window. Shelley (English (US)) chosen over Samantha for upbeat/energetic tone.",
+  "steps": [
+    {
+      "id": "cat-welcome",
+      "start_sec": 0.0,
+      "window_sec": 3.0,
+      "rate": 200,
+      "display_text": "A Categorise slide turns sorting into a live quiz.",
+      "tts_text": "A cat-a-guh-rize slide turns sorting into a lyve quiz.",
+      "audio_duration_sec": 3.01
+    },
+    {
+      "id": "cat-create",
+      "start_sec": 3.0,
+      "window_sec": 6.8,
+      "rate": 178,
+      "display_text": "Click New Presentation to start a fresh deck.",
+      "tts_text": "Click New Presentation to start a fresh deck.",
+      "audio_duration_sec": 3.04
+    },
+    {
+      "id": "cat-pick-type",
+      "start_sec": 9.8,
+      "window_sec": 4.0,
+      "rate": 190,
+      "display_text": "Select Categorise from the slide type picker in the Quiz section.",
+      "tts_text": "Select cat-a-guh-rize from the slide type picker in the Quiz section.",
+      "audio_duration_sec": 3.87
+    },
+    {
+      "id": "cat-type-question",
+      "start_sec": 13.8,
+      "window_sec": 7.0,
+      "rate": 178,
+      "display_text": "Type your sorting challenge in the question field.",
+      "tts_text": "Type your sorting challenge in the question field.",
+      "audio_duration_sec": 3.20
+    },
+    {
+      "id": "cat-options-shared",
+      "start_sec": 20.8,
+      "window_sec": 6.0,
+      "rate": 178,
+      "display_text": "Enter the items participants will sort, separated by commas.",
+      "tts_text": "Enter the items participants will sort, separated by commas.",
+      "audio_duration_sec": 4.64
+    },
+    {
+      "id": "cat-category-a",
+      "start_sec": 26.8,
+      "window_sec": 5.0,
+      "rate": 178,
+      "display_text": "Give your first category a name — this is the bucket they'll sort items into.",
+      "tts_text": "Give your first category a name — this is the bucket they'll sort items into.",
+      "audio_duration_sec": 4.48
+    },
+    {
+      "id": "cat-add-category",
+      "start_sec": 31.8,
+      "window_sec": 4.4,
+      "rate": 178,
+      "display_text": "Click Add Category to create as many buckets as you need.",
+      "tts_text": "Click Add Category to create as many buckets as you need.",
+      "audio_duration_sec": 3.90
+    },
+    {
+      "id": "cat-present",
+      "start_sec": 36.2,
+      "window_sec": 4.0,
+      "rate": 185,
+      "display_text": "Your slide is ready. Hit Present to go live with your audience.",
+      "tts_text": "Your slide is ready. Hit Present to go lyve with your audience.",
+      "audio_duration_sec": 3.97
+    }
+  ],
+  "mix_command": "ffmpeg -i trimmed-visual.webm -i s01.aiff -i s02.aiff -i s03.aiff -i s04.aiff -i s05.aiff -i s06.aiff -i s07.aiff -i s08.aiff -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=3000|3000[a2];[3:a]adelay=9800|9800[a3];[4:a]adelay=13800|13800[a4];[5:a]adelay=20800|20800[a5];[6:a]adelay=26800|26800[a6];[7:a]adelay=31800|31800[a7];[8:a]adelay=36200|36200[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k narrated.webm"
+}

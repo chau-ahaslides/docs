@@ -20,7 +20,10 @@ healed-scenario filename for remote mode.
 
 ## Phase 1 — Author the scenario
 
-Name it `scenarios/<article-slug>.json` so scenarios map 1:1 to articles.
+Scenarios live IN THIS SKILL at `scenarios/<article-slug>.json` (1:1 with
+articles, version-controlled with the KB — commit scenario changes alongside
+the article). Point `SCENARIO_FILE` straight at the repo path when recording;
+no copy into the workspace is needed.
 Derive the steps from what the article teaches; write tooltip `description`
 copy for the viewer in brand voice (load `aha-branding-tone-voice` when
 drafting it). Schema `{"steps":[...]}`; each step: `id`, `path` (route glob,
@@ -47,20 +50,45 @@ Constraints from how the app's onboarding overlay works:
   `[data-testid="editor-middle-back-to-editor-button"]`, then a final
   tooltip-only step on `.aha-button-present`. Preview only adds
   `?preview=true`, so `path` stays `/presentation/*`.
-- **Interacting INSIDE the preview's participant screen** (e.g. casting a vote
-  so the presenter chart reacts on camera): the participant pane is a
-  cross-origin iframe (`audience.sandbox.ahaslide.com`), which the overlay
-  can't anchor to — so the interaction can't be a tour step. Instead add
-  `previewInteractions` to a hold step (recorder-side feature, local patch).
-  The recorder glides the visible cursor to the in-frame element (boundingBox
-  is in page coords) and dispatches the click inside the frame document, so
-  the overlay backdrop can't swallow it. Preview is sandboxed — votes don't
-  go live. Known audience-app testids: `audience-quiz-option`,
-  `audience-quiz-submit-button`, `audience-reactions-v2-*-button`.
-- **Use TWO anchored tooltip steps around preview interactions** so viewers'
-  eyes are directed before things happen (one tooltip-only step per pane —
-  the pane wrappers live in the host document, so the overlay CAN anchor to
-  them: `.iframe-wrapper-audience` and `.iframe-wrapper-presenter`):
+### Demonstrating audience participation in Preview (any slide type)
+
+The participant pane in Preview is a cross-origin iframe
+(`audience.sandbox.ahaslide.com`) which the overlay can't anchor to — so
+in-audience actions can't be tour steps. Instead the recorder performs them
+via a step's `previewInteractions` array (recorder-side feature, local
+patch): it glides the visible cursor to the in-frame element (boundingBox is
+in page coords) and dispatches the click inside the frame document, so the
+overlay backdrop can't swallow it. Preview is sandboxed — submissions don't
+go live.
+
+Recipe for a NEW slide type:
+1. Find a sandbox deck containing that slide — recording runs leave decks
+   behind; deck ids are in the recorder's `navigated →` log lines (or create
+   one via AhaSlides MCP `create_slides`).
+2. Discover the audience-side selectors with the bundled probe:
+
+   ```bash
+   cd ~/AhaSlides/onboarding-videos && source <plugin>/test-env.sh && \
+   node <skill-dir>/scripts/probe_preview_audience.mjs <deckId>
+   ```
+
+   It prints every interactive element in the audience iframe (testids/text)
+   plus the host-side anchor wrappers, and drops /tmp/preview-probe.png.
+3. Add the new type's testids to the table below so the next run skips
+   discovery.
+
+Known audience-app selectors (append as you discover more):
+
+| Slide type | Interact with |
+|---|---|
+| Poll / quiz answers | `[data-testid="audience-quiz-option"]:has-text("<option>")`, then `[data-testid="audience-quiz-submit-button"]` |
+| Any slide | reactions: `[data-testid="audience-reactions-v2-<like|heart|laugh|wow|sad>-button"]` |
+| App tabs | `[data-testid="audience-tabs-<presentation|review|feedback|profile>-tab"]` |
+
+**Use TWO anchored tooltip steps around preview interactions** so viewers'
+eyes are directed before things happen (one tooltip-only step per pane —
+the pane wrappers live in the host document, so the overlay CAN anchor to
+them: `.iframe-wrapper-audience` and `.iframe-wrapper-presenter`):
 
   ```json
   { "id": "x-preview-vote", "title": "This is your audience's phone",
