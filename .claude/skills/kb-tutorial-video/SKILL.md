@@ -47,6 +47,31 @@ Constraints from how the app's onboarding overlay works:
   `[data-testid="editor-middle-back-to-editor-button"]`, then a final
   tooltip-only step on `.aha-button-present`. Preview only adds
   `?preview=true`, so `path` stays `/presentation/*`.
+- **Interacting INSIDE the preview's participant screen** (e.g. casting a vote
+  so the presenter chart reacts on camera): the participant pane is a
+  cross-origin iframe (`audience.sandbox.ahaslide.com`), which the overlay
+  can't anchor to — so it can't be a tour step. Instead add
+  `previewInteractions` to the hold step (recorder-side feature, local patch):
+
+  ```json
+  "previewInteractions": [
+    { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-option\"]:has-text(\"Monday\")",
+      "label": "pick Monday", "pauseAfterMs": 1200 },
+    { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-submit-button\"]",
+      "label": "submit", "pauseAfterMs": 3000 }
+  ]
+  ```
+
+  The recorder glides the visible cursor to the in-frame element (boundingBox
+  is in page coords) and dispatches the click inside the frame document, so
+  the overlay backdrop can't swallow it. Preview is sandboxed — votes don't
+  go live. Known audience-app testids: `audience-quiz-option`,
+  `audience-quiz-submit-button`, `audience-reactions-v2-*-button`.
+- **Flake to watch for:** occasionally the preview exit lands the app in
+  Present mode instead of the editor — the final step's tooltip then floats
+  unanchored over a fullscreen slide. Check the recorder's `final URL` line
+  (no `?presenting=true`) and the step-10/99-final shots; if it happened,
+  just re-record (1-in-3-ish occurrence, cause not yet pinned down).
 
 Selector discovery when the guide's table doesn't cover a control: write a
 probe script IN the workspace dir (crib from `probe2.mjs`), fresh profile dir,
