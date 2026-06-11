@@ -1,0 +1,59 @@
+{
+  "steps": [
+    {
+      "id": "pin-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build a Pin on Image slide!",
+      "description": "A Pin on Image slide lets participants tap directly on a custom image to mark their answer — perfect for maps, diagrams, and spatial feedback. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "pin-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to start a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "pin-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Pin on Image slide type",
+      "description": "Select 'Pin on Image' from the slide type picker. You'll find it in the Unscored section — it's the one that turns any image into an interactive pin-dropping activity.",
+      "targetSelector": "[aria-label=\"Pin on Image\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Pin on Image\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click 'Pin on Image' to continue"
+      }
+    },
+    {
+      "id": "pin-type-question",
+      "path": "/presentation/*",
+      "title": "Write your question",
+      "description": "Type a spatial prompt for your audience — something that tells them exactly where to look and what to mark.",
+      "targetSelector": "[aria-label=\"Question text\"]",
+      "pauseMs": 1500,
+      "action": {
+        "type": "input-match",
+        "selector": "[aria-label=\"Question text\"]",
+        "value": "Where on this map is your hometown?",
+        "hint": "Type your question, then click away"
+      }
+    },
+    {
+      "id": "pin-present",
+      "path": "/presentation/*",
+      "title": "Ready to go live!",
+      "description": "That's all it takes to build a Pin on Image slide. Upload your own image in the Content panel, then hit 'Present' when you're ready — your audience joins on their phones and pins their answers directly on the image in real time.",
+      "targetSelector": ".aha-button-present",
+      "pauseMs": 1500,
+      "action": null
+    }
+  ]
+}
