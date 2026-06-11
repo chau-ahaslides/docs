@@ -24,6 +24,7 @@
 | [how-to-use-rating-scale-slides-on-ahaslides](#how-to-use-rating-scale-slides-on-ahaslides) | Using Slide Types | All | ✅ Yes |
 | [using-qa](#using-qa) | Using Slide Types | Free | ✅ Yes |
 | [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Using Slide Types | All | ✅ Yes |
+| [using-the-pin-on-image-slide](#using-the-pin-on-image-slide) | Using Slide Types | All | No |
 | [collecting-audience-information](#collecting-audience-information) | Features | Pro | ✅ Yes |
 | [how-to-collaborate-on-presentations-and-folders](#how-to-collaborate-on-presentations-and-folders) | Features | All | ✅ Partial |
 | [moving-and-editing-multiple-slides](#moving-and-editing-multiple-slides) | Features | All | ✅ Yes |
@@ -154,6 +155,11 @@
 **Plan:** All | **MCP Actions:** No
 **Summary:** Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
 **File:** `how-to-show-or-hide-the-audience-get-slides-button.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
+
+### using-the-pin-on-image-slide
+**Plan:** All | **MCP Actions:** No
+**Summary:** The Pin on Image slide lets participants tap or click to place a pin anywhere on a custom image — great for heatmaps, location spotting, diagram labelling, and spatial feedback.
+**File:** `using-the-pin-on-image-slide.md`
 
 ### embedding-ahaslides-to-your-website
 **Plan:** All | **MCP Actions:** No
