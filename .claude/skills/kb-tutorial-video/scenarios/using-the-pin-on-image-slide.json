@@ -47,10 +47,86 @@
       }
     },
     {
+      "id": "pin-add-image",
+      "path": "/presentation/*",
+      "title": "Add your image",
+      "description": "Click the image area in the Content panel to open the image library. You can upload your own file or pick from thousands of free stock photos.",
+      "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
+      "pauseMs": 2000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "pinOnImage/settings",
+          "selector": "[data-testid=\"pin-on-image-slide-image-upload-button\"]",
+          "label": "open image picker",
+          "pauseAfterMs": 2500
+        }
+      ],
+      "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
+          "label": "click Stock Photos tab",
+          "pauseAfterMs": 4000
+        },
+        {
+          "selector": "[data-testid=\"editor-stock-photo-image-item\"]",
+          "label": "select first stock photo",
+          "pauseAfterMs": 3000
+        },
+        {
+          "selector": "[data-testid=\"crop-image-save-button\"]",
+          "label": "save cropped image",
+          "pauseAfterMs": 3000
+        }
+      ]
+    },
+    {
+      "id": "pin-preview-open",
+      "path": "/presentation/*",
+      "title": "Rehearse with Preview",
+      "description": "Click Preview to see exactly how your slide will look to participants — no audience needed.",
+      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-preview-button\"]",
+        "hint": "Click 'Preview' to continue"
+      }
+    },
+    {
+      "id": "pin-preview-audience",
+      "path": "/presentation/*",
+      "title": "This is your audience's phone",
+      "description": "The participant screen on the right shows your image with the question. Your audience opens this on their phone and taps directly on the image to drop a pin — wherever they think the answer is.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 10000,
+      "action": null
+    },
+    {
+      "id": "pin-preview-results",
+      "path": "/presentation/*",
+      "title": "Pins appear live on the big screen",
+      "description": "On the presenter screen, every pin lands in real time as responses come in. You see exactly where your audience marked their answers — overlaid on your image.",
+      "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 3000,
+      "action": null
+    },
+    {
+      "id": "pin-preview-exit",
+      "path": "/presentation/*",
+      "title": "Head back to the editor",
+      "description": "Done previewing? Click the back arrow to return to the editor.",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+        "hint": "Click the back arrow to continue"
+      }
+    },
+    {
       "id": "pin-present",
       "path": "/presentation/*",
       "title": "Ready to go live!",
-      "description": "That's all it takes to build a Pin on Image slide. Upload your own image in the Content panel, then hit 'Present' when you're ready — your audience joins on their phones and pins their answers directly on the image in real time.",
+      "description": "That's all it takes — a question, a stock photo or your own image, and you're set. Hit 'Present' when it's showtime and your audience joins on their phones to pin their answers in real time.",
       "targetSelector": ".aha-button-present",
       "pauseMs": 1500,
       "action": null

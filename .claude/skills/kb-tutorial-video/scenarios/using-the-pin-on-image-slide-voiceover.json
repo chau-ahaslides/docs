@@ -3,51 +3,83 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 22.0,
-  "generated_round": 1,
+  "video_duration_sec": 40.4,
+  "generated_round": 2,
   "pronunciation_map": {},
-  "notes": "ElevenLabs Bella voice — natural English spelling throughout. 'Pin on Image' pronounced naturally. Levels: mean ~-17.8dB, max ~-1.2dB. Video 22s, audio tail 23.5s (last clip overruns by ~1.5s — acceptable fade at end).",
+  "notes": "Round 2 — added image library + preview/audience segments. 40s video. Steps: welcome, create, pick-type, type-question, add-image (picker→stock→save), preview-open, preview-audience, preview-results, preview-exit (no VO), present.",
   "steps": [
     {
       "id": "pin-welcome",
       "start_sec": 0.0,
-      "window_sec": 6.0,
+      "window_sec": 5.0,
       "display_text": "A Pin on Image slide lets participants tap anywhere on a custom image to mark their answer.",
       "tts_text": "A Pin on Image slide lets participants tap anywhere on a custom image to mark their answer.",
-      "audio_duration_sec": 6.03
+      "audio_duration_sec": 5.5
     },
     {
       "id": "pin-create",
-      "start_sec": 6.5,
-      "window_sec": 3.0,
+      "start_sec": 5.5,
+      "window_sec": 2.5,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
-      "audio_duration_sec": 2.59
+      "audio_duration_sec": 2.5
     },
     {
       "id": "pin-pick-type",
-      "start_sec": 9.5,
-      "window_sec": 5.0,
+      "start_sec": 8.0,
+      "window_sec": 4.0,
       "display_text": "Select Pin on Image from the Unscored section of the slide type picker.",
       "tts_text": "Select Pin on Image from the Unscored section of the slide type picker.",
-      "audio_duration_sec": 4.68
+      "audio_duration_sec": 4.0
     },
     {
       "id": "pin-type-question",
-      "start_sec": 14.5,
-      "window_sec": 4.5,
+      "start_sec": 12.0,
+      "window_sec": 3.0,
       "display_text": "Type your spatial question — tell participants exactly what to pin.",
       "tts_text": "Type your spatial question — tell participants exactly what to pin.",
-      "audio_duration_sec": 4.36
+      "audio_duration_sec": 3.5
+    },
+    {
+      "id": "pin-add-image",
+      "start_sec": 15.5,
+      "window_sec": 9.0,
+      "display_text": "Click the image area to open the library, then browse Stock Photos and pick one — it's that easy.",
+      "tts_text": "Click the image area to open the library, then browse Stock Photos and pick one — it's that easy.",
+      "audio_duration_sec": 6.5
+    },
+    {
+      "id": "pin-preview-open",
+      "start_sec": 25.0,
+      "window_sec": 3.5,
+      "display_text": "Click Preview to rehearse before going live.",
+      "tts_text": "Click Preview to rehearse before going live.",
+      "audio_duration_sec": 2.5
+    },
+    {
+      "id": "pin-preview-audience",
+      "start_sec": 28.5,
+      "window_sec": 5.0,
+      "display_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
+      "tts_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
+      "audio_duration_sec": 5.0
+    },
+    {
+      "id": "pin-preview-results",
+      "start_sec": 33.5,
+      "window_sec": 3.5,
+      "display_text": "Pins appear live on the presenter screen as responses come in.",
+      "tts_text": "Pins appear live on the presenter screen as responses come in.",
+      "audio_duration_sec": 3.5
     },
     {
       "id": "pin-present",
-      "start_sec": 19.0,
-      "window_sec": 4.5,
-      "display_text": "Upload your image in the Content panel, then hit Present to go live.",
-      "tts_text": "Upload your image in the Content panel, then hit Present to go live.",
-      "audio_duration_sec": 4.49
+      "start_sec": 37.5,
+      "window_sec": 3.5,
+      "display_text": "That's all it takes. Hit Present when you're ready to go live.",
+      "tts_text": "That's all it takes. Hit Present when you're ready to go live.",
+      "audio_duration_sec": 3.5
     }
   ],
-  "mix_command": "ffmpeg -i pin-on-image-trimmed.webm -i s01.mp3 -i s02.mp3 -i s03.mp3 -i s04.mp3 -i s05.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6500|6500[a2];[3:a]adelay=9500|9500[a3];[4:a]adelay=14500|14500[a4];[5:a]adelay=19000|19000[a5];[a1][a2][a3][a4][a5]amix=inputs=5:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k pin-on-image-narrated.webm"
+  "mix_command": "ffmpeg -y -i pin-on-image-r2-trimmed.webm -i s01.mp3 -i s02.mp3 -i s03.mp3 -i s04.mp3 -i s05.mp3 -i s06.mp3 -i s07.mp3 -i s08.mp3 -i s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=5500|5500[a2];[3:a]adelay=8000|8000[a3];[4:a]adelay=12000|12000[a4];[5:a]adelay=15500|15500[a5];[6:a]adelay=25000|25000[a6];[7:a]adelay=28500|28500[a7];[8:a]adelay=33500|33500[a8];[9:a]adelay=37500|37500[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k pin-on-image-r2-narrated.webm"
 }

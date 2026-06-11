@@ -19,8 +19,8 @@ description: "The Pin on Image slide lets participants tap or click to place a p
 
 The Pin on Image slide invites participants to tap or click directly on a custom image to place a pin — their answer is a position, not a word or number. Use it to mark locations on a map, identify a part of a diagram, heatmap a product screenshot, or highlight anything that benefits from a spatial response. Results show all pins clustered live on the presenter screen.
 
-{% embed url="https://www.youtube.com/watch?v=EZVA1-D-L7U" %}
-How to create a Pin on Image slide on AhaSlides — quick tutorial (0:22)
+{% embed url="https://www.youtube.com/watch?v=HlMpefBG9pQ" %}
+How to create a Pin on Image slide on AhaSlides — quick tutorial (0:41)
 {% endembed %}
 
 ## How the Pin on Image slide works
@@ -39,9 +39,16 @@ In the editor, click **New slide** (top-left) and select **Pin on Image** from t
 
 Click into the **Your question** field in the Content panel and type the prompt you want participants to respond to. Be specific about where you want them to pin — for example: "Where would you put the primary CTA on this page?" or "Click on the region you think had the highest sales."
 
-### 3. Upload your image
+### 3. Add your image
 
-Click the **Add image** area in the Content panel. Choose an image from your device or drag one in. Any JPEG or PNG up to 15 MB works — use a clear, high-contrast image so participants can see what they're pinning on.
+Click the **Add image** area in the Content panel to open the image library. You have four options:
+
+- **Upload** — drag in a file or browse from your device (JPEG, PNG, GIF, SVG — up to 15 MB).
+- **My Images** — pick from files you've already uploaded to AhaSlides.
+- **Stock Photos** — search thousands of free Unsplash photos and select one directly — no upload needed.
+- **GIFs & Stickers** — add an animated image for lighter activities.
+
+After selecting or uploading, the crop tool opens so you can frame the image exactly as you want it before saving.
 
 > **Tip:** Diagrams, maps, product mockups, photos, and floor plans all work well. The image fills the participant screen, so landscape-orientation images tend to read better than portrait.
 
