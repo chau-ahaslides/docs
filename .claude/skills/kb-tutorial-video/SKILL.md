@@ -50,23 +50,34 @@ Constraints from how the app's onboarding overlay works:
 - **Interacting INSIDE the preview's participant screen** (e.g. casting a vote
   so the presenter chart reacts on camera): the participant pane is a
   cross-origin iframe (`audience.sandbox.ahaslide.com`), which the overlay
-  can't anchor to — so it can't be a tour step. Instead add
-  `previewInteractions` to the hold step (recorder-side feature, local patch):
-
-  ```json
-  "previewInteractions": [
-    { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-option\"]:has-text(\"Monday\")",
-      "label": "pick Monday", "pauseAfterMs": 1200 },
-    { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-submit-button\"]",
-      "label": "submit", "pauseAfterMs": 3000 }
-  ]
-  ```
-
+  can't anchor to — so the interaction can't be a tour step. Instead add
+  `previewInteractions` to a hold step (recorder-side feature, local patch).
   The recorder glides the visible cursor to the in-frame element (boundingBox
   is in page coords) and dispatches the click inside the frame document, so
   the overlay backdrop can't swallow it. Preview is sandboxed — votes don't
   go live. Known audience-app testids: `audience-quiz-option`,
   `audience-quiz-submit-button`, `audience-reactions-v2-*-button`.
+- **Use TWO anchored tooltip steps around preview interactions** so viewers'
+  eyes are directed before things happen (one tooltip-only step per pane —
+  the pane wrappers live in the host document, so the overlay CAN anchor to
+  them: `.iframe-wrapper-audience` and `.iframe-wrapper-presenter`):
+
+  ```json
+  { "id": "x-preview-vote", "title": "This is your audience's phone",
+    "targetSelector": ".iframe-wrapper-audience", "pauseMs": 8000, "action": null,
+    "previewInteractions": [
+      { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-option\"]:has-text(\"Monday\")",
+        "label": "pick Monday", "pauseAfterMs": 1800 },
+      { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-submit-button\"]",
+        "label": "submit", "pauseAfterMs": 2200 }
+    ] },
+  { "id": "x-preview-results", "title": "Results update live",
+    "targetSelector": ".iframe-wrapper-presenter", "pauseMs": 3000, "action": null }
+  ```
+
+  Interactions run after the step's `pauseMs` (so the iframes are loaded),
+  while that step's tooltip is up; the second step then spotlights the
+  presenter pane to explain the chart reacting.
 - **Flake to watch for:** occasionally the preview exit lands the app in
   Present mode instead of the editor — the final step's tooltip then floats
   unanchored over a fullscreen slide. Check the recorder's `final URL` line
@@ -110,8 +121,12 @@ workspace so it finds `node_modules/ffmpeg-static/ffmpeg` (Homebrew isn't
 writable on this machine; set `FFMPEG=` to override).
 
 1. Find where the boot loader ends — the app's emoji loader runs anywhere
-   from 3s to 20s+ at the start despite the recorder's warm-up. Extract 1fps
-   frames and Read them:
+   from 3s to 20s+ at the start despite the recorder's warm-up. CAUTION: the
+   same loader appears a SECOND time mid-video (editor loading after "create
+   presentation") — don't mistake it for the boot loader and over-cut the
+   welcome/create steps. Read the frames with your eyes (pixel-variance
+   heuristics misread the light dashboard UI as blank); the boot cut ends
+   when the dashboard + welcome tooltip first appear. Extract 1fps frames:
 
    ```bash
    node_modules/ffmpeg-static/ffmpeg -i out/<take>.webm -t 25 -vf fps=1 /tmp/frames/f%02d.png
@@ -131,7 +146,9 @@ writable on this machine; set `FFMPEG=` to override).
    seeks badly on Playwright's sparse-keyframe webms).
 
 3. Verify: sample one frame every ~6s and Read them — every step's tooltip
-   must still appear, plus the first frame at 0.5s (no loader).
+   must still appear, plus the first frame at 0.5s (it must show the WELCOME
+   step on the dashboard — if it shows a later step, the boot cut ate the
+   opening). If pacing feels rushed, re-trim with `--keep-head 2.5`.
 
 On the poll take this went 1:58 raw → 0:48 final with nothing meaningful
 lost (68s of the raw video was literally frozen frames: heal gaps, loading
