@@ -1,0 +1,81 @@
+{
+  "voice": "Bella (ElevenLabs)",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "voice_settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.75,
+    "style": 0.4
+  },
+  "model_id": "eleven_multilingual_v2",
+  "video_duration_sec": 30.32,
+  "generated_round": 1,
+  "pronunciation_map": {},
+  "notes": "All steps anchor to the outer presenter frame (cross-origin survey editor iframe cannot be interacted with). Steps 3-7 show the Surveys dashboard; VO carries the editor-specific context. Clips placed at step boundaries with natural continuation across step transitions.",
+  "youtube_id": "m6fRdEv3Cqg",
+  "steps": [
+    {
+      "id": "survey-welcome",
+      "start_sec": 0.0,
+      "window_sec": 6.0,
+      "display_text": "AhaSlides Surveys is a standalone form builder. Share a link — no live session needed.",
+      "tts_text": "AhaSlides Surveys is a standalone form builder. Share a link — no live session needed.",
+      "audio_duration_sec": 4.96,
+      "adelay_ms": 0
+    },
+    {
+      "id": "survey-nav",
+      "start_sec": 6.5,
+      "window_sec": 1.5,
+      "display_text": "Open Surveys now.",
+      "tts_text": "Open Surveys now.",
+      "audio_duration_sec": 1.49,
+      "adelay_ms": 6500
+    },
+    {
+      "id": "survey-dashboard",
+      "start_sec": 8.5,
+      "window_sec": 5.0,
+      "display_text": "Here's the Surveys dashboard — see all your surveys, then create one from scratch, a template, or A.I.",
+      "tts_text": "Here's the Surveys dashboard — see all your surveys, then create one from scratch, a template, or A.I.",
+      "audio_duration_sec": 6.35,
+      "adelay_ms": 8500
+    },
+    {
+      "id": "survey-editor-left",
+      "start_sec": 15.0,
+      "window_sec": 5.0,
+      "display_text": "Pages are in the left panel. Each page holds multiple questions.",
+      "tts_text": "Pages are in the left panel. Each page holds multiple questions.",
+      "audio_duration_sec": 4.21,
+      "adelay_ms": 15000
+    },
+    {
+      "id": "survey-question-picker",
+      "start_sec": 19.5,
+      "window_sec": 3.5,
+      "display_text": "Add question — pick from six types.",
+      "tts_text": "Add question — pick from six types.",
+      "audio_duration_sec": 2.35,
+      "adelay_ms": 19500
+    },
+    {
+      "id": "survey-rating-settings",
+      "start_sec": 22.0,
+      "window_sec": 4.0,
+      "display_text": "Settings on the right. Choose icon style, set the count, mark required.",
+      "tts_text": "Settings on the right. Choose icon style, set the count, mark required.",
+      "audio_duration_sec": 4.62,
+      "adelay_ms": 22000
+    },
+    {
+      "id": "survey-publish",
+      "start_sec": 27.0,
+      "window_sec": 3.32,
+      "display_text": "Preview the respondent view, Publish, and share the link.",
+      "tts_text": "Preview the respondent view, Publish, and share the link.",
+      "audio_duration_sec": 3.60,
+      "adelay_ms": 27000
+    }
+  ],
+  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/using-the-surveys-tool-final.webm -i /tmp/survey-vo-final/s01.mp3 -i /tmp/survey-vo-final/s02.mp3 -i /tmp/survey-vo-final/s03.mp3 -i /tmp/survey-vo-final/s04.mp3 -i /tmp/survey-vo-final/s05.mp3 -i /tmp/survey-vo-final/s06.mp3 -i /tmp/survey-vo-final/s07.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6500|6500[a2];[3:a]adelay=8500|8500[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=19500|19500[a5];[6:a]adelay=22000|22000[a6];[7:a]adelay=27000|27000[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/using-the-surveys-tool-narrated.webm"
+}

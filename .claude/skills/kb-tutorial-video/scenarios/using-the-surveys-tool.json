@@ -1,0 +1,69 @@
+{
+  "steps": [
+    {
+      "id": "survey-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build a survey!",
+      "description": "AhaSlides Surveys is a standalone form builder — no live session needed. Respondents fill it in at their own pace via a shared link. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "action": null
+    },
+    {
+      "id": "survey-nav",
+      "path": "/apps/presentations",
+      "title": "Open Surveys",
+      "description": "Click 'Surveys' in the left sidebar. The Surveys section is separate from your presentations — it's your dedicated survey builder.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"sidebar-embed-app-item\"]",
+        "hint": "Click 'Surveys' to continue"
+      }
+    },
+    {
+      "id": "survey-dashboard",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "The Surveys dashboard",
+      "description": "Here you can see all your surveys with their response counts and status. Create new surveys with 'Start from an idea' (AI-generated), 'Start with a template', or 'Start from scratch'. Click Next to open a survey.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "pauseMs": 3000,
+      "action": null
+    },
+    {
+      "id": "survey-editor-left",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "Pages panel",
+      "description": "Inside the editor, the left panel shows your pages and questions. Surveys are organised into pages — click '+ Add page' to add more, and drag to reorder. Each page can hold multiple questions.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "pauseMs": 2500,
+      "action": null
+    },
+    {
+      "id": "survey-question-picker",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "Six question types",
+      "description": "Click '+ Add question' to open the type picker. Choose from Rating (stars, hearts, numbers), Multiple choice, Matrix, Long answer, Short answer, Date, or a Heading block for section labels.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "pauseMs": 2500,
+      "action": null
+    },
+    {
+      "id": "survey-rating-settings",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "Question settings",
+      "description": "Selecting a question type opens its settings in the right panel. For a Rating question, set the number of icons (1–10) and choose a style: Star, Heart, Thumb, Smiley, or Number. You can also mark questions as required.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "pauseMs": 2500,
+      "action": null
+    },
+    {
+      "id": "survey-publish",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "Preview, publish, and share",
+      "description": "Click 'Preview' to see the respondent view across mobile and desktop. When everything looks good, hit 'Publish' — the status changes from Draft to Published and the Share button activates so you can copy the respondent link.",
+      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "pauseMs": 2500,
+      "action": null
+    }
+  ]
+}

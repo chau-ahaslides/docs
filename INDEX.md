@@ -25,6 +25,7 @@
 | [how-to-use-rating-scale-slides-on-ahaslides](#how-to-use-rating-scale-slides-on-ahaslides) | Using Slide Types | All | ✅ Yes |
 | [using-qa](#using-qa) | Using Slide Types | Free | ✅ Yes |
 | [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Using Slide Types | All | ✅ Yes |
+| [using-the-surveys-tool](#using-the-surveys-tool) | Using Slide Types | All | No |
 | [using-the-pin-on-image-slide](#using-the-pin-on-image-slide) | Using Slide Types | All | No |
 | [collecting-audience-information](#collecting-audience-information) | Features | Pro | ✅ Yes |
 | [how-to-collaborate-on-presentations-and-folders](#how-to-collaborate-on-presentations-and-folders) | Features | All | ✅ Partial |
@@ -165,6 +166,12 @@
 **Plan:** All | **MCP Actions:** No
 **Summary:** Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
 **File:** `how-to-show-or-hide-the-audience-get-slides-button.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
+
+### using-the-surveys-tool
+**Plan:** All | **MCP Actions:** No
+**Summary:** AhaSlides Surveys is a standalone form-style survey builder (Beta) that lets you collect responses asynchronously — no live session required. Build multi-question surveys with Rating, Multiple choice, Matrix, Long answer, Short answer, Date, and Heading question types, then share a link. Note: Surveys is a separate product from interactive presentation slides; it lives in the left sidebar under Workspace › Surveys.
+**File:** `using-the-surveys-tool.md`
+**Video:** https://www.youtube.com/watch?v=m6fRdEv3Cqg
 
 ### using-the-pin-on-image-slide
 **Plan:** All | **MCP Actions:** No
