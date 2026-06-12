@@ -143,12 +143,26 @@ correct answer(s)" pre-ticked by the app itself.
 
 **Spotlight verification checklist — check every step, not just the dialog ones:**
 - [ ] Spotlight covers the key mouse action for every step.
-- [ ] When a step interacts with a popup or dialog, the spotlight target must be
-  an element inside the dialog — never the panel behind it. If the dialog element
-  disappears when the dialog closes (mid-step), use the closest always-present
-  ancestor and split the step into two (one to open+reach the dialog state, one
-  to complete the dialog actions) so Next is never clicked while the dialog is
-  open and the overlay's anchor is gone.
+- [ ] When a step opens a popup or dialog, the spotlight target for that step
+  must be an element inside the dialog — not the panel behind it.
+  **Important: image/asset picker dialogs (e.g. `.aha-modal__content`) render in
+  the OUTER app document, not inside the settings iframe.** They are valid
+  `targetSelector` values while open. Confirmed by DOM probe on the Pin on Image
+  settings panel (r5): `.aha-modal__content` is `null` before the dialog opens,
+  fully present and at `[108,90 1224x720]` while open, and `null` again after
+  close — it is a real DOM element, not a shadow or iframe-internal node.
+  Correct pattern (hybrid — two steps):
+  1. A **tooltip-only** step (`action: null`) with `targetSelector: ".aha-modal__content"` —
+     runs WHILE the dialog is open, shows the spotlight on the dialog, no
+     interactions that would close the dialog.
+  2. A **stable-anchor** step with `targetSelector` pointing to an always-present
+     element (e.g. `[data-testid="slide-plugin-iframe-config-container"]`) —
+     runs all `mainInteractions` that complete and close the dialog (search, pick,
+     save). Using `.aha-modal__content` on this step stalls the tour because Next
+     is clicked after the dialog closes and the overlay can't find the anchor.
+  Do NOT use the settings panel selector for the dialog-open tooltip step —
+  this causes the spotlight ring to appear on background UI, not the dialog
+  (the exact bug reported in r4).
 - [ ] Verify frame-by-frame before shipping — look at `out/shots/step-*.png`
   and confirm the spotlight ring lands where the click/type action happens.
   Do not ship a take where the spotlight is anchored to background UI during

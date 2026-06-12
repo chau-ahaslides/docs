@@ -3,38 +3,38 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 69.4,
-  "generated_round": 4,
+  "video_duration_sec": 54.7,
+  "generated_round": 5,
   "pronunciation_map": {},
-  "notes": "Round 4 — spotlight fix: dialog steps (pin-add-image, pin-search-photo) now use separate tooltip steps with targetSelector on settings panel container (always-present) so tour completes; the overlay architecture prevents mid-step spotlight changes when targetSelector leaves DOM. pin-add-image covers open+stock-tab; pin-search-photo covers search+select+save. All clips re-rendered. 69.4s video.",
+  "notes": "Round 5 — spotlight fix: added pin-image-library step (targetSelector .aha-modal__content) so the dialog IS spotlighted when it first opens. pin-search-save step reverts to slide-plugin-iframe-config-container (always-present) for stability — the tour stalls if .aha-modal__content is used for the step that saves and closes the dialog. Hybrid design: step 6 shows correct dialog spotlight; step 7 (search+save) uses settings-panel target for tour completion.",
   "steps": [
     {
       "id": "pin-welcome",
       "start_sec": 0.0,
-      "window_sec": 5.7,
+      "window_sec": 4.5,
       "display_text": "A Pin on Image slide lets participants tap anywhere on a custom image to mark their answer.",
       "tts_text": "A Pin on Image slide lets participants tap anywhere on a custom image to mark their answer.",
       "audio_duration_sec": 5.69
     },
     {
       "id": "pin-create",
-      "start_sec": 5.7,
-      "window_sec": 2.8,
+      "start_sec": 4.5,
+      "window_sec": 2.0,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
       "audio_duration_sec": 2.53
     },
     {
       "id": "pin-pick-type",
-      "start_sec": 8.5,
-      "window_sec": 5.0,
+      "start_sec": 6.5,
+      "window_sec": 5.5,
       "display_text": "Select Pin on Image from the Unscored section of the slide type picker.",
       "tts_text": "Select Pin on Image from the Unscored section of the slide type picker.",
       "audio_duration_sec": 4.62
     },
     {
       "id": "pin-type-question",
-      "start_sec": 13.5,
+      "start_sec": 12.0,
       "window_sec": 5.5,
       "display_text": "Type your spatial question — tell participants exactly what to pin.",
       "tts_text": "Type your spatial question — tell participants exactly what to pin.",
@@ -42,24 +42,32 @@
     },
     {
       "id": "pin-add-image",
-      "start_sec": 19.0,
-      "window_sec": 9.0,
-      "display_text": "Open the image library and switch to Stock Photos.",
-      "tts_text": "Open the image library and switch to Stock Photos.",
-      "audio_duration_sec": 3.19
+      "start_sec": 17.5,
+      "window_sec": 4.0,
+      "display_text": "Click the image area to open the image library and choose a photo for your slide.",
+      "tts_text": "Click the image area to open the image library and choose a photo for your slide.",
+      "audio_duration_sec": 4.68
     },
     {
-      "id": "pin-search-photo",
-      "start_sec": 28.0,
-      "window_sec": 16.0,
-      "display_text": "Search 'world map', pick the one that fits your question, and save.",
-      "tts_text": "Open the image library, switch to Stock Photos, search 'world map' — then pick the one that fits your question and save.",
-      "audio_duration_sec": 7.05
+      "id": "pin-image-library",
+      "start_sec": 21.5,
+      "window_sec": 3.0,
+      "display_text": "Your image library is open. Switch to Stock Photos to browse millions of free, searchable images.",
+      "tts_text": "Your image library is open. Switch to Stock Photos to browse millions of free, searchable images.",
+      "audio_duration_sec": 6.82
+    },
+    {
+      "id": "pin-search-save",
+      "start_sec": 24.5,
+      "window_sec": 22.0,
+      "display_text": "Click Stock Photos, type 'world map' in the search box, pick the first result, and hit Save to add it to your slide.",
+      "tts_text": "Click Stock Photos, type world map in the search box, pick the first result, and hit Save to add it to your slide.",
+      "audio_duration_sec": 7.24
     },
     {
       "id": "pin-preview-open",
-      "start_sec": 44.0,
-      "window_sec": 5.0,
+      "start_sec": 46.5,
+      "window_sec": 2.5,
       "display_text": "Click Preview to rehearse before going live.",
       "tts_text": "Click Preview to rehearse before going live.",
       "audio_duration_sec": 2.51
@@ -67,27 +75,27 @@
     {
       "id": "pin-preview-audience",
       "start_sec": 49.0,
-      "window_sec": 9.0,
+      "window_sec": 3.0,
       "display_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
       "tts_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
       "audio_duration_sec": 5.33
     },
     {
       "id": "pin-preview-results",
-      "start_sec": 58.0,
-      "window_sec": 6.0,
+      "start_sec": 52.0,
+      "window_sec": 1.5,
       "display_text": "Pins appear live on the presenter screen as responses come in.",
       "tts_text": "Pins appear live on the presenter screen as responses come in.",
       "audio_duration_sec": 3.79
     },
     {
       "id": "pin-present",
-      "start_sec": 64.0,
-      "window_sec": 5.4,
+      "start_sec": 53.5,
+      "window_sec": 1.2,
       "display_text": "That's all it takes. Hit Present when you're ready to go live.",
       "tts_text": "That's all it takes. Hit Present when you're ready to go live.",
       "audio_duration_sec": 3.66
     }
   ],
-  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/pin-on-image-r4-trimmed.webm -i out/s01.mp3 -i out/s02.mp3 -i out/s03.mp3 -i out/s04.mp3 -i out/s05a.mp3 -i out/s05b.mp3 -i out/s06.mp3 -i out/s07.mp3 -i out/s08.mp3 -i out/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=5700|5700[a2];[3:a]adelay=8500|8500[a3];[4:a]adelay=13500|13500[a4];[5:a]adelay=19000|19000[a5];[6:a]adelay=28000|28000[a6];[7:a]adelay=44000|44000[a7];[8:a]adelay=49000|49000[a8];[9:a]adelay=58000|58000[a9];[10:a]adelay=64000|64000[a10];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10]amix=inputs=10:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/pin-on-image-r4-narrated.webm"
+  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/pin-on-image-r5-trimmed.webm -i out/s01.mp3 -i out/s02.mp3 -i out/s03.mp3 -i out/s04.mp3 -i out/s05-add-image.mp3 -i out/s06-image-library.mp3 -i out/s07-search-save.mp3 -i out/s08.mp3 -i out/s09.mp3 -i out/s10.mp3 -i out/s11.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=4500|4500[a2];[3:a]adelay=6500|6500[a3];[4:a]adelay=12000|12000[a4];[5:a]adelay=17500|17500[a5];[6:a]adelay=21500|21500[a6];[7:a]adelay=24500|24500[a7];[8:a]adelay=46500|46500[a8];[9:a]adelay=49000|49000[a9];[10:a]adelay=52000|52000[a10];[11:a]adelay=53500|53500[a11];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]amix=inputs=11:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/pin-on-image-r5-narrated.webm"
 }

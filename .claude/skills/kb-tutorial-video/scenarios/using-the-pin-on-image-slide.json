@@ -50,35 +50,42 @@
       "id": "pin-add-image",
       "path": "/presentation/*",
       "title": "Open the image library",
-      "description": "Click the image area to open the library, then switch to Stock Photos to browse millions of free images.",
+      "description": "Click the image area to open the image library and choose a photo for your slide.",
       "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
-      "pauseMs": 2000,
+      "pauseMs": 3000,
       "action": null,
       "previewInteractions": [
         {
           "frameMatch": "pinOnImage/settings",
           "selector": "[data-testid=\"pin-on-image-slide-image-upload-button\"]",
           "label": "open image picker",
-          "pauseAfterMs": 2500
-        }
-      ],
-      "mainInteractions": [
-        {
-          "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
-          "label": "click Stock Photos tab",
           "pauseAfterMs": 3500
         }
       ]
     },
     {
-      "id": "pin-search-photo",
+      "id": "pin-image-library",
+      "path": "/presentation/*",
+      "title": "Browse the image library",
+      "description": "Your image library is open. Switch to Stock Photos to browse millions of free, searchable images.",
+      "targetSelector": ".aha-modal__content",
+      "pauseMs": 500,
+      "action": null
+    },
+    {
+      "id": "pin-search-save",
       "path": "/presentation/*",
       "title": "Search, pick, and save your image",
-      "description": "Type 'world map' in the search box and press Enter. Click the first result to select it — then hit Save to add it to your slide.",
+      "description": "Click 'Stock Photos', type 'world map' in the search box, pick the first result, then hit Save to add it to your slide.",
       "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
       "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
+          "label": "click Stock Photos tab",
+          "pauseAfterMs": 3500
+        },
         {
           "type": "type",
           "selector": "[data-testid=\"editor-stock-photo-search-input\"]",
