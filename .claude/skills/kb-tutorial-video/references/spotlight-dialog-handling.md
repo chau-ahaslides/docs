@@ -7,6 +7,16 @@ involves a dialog, modal, or image upload — and before verifying any take.
 Also available as the standalone `kb-spotlight-dialog` sub-skill (same content)
 for cases where you need this guidance without the full tutorial-video context.
 
+## Tooltip occlusion rule
+
+The tour tooltip must never cover the interaction target or the area where the
+action visibly happens. If a tooltip would occlude the element being typed
+into/clicked (e.g. a dialog's search input), split the interaction into smaller
+steps each targeting the specific control (proven pattern from the Pin on Image
+tutorial: Stock Photos tab → search input → first image result), or adjust
+tooltip placement. Frame-verify: at every step, neither the spotlight border
+nor the tooltip box covers the active element.
+
 ## Spotlight verification checklist
 
 Check every step, not just the dialog ones:
@@ -21,6 +31,8 @@ Check every step, not just the dialog ones:
   spotlight ring lands where the click/type action actually happens. Do not
   ship a take where the spotlight is anchored to background UI during a
   foreground dialog interaction.
+- [ ] Tooltip never covers the interaction target or the area where the action
+  visibly happens. Adjust placement or split interaction if needed.
 
 ## The two modal components in the AhaSlides editor
 

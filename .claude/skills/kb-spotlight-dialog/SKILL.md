@@ -73,6 +73,16 @@ still present when the step completes.
 Targets the crop dialog by its actual class. `pauseMs: 3000` lets the crop
 dialog finish rendering before the step acts.
 
+## Tooltip occlusion rule
+
+The tour tooltip must never cover the interaction target or the area where the
+action visibly happens. If a tooltip would occlude the element being typed
+into/clicked (e.g. a dialog's search input), split the interaction into smaller
+steps each targeting the specific control (proven pattern from the Pin on Image
+tutorial: Stock Photos tab → search input → first image result), or adjust
+tooltip placement. Frame-verify: at every step, neither the spotlight border
+nor the tooltip box covers the active element.
+
 ## Spotlight verification checklist
 
 Check every step in any take, not just dialog ones:
@@ -85,6 +95,8 @@ Check every step in any take, not just dialog ones:
 - [ ] Verified frame-by-frame via `out/shots/step-*.png` — do not ship a take
   where spotlight is anchored to background UI during a foreground dialog
   interaction.
+- [ ] Tooltip never covers the interaction target or the area where the action
+  visibly happens. Adjust placement or split interaction if needed.
 
 ## The `.aha-modal__content` picker is an outer-document element
 
