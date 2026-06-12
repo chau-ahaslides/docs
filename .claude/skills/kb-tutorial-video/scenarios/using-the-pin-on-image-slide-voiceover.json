@@ -3,83 +3,91 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 63.7,
-  "generated_round": 3,
+  "video_duration_sec": 69.4,
+  "generated_round": 4,
   "pronunciation_map": {},
-  "notes": "Round 3 — stock photo search step added: 'world map' searched before selecting. s01–s04 and s06–s09 reused from r2; only s05 re-rendered. 63.7s video. Steps: welcome, create, pick-type, type-question, add-image (picker→stock tab→search 'world map'→select→crop→save), preview-open, preview-audience, preview-results, preview-exit (no VO), present.",
+  "notes": "Round 4 — spotlight fix: dialog steps (pin-add-image, pin-search-photo) now use separate tooltip steps with targetSelector on settings panel container (always-present) so tour completes; the overlay architecture prevents mid-step spotlight changes when targetSelector leaves DOM. pin-add-image covers open+stock-tab; pin-search-photo covers search+select+save. All clips re-rendered. 69.4s video.",
   "steps": [
     {
       "id": "pin-welcome",
       "start_sec": 0.0,
-      "window_sec": 5.0,
+      "window_sec": 5.7,
       "display_text": "A Pin on Image slide lets participants tap anywhere on a custom image to mark their answer.",
       "tts_text": "A Pin on Image slide lets participants tap anywhere on a custom image to mark their answer.",
-      "audio_duration_sec": 5.67
+      "audio_duration_sec": 5.69
     },
     {
       "id": "pin-create",
       "start_sec": 5.7,
-      "window_sec": 2.5,
+      "window_sec": 2.8,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
-      "audio_duration_sec": 2.74
+      "audio_duration_sec": 2.53
     },
     {
       "id": "pin-pick-type",
       "start_sec": 8.5,
-      "window_sec": 4.5,
+      "window_sec": 5.0,
       "display_text": "Select Pin on Image from the Unscored section of the slide type picker.",
       "tts_text": "Select Pin on Image from the Unscored section of the slide type picker.",
-      "audio_duration_sec": 4.49
+      "audio_duration_sec": 4.62
     },
     {
       "id": "pin-type-question",
       "start_sec": 13.5,
-      "window_sec": 4.0,
+      "window_sec": 5.5,
       "display_text": "Type your spatial question — tell participants exactly what to pin.",
       "tts_text": "Type your spatial question — tell participants exactly what to pin.",
-      "audio_duration_sec": 4.49
+      "audio_duration_sec": 4.68
     },
     {
       "id": "pin-add-image",
       "start_sec": 19.0,
-      "window_sec": 18.0,
-      "display_text": "Open the image library, switch to Stock Photos, search 'world map' — then pick the one that fits your question.",
-      "tts_text": "Open the image library, switch to Stock Photos, search 'world map' — then pick the one that fits your question.",
-      "audio_duration_sec": 6.82
+      "window_sec": 9.0,
+      "display_text": "Open the image library and switch to Stock Photos.",
+      "tts_text": "Open the image library and switch to Stock Photos.",
+      "audio_duration_sec": 3.19
+    },
+    {
+      "id": "pin-search-photo",
+      "start_sec": 28.0,
+      "window_sec": 16.0,
+      "display_text": "Search 'world map', pick the one that fits your question, and save.",
+      "tts_text": "Open the image library, switch to Stock Photos, search 'world map' — then pick the one that fits your question and save.",
+      "audio_duration_sec": 7.05
     },
     {
       "id": "pin-preview-open",
-      "start_sec": 38.0,
-      "window_sec": 3.5,
+      "start_sec": 44.0,
+      "window_sec": 5.0,
       "display_text": "Click Preview to rehearse before going live.",
       "tts_text": "Click Preview to rehearse before going live.",
-      "audio_duration_sec": 2.59
+      "audio_duration_sec": 2.51
     },
     {
       "id": "pin-preview-audience",
-      "start_sec": 43.0,
-      "window_sec": 6.0,
+      "start_sec": 49.0,
+      "window_sec": 9.0,
       "display_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
       "tts_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
       "audio_duration_sec": 5.33
     },
     {
       "id": "pin-preview-results",
-      "start_sec": 52.0,
-      "window_sec": 4.0,
+      "start_sec": 58.0,
+      "window_sec": 6.0,
       "display_text": "Pins appear live on the presenter screen as responses come in.",
       "tts_text": "Pins appear live on the presenter screen as responses come in.",
       "audio_duration_sec": 3.79
     },
     {
       "id": "pin-present",
-      "start_sec": 59.5,
-      "window_sec": 4.5,
+      "start_sec": 64.0,
+      "window_sec": 5.4,
       "display_text": "That's all it takes. Hit Present when you're ready to go live.",
       "tts_text": "That's all it takes. Hit Present when you're ready to go live.",
-      "audio_duration_sec": 3.84
+      "audio_duration_sec": 3.66
     }
   ],
-  "mix_command": "ffmpeg -y -i pin-on-image-r3-trimmed.webm -i s01.mp3 -i s02.mp3 -i s03.mp3 -i s04.mp3 -i s05.mp3 -i s06.mp3 -i s07.mp3 -i s08.mp3 -i s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=5700|5700[a2];[3:a]adelay=8500|8500[a3];[4:a]adelay=13500|13500[a4];[5:a]adelay=19000|19000[a5];[6:a]adelay=38000|38000[a6];[7:a]adelay=43000|43000[a7];[8:a]adelay=52000|52000[a8];[9:a]adelay=59500|59500[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k pin-on-image-r3-narrated.webm"
+  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/pin-on-image-r4-trimmed.webm -i out/s01.mp3 -i out/s02.mp3 -i out/s03.mp3 -i out/s04.mp3 -i out/s05a.mp3 -i out/s05b.mp3 -i out/s06.mp3 -i out/s07.mp3 -i out/s08.mp3 -i out/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=5700|5700[a2];[3:a]adelay=8500|8500[a3];[4:a]adelay=13500|13500[a4];[5:a]adelay=19000|19000[a5];[6:a]adelay=28000|28000[a6];[7:a]adelay=44000|44000[a7];[8:a]adelay=49000|49000[a8];[9:a]adelay=58000|58000[a9];[10:a]adelay=64000|64000[a10];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10]amix=inputs=10:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/pin-on-image-r4-narrated.webm"
 }

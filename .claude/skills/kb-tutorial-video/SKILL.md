@@ -141,6 +141,19 @@ Preserve good takes before re-running (`mv out out-<label>`) — each run wipes
 accepted, don't clean up. Known quirk: new poll slides get "This question has
 correct answer(s)" pre-ticked by the app itself.
 
+**Spotlight verification checklist — check every step, not just the dialog ones:**
+- [ ] Spotlight covers the key mouse action for every step.
+- [ ] When a step interacts with a popup or dialog, the spotlight target must be
+  an element inside the dialog — never the panel behind it. If the dialog element
+  disappears when the dialog closes (mid-step), use the closest always-present
+  ancestor and split the step into two (one to open+reach the dialog state, one
+  to complete the dialog actions) so Next is never clicked while the dialog is
+  open and the overlay's anchor is gone.
+- [ ] Verify frame-by-frame before shipping — look at `out/shots/step-*.png`
+  and confirm the spotlight ring lands where the click/type action happens.
+  Do not ship a take where the spotlight is anchored to background UI during
+  a foreground dialog interaction.
+
 ## Phase 3 — Trim (always)
 
 Use the bundled script — it does both passes in one re-encode:

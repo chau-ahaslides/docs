@@ -49,8 +49,8 @@
     {
       "id": "pin-add-image",
       "path": "/presentation/*",
-      "title": "Add your image",
-      "description": "Click the image area in the Content panel to open the image library. Switch to Stock Photos and search for 'world map' to find an image that matches your question perfectly.",
+      "title": "Open the image library",
+      "description": "Click the image area to open the library, then switch to Stock Photos to browse millions of free images.",
       "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
       "pauseMs": 2000,
       "action": null,
@@ -67,7 +67,18 @@
           "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
           "label": "click Stock Photos tab",
           "pauseAfterMs": 3500
-        },
+        }
+      ]
+    },
+    {
+      "id": "pin-search-photo",
+      "path": "/presentation/*",
+      "title": "Search, pick, and save your image",
+      "description": "Type 'world map' in the search box and press Enter. Click the first result to select it — then hit Save to add it to your slide.",
+      "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
+      "pauseMs": 1000,
+      "action": null,
+      "mainInteractions": [
         {
           "type": "type",
           "selector": "[data-testid=\"editor-stock-photo-search-input\"]",
@@ -84,7 +95,7 @@
         {
           "selector": "[data-testid=\"crop-image-save-button\"]",
           "label": "save cropped image",
-          "pauseAfterMs": 3000
+          "pauseAfterMs": 6000
         }
       ]
     },
