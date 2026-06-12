@@ -7,75 +7,67 @@
     "style": 0.4
   },
   "model_id": "eleven_multilingual_v2",
-  "video_duration_sec": 30.32,
-  "generated_round": 1,
+  "video_duration_sec": 30.55,
+  "generated_round": 2,
   "pronunciation_map": {},
-  "notes": "All steps anchor to the outer presenter frame (cross-origin survey editor iframe cannot be interacted with). Steps 3-7 show the Surveys dashboard; VO carries the editor-specific context. Clips placed at step boundaries with natural continuation across step transitions.",
-  "youtube_id": "m6fRdEv3Cqg",
+  "notes": "6/7 steps executed. Step 7 (survey-results) stalled due to autoheal clicking a help-center video item that opened a YouTube modal. Raw video truncated at 44.5s before the modal, then trimmed. VO covers all key concepts including the slide-in-deck use-case (the correction from round 1). Old YouTube ID m6fRdEv3Cqg should be deleted.",
+  "youtube_id": "LXRHtEqirN0",
+  "supersedes_youtube_id": "m6fRdEv3Cqg",
   "steps": [
     {
-      "id": "survey-welcome",
+      "id": "survey-intro",
       "start_sec": 0.0,
-      "window_sec": 6.0,
-      "display_text": "AhaSlides Surveys is a standalone form builder. Share a link — no live session needed.",
-      "tts_text": "AhaSlides Surveys is a standalone form builder. Share a link — no live session needed.",
-      "audio_duration_sec": 4.96,
+      "window_sec": 7.5,
+      "display_text": "AhaSlides Surveys work in two modes — share a standalone link, or drop the survey into your presentation as a live slide.",
+      "tts_text": "AhaSlides Surveys work in two modes — share a standalone link, or drop the survey into your presentation as a live slide.",
+      "audio_duration_sec": 7.97,
       "adelay_ms": 0
     },
     {
       "id": "survey-nav",
-      "start_sec": 6.5,
-      "window_sec": 1.5,
-      "display_text": "Open Surveys now.",
-      "tts_text": "Open Surveys now.",
-      "audio_duration_sec": 1.49,
-      "adelay_ms": 6500
+      "start_sec": 7.5,
+      "window_sec": 3.0,
+      "display_text": "Click Surveys in the left sidebar to get started.",
+      "tts_text": "Click Surveys in the left sidebar to get started.",
+      "audio_duration_sec": 2.95,
+      "adelay_ms": 7500
     },
     {
       "id": "survey-dashboard",
-      "start_sec": 8.5,
+      "start_sec": 10.5,
       "window_sec": 5.0,
-      "display_text": "Here's the Surveys dashboard — see all your surveys, then create one from scratch, a template, or A.I.",
-      "tts_text": "Here's the Surveys dashboard — see all your surveys, then create one from scratch, a template, or A.I.",
-      "audio_duration_sec": 6.35,
-      "adelay_ms": 8500
+      "display_text": "Here's the Surveys dashboard — create from AI, a template, or from scratch.",
+      "tts_text": "Here's the Surveys dashboard — create from AI, a template, or from scratch.",
+      "audio_duration_sec": 5.20,
+      "adelay_ms": 10500
     },
     {
-      "id": "survey-editor-left",
-      "start_sec": 15.0,
+      "id": "survey-editor",
+      "start_sec": 15.5,
       "window_sec": 5.0,
-      "display_text": "Pages are in the left panel. Each page holds multiple questions.",
-      "tts_text": "Pages are in the left panel. Each page holds multiple questions.",
-      "audio_duration_sec": 4.21,
-      "adelay_ms": 15000
+      "display_text": "Build with Multiple Choice, Rating Scale, Open-ended, or Matrix questions — mix types in any order.",
+      "tts_text": "Build with Multiple Choice, Rating Scale, Open-ended, or Matrix questions — mix types in any order.",
+      "audio_duration_sec": 6.92,
+      "adelay_ms": 15500
     },
     {
-      "id": "survey-question-picker",
-      "start_sec": 19.5,
+      "id": "survey-publish-share",
+      "start_sec": 20.0,
       "window_sec": 3.5,
-      "display_text": "Add question — pick from six types.",
-      "tts_text": "Add question — pick from six types.",
-      "audio_duration_sec": 2.35,
-      "adelay_ms": 19500
+      "display_text": "Hit Publish, copy the respondent link, and share it anywhere.",
+      "tts_text": "Hit Publish, copy the respondent link, and share it anywhere.",
+      "audio_duration_sec": 4.13,
+      "adelay_ms": 20000
     },
     {
-      "id": "survey-rating-settings",
-      "start_sec": 22.0,
-      "window_sec": 4.0,
-      "display_text": "Settings on the right. Choose icon style, set the count, mark required.",
-      "tts_text": "Settings on the right. Choose icon style, set the count, mark required.",
-      "audio_duration_sec": 4.62,
-      "adelay_ms": 22000
-    },
-    {
-      "id": "survey-publish",
-      "start_sec": 27.0,
-      "window_sec": 3.32,
-      "display_text": "Preview the respondent view, Publish, and share the link.",
-      "tts_text": "Preview the respondent view, Publish, and share the link.",
-      "audio_duration_sec": 3.60,
-      "adelay_ms": 27000
+      "id": "survey-as-slide",
+      "start_sec": 23.5,
+      "window_sec": 7.1,
+      "display_text": "Or add a Survey slide to your presentation — when you reach it, the full survey appears live on every device.",
+      "tts_text": "Or add a Survey slide to your presentation — when you reach it, the full survey appears live on every device.",
+      "audio_duration_sec": 7.11,
+      "adelay_ms": 23500
     }
   ],
-  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/using-the-surveys-tool-final.webm -i /tmp/survey-vo-final/s01.mp3 -i /tmp/survey-vo-final/s02.mp3 -i /tmp/survey-vo-final/s03.mp3 -i /tmp/survey-vo-final/s04.mp3 -i /tmp/survey-vo-final/s05.mp3 -i /tmp/survey-vo-final/s06.mp3 -i /tmp/survey-vo-final/s07.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6500|6500[a2];[3:a]adelay=8500|8500[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=19500|19500[a5];[6:a]adelay=22000|22000[a6];[7:a]adelay=27000|27000[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/using-the-surveys-tool-narrated.webm"
+  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/using-the-surveys-tool-final.webm -i /tmp/survey-vo-r2/s01.mp3 -i /tmp/survey-vo-r2/s02.mp3 -i /tmp/survey-vo-r2/s03.mp3 -i /tmp/survey-vo-r2/s04.mp3 -i /tmp/survey-vo-r2/s05b.mp3 -i /tmp/survey-vo-r2/s06c.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=7500|7500[a2];[3:a]adelay=10500|10500[a3];[4:a]adelay=15500|15500[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=23500|23500[a6];[a1][a2][a3][a4][a5][a6]amix=inputs=6:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/using-the-surveys-tool-narrated.webm"
 }
