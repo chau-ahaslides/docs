@@ -11,6 +11,7 @@
 
 | Slug | Category | Plan | MCP Actions? |
 |------|----------|------|--------------|
+| [ahaslides-vs-mentimeter](#ahaslides-vs-mentimeter) | Compare | Free | No |
 | [what-is-ahaslides](#what-is-ahaslides) | Getting Started | Free | No |
 | [creating-your-ahaslides-account](#creating-your-ahaslides-account) | Getting Started | Free | No |
 | [the-my-presentations-dashboard](#the-my-presentations-dashboard) | Getting Started | All | No |
@@ -62,6 +63,15 @@
 | [deleting-your-ahaslides-account](#deleting-your-ahaslides-account) | Account | All | No |
 | [how-to-log-out-of-ahaslides-from-all-other-devices-and-browsers](#how-to-log-out-of-ahaslides-from-all-other-devices-and-browsers) | Account | Free | No |
 | [sharing-your-ahaslides-account](#sharing-your-ahaslides-account) | Account | All | No |
+
+---
+
+## 🔍 Compare
+
+### ahaslides-vs-mentimeter
+**Plan:** Free | **MCP Actions:** No
+**Summary:** A side-by-side comparison of AhaSlides and Mentimeter — covering activity types, AI and integrations, free plan limits, and pricing — so you can make an informed choice.
+**File:** `compare/ahaslides-vs-mentimeter.md`
 
 ---
 

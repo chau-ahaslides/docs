@@ -96,6 +96,10 @@
 * [What is Included in the Free Account?](what-is-included-in-the-free-account.md)
 * [White Label, Multiple Accounts and Enterprise License inquiries](white-label-multiple-accounts-and-enterprise-license-inquiries.md)
 
+## Compare
+
+* [AhaSlides vs Mentimeter](compare/ahaslides-vs-mentimeter.md)
+
 ## Payment
 
 * [AhaSlides payment methods](ahaslides-payment-methods.md)
