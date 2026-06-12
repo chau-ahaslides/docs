@@ -7,8 +7,7 @@ description: End-to-end pipeline for producing a KB tutorial video and refreshin
 
 Proven end-to-end on `creating-a-poll-question-on-ahaslides.md`
 (result: https://www.youtube.com/watch?v=GK6fQhHYybo, 0:48). Run the phases in
-order, one article at a time. Each phase lists its non-obvious failure modes —
-they each cost real debugging time once already.
+order, one article at a time.
 
 Recording workspace: `~/AhaSlides/onboarding-videos/` (playwright + chromium +
 `ffmpeg-static` installed; recorder scripts copied from the
@@ -20,103 +19,18 @@ healed-scenario filename for remote mode.
 
 ## Phase 1 — Author the scenario
 
-Scenarios live IN THIS SKILL at `scenarios/<article-slug>.json` (1:1 with
-articles, version-controlled with the KB — commit scenario changes alongside
-the article). Point `SCENARIO_FILE` straight at the repo path when recording;
-no copy into the workspace is needed.
-Derive the steps from what the article teaches; write tooltip `description`
-copy for the viewer in brand voice (load `aha-branding-tone-voice` when
-drafting it). Schema `{"steps":[...]}`; each step: `id`, `path` (route glob,
-`/presentation/*` inside the editor), `title`, `description`,
-`targetSelector`, optional `pauseMs`, `action`:
-- `null` — tooltip-only; the recorder clicks Next. Use for welcome/closing.
-- `{"type":"click","selector":...}` — advance by clicking the spotlighted target.
-- `{"type":"input"|"input-match","value":...}` — type into the target.
+Read `references/scenario-authoring.md` in this skill directory for the full
+scenario JSON schema, step-type reference, SPA-navigation constraints,
+selector discovery patterns, and the `previewInteractions` recipe (audience
+participation in Preview). Keep this summary in mind:
 
-Constraints from how the app's onboarding overlay works:
-- **A step's target must be on screen when the step starts** — the overlay
-  cannot anchor to an element that doesn't exist yet.
-- **Never add a step whose target unmounts itself on click** (e.g. the
-  kickstart "Choose a slide" button — the picker replaces it). The click
-  passes through and works, but the app misses the step completion and the
-  tour stalls (reproduced twice, incl. with a 1.5s settle; app-side bug,
-  reported). Instead, skip from the prior step straight to the gated target
-  (e.g. `[aria-label="Poll"]`) and let the recorder's auto-heal click through
-  the opener. The heal gap is silent dead time on screen — Phase 3's
-  freeze-trim removes it.
-- A Preview demonstration is a good closing pattern: click the header Preview
-  button (`[data-testid="editor-middle-preview-button"]`), hold with
-  `pauseMs: 8000` (preview iframes load slowly), exit via
-  `[data-testid="editor-middle-back-to-editor-button"]`, then a final
-  tooltip-only step on `.aha-button-present`. Preview only adds
-  `?preview=true`, so `path` stays `/presentation/*`.
-### Demonstrating audience participation in Preview (any slide type)
-
-The participant pane in Preview is a cross-origin iframe
-(`audience.sandbox.ahaslide.com`) which the overlay can't anchor to — so
-in-audience actions can't be tour steps. Instead the recorder performs them
-via a step's `previewInteractions` array (recorder-side feature, local
-patch): it glides the visible cursor to the in-frame element (boundingBox is
-in page coords) and dispatches the click inside the frame document, so the
-overlay backdrop can't swallow it. Preview is sandboxed — submissions don't
-go live.
-
-Recipe for a NEW slide type:
-1. Find a sandbox deck containing that slide — recording runs leave decks
-   behind; deck ids are in the recorder's `navigated →` log lines (or create
-   one via AhaSlides MCP `create_slides`).
-2. Discover the audience-side selectors with the bundled probe:
-
-   ```bash
-   cd ~/AhaSlides/onboarding-videos && source <plugin>/test-env.sh && \
-   node <skill-dir>/scripts/probe_preview_audience.mjs <deckId>
-   ```
-
-   It prints every interactive element in the audience iframe (testids/text)
-   plus the host-side anchor wrappers, and drops /tmp/preview-probe.png.
-3. Add the new type's testids to the table below so the next run skips
-   discovery.
-
-Known audience-app selectors (append as you discover more):
-
-| Slide type | Interact with |
-|---|---|
-| Poll / quiz answers | `[data-testid="audience-quiz-option"]:has-text("<option>")`, then `[data-testid="audience-quiz-submit-button"]` |
-| Any slide | reactions: `[data-testid="audience-reactions-v2-<like|heart|laugh|wow|sad>-button"]` |
-| App tabs | `[data-testid="audience-tabs-<presentation|review|feedback|profile>-tab"]` |
-
-**Use TWO anchored tooltip steps around preview interactions** so viewers'
-eyes are directed before things happen (one tooltip-only step per pane —
-the pane wrappers live in the host document, so the overlay CAN anchor to
-them: `.iframe-wrapper-audience` and `.iframe-wrapper-presenter`):
-
-  ```json
-  { "id": "x-preview-vote", "title": "This is your audience's phone",
-    "targetSelector": ".iframe-wrapper-audience", "pauseMs": 8000, "action": null,
-    "previewInteractions": [
-      { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-option\"]:has-text(\"Monday\")",
-        "label": "pick Monday", "pauseAfterMs": 1800 },
-      { "frameMatch": "audience.", "selector": "[data-testid=\"audience-quiz-submit-button\"]",
-        "label": "submit", "pauseAfterMs": 2200 }
-    ] },
-  { "id": "x-preview-results", "title": "Results update live",
-    "targetSelector": ".iframe-wrapper-presenter", "pauseMs": 3000, "action": null }
-  ```
-
-  Interactions run after the step's `pauseMs` (so the iframes are loaded),
-  while that step's tooltip is up; the second step then spotlights the
-  presenter pane to explain the chart reacting.
-- **Flake to watch for:** occasionally the preview exit lands the app in
-  Present mode instead of the editor — the final step's tooltip then floats
-  unanchored over a fullscreen slide. Check the recorder's `final URL` line
-  (no `?presenting=true`) and the step-10/99-final shots; if it happened,
-  just re-record (1-in-3-ish occurrence, cause not yet pinned down).
-
-Selector discovery when the guide's table doesn't cover a control: write a
-probe script IN the workspace dir (crib from `probe2.mjs`), fresh profile dir,
-`force: true` clicks (leftover onboarding panels intercept pointer events), no
-`?onboarding` param. Header buttons follow `[data-testid="editor-*"]`; picker
-items are `[aria-label="<Type>"][data-testid="editor-new-slide-type-item-v2-button"]`.
+- Scenarios live at `scenarios/<article-slug>.json` (1:1 with articles,
+  version-controlled here — commit alongside the article).
+- Derive steps from what the article teaches; write tooltip `description` copy
+  in brand voice (load `aha-branding-tone-voice` when drafting it).
+- **Key constraint:** a step's target must be on screen when the step starts,
+  and must not unmount itself on click (causes tour stall — reproduced twice).
+  See scenario-authoring.md for the full constraints list and workarounds.
 
 ## Phase 2 — Record (remote mode only)
 
@@ -129,266 +43,80 @@ BASE_URL='https://ab214fb69c15de4b3d300d0e323bc3a4d29327d6.presenter.sandbox.aha
 OUT_DIR=$PWD/out node scripts/record-remote-tour.mjs
 ```
 
-The Worker + `aha-onboarding-scenarios` R2 bucket are already deployed on the
-ahaslides-game Cloudflare account. Never use local mode (`STEPS_FILE` +
-`onboarding=<key>` only) — the app renders its built-in tour, not yours, and
-everything desyncs.
+Never use local mode (`STEPS_FILE` + `onboarding=<key>` only) — the app
+renders its built-in tour, not yours, and everything desyncs.
 
 Verify before moving on: the log must say `walk finished — N/N step(s)
-executed`, and visually check `out/shots/step-*.png` with the Read tool.
-Preserve good takes before re-running (`mv out out-<label>`) — each run wipes
-`OUT_DIR`. Tours create REAL presentations on the sandbox test account;
-accepted, don't clean up. Known quirk: new poll slides get "This question has
-correct answer(s)" pre-ticked by the app itself.
+executed`. Visually check `out/shots/step-*.png` with the Read tool.
+Preserve good takes before re-running (`mv out out-<label>`) — each run
+wipes `OUT_DIR`. Tours create REAL presentations on the sandbox test
+account; accepted, don't clean up.
 
-**Spotlight verification checklist — check every step, not just the dialog ones:**
-- [ ] Spotlight covers the key mouse action for every step.
-- [ ] When a step opens a popup or dialog, the spotlight target for that step
-  must be an element inside the dialog — not the panel behind it.
-  **Important: image/asset picker dialogs (e.g. `.aha-modal__content`) render in
-  the OUTER app document, not inside the settings iframe.** They are valid
-  `targetSelector` values while open. Confirmed by DOM probe on the Pin on Image
-  settings panel (r5): `.aha-modal__content` is `null` before the dialog opens,
-  fully present and at `[108,90 1224x720]` while open, and `null` again after
-  close — it is a real DOM element, not a shadow or iframe-internal node.
-  **Two different modal components exist in the AhaSlides editor (Pin on Image r6 discovery):**
-  - Image picker/library dialog: `.aha-modal__content`
-  - Crop dialog (opens after picking an image): `.modal-crop-image` (Bootstrap-style — does NOT have `.aha-modal__content`)
-  Never use `.aha-modal__content` as the `targetSelector` for the crop step — it won't find
-  the element, the overlay tooltip never renders, and the tour stalls.
+**Spotlight verification:** Read `references/spotlight-dialog-handling.md`
+(or invoke the `kb-spotlight-dialog` sub-skill) before verifying any take
+that involves a dialog or image upload. The checklist there covers the
+`.aha-modal__content` vs `.modal-crop-image` distinction and the 3-step
+dialog pattern — missing this caused real re-records (r4/r5 on Pin on Image).
 
-  **State-transition rule:** a step's `targetSelector` must resolve to an element that is
-  present in the DOM at the moment the step becomes active. This means: step transitions
-  must align with UI state (dialog open/close). Never start a step targeting a background
-  element while a foreground dialog is open — the spotlight will land on the background,
-  not the foreground interaction (the exact bug in r4/r5).
-
-  Correct pattern — split dialog interaction into exactly 3 ACTION steps:
-  1. A **tooltip-only** step (`action: null`) with `targetSelector: ".aha-modal__content"` —
-     runs WHILE the image picker is open, spotlight on the dialog. Run non-closing
-     `mainInteractions` here (tab clicks, search box typing). Do NOT pick the image here.
-  2. An **ACTION step** with `targetSelector: ".aha-modal__content"` and
-     `action: {"type": "click", "selector": "<image item>"}` — tour advances AT the click
-     (before the crop dialog opens), so the anchor is still present when the step completes.
-  3. An **ACTION step** with `targetSelector: ".modal-crop-image"` and
-     `action: {"type": "click", "selector": "[data-testid=\"crop-image-save-button\"]"}` —
-     targets the crop dialog by its actual class. Add `pauseMs: 3000` to let the crop dialog
-     finish rendering before the step acts.
-  Do NOT use the settings panel selector for any of these steps — it causes the spotlight
-  ring to appear on background UI, not the foreground dialog (confirmed r4/r5 bug).
-- [ ] Verify frame-by-frame before shipping — look at `out/shots/step-*.png`
-  and confirm the spotlight ring lands where the click/type action happens.
-  Do not ship a take where the spotlight is anchored to background UI during
-  a foreground dialog interaction.
+Quick checklist before moving on:
+- [ ] Every step's spotlight covers the key mouse action.
+- [ ] No step's spotlight lands on background UI while a foreground dialog is open.
+- [ ] `final URL` in the log has no `?presenting=true` (preview exit fluke, 1-in-3 occurrence).
 
 ## Phase 3 — Trim (always)
 
 Use the bundled script — it does both passes in one re-encode:
 `scripts/trim_video.py` (relative to this skill). Run it FROM the recording
-workspace so it finds `node_modules/ffmpeg-static/ffmpeg` (Homebrew isn't
-writable on this machine; set `FFMPEG=` to override).
+workspace so it finds `node_modules/ffmpeg-static/ffmpeg`.
 
 1. Find where the boot loader ends — the app's emoji loader runs anywhere
-   from 3s to 20s+ at the start despite the recorder's warm-up. CAUTION: the
-   same loader appears a SECOND time mid-video (editor loading after "create
-   presentation") — don't mistake it for the boot loader and over-cut the
-   welcome/create steps. Read the frames with your eyes (pixel-variance
-   heuristics misread the light dashboard UI as blank); the boot cut ends
-   when the dashboard + welcome tooltip first appear. Extract 1fps frames:
+   from 3s to 20s+ at the start. CAUTION: the same loader appears a SECOND
+   time mid-video (editor loading after "create presentation") — don't mistake
+   it for the boot loader and over-cut the welcome/create steps. Extract 1fps
+   frames to inspect with your eyes (pixel-variance heuristics misread the
+   light dashboard UI as blank):
 
    ```bash
    node_modules/ffmpeg-static/ffmpeg -i out/<take>.webm -t 25 -vf fps=1 /tmp/frames/f%02d.png
    ```
 
-2. Trim (use `--dry-run` first to sanity-check the cut list):
+2. Trim (use `--dry-run` first):
 
    ```bash
    python3 <skill-dir>/scripts/trim_video.py out/<take>.webm out/<slug>-final.webm \
      --boot-cut <loader-end>
    ```
 
-   The script freeze-detects at a strict threshold (typing/cursor still count
-   as motion — only literally identical frames are flagged), merges spans,
-   keeps the first 1.7s + last 0.3s of each static stretch (tooltips stay
-   readable), folds in the boot cut, and re-encodes VP9 once (stream copy
-   seeks badly on Playwright's sparse-keyframe webms).
+   The script freeze-detects at a strict threshold, merges spans, keeps the
+   first 1.7s + last 0.3s of each static stretch, folds in the boot cut, and
+   re-encodes VP9 once (stream copy seeks badly on Playwright's
+   sparse-keyframe webms).
 
-3. Verify: sample one frame every ~6s and Read them — every step's tooltip
-   must still appear, plus the first frame at 0.5s (it must show the WELCOME
-   step on the dashboard — if it shows a later step, the boot cut ate the
-   opening). If pacing feels rushed, re-trim with `--keep-head 2.5`.
+3. Verify: sample one frame every ~6s — every step's tooltip must appear,
+   and the first frame at 0.5s must show the WELCOME step on the dashboard
+   (if it shows a later step, the boot cut ate the opening). If pacing feels
+   rushed, re-trim with `--keep-head 2.5`.
 
-On the poll take this went 1:58 raw → 0:48 final with nothing meaningful
-lost (68s of the raw video was literally frozen frames: heal gaps, loading
-waits, tooltip holds).
+On the poll take this went 1:58 raw → 0:48 final (68s was literally frozen
+frames: heal gaps, loading waits, tooltip holds).
 
-## Phase 3b — Voiceover narration (optional but recommended)
+## Phase 3b — Voiceover (optional but recommended)
 
-Add narrated audio on top of the trimmed visual track. Prefer ElevenLabs TTS
-over macOS `say` — it produces significantly better levels and more natural
-pronunciation.
-
-### ElevenLabs (preferred)
-
-API key is in `ahaslides-kb/.env` as `ELEVENLABS_API_KEY`. **Never commit,
-print, or echo this value** — load it with `grep ... | cut -d'=' -f2`. If the
-key is absent, fall back to macOS `say` (see below).
-
-**Chosen voice:** Bella (`EXAVITQu4vr4xnSDxMaL`) — upbeat, clear, excellent
-levels (mean ~−17 dB, max ~−1.3 dB). Proven on Categorise r7. Alternative
-premade IDs to try if Bella is unavailable: Domi `AZnzlk1XvdvUeBnXmlld`,
-Rachel `21m00Tcm4TlvDq8ikWAM`. Verify each with a one-line test render; some
-premade IDs 404 on newer accounts.
-
-**Natural spelling first:** ElevenLabs handles English context well. Do NOT
-add phonetic respellings unless a test render sounds wrong. Verify "live"
-(verb context) and product-specific words like "Categorise" by listening to
-test clips before the full render run.
-
-**Per-line render (one API call per line → MP3):**
-
-```bash
-EL_KEY=$(grep ELEVENLABS_API_KEY /Users/claude/AhaSlides/ahaslides-kb/.env | cut -d'=' -f2)
-VOICE_ID="EXAVITQu4vr4xnSDxMaL"
-
-python3 - <<'PYEOF'
-import subprocess, json, os
-
-el_key = subprocess.check_output(
-    "grep ELEVENLABS_API_KEY /Users/claude/AhaSlides/ahaslides-kb/.env | cut -d'=' -f2",
-    shell=True).decode().strip()
-outdir = "/path/to/out-<slug>"
-voice_id = "EXAVITQu4vr4xnSDxMaL"
-settings = {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4}
-
-lines = [
-    ("s01", "Line one text here."),
-    ("s02", "Line two text here."),
-    # ... one entry per step
-]
-
-for key, text in lines:
-    outfile = f"{outdir}/{key}.mp3"
-    body = json.dumps({"text": text, "model_id": "eleven_multilingual_v2",
-                       "voice_settings": settings})
-    subprocess.run([
-        "curl", "-s", "-X", "POST",
-        f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
-        "-H", f"xi-api-key: {el_key}",
-        "-H", "Content-Type: application/json",
-        "-d", body, "-o", outfile
-    ])
-    size = os.path.getsize(outfile) if os.path.exists(outfile) else 0
-    print(f"{key}: size={size}")
-
-PYEOF
-```
-
-**Voice settings tuning:** `stability` 0.4–0.5, `similarity_boost` 0.7–0.8,
-`style` 0.3–0.4 tends toward lively delivery. Higher `stability` produces
-slightly more measured pace (useful if lines overflow their window).
-
-**Mix MP3 clips onto trimmed visual with ffmpeg (adelay per step):**
-
-```bash
-FFMPEG=./node_modules/ffmpeg-static/ffmpeg   # in onboarding-videos workspace
-# Timestamps from voiceover JSON start_sec → milliseconds for adelay
-$FFMPEG -y \
-  -i visual-trimmed.webm \
-  -i out/s01.mp3 -i out/s02.mp3 -i out/s03.mp3 \
-  -filter_complex \
-    '[1:a]adelay=0|0[a1];[2:a]adelay=3000|3000[a2];[3:a]adelay=9800|9800[a3];
-     [a1][a2][a3]amix=inputs=3:normalize=0[aout]' \
-  -map 0:v -map '[aout]' \
-  -c:v copy -c:a libopus -b:a 64k \
-  narrated.webm
-```
-
-Adjust the number of inputs and delays to match the voiceover JSON `start_sec`
-fields. Verify output: `Duration` ≈ visual length, audio levels mean ~−18 dB,
-no clipping.
-
-**Save a voiceover JSON** alongside the scenario at
-`scenarios/<slug>-voiceover.json` — record the voice id, voice settings,
-per-step `tts_text` (natural spelling unless a respelling was needed), and
-`start_sec`/`window_sec` for future re-runs. See
-`scenarios/using-the-categorise-slide-voiceover.json` as the reference.
-
-### macOS `say` (fallback — only if ElevenLabs key is absent)
-
-```bash
-say -v "Shelley (English (US))" -r 178 -o s01.aiff "Line text here"
-```
-
-Choose Shelley for highest mean volume among the built-in voices. Output is
-AIFF; the mix command above works the same way (swap `.aiff` for `.mp3`).
-Caveat: macOS TTS mispronounces some words — test "live" (verb) and product
-terms first; use phonetic respellings in the `tts_text` field only (keep
-`display_text` natural for on-screen/article copy).
+Read `references/voiceover.md` for the full ElevenLabs setup, voice IDs,
+per-line render script, ffmpeg mix command, and macOS `say` fallback.
+Short summary: Bella (`EXAVITQu4vr4xnSDxMaL`) is the proven voice; API key
+is in `ahaslides-kb/.env` as `ELEVENLABS_API_KEY` (never print/echo it).
 
 ## Phase 4 — Upload to YouTube
 
-Use the `youtube-uploader` MCP server (local scope, this project; binary
-`~/.local/bin/youtube-uploader-mcp-darwin-arm64`, credentials in
-`~/.config/youtube-uploader/`).
-
-- Tokens usually persist — call `channels` to confirm, then `upload_video`:
-  title "How to <verb> … on AhaSlides — Quick Tutorial", description = 1–2
-  sentences + `https://help.ahaslides.com/portal/en/kb/articles/<slug>` +
-  ahaslides.com, tags, `category_id: "27"` (Education),
-  `status: "unlisted"`, `made_for_kids: false`.
-- If auth is needed: `authenticate` with `redirect_uri: "http://localhost"` —
-  EXACTLY that. Server bug (v0.1.2): the token exchange always uses the URI
-  registered in client_secret.json (`http://localhost`); anything else →
-  `invalid_grant`. User opens the URL, pastes back the `localhost/?code=...`;
-  pass only the `code` value to `accesstoken` immediately (single-use,
-  short-lived).
-- Google Cloud project: `ahaslides-knowledge-base` (consent published, scopes
-  youtube.upload + youtube.readonly).
-- Channels: Chau's personal `UCtyKZFBUeqOmmW-B4E21Kdw` (@chauhoangahaslides)
-  until Brand Account *Manager* access is granted (YouTube Studio "Editor" is
-  NOT enough for OAuth — myaccount.google.com/brandaccounts). Re-auth and
-  pick the AhaSlides channel once granted.
-- **Housekeeping:** when a video supersedes an earlier upload for the same
-  article, remind the user to delete the old one in YouTube Studio — the API
-  scope can't delete, and stale duplicates accumulate fast at many-articles
-  scale. If an upload lands private despite `unlisted`, that's the API audit
-  lock; owner can flip it in Studio, audit form fixes it permanently.
+Read `references/upload-embed.md` for the full upload workflow, auth
+quirks, channel IDs, and housekeeping notes.
 
 ## Phase 5 — Embed and refresh the article
 
-Add the playable embed near the top of the article (plain markdown links open
-a new tab — always use the block):
-
-```markdown
-{% embed url="https://www.youtube.com/watch?v=<id>" %}
-<caption for the reader>
-{% endembed %}
-```
-
-Then refresh the article while you're in it — the recording is ground truth
-for the current UI (load `aha-branding-tone-voice` for copy edits):
-
-- Update step-by-step instructions to match what `out/shots/*.png` actually
-  show (button labels, panel names, section names like "Unscored").
-- Remove dangling image references — "Here is the X screen:" lines with
-  nothing under them (all images were stripped from this KB); fold them into
-  prose, pointing at the video where useful.
-- Fix dead absolute links (`https://help.ahaslides.com/<old-slug>`) to
-  relative `<article>.md` links so GitBook renders them as internal pages.
-- Convert leftover `youtube.com/embed/<id>` plain links to embed blocks, and
-  drop superseded "outdated tutorial" videos once the new one covers them.
-- Bump `last_updated` in frontmatter; keep all other custom frontmatter
-  intact.
-
-Commit and push `master` — GitBook (Git Sync from
-github.com/AhaSlides-Product/ahaslides-kb, GitHub→GitBook one-way)
-republishes automatically. Never edit articles in the GitBook UI.
-
-**Zoho divergence:** these edits update the GitBook mirror only. The
-canonical Zoho article keeps the old copy — tell the user the two have
-diverged so the fixes can be ported to Zoho (per INDEX.md, never push local
-.md bodies to Zoho blindly; images/videos live there).
+Read `references/upload-embed.md` for embed block syntax, article refresh
+rules (step copy, dead links, image stubs, frontmatter), commit/push flow,
+and the Zoho divergence note.
 
 ## Article Writing Checklist
 
@@ -397,8 +125,6 @@ Apply these rules to every article you write or update.
 ### Slide type names are proper nouns — always capitalise
 
 AhaSlides slide type names are proper nouns and must be capitalised in prose.
-The first letter of the slide-type name is always upper-case when used as the
-direct name of the slide.
 
 | Wrong | Correct |
 |---|---|
@@ -408,36 +134,26 @@ direct name of the slide.
 | the word cloud slide | the Word Cloud slide |
 | rating scale slides | Rating Scale slides |
 
-**Full list of slide type proper nouns** (derived from SUMMARY.md):
-Poll, Brainstorm, Categorise, Content, Correct Order, Match Pairs, Open Ended,
-Ranking, Rating Scale, Spinner Wheel, Word Cloud, Q&A, Idea Board, Pick Answer,
-YouTube.
+**Full list:** Poll, Brainstorm, Categorise, Content, Correct Order, Match
+Pairs, Open Ended, Ranking, Rating Scale, Spinner Wheel, Word Cloud, Q&A,
+Idea Board, Pick Answer, YouTube.
 
-**Scope of the rule:** the construction `<article> <type> slide` (e.g. "a Poll
-slide", "the Brainstorm slide") and `<article> <type> type` (e.g. "the Word
-Cloud type"). Generic category descriptors such as "quiz slide" (meaning any
-scored question) are NOT slide-type names and remain lowercase.
-
-The rule applies to all prose fields: article body, `summary:`, `description:`,
-headings, and inline notes. It does NOT apply to YAML `tags:` / `keywords:`
-arrays (those are lowercase by convention).
+**Scope:** `<article> <type> slide` and `<article> <type> type` constructions.
+Generic category descriptors like "quiz slide" are NOT slide-type names and
+stay lowercase. The rule applies to prose, headings, `summary:`, and
+`description:` — NOT to YAML `tags:`/`keywords:` arrays.
 
 ### Lint script — run before every commit
-
-A lint script catches violations before they reach the repo:
 
 ```bash
 ./scripts/lint-slide-names.sh
 ```
 
-Exits 0 if clean; exits 1 and prints offending lines if violations are found.
-Run it on staged files before committing. To add it as a pre-commit hook:
+Exits 0 if clean; exits 1 with offending lines if violations found. To add
+as a pre-commit hook:
 
 ```bash
 echo '#!/bin/sh
 cd "$(git rev-parse --show-toplevel)" && ./scripts/lint-slide-names.sh' \
   > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
-
-The script is conservative (low false-positive rate): it only flags the
-`the/a/an <type> slide/type` construction and skips generic words like "quiz".
