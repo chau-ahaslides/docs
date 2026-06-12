@@ -64,19 +64,27 @@
       ]
     },
     {
+      "id": "pin-switch-tab",
+      "path": "/presentation/*",
+      "title": "Browse stock photos",
+      "description": "Switch to the Stock Photos tab to search the image library.",
+      "targetSelector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
+      "pauseMs": 500,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
+        "hint": "Click 'Stock Photos' to continue"
+      }
+    },
+    {
       "id": "pin-image-library",
       "path": "/presentation/*",
-      "title": "Browse the image library",
-      "description": "Your image library is open. Switch to Stock Photos and search for a world map image.",
-      "targetSelector": ".aha-modal__content",
-      "pauseMs": 500,
+      "title": "Search for your image",
+      "description": "Type a keyword to find the perfect photo — we're searching for a world map.",
+      "targetSelector": "[data-testid=\"editor-stock-photo-search-input\"]",
+      "pauseMs": 2000,
       "action": null,
       "mainInteractions": [
-        {
-          "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
-          "label": "click Stock Photos tab",
-          "pauseAfterMs": 3500
-        },
         {
           "type": "type",
           "selector": "[data-testid=\"editor-stock-photo-search-input\"]",
@@ -92,7 +100,7 @@
       "path": "/presentation/*",
       "title": "Pick your image",
       "description": "Tap any result to select it — we're going with a world map here.",
-      "targetSelector": ".aha-modal__content",
+      "targetSelector": "[data-testid=\"editor-stock-photo-image-item\"]",
       "pauseMs": 500,
       "action": {
         "type": "click",
