@@ -3,8 +3,8 @@
     {
       "id": "survey-intro",
       "path": "/apps/presentations",
-      "title": "Two ways to run a Survey",
-      "description": "AhaSlides Surveys work in two modes. Build a survey once, then either share a standalone link for people to fill in at their own pace — or drop it into your presentation as a live slide. Let's walk through both. Click Next to begin.",
+      "title": "Surveys — built once, run two ways",
+      "description": "AhaSlides Surveys collect multi-question feedback from your audience. Build a survey once — then share a standalone link, or drop it live into your presentation. Let's see how. Click Next to begin.",
       "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
       "pauseMs": 3000,
       "action": null
@@ -13,57 +13,104 @@
       "id": "survey-nav",
       "path": "/apps/presentations",
       "title": "Open Surveys",
-      "description": "Click 'Surveys' in the left sidebar. This is where you create and manage all your surveys — separate from your presentations.",
+      "description": "Click Surveys in the left sidebar to open the survey builder — it lives separately from your presentations.",
       "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
+      "pauseMs": 1500,
       "action": {
         "type": "click",
         "selector": "[data-testid=\"sidebar-embed-app-item\"]",
-        "hint": "Click 'Surveys' to continue"
+        "hint": "Click Surveys to continue"
       }
     },
     {
       "id": "survey-dashboard",
       "path": "/apps/addons/aha-survey/*",
       "title": "The Surveys dashboard",
-      "description": "Here you can see all your surveys with their response counts and status. Start a new survey from AI generation, a template, or from scratch.",
-      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
-      "pauseMs": 3000,
+      "description": "Here are all your surveys — you can start from AI, a template, or from scratch. Start from scratch to create a fresh survey, or open an existing one. Let's open our Post-Session Feedback survey.",
+      "targetSelector": "[data-testid=\"embed-app-zoid-container\"]",
+      "pauseMs": 6000,
+      "previewInteractions": [
+        {
+          "frameMatch": "survey.dev.ahaslide.com",
+          "selector": "[data-testid=\"survey-row-0db181fc-6427-4f28-b0c1-f2f86d1f7bf8\"]",
+          "label": "click Post-Session Feedback survey row",
+          "pauseAfterMs": 6000
+        }
+      ],
       "action": null
     },
     {
       "id": "survey-editor",
       "path": "/apps/addons/aha-survey/*",
-      "title": "Build your survey",
-      "description": "Inside the editor, add questions — Multiple Choice, Rating Scale, Open-ended, or Matrix. Mark questions required, attach images, and mix types in any order.",
-      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
-      "pauseMs": 3000,
+      "title": "Build your survey questions",
+      "description": "Inside the editor, mix question types on the same page — Multiple choice, Rating scale, Long answer, Matrix. Each question auto-saves as you type. Add as many pages as you need for longer surveys.",
+      "targetSelector": "[data-testid=\"embed-app-zoid-container\"]",
+      "pauseMs": 6000,
       "action": null
     },
     {
-      "id": "survey-publish-share",
+      "id": "survey-share-click",
       "path": "/apps/addons/aha-survey/*",
-      "title": "Publish and share a link",
-      "description": "Hit Publish — the status changes from Draft to Published. Then copy the respondent link and share it by email, QR code, or any channel. Participants open it in any browser, no account needed.",
-      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
-      "pauseMs": 3000,
+      "title": "Publish — then share",
+      "description": "When your questions are ready, click Publish to go live. The Share page opens automatically.",
+      "targetSelector": "[data-testid=\"embed-app-zoid-container\"]",
+      "pauseMs": 2000,
+      "previewInteractions": [
+        {
+          "frameMatch": "survey.dev.ahaslide.com",
+          "selector": "[data-testid=\"editor-share-nav-btn\"]",
+          "label": "click Share",
+          "pauseAfterMs": 5000
+        }
+      ],
       "action": null
     },
     {
-      "id": "survey-as-slide",
+      "id": "survey-share-link",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "Mode 1 — share a link or QR code",
+      "description": "The Share page gives you a respondent link and a QR code, ready to send anywhere. Copy the link and paste it into email or Slack. Print the QR code on a poster. Participants open it on any device — no account needed.",
+      "targetSelector": "[data-testid=\"embed-app-zoid-container\"]",
+      "pauseMs": 5000,
+      "previewInteractions": [
+        {
+          "frameMatch": "survey.dev.ahaslide.com",
+          "selector": "[data-testid=\"share-link-copy-btn\"]",
+          "label": "click Copy link",
+          "pauseAfterMs": 2500
+        }
+      ],
+      "action": null
+    },
+    {
+      "id": "survey-qr-code",
+      "path": "/apps/addons/aha-survey/*",
+      "title": "QR code — instant access in any room",
+      "description": "The QR code is right there alongside your link. Download it as a PNG, add it to a slide or handout, and your audience scans it to open the survey instantly on their phones.",
+      "targetSelector": "[data-testid=\"embed-app-zoid-container\"]",
+      "pauseMs": 4500,
+      "action": null
+    },
+    {
+      "id": "survey-to-presentation",
       "path": "/apps/presentations",
-      "title": "Or: add Survey as a slide",
-      "description": "Back in your presentation, add a new slide and select the Survey slide type. Link it to your published survey. When you reach that slide during a live session, the full survey appears on every participant's device — right there in the room.",
-      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
-      "pauseMs": 3500,
-      "action": null
+      "title": "Mode 2 — add the Survey to your presentation",
+      "description": "For live sessions, head back to Presentations, add a new slide, and choose the Survey type. Link it to your published survey. When you reach that slide while presenting, the survey appears live on every participant's device — all questions at once.",
+      "targetSelector": "[data-testid=\"sidebar-presentations-link\"]",
+      "pauseMs": 3000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"sidebar-presentations-link\"]",
+        "hint": "Click Presentations to continue"
+      }
     },
     {
-      "id": "survey-results",
-      "path": "/apps/addons/aha-survey/*",
-      "title": "Check results any time",
-      "description": "The Responses column in your Surveys list tracks submissions in real time. Click 'View results' to see answers question by question — whether the survey ran standalone or as a live slide.",
-      "targetSelector": "[data-testid=\"sidebar-embed-app-item\"]",
-      "pauseMs": 2500,
+      "id": "survey-audience-view",
+      "path": "/apps/presentations",
+      "title": "Audience sees all questions at once",
+      "description": "When the presenter reaches the Survey slide, the full survey appears on every participant's phone — all questions on one page, scroll to answer, and submit. You collect structured feedback without leaving your session.",
+      "targetSelector": "[data-testid=\"sidebar-presentations-link\"]",
+      "pauseMs": 5000,
       "action": null
     }
   ]

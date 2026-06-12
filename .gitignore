@@ -1,0 +1,4 @@
+
+# Agent-Fleet local config (contains API token)
+.agent-fleet/
+.env
