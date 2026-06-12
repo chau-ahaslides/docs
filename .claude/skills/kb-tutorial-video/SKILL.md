@@ -151,18 +151,31 @@ correct answer(s)" pre-ticked by the app itself.
   settings panel (r5): `.aha-modal__content` is `null` before the dialog opens,
   fully present and at `[108,90 1224x720]` while open, and `null` again after
   close — it is a real DOM element, not a shadow or iframe-internal node.
-  Correct pattern (hybrid — two steps):
+  **Two different modal components exist in the AhaSlides editor (Pin on Image r6 discovery):**
+  - Image picker/library dialog: `.aha-modal__content`
+  - Crop dialog (opens after picking an image): `.modal-crop-image` (Bootstrap-style — does NOT have `.aha-modal__content`)
+  Never use `.aha-modal__content` as the `targetSelector` for the crop step — it won't find
+  the element, the overlay tooltip never renders, and the tour stalls.
+
+  **State-transition rule:** a step's `targetSelector` must resolve to an element that is
+  present in the DOM at the moment the step becomes active. This means: step transitions
+  must align with UI state (dialog open/close). Never start a step targeting a background
+  element while a foreground dialog is open — the spotlight will land on the background,
+  not the foreground interaction (the exact bug in r4/r5).
+
+  Correct pattern — split dialog interaction into exactly 3 ACTION steps:
   1. A **tooltip-only** step (`action: null`) with `targetSelector: ".aha-modal__content"` —
-     runs WHILE the dialog is open, shows the spotlight on the dialog, no
-     interactions that would close the dialog.
-  2. A **stable-anchor** step with `targetSelector` pointing to an always-present
-     element (e.g. `[data-testid="slide-plugin-iframe-config-container"]`) —
-     runs all `mainInteractions` that complete and close the dialog (search, pick,
-     save). Using `.aha-modal__content` on this step stalls the tour because Next
-     is clicked after the dialog closes and the overlay can't find the anchor.
-  Do NOT use the settings panel selector for the dialog-open tooltip step —
-  this causes the spotlight ring to appear on background UI, not the dialog
-  (the exact bug reported in r4).
+     runs WHILE the image picker is open, spotlight on the dialog. Run non-closing
+     `mainInteractions` here (tab clicks, search box typing). Do NOT pick the image here.
+  2. An **ACTION step** with `targetSelector: ".aha-modal__content"` and
+     `action: {"type": "click", "selector": "<image item>"}` — tour advances AT the click
+     (before the crop dialog opens), so the anchor is still present when the step completes.
+  3. An **ACTION step** with `targetSelector: ".modal-crop-image"` and
+     `action: {"type": "click", "selector": "[data-testid=\"crop-image-save-button\"]"}` —
+     targets the crop dialog by its actual class. Add `pauseMs: 3000` to let the crop dialog
+     finish rendering before the step acts.
+  Do NOT use the settings panel selector for any of these steps — it causes the spotlight
+  ring to appear on background UI, not the foreground dialog (confirmed r4/r5 bug).
 - [ ] Verify frame-by-frame before shipping — look at `out/shots/step-*.png`
   and confirm the spotlight ring lands where the click/type action happens.
   Do not ship a take where the spotlight is anchored to background UI during

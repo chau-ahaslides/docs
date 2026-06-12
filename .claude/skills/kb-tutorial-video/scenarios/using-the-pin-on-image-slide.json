@@ -67,18 +67,9 @@
       "id": "pin-image-library",
       "path": "/presentation/*",
       "title": "Browse the image library",
-      "description": "Your image library is open. Switch to Stock Photos to browse millions of free, searchable images.",
+      "description": "Your image library is open. Switch to Stock Photos and search for a world map image.",
       "targetSelector": ".aha-modal__content",
       "pauseMs": 500,
-      "action": null
-    },
-    {
-      "id": "pin-search-save",
-      "path": "/presentation/*",
-      "title": "Search, pick, and save your image",
-      "description": "Click 'Stock Photos', type 'world map' in the search box, pick the first result, then hit Save to add it to your slide.",
-      "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
-      "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
         {
@@ -93,18 +84,34 @@
           "value": "world map",
           "pressEnter": true,
           "pauseAfterMs": 5000
-        },
-        {
-          "selector": "[data-testid=\"editor-stock-photo-image-item\"]",
-          "label": "select first world map photo",
-          "pauseAfterMs": 3000
-        },
-        {
-          "selector": "[data-testid=\"crop-image-save-button\"]",
-          "label": "save cropped image",
-          "pauseAfterMs": 6000
         }
       ]
+    },
+    {
+      "id": "pin-pick-image",
+      "path": "/presentation/*",
+      "title": "Pick your image",
+      "description": "Tap any result to select it — we're going with a world map here.",
+      "targetSelector": ".aha-modal__content",
+      "pauseMs": 500,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-stock-photo-image-item\"]",
+        "hint": "Click an image to select it"
+      }
+    },
+    {
+      "id": "pin-save-image",
+      "path": "/presentation/*",
+      "title": "Save the image to your slide",
+      "description": "Adjust the crop if you like, then hit Save to add the world map to your Pin on Image slide.",
+      "targetSelector": ".modal-crop-image",
+      "pauseMs": 3000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"crop-image-save-button\"]",
+        "hint": "Click Save to continue"
+      }
     },
     {
       "id": "pin-preview-open",
@@ -112,6 +119,7 @@
       "title": "Rehearse with Preview",
       "description": "Click Preview to see exactly how your slide will look to participants — no audience needed.",
       "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
+      "pauseMs": 6000,
       "action": {
         "type": "click",
         "selector": "[data-testid=\"editor-middle-preview-button\"]",
