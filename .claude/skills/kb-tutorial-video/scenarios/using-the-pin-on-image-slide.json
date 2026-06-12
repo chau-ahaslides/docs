@@ -50,7 +50,7 @@
       "id": "pin-add-image",
       "path": "/presentation/*",
       "title": "Add your image",
-      "description": "Click the image area in the Content panel to open the image library. You can upload your own file or pick from thousands of free stock photos.",
+      "description": "Click the image area in the Content panel to open the image library. Switch to Stock Photos and search for 'world map' to find an image that matches your question perfectly.",
       "targetSelector": "[data-testid=\"slide-plugin-iframe-config-container\"]",
       "pauseMs": 2000,
       "action": null,
@@ -66,11 +66,19 @@
         {
           "selector": "[data-testid=\"editor-modal-upload-image-v2-unsplash-tab\"]",
           "label": "click Stock Photos tab",
-          "pauseAfterMs": 4000
+          "pauseAfterMs": 3500
+        },
+        {
+          "type": "type",
+          "selector": "[data-testid=\"editor-stock-photo-search-input\"]",
+          "label": "search for world map",
+          "value": "world map",
+          "pressEnter": true,
+          "pauseAfterMs": 5000
         },
         {
           "selector": "[data-testid=\"editor-stock-photo-image-item\"]",
-          "label": "select first stock photo",
+          "label": "select first world map photo",
           "pauseAfterMs": 3000
         },
         {
