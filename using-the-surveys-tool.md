@@ -7,7 +7,8 @@ category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
 last_updated: 2026-06-15
-video: "https://www.youtube.com/watch?v=Llv1wXSpm5c"
+video_updated: 2026-06-15
+video: "https://www.youtube.com/watch?v=pv5519zbz3w"
 tags: ["survey", "surveys", "form", "feedback", "questions", "multiple choice", "rating", "matrix", "slide"]
 keywords: ["survey", "create survey", "survey form", "feedback form", "rating scale", "multiple choice survey", "ahaslides survey", "survey slide", "add survey to presentation"]
 summary: Build a multi-question Survey on AhaSlides and run it two ways — share a standalone link for async responses, or drop it into your presentation as a live slide your audience completes on the spot.
@@ -104,7 +105,7 @@ You can check results at any time:
 
 Both options show your audience exactly the same thing: the full Survey on one page.
 
-{% embed url="https://www.youtube.com/watch?v=Llv1wXSpm5c" %}
+{% embed url="https://www.youtube.com/watch?v=pv5519zbz3w" %}
 Build a Survey once, then share a standalone link or drop it live into your presentation.
 {% endembed %}
 
