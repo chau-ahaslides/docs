@@ -23,6 +23,7 @@
 * [Using Q&A](using-qa.md)
 * [Using the Brainstorm Slide](using-the-brainstorm-slide.md)
 * [Using the Categorise Slide](using-the-categorise-slide.md)
+* [Using the Diagram Slide](using-the-diagram-slide.md)
 * [Using the Pin on Image Slide](using-the-pin-on-image-slide.md)
 * [Using the Content Slide](using-the-content-slide.md)
 * [Using the Correct Order Slide](using-the-correct-order-slide.md)
