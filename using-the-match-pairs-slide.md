@@ -49,4 +49,13 @@ In the AhaSlides editor, add a Match Pairs slide and do the following:
    - **Partial scoring**: Rewards each correctly matched pair individually, even if the player doesn't match them all. For example, 1 out of 4 correct = 25% of points.
    - **Time limit**: How many seconds participants have to match all pairs.
 
+## Tips for creating a good Match Pairs slide
+
+- **Keep pairs clear and unambiguous.** Each left-side item should have exactly one correct match on the right. Avoid answers that could plausibly fit multiple items.
+- **Aim for 3–4 pairs.** Enough to be engaging without taking too long or crowding a small mobile screen.
+- **Balance difficulty.** Mix one or two obvious pairs with a few trickier ones to keep everyone engaged regardless of knowledge level.
+- **Use parallel structure.** If the left column uses terms, the right column should use definitions (or images, or examples) consistently. Mixing formats confuses the pattern.
+- **Keep text short.** Each item should be a word or short phrase. Long sentences make scanning and dragging difficult, especially on mobile.
+- **Test for red herrings.** Read all right-side options together and make sure none of them almost fit multiple left-side items in a misleading way, unless that's intentional difficulty.
+
 For more help, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).
