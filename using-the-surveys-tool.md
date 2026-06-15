@@ -6,29 +6,35 @@ permalink: using-the-surveys-tool
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-06-13
+last_updated: 2026-06-15
 video: "https://www.youtube.com/watch?v=Llv1wXSpm5c"
-tags: ["survey", "surveys", "form", "feedback", "questions", "multiple choice", "rating", "slide"]
+tags: ["survey", "surveys", "form", "feedback", "questions", "multiple choice", "rating", "matrix", "slide"]
 keywords: ["survey", "create survey", "survey form", "feedback form", "rating scale", "multiple choice survey", "ahaslides survey", "survey slide", "add survey to presentation"]
 summary: Build a multi-question Survey on AhaSlides and run it two ways — share a standalone link for async responses, or drop it into your presentation as a live slide your audience completes on the spot.
 plan_required: All
-description: "Build multi-question surveys with Multiple Choice, Rating Scale, Open-ended, and Matrix questions, then run them standalone or live inside your presentation deck."
+portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-create-and-run-surveys
+related_articles: ["creating-a-poll-question-on-ahaslides", "how-to-use-rating-scale-slides-on-ahaslides", "how-to-make-and-run-a-quiz", "how-to-collaborate-on-presentations-and-folders"]
+mcp_actions:
+  create: 'create_slides(slide_type: "survey", heading: "...")'
+  note: 'Surveys are standalone objects managed from the Surveys dashboard section, not created as regular slides; add to a presentation by linking a published Survey to a Survey slide type'
+warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
+description: "Build multi-question Surveys with Multiple Choice, Rating Scale, Open-ended, and Matrix questions, then run them standalone or live inside your presentation deck."
 ---
 
 # Using Surveys on AhaSlides
 
 {% embed url="https://www.youtube.com/watch?v=Llv1wXSpm5c" %}
-Build a survey once, then share a standalone link or drop it live into your presentation.
+Build a Survey once, then share a standalone link or drop it live into your presentation.
 {% endembed %}
 
-AhaSlides Surveys let you collect structured, multi-question feedback in two modes — you build the survey once, then choose how to launch it.
+AhaSlides Surveys let you collect structured, multi-question feedback in two modes — you build the Survey once, then choose how to launch it.
 
-**Two ways to run the same survey:**
+**Two ways to run the same Survey:**
 
 1. **Standalone Survey** — share a link (or QR code) so respondents complete it any time, at their own pace, with no presenter needed.
-2. **A slide in your presentation** — add the Survey as a slide in your deck. When you reach that slide while presenting, the survey appears live on every participant's device.
+2. **A slide in your presentation** — add the Survey as a slide in your deck. When you reach that slide while presenting, the Survey appears live on every participant's device.
 
-Both options show your audience exactly the same thing: the full survey on one page.
+Both options show your audience exactly the same thing: the full Survey on one page.
 
 ---
 
@@ -38,7 +44,7 @@ Surveys live in their own section of your AhaSlides dashboard, separate from you
 
 1. Log in to AhaSlides and click **Surveys** in the left-hand menu.
 2. Choose how to start:
-   - **Generate with AI** — describe your survey goal and let AhaSlides generate questions for you.
+   - **Generate with AI** — describe your Survey goal and let AhaSlides generate questions for you.
    - **Use a template** — pick a pre-built template and customise it.
    - **Start from scratch** — open a blank editor and build your own.
 
@@ -46,7 +52,7 @@ Surveys live in their own section of your AhaSlides dashboard, separate from you
 
 ## Step 2: Adding and Editing Questions
 
-Inside the survey editor you can mix as many question types as you need:
+Inside the Survey editor you can mix as many question types as you need:
 
 | Question type | What it does |
 |---|---|
@@ -56,7 +62,7 @@ Inside the survey editor you can mix as many question types as you need:
 | **Matrix** | Multiple sub-questions sharing the same answer choices — great for Likert tables |
 
 **Tips:**
-- Use the AI assistant (top-right corner) to generate a full questionnaire from a prompt.
+- Use the AI assistant to generate a full questionnaire from a prompt.
 - Attach an image to any question to give respondents more context.
 - Mark a question **Required** so respondents cannot submit without answering it.
 
@@ -66,28 +72,28 @@ Your changes auto-save as a **Draft** until you publish.
 
 ## Step 3: Publishing and Sharing
 
-While a survey is a Draft it is not collecting responses. When you are happy with your questions, publish it — the status changes to **Published** and it is ready for respondents.
+While a Survey is a Draft it is not collecting responses. When you are happy with your questions, publish it — the status changes to **Published** and it is ready for respondents.
 
 ### Method 1 — Run it as a standalone Survey
 
-1. Open the survey's sharing options and copy the link, or use the QR code.
+1. Open the Survey's sharing options and copy the link, or use the QR code.
 2. Send the link to your respondents (email, Slack, LMS, poster — anywhere).
 3. Participants open it on any device — phone, tablet, or computer — with no download or account needed.
 
-Responses collect for as long as the survey stays open. To stop accepting new responses, close the survey (status returns to Draft).
+Responses collect for as long as the Survey stays open. To stop accepting new responses, close the Survey (status returns to Draft).
 
 ### Method 2 — Run a Survey inside your presentation
 
-Use this when you want structured feedback from your audience *while they are still in the room* — end-of-session forms, mid-workshop check-ins, event feedback.
+Use this when you want structured feedback from your audience while they are still in the room — end-of-session forms, mid-workshop check-ins, event feedback.
 
 1. Open your presentation in the editor and **add a new slide**.
 2. Select the **Survey** slide type.
-3. On the slide, click **Link survey** and choose the published survey you want to show.
+3. On the slide, click **Link survey** and choose the published Survey you want to show.
 4. Present your deck as usual — participants join with the normal join code or QR code.
-5. When you reach the survey slide, the survey is revealed on every participant's device.
+5. When you reach the Survey slide, the Survey is revealed on every participant's device.
 6. Each participant scrolls through the questions, answers them, and presses **Submit**.
 
-> Because the survey appears at the exact moment you present the slide, response rates are much higher than emailing a survey afterwards — your audience answers while the session is still fresh.
+> Because the Survey appears at the exact moment you present the slide, response rates are much higher than emailing a Survey afterwards — your audience answers while the session is still fresh.
 
 ---
 
@@ -95,7 +101,7 @@ Use this when you want structured feedback from your audience *while they are st
 
 You can check results at any time:
 
-- The **Responses** column in your Surveys list shows how many submissions each survey has received.
+- The **Responses** column in your Surveys list shows how many submissions each Survey has received.
 - Click **View results** to see responses in detail, question by question.
 
 ---
@@ -111,8 +117,8 @@ No. Participants just open the link or scan the QR code and answer in any browse
 **Can responses be anonymous?**
 Yes. You can keep responses anonymous for more honest feedback, or collect respondent details (such as an email address question) when you need to follow up.
 
-**Why isn't my survey collecting responses?**
-Check the survey's status in your Surveys list. If it is still **Draft**, it has not been published yet — participants cannot see it until you publish.
+**Why isn't my Survey collecting responses?**
+Check the Survey's status in your Surveys list. If it is still **Draft**, it has not been published yet — participants cannot see it until you publish.
 
-**Can I test my survey before sending it out?**
-Yes. Click **Preview** to see how it looks on respondent devices and submit a test response. Remember to remove your test submission from the results before sharing the survey for real.
+**Can I test my Survey before sending it out?**
+Yes. Click **Preview** to see how it looks on respondent devices and submit a test response. Remember to remove your test submission from the results before sharing the Survey for real.
