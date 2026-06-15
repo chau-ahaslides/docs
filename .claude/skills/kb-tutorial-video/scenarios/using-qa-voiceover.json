@@ -1,0 +1,70 @@
+{
+  "voice": "Liam (ElevenLabs, voice_id: VCgLBmBjldJmfphyB8sZ)",
+  "tts_engine": "elevenlabs",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
+  "video_duration_sec": 32.1,
+  "generated_round": 1,
+  "youtube_id": "jCRtfqp5xYI",
+  "pronunciation_map": {},
+  "notes": "Round 1 — AKB-10. Voice: Liam (VCgLBmBjldJmfphyB8sZ) per AKB-19 constraint (Liam/Alice only). Opening overlap verified clean: s01 ends at 6.23s, s02 starts at 7.02s, gap=0.79s (silencedetect confirmed). 7 steps, 32.1s trimmed visual. Raw: 45.7s → boot-cut 3s → trim 32.1s.",
+  "steps": [
+    {
+      "id": "qa-welcome",
+      "start_sec": 0.0,
+      "window_sec": 5.0,
+      "display_text": "A Q&A slide turns any presentation into a two-way conversation — your audience sends questions, and you answer them live.",
+      "tts_text": "A Q&A slide turns any presentation into a two-way conversation — your audience sends questions, and you answer them live.",
+      "audio_duration_sec": 6.45
+    },
+    {
+      "id": "qa-create",
+      "start_sec": 7.0,
+      "window_sec": 3.0,
+      "display_text": "Click New Presentation to open a fresh deck.",
+      "tts_text": "Click New Presentation to open a fresh deck.",
+      "audio_duration_sec": 2.51
+    },
+    {
+      "id": "qa-pick-type",
+      "start_sec": 10.5,
+      "window_sec": 5.0,
+      "display_text": "Select Q&A from the slide type picker — you'll find it in the Unscored section.",
+      "tts_text": "Select Q&A from the slide type picker — you'll find it in the Unscored section.",
+      "audio_duration_sec": 4.13
+    },
+    {
+      "id": "qa-type-heading",
+      "start_sec": 15.5,
+      "window_sec": 5.0,
+      "display_text": "Type a heading that invites your audience to ask questions — clear and welcoming works best.",
+      "tts_text": "Type a heading that invites your audience to ask questions — clear and welcoming works best.",
+      "audio_duration_sec": 4.78
+    },
+    {
+      "id": "qa-settings-when",
+      "start_sec": 21.0,
+      "window_sec": 4.0,
+      "display_text": "Choose whether questions come in on all slides, or only on this dedicated Q&A slide.",
+      "tts_text": "Choose whether questions come in on all slides, or only on this dedicated Q&A slide.",
+      "audio_duration_sec": 4.55
+    },
+    {
+      "id": "qa-settings-moderation",
+      "start_sec": 26.5,
+      "window_sec": 3.5,
+      "display_text": "Turn on moderation if you'd like to review questions before they appear on screen.",
+      "tts_text": "Turn on moderation if you'd like to review questions before they appear on screen.",
+      "audio_duration_sec": 4.00
+    },
+    {
+      "id": "qa-present",
+      "start_sec": 30.5,
+      "window_sec": 5.0,
+      "display_text": "That's your Q&A slide ready. Hit Present, and your audience starts sending questions on their phones — you organise and answer them all from one screen.",
+      "tts_text": "That's your Q&A slide ready. Hit Present, and your audience starts sending questions on their phones — you organise and answer them all from one screen.",
+      "audio_duration_sec": 7.18
+    }
+  ],
+  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out-qa-r1/using-qa-trimmed.webm -i out-qa-vo/s01.mp3 -i out-qa-vo/s02.mp3 -i out-qa-vo/s03.mp3 -i out-qa-vo/s04.mp3 -i out-qa-vo/s05.mp3 -i out-qa-vo/s06.mp3 -i out-qa-vo/s07.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=7000|7000[a2];[3:a]adelay=10500|10500[a3];[4:a]adelay=15500|15500[a4];[5:a]adelay=21000|21000[a5];[6:a]adelay=26500|26500[a6];[7:a]adelay=30500|30500[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-qa-r1/using-qa-narrated.webm"
+}
