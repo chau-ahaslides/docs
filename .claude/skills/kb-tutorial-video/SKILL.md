@@ -117,6 +117,52 @@ Quick reference (see `kb-video-voiceover` SKILL.md for details):
 Read `references/upload-embed.md` for the full upload workflow, auth
 quirks, channel IDs, and housekeeping notes.
 
+### Chapters (required — YouTube rejects < 3 chapters or any chapter < 10s)
+
+After upload, add compliant chapters to every video using the bundled script:
+`scripts/youtube_chapters.py` in this skill's `scripts/` directory.
+
+```bash
+# VALIDATE a hand-crafted chapter file:
+python3 <skill-dir>/scripts/youtube_chapters.py validate chapters.txt \
+    --video-duration <total_seconds>
+
+# DERIVE a compliant chapter list from the voiceover JSON (auto-merges short steps):
+python3 <skill-dir>/scripts/youtube_chapters.py derive \
+    scenarios/<slug>-voiceover.json
+
+# DRY-RUN the description update (shows what would be written):
+python3 <skill-dir>/scripts/youtube_chapters.py upload \
+    --video-id <VIDEO_ID> --chapters chapters.txt \
+    --access-token <TOKEN> --video-duration <seconds> --dry-run
+
+# UPLOAD chapters to YouTube (requires youtube.force-ssl scope):
+python3 <skill-dir>/scripts/youtube_chapters.py upload \
+    --video-id <VIDEO_ID> --chapters chapters.txt \
+    --access-token <TOKEN> --video-duration <seconds>
+```
+
+YouTube's rules enforced by the script:
+- First chapter MUST be `0:00`.
+- At least 3 chapters.
+- Every chapter MUST be >= 10 seconds long.
+- Timestamps must be strictly ascending.
+- Format: `M:SS Title` or `H:MM:SS Title`.
+
+The script's `derive` command reads `display_text` from each voiceover step and
+greedy-merges adjacent steps until every group is >= 10s, producing a valid
+baseline. Rename the chapter titles to human-readable labels before uploading.
+
+**Auth note:** `videos.update` (used by the `upload` command) requires the
+`youtube.force-ssl` scope. The `youtube-uploader` MCP's `authenticate` tool
+hardcodes only `youtube.upload + youtube.readonly` — it CANNOT obtain
+`force-ssl`. If chapters or captions fail with 403, Chau must open the
+manual auth URL below and paste back the `code=` value to `accesstoken`:
+
+```
+https://accounts.google.com/o/oauth2/auth?client_id=246925459518-vgaado7j62ngu64amnfs27ji54bolanj.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.force-ssl+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&access_type=offline&prompt=consent&state=force-ssl-reauth
+```
+
 ## Phase 5 — Embed and refresh the article
 
 Read `references/upload-embed.md` for embed block syntax, article refresh
