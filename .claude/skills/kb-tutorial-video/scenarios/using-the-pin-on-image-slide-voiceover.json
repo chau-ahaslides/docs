@@ -4,10 +4,10 @@
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
   "video_duration_sec": 77.2,
-  "generated_round": 7,
-  "youtube_id": "7DuTCVV3hew",
+  "generated_round": 8,
+  "youtube_id": "3xN0Oc6XZHQ",
   "pronunciation_map": {},
-  "notes": "Round 7 — tooltip occlusion fix: split image-library step into three. Step 6 (pin-switch-tab): targets Stock Photos tab — tooltip to the RIGHT of the tab (clear of search area). Step 7 (pin-image-library): targets search input — tooltip BELOW the search field. Step 8 (pin-pick-image): targets first image item — tooltip to the RIGHT of the image. This eliminates the round 6 bug where tooltip covered the search input. 14/14 steps, 77.2s trimmed.",
+  "notes": "Round 8 — VO overlap fix: s01 (pin-welcome) audio_duration_sec=5.51s but s02 (pin-create) was delayed only 3500ms, causing a 2.04s overlap at 0:03-0:05. Fixed by pushing s02 adelay from 3500ms to 6000ms. Confirmed via silencedetect: silence_start=5.45s, silence_end=6.06s — clean gap between clips. No cascade change needed; next step (pin-pick-type) is at 11000ms. Same trimmed visual, same VO clips, audio-only re-mux. Round 7: tooltip occlusion fix — split image-library step into three targeted steps. 14/14 steps, 77.2s.",
   "steps": [
     {
       "id": "pin-welcome",
@@ -19,7 +19,7 @@
     },
     {
       "id": "pin-create",
-      "start_sec": 3.5,
+      "start_sec": 6.0,
       "window_sec": 3.0,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
@@ -122,5 +122,5 @@
       "audio_duration_sec": 3.66
     }
   ],
-  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/pin-on-image-r7-trimmed.webm -i out-r7-vo/s01.mp3 -i out-r7-vo/s02.mp3 -i out-r7-vo/s03.mp3 -i out-r7-vo/s04.mp3 -i out-r7-vo/s05.mp3 -i out-r7-vo/s06.mp3 -i out-r7-vo/s07.mp3 -i out-r7-vo/s08.mp3 -i out-r7-vo/s09.mp3 -i out-r7-vo/s10.mp3 -i out-r7-vo/s11.mp3 -i out-r7-vo/s12.mp3 -i out-r7-vo/s13.mp3 -i out-r7-vo/s14.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=3500|3500[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=16000|16000[a4];[5:a]adelay=22000|22000[a5];[6:a]adelay=26500|26500[a6];[7:a]adelay=28000|28000[a7];[8:a]adelay=38500|38500[a8];[9:a]adelay=42500|42500[a9];[10:a]adelay=52000|52000[a10];[11:a]adelay=56500|56500[a11];[12:a]adelay=65500|65500[a12];[13:a]adelay=70000|70000[a13];[14:a]adelay=73500|73500[a14];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11][a12][a13][a14]amix=inputs=14:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/pin-on-image-r7-narrated.webm"
+  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/pin-on-image-r7-trimmed.webm -i out-r7-vo/s01.mp3 -i out-r7-vo/s02.mp3 -i out-r7-vo/s03.mp3 -i out-r7-vo/s04.mp3 -i out-r7-vo/s05.mp3 -i out-r7-vo/s06.mp3 -i out-r7-vo/s07.mp3 -i out-r7-vo/s08.mp3 -i out-r7-vo/s09.mp3 -i out-r7-vo/s10.mp3 -i out-r7-vo/s11.mp3 -i out-r7-vo/s12.mp3 -i out-r7-vo/s13.mp3 -i out-r7-vo/s14.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=16000|16000[a4];[5:a]adelay=22000|22000[a5];[6:a]adelay=26500|26500[a6];[7:a]adelay=28000|28000[a7];[8:a]adelay=38500|38500[a8];[9:a]adelay=42500|42500[a9];[10:a]adelay=52000|52000[a10];[11:a]adelay=56500|56500[a11];[12:a]adelay=65500|65500[a12];[13:a]adelay=70000|70000[a13];[14:a]adelay=73500|73500[a14];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11][a12][a13][a14]amix=inputs=14:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/pin-on-image-r8-narrated.webm"
 }
