@@ -1,0 +1,77 @@
+{
+  "steps": [
+    {
+      "id": "qa-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's set up a Q&A slide!",
+      "description": "A Q&A slide turns any presentation into a two-way conversation — your audience sends questions from their phones and you answer them one by one, live. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "qa-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to open a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "qa-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Q&A slide type",
+      "description": "Select 'Q&A' from the slide type picker. You'll find it in the Interactive section — it's the one that gathers questions from your audience in real time.",
+      "targetSelector": "[aria-label=\"Q&A\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Q&A\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click 'Q&A' to continue"
+      }
+    },
+    {
+      "id": "qa-type-heading",
+      "path": "/presentation/*",
+      "title": "Write your Q&A heading",
+      "description": "Type a heading that invites your audience to ask — something clear and welcoming, so participants know exactly what this slide is for.",
+      "targetSelector": "[aria-label=\"Question text\"]",
+      "pauseMs": 1500,
+      "action": {
+        "type": "input-match",
+        "selector": "[aria-label=\"Question text\"]",
+        "value": "Got a question? Ask away!",
+        "hint": "Type your Q&A heading, then click away"
+      }
+    },
+    {
+      "id": "qa-settings-when",
+      "path": "/presentation/*",
+      "title": "Choose when the audience can ask",
+      "description": "Set whether questions can come in on all slides throughout your presentation, or only on this dedicated Q&A slide. Most hosts keep it on 'Only on Q&A slides' to control the timing.",
+      "targetSelector": "[data-testid=\"editor-side-right-qna-only-qna-slides-radio\"]",
+      "pauseMs": 1000,
+      "action": null
+    },
+    {
+      "id": "qa-settings-moderation",
+      "path": "/presentation/*",
+      "title": "Turn on moderation (optional)",
+      "description": "Check 'Moderate audience's questions' to review and approve questions before they appear on screen — great for large or public events where you need an extra filter.",
+      "targetSelector": "[data-testid=\"editor-side-right-qna-moderation-input-checkbox\"]",
+      "pauseMs": 1000,
+      "action": null
+    },
+    {
+      "id": "qa-present",
+      "path": "/presentation/*",
+      "title": "Ready to go live!",
+      "description": "That's your Q&A slide set up. When you're on — hit 'Present'. Your audience joins on their phones, submits questions, and upvotes their favourites. You organise and answer them all from the same screen.",
+      "targetSelector": ".aha-button-present",
+      "pauseMs": 1500,
+      "action": null
+    }
+  ]
+}

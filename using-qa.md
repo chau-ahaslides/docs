@@ -6,7 +6,7 @@ permalink: using-q-and-a
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-05-12
+last_updated: 2026-06-15
 tags: ["qa", "question", "answer", "on all slides", "moderation", "moderate"]
 keywords: ["Q&A", "QA", "question", "answer", "question and answer", "moderate", "moderation", "moderation mode", "moderator", "on all slides"]
 summary: Learn how to use the Q&A feature in your AhaSlides presentation, as well as the settings to get the most out of it.
@@ -25,9 +25,11 @@ description: "Learn how to use the Q&A feature in your AhaSlides presentation, a
 
 The Q&A feature lets you gather questions from your audience. You can then organise all these questions and answer them all one-by-one.
 
-Below is an interactive demo, which will help you experience this function:
+Watch the quick tutorial below to see how to set up a Q&A slide from start to finish:
 
-> 📹 [Watch video](https://capture.navattic.com/cmn4587dm000a04jogepl0mo6)
+{% embed url="https://www.youtube.com/watch?v=jCRtfqp5xYI" %}
+Set up a Q&A slide on AhaSlides in under a minute
+{% endembed %}
 
 ## How Does Q&A Work?
 
@@ -37,11 +39,9 @@ There are **2 ways** in which you can hold a Q&A with your audience...
 
 ### 1. The Q&A Slide
 
-If you want questions from your audience to come at a certain time in your presentation, you can set up a Q&A slide to gather those questions and address them on-by one. Participants will only be able to send you Q&A questions while you're presenting this slide.
+If you want questions from your audience to come at a certain time in your presentation, you can set up a Q&A slide to gather those questions and address them one by one. Participants will only be able to send you questions while you're presenting this slide.
 
-To set this up, simply add a new slide and select the Q&A slide as your slide type.
-
-After that, all you have to do is add a heading for the slide and choose some of the settings (see an explanation for each setting below).
+To set this up, add a new slide and select **Q&A** as your slide type. Type a heading in the **Heading** field to invite your audience to ask — something clear and welcoming works best (for example, "Got a question? Ask away!"). Then choose your settings in the **Content** panel on the right (see each setting explained below).
 
 **Q&A Questions Across Multiple Q&A Slides**
 
@@ -59,7 +59,7 @@ If you select this option, you will see a **counter of all unanswered questions*
 
 To see and answer those questions right away, **click on that counter**. The Q&A interface will pop up and you can begin to organise and answer questions the same way you do on a Q&A slide.
 
-To set this up, click '**Settings**' in the right menu bar, followed by '**Q&A with your audience**'. Under the heading **'When can the audience send you questions?'**, select **'On all slides'**. From here you can also change all of the settings for your Q&A (see an explanation for each setting below).
+To set this up, click **Settings** in the right menu bar, then find the **'When can the audience send you questions?'** section and select **'On all slides'**. All other Q&A settings are available here too (see each setting explained below).
 
 It's possible to select the **On all slides** setting and have a dedicated Q&A slide at the same time. This way, your audience can send you questions throughout your presentation and you can address them all when you reach the slide.
 
@@ -79,7 +79,7 @@ When you open up the Q&A interface, you will see any unanswered questions in the
 
 ## Q&A Settings
 
-Regardless of whether you hold your Q&A on all slides or only on Q&A slides, you will be able to change the same settings. You can either find these settings in the '**Content**' tab of the Q&A slide, or in '**Settings**' > '**Q&A with your Audience**'.
+Regardless of whether you hold your Q&A on all slides or only on a dedicated Q&A slide, you can change the same settings. Find them in the **Content** panel of your Q&A slide, or in **Settings** > **Q&A with your audience**.
 
 ### 1. Filter profanity
 
