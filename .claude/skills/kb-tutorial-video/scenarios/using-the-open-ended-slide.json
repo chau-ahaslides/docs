@@ -1,0 +1,77 @@
+{
+  "steps": [
+    {
+      "id": "oe-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build an Open Ended slide!",
+      "description": "An Open Ended slide lets your audience answer in their own words — no fixed choices, just real responses. We'll set one up together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "oe-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New presentation' to start a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button"
+      }
+    },
+    {
+      "id": "oe-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Open Ended slide type",
+      "description": "Select 'Open Ended' from the slide type picker. You'll find it in the interactive slides section — it's the one that captures free-text answers from your audience.",
+      "targetSelector": "[aria-label=\"Open Ended\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "pauseMs": 1500,
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Open Ended\"][data-testid=\"editor-new-slide-type-item-v2-button\"]"
+      }
+    },
+    {
+      "id": "oe-type-question",
+      "path": "/presentation/*",
+      "title": "Write your question",
+      "description": "Type your open-ended question here. Make it specific enough to spark a real response — 'What's one thing you'd improve about our onboarding?' beats 'What do you think?'",
+      "targetSelector": "[aria-label=\"Question text\"]",
+      "pauseMs": 1500,
+      "action": {
+        "type": "input-match",
+        "selector": "[aria-label=\"Question text\"]",
+        "value": "What's one thing you'd change about our team meetings?"
+      }
+    },
+    {
+      "id": "oe-layout",
+      "path": "/presentation/*",
+      "title": "Choose how responses display",
+      "description": "Pick Grid to show all responses at once, or One by one to reveal them individually. Grid works great for spotting patterns; One by one is better for reading each response aloud.",
+      "targetSelector": ".bars-box-content.layout",
+      "pauseMs": 1000,
+      "action": {
+        "type": "click",
+        "selector": ".bars-box-content.layout"
+      }
+    },
+    {
+      "id": "oe-settings",
+      "path": "/presentation/*",
+      "title": "Tune your settings",
+      "description": "Toggle on Time limit to keep answers snappy, Hide results to reveal responses on your schedule, or Allow images so participants can share photos instead of text. Each setting is independent.",
+      "targetSelector": "[data-testid=\"editor-side-right-allow-image-submission-checkbox\"]",
+      "pauseMs": 500,
+      "action": null
+    },
+    {
+      "id": "oe-present",
+      "path": "/presentation/*",
+      "title": "Ready — hit Present!",
+      "description": "That's everything. When your audience joins, they type their answers and responses appear on your screen in real time. Hit Present to go live.",
+      "targetSelector": ".aha-button-present",
+      "action": null
+    }
+  ]
+}
