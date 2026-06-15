@@ -78,4 +78,23 @@ On the participant screen, items appear shuffled in a list. Participants tap and
 
 By using Categorise slides, you can turn any sorting task — from scientific classification to sales objection handling — into an engaging live activity that keeps your audience actively thinking, not passively watching.
 
+## Common use cases
+
+The Categorise slide works wherever sorting or grouping reveals knowledge — here are some of the most common contexts:
+
+- **Classroom and education**
+  Ask students to sort vocabulary words by grammatical category, classify organisms into kingdoms, or group historical events by era. The live results let teachers immediately spot where the class is solid and where a concept needs revisiting.
+
+- **Corporate training and onboarding**
+  Have new hires sort company values into "strategic priority" or "cultural pillar" buckets, or ask trainees to classify customer complaints by support tier. It turns a passive compliance session into a check that knowledge has actually landed.
+
+- **Team workshops and retrospectives**
+  Sort a backlog of improvement ideas into "quick win", "big bet", and "park for later" buckets, or group team blockers by root cause. The shared screen makes the grouping visible to everyone, making it easier to reach alignment quickly.
+
+- **Icebreakers and events**
+  Sort fun facts, team trivia, or product features into themed categories to warm up a conference session or kick off an all-hands. Because the items are shuffled and the timer adds pressure, even simple sorting challenges become surprisingly energetic.
+
+- **Market research and customer sessions**
+  Ask participants to sort product attributes into "must-have", "nice-to-have", and "not needed" columns, or group use cases by department. The live category totals give instant, unfiltered signal on how your audience thinks about your product.
+
 > **Note:** This article reflects the GitBook version of this guide. The canonical Zoho Help Center article may differ — port any significant changes there separately.
