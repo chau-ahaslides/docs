@@ -25,10 +25,10 @@ description: "Learn how to use the Q&A feature in your AhaSlides presentation, a
 
 The Q&A feature lets you gather questions from your audience. You can then organise all these questions and answer them all one-by-one.
 
-Watch the quick tutorial below to see how to set up a Q&A slide from start to finish:
+Watch the quick tutorial below to see how to set up a Q&A slide and configure all its settings:
 
-{% embed url="https://www.youtube.com/watch?v=jCRtfqp5xYI" %}
-Set up a Q&A slide on AhaSlides in under a minute
+{% embed url="https://www.youtube.com/watch?v=wbsYkltjeW8" %}
+Set up a Q&A slide on AhaSlides and configure all settings
 {% endembed %}
 
 ## How Does Q&A Work?
@@ -41,7 +41,7 @@ There are **2 ways** in which you can hold a Q&A with your audience...
 
 If you want questions from your audience to come at a certain time in your presentation, you can set up a Q&A slide to gather those questions and address them one by one. Participants will only be able to send you questions while you're presenting this slide.
 
-To set this up, add a new slide and select **Q&A** as your slide type. Type a heading in the **Heading** field to invite your audience to ask — something clear and welcoming works best (for example, "Got a question? Ask away!"). Then choose your settings in the **Content** panel on the right (see each setting explained below).
+To set this up, add a new slide and select **Q&A** as your slide type. Type a heading in the **Heading** field to invite your audience to ask — something clear and welcoming works best (for example, "Got a question? Ask away!"). Then configure your settings in the **Content** panel on the right. You can choose when questions arrive, turn on profanity filtering or moderation, and control whether audience members see each other's questions or can submit anonymously (see each setting explained below).
 
 **Q&A Questions Across Multiple Q&A Slides**
 
