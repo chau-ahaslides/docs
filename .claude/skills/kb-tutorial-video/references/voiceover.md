@@ -1,5 +1,12 @@
 # Voiceover Reference (Phase 3b)
 
+> **Superseded.** The authoritative voiceover reference has moved to the
+> dedicated `kb-video-voiceover` skill at `.claude/skills/kb-video-voiceover/SKILL.md`.
+> This file is retained for historical context only. Do NOT add new VO guidance
+> here — update the `kb-video-voiceover` skill instead.
+
+---
+
 Full reference for Phase 3b of the KB tutorial video pipeline. Read this when
 adding narrated audio to a trimmed visual track.
 

@@ -102,43 +102,15 @@ frames: heal gaps, loading waits, tooltip holds).
 
 ## Phase 3b — Voiceover (optional but recommended)
 
-Read `references/voiceover.md` for the full ElevenLabs setup, voice IDs,
-per-line render script, ffmpeg mix command, and macOS `say` fallback.
-Short summary: use ONLY Liam (`VCgLBmBjldJmfphyB8sZ`) or Alice
-(`Xb7hH8MSUJpSbSDYk0k2`) — no other voices are permitted. API key is in
-`ahaslides-kb/.env` as `ELEVENLABS_API_KEY` (never print/echo it).
+Invoke the `kb-video-voiceover` sub-skill for the full voiceover pipeline —
+it is the single source of truth for approved voices, the render script, the
+ffmpeg mix command, overlap checking, and the macOS `say` fallback.
 
-### VO Overlap Verification (required before mixing)
-
-After setting `start_sec` values in the voiceover JSON but **before** running
-the ffmpeg mix command, run the bundled overlap checker:
-
-```bash
-python3 <skill-dir>/scripts/check_vo_overlap.py \
-    scenarios/<slug>-voiceover.json
-```
-
-The script exits **0** if the timeline is clean and **1** if any clip's speech
-(start + audio_duration_sec) extends into the next clip's start window.
-Do not mix or upload a video that fails this check — fix the `start_sec`
-offsets first (push the later clip's start to ≥ end of prior clip), then re-run.
-
-After mixing, run again with the rendered file to verify audio energy too:
-
-```bash
-FFMPEG=./node_modules/ffmpeg-static/ffmpeg \
-python3 <skill-dir>/scripts/check_vo_overlap.py \
-    scenarios/<slug>-voiceover.json \
-    --audio out/<slug>-narrated.webm
-```
-
-Both checks must report `RESULT: PASS` before proceeding to upload.
-
-**Root cause of AKB-4 r8 residual overlap (documented for future reference):**
-Only the s01→s02 overlap was fixed in r8; s05→s06 (pin-add-image ends 26.68s /
-pin-switch-tab starts 26.5s = 0.18s overlap) and s06→s07 (pin-switch-tab ends
-29.3s / pin-image-library starts 28.0s = 1.30s overlap) were missed. The
-checker script was written in r9 to catch these automatically going forward.
+Quick reference (see `kb-video-voiceover` SKILL.md for details):
+- Use ONLY **Liam** (`VCgLBmBjldJmfphyB8sZ`) or **Alice** (`Xb7hH8MSUJpSbSDYk0k2`) — no other voices.
+- API key: `ahaslides-kb/.env` → `ELEVENLABS_API_KEY` (never print/echo it).
+- Run the overlap checker before mixing and again after — both passes must report `RESULT: PASS`.
+- Overlap checker: `scripts/check_vo_overlap.py` in this skill's `scripts/` directory.
 
 ## Phase 4 — Upload to YouTube
 
