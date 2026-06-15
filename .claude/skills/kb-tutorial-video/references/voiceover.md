@@ -14,15 +14,21 @@ Fall back to macOS `say` only if the key is absent.
 
 ### Voice selection
 
-**Chosen voice:** Bella (`EXAVITQu4vr4xnSDxMaL`) — upbeat, clear, excellent
-levels (mean ~−17 dB, max ~−1.3 dB). Proven on Categorise r7.
+**Approved voices (use ONLY these two — no others):**
 
-Alternative premade IDs to try if Bella is unavailable:
-- Domi `AZnzlk1XvdvUeBnXmlld`
-- Rachel `21m00Tcm4TlvDq8ikWAM`
+| Name  | Voice ID                     | Character                  |
+|-------|------------------------------|----------------------------|
+| Liam  | `VCgLBmBjldJmfphyB8sZ`       | Male, calm, clear          |
+| Alice | `Xb7hH8MSUJpSbSDYk0k2`       | Female, upbeat, natural    |
 
-Verify each with a one-line test render — some premade IDs 404 on newer
-accounts.
+Do NOT use any other voice IDs (Bella, Domi, Rachel, or any other premade
+voice). If a script alternates narrators across steps, alternate between Liam
+and Alice only.
+
+Default choice when a single voice is needed: **Liam** (`VCgLBmBjldJmfphyB8sZ`).
+
+Verify each with a one-line test render before the full render run — confirm
+the ID resolves on your ElevenLabs account.
 
 ### Natural spelling first
 
@@ -41,7 +47,7 @@ el_key = subprocess.check_output(
     "grep ELEVENLABS_API_KEY /Users/claude/AhaSlides/ahaslides-kb/.env | cut -d'=' -f2",
     shell=True).decode().strip()
 outdir = "/path/to/out-<slug>"
-voice_id = "EXAVITQu4vr4xnSDxMaL"
+voice_id = "VCgLBmBjldJmfphyB8sZ"  # Liam — approved voice (alt: Alice Xb7hH8MSUJpSbSDYk0k2)
 settings = {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4}
 
 lines = [

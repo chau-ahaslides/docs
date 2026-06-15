@@ -104,8 +104,9 @@ frames: heal gaps, loading waits, tooltip holds).
 
 Read `references/voiceover.md` for the full ElevenLabs setup, voice IDs,
 per-line render script, ffmpeg mix command, and macOS `say` fallback.
-Short summary: Bella (`EXAVITQu4vr4xnSDxMaL`) is the proven voice; API key
-is in `ahaslides-kb/.env` as `ELEVENLABS_API_KEY` (never print/echo it).
+Short summary: use ONLY Liam (`VCgLBmBjldJmfphyB8sZ`) or Alice
+(`Xb7hH8MSUJpSbSDYk0k2`) — no other voices are permitted. API key is in
+`ahaslides-kb/.env` as `ELEVENLABS_API_KEY` (never print/echo it).
 
 ## Phase 4 — Upload to YouTube
 
