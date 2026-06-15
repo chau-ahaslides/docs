@@ -19,8 +19,8 @@ description: "The Pin on Image slide lets participants tap or click to place a p
 
 The Pin on Image slide invites participants to tap or click directly on a custom image to place a pin — their answer is a position, not a word or number. Use it to mark locations on a map, identify a part of a diagram, heatmap a product screenshot, or highlight anything that benefits from a spatial response. Results show all pins clustered live on the presenter screen.
 
-{% embed url="https://www.youtube.com/watch?v=3xN0Oc6XZHQ" %}
-How to create a Pin on Image slide on AhaSlides — quick tutorial (1:17)
+{% embed url="https://www.youtube.com/watch?v=BX-jRVudVRk" %}
+How to create a Pin on Image slide on AhaSlides — quick tutorial (1:16)
 {% endembed %}
 
 ## How the Pin on Image slide works
