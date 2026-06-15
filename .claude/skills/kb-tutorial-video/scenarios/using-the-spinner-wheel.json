@@ -1,0 +1,89 @@
+{
+  "steps": [
+    {
+      "id": "sw-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build a Spinner Wheel!",
+      "description": "A Spinner Wheel picks any entry at random — names, topics, prizes, you name it. Press the button at the centre of the wheel to spin; the result shows live on every participant's screen. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "sw-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to start a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "sw-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Spinner Wheel slide type",
+      "description": "Select 'Spinner Wheel' from the slide type picker. You'll find it in the Quiz section — it turns any list into a live random draw.",
+      "targetSelector": "[aria-label=\"Spinner Wheel\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Spinner Wheel\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click 'Spinner Wheel' to continue"
+      }
+    },
+    {
+      "id": "sw-add-entries",
+      "path": "/presentation/*",
+      "title": "Add your entries",
+      "description": "Type your entries in the 'Entries' field — one per line. Or paste a whole list from your clipboard at once. Up to 5,000 entries supported.",
+      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-entry-input\"]",
+      "pauseMs": 2000,
+      "action": {
+        "type": "input-match",
+        "selector": "[data-testid=\"editor-side-right-spinner-wheel-entry-input\"]",
+        "value": "Alice\nBob\nCarla\nDavid\nElla",
+        "hint": "Type entries, one per line"
+      }
+    },
+    {
+      "id": "sw-save-entries",
+      "path": "/presentation/*",
+      "title": "Save your entries",
+      "description": "Click 'Save' to add your entries to the wheel. The wheel updates instantly on the canvas — you'll see each name appear as a coloured segment.",
+      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-entry-add-button\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-side-right-spinner-wheel-entry-add-button\"]",
+        "hint": "Click 'Save' to continue"
+      }
+    },
+    {
+      "id": "sw-autofill",
+      "path": "/presentation/*",
+      "title": "Autofill with participant names",
+      "description": "Want to pick a random participant? Check 'Participant name autofill' — the wheel fills itself with every participant's name as they join. No manual typing needed.",
+      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-autofill-checkbox\"]",
+      "pauseMs": 2000,
+      "action": null
+    },
+    {
+      "id": "sw-spin-time",
+      "path": "/presentation/*",
+      "title": "Adjust spin time",
+      "description": "Use the 'Spin time' setting to control how long the wheel spins before landing. A longer spin builds more suspense — you can set up to 1,200 seconds.",
+      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-spin-time-input\"]",
+      "pauseMs": 1500,
+      "action": null
+    },
+    {
+      "id": "sw-present",
+      "path": "/presentation/*",
+      "title": "Go live and spin the wheel!",
+      "description": "That's all it takes to set up a Spinner Wheel. Hit 'Present' to go live — then press the button at the centre of the wheel to spin it. The chosen entry appears on your screen and on every participant's device. The winner is in!",
+      "targetSelector": ".aha-button-present",
+      "action": null
+    }
+  ]
+}
