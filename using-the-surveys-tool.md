@@ -23,18 +23,7 @@ description: "Build multi-question Surveys with Multiple Choice, Rating Scale, O
 
 # Using Surveys on AhaSlides
 
-{% embed url="https://www.youtube.com/watch?v=Llv1wXSpm5c" %}
-Build a Survey once, then share a standalone link or drop it live into your presentation.
-{% endembed %}
-
-AhaSlides Surveys let you collect structured, multi-question feedback in two modes — you build the Survey once, then choose how to launch it.
-
-**Two ways to run the same Survey:**
-
-1. **Standalone Survey** — share a link (or QR code) so respondents complete it any time, at their own pace, with no presenter needed.
-2. **A slide in your presentation** — add the Survey as a slide in your deck. When you reach that slide while presenting, the Survey appears live on every participant's device.
-
-Both options show your audience exactly the same thing: the full Survey on one page.
+AhaSlides Surveys let you collect structured, multi-question feedback — build the Survey once, then share a standalone link or drop it live into your presentation.
 
 ---
 
@@ -103,6 +92,21 @@ You can check results at any time:
 
 - The **Responses** column in your Surveys list shows how many submissions each Survey has received.
 - Click **View results** to see responses in detail, question by question.
+
+---
+
+## Two Ways to Run the Same Survey
+
+**Two ways to run the same Survey:**
+
+1. **Standalone Survey** — share a link (or QR code) so respondents complete it any time, at their own pace, with no presenter needed.
+2. **A slide in your presentation** — add the Survey as a slide in your deck. When you reach that slide while presenting, the Survey appears live on every participant's device.
+
+Both options show your audience exactly the same thing: the full Survey on one page.
+
+{% embed url="https://www.youtube.com/watch?v=Llv1wXSpm5c" %}
+Build a Survey once, then share a standalone link or drop it live into your presentation.
+{% endembed %}
 
 ---
 
