@@ -4,7 +4,7 @@
       "id": "qa-welcome",
       "path": "/apps/presentations",
       "title": "Let's set up a Q&A slide!",
-      "description": "A Q&A slide turns any presentation into a two-way conversation — your audience sends questions from their phones and you answer them one by one, live. We'll build one together in under a minute. Click Next to begin.",
+      "description": "A Q&A slide turns any presentation into a two-way conversation — your audience sends questions from their phones and you answer them live. We'll build one and tour all the key settings together. Click Next to begin.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -24,7 +24,7 @@
       "id": "qa-pick-type",
       "path": "/presentation/*",
       "title": "Pick the Q&A slide type",
-      "description": "Select 'Q&A' from the slide type picker. You'll find it in the Interactive section — it's the one that gathers questions from your audience in real time.",
+      "description": "Select 'Q&A' from the slide type picker — it gathers audience questions in real time.",
       "targetSelector": "[aria-label=\"Q&A\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "action": {
         "type": "click",
@@ -49,26 +49,53 @@
     {
       "id": "qa-settings-when",
       "path": "/presentation/*",
-      "title": "Choose when the audience can ask",
-      "description": "Set whether questions can come in on all slides throughout your presentation, or only on this dedicated Q&A slide. Most hosts keep it on 'Only on Q&A slides' to control the timing.",
+      "title": "When can the audience ask?",
+      "description": "Choose whether questions arrive only on this dedicated Q&A slide, or on every slide throughout your presentation. 'Only on Q&A slides' gives you tighter control of the timing.",
       "targetSelector": "[data-testid=\"editor-side-right-qna-only-qna-slides-radio\"]",
       "pauseMs": 1000,
       "action": null
     },
     {
+      "id": "qa-settings-profanity",
+      "path": "/presentation/*",
+      "title": "Filter profanity",
+      "description": "Tick 'Filter profanity' to automatically block swear words in submitted questions — ideal for school events or public audiences.",
+      "targetSelector": "[data-testid=\"editor-side-right-qna-profanity-filter-checkbox\"]",
+      "pauseMs": 800,
+      "action": null
+    },
+    {
       "id": "qa-settings-moderation",
       "path": "/presentation/*",
-      "title": "Turn on moderation (optional)",
-      "description": "Check 'Moderate audience's questions' to review and approve questions before they appear on screen — great for large or public events where you need an extra filter.",
+      "title": "Moderate questions before they appear",
+      "description": "Enable 'Moderate audience's questions' to approve each question privately before it shows on screen. A dedicated moderation link lets you or a co-host filter questions in a separate tab.",
       "targetSelector": "[data-testid=\"editor-side-right-qna-moderation-input-checkbox\"]",
-      "pauseMs": 1000,
+      "pauseMs": 800,
+      "action": null
+    },
+    {
+      "id": "qa-settings-see-each-other",
+      "path": "/presentation/*",
+      "title": "Let the audience see each other's questions",
+      "description": "When on, each audience member can see all submitted questions on their own device — great for transparency and encouraging upvotes.",
+      "targetSelector": "[data-testid=\"editor-side-right-qna-audience-see-each-other-checkbox\"]",
+      "pauseMs": 800,
+      "action": null
+    },
+    {
+      "id": "qa-settings-anonymous",
+      "path": "/presentation/*",
+      "title": "Allow anonymous questions",
+      "description": "Turn this on to let participants skip entering their name. It encourages more candid questions in sensitive topics or team retrospectives.",
+      "targetSelector": "[data-testid=\"editor-side-right-qna-allow-anonymous-checkbox\"]",
+      "pauseMs": 800,
       "action": null
     },
     {
       "id": "qa-present",
       "path": "/presentation/*",
       "title": "Ready to go live!",
-      "description": "That's your Q&A slide set up. When you're on — hit 'Present'. Your audience joins on their phones, submits questions, and upvotes their favourites. You organise and answer them all from the same screen.",
+      "description": "That's your Q&A slide set up with all the right settings. Hit 'Present' and your audience starts sending questions on their phones — you organise and answer them all from one screen.",
       "targetSelector": ".aha-button-present",
       "pauseMs": 1500,
       "action": null
