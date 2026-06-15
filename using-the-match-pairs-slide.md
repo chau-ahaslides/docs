@@ -26,7 +26,7 @@ description: "Learn how to use the Match Pairs slide type in an AhaSlides quiz. 
 
 The Match Pairs slide is a quiz slide type where players must match a set of prompts with a set of answers.
 
-{% embed url="https://www.youtube.com/watch?v=AmB2UZvlvEg" %}
+{% embed url="https://www.youtube.com/watch?v=BeBn5a1raxU" %}
 How to use the Match Pairs slide on AhaSlides
 {% endembed %}
 

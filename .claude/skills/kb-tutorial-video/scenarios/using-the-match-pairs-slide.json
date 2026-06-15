@@ -4,7 +4,7 @@
       "id": "mp-welcome",
       "path": "/apps/presentations",
       "title": "Let's build a Match Pairs quiz slide!",
-      "description": "A Match Pairs slide challenges participants to connect prompts with answers — great for vocabulary, capitals, dates, and more. We'll set one up together in under a minute. Click Next to begin.",
+      "description": "A Match Pairs slide challenges participants to connect prompts with answers — great for vocabulary, capitals, dates, and more. Tip: keep each item short and unambiguous so every prompt has exactly one clear answer. Click Next to begin.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -50,7 +50,7 @@
       "id": "mp-pair-1-prompt",
       "path": "/presentation/*",
       "title": "Enter your first prompt",
-      "description": "Type the first item your participants must match. This goes in the left column — numbered 1, 2, 3, 4 on the slide.",
+      "description": "Type the first item your participants must match. Aim for 3–4 pairs — enough to be engaging without crowding a mobile screen. Keep each item a single word or short phrase.",
       "targetSelector": "[data-testid=\"editor-side-right-match-pair-prompt-input\"]",
       "pauseMs": 1000,
       "action": {
@@ -78,7 +78,7 @@
       "id": "mp-present",
       "path": "/presentation/*",
       "title": "Ready to go live!",
-      "description": "That's all it takes to build a Match Pairs quiz slide. Add up to 4 pairs, adjust the time limit and points in the settings below, then hit 'Present' — participants see shuffled answers and race to connect every pair before the timer runs out.",
+      "description": "That's all it takes to build a Match Pairs quiz slide. Notice both columns use the same format — countries left, capitals right — that's parallel structure, and it keeps the pattern clear for participants. Add up to 4 pairs, adjust the time limit and points below, then hit 'Present'.",
       "targetSelector": ".aha-button-present",
       "action": null
     }
