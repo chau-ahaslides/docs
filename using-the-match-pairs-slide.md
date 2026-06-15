@@ -6,7 +6,7 @@ permalink: using-the-match-pairs-slide
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2025-10-03
+last_updated: 2026-06-15
 tags: ["quiz", "image", "images", "match", "match pairs", "prompt", "pairs", "connect", "matching"]
 keywords: ["match", "pairs", "matching", "prompt", "answer", "connect", "quiz", "partial"]
 summary: Learn how to use the Match Pairs slide type in an AhaSlides quiz. The Match Pairs slide is a quiz slide type where players must match a set of prompts with a set of answers.
@@ -26,26 +26,27 @@ description: "Learn how to use the Match Pairs slide type in an AhaSlides quiz. 
 
 The Match Pairs slide is a quiz slide type where players must match a set of prompts with a set of answers.
 
+{% embed url="https://www.youtube.com/watch?v=AmB2UZvlvEg" %}
+How to use the Match Pairs slide on AhaSlides
+{% endembed %}
+
 ### How does a Match Pairs Slide Work?
 
 In a Match Pairs slide, players are presented with a question, as well as two columns of words. In the left-side column are **prompts**, marked by numbers *(1, 2, 3, 4)* and in the right-side column are **answers**, marked by letters *(A, B, C, D).*
 
 Players have the time limit you give them in order to match each prompt with the answer that it goes with. Players have to match ALL the prompts and answers correctly to get the points.
 
-### Setting up your Match Pairs slide:
+### Setting up your Match Pairs slide
 
-On the AhaSlides editor, choose the Match Pairs slide and do the following...
+In the AhaSlides editor, add a Match Pairs slide and do the following:
 
-1. Write your question or instructions in the box labelled '**Your question**'
-2. Under '**Pairs**', write up to 4 prompts and the answers they match with. Once written, the answer column will automatically shuffle itself on the presentation canvas.
-
-2.1. Alternatively, you can also upload images to your prompt.
-
-3. Select your **other settings**:
-
-- - **Points**: The maximum and the minimum number of points it is possible to get on that question. If the *'Faster answers get more points'* box is unchecked, then any correct answer will receive the maximum number of points.
-  - **Faster answers get more points**: Check this box to encourage players to answer quicker. For example, if the *time* is set at 100 seconds and the *points* is set to 100 maximum and 0 minimum, then a player submitting their answer with 80 seconds left will receive 80 points.
-  - **Partial scoring**: If this box is checked, players will be rewarded for the amount of pairs they correctly match, even if they don't correctly match each pair. For example, if a player matches one out of four questions correct, they will receive 25% of the points.
-  - **Time limit**: The time limit for that question in seconds.
+1. Write your question or instructions in the **Your question** field.
+2. Under **Pairs**, type up to 4 prompts and the answers they match with. The answer column shuffles automatically on the canvas — so participants can't just copy the order.
+   - You can also upload an image in place of text for any prompt or answer using the image icon next to the field.
+3. Adjust the settings below the pairs:
+   - **Points**: Set the maximum and minimum points for the question. If **Faster answers get more points** is off, any correct answer earns the maximum.
+   - **Faster answers get more points**: Rewards speed — a player with 80 seconds left on a 100-second timer earns 80 out of 100 points.
+   - **Partial scoring**: Rewards each correctly matched pair individually, even if the player doesn't match them all. For example, 1 out of 4 correct = 25% of points.
+   - **Time limit**: How many seconds participants have to match all pairs.
 
 For more help, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).
