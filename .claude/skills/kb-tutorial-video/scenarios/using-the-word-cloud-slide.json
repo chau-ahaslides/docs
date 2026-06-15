@@ -1,0 +1,103 @@
+{
+  "steps": [
+    {
+      "id": "wc-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build a Word Cloud slide!",
+      "description": "A Word Cloud slide lets participants submit short words or phrases, and displays all responses on one screen — the most popular answer grows largest and sits at the centre of the cloud. We'll set one up together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "wc-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to open a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "wc-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Word Cloud slide type",
+      "description": "Select 'Word Cloud' from the slide type picker. You'll find it in the Interactive section — it's the one that turns audience responses into a live, growing cloud of words.",
+      "targetSelector": "[aria-label=\"Word Cloud\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Word Cloud\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click 'Word Cloud' to continue"
+      }
+    },
+    {
+      "id": "wc-type-question",
+      "path": "/presentation/*",
+      "title": "Write your question",
+      "description": "Type the prompt your audience will respond to. A short, open-ended question works best — something like 'Describe today's vibe in one word'.",
+      "targetSelector": "[aria-label=\"Question text\"]",
+      "pauseMs": 1500,
+      "action": {
+        "type": "input-match",
+        "selector": "[aria-label=\"Question text\"]",
+        "value": "Describe today's vibe in one word",
+        "hint": "Type your question"
+      }
+    },
+    {
+      "id": "wc-entries",
+      "path": "/presentation/*",
+      "title": "Set entries per participant",
+      "description": "Choose how many words each participant can submit — from 1 to 10. The default of 3 works well for most sessions, giving everyone enough voice without flooding the cloud.",
+      "targetSelector": "[data-testid=\"editor-side-right-word-cloud-entries-input\"]",
+      "pauseMs": 1000,
+      "action": null
+    },
+    {
+      "id": "wc-preview",
+      "path": "/presentation/*",
+      "title": "Preview your Word Cloud",
+      "description": "Click Preview to see how the cloud looks to your audience. Words appear as participants submit them, with the most popular growing largest and sitting right at the centre.",
+      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-preview-button\"]",
+        "hint": "Click Preview to continue"
+      }
+    },
+    {
+      "id": "wc-preview-cloud",
+      "path": "/presentation/*",
+      "title": "Watch the cloud come alive",
+      "description": "As each response arrives, a new word pops into the cloud in a random colour. The most-submitted word grows biggest and moves to the centre — no two sessions look the same.",
+      "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 8000,
+      "action": null
+    },
+    {
+      "id": "wc-back-to-editor",
+      "path": "/presentation/*",
+      "title": "Back to the editor",
+      "description": "Exit preview and head back to the editor to fine-tune your settings.",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+        "hint": "Click Back to editor to continue"
+      }
+    },
+    {
+      "id": "wc-present",
+      "path": "/presentation/*",
+      "title": "Ready to go live!",
+      "description": "That's your Word Cloud slide set up. When you're ready, hit 'Present' — participants join on their phones and start submitting. The cloud builds in real time right in front of the whole room.",
+      "targetSelector": ".aha-button-present",
+      "pauseMs": 1000,
+      "action": null
+    }
+  ]
+}

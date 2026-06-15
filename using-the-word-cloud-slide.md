@@ -6,7 +6,7 @@ permalink: using-the-word-cloud-slide
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-04-22
+last_updated: 2026-06-15
 tags: ["cloud", "ahaslides", "word cloud", "grouping", "word", "live", "group"]
 keywords: []
 summary: A word cloud lets you pose a question and have participants submit short written responses. All the responses are displayed on one screen, with the most popular responses appearing larger in the cloud.
@@ -34,42 +34,35 @@ In the example above, the word *'hola'* was entered by participants more often t
 
 ## Setting up your Word Cloud
 
-Check out this video for a 1-minute explainer on how to set up a live word cloud 👇
+{% embed url="https://www.youtube.com/watch?v=3pj2L3lhxjQ" %}
+How to use the Word Cloud slide on AhaSlides — quick tutorial (0:43)
+{% endembed %}
 
-> 📹 [Watch video](https://www.youtube.com/embed/ciA_OBIXcSk)
+#### Step 1: Create your slide and write your question
 
-#### Step 1: Create your slide and question
+Create a new presentation and select **Word Cloud** from the slide type picker. Type your prompt in the **Your question** field — a short, open-ended question works best, such as "Describe today's vibe in one word".
 
-Start by creating a new slide and selecting the Word Cloud slide type from the options. Write your question or statement in the 'your question' box.
+#### Step 2: Adjust your Word Cloud settings
 
-#### Step 2: Change your word cloud settings
+The settings panel gives you six options to customise how your Word Cloud behaves:
 
-Change the settings of your word cloud to your liking. There are 6 settings that you can change:
+**1. Entries per participant**: How many words each participant can submit, from 1 to 10. The default of 3 gives everyone enough voice without flooding the cloud.
 
-**1. Entries per participant**: The amount of responses that each of your participants is allowed to submit. This can be between 1 and 10.
+**2. Time limit**: Toggle this on to apply a countdown to the slide. You can choose any duration from 5 seconds to 20 minutes. During a live session you can turn the timer off, but you cannot turn it back on without returning to the editor.
 
-**2. Time limit**: This applies a time limit to the slide. When checked, you can choose your time limit between 5 seconds and 20 minutes.
+**3. Close submission**: Temporarily blocks new responses from coming in. Toggle it on from the presenter view when you need to pause submissions — for example, to clarify a question — then toggle it off to reopen.
 
-While running the Word Cloud slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
+**4. Hide results**: Hides incoming responses from the presenter's screen until you choose to reveal them. Useful when you want a dramatic reveal at the end.
 
-**3. Close submission**: Close submissions for specific slides can be useful if you need to clarify a question before your audience submits their answers, or for any other reason where you do not want the participants to submit their answers to a question at that moment.
+**5. Allow audience to submit more than once**: Lets each participant submit responses an unlimited number of times.
 
-When presenting, you can click the "Submission closed" icon to enable the audience to submit their answers, and click on the "Submission opened" icon to close it.
+**6. Filter profanity**: Automatically censors English-language swear words as they arrive. Checking this applies the filter across your entire presentation.
 
-**4. Hide results**: This hides the submitted responses from the presenter's screen as they're being submitted. On the slide, there will be a button to reveal the responses whenever you want.
+### Step 3: Present and watch the cloud build
 
-**5. Allow audience to submit more than once**: This allows each participant to submit their responses an unlimited amount of times.
+Click **Present** to go live. Participants join on their phones, type up to their allowed number of words, and hit Submit. Each new response appears in the cloud in a random colour — the most-submitted word grows largest and moves to the centre. Words around it shift to new random positions with every update.
 
-**6. Filter profanity**: This turns on the profanity filter, which automatically censors English language swear words when they're submitted by your audience. (*Note: checking this box will apply the profanity filter throughout your entire presentation.*)
-
-### Step 3: Present and get responses
-
-Once you press the 'Present' button, your participants will be able to submit their responses to your word cloud.
-The word cloud will update with each response that comes in. It will assign a random colour to a new response and each word in the cloud (except for the most popular word at the centre) will shift to a different, random position.
-
-You can manually delete any response in the word cloud simply by clicking on it. Doing so will shift the responses in the cloud to another random position.
-
-If you delete the most popular response at the centre of the cloud, the next most popular one will fill its place.
+You can delete any word in the cloud by clicking it during the live session. If you remove the most popular word, the next most common one takes centre place.
 
 ## Smart Grouping your Word Clouds
 
