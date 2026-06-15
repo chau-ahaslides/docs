@@ -1,0 +1,101 @@
+{
+  "steps": [
+    {
+      "id": "lang-welcome",
+      "path": "/apps/presentations",
+      "title": "Two ways to set your language",
+      "description": "AhaSlides lets you set two different languages: the presenter interface language (what you see), and the audience display language (what participants see on their phones). Let's walk through both.",
+      "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
+      "action": null
+    },
+    {
+      "id": "lang-globe-click",
+      "path": "/apps/presentations",
+      "title": "Change the presenter interface language",
+      "description": "Click the globe icon in the top-right corner to change the language of the AhaSlides interface — menus, buttons, and labels — for you as the presenter.",
+      "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"multiple-language-trigger-button\"]",
+        "hint": "Click the globe icon to open the language menu"
+      }
+    },
+    {
+      "id": "lang-dropdown-show",
+      "path": "/apps/presentations",
+      "title": "Pick your interface language",
+      "description": "A dropdown menu lists all 27 supported interface languages. Select the one you want — the presenter app will switch instantly.",
+      "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
+      "pauseMs": 1500,
+      "action": null
+    },
+    {
+      "id": "lang-new-pres",
+      "path": "/apps/presentations",
+      "title": "Now set the audience language",
+      "description": "The audience display language is found inside any presentation's Settings. Click 'New presentation' to open the editor — then we'll show you where to find it.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click New presentation to continue"
+      }
+    },
+    {
+      "id": "lang-add-slide",
+      "path": "/presentation/*",
+      "title": "Start with a Poll slide",
+      "description": "Every presentation can have its own display language. Click 'Poll' to add a slide — then we'll head straight to the language settings.",
+      "targetSelector": "[aria-label=\"Poll\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "pauseMs": 4000,
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Poll\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click Poll to add a slide"
+      }
+    },
+    {
+      "id": "lang-settings-btn",
+      "path": "/presentation/*",
+      "title": "Open the presentation Settings",
+      "description": "In the editor, click the Settings icon on the right-hand panel. This is where you control how the presentation behaves for your audience.",
+      "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
+      "pauseMs": 3000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
+        "hint": "Click Settings to open the settings panel"
+      }
+    },
+    {
+      "id": "lang-settings-modal",
+      "path": "/presentation/*",
+      "title": "Go to Presentation language",
+      "description": "The Settings panel opens. Click 'Presentation language' in the left menu to access the audience language option.",
+      "targetSelector": ".aha-modal__content",
+      "pauseMs": 3000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"presentation-settings-tab-presentation-language-button\"]",
+        "hint": "Click Presentation language in the menu"
+      }
+    },
+    {
+      "id": "lang-audience-select",
+      "path": "/presentation/*",
+      "title": "Choose the audience display language",
+      "description": "Use the dropdown to pick the language your audience will see on their devices — questions, answer options, and the join screen all update instantly. AhaSlides supports 32 display languages.",
+      "targetSelector": "[data-testid=\"presentation-settings-language-select\"]",
+      "pauseMs": 1500,
+      "action": null
+    },
+    {
+      "id": "lang-done",
+      "path": "/presentation/*",
+      "title": "All set!",
+      "description": "That's it — your audience display language is saved automatically. Combine it with the presenter interface language to run fully bilingual sessions. Click Present when you're ready to go live.",
+      "targetSelector": "[data-testid=\"editor-header-present-button\"]",
+      "action": null
+    }
+  ]
+}
