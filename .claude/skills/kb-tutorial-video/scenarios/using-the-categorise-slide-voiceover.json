@@ -1,85 +1,121 @@
 {
-  "voice": "Shelley (English (US))",
-  "video_duration_sec": 40.18,
-  "generated_round": 6,
-  "pronunciation_map": {
-    "live (verb, /laɪv/)": "lyve",
-    "categorise (/ˈkæt.ə.ɡə.raɪz/)": "cat-a-guh-rize"
-  },
-  "notes": "Pronunciation fixes applied via phonetic respelling in tts_text only; display_text (on-screen/article copy) is unchanged. Rate varies per step to keep TTS audio within each step's visual window. Shelley (English (US)) chosen over Samantha for upbeat/energetic tone.",
+  "voice_id_default": "VCgLBmBjldJmfphyB8sZ",
+  "voice_id_alt": "Xb7hH8MSUJpSbSDYk0k2",
+  "voice_names": {"VCgLBmBjldJmfphyB8sZ": "Liam", "Xb7hH8MSUJpSbSDYk0k2": "Alice"},
+  "video_duration_sec": 46.62,
+  "generated_round": 9,
+  "pronunciation_notes": "ElevenLabs handles 'categorise' and 'live' (verb) correctly with natural context — no phonetic respellings required with Liam/Alice. Monitored in QA: both words sound correct.",
+  "notes": "AKB-2 r9 fix: re-rendered with Liam+Alice (both approved voices). Added gap-filler clips s03 (bridge 0:04-0:09 silence) and s06 (bridge 0:14-0:20 silence). Added s11 audience-view narration over 6s freeze frame. Visual extended to 46.62s via freeze-frame append.",
   "steps": [
     {
-      "id": "cat-welcome",
+      "id": "s01",
+      "visual_step": "cat-welcome",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "start_sec": 0.0,
-      "window_sec": 3.0,
-      "rate": 200,
+      "window_sec": 3.47,
       "display_text": "A Categorise slide turns sorting into a live quiz.",
-      "tts_text": "A cat-a-guh-rize slide turns sorting into a lyve quiz.",
-      "audio_duration_sec": 3.01
+      "tts_text": "A Categorise slide turns sorting into a live quiz.",
+      "audio_duration_sec": 3.47
     },
     {
-      "id": "cat-create",
-      "start_sec": 3.0,
-      "window_sec": 6.8,
-      "rate": 178,
+      "id": "s02",
+      "visual_step": "cat-create",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "start_sec": 3.5,
+      "window_sec": 3.24,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
-      "audio_duration_sec": 3.04
+      "audio_duration_sec": 3.24
     },
     {
-      "id": "cat-pick-type",
-      "start_sec": 9.8,
-      "window_sec": 4.0,
-      "rate": 190,
-      "display_text": "Select Categorise from the slide type picker in the Quiz section.",
-      "tts_text": "Select cat-a-guh-rize from the slide type picker in the Quiz section.",
-      "audio_duration_sec": 3.87
+      "id": "s03",
+      "visual_step": "gap-filler-loading",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 6.8,
+      "window_sec": 3.16,
+      "display_text": "Your editor is loading — in a moment we'll pick the slide type.",
+      "tts_text": "Your editor is loading — in a moment we'll pick the slide type.",
+      "audio_duration_sec": 3.16
     },
     {
-      "id": "cat-type-question",
-      "start_sec": 13.8,
-      "window_sec": 7.0,
-      "rate": 178,
+      "id": "s04",
+      "visual_step": "cat-pick-type",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "start_sec": 10.0,
+      "window_sec": 4.36,
+      "display_text": "Select Categorise from the slide type picker, in the Quiz section.",
+      "tts_text": "Select Categorise from the slide type picker, in the Quiz section.",
+      "audio_duration_sec": 4.36
+    },
+    {
+      "id": "s05",
+      "visual_step": "cat-type-question",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 14.4,
+      "window_sec": 2.22,
       "display_text": "Type your sorting challenge in the question field.",
       "tts_text": "Type your sorting challenge in the question field.",
-      "audio_duration_sec": 3.20
+      "audio_duration_sec": 2.22
     },
     {
-      "id": "cat-options-shared",
+      "id": "s06",
+      "visual_step": "gap-filler-items",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "start_sec": 16.7,
+      "window_sec": 2.87,
+      "display_text": "Now add the items participants will sort.",
+      "tts_text": "Now add the items participants will sort.",
+      "audio_duration_sec": 2.87
+    },
+    {
+      "id": "s07",
+      "visual_step": "cat-options-shared",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 20.8,
-      "window_sec": 6.0,
-      "rate": 178,
-      "display_text": "Enter the items participants will sort, separated by commas.",
-      "tts_text": "Enter the items participants will sort, separated by commas.",
-      "audio_duration_sec": 4.64
+      "window_sec": 4.41,
+      "display_text": "Enter the items, separated by commas — AhaSlides splits them automatically.",
+      "tts_text": "Enter the items, separated by commas — AhaSlides splits them automatically.",
+      "audio_duration_sec": 4.41
     },
     {
-      "id": "cat-category-a",
+      "id": "s08",
+      "visual_step": "cat-category-a",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "start_sec": 26.8,
-      "window_sec": 5.0,
-      "rate": 178,
+      "window_sec": 4.55,
       "display_text": "Give your first category a name — this is the bucket they'll sort items into.",
       "tts_text": "Give your first category a name — this is the bucket they'll sort items into.",
-      "audio_duration_sec": 4.48
+      "audio_duration_sec": 4.55
     },
     {
-      "id": "cat-add-category",
+      "id": "s09",
+      "visual_step": "cat-add-category",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 31.8,
-      "window_sec": 4.4,
-      "rate": 178,
+      "window_sec": 2.87,
       "display_text": "Click Add Category to create as many buckets as you need.",
       "tts_text": "Click Add Category to create as many buckets as you need.",
-      "audio_duration_sec": 3.90
+      "audio_duration_sec": 2.87
     },
     {
-      "id": "cat-present",
+      "id": "s10",
+      "visual_step": "cat-present",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "start_sec": 36.2,
-      "window_sec": 4.0,
-      "rate": 185,
-      "display_text": "Your slide is ready. Hit Present to go live with your audience.",
-      "tts_text": "Your slide is ready. Hit Present to go lyve with your audience.",
-      "audio_duration_sec": 3.97
+      "window_sec": 3.94,
+      "display_text": "Your slide is ready — hit Present to go live with your audience.",
+      "tts_text": "Your slide is ready — hit Present to go live with your audience.",
+      "audio_duration_sec": 3.94
+    },
+    {
+      "id": "s11",
+      "visual_step": "cat-audience-view",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 41.0,
+      "window_sec": 5.62,
+      "display_text": "Participants drag items into the right category on their phones — results appear on your screen in real time.",
+      "tts_text": "Participants drag items into the right category on their phones — results appear on your screen in real time.",
+      "audio_duration_sec": 5.62
     }
-  ],
-  "mix_command": "ffmpeg -i trimmed-visual.webm -i s01.aiff -i s02.aiff -i s03.aiff -i s04.aiff -i s05.aiff -i s06.aiff -i s07.aiff -i s08.aiff -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=3000|3000[a2];[3:a]adelay=9800|9800[a3];[4:a]adelay=13800|13800[a4];[5:a]adelay=20800|20800[a5];[6:a]adelay=26800|26800[a6];[7:a]adelay=31800|31800[a7];[8:a]adelay=36200|36200[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k narrated.webm"
+  ]
 }
