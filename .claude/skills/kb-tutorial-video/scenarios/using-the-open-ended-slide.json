@@ -64,12 +64,12 @@
       ]
     },
     {
-      "id": "oe-settings",
+      "id": "oe-preview-open",
       "path": "/presentation/*",
-      "title": "Tune your settings",
-      "description": "Toggle Time limit, Hide results, or Allow images to suit your session.",
-      "targetSelector": "[data-testid=\"editor-side-right-allow-image-submission-checkbox\"]",
-      "pauseMs": 2000,
+      "title": "Hit Preview to rehearse your slide",
+      "description": "Preview opens a split view — Presenter screen on the left, Participant screen on the right. Use it to test your slide before going live.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
         {
@@ -97,19 +97,10 @@
         },
         {
           "selector": "[data-testid=\"editor-middle-preview-button\"]",
-          "label": "open preview via JS click (bypasses overlay backdrop)",
+          "label": "open preview",
           "pauseAfterMs": 5000
         }
       ]
-    },
-    {
-      "id": "oe-preview-open",
-      "path": "/presentation/*",
-      "title": "Hit Preview to rehearse your slide",
-      "description": "Preview opens a split view — Presenter screen on the left, Participant screen on the right. Use it to test your slide before going live.",
-      "targetSelector": ".iframe-wrapper-audience",
-      "pauseMs": 1000,
-      "action": null
     },
     {
       "id": "oe-preview-audience",
