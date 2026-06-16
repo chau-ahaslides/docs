@@ -4,15 +4,15 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
-  "video_duration_sec": 51.95,
-  "generated_round": 9,
-  "youtube_id": "TBD — upload pending; video ready at out-spinner-r9/spinner-wheel-r9-narrated.webm",
+  "video_duration_sec": 48.12,
+  "generated_round": 10,
+  "youtube_id": "TBD — upload pending; video ready at out-spinner-r10/spinner-wheel-r10-narrated.webm",
   "pronunciation_map": {
     "Present (verb /prəˈzent/)": "Use 'Hit Present to go live' — the 'to go live' context cues ElevenLabs to stress the verb form prih-ZENT, not the noun PREZ-ent"
   },
-  "youtube_chapters": "0:00 Create and set up a Spinner Wheel slide\n0:21 Add entries and preview the spin\n0:37 Go live and reveal the winner",
-  "youtube_chapters_notes": "3 chapters, 51.95s total, r9 — PASS",
-  "notes": "AKB-15 r9 — Applied option 3 (use-case-led) opening VO line: 'Want to pick a random participant? Share your QR code — everyone who joins gets spun for automatically.' New s01 tts_text, duration 7.00s (up from 5.88s). All subsequent start_sec pushed to avoid overlap: s02@8.5s, s03@13.0s, s04@21.0s, s05@26.5s, s06@32.0s, s07@37.5s. Total audio ends at 44.55s; visual track 49.32s (tail 4.77s shows spin + winner). Outro appended (2.63s). check_vo_overlap.py PASS. Reused r8 visual (out-spinner-r8c/spinner-wheel-r8c-final.webm) + r8 audio clips s02–s07. Only s01 re-rendered via ElevenLabs Alice.",
+  "youtube_chapters": "0:00 Create and set up a Spinner Wheel slide\n0:22 Add entries and preview the spin\n0:40 Go live and reveal the winner",
+  "youtube_chapters_notes": "3 chapters, 48.12s total, r10 — autofill visual extended to match VO",
+  "notes": "AKB-15 r10 — Visual track rebuilt from out-spinner-r10d recording. sw-autofill step now uses pauseMs:7000 + real click action so the autofill spotlight holds for ~7s (matches s03 VO duration of 7.34s). Trim: raw r10d at 3.0s start (removes loading white screen). Trimmed visual: 45.12s + 3.00s outro = 48.12s total. VO timings adjusted to fit: s01@1.0s, s02@9.8s, s03@14.2s (0.27s gap after s02), s04@22.0s, s05@29.8s, s06@35.0s (1.8s before visual beat, bridges save→spin), s07@40.5s. All audio ends at 47.55s, well within 48.12s. check_vo_overlap.py PASS. Reused r9 s01 (option-3 opening VO) + r8b s02-s07 audio clips.",
   "steps": [
     {
       "id": "sw-create",
@@ -20,7 +20,7 @@
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r9/s01.mp3",
       "start_sec": 1.0,
-      "window_sec": 7.5,
+      "window_sec": 9.0,
       "display_text": "Want to pick a random participant? Share your QR code — everyone who joins gets spun for automatically.",
       "tts_text": "Want to pick a random participant? Share your QR code — everyone who joins gets spun for automatically.",
       "audio_duration_sec": 7.00
@@ -30,7 +30,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r8b/s02.mp3",
-      "start_sec": 8.5,
+      "start_sec": 9.8,
       "window_sec": 4.5,
       "display_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
       "tts_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
@@ -41,7 +41,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r8b/s03.mp3",
-      "start_sec": 13.0,
+      "start_sec": 14.2,
       "window_sec": 8.0,
       "display_text": "Check Participant name autofill in the right panel — participants scan your QR code and enter their name to join, and the wheel fills itself automatically.",
       "tts_text": "Tick Participant name autofill in the right panel — scan QR, enter name to join, and the wheel fills itself.",
@@ -52,8 +52,8 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r8b/s04_r8.mp3",
-      "start_sec": 21.0,
-      "window_sec": 5.5,
+      "start_sec": 22.0,
+      "window_sec": 8.0,
       "display_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
       "tts_text": "Or prefer a fixed list? Type entries one per line, or paste a whole list at once.",
       "audio_duration_sec": 5.02
@@ -63,7 +63,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r8b/s05.mp3",
-      "start_sec": 26.5,
+      "start_sec": 29.8,
       "window_sec": 5.5,
       "display_text": "Click Save — each entry appears as a coloured segment on the wheel.",
       "tts_text": "Click Save — each entry appears as a coloured segment on the wheel.",
@@ -74,7 +74,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r8b/s06_r8.mp3",
-      "start_sec": 32.0,
+      "start_sec": 35.0,
       "window_sec": 5.5,
       "display_text": "Click the play button at the centre of the wheel to preview the spin — it lands on a winner!",
       "tts_text": "Click the play button at the centre of the wheel to preview the spin — it lands on a winner!",
@@ -85,12 +85,12 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "out-spinner-r8b/s07_r8.mp3",
-      "start_sec": 37.5,
-      "window_sec": 7.05,
+      "start_sec": 40.5,
+      "window_sec": 7.12,
       "display_text": "Hit Present to go live — then press the centre of the wheel to spin for your audience. The winner appears on every screen at once!",
       "tts_text": "Hit Present to go live — then press the centre of the wheel to spin for your audience. The winner appears on every screen at once!",
       "audio_duration_sec": 7.05
     }
   ],
-  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r8c/spinner-wheel-r8c-final.webm -i out-spinner-r9/s01.mp3 -i out-spinner-r8b/s02.mp3 -i out-spinner-r8b/s03.mp3 -i out-spinner-r8b/s04_r8.mp3 -i out-spinner-r8b/s05.mp3 -i out-spinner-r8b/s06_r8.mp3 -i out-spinner-r8b/s07_r8.mp3 -filter_complex '[1:a]adelay=1000|1000[a1];[2:a]adelay=8500|8500[a2];[3:a]adelay=13000|13000[a3];[4:a]adelay=21000|21000[a4];[5:a]adelay=26500|26500[a5];[6:a]adelay=32000|32000[a6];[7:a]adelay=37500|37500[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r9/spinner-wheel-r9-narrated.webm"
+  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r10/spinner-wheel-r10d-trimmed.webm -i out-spinner-r9/s01.mp3 -i out-spinner-r8b/s02.mp3 -i out-spinner-r8b/s03.mp3 -i out-spinner-r8b/s04_r8.mp3 -i out-spinner-r8b/s05.mp3 -i out-spinner-r8b/s06_r8.mp3 -i out-spinner-r8b/s07_r8.mp3 -filter_complex '[1:a]adelay=1000|1000[a1];[2:a]adelay=9800|9800[a2];[3:a]adelay=14200|14200[a3];[4:a]adelay=22000|22000[a4];[5:a]adelay=29800|29800[a5];[6:a]adelay=35000|35000[a6];[7:a]adelay=40500|40500[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r10/spinner-wheel-r10d-narrated.webm"
 }

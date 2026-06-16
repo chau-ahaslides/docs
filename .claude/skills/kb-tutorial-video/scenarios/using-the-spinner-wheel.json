@@ -30,8 +30,12 @@
       "title": "Audience autofill — the star feature",
       "description": "Look at the right panel: check 'Participant name autofill'. Participants scan your QR code and enter their name to join — the wheel fills itself with every participant's name automatically. No manual entries needed.",
       "targetSelector": ".form-check.form-check-inline",
-      "pauseMs": 2000,
-      "action": null
+      "pauseMs": 7000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-side-right-spinner-wheel-autofill-checkbox\"]",
+        "hint": "Click 'Participant name autofill' to continue"
+      }
     },
     {
       "id": "sw-add-entries",
