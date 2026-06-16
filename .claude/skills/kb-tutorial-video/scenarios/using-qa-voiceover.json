@@ -3,17 +3,17 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 88.0,
-  "generated_round": 4,
+  "video_duration_sec": 97.0,
+  "generated_round": 5,
   "youtube_id": "wbsYkltjeW8",
   "youtube_id_superseded": "jCRtfqp5xYI",
   "pronunciation_map": {},
-  "notes": "Round 4 — AKB-10. Voice: Liam (VCgLBmBjldJmfphyB8sZ) ONLY. 12 steps (10 from r2 + 2 new: qa-preview-enter, qa-audience-view). Fixed Axis-1 issues: (1) VO-visual desync corrected — VO adelay values set to match actual spotlight times in boot-only trimmed video; (2) Added participant/audience view step showing live Q&A phone screen. Boot-only trim (cut 0-7s raw) preserves intentional pauseMs holds. VO: 10 reused clips from r2 + 1 new clip (s11d) for audience-view. Overlap check: PASS. Tail silence: ~1.44s. No CC track (blocked AKB-2).",
+  "notes": "Round 5 — AKB-10. Voice: Liam (VCgLBmBjldJmfphyB8sZ) ONLY. Fixed VO-visual desync that r4 overcorrected (VO was running 3-8s AHEAD of visual). Root cause: r4 set adelay values based on a different/faster recording than what bootonly.webm actually contained. Fix: frame-sampled bootonly.webm at 1fps to find exact visual start time of each spotlight, then set adelay = visual_start_time * 1000ms. Result: drift < 0.5s for all steps. Also fixed: r4 trimmed2.webm (88s) cut off the audience view — now using bootonly-97s.webm (97s) which includes the audience view at t=90s. Overlap check: PASS. VO clips all reused from r2/r4.",
   "steps": [
     {
       "id": "qa-welcome",
       "start_sec": 0.0,
-      "window_sec": 3.6,
+      "window_sec": 11.0,
       "display_text": "A Q&A slide lets your audience send questions from their phones while you present. We'll build one and cover all the settings.",
       "tts_text": "A Q&A slide lets your audience send questions from their phones while you present. We'll build one and cover all the settings.",
       "audio_duration_sec": 6.03,
@@ -21,8 +21,8 @@
     },
     {
       "id": "qa-create",
-      "start_sec": 6.03,
-      "window_sec": 6.67,
+      "start_sec": 11.0,
+      "window_sec": 5.0,
       "display_text": "Click New Presentation to open a fresh deck.",
       "tts_text": "Click New Presentation to open a fresh deck.",
       "audio_duration_sec": 2.40,
@@ -30,8 +30,8 @@
     },
     {
       "id": "qa-pick-type",
-      "start_sec": 12.70,
-      "window_sec": 4.60,
+      "start_sec": 16.0,
+      "window_sec": 9.0,
       "display_text": "Select Q&A from the slide type picker — it gathers audience questions in real time.",
       "tts_text": "Select Q&A from the slide type picker — it gathers audience questions in real time.",
       "audio_duration_sec": 4.60,
@@ -39,8 +39,8 @@
     },
     {
       "id": "qa-type-heading",
-      "start_sec": 17.30,
-      "window_sec": 9.90,
+      "start_sec": 25.0,
+      "window_sec": 7.0,
       "display_text": "Type a welcoming heading so participants know what this slide is for.",
       "tts_text": "Type a welcoming heading so participants know what this slide is for.",
       "audio_duration_sec": 3.71,
@@ -48,8 +48,8 @@
     },
     {
       "id": "qa-settings-when",
-      "start_sec": 27.20,
-      "window_sec": 8.20,
+      "start_sec": 32.0,
+      "window_sec": 11.0,
       "display_text": "Choose whether questions come in only on this Q&A slide, or on every slide in your presentation.",
       "tts_text": "Choose whether questions come in only on this Q&A slide, or on every slide in your presentation.",
       "audio_duration_sec": 4.86,
@@ -57,8 +57,8 @@
     },
     {
       "id": "qa-settings-profanity",
-      "start_sec": 35.40,
-      "window_sec": 7.70,
+      "start_sec": 43.0,
+      "window_sec": 7.0,
       "display_text": "Tick Filter profanity to block swear words — ideal for school or public events.",
       "tts_text": "Tick Filter profanity to block swear words — ideal for school or public events.",
       "audio_duration_sec": 4.36,
@@ -66,8 +66,8 @@
     },
     {
       "id": "qa-settings-moderation",
-      "start_sec": 43.10,
-      "window_sec": 10.30,
+      "start_sec": 50.0,
+      "window_sec": 11.0,
       "display_text": "Enable moderation to approve questions privately before they show on screen. A link lets you or a co-host filter from a separate tab.",
       "tts_text": "Enable moderation to approve questions privately before they show on screen. A link lets you or a co-host filter from a separate tab.",
       "audio_duration_sec": 7.11,
@@ -75,8 +75,8 @@
     },
     {
       "id": "qa-settings-see-each-other",
-      "start_sec": 53.40,
-      "window_sec": 7.70,
+      "start_sec": 61.0,
+      "window_sec": 7.0,
       "display_text": "When on, audience members can see each other's submitted questions — great for upvoting.",
       "tts_text": "When on, audience members can see each other's submitted questions — great for upvoting.",
       "audio_duration_sec": 4.36,
@@ -84,8 +84,8 @@
     },
     {
       "id": "qa-settings-anonymous",
-      "start_sec": 61.10,
-      "window_sec": 8.20,
+      "start_sec": 68.0,
+      "window_sec": 9.0,
       "display_text": "Allow anonymous lets participants skip entering their name — encourages candid questions.",
       "tts_text": "Allow anonymous lets participants skip entering their name — encourages candid questions.",
       "audio_duration_sec": 4.86,
@@ -93,8 +93,8 @@
     },
     {
       "id": "qa-present",
-      "start_sec": 69.30,
-      "window_sec": 9.70,
+      "start_sec": 77.0,
+      "window_sec": 10.0,
       "display_text": "That's everything. Hit Present and your audience starts sending questions live — you organise and answer from one screen.",
       "tts_text": "That's everything. Hit Present and your audience starts sending questions live — you organise and answer from one screen.",
       "audio_duration_sec": 6.27,
@@ -102,8 +102,8 @@
     },
     {
       "id": "qa-preview-enter",
-      "start_sec": 79.00,
-      "window_sec": 3.20,
+      "start_sec": 87.0,
+      "window_sec": 3.0,
       "display_text": "(transition — click Preview button, no VO)",
       "tts_text": null,
       "audio_duration_sec": 0,
@@ -111,13 +111,13 @@
     },
     {
       "id": "qa-audience-view",
-      "start_sec": 82.20,
-      "window_sec": 5.80,
+      "start_sec": 90.0,
+      "window_sec": 7.0,
       "display_text": "Here's the audience view in Preview — participants type questions directly on their phones.",
       "tts_text": "Here's the audience view in Preview — participants type questions directly on their phones.",
       "audio_duration_sec": 4.36,
       "audio_file": "/tmp/qa-r4-vo/s11d.mp3"
     }
   ],
-  "mix_command": "FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out-qa-r4/using-qa-r4-trimmed2.webm -i /tmp/qa-r2-vo/s01b.mp3 -i /tmp/qa-r2-vo/s02.mp3 -i /tmp/qa-r2-vo/s03.mp3 -i /tmp/qa-r2-vo/s04b.mp3 -i /tmp/qa-r2-vo/s05b.mp3 -i /tmp/qa-r2-vo/s06b.mp3 -i /tmp/qa-r2-vo/s07b.mp3 -i /tmp/qa-r2-vo/s08b.mp3 -i /tmp/qa-r2-vo/s09b.mp3 -i /tmp/qa-r2-vo/s10b.mp3 -i /tmp/qa-r4-vo/s11d.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6030|6030[a2];[3:a]adelay=12700|12700[a3];[4:a]adelay=17300|17300[a4];[5:a]adelay=27200|27200[a5];[6:a]adelay=35400|35400[a6];[7:a]adelay=43100|43100[a7];[8:a]adelay=53400|53400[a8];[9:a]adelay=61100|61100[a9];[10:a]adelay=69300|69300[a10];[11:a]adelay=82200|82200[a11];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]amix=inputs=11:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-qa-r4/using-qa-r4-narrated.webm"
+  "mix_command": "FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out-qa-r4/using-qa-r4-bootonly-97s.webm -i /tmp/qa-r2-vo/s01b.mp3 -i /tmp/qa-r2-vo/s02.mp3 -i /tmp/qa-r2-vo/s03.mp3 -i /tmp/qa-r2-vo/s04b.mp3 -i /tmp/qa-r2-vo/s05b.mp3 -i /tmp/qa-r2-vo/s06b.mp3 -i /tmp/qa-r2-vo/s07b.mp3 -i /tmp/qa-r2-vo/s08b.mp3 -i /tmp/qa-r2-vo/s09b.mp3 -i /tmp/qa-r2-vo/s10b.mp3 -i /tmp/qa-r4-vo/s11d.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=11000|11000[a2];[3:a]adelay=16000|16000[a3];[4:a]adelay=25000|25000[a4];[5:a]adelay=32000|32000[a5];[6:a]adelay=43000|43000[a6];[7:a]adelay=50000|50000[a7];[8:a]adelay=61000|61000[a8];[9:a]adelay=68000|68000[a9];[10:a]adelay=77000|77000[a10];[11:a]adelay=90000|90000[a11];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]amix=inputs=11:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-qa-r5/using-qa-r5-narrated.webm"
 }
