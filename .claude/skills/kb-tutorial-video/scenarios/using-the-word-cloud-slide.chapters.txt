@@ -1,0 +1,15 @@
+# YouTube chapter markers for "Using the Word Cloud Slide" tutorial video
+# Video: onboarding-videos/out-word-cloud-r8/word-cloud-narrated-r8.webm (63.35s)
+# YouTube rules: first chapter 0:00, ≥3 chapters, each ≥10s, ascending, "M:SS Title" format
+# Apply: paste this block into the YouTube video description when publishing.
+#
+# Steps covered:
+#   0:00-0:10  wc-welcome (8.25s) + wc-create start (2.35s gap) = 10.6s gap → chapter 1
+#   0:10-0:27  wc-create + wc-pick-type + wc-type-question + wc-entries = 17.1s gap → chapter 2
+#   0:27-0:42  wc-preview + wc-preview-submit + wc-preview-building = 14.3s gap → chapter 3
+#   0:42-end   wc-preview-cloud + wc-back-to-editor + wc-present + outro = 21.4s gap → chapter 4
+
+0:00 Intro
+0:10 Create and configure the slide
+0:27 Preview the cloud
+0:42 Present live
