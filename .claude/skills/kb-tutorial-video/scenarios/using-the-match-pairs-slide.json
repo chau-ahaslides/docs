@@ -36,7 +36,7 @@
       "id": "mp-type-question",
       "path": "/presentation/*",
       "title": "Write your question",
-      "description": "Type the matching challenge here. This appears at the top so participants know what to connect.",
+      "description": "Type the matching challenge in the 'Your question' field. This appears at the top so participants know what to connect.",
       "targetSelector": "[aria-label=\"Question text\"]",
       "pauseMs": 1500,
       "action": {
@@ -131,10 +131,90 @@
       }
     },
     {
-      "id": "mp-present",
+      "id": "mp-settings",
+      "path": "/presentation/*",
+      "title": "Fine-tune with Settings",
+      "description": "Click the Settings gear to set the time limit and point value. Shorter time limits add urgency; higher points reward accuracy.",
+      "targetSelector": "[data-testid=\"editor-side-left-slide-settings-button\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-side-left-slide-settings-button\"]",
+        "hint": "Click the Settings gear to open settings"
+      }
+    },
+    {
+      "id": "mp-preview",
+      "path": "/presentation/*",
+      "title": "Preview how participants see it",
+      "description": "Click Preview to see both the presenter screen and the participant's phone side by side. Watch participants join and drag each pair into place.",
+      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
+      "pauseMs": 500,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-preview-button\"]",
+        "hint": "Click Preview to open the preview"
+      }
+    },
+    {
+      "id": "mp-audience-join",
+      "path": "/presentation/*",
+      "title": "This is your participant's phone",
+      "description": "Participants scan the code or visit the link to join. They enter a name and tap 'Join the game!' — then wait for the host to start.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 14000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-join-name-input\"]",
+          "type": "type",
+          "value": "Alice",
+          "label": "type name",
+          "pauseAfterMs": 800
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-join-game-submit-button\"]",
+          "label": "click join",
+          "pauseAfterMs": 2000
+        }
+      ]
+    },
+    {
+      "id": "mp-audience-playing",
+      "path": "/presentation/*",
+      "title": "Participants drag pairs into place",
+      "description": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They drag each answer to its matching prompt before time runs out.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 5000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "presenting=true",
+          "selector": "button.start-quiz-btn, [class*='start-quiz'], button:has-text('Start')",
+          "label": "host clicks Start",
+          "pauseAfterMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "mp-back-to-editor",
       "path": "/presentation/*",
       "title": "Ready to go live!",
-      "description": "Three matched pairs are set up. Adjust the time limit and points in the Settings panel, then hit 'Present' — your participants will race to drag every pair into position.",
+      "description": "Your three pairs are set up and the experience is ready for participants. Hit 'Present' when you're ready — participants race to drag every pair into position.",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+        "hint": "Click Back to Editor"
+      }
+    },
+    {
+      "id": "mp-present",
+      "path": "/presentation/*",
+      "title": "Go live with Present",
+      "description": "Click Present to launch the live session. Your participants will race to match every pair before the timer runs out.",
       "targetSelector": ".aha-button-present",
       "action": null
     }
