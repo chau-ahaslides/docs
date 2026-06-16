@@ -6,8 +6,8 @@
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
   "video_duration_sec": null,
   "youtube_id": "K5YPdRXDscU",
-  "generated_round": 3,
-  "notes": "AKB-12 r3: ALL Liam (single voice, replaces alternating Liam+Alice from r1). Adds: 5-item-max tip in co-statements, distinct-items tip in co-tip-distinct, logical-sequence tip in co-settings, participant/results view via Preview. Overlap check must pass before mix.",
+  "generated_round": 4,
+  "notes": "AKB-12 r4: ALL Liam (single voice). Fixes: (1) new co-set-language-en step sets audience language to English before preview; (2) separate co-open-preview step; (3) proper co-preview-audience (English) + co-preview-results closing beat. Overlap check must pass before mix.",
   "steps": [
     {
       "id": "co-welcome",
@@ -74,31 +74,50 @@
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 26.06,
-      "window_sec": 5.5,
+      "window_sec": 5.0,
       "display_text": "Set the time limit and points. Use a logical sequence — timeline, process steps, or ranked list.",
       "tts_text": "Set the time limit and points. Use a logical sequence — timeline, process steps, or ranked list.",
       "audio_duration_sec": 5.38
     },
     {
+      "id": "co-set-language-en",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 31.44,
+      "window_sec": 5.5,
+      "display_text": "In Settings, set the audience language to English so participants see everything in English on their devices.",
+      "tts_text": "In Settings, set the audience language to English so participants see everything in English on their devices.",
+      "audio_duration_sec": 5.43
+    },
+    {
+      "id": "co-open-preview",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 37.1,
+      "window_sec": 6.0,
+      "display_text": "Click Preview to see the presenter and participant screens side by side.",
+      "tts_text": "Click Preview to see the presenter and participant screens side by side.",
+      "audio_duration_sec": 3.94
+    },
+    {
       "id": "co-preview-audience",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 31.60,
+      "start_sec": 42.81,
       "window_sec": 5.5,
-      "display_text": "In Preview, the presenter and participant screens appear side by side. Hit Present when you're ready to go live.",
-      "tts_text": "In Preview, the presenter and participant screens appear side by side. Hit Present when you're ready to go live.",
-      "audio_duration_sec": 5.46
+      "display_text": "When your audience joins, they see the shuffled statements in English and drag them into the correct order.",
+      "tts_text": "When your audience joins, they see the shuffled statements in English and drag them into the correct order.",
+      "audio_duration_sec": 4.68
     },
     {
       "id": "co-preview-results",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": null,
-      "window_sec": null,
-      "display_text": "(combined into co-preview-audience clip s08c — no separate audio)",
-      "tts_text": null,
-      "audio_duration_sec": null,
-      "_merged_into": "co-preview-audience"
+      "start_sec": 47.49,
+      "window_sec": 6.5,
+      "display_text": "The presenter view shows the leaderboard and the correct order revealed. Hit Present when you're ready to go live.",
+      "tts_text": "The presenter view shows the leaderboard and the correct order revealed. Hit Present when you're ready to go live.",
+      "audio_duration_sec": 5.67
     }
   ]
 }
