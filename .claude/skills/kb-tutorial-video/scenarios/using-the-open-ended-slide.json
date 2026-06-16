@@ -67,17 +67,49 @@
       "id": "oe-settings",
       "path": "/presentation/*",
       "title": "Tune your settings",
-      "description": "Toggle Time limit, Hide results, or Allow images to suit your session. Then Preview to test it live.",
+      "description": "Toggle Time limit, Hide results, or Allow images to suit your session.",
       "targetSelector": "[data-testid=\"editor-side-right-allow-image-submission-checkbox\"]",
-      "pauseMs": 1000,
+      "pauseMs": 2000,
       "action": null,
       "mainInteractions": [
+        {
+          "type": "jsEval",
+          "js": "document.querySelector('[data-testid=\"editor-side-right-nav-settings-button\"]')?.click()",
+          "label": "open Settings modal",
+          "pauseAfterMs": 2500
+        },
+        {
+          "selector": "[data-testid=\"presentation-settings-tab-presentation-language-button\"]",
+          "label": "click Presentation Language tab",
+          "pauseAfterMs": 1500
+        },
+        {
+          "type": "select",
+          "selector": "[data-testid=\"presentation-settings-language-select\"]",
+          "value": "en",
+          "label": "set audience language to English",
+          "pauseAfterMs": 1500
+        },
+        {
+          "selector": ".aha-modal__close-button",
+          "label": "close Settings modal",
+          "pauseAfterMs": 1000
+        },
         {
           "selector": "[data-testid=\"editor-middle-preview-button\"]",
           "label": "open preview via JS click (bypasses overlay backdrop)",
           "pauseAfterMs": 5000
         }
       ]
+    },
+    {
+      "id": "oe-preview-open",
+      "path": "/presentation/*",
+      "title": "Hit Preview to rehearse your slide",
+      "description": "Preview opens a split view — Presenter screen on the left, Participant screen on the right. Use it to test your slide before going live.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 1000,
+      "action": null
     },
     {
       "id": "oe-preview-audience",
