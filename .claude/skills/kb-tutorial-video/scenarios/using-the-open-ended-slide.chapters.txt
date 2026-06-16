@@ -1,0 +1,9 @@
+# YouTube chapters for using-the-open-ended-slide.md
+# Video: out-open-ended-r5/open-ended-r5-narrated-with-outro.webm
+# Total duration: 53.27s (50.66s tutorial + 2.61s outro)
+# Groups: 15.0s | 20.0s | 15.6s+outro
+# Generated: r5 rebuild — AKB-14
+
+0:00 Intro
+0:15 Configure the slide
+0:35 Preview and present live
