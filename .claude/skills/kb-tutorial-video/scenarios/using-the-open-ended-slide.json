@@ -4,7 +4,7 @@
       "id": "oe-welcome",
       "path": "/apps/presentations",
       "title": "Let's build an Open Ended slide!",
-      "description": "An Open Ended slide lets your audience answer in their own words — no fixed choices, just real responses. We'll set one up together in under a minute. Click Next to begin.",
+      "description": "An Open Ended slide lets your audience answer in their own words — no fixed choices, just real responses. Click Next to begin.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -23,7 +23,7 @@
       "id": "oe-pick-type",
       "path": "/presentation/*",
       "title": "Pick the Open Ended slide type",
-      "description": "Select 'Open Ended' from the slide type picker. You'll find it in the interactive slides section — it's the one that captures free-text answers from your audience.",
+      "description": "Select 'Open Ended' from the slide type picker. It captures free-text answers from your audience.",
       "targetSelector": "[aria-label=\"Open Ended\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "pauseMs": 1500,
       "action": {
@@ -35,9 +35,9 @@
       "id": "oe-type-question",
       "path": "/presentation/*",
       "title": "Write your question",
-      "description": "Type your open-ended question here. Make it specific enough to spark a real response — 'What's one thing you'd improve about our onboarding?' beats 'What do you think?'",
+      "description": "Type your question here. Make it specific to spark a real response.",
       "targetSelector": "[aria-label=\"Question text\"]",
-      "pauseMs": 1500,
+      "pauseMs": 1000,
       "action": {
         "type": "input-match",
         "selector": "[aria-label=\"Question text\"]",
@@ -48,27 +48,34 @@
       "id": "oe-layout",
       "path": "/presentation/*",
       "title": "Choose how responses display",
-      "description": "Pick Grid to show all responses at once, or One by one to reveal them individually. Grid works great for spotting patterns; One by one is better for reading each response aloud.",
+      "description": "Grid shows all responses at once; One by one reveals them individually. Click to switch layouts.",
       "targetSelector": ".bars-box-content.layout",
-      "pauseMs": 1000,
+      "pauseMs": 500,
       "action": {
         "type": "click",
         "selector": ".bars-box-content.layout"
-      }
+      },
+      "mainInteractions": [
+        {
+          "selector": ".bars-box-content.layout",
+          "label": "click layout again to cycle",
+          "pauseAfterMs": 1000
+        }
+      ]
     },
     {
       "id": "oe-settings",
       "path": "/presentation/*",
       "title": "Tune your settings",
-      "description": "Toggle on Time limit to keep answers snappy, Hide results to reveal responses on your schedule, or Allow images so participants can share photos instead of text. Each setting is independent.",
+      "description": "Toggle Time limit, Hide results, or Allow images to suit your session. Then Preview to test it live.",
       "targetSelector": "[data-testid=\"editor-side-right-allow-image-submission-checkbox\"]",
-      "pauseMs": 2000,
+      "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
         {
           "selector": "[data-testid=\"editor-middle-preview-button\"]",
           "label": "open preview via JS click (bypasses overlay backdrop)",
-          "pauseAfterMs": 8000
+          "pauseAfterMs": 5000
         }
       ]
     },
@@ -76,9 +83,9 @@
       "id": "oe-preview-audience",
       "path": "/presentation/*",
       "title": "Audience types their answer here",
-      "description": "When your audience joins, they type their answer in this box and hit Submit. Responses arrive on your screen the moment they're sent.",
+      "description": "Participants type their answer and hit Submit. Responses arrive instantly on your screen.",
       "targetSelector": ".iframe-wrapper-audience",
-      "pauseMs": 2000,
+      "pauseMs": 1000,
       "action": null,
       "previewInteractions": [
         {
@@ -87,23 +94,23 @@
           "type": "type",
           "value": "Shorter weekly stand-ups",
           "label": "type open-ended answer",
-          "pauseAfterMs": 1500
+          "pauseAfterMs": 1000
         },
         {
           "frameMatch": "audience.",
           "selector": "[data-testid=\"audience-open-ended-submit-button\"]",
           "label": "submit answer",
-          "pauseAfterMs": 3000
+          "pauseAfterMs": 2000
         }
       ]
     },
     {
       "id": "oe-preview-results",
       "path": "/presentation/*",
-      "title": "Responses appear live on your screen",
-      "description": "Each submission pops up instantly on the presenter view. Hit Present when you're ready to go live — your audience sees the same experience on their phones.",
+      "title": "Responses appear live",
+      "description": "Each answer pops up instantly. Hit Present to go live.",
       "targetSelector": ".iframe-wrapper-presenter",
-      "pauseMs": 3000,
+      "pauseMs": 1000,
       "action": null
     }
   ]
