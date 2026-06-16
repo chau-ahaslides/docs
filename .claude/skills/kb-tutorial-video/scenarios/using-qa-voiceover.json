@@ -3,93 +3,121 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 54.76,
-  "generated_round": 2,
+  "video_duration_sec": 88.0,
+  "generated_round": 4,
   "youtube_id": "wbsYkltjeW8",
   "youtube_id_superseded": "jCRtfqp5xYI",
   "pronunciation_map": {},
-  "notes": "Round 2 — AKB-10. Voice: Liam (VCgLBmBjldJmfphyB8sZ) ONLY — permitted voice per policy (Liam/Alice only, no others). 10 steps (7 from r1 + 3 new: profanity, see-each-other, anonymous). Visual: 39.76s trimmed + 15s held-last-frame extension = 54.76s total. VO: shorter clips (s01b=6.03s, then sequential) to fit. Opening overlap verified CLEAN via silencedetect: s01b ends 5.92s, s02 starts 6.34s, gap=0.42s. No overlap at 0:00-0:08.",
+  "notes": "Round 4 — AKB-10. Voice: Liam (VCgLBmBjldJmfphyB8sZ) ONLY. 12 steps (10 from r2 + 2 new: qa-preview-enter, qa-audience-view). Fixed Axis-1 issues: (1) VO-visual desync corrected — VO adelay values set to match actual spotlight times in boot-only trimmed video; (2) Added participant/audience view step showing live Q&A phone screen. Boot-only trim (cut 0-7s raw) preserves intentional pauseMs holds. VO: 10 reused clips from r2 + 1 new clip (s11d) for audience-view. Overlap check: PASS. Tail silence: ~1.44s. No CC track (blocked AKB-2).",
   "steps": [
     {
       "id": "qa-welcome",
       "start_sec": 0.0,
-      "window_sec": 6.0,
+      "window_sec": 3.6,
       "display_text": "A Q&A slide lets your audience send questions from their phones while you present. We'll build one and cover all the settings.",
       "tts_text": "A Q&A slide lets your audience send questions from their phones while you present. We'll build one and cover all the settings.",
-      "audio_duration_sec": 6.03
+      "audio_duration_sec": 6.03,
+      "audio_file": "/tmp/qa-r2-vo/s01b.mp3"
     },
     {
       "id": "qa-create",
-      "start_sec": 6.33,
-      "window_sec": 2.5,
+      "start_sec": 6.03,
+      "window_sec": 6.67,
       "display_text": "Click New Presentation to open a fresh deck.",
       "tts_text": "Click New Presentation to open a fresh deck.",
-      "audio_duration_sec": 2.40
+      "audio_duration_sec": 2.40,
+      "audio_file": "/tmp/qa-r2-vo/s02.mp3"
     },
     {
       "id": "qa-pick-type",
-      "start_sec": 9.03,
-      "window_sec": 4.5,
+      "start_sec": 12.70,
+      "window_sec": 4.60,
       "display_text": "Select Q&A from the slide type picker — it gathers audience questions in real time.",
       "tts_text": "Select Q&A from the slide type picker — it gathers audience questions in real time.",
-      "audio_duration_sec": 4.60
+      "audio_duration_sec": 4.60,
+      "audio_file": "/tmp/qa-r2-vo/s03.mp3"
     },
     {
       "id": "qa-type-heading",
-      "start_sec": 13.93,
-      "window_sec": 3.5,
+      "start_sec": 17.30,
+      "window_sec": 9.90,
       "display_text": "Type a welcoming heading so participants know what this slide is for.",
       "tts_text": "Type a welcoming heading so participants know what this slide is for.",
-      "audio_duration_sec": 3.71
+      "audio_duration_sec": 3.71,
+      "audio_file": "/tmp/qa-r2-vo/s04b.mp3"
     },
     {
       "id": "qa-settings-when",
-      "start_sec": 17.94,
-      "window_sec": 5.0,
+      "start_sec": 27.20,
+      "window_sec": 8.20,
       "display_text": "Choose whether questions come in only on this Q&A slide, or on every slide in your presentation.",
       "tts_text": "Choose whether questions come in only on this Q&A slide, or on every slide in your presentation.",
-      "audio_duration_sec": 4.86
+      "audio_duration_sec": 4.86,
+      "audio_file": "/tmp/qa-r2-vo/s05b.mp3"
     },
     {
       "id": "qa-settings-profanity",
-      "start_sec": 23.10,
-      "window_sec": 4.5,
+      "start_sec": 35.40,
+      "window_sec": 7.70,
       "display_text": "Tick Filter profanity to block swear words — ideal for school or public events.",
       "tts_text": "Tick Filter profanity to block swear words — ideal for school or public events.",
-      "audio_duration_sec": 4.36
+      "audio_duration_sec": 4.36,
+      "audio_file": "/tmp/qa-r2-vo/s06b.mp3"
     },
     {
       "id": "qa-settings-moderation",
-      "start_sec": 27.76,
-      "window_sec": 7.0,
+      "start_sec": 43.10,
+      "window_sec": 10.30,
       "display_text": "Enable moderation to approve questions privately before they show on screen. A link lets you or a co-host filter from a separate tab.",
       "tts_text": "Enable moderation to approve questions privately before they show on screen. A link lets you or a co-host filter from a separate tab.",
-      "audio_duration_sec": 7.11
+      "audio_duration_sec": 7.11,
+      "audio_file": "/tmp/qa-r2-vo/s07b.mp3"
     },
     {
       "id": "qa-settings-see-each-other",
-      "start_sec": 35.17,
-      "window_sec": 4.5,
+      "start_sec": 53.40,
+      "window_sec": 7.70,
       "display_text": "When on, audience members can see each other's submitted questions — great for upvoting.",
       "tts_text": "When on, audience members can see each other's submitted questions — great for upvoting.",
-      "audio_duration_sec": 4.36
+      "audio_duration_sec": 4.36,
+      "audio_file": "/tmp/qa-r2-vo/s08b.mp3"
     },
     {
       "id": "qa-settings-anonymous",
-      "start_sec": 39.83,
-      "window_sec": 5.0,
+      "start_sec": 61.10,
+      "window_sec": 8.20,
       "display_text": "Allow anonymous lets participants skip entering their name — encourages candid questions.",
       "tts_text": "Allow anonymous lets participants skip entering their name — encourages candid questions.",
-      "audio_duration_sec": 4.86
+      "audio_duration_sec": 4.86,
+      "audio_file": "/tmp/qa-r2-vo/s09b.mp3"
     },
     {
       "id": "qa-present",
-      "start_sec": 44.99,
-      "window_sec": 9.0,
+      "start_sec": 69.30,
+      "window_sec": 9.70,
       "display_text": "That's everything. Hit Present and your audience starts sending questions live — you organise and answer from one screen.",
       "tts_text": "That's everything. Hit Present and your audience starts sending questions live — you organise and answer from one screen.",
-      "audio_duration_sec": 6.27
+      "audio_duration_sec": 6.27,
+      "audio_file": "/tmp/qa-r2-vo/s10b.mp3"
+    },
+    {
+      "id": "qa-preview-enter",
+      "start_sec": 79.00,
+      "window_sec": 3.20,
+      "display_text": "(transition — click Preview button, no VO)",
+      "tts_text": null,
+      "audio_duration_sec": 0,
+      "audio_file": null
+    },
+    {
+      "id": "qa-audience-view",
+      "start_sec": 82.20,
+      "window_sec": 5.80,
+      "display_text": "Here's the audience view in Preview — participants type questions directly on their phones.",
+      "tts_text": "Here's the audience view in Preview — participants type questions directly on their phones.",
+      "audio_duration_sec": 4.36,
+      "audio_file": "/tmp/qa-r4-vo/s11d.mp3"
     }
   ],
-  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out-qa-r2/using-qa-extended.webm -i /tmp/qa-r2-vo/s01b.mp3 -i /tmp/qa-r2-vo/s02.mp3 -i /tmp/qa-r2-vo/s03.mp3 -i /tmp/qa-r2-vo/s04b.mp3 -i /tmp/qa-r2-vo/s05b.mp3 -i /tmp/qa-r2-vo/s06b.mp3 -i /tmp/qa-r2-vo/s07b.mp3 -i /tmp/qa-r2-vo/s08b.mp3 -i /tmp/qa-r2-vo/s09b.mp3 -i /tmp/qa-r2-vo/s10b.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6330|6330[a2];[3:a]adelay=9030|9030[a3];[4:a]adelay=13930|13930[a4];[5:a]adelay=17940|17940[a5];[6:a]adelay=23100|23100[a6];[7:a]adelay=27760|27760[a7];[8:a]adelay=35170|35170[a8];[9:a]adelay=39830|39830[a9];[10:a]adelay=44990|44990[a10];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10]amix=inputs=10:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-qa-r2/using-qa-narrated.webm"
+  "mix_command": "FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out-qa-r4/using-qa-r4-trimmed2.webm -i /tmp/qa-r2-vo/s01b.mp3 -i /tmp/qa-r2-vo/s02.mp3 -i /tmp/qa-r2-vo/s03.mp3 -i /tmp/qa-r2-vo/s04b.mp3 -i /tmp/qa-r2-vo/s05b.mp3 -i /tmp/qa-r2-vo/s06b.mp3 -i /tmp/qa-r2-vo/s07b.mp3 -i /tmp/qa-r2-vo/s08b.mp3 -i /tmp/qa-r2-vo/s09b.mp3 -i /tmp/qa-r2-vo/s10b.mp3 -i /tmp/qa-r4-vo/s11d.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6030|6030[a2];[3:a]adelay=12700|12700[a3];[4:a]adelay=17300|17300[a4];[5:a]adelay=27200|27200[a5];[6:a]adelay=35400|35400[a6];[7:a]adelay=43100|43100[a7];[8:a]adelay=53400|53400[a8];[9:a]adelay=61100|61100[a9];[10:a]adelay=69300|69300[a10];[11:a]adelay=82200|82200[a11];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]amix=inputs=11:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-qa-r4/using-qa-r4-narrated.webm"
 }
