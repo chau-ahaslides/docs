@@ -27,7 +27,7 @@
       "path": "/apps/*",
       "title": "Presenter interface language — 27 options",
       "description": "The presenter language list opens below the globe button. Choose from 27 languages — the interface switches instantly.",
-      "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
+      "targetSelector": "[data-testid=\"sidebar-home-link\"]",
       "pauseMs": 500,
       "mainInteractions": [
         {

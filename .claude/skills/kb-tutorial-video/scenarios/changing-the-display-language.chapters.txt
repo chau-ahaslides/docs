@@ -1,11 +1,10 @@
 # changing-the-display-language.chapters.txt
-# Video: out-display-language-r5g/changing-the-display-language-r5g-narrated-outro.webm
-# Total duration: 86.6s (84s tutorial + 2.6s outro)
-# Derived from voiceover JSON r5 (AKB-18 Round 5)
-# Chapters: 5, all ≥10s, first at 0:00
+# Video: out-display-language-r6/changing-the-display-language-r6-narrated-outro.webm
+# Total duration: 64.19s (61.56s tutorial + 2.63s outro)
+# Derived from voiceover JSON r6 (AKB-18 Round 6)
+# Chapters: 4, all ≥10s, first at 0:00
 
-0:00 Introduction and presenter language
-0:21 Open the Settings for audience language
-0:38 Navigate to Presentation language
-0:52 Choose from 32 audience languages
-1:03 Preview in Español
+0:00 Presenter interface language (27 options)
+0:18 Open a presentation and go to Settings
+0:32 Audience display language (32 options)
+0:47 Preview in Español
