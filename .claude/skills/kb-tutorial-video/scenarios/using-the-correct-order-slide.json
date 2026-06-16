@@ -77,12 +77,54 @@
       "description": "Scroll down to set the time limit (default: 45 seconds), reward points, and whether faster answers earn more points. Pro tip: a logical sequence — timeline, process steps, or ranked list — gives participants a fair shot.",
       "targetSelector": "[data-testid=\"editor-side-right-quiz-max-point-input\"]",
       "pauseMs": 1500,
+      "action": null
+    },
+    {
+      "id": "co-set-language-en",
+      "path": "/presentation/*",
+      "title": "Set participant language to English",
+      "description": "Open Settings to confirm the audience display language is set to English — so participants see all text in English on their devices.",
+      "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
+      "pauseMs": 1000,
+      "action": null,
+      "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
+          "label": "open presentation settings",
+          "pauseAfterMs": 3000
+        },
+        {
+          "selector": "[data-testid=\"presentation-settings-tab-presentation-language-button\"]",
+          "label": "click Presentation language tab",
+          "pauseAfterMs": 2000
+        },
+        {
+          "type": "select",
+          "selector": "[data-testid=\"presentation-settings-language-select\"]",
+          "value": "en",
+          "label": "select English (value=en)",
+          "pauseAfterMs": 2000
+        },
+        {
+          "selector": ".aha-modal__close-button",
+          "label": "close settings modal",
+          "pauseAfterMs": 1500
+        }
+      ]
+    },
+    {
+      "id": "co-open-preview",
+      "path": "/presentation/*",
+      "title": "Preview — see what your participants will see",
+      "description": "Click Preview to open a side-by-side view of the presenter and participant screens.",
+      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
+      "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
         {
           "selector": "[data-testid=\"editor-middle-preview-button\"]",
           "label": "open preview via JS click (bypasses overlay backdrop)",
-          "pauseAfterMs": 10000
+          "pauseAfterMs": 12000
         }
       ]
     },
@@ -101,7 +143,7 @@
       "title": "Results appear live on your screen",
       "description": "The presenter view shows a real-time leaderboard and the correct order revealed. Hit Present when you're ready to go live — participants will race to arrange the statements correctly on their phones.",
       "targetSelector": ".iframe-wrapper-presenter",
-      "pauseMs": 3000,
+      "pauseMs": 4000,
       "action": null
     }
   ]
