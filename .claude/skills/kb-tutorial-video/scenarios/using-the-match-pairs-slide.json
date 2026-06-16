@@ -178,6 +178,12 @@
           "selector": "[data-testid=\"audience-join-game-submit-button\"]",
           "label": "click join",
           "pauseAfterMs": 2000
+        },
+        {
+          "type": "matchPairsApiSubmit",
+          "count": 3,
+          "label": "pre-submit 3 participant responses before game starts",
+          "pauseAfterMs": 2000
         }
       ]
     },
@@ -187,14 +193,14 @@
       "title": "Participants drag pairs into place",
       "description": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They drag each answer to its matching prompt before time runs out.",
       "targetSelector": ".iframe-wrapper-presenter",
-      "pauseMs": 5000,
+      "pauseMs": 3000,
       "action": null,
       "previewInteractions": [
         {
-          "type": "matchPairsApiSubmit",
-          "count": 3,
-          "label": "simulate 3 participant responses",
-          "pauseAfterMs": 5000
+          "frameMatch": "presenting=true",
+          "selector": "button.start-quiz-btn, [class*='start-quiz'], button:has-text('Start')",
+          "label": "host clicks Start — pre-submitted responses now render",
+          "pauseAfterMs": 10000
         }
       ]
     },
