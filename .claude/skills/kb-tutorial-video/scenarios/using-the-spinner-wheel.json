@@ -29,7 +29,7 @@
       "path": "/presentation/*",
       "title": "Audience autofill — the star feature",
       "description": "Look at the right panel: check 'Participant name autofill'. Participants scan your QR code and enter their name to join — the wheel fills itself with every participant's name automatically. No manual entries needed.",
-      "targetSelector": "[data-testid=\"editor-side-left-slide-thumbnail-button\"]",
+      "targetSelector": ".form-check.form-check-inline",
       "pauseMs": 2000,
       "action": null
     },

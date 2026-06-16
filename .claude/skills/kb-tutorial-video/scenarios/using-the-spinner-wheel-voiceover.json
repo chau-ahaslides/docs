@@ -4,14 +4,14 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
-  "video_duration_sec": 39.16,
-  "generated_round": 5,
-  "youtube_id": "TBD — upload blocked by daily quota; video ready at out-spinner-r5/spinner-wheel-r5-narrated.webm",
+  "video_duration_sec": 41.15,
+  "generated_round": 6,
+  "youtube_id": "TBD — upload blocked by daily quota; video ready at out-spinner-r6/spinner-wheel-r6-narrated.webm",
   "pronunciation_map": {
     "1,200": "twelve hundred",
     "Present (verb /prəˈzent/)": "Use 'Hit Present to go live' — the 'to go live' context cues ElevenLabs to stress the verb form prih-ZENT, not the noun PREZ-ent"
   },
-  "notes": "AKB-15 r5 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). Changes vs r4: (1) removed sw-welcome step — video now opens directly on sw-create action; (2) sw-autofill targetSelector changed from autofill-checkbox (right panel, tooltip occludes it) to editor-side-left-slide-thumbnail-button (left panel, tooltip at x~207 leaves right panel fully visible); (3) trimmed to 35.64s raw video, 39.16s with VO tail; (4) new s03_v5 audio for sw-autofill. Video: out-spinner-r5/spinner-wheel-r5-narrated.webm (or .mp4).",
+  "notes": "AKB-15 r6 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). Changes vs r5: sw-autofill targetSelector changed from editor-side-left-slide-thumbnail-button (left panel) to .form-check.form-check-inline (parent container in right panel, wraps Participant name autofill + options, unique on page); tooltip lands left of the spotlight area (no occlusion); re-recorded 7/7 steps, trimmed 42.76s->34.4s, VO timings adjusted (s06 to 31.0s, s07 to 36.0s) to clear overlap; total narrated 41.15s. Video: out-spinner-r6/spinner-wheel-r6-narrated.webm (or .mp4).",
   "steps": [
     {
       "id": "sw-create",
@@ -73,7 +73,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s06.mp3",
-      "start_sec": 29.0,
+      "start_sec": 31.0,
       "window_sec": 5.5,
       "display_text": "Use Spin time to set how long the wheel spins — up to 1,200 seconds for maximum suspense.",
       "tts_text": "Spin time controls how long the wheel spins — up to twelve hundred seconds.",
@@ -84,12 +84,12 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s07.mp3",
-      "start_sec": 34.0,
+      "start_sec": 36.0,
       "window_sec": 5.2,
       "display_text": "Hit Present to go live — then press the centre of the wheel, and the winner is revealed!",
       "tts_text": "Hit Present to go live — then press the centre of the wheel, and the winner is revealed!",
       "audio_duration_sec": 5.20
     }
   ],
-  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r5/spinner-wheel-r5-final.webm -i out-spinner-r5/s01_v2.mp3 -i out-spinner-r5/s02.mp3 -i out-spinner-r5/s03_v5.mp3 -i out-spinner-r5/s04.mp3 -i out-spinner-r5/s05.mp3 -i out-spinner-r5/s06.mp3 -i out-spinner-r5/s07.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6500|6500[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=18500|18500[a4];[5:a]adelay=25500|25500[a5];[6:a]adelay=29000|29000[a6];[7:a]adelay=34000|34000[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r5/spinner-wheel-r5-narrated.webm"
+  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r6/spinner-wheel-r6-final.webm -i out-spinner-r6/s01_v2.mp3 -i out-spinner-r6/s02.mp3 -i out-spinner-r6/s03_v5.mp3 -i out-spinner-r6/s04.mp3 -i out-spinner-r6/s05.mp3 -i out-spinner-r6/s06.mp3 -i out-spinner-r6/s07.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6500|6500[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=18500|18500[a4];[5:a]adelay=25500|25500[a5];[6:a]adelay=31000|31000[a6];[7:a]adelay=36000|36000[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r6/spinner-wheel-r6-narrated.webm"
 }
