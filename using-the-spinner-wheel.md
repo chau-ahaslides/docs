@@ -6,7 +6,7 @@ permalink: using-the-spinner-wheel
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-06-15
+last_updated: 2026-06-16
 tags: ["random", "wheel", "spin", "lucky wheel", "ahaslides", "spinner wheel", "bulk", "spinner"]
 keywords: ["spinner wheel", "random wheel", "wheel picker", "spin picker", "random spin", "ahaslides help"]
 summary: Learn how to use the AhaSlides Spinner Wheel in your presentations. The Spinner Wheel is a slide type that lets a presenter pick any entry at random by spinning the wheel.
@@ -35,8 +35,8 @@ The Spinner Wheel is a slide type that a presenter can use to pick any entry at 
 
 Watch this quick tutorial to see the Spinner Wheel in action:
 
-{% embed url="https://www.youtube.com/watch?v=4IaVsk5XeLE" %}
-How to set up and spin a Spinner Wheel on AhaSlides
+{% embed url="https://www.youtube.com/watch?v=7bbzdJ9hx6g" %}
+How to use the Spinner Wheel on AhaSlides — including audience autofill
 {% endembed %}
 
 Below is an interactive demo, which will help you experience this function:

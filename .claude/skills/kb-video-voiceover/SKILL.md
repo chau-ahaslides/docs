@@ -20,11 +20,17 @@ premade voice). This list is the single source of truth.
 | Liam  | `VCgLBmBjldJmfphyB8sZ`     | Male, calm, clear        |
 | Alice | `Xb7hH8MSUJpSbSDYk0k2`     | Female, upbeat, natural  |
 
-**Default when a single voice is needed:** Liam (`VCgLBmBjldJmfphyB8sZ`).
+**One voice per video — this is mandatory.** Every clip in a single video
+MUST use the same voice. Choose either Liam OR Alice for the whole video —
+NEVER mix both voices within one video. You may vary the choice across
+different videos (e.g. use Alice for the Spinner Wheel tutorial, Liam for
+the Poll tutorial) to add variety across the KB library, but a single video
+is one voice, end-to-end.
 
-If a script alternates narrators across steps, alternate between Liam and
-Alice only. Verify each with a one-line test render before the full run —
-confirm the ID resolves on your ElevenLabs account.
+**Default when unspecified:** Liam (`VCgLBmBjldJmfphyB8sZ`).
+
+Verify the chosen voice ID with a one-line test render before the full run —
+confirm it resolves on your ElevenLabs account.
 
 ## TTS provider
 
@@ -73,7 +79,8 @@ el_key = subprocess.check_output(
     "grep ELEVENLABS_API_KEY /Users/claude/AhaSlides/ahaslides-kb/.env | cut -d'=' -f2",
     shell=True).decode().strip()
 outdir = "/path/to/out-<slug>"
-voice_id = "VCgLBmBjldJmfphyB8sZ"  # Liam (approved) — alt: Alice Xb7hH8MSUJpSbSDYk0k2
+voice_id = "VCgLBmBjldJmfphyB8sZ"  # Liam (approved) — OR use Alice: Xb7hH8MSUJpSbSDYk0k2
+                                  # Pick ONE voice and use it for ALL clips in this video
 settings = {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4}
 
 lines = [

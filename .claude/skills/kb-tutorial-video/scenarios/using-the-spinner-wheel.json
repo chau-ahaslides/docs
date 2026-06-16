@@ -3,8 +3,8 @@
     {
       "id": "sw-welcome",
       "path": "/apps/presentations",
-      "title": "Let's build a Spinner Wheel!",
-      "description": "A Spinner Wheel picks any entry at random — names, topics, prizes, you name it. Press the button at the centre of the wheel to spin; the result shows live on every participant's screen. We'll build one together in under a minute. Click Next to begin.",
+      "title": "The Spinner Wheel — powered by your audience",
+      "description": "The Spinner Wheel's standout feature: participants submit entries from their phones and the wheel fills itself automatically. No copying names, no manual typing. Spin to pick a winner live. Click Next to see how.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -24,7 +24,7 @@
       "id": "sw-pick-type",
       "path": "/presentation/*",
       "title": "Pick the Spinner Wheel slide type",
-      "description": "Select 'Spinner Wheel' from the slide type picker. You'll find it in the Quiz section — it turns any list into a live random draw.",
+      "description": "Select 'Spinner Wheel' from the slide type picker. You'll find it in the Quiz section.",
       "targetSelector": "[aria-label=\"Spinner Wheel\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "action": {
         "type": "click",
@@ -33,12 +33,21 @@
       }
     },
     {
+      "id": "sw-autofill",
+      "path": "/presentation/*",
+      "title": "Audience autofill — the star feature",
+      "description": "Check 'Participant name autofill' in the right panel. The wheel fills itself with every participant's name as they join from their phone — no manual typing needed. Perfect for picking a random winner from a live crowd.",
+      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-autofill-checkbox\"]",
+      "pauseMs": 2000,
+      "action": null
+    },
+    {
       "id": "sw-add-entries",
       "path": "/presentation/*",
-      "title": "Add your entries",
-      "description": "Type your entries in the 'Entries' field — one per line. Or paste a whole list from your clipboard at once. Up to 5,000 entries supported.",
+      "title": "Or add entries manually",
+      "description": "Prefer a fixed list? Type entries in the 'Entries' field — one per line — or paste a whole list from your clipboard. Up to 5,000 entries supported.",
       "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-entry-input\"]",
-      "pauseMs": 2000,
+      "pauseMs": 1500,
       "action": {
         "type": "input-match",
         "selector": "[data-testid=\"editor-side-right-spinner-wheel-entry-input\"]",
@@ -50,7 +59,7 @@
       "id": "sw-save-entries",
       "path": "/presentation/*",
       "title": "Save your entries",
-      "description": "Click 'Save' to add your entries to the wheel. The wheel updates instantly on the canvas — you'll see each name appear as a coloured segment.",
+      "description": "Click 'Save' — each entry appears as a coloured segment on the wheel.",
       "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-entry-add-button\"]",
       "pauseMs": 1000,
       "action": {
@@ -60,19 +69,10 @@
       }
     },
     {
-      "id": "sw-autofill",
-      "path": "/presentation/*",
-      "title": "Autofill with participant names",
-      "description": "Want to pick a random participant? Check 'Participant name autofill' — the wheel fills itself with every participant's name as they join. No manual typing needed.",
-      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-autofill-checkbox\"]",
-      "pauseMs": 2000,
-      "action": null
-    },
-    {
       "id": "sw-spin-time",
       "path": "/presentation/*",
       "title": "Adjust spin time",
-      "description": "Use the 'Spin time' setting to control how long the wheel spins before landing. A longer spin builds more suspense — you can set up to 1,200 seconds.",
+      "description": "Use the 'Spin time' setting to control how long the wheel spins before landing — up to 1,200 seconds for maximum suspense.",
       "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-spin-time-input\"]",
       "pauseMs": 1500,
       "action": null
@@ -81,7 +81,7 @@
       "id": "sw-present",
       "path": "/presentation/*",
       "title": "Go live and spin the wheel!",
-      "description": "That's all it takes to set up a Spinner Wheel. Hit 'Present' to go live — then press the button at the centre of the wheel to spin it. The chosen entry appears on your screen and on every participant's device. The winner is in!",
+      "description": "Hit 'Present' to go live — then press the button at the centre of the wheel to spin it. The chosen entry appears on every screen at once. The winner is in!",
       "targetSelector": ".aha-button-present",
       "action": null
     }

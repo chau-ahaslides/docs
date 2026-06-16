@@ -1,97 +1,103 @@
 {
-  "voices": {
-    "Liam": "ElevenLabs, voice_id: VCgLBmBjldJmfphyB8sZ",
-    "Alice": "ElevenLabs, voice_id: Xb7hH8MSUJpSbSDYk0k2"
-  },
+  "voice": "Alice",
+  "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
-  "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
+  "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
   "video_duration_sec": 40.44,
-  "generated_round": 1,
-  "youtube_id": "4IaVsk5XeLE",
-  "pronunciation_map": {},
-  "notes": "AKB-19 constraint: ONLY Liam (VCgLBmBjldJmfphyB8sZ) and Alice (Xb7hH8MSUJpSbSDYk0k2) used. No opening overlap — s01 ends at 6.53s, s02 starts at 6.80s (0.27s gap). Verified with silencedetect: gap at 6.13-6.88s, clean start at 0:00. s06/s07/s08 used shorter v2 renders to fit within visual windows.",
+  "generated_round": 3,
+  "youtube_id": "7bbzdJ9hx6g",
+  "pronunciation_map": {"1,200": "twelve hundred"},
+  "notes": "AKB-15 r3 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). No Liam. Video leads with audience autofill as standout feature. Short v2/v3 clips used for s01, s04, s07, s08 to fit within visual windows.",
   "steps": [
     {
       "id": "sw-welcome",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "voice": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s01_v2.mp3",
       "start_sec": 0.0,
-      "window_sec": 6.8,
-      "display_text": "A Spinner Wheel picks any entry at random. Add names, topics, or prizes, then spin to reveal the winner.",
-      "tts_text": "A Spinner Wheel picks any entry at random. Add names, topics, or prizes, then spin to reveal the winner.",
-      "audio_duration_sec": 6.53
+      "window_sec": 4.5,
+      "display_text": "The Spinner Wheel's standout feature: your audience submits entries from their phones and the wheel fills itself automatically.",
+      "tts_text": "The Spinner Wheel's standout feature: your audience submits entries from their phones and the wheel fills itself automatically.",
+      "audio_duration_sec": 6.50
     },
     {
       "id": "sw-create",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 6.8,
-      "window_sec": 4.2,
+      "voice": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s02.mp3",
+      "start_sec": 7.0,
+      "window_sec": 3.5,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
-      "audio_duration_sec": 2.51
+      "audio_duration_sec": 2.82
     },
     {
       "id": "sw-pick-type",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 11.0,
+      "voice": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s03.mp3",
+      "start_sec": 10.0,
       "window_sec": 4.0,
       "display_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
       "tts_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
-      "audio_duration_sec": 3.16
-    },
-    {
-      "id": "sw-add-entries",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 15.0,
-      "window_sec": 8.0,
-      "display_text": "Click the Entries field and type your entries — one per line. Or paste a whole list from your clipboard at once.",
-      "tts_text": "Click the Entries field and type your entries — one per line. Or paste a whole list from your clipboard at once.",
-      "audio_duration_sec": 7.11
-    },
-    {
-      "id": "sw-save-entries",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 23.0,
-      "window_sec": 4.5,
-      "display_text": "Click Save to add your entries to the wheel. Watch each name appear as a coloured segment.",
-      "tts_text": "Click Save to add your entries to the wheel. Watch each name appear as a coloured segment.",
-      "audio_duration_sec": 4.73
+      "audio_duration_sec": 4.00
     },
     {
       "id": "sw-autofill",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s04_v2.mp3",
+      "start_sec": 14.3,
+      "window_sec": 5.0,
+      "display_text": "Check Participant name autofill — the wheel fills itself with every participant's name as they join. No typing needed.",
+      "tts_text": "Check Participant name autofill — the wheel fills with every name as participants join.",
+      "audio_duration_sec": 5.93
+    },
+    {
+      "id": "sw-add-entries",
+      "voice": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s05.mp3",
+      "start_sec": 20.5,
+      "window_sec": 7.0,
+      "display_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
+      "tts_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
+      "audio_duration_sec": 6.87
+    },
+    {
+      "id": "sw-save-entries",
+      "voice": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s06.mp3",
       "start_sec": 27.5,
-      "window_sec": 5.5,
-      "display_text": "Check Participant name autofill to let the wheel fill itself as people join.",
-      "tts_text": "Check Participant name autofill to let the wheel fill itself as people join.",
-      "audio_duration_sec": 5.33
+      "window_sec": 5.0,
+      "display_text": "Click Save — each entry appears as a coloured segment on the wheel.",
+      "tts_text": "Click Save — each entry appears as a coloured segment on the wheel.",
+      "audio_duration_sec": 4.62
     },
     {
       "id": "sw-spin-time",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 33.0,
+      "file": "s07_v3.mp3",
+      "start_sec": 32.2,
       "window_sec": 5.5,
-      "display_text": "Spin time controls how long the wheel spins. Longer spins build more suspense.",
-      "tts_text": "Spin time controls how long the wheel spins. Longer spins build more suspense.",
-      "audio_duration_sec": 5.33
+      "display_text": "Use Spin time to set how long the wheel spins — up to 1,200 seconds for maximum suspense.",
+      "tts_text": "Spin time controls how long the wheel spins — up to twelve hundred seconds.",
+      "audio_duration_sec": 4.96
     },
     {
       "id": "sw-present",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 38.5,
-      "window_sec": 4.3,
-      "display_text": "Hit Present to go live, then press the centre of the wheel to spin. The winner is in!",
-      "tts_text": "Hit Present to go live, then press the centre of the wheel to spin. The winner is in!",
-      "audio_duration_sec": 4.31
+      "voice": "Alice",
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "file": "s08_v2.mp3",
+      "start_sec": 37.5,
+      "window_sec": 3.0,
+      "display_text": "Hit Present, then press the centre of the wheel to spin. The winner is revealed!",
+      "tts_text": "Hit Present, press the centre of the wheel, and the winner is revealed!",
+      "audio_duration_sec": 4.26
     }
   ],
-  "mix_command": "ffmpeg -y -i spinner-wheel-final.webm -i s01.mp3 -i s02.mp3 -i s03.mp3 -i s04.mp3 -i s05.mp3 -i s06_v2.mp3 -i s07_v2.mp3 -i s08_v2.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6800|6800[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=23000|23000[a5];[6:a]adelay=27500|27500[a6];[7:a]adelay=33000|33000[a7];[8:a]adelay=38500|38500[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k spinner-wheel-narrated.webm"
+  "mix_command": "ffmpeg -y -i spinner-wheel-r3b-final.webm -i s01_v2.mp3 -i s02.mp3 -i s03.mp3 -i s04_v2.mp3 -i s05.mp3 -i s06.mp3 -i s07_v3.mp3 -i s08_v2.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=7000|7000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=14300|14300[a4];[5:a]adelay=20500|20500[a5];[6:a]adelay=27500|27500[a6];[7:a]adelay=32200|32200[a7];[8:a]adelay=37500|37500[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k spinner-wheel-r3b-narrated.webm"
 }
