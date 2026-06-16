@@ -79,39 +79,6 @@
       "action": null
     },
     {
-      "id": "co-settings",
-      "path": "/presentation/*",
-      "title": "Configure time and points",
-      "description": "Scroll down to set the time limit (default: 45 seconds), reward points, and whether faster answers earn more points. Pro tip: a logical sequence — timeline, process steps, or ranked list — gives participants a fair shot.",
-      "targetSelector": "[data-testid=\"editor-side-right-quiz-max-point-input\"]",
-      "pauseMs": 1500,
-      "action": null,
-      "mainInteractions": [
-        {
-          "selector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
-          "label": "open presentation settings (silent — off camera)",
-          "pauseAfterMs": 3000
-        },
-        {
-          "selector": "[data-testid=\"presentation-settings-tab-presentation-language-button\"]",
-          "label": "click Presentation language tab",
-          "pauseAfterMs": 2000
-        },
-        {
-          "type": "select",
-          "selector": "[data-testid=\"presentation-settings-language-select\"]",
-          "value": "en",
-          "label": "select English",
-          "pauseAfterMs": 2000
-        },
-        {
-          "selector": ".aha-modal__close-button",
-          "label": "close settings modal",
-          "pauseAfterMs": 2000
-        }
-      ]
-    },
-    {
       "id": "co-open-preview",
       "path": "/presentation/*",
       "title": "Preview — see what your participants will see",
