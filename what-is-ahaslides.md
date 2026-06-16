@@ -6,91 +6,139 @@ permalink: what-is-ahaslides
 category: Getting Started
 category_id: 570272000000633147
 permission: ALL
-last_updated: 2026-01-16
-tags: ["what is ahaslides"]
-keywords: ["what is ahaslides", "use ahaslides", "how to use"]
-summary: AhaSlides is a platform to help you make interactive presentations. You can use polls, word clouds, open-ended slides and other types of slides to create a presentation that your audience can interact with live, using their phones.
+last_updated: 2026-06-16
+tags: ["what is ahaslides", "interactive presentation", "live polling", "audience response system", "quiz maker"]
+keywords: ["what is ahaslides", "use ahaslides", "how to use", "live polling", "audience response system", "ARS", "interactive quiz maker", "remote engagement tool", "Mentimeter alternative", "Slido alternative", "interactive presentation tool", "free presentation software"]
+summary: AhaSlides is a free interactive presentation tool that lets audiences respond to polls, quizzes, word clouds, and Q&A in real time from their phones. Used by 2M+ presenters across classrooms, meetings, webinars, and training sessions worldwide.
 plan_required: Free
 zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000633249
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/what-is-ahaslides
-related_articles: ["sharing-your-presentation-to-your-participants", "creating-a-poll-question-on-ahaslides", "importing-a-powerpoint-or-pdf-file-from-your-computer", "how-to-make-and-run-a-quiz", "making-a-live-word-cloud", "using-the-open-ended-slide", "using-the-brainstorm-slide", "using-q-and-a", "how-to-use-scale-slides-on-ahaslides"]
+related_articles: ["sharing-a-presentation-to-your-participants", "creating-a-poll-question-on-ahaslides", "importing-a-powerpoint-or-pdf-file-from-your-computer", "how-to-make-and-run-a-quiz", "using-the-word-cloud-slide", "using-the-open-ended-slide", "using-the-brainstorm-slide", "using-q-and-a", "how-to-use-rating-scale-slides-on-ahaslides"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
-description: "AhaSlides is a platform to help you make interactive presentations. You can use polls, word clouds, open-ended slides and other types of slides to create a presentation that your audience can interact with live, using their phones."
+description: "Turn your next presentation into a two-way conversation. AhaSlides is a free interactive presentation tool with live polls, quizzes, word clouds, and Q&A that your audience joins from their phones — no app needed."
 ---
 
 # What is AhaSlides?
 
-AhaSlides is a platform to help you make interactive presentations. You can use polls, word clouds, open-ended slides and other types of slides to create a presentation that your audience can interact with live, using their phones.
+**AhaSlides is a free interactive presentation tool that lets audiences respond to polls, quizzes, word clouds, and Q&A in real time from their phones.** Used by 2M+ presenters at companies, schools, and events in 142,000+ organisations worldwide, it turns one-way presentations into live two-way conversations — in any classroom, meeting room, or webinar.
 
-## Video Explainer: What is AhaSlides?
+> 📹 **Watch a 2-minute overview** → [What is AhaSlides?](https://www.youtube.com/embed/4xyVd-qWTxs)
 
-> 📹 [Watch video](https://www.youtube.com/embed/4xyVd-qWTxs)
+---
 
-## Why Use AhaSlides?
+## Quick answers
 
-1. To ensure that your audience are engaged and actively listening to what you say.
-2. To collect opinions and ideas from your audience in real-time.
-3. To provide a boost of activity for online and remote events.
-4. To gather feedback in the form of a survey.
+**Is AhaSlides free?** Yes. A free plan is available with no time limit. Paid plans unlock higher audience limits and advanced features.
 
-## How Does AhaSlides Work?
+**Does it need an app?** No. Participants join by typing a **URL** or scanning a **QR code** — no download required.
 
-With AhaSlides, you create a presentation with interactive slides in which **you ask questions of your audience**. When you present your presentation at your 'event' (maybe a team meeting, online webinar, lesson or quiz night) your audience can join your presentation by [typing a URL or scanning a QR code](sharing-your-presentation-for-participants-to-join.md) with their phone or tablet.
+**Can I import PowerPoint slides?** Yes. You can [import PPT, PPTX, or PDF files](importing-a-powerpoint-or-pdf-file-from-your-computer.md) and insert interactive slides in between your existing content.
 
-You proceed through each of the slides one-by-one, like in a normal presentation. At each slide, the audience will be able to **interact** in some way, depending on the slide type you are using.
+---
 
-> 
-> **For example**, you can use a [poll slide](creating-a-poll-question-on-ahaslides.md) within your presentation to ask your audience their opinions.
-> When you **present the poll** to your audience, it will look something like this.
+## Why use AhaSlides?
 
-When your audience **respond to your poll** by voting with their phones, it will look something like this
+Because 95% of professionals admit to multitasking in meetings — and most slides do nothing to stop them.
 
-With AhaSlides you can also [import PowerPoint presentations](importing-a-powerpoint-presentation-or-pdf-file.md) into the platform. Once you have done this, you can **insert interactive slides into your PowerPoint presentation**
+AhaSlides fixes that by making every slide a moment where the audience *does* something:
 
-## AhaSlides as a Quiz Tool
+- **Keep people actually listening**, not checking their phones on the side
+- **Collect real opinions** from your whole room, not just the loudest voice
+- **Run a quiz or icebreaker** that brings energy to any session, online or in-person
+- **Gather feedback instantly** through built-in surveys — no follow-up email needed
 
-With AhaSlides, you can build a scored quiz using any of the 5 quiz slide types on the platform. Participants in your presentation compete against each other to get the most points by submitting the **most correct answers** to your quiz questions.
+---
 
-You progress through the quiz, pausing at each slide for players to answer the question on that slide. All players will see a question at the same time on their phones and will need to submit the answer before the time runs out.
+## How does AhaSlides work?
 
-At the end of the quiz, a **leaderboard** will announce the winner!
+Three steps:
 
-> Check out the full guide on [How to Make and Run a Quiz](how-to-make-and-run-a-quiz.md).
+1. **Create** — Build a presentation using AhaSlides' interactive slide types (or import your existing PowerPoint).
+2. **Present** — Share your presentation at your event. Participants join via a [URL or QR code](sharing-your-presentation-for-participants-to-join.md) on any phone or tablet.
+3. **Respond** — At each interactive slide, your audience responds in real time. You see results live as they come in.
 
-## When and Where to Use AhaSlides
+At any poll slide, for example, participants vote from their phones the moment you present it. When they respond, results update on screen in real time — the whole room sees it together.
 
-AhaSlides is a free tool to help you raise engagement at *any* event, online, offline or both. Here are the 3 most common uses for AhaSlides among users...
+You can also [import PowerPoint presentations](importing-a-powerpoint-or-pdf-file-from-your-computer.md) into AhaSlides and **insert interactive slides between your existing PowerPoint slides**, so you keep your content and add engagement at the same time.
 
-### 1. You are a teacher in a live or remote classroom
+---
 
-As a teacher, you can use AhaSlides to engage students with fun, productive and *interactive* activities. This is possible in a live classroom, remote classroom and even a hybrid classroom.
+## Slide types on AhaSlides
 
-> 
-> **For example**, you can use AhaSlides to gather your students' opinions or knowledge on a certain subject prior to teaching it. A [poll](creating-a-poll-question-on-ahaslides.md), [word cloud](using-the-word-cloud-slide.md) or [**open-ended**](using-the-open-ended-slide.md) slide would be good for this:
+AhaSlides supports the following interactive slide types:
 
-You can also use a [**brainstorm slide**](using-the-brainstorm-slide.md) to discuss ideas and vote for the best one among your class:
+**Polling and opinion**
+- [Poll](creating-a-poll-question-on-ahaslides.md) — multiple-choice vote with live bar or pie chart
+- [Word cloud](using-the-word-cloud-slide.md) — audience words appear and grow in a live cloud
+- [Open-ended](using-the-open-ended-slide.md) — free-text responses shown as a live wall
+- [Brainstorm](using-the-brainstorm-slide.md) — collaborative idea collection with group voting
+- [Rating scale](how-to-use-rating-scale-slides-on-ahaslides.md) — star or numerical ratings for feedback
 
-At the end of the class, you can use a fun **quiz** to check your students' understanding of the topic you covered in the lesson:
+**Quiz and competition**
+- Multiple choice quiz — scored answers with a countdown timer
+- Type answer quiz — participants type the correct answer
+- Correct order — arrange items in the right sequence
+- Match pairs — link items from two columns
+- Categorise — sort items into the right categories
+- Spinner wheel — random picker for icebreakers and selections
 
-### 2. You are a team leader or HR manager in a live or remote meeting
+**Conversation**
+- [Q&A](using-q-and-a.md) — participants submit questions; you upvote and answer live
+- Idea board — structured brainstorm with sticky-note cards
 
-As a team leader or HR manager, you can use AhaSlides to get your team included in meetings. Teams that get to actively contribute are more happy and more engaged, which is especially good remote meetings where it's easy for staff to tune out.
+**Content**
+- Content slide — static text, images, or video (acts as a title or break slide)
+- YouTube slide — play a video in your presentation with audience reactions
 
-> 
-> **For example**, you can check in on your workers with a quick ice breaker to find out how they're doing. For this, a poll or **word cloud** would be ideal:
+---
 
-You can make sure everyone is following along with the meeting by allowing them to ask questions with a [**Q&A slide**](using-qa.md):
+## AhaSlides as a quiz tool
 
-Keep things light-hearted and fun with a team-building **quiz**:
+With AhaSlides, you can build a scored quiz using quiz slide types. Participants compete to answer correctly before the timer runs out. At the end, a **leaderboard** announces the winner.
 
-### 3. You are a trainer in a live session or webinar
+> See the full guide: [How to make and run a quiz](how-to-make-and-run-a-quiz.md).
 
-As a trainer, you can use AhaSlides to make sure the people you're training are learning through *activity*, not lectures.
+---
 
-> 
-> **For example**, you could import your PowerPoint slides and insert thinking activities into your presentation. A brainstorm or **open-ended slide** would be great for this:
+## Who uses AhaSlides?
 
-At the end of your training session or webinar, you could ask your audience for valuable feedback through a [**rating scale slide**](how-to-use-rating-scale-slides-on-ahaslides.md):
+### Teachers and educators
 
+Engage students with polls, word clouds, and quizzes in live, remote, or hybrid classrooms. Gather understanding checks before teaching a topic, or run a fun end-of-lesson quiz.
+
+### Team leaders and HR managers
+
+Bring quieter voices into meetings. An icebreaker poll, a live Q&A, or a quick word cloud makes remote meetings feel less like a lecture and more like a conversation.
+
+### Trainers and facilitators
+
+Import your training deck, add thinking activities between slides, and close with a [rating scale](how-to-use-rating-scale-slides-on-ahaslides.md) for instant feedback — all without switching tools.
+
+---
+
+## Integrations
+
+AhaSlides connects with the tools you already use:
+
+| Integration | What it does | KB guide |
+|---|---|---|
+| **Microsoft Teams** | Run live polls, quizzes, and icebreakers directly inside a Teams meeting — no browser tabs or extra links | [AhaSlides for Microsoft Teams](KB-Teams-Add-in.md) |
+| **Google Slides** | Embed a Google Slides deck into AhaSlides and present it with interactive slides alongside your content | [Using your Google Slides presentation](using-your-google-slides-presentation-with-ahaslides.md) |
+| **PowerPoint** | Import PPT or PPTX files and insert interactive slides between your existing PowerPoint slides | [Importing a PowerPoint or PDF](importing-a-powerpoint-or-pdf-file-from-your-computer.md) |
+| **PDF** | Import a PDF as static slides and add interactive elements in between | [Importing a PowerPoint or PDF](importing-a-powerpoint-or-pdf-file-from-your-computer.md) |
+| **Website / iFrame** | Embed an AhaSlides presentation directly on any webpage using an iframe | [Embedding AhaSlides to your website](embedding-ahaslides-to-your-website.md) |
+| **AI / MCP** | Let AI assistants (e.g. Claude) create and manage AhaSlides presentations on your behalf via the MCP server | [AhaSlides MCP — Getting Started](ahaslides-mcp-getting-started-guide.md) |
+| **Zoom** | Present AhaSlides inside a Zoom meeting so participants can respond without leaving the call | No KB article yet |
+| **RingCentral** | Run interactive presentations within RingCentral meetings | No KB article yet |
+
+> **Note on Zoom and RingCentral:** These integrations are listed on the [AhaSlides integrations page](https://ahaslides.com/integrations/) but do not yet have dedicated KB articles. Check the integrations page for setup instructions.
+
+---
+
+## Start for free
+
+Ready to run your first interactive presentation? [Create your free AhaSlides account](https://ahaslides.com/signup) — no credit card, no time limit.
+
+> **Next step:** [Sharing your presentation with participants](sharing-your-presentation-for-participants-to-join.md)
