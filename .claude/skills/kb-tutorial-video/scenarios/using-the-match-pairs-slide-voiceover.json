@@ -6,170 +6,170 @@
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
   "video_duration_sec": 90.0,
-  "generated_round": 5,
+  "generated_round": 6,
   "youtube_id": null,
   "pronunciation_map": {},
-  "notes": "AKB-13 r5: ONE voice only — Liam (VCgLBmBjldJmfphyB8sZ) throughout. No Alice. 3 pairs filled (France/Paris, Japan/Tokyo, Germany/Berlin). Adds Settings step (s11), Preview participant-view steps (s12-s14), back-to-editor (s15), present (s16). Video = 67s trimmed + 23s freeze = 90s total.",
+  "notes": "AKB-13 r6: ONE voice only — Liam (VCgLBmBjldJmfphyB8sZ) throughout. No Alice. Shortened VO clips to match actual visual-step windows from trimmed video (67s). Each clip timed to match the visual step it narrates — max drift 1.5s. Visual base: match-pairs-r5-trimmed.webm (67s) + 23s freeze = 90s.",
   "steps": [
     {
       "id": "mp-welcome",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 0.0,
-      "window_sec": 11.9,
-      "display_text": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, capitals, and more. Keep each item short and unambiguous so every prompt has exactly one clear match.",
-      "tts_text": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, capitals, and more. Keep each item short and unambiguous so every prompt has exactly one clear match.",
-      "audio_duration_sec": 11.94
+      "window_sec": 4.0,
+      "display_text": "Match Pairs: drag prompts to their correct answers — great for vocabulary and capitals.",
+      "tts_text": "Match Pairs: drag prompts to their correct answers — great for vocabulary and capitals.",
+      "audio_duration_sec": 4.78
     },
     {
       "id": "mp-create",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 12.2,
-      "window_sec": 2.2,
+      "start_sec": 5.0,
+      "window_sec": 2.5,
       "display_text": "Click New Presentation to open a fresh deck.",
       "tts_text": "Click New Presentation to open a fresh deck.",
-      "audio_duration_sec": 2.22
+      "audio_duration_sec": 2.32
     },
     {
       "id": "mp-pick-type",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 14.6,
-      "window_sec": 3.2,
-      "display_text": "Select Match Pairs from the Quiz section of the slide type picker.",
-      "tts_text": "Select Match Pairs from the Quiz section of the slide type picker.",
-      "audio_duration_sec": 3.16
+      "start_sec": 10.5,
+      "window_sec": 1.5,
+      "display_text": "Select Match Pairs.",
+      "tts_text": "Select Match Pairs.",
+      "audio_duration_sec": 1.38
     },
     {
       "id": "mp-type-question",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 18.0,
-      "window_sec": 5.6,
-      "display_text": "Type your matching challenge in the Your question field. This appears at the top so participants know what to connect.",
-      "tts_text": "Type your matching challenge in the Your question field. This appears at the top so participants know what to connect.",
-      "audio_duration_sec": 5.62
+      "start_sec": 14.5,
+      "window_sec": 3.0,
+      "display_text": "Type your matching challenge in the question field.",
+      "tts_text": "Type your matching challenge in the question field.",
+      "audio_duration_sec": 2.51
     },
     {
       "id": "mp-pair-1-prompt",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 23.8,
-      "window_sec": 4.9,
-      "display_text": "Enter the first prompt. Aim for three to four pairs — enough to engage without crowding a mobile screen.",
-      "tts_text": "Enter the first prompt. Aim for three to four pairs — enough to engage without crowding a mobile screen.",
-      "audio_duration_sec": 4.86
+      "start_sec": 18.5,
+      "window_sec": 3.0,
+      "display_text": "Enter the first prompt — aim for three to four pairs.",
+      "tts_text": "Enter the first prompt — aim for three to four pairs.",
+      "audio_duration_sec": 2.74
     },
     {
       "id": "mp-pair-1-answer",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 28.9,
-      "window_sec": 5.3,
-      "display_text": "Now type the matching answer. The answer column shuffles automatically so participants cannot copy the order.",
-      "tts_text": "Now type the matching answer. The answer column shuffles automatically so participants cannot copy the order.",
-      "audio_duration_sec": 5.33
+      "start_sec": 22.5,
+      "window_sec": 2.0,
+      "display_text": "Type the matching answer.",
+      "tts_text": "Type the matching answer.",
+      "audio_duration_sec": 1.44
     },
     {
       "id": "mp-pair-2-prompt",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 34.4,
-      "window_sec": 6.1,
-      "display_text": "Add a second prompt. Use parallel structure — if the left column uses country names, keep that format for all prompts.",
-      "tts_text": "Add a second prompt. Use parallel structure — if the left column uses country names, keep that format for all prompts.",
-      "audio_duration_sec": 6.09
+      "start_sec": 25.5,
+      "window_sec": 4.0,
+      "display_text": "Add a second prompt. Use parallel structure throughout.",
+      "tts_text": "Add a second prompt. Use parallel structure throughout.",
+      "audio_duration_sec": 2.77
     },
     {
       "id": "mp-pair-2-answer",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 40.7,
-      "window_sec": 1.5,
-      "display_text": "Enter the second answer.",
-      "tts_text": "Enter the second answer.",
-      "audio_duration_sec": 1.49
+      "start_sec": 30.5,
+      "window_sec": 2.0,
+      "display_text": "Type the second answer.",
+      "tts_text": "Type the second answer.",
+      "audio_duration_sec": 1.38
     },
     {
       "id": "mp-pair-3-prompt",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 42.4,
-      "window_sec": 5.4,
-      "display_text": "Add a third pair to make the game challenging. Watch the canvas update in real time as each pair appears.",
-      "tts_text": "Add a third pair to make the game challenging. Watch the canvas update in real time as each pair appears.",
-      "audio_duration_sec": 5.38
+      "start_sec": 33.5,
+      "window_sec": 3.5,
+      "display_text": "Add a third pair to make the game challenging.",
+      "tts_text": "Add a third pair to make the game challenging.",
+      "audio_duration_sec": 2.35
     },
     {
       "id": "mp-pair-3-answer",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 48.0,
-      "window_sec": 3.3,
-      "display_text": "Type the third answer. Three complete pairs are now showing.",
-      "tts_text": "Type the third answer. Three complete pairs are now showing.",
-      "audio_duration_sec": 3.34
+      "start_sec": 37.5,
+      "window_sec": 1.5,
+      "display_text": "Type the third answer.",
+      "tts_text": "Type the third answer.",
+      "audio_duration_sec": 1.33
     },
     {
       "id": "mp-settings",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 51.5,
-      "window_sec": 6.6,
-      "display_text": "Click the Settings gear to set the time limit and point value. Shorter time limits add urgency; higher points reward accuracy.",
-      "tts_text": "Click the Settings gear to set the time limit and point value. Shorter time limits add urgency; higher points reward accuracy.",
-      "audio_duration_sec": 6.64
+      "start_sec": 39.5,
+      "window_sec": 3.5,
+      "display_text": "Click Settings to set the time limit and point value.",
+      "tts_text": "Click Settings to set the time limit and point value.",
+      "audio_duration_sec": 2.77
     },
     {
       "id": "mp-preview",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 58.3,
-      "window_sec": 4.3,
-      "display_text": "Click Preview to see both the presenter screen and the participant's phone side by side.",
-      "tts_text": "Click Preview to see both the presenter screen and the participant's phone side by side.",
-      "audio_duration_sec": 4.31
+      "start_sec": 43.5,
+      "window_sec": 3.0,
+      "display_text": "Hit Preview to see both screens side by side.",
+      "tts_text": "Hit Preview to see both screens side by side.",
+      "audio_duration_sec": 2.51
     },
     {
       "id": "mp-audience-join",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 62.8,
-      "window_sec": 6.7,
-      "display_text": "Participants scan the code or visit the link to join. They enter a name and tap Join the game — then wait for the host to start.",
-      "tts_text": "Participants scan the code or visit the link to join. They enter a name and tap Join the game — then wait for the host to start.",
-      "audio_duration_sec": 6.69
+      "start_sec": 47.5,
+      "window_sec": 10.5,
+      "display_text": "Participants scan the code or visit the link. They enter a name and tap Join to wait for the host.",
+      "tts_text": "Participants scan the code or visit the link. They enter a name and tap Join to wait for the host.",
+      "audio_duration_sec": 5.62
     },
     {
       "id": "mp-audience-playing",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 69.7,
-      "window_sec": 7.6,
-      "display_text": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They match each answer to its prompt before time runs out.",
-      "tts_text": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They match each answer to its prompt before time runs out.",
-      "audio_duration_sec": 7.60
+      "start_sec": 58.5,
+      "window_sec": 5.0,
+      "display_text": "Once the host starts, participants see the shuffled answers and drag each to its matching prompt.",
+      "tts_text": "Once the host starts, participants see the shuffled answers and drag each to its matching prompt.",
+      "audio_duration_sec": 5.04
     },
     {
       "id": "mp-back-to-editor",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 77.5,
-      "window_sec": 3.7,
-      "display_text": "Your three pairs are set up and the experience is ready for participants.",
-      "tts_text": "Your three pairs are set up and the experience is ready for participants.",
-      "audio_duration_sec": 3.71
+      "start_sec": 63.6,
+      "window_sec": 3.5,
+      "display_text": "Three pairs set up — the experience is ready for your audience.",
+      "tts_text": "Three pairs set up — the experience is ready for your audience.",
+      "audio_duration_sec": 2.95
     },
     {
       "id": "mp-present",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 81.4,
-      "window_sec": 5.7,
-      "display_text": "Click Present to launch the live session. Your participants will race to match every pair before the timer runs out.",
-      "tts_text": "Click Present to launch the live session. Your participants will race to match every pair before the timer runs out.",
-      "audio_duration_sec": 5.67
+      "start_sec": 67.5,
+      "window_sec": 5.0,
+      "display_text": "Hit Present to launch the live session. Your participants will race to match every pair before the timer ends.",
+      "tts_text": "Hit Present to launch the live session. Your participants will race to match every pair before the timer ends.",
+      "audio_duration_sec": 5.85
     }
   ]
 }
