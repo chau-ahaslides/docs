@@ -1,0 +1,11 @@
+# changing-the-display-language.chapters.txt
+# Video: out-display-language-r5g/changing-the-display-language-r5g-narrated-outro.webm
+# Total duration: 86.6s (84s tutorial + 2.6s outro)
+# Derived from voiceover JSON r5 (AKB-18 Round 5)
+# Chapters: 5, all ≥10s, first at 0:00
+
+0:00 Introduction and presenter language
+0:21 Open the Settings for audience language
+0:38 Navigate to Presentation language
+0:52 Choose from 32 audience languages
+1:03 Preview in Español

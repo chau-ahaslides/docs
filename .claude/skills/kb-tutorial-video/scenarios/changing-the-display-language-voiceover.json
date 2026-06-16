@@ -6,14 +6,16 @@
     "similarity_boost": 0.75,
     "style": 0.4
   },
-  "video_duration_sec": 63.8,
-  "notes": "15-step r4 tour for Changing the Display Language. Liam voice throughout. Steps 1-3 on dashboard (globe/presenter language); steps 4-11 navigate to editor settings and select Español for audience; steps 12-15 show preview in Spanish. Supersedes r3 (A7vjgJjMOWA).",
+  "video_duration_sec": 84.0,
+  "notes": "r5 tour for Changing the Display Language with in-DOM fake dropdown injection. Liam voice throughout. Both language lists (presenter 27 + audience 32) now visible on screen. Presenter list: two-column panel top-right; audience list: two-column expansion below the select. Spanish preview. 84s final + 2.6s outro = 86.6s total. Supersedes r4 (commit 75e84f9).",
+  "youtube_chapters": "0:00 Introduction and presenter language\n0:21 Open the Settings for audience language\n0:38 Navigate to Presentation language\n0:52 Choose from 32 audience languages\n1:03 Preview in Español",
+  "youtube_chapters_notes": "5 chapters, 86.6s total, AKB-18 r5, validated PASS",
   "steps": [
     {
       "id": "s01",
       "scenario_step": "lang-welcome",
       "start_sec": 0.0,
-      "window_sec": 4.5,
+      "window_sec": 4.0,
       "display_text": "AhaSlides has two language settings — one for the presenter interface, one for the audience.",
       "tts_text": "AhaSlides has two language settings — one for the presenter interface, one for the audience.",
       "audio_duration_sec": 4.78
@@ -23,99 +25,90 @@
       "scenario_step": "lang-globe-click",
       "start_sec": 5.0,
       "window_sec": 4.0,
-      "display_text": "Click the globe icon in the header to open the presenter language menu.",
-      "tts_text": "Click the globe icon in the header to open the presenter language menu.",
-      "audio_duration_sec": 3.66
+      "display_text": "Click the globe icon in the header to open the presenter language list.",
+      "tts_text": "Click the globe icon in the header to open the presenter language list.",
+      "audio_duration_sec": 3.29
     },
     {
       "id": "s03",
       "scenario_step": "lang-dropdown-show",
-      "start_sec": 9.0,
-      "window_sec": 4.5,
-      "display_text": "Choose from 27 interface languages — the app switches instantly.",
-      "tts_text": "Choose from 27 interface languages — the app switches instantly.",
-      "audio_duration_sec": 3.76
+      "start_sec": 10.5,
+      "window_sec": 9.0,
+      "display_text": "Choose from 27 interface languages — English, Español, Français, Deutsch, 中文, 日本語 and more. The interface switches instantly.",
+      "tts_text": "Choose from 27 interface languages — English, Español, Français, Deutsch, 中文, 日本語 and more. The interface switches instantly.",
+      "audio_duration_sec": 9.27
     },
     {
       "id": "s04",
-      "scenario_step": "lang-new-pres",
-      "start_sec": 13.5,
-      "window_sec": 6.0,
-      "display_text": "The audience display language lives inside each presentation's Settings. Click New presentation to open the editor.",
-      "tts_text": "The audience display language lives inside each presentation's Settings. Click New presentation to open the editor.",
-      "audio_duration_sec": 5.69
+      "scenario_step": "lang-dropdown-close",
+      "start_sec": 21.5,
+      "window_sec": 5.0,
+      "display_text": "Now let's set the audience language. It lives inside each presentation's Settings.",
+      "tts_text": "Now let's set the audience language. It lives inside each presentation's Settings.",
+      "audio_duration_sec": 3.89
     },
     {
       "id": "s05",
       "scenario_step": "lang-add-slide",
-      "start_sec": 20.0,
-      "window_sec": 5.5,
-      "display_text": "Click Poll to add a slide. Each presentation can target a different audience language.",
-      "tts_text": "Click Poll to add a slide. Each presentation can target a different audience language.",
-      "audio_duration_sec": 4.73
+      "start_sec": 30.5,
+      "window_sec": 5.0,
+      "display_text": "After opening a presentation, click Poll to add a slide — then we'll go to Settings.",
+      "tts_text": "After opening a presentation, click Poll to add a slide — then we'll go to Settings.",
+      "audio_duration_sec": 4.02
     },
     {
       "id": "s06",
       "scenario_step": "lang-settings-btn",
-      "start_sec": 25.5,
-      "window_sec": 5.0,
-      "display_text": "Now click the Settings icon on the right panel to open the presentation settings.",
-      "tts_text": "Now click the Settings icon on the right panel to open the presentation settings.",
-      "audio_duration_sec": 4.02
+      "start_sec": 38.5,
+      "window_sec": 4.5,
+      "display_text": "Click the Settings icon in the right panel to open presentation settings.",
+      "tts_text": "Click the Settings icon in the right panel to open presentation settings.",
+      "audio_duration_sec": 4.00
     },
     {
       "id": "s07",
       "scenario_step": "lang-settings-modal",
-      "start_sec": 30.5,
-      "window_sec": 5.5,
-      "display_text": "In the Settings panel, click Presentation language in the left menu.",
-      "tts_text": "In the Settings panel, click Presentation language in the left menu.",
-      "audio_duration_sec": 3.60
+      "start_sec": 45.0,
+      "window_sec": 5.0,
+      "display_text": "In the Settings panel, click Presentation language to reach the audience language picker.",
+      "tts_text": "In the Settings panel, click Presentation language to reach the audience language picker.",
+      "audio_duration_sec": 4.36
     },
     {
       "id": "s08",
-      "scenario_step": "lang-audience-select",
-      "start_sec": 36.0,
-      "window_sec": 7.0,
-      "display_text": "This dropdown controls what your audience sees on their devices. AhaSlides supports 32 audience languages.",
-      "tts_text": "This dropdown controls what your audience sees on their devices. AhaSlides supports 32 audience languages.",
-      "audio_duration_sec": 6.30
+      "scenario_step": "lang-audience-expand",
+      "start_sec": 52.5,
+      "window_sec": 10.0,
+      "display_text": "AhaSlides supports 32 audience languages. English is selected by default. Scroll through Bahasa Indonesia, Čeština, Deutsch, Español, Français, and 27 more.",
+      "tts_text": "AhaSlides supports 32 audience languages. English is selected by default — scroll through Bahasa Indonesia, Čeština, Deutsch, Español, Français, and 27 more.",
+      "audio_duration_sec": 10.48
     },
     {
       "id": "s09",
       "scenario_step": "lang-select-spanish",
-      "start_sec": 43.0,
-      "window_sec": 7.5,
-      "display_text": "Let's choose Spanish — Español — for this presentation. All participant-facing text switches to Spanish immediately.",
-      "tts_text": "Let's choose Spanish — Español — for this presentation. All participant-facing text switches to Spanish immediately.",
-      "audio_duration_sec": 6.53
+      "start_sec": 63.5,
+      "window_sec": 5.5,
+      "display_text": "Let's choose Español. All participant-facing text switches to Spanish immediately.",
+      "tts_text": "Let's choose Español. All participant-facing text switches to Spanish immediately.",
+      "audio_duration_sec": 4.55
     },
     {
       "id": "s10",
-      "scenario_step": "lang-close-settings",
-      "start_sec": 50.5,
-      "window_sec": 4.0,
-      "display_text": "The language is saved automatically. Close Settings to return to the editor.",
-      "tts_text": "The language is saved automatically. Close Settings to return to the editor.",
-      "audio_duration_sec": 4.13
+      "scenario_step": "lang-preview-open",
+      "start_sec": 72.5,
+      "window_sec": 4.5,
+      "display_text": "Click Preview to see what your Spanish-speaking audience will see on their devices.",
+      "tts_text": "Click Preview to see what your Spanish-speaking audience will see on their devices.",
+      "audio_duration_sec": 3.89
     },
     {
       "id": "s11",
-      "scenario_step": "lang-preview-open",
-      "start_sec": 55.0,
-      "window_sec": 4.0,
-      "display_text": "Click Preview to see exactly what your Spanish-speaking audience will see.",
-      "tts_text": "Click Preview to see exactly what your Spanish-speaking audience will see.",
-      "audio_duration_sec": 3.60
-    },
-    {
-      "id": "s12",
       "scenario_step": "lang-preview-spanish",
-      "start_sec": 59.0,
-      "window_sec": 4.8,
-      "display_text": "The participant interface appears in Español — buttons, navigation, all in Spanish.",
-      "tts_text": "The participant interface appears in Español — buttons, navigation, all in Spanish.",
-      "audio_duration_sec": 4.78
+      "start_sec": 78.0,
+      "window_sec": 5.5,
+      "display_text": "The participant interface appears in Español. Both language settings are saved automatically.",
+      "tts_text": "The participant interface appears in Español. Both language settings are saved automatically.",
+      "audio_duration_sec": 4.83
     }
   ]
 }
