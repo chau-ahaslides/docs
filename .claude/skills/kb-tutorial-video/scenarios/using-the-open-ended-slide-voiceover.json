@@ -2,12 +2,12 @@
   "voice_primary": "Liam",
   "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
   "model": "eleven_multilingual_v2",
-  "video_duration_sec": 39.0,
-  "generated_round": 6,
+  "video_duration_sec": 43.5,
+  "generated_round": 7,
   "youtube_id": "TBD",
   "youtube_chapters": "0:00 Intro\n0:12 Configure the slide\n0:24 Preview and present live",
-  "youtube_chapters_notes": "3 chapters, all >=10s apart, validated against r6 (42s = 39s tutorial + 3s outro). Apply by pasting into YouTube video description at publish time. Also stored in using-the-open-ended-slide.chapters.txt.",
-  "notes": "r6: Removed oe-settings step (settings section at ~0:26 in r5). Re-stitched r5 video by cutting 24.2s-35.0s (settings tooltip + preview loading), joining directly to oe-preview-open. VO re-timed: s06=24.2s (was s07 at 35s), s07=29.2s (was s08 at 40s), s08=35.2s (was s09 at 46s). check_vo_overlap.py PASS. Single voice Liam. Video 39.0s (cut from 50.64s by removing 10.8s settings section). Branded outro 3s appended. Tail 1.48s. No settings VO in narration.",
+  "youtube_chapters_notes": "3 chapters, all >=10s apart, validated against r7 (46.15s = 43.5s tutorial + 2.65s outro). Apply by pasting into YouTube video description at publish time. Also stored in using-the-open-ended-slide.chapters.txt.",
+  "notes": "r7: Added oe-present step — after Preview results, back-to-editor animation shows and video ends on Present button in editor. Fixed outro: r6 used aha-outro-reusable-1440x900.webm (wrong), r7 uses splash_intro_BD.webm (correct). Re-recorded from scenario (9 steps), cut settings section (t=35.5-48.5s) same as r6. Added s09 VO at 40.0s. check_vo_overlap.py PASS. Single voice Liam. Video 43.5s (39s content + 4.5s back-to-editor+present). Branded outro splash_intro_BD.webm 2.65s appended. Total: 46.15s.",
   "steps": [
     {
       "id": "oe-welcome",
@@ -84,11 +84,21 @@
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 35.2,
-      "window_sec": 3.8,
-      "display_text": "Answers appear live. Hit Present to go.",
-      "tts_text": "Answers appear live. Hit Present to go.",
+      "window_sec": 4.8,
+      "display_text": "Answers appear live — this is what your audience sees on their devices.",
+      "tts_text": "Answers appear live — this is what your audience sees on their devices.",
       "audio_duration_sec": 2.32
+    },
+    {
+      "id": "oe-present",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 40.0,
+      "window_sec": 3.5,
+      "display_text": "When you're ready, hit Present to go live with your audience.",
+      "tts_text": "When you're ready, hit Present to go live with your audience.",
+      "audio_duration_sec": 2.77
     }
   ],
-  "mix_command": "ffmpeg -y -i open-ended-r6-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=24200|24200[a6];[7:a]adelay=29200|29200[a7];[8:a]adelay=35200|35200[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r6-narrated.webm"
+  "mix_command": "ffmpeg -y -i open-ended-r7-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -i vo/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=24200|24200[a6];[7:a]adelay=29200|29200[a7];[8:a]adelay=35200|35200[a8];[9:a]adelay=40000|40000[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r7-narrated.webm"
 }

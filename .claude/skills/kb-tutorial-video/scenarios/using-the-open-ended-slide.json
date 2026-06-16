@@ -68,7 +68,7 @@
       "path": "/presentation/*",
       "title": "Hit Preview to rehearse your slide",
       "description": "Preview opens a split view — Presenter screen on the left, Participant screen on the right. Use it to test your slide before going live.",
-      "targetSelector": ".iframe-wrapper-audience",
+      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
       "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
@@ -131,8 +131,24 @@
       "id": "oe-preview-results",
       "path": "/presentation/*",
       "title": "Responses appear live",
-      "description": "Each answer pops up instantly. Hit Present to go live.",
+      "description": "Each answer pops up instantly — this is what your audience sees on their devices.",
       "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 1000,
+      "action": null,
+      "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+          "label": "exit preview back to editor",
+          "pauseAfterMs": 2000
+        }
+      ]
+    },
+    {
+      "id": "oe-present",
+      "path": "/presentation/*",
+      "title": "Ready to go live? Hit Present",
+      "description": "When you're ready, click Present to go live with your audience.",
+      "targetSelector": ".aha-button-present",
       "pauseMs": 1000,
       "action": null
     }
