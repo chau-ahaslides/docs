@@ -6,13 +6,14 @@
       "title": "Two language settings on AhaSlides",
       "description": "AhaSlides gives you two separate language controls: the presenter interface language (your menus and buttons), and the audience display language (what participants see). Let's set both.",
       "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
+      "pauseMs": 1000,
       "action": null
     },
     {
       "id": "lang-globe-click",
       "path": "/apps/*",
-      "title": "Presenter interface language — 27 options",
-      "description": "Click the globe icon to open the presenter language menu. Choose from 27 languages: Čeština, Deutsch, English, Español, Français, Hrvatski, Italiano, Polski, Português, Tiếng Việt, 中文, 日本語 and more. The interface switches instantly.",
+      "title": "Click the globe icon to open the language menu",
+      "description": "Click the globe icon in the top bar to open the presenter interface language picker. You'll see a list of all 27 supported languages.",
       "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
       "pauseMs": 2000,
       "action": {
@@ -24,18 +25,35 @@
     {
       "id": "lang-dropdown-show",
       "path": "/apps/*",
-      "title": "Presenter language selected instantly",
-      "description": "The dropdown lists all 27 interface languages — scroll to find yours and the AhaSlides presenter interface updates immediately, no page reload needed.",
+      "title": "Presenter interface language — 27 options",
+      "description": "The presenter language list opens below the globe button. Choose from 27 languages — the interface switches instantly.",
       "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
-      "pauseMs": 2000,
+      "pauseMs": 500,
+      "mainInteractions": [
+        {
+          "type": "jsEval",
+          "label": "inject fake presenter language dropdown",
+          "pauseAfterMs": 5500,
+          "js": "var existing = document.getElementById('fake-presenter-lang-dropdown'); if (existing) existing.remove(); var btn = document.querySelector('[data-testid=\"multiple-language-trigger-button\"]'); var btnRect = btn ? btn.getBoundingClientRect() : {right: 1090, bottom: 50, left: 1050}; var W = window.innerWidth; var languages = ['Čeština','Deutsch','English ✓','Español','Français','Hrvatski','Íslenska','Italiano','Latviešu','Lietuvių','Magyar','Nederlands','Norsk','Polski','Português','Română','Shqip','Slovenčina','Srpski (Latinica)','Srpski (Ćirilica)','Tiếng Việt','Български','Ελληνικά','Русский','中文','日本語','한국어']; var panel = document.createElement('div'); panel.id = 'fake-presenter-lang-dropdown'; var col1 = document.createElement('div'); var col2 = document.createElement('div'); col1.style.cssText = 'min-width:150px;border-right:1px solid rgba(0,0,0,0.06);'; col2.style.cssText = 'min-width:150px;'; var half = Math.ceil(languages.length/2); languages.forEach(function(lang,i){ var col = i < half ? col1 : col2; var item = document.createElement('div'); item.style.cssText = 'padding:6px 14px;color:rgba(0,0,0,0.88);white-space:nowrap;line-height:1.4;font-size:13px;'; if(lang.indexOf('English')>=0){ item.style.background='#f5f0ff'; item.style.color='#6247aa'; item.style.fontWeight='600'; } item.textContent = lang; col.appendChild(item); }); panel.style.cssText = 'position:fixed;top:8px;right:4px;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.22),0 2px 8px rgba(0,0,0,0.14);z-index:2147483647;padding:4px 0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:13px;pointer-events:none;border:1px solid rgba(0,0,0,0.08);display:flex;flex-direction:row;'; panel.appendChild(col1); panel.appendChild(col2); document.body.appendChild(panel);"
+        }
+      ],
       "action": null
     },
     {
-      "id": "lang-new-pres",
+      "id": "lang-dropdown-close",
       "path": "/apps/*",
       "title": "Now set the audience language",
-      "description": "The audience display language is found inside any presentation's Settings — it is per-presentation, so different presentations can target different audiences. Click 'New presentation' to open the editor.",
+      "description": "The audience display language is found inside each presentation's Settings — it controls what participants see on their devices. Let's open a presentation.",
       "targetSelector": ".new-presentation-button",
+      "pauseMs": 500,
+      "mainInteractions": [
+        {
+          "type": "jsEval",
+          "label": "remove fake presenter dropdown",
+          "pauseAfterMs": 300,
+          "js": "var el = document.getElementById('fake-presenter-lang-dropdown'); if (el) el.remove();"
+        }
+      ],
       "action": {
         "type": "click",
         "selector": ".new-presentation-button",
@@ -45,8 +63,8 @@
     {
       "id": "lang-add-slide",
       "path": "/presentation/*",
-      "title": "Start with a Poll slide",
-      "description": "Every presentation can have its own display language for the audience. Click 'Poll' to add a slide — then we'll head straight to the language settings.",
+      "title": "Add a slide to get started",
+      "description": "Every presentation can have its own audience display language. Add a Poll slide — then we'll head straight to the language settings.",
       "targetSelector": "[aria-label=\"Poll\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "pauseMs": 4000,
       "action": {
@@ -61,14 +79,14 @@
       "title": "Slide added — heading to Settings",
       "description": "The Poll slide is in your deck. Now let's open Settings to choose the audience display language.",
       "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
-      "pauseMs": 2500,
+      "pauseMs": 2000,
       "action": null
     },
     {
       "id": "lang-settings-btn",
       "path": "/presentation/*",
       "title": "Open the presentation Settings",
-      "description": "Click the Settings icon on the right-hand panel. This controls how the presentation behaves for your audience.",
+      "description": "Click the Settings icon in the right panel. This is where you control the audience display language for this presentation.",
       "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
       "action": {
         "type": "click",
@@ -80,7 +98,7 @@
       "id": "lang-settings-opening",
       "path": "/presentation/*",
       "title": "Settings panel is loading",
-      "description": "The Settings panel is opening — here you control how this presentation behaves for your audience, from joining rules to language.",
+      "description": "The Settings panel is opening — here you control how this presentation behaves for your audience.",
       "targetSelector": ".aha-modal__content",
       "pauseMs": 2500,
       "action": null
@@ -89,7 +107,7 @@
       "id": "lang-settings-modal",
       "path": "/presentation/*",
       "title": "Go to Presentation language",
-      "description": "The Settings panel is open. Click 'Presentation language' in the left menu to reach the audience language dropdown.",
+      "description": "In the Settings panel, click Presentation language in the left menu to reach the audience language picker.",
       "targetSelector": ".aha-modal__content",
       "pauseMs": 1000,
       "action": {
@@ -99,22 +117,36 @@
       }
     },
     {
-      "id": "lang-audience-select",
+      "id": "lang-audience-expand",
       "path": "/presentation/*",
-      "title": "Audience display language — 32 options",
-      "description": "This dropdown controls what language participants see on their devices. AhaSlides supports 32 audience languages including Bahasa Indonesia, Deutsch, English, Español, Français, Polski, Português, Tiếng Việt, Türkçe, 中文, 日本語 and more.",
+      "title": "Audience display language — 32 languages",
+      "description": "This is the audience language dropdown. AhaSlides supports 32 audience languages — from Bahasa Indonesia and Čeština to 中文 and 日本語. English is selected by default.",
       "targetSelector": "[data-testid=\"presentation-settings-language-select\"]",
-      "pauseMs": 2500,
+      "pauseMs": 500,
+      "mainInteractions": [
+        {
+          "type": "jsEval",
+          "label": "inject fake audience language list below select",
+          "pauseAfterMs": 5500,
+          "js": "var existing = document.getElementById('fake-audience-lang-list'); if (existing) existing.remove(); var sel = document.querySelector('[data-testid=\"presentation-settings-language-select\"]'); if (!sel) return; var selRect = sel.getBoundingClientRect(); var audiences = ['Bahasa Indonesia','Čeština','Dansk','Deutsch','English','Español','Français','Hrvatski','Italiano','Latviešu','Lietuvių','Magyar','Nederlands','Norsk','Polski','Português (Brasil)','Português (Portugal)','Română','Shqip','Slovenčina','Srpski (Latinica)','Srpski (Ćirilica)','Suomi','Svenska','Tiếng Việt','Türkçe','Ελληνικά','Български','Русский','中文','日本語','한국어']; var panel = document.createElement('div'); panel.id = 'fake-audience-lang-list'; var colCount = 2; var perCol = Math.ceil(audiences.length / colCount); panel.style.cssText = 'position:fixed;top:' + (Math.round(selRect.bottom) + 4) + 'px;left:' + Math.round(selRect.left) + 'px;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.18),0 2px 8px rgba(0,0,0,0.12);z-index:2147483647;padding:6px 0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:13px;pointer-events:none;border:1px solid rgba(0,0,0,0.08);display:flex;flex-direction:row;'; for (var c = 0; c < colCount; c++) { var col = document.createElement('div'); col.style.cssText = 'min-width:160px;padding:0 2px;'; var slice = audiences.slice(c * perCol, (c+1)*perCol); slice.forEach(function(lang){ var item = document.createElement('div'); item.style.cssText = 'padding:5px 14px;color:rgba(0,0,0,0.88);white-space:nowrap;line-height:1.4;font-size:13px;'; if(lang==='English'){ item.style.background='#f5f0ff'; item.style.color='#6247aa'; item.style.fontWeight='600'; } item.textContent = lang; col.appendChild(item); }); panel.appendChild(col); } document.body.appendChild(panel);"
+        }
+      ],
       "action": null
     },
     {
       "id": "lang-select-spanish",
       "path": "/presentation/*",
-      "title": "Choosing Español for our audience",
-      "description": "Let's select Spanish — Español — for this presentation. Once selected, all participant-facing text switches to Spanish: questions, answer options, the join screen, and navigation.",
+      "title": "Choosing Español for the audience",
+      "description": "Let's select Spanish — Español — for this presentation. All participant-facing text switches to Spanish immediately.",
       "targetSelector": "[data-testid=\"presentation-settings-language-select\"]",
       "pauseMs": 1500,
       "mainInteractions": [
+        {
+          "type": "jsEval",
+          "label": "remove fake audience list before selecting",
+          "pauseAfterMs": 300,
+          "js": "var el = document.getElementById('fake-audience-lang-list'); if (el) el.remove();"
+        },
         {
           "type": "select",
           "selector": "[data-testid=\"presentation-settings-language-select\"]",
@@ -141,7 +173,7 @@
       "id": "lang-preview-open",
       "path": "/presentation/*",
       "title": "Preview — see the audience view in Spanish",
-      "description": "Click Preview to see exactly what Spanish-speaking participants will see — the entire audience interface now appears in Español.",
+      "description": "Click Preview to see exactly what Spanish-speaking participants will see on their devices.",
       "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
       "pauseMs": 1500,
       "action": {
@@ -154,7 +186,7 @@
       "id": "lang-preview-spanish",
       "path": "/presentation/*",
       "title": "Audience view in Español",
-      "description": "Your audience sees AhaSlides in Spanish — the join screen, buttons, and instructions all appear in Español on participants' devices.",
+      "description": "Your audience sees AhaSlides in Spanish — the join screen, buttons, and navigation all appear in Español on participants' devices.",
       "targetSelector": ".iframe-wrapper-audience",
       "pauseMs": 10000,
       "action": null
@@ -163,7 +195,7 @@
       "id": "lang-done",
       "path": "/presentation/*",
       "title": "All set!",
-      "description": "Both language settings are saved automatically. Combine the presenter interface language with the audience display language to run fully multilingual sessions. Click Present when you're ready to go live.",
+      "description": "Both language settings are saved automatically. Combine the presenter interface language with the audience display language to run fully multilingual sessions.",
       "targetSelector": "[data-testid=\"editor-header-present-button\"]",
       "action": null
     }
