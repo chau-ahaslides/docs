@@ -104,6 +104,8 @@ Mentimeter counts participants across the entire month — 50 total. A teacher r
 
 ## 4. Pricing
 
+> **Note:** Mentimeter pricing shown here is current as of June 2026 and may have changed by the time you read this. Check Mentimeter's official pricing page for the latest rates.
+
 AhaSlides is consistently cheaper — and unlike Mentimeter, monthly billing is available so you can try before committing to a year.
 
 ### Individuals and business
