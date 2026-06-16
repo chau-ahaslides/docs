@@ -1,18 +1,10 @@
 {
   "steps": [
     {
-      "id": "sw-welcome",
-      "path": "/apps/presentations",
-      "title": "The Spinner Wheel — powered by your audience",
-      "description": "The Spinner Wheel's standout feature: participants scan your QR code, enter their name to join, and the wheel fills itself with every participant automatically. No manual typing needed. Spin to pick a winner live. Click Next to see how.",
-      "targetSelector": ".new-presentation-button",
-      "action": null
-    },
-    {
       "id": "sw-create",
       "path": "/apps/presentations",
       "title": "Create a new presentation",
-      "description": "Click 'New Presentation' to start a fresh deck.",
+      "description": "Click 'New Presentation' to start. We'll add a Spinner Wheel — AhaSlides' audience-powered live wheel that fills itself when participants scan your QR code.",
       "targetSelector": ".new-presentation-button",
       "action": {
         "type": "click",
@@ -36,8 +28,8 @@
       "id": "sw-autofill",
       "path": "/presentation/*",
       "title": "Audience autofill — the star feature",
-      "description": "Check 'Participant name autofill' in the right panel. Participants scan your QR code and enter their name to join — the wheel fills itself with every participant's name automatically. Perfect for picking a random winner from a live crowd.",
-      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-autofill-checkbox\"]",
+      "description": "Look at the right panel: check 'Participant name autofill'. Participants scan your QR code and enter their name to join — the wheel fills itself with every participant's name automatically. No manual entries needed.",
+      "targetSelector": "[data-testid=\"editor-side-left-slide-thumbnail-button\"]",
       "pauseMs": 2000,
       "action": null
     },
