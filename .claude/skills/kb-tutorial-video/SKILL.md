@@ -1,13 +1,14 @@
 ---
 name: kb-tutorial-video
-description: End-to-end pipeline for producing a KB tutorial video and refreshing its article — record an AhaSlides product-tour webm from a JSON scenario, tighten it, upload to YouTube, embed it as a playable block in the GitBook KB article, and update the article's steps against the recorded UI. Use this whenever the user asks to make/record/generate/refresh a video for a KB article, create an onboarding or walkthrough video for a feature, upload a tutorial to YouTube, or add/embed a video in the knowledge base — even if they only mention one phase (recording, trimming, uploading, embedding, or article updates), since the phases share setup and gotchas documented here. Designed to be run per-article across many articles.
+description: End-to-end pipeline for producing a KB tutorial video and refreshing its article — record an AhaSlides product-tour webm from a JSON scenario, tighten it, append the standard branded outro, upload to YouTube, embed it as a playable block in the GitBook KB article, and update the article's steps against the recorded UI. Use this whenever the user asks to make/record/generate/refresh a video for a KB article, create an onboarding or walkthrough video for a feature, upload a tutorial to YouTube, or add/embed a video in the knowledge base — even if they only mention one phase (recording, trimming, uploading, embedding, or article updates), since the phases share setup and gotchas documented here. Designed to be run per-article across many articles.
 ---
 
 # KB Tutorial Video Pipeline
 
-Proven end-to-end on `creating-a-poll-question-on-ahaslides.md`
-(result: https://www.youtube.com/watch?v=GK6fQhHYybo, 0:48). Run the phases in
-order, one article at a time.
+Proven end-to-end on `using-the-word-cloud-slide.md` (approved r6/r7 quality
+bar — see AKB-17). Also proven on `creating-a-poll-question-on-ahaslides.md`
+(result: https://www.youtube.com/watch?v=GK6fQhHYybo, 0:48). Run the phases
+in order, one article at a time.
 
 Recording workspace: `~/AhaSlides/onboarding-videos/` (playwright + chromium +
 `ffmpeg-static` installed; recorder scripts copied from the
@@ -16,6 +17,24 @@ resolves `playwright` relative to the script location). The local
 `scripts/record-onboarding.mjs` carries two patches the plugin lacks: a
 per-step `pauseMs` field (extra settle time before acting) and a sanitized
 healed-scenario filename for remote mode.
+
+## Approved Quality Bar — Word Cloud Video (AKB-17)
+
+The Word Cloud tutorial (AKB-17) established the approved quality standard.
+Every new KB tutorial video must meet these same criteria before upload:
+
+| Quality gate | Standard |
+|---|---|
+| Voice | Single narrator only — **Liam** (`VCgLBmBjldJmfphyB8sZ`) throughout. Do NOT alternate or mix voices in a single tutorial. |
+| VO sync | Voiceover tightly synced to visuals. No freeze-padding to cover audio desync. Each clip's `start_sec` must place it at the matching visual beat. |
+| Preview / results views | Slide Preview (audience view) must show populated, realistic results — not an empty blank frame. Use `previewInteractions` in the scenario to submit sample words/answers during recording. |
+| Results view language | Participant-facing UI (audience view, results screen) must be in English — not Vietnamese or any other locale from a test account. Verify by sampling frames from the results-view step. |
+| Ending | Scenario ends with a `prompt` step so the visual fades out on an intentional editor state (not a half-loaded page). Audio ends with 1–1.5s of silence after the last VO clip. |
+| Audio tail | Visual duration must be ≥ audio end time + 0.3s. Use `tpad` freeze-last-frame if needed to add tail room. Target ≤1.5s tail. |
+| Outro | Standard branded outro appended as the final ~3s — see Phase 3c below. Non-negotiable. |
+
+These rules were hard-won across six re-records (AKB-17). Deviating from them
+requires an explicit sign-off in the task note.
 
 ## Phase 1 — Author the scenario
 
@@ -107,10 +126,99 @@ it is the single source of truth for approved voices, the render script, the
 ffmpeg mix command, overlap checking, and the macOS `say` fallback.
 
 Quick reference (see `kb-video-voiceover` SKILL.md for details):
-- Use ONLY **Liam** (`VCgLBmBjldJmfphyB8sZ`) or **Alice** (`Xb7hH8MSUJpSbSDYk0k2`) — no other voices.
+- Use **Liam** (`VCgLBmBjldJmfphyB8sZ`) as the single narrator. Do NOT use Alice or any other voice — the approved bar (AKB-17) is single-voice Liam.
 - API key: `ahaslides-kb/.env` → `ELEVENLABS_API_KEY` (never print/echo it).
 - Run the overlap checker before mixing and again after — both passes must report `RESULT: PASS`.
 - Overlap checker: `scripts/check_vo_overlap.py` in this skill's `scripts/` directory.
+
+## Phase 3c — Append the standard branded outro (required)
+
+Every KB tutorial video must end with the AhaSlides branded outro. This is
+the Type D sign-off scene defined in the `aha-video-branding` skill —
+Radical Purple background with AhaSlides logo and tagline.
+
+### Outro asset
+
+**Primary asset:** `public/outro/splash_intro_BD.webm` — the official Remotion-rendered
+branded outro (VP9 WebM with alpha, 78 frames / 2.6s at 30fps). Source file on Google
+Drive folder `1mcB3ekD6FPRJ73ofMeN6_4kDgfL2Ndii`. If this asset is available locally,
+use it directly. It provides the animated blob/splash intro matching the Remotion brand spec.
+
+**Fallback (if Drive file unavailable):** Generate a static branded outro with ffmpeg
+using the assets in `.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-video-branding/skills/aha-video-branding/assets/`:
+
+```python
+# Step 1 — build the outro frame (run once; save to a shared path)
+from PIL import Image
+import subprocess, os
+
+ASSETS = "/Users/claude/.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-video-branding/skills/aha-video-branding/assets"
+VIDEO_W, VIDEO_H = <match tutorial resolution>   # e.g. 1440, 900
+
+# Scale bg-alt-purple.png to match the tutorial's resolution
+bg = Image.open(f"{ASSETS}/bg-alt-purple.png").convert("RGB").resize((VIDEO_W, VIDEO_H), Image.LANCZOS)
+
+# Overlay the white logo at top-right, 24px from each edge, 62px tall
+subprocess.run(["rsvg-convert", "-h", "62", f"{ASSETS}/Ahaslides-Logo-White.svg",
+                "-o", "/tmp/aha-logo-white-62.png"])
+logo = Image.open("/tmp/aha-logo-white-62.png").convert("RGBA")
+bg.paste(logo, (VIDEO_W - logo.width - 24, 24), logo)
+bg.save("/tmp/aha-outro-frame.png")
+```
+
+```bash
+# Step 2 — render the outro clip (3s, matching tutorial fps)
+FFMPEG=./node_modules/ffmpeg-static/ffmpeg
+FONT_BOLD="/Users/claude/Library/Fonts/PlusJakartaSans-ExtraBold.ttf"
+FONT_REG="/Users/claude/Library/Fonts/PlusJakartaSans-Regular.ttf"
+
+$FFMPEG -y \
+  -loop 1 -i /tmp/aha-outro-frame.png \
+  -vf "drawtext=fontfile='$FONT_BOLD':text='Make every session count':fontsize=64:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2+40:alpha=0.95,\
+       drawtext=fontfile='$FONT_REG':text='ahaslides.com':fontsize=26:fontcolor='white@0.65':x=(w-text_w)/2:y=(h-text_h)/2+120:alpha=0.9,\
+       fade=t=in:st=0:d=0.4:alpha=0,fade=t=out:st=2.6:d=0.4" \
+  -t 3.0 \
+  -c:v libvpx-vp9 -b:v 0 -crf 33 -r <tutorial_fps> \
+  -an \
+  /tmp/aha-outro-video.webm
+```
+
+### Concatenating outro onto the tutorial
+
+The outro must be the same resolution, fps, and pixel format as the tutorial
+clip. Use `filter_complex` concat (not the `-f concat` demuxer) to normalize
+format and add a silent audio track to the outro:
+
+```bash
+FFMPEG=./node_modules/ffmpeg-static/ffmpeg
+TUTORIAL=out-<slug>/narrated.webm
+OUTRO=/tmp/aha-outro-video.webm   # or splash_intro_BD.webm if available
+
+$FFMPEG -y \
+  -i "$TUTORIAL" \
+  -i "$OUTRO" \
+  -filter_complex \
+    "[0:v]format=yuv420p[v0];[1:v]format=yuv420p[v1];\
+     [v0][0:a][v1][1:a]concat=n=2:v=1:a=1[vout][aout]" \
+  -map "[vout]" -map "[aout]" \
+  -c:v libvpx-vp9 -b:v 0 -crf 33 -r <fps> \
+  -c:a libopus -ar 48000 \
+  out-<slug>/narrated-with-outro.webm
+```
+
+Note: `[1:a]` assumes the outro already has an audio stream. If the outro is
+video-only, add `-f lavfi -i anullsrc=r=48000:cl=mono` as a third input and
+use `[2:a]` for the outro audio track.
+
+### Reusable outro asset path
+
+A pre-rendered, reusable outro clip lives at (once produced):
+`~/AhaSlides/onboarding-videos/aha-outro-reusable.webm`
+
+If it does not exist yet, produce it once from the steps above and save it
+there. All subsequent videos concat from this path. The resolution must be
+re-matched to each tutorial (if tutorials vary in resolution, produce a 1440x900
+and a 1280x720 variant and pick the right one).
 
 ## Phase 4 — Upload to YouTube
 
