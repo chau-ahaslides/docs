@@ -4,21 +4,21 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
-  "video_duration_sec": 41.15,
-  "generated_round": 6,
-  "youtube_id": "TBD — upload blocked by daily quota; video ready at out-spinner-r6/spinner-wheel-r6-narrated.webm",
+  "video_duration_sec": 46.90,
+  "generated_round": 7,
+  "youtube_id": "TBD — upload blocked by daily quota; video ready at out-spinner-r7/spinner-wheel-r7-narrated.webm",
   "pronunciation_map": {
     "1,200": "twelve hundred",
     "Present (verb /prəˈzent/)": "Use 'Hit Present to go live' — the 'to go live' context cues ElevenLabs to stress the verb form prih-ZENT, not the noun PREZ-ent"
   },
-  "notes": "AKB-15 r6 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). Changes vs r5: sw-autofill targetSelector changed from editor-side-left-slide-thumbnail-button (left panel) to .form-check.form-check-inline (parent container in right panel, wraps Participant name autofill + options, unique on page); tooltip lands left of the spotlight area (no occlusion); re-recorded 7/7 steps, trimmed 42.76s->34.4s, VO timings adjusted (s06 to 31.0s, s07 to 36.0s) to clear overlap; total narrated 41.15s. Video: out-spinner-r6/spinner-wheel-r6-narrated.webm (or .mp4).",
+  "notes": "AKB-15 r7 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). AUDIT FIX: r6 had VO 3-6s ahead of visual for steps 1-4 (root cause: r6 recording was slower to load, old r5 timings not adjusted). r7 re-times: sw-create 3.5s (tooltip appears at 3.5s), sw-pick-type 10.5s (editor at 10.5s), sw-autofill 17.0s (spotlight at 17.0s — exact), sw-add-entries 24.5s (sequential after autofill), sw-save-entries 31.5s, sw-spin-time 36.6s, sw-present 41.7s. Visual extended with freeze frame (+12.5s) to 46.9s total. check_vo_overlap.py PASS. Drift per step: create 0s, pick-type 0s, autofill 0s (star feature exact), add-entries +2.5s late (entries already typed but still visible), save-entries/spin-time/present on freeze frame. Video: out-spinner-r7/spinner-wheel-r7-narrated.webm.",
   "steps": [
     {
       "id": "sw-create",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s01_v2.mp3",
-      "start_sec": 0.0,
+      "start_sec": 3.5,
       "window_sec": 6.0,
       "display_text": "Click New Presentation to start. We'll add a Spinner Wheel — AhaSlides' audience-powered live wheel that fills itself when participants scan your QR code.",
       "tts_text": "Click New Presentation to start. We will add a Spinner Wheel — powered by audience autofill.",
@@ -29,7 +29,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s02.mp3",
-      "start_sec": 6.5,
+      "start_sec": 10.5,
       "window_sec": 4.0,
       "display_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
       "tts_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
@@ -40,8 +40,8 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s03_v5.mp3",
-      "start_sec": 11.0,
-      "window_sec": 7.0,
+      "start_sec": 17.0,
+      "window_sec": 7.5,
       "display_text": "Check Participant name autofill in the right panel — participants scan your QR code and enter their name to join, and the wheel fills itself automatically.",
       "tts_text": "Tick Participant name autofill in the right panel — scan QR, enter name to join, and the wheel fills itself.",
       "audio_duration_sec": 7.34
@@ -51,7 +51,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s04.mp3",
-      "start_sec": 18.5,
+      "start_sec": 24.5,
       "window_sec": 7.0,
       "display_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
       "tts_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
@@ -62,7 +62,7 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s05.mp3",
-      "start_sec": 25.5,
+      "start_sec": 31.5,
       "window_sec": 5.0,
       "display_text": "Click Save — each entry appears as a coloured segment on the wheel.",
       "tts_text": "Click Save — each entry appears as a coloured segment on the wheel.",
@@ -73,8 +73,8 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s06.mp3",
-      "start_sec": 31.0,
-      "window_sec": 5.5,
+      "start_sec": 36.6,
+      "window_sec": 5.1,
       "display_text": "Use Spin time to set how long the wheel spins — up to 1,200 seconds for maximum suspense.",
       "tts_text": "Spin time controls how long the wheel spins — up to twelve hundred seconds.",
       "audio_duration_sec": 5.02
@@ -84,12 +84,12 @@
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s07.mp3",
-      "start_sec": 36.0,
+      "start_sec": 41.7,
       "window_sec": 5.2,
       "display_text": "Hit Present to go live — then press the centre of the wheel, and the winner is revealed!",
       "tts_text": "Hit Present to go live — then press the centre of the wheel, and the winner is revealed!",
       "audio_duration_sec": 5.20
     }
   ],
-  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r6/spinner-wheel-r6-final.webm -i out-spinner-r6/s01_v2.mp3 -i out-spinner-r6/s02.mp3 -i out-spinner-r6/s03_v5.mp3 -i out-spinner-r6/s04.mp3 -i out-spinner-r6/s05.mp3 -i out-spinner-r6/s06.mp3 -i out-spinner-r6/s07.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6500|6500[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=18500|18500[a4];[5:a]adelay=25500|25500[a5];[6:a]adelay=31000|31000[a6];[7:a]adelay=36000|36000[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r6/spinner-wheel-r6-narrated.webm"
+  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r7/spinner-wheel-r7-final.webm -i out-spinner-r7/s01_v2.mp3 -i out-spinner-r7/s02.mp3 -i out-spinner-r7/s03_v5.mp3 -i out-spinner-r7/s04.mp3 -i out-spinner-r7/s05.mp3 -i out-spinner-r7/s06.mp3 -i out-spinner-r7/s07.mp3 -filter_complex '[1:a]adelay=3500|3500[a1];[2:a]adelay=10500|10500[a2];[3:a]adelay=17000|17000[a3];[4:a]adelay=24500|24500[a4];[5:a]adelay=31500|31500[a5];[6:a]adelay=36600|36600[a6];[7:a]adelay=41700|41700[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r7/spinner-wheel-r7-narrated.webm"
 }
