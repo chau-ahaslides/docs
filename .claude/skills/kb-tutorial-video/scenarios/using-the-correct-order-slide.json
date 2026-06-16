@@ -77,20 +77,11 @@
       "description": "Scroll down to set the time limit (default: 45 seconds), reward points, and whether faster answers earn more points. Pro tip: a logical sequence — timeline, process steps, or ranked list — gives participants a fair shot.",
       "targetSelector": "[data-testid=\"editor-side-right-quiz-max-point-input\"]",
       "pauseMs": 1500,
-      "action": null
-    },
-    {
-      "id": "co-set-language-en",
-      "path": "/presentation/*",
-      "title": "Set participant language to English",
-      "description": "Open Settings to confirm the audience display language is set to English — so participants see all text in English on their devices.",
-      "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
-      "pauseMs": 1000,
       "action": null,
       "mainInteractions": [
         {
           "selector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
-          "label": "open presentation settings",
+          "label": "open presentation settings (silent — off camera)",
           "pauseAfterMs": 3000
         },
         {
@@ -102,7 +93,7 @@
           "type": "select",
           "selector": "[data-testid=\"presentation-settings-language-select\"]",
           "value": "en",
-          "label": "select English (value=en)",
+          "label": "select English",
           "pauseAfterMs": 2000
         },
         {
@@ -124,7 +115,7 @@
         {
           "selector": "[data-testid=\"editor-middle-preview-button\"]",
           "label": "open preview via JS click (bypasses overlay backdrop)",
-          "pauseAfterMs": 12000
+          "pauseAfterMs": 14000
         }
       ]
     },
@@ -135,15 +126,79 @@
       "description": "When your audience joins, they see the shuffled statements and drag them into the sequence they think is correct. They tap Submit when done — all within the time limit you set.",
       "targetSelector": ".iframe-wrapper-audience",
       "pauseMs": 3000,
-      "action": null
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-join-name-input\"]",
+          "type": "type",
+          "value": "Alex",
+          "label": "type participant name",
+          "pauseAfterMs": 800
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-join-game-submit-button\"]",
+          "label": "click join",
+          "pauseAfterMs": 2000
+        }
+      ]
+    },
+    {
+      "id": "co-preview-start",
+      "path": "/presentation/*",
+      "title": "Start the quiz and see responses",
+      "description": "Hit Start to begin the timed round. Watch the participant's screen as they race to arrange the statements before the timer runs out.",
+      "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 3000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "presenting=true",
+          "selector": "button.start-quiz-btn, [class*='start-quiz'], button:has-text('Start')",
+          "label": "host clicks Start",
+          "pauseAfterMs": 5000
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "button:has-text('Submit'), [data-testid=\"audience-quiz-submit-button\"]",
+          "label": "participant submits (to populate responses)",
+          "pauseAfterMs": 42000
+        }
+      ]
     },
     {
       "id": "co-preview-results",
       "path": "/presentation/*",
       "title": "Results appear live on your screen",
-      "description": "The presenter view shows a real-time leaderboard and the correct order revealed. Hit Present when you're ready to go live — participants will race to arrange the statements correctly on their phones.",
+      "description": "The presenter view reveals the correct order and the leaderboard — watch the scores update as participants submit their answers.",
       "targetSelector": ".iframe-wrapper-presenter",
       "pauseMs": 4000,
+      "action": null
+    },
+    {
+      "id": "co-back-to-editor",
+      "path": "/presentation/*",
+      "title": "Back to the editor",
+      "description": "Click the back arrow to return to the slide editor — your Correct Order slide is ready to go live.",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+      "pauseMs": 1000,
+      "action": null,
+      "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
+          "label": "click back to editor (JS click to bypass any overlay)",
+          "pauseAfterMs": 5000
+        }
+      ]
+    },
+    {
+      "id": "co-present",
+      "path": "/presentation/*",
+      "title": "Go live with Present",
+      "description": "Hit Present when you're ready — participants will race to arrange the statements correctly on their phones.",
+      "targetSelector": ".aha-button-present",
+      "pauseMs": 2000,
       "action": null
     }
   ]
