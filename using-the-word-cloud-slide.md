@@ -35,7 +35,7 @@ In the example above, the word *'hola'* was entered by participants more often t
 ## Setting up your Word Cloud
 
 {% embed url="https://www.youtube.com/watch?v=L89bd83WaYU" %}
-How to use the Word Cloud slide on AhaSlides — quick tutorial (0:50)
+How to use the Word Cloud slide on AhaSlides — quick tutorial (0:54) — TODO: replace L89bd83WaYU with new video id once out-word-cloud-r4/word-cloud-narrated-r4.webm is uploaded to YouTube as unlisted; then delete L89bd83WaYU
 {% endembed %}
 
 #### Step 1: Create your slide and write your question
