@@ -34,6 +34,18 @@ In the example above, the word *'hola'* was entered by participants more often t
 
 ## Setting up your Word Cloud
 
+| Step | Action | On-screen label |
+|------|--------|-----------------|
+| 1 | Create a new presentation | **New Presentation** |
+| 2 | Choose the slide type | **Word Cloud** (Interactive section) |
+| 3 | Enter your prompt | **Your question** field |
+| 4 | Set entries per participant (1–10) | **Entries per participant** |
+| 5 | Optionally configure time limit, profanity filter, and hide results | **Time limit**, **Filter profanity**, **Hide results** |
+| 6 | Preview before going live | **Preview** button |
+| 7 | See the audience view; participants type words and submit | **Submit** button (participant screen) |
+| 8 | Return to editor to fine-tune | **X** / close Preview |
+| 9 | Go live; cloud builds as responses arrive | **Present** button |
+
 {% embed url="https://www.youtube.com/watch?v=L89bd83WaYU" %}
 How to use the Word Cloud slide on AhaSlides — quick tutorial (0:54) — TODO: replace L89bd83WaYU with new video id once out-word-cloud-r4/word-cloud-narrated-r4.webm is uploaded to YouTube as unlisted; then delete L89bd83WaYU
 {% endembed %}
