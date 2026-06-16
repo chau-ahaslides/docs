@@ -61,13 +61,17 @@
       }
     },
     {
-      "id": "sw-spin-time",
+      "id": "sw-spin-wheel",
       "path": "/presentation/*",
-      "title": "Adjust spin time",
-      "description": "Use the 'Spin time' setting to control how long the wheel spins before landing — up to 1,200 seconds for maximum suspense.",
-      "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-spin-time-input\"]",
-      "pauseMs": 1500,
-      "action": null
+      "title": "Preview the spin!",
+      "description": "Click the play button at the centre of the wheel to preview the spin. The wheel spins and lands on a winner.",
+      "targetSelector": "[data-testid=\"editor-middle-spinner-wheel-spin-button\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "click",
+        "selector": "[data-testid=\"editor-middle-spinner-wheel-spin-button\"]",
+        "hint": "Click the spin button to preview"
+      }
     },
     {
       "id": "sw-present",
