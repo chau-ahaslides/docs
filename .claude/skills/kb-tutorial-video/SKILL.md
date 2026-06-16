@@ -134,91 +134,94 @@ Quick reference (see `kb-video-voiceover` SKILL.md for details):
 ## Phase 3c — Append the standard branded outro (required)
 
 Every KB tutorial video must end with the AhaSlides branded outro. This is
-the Type D sign-off scene defined in the `aha-video-branding` skill —
-Radical Purple background with AhaSlides logo and tagline.
+the official animated AhaSlides splash/blob scene — 2.6s at 25fps, Radical
+Purple background, animated logo reveal.
 
 ### Outro asset
 
-**Primary asset:** `public/outro/splash_intro_BD.webm` — the official Remotion-rendered
-branded outro (VP9 WebM with alpha, 78 frames / 2.6s at 30fps). Source file on Google
-Drive folder `1mcB3ekD6FPRJ73ofMeN6_4kDgfL2Ndii`. If this asset is available locally,
-use it directly. It provides the animated blob/splash intro matching the Remotion brand spec.
+**Primary asset (committed to repo):** `.claude/skills/kb-tutorial-video/assets/splash_intro_BD.webm`
 
-**Fallback (if Drive file unavailable):** Generate a static branded outro with ffmpeg
-using the assets in `.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-video-branding/skills/aha-video-branding/assets/`:
+This is the canonical reusable outro for all KB tutorial videos. It is a
+VP9 WebM at 1440x900 25fps, converted from the official Remotion-rendered
+`splash_intro_BD.mov` (QuickTime qtrle, 1920x1080, 25fps, 2.6s) supplied
+by Chau in AKB-17 r8. Committed file size: ~112 KB.
+
+Resolve the absolute path from the workspace root:
+
+```bash
+SKILL_ROOT="$(git rev-parse --show-toplevel)/.claude/skills/kb-tutorial-video"
+OUTRO="$SKILL_ROOT/assets/splash_intro_BD.webm"
+```
+
+If the resolution of your tutorial differs from 1440x900, re-scale before
+concat (see the `-vf scale=` note below).
+
+### Concatenating outro onto the tutorial (fast -c copy path)
+
+When the tutorial and the committed outro are already the same resolution,
+fps, and codec (VP9/opus), use the simple `-f concat -c copy` path — it
+is instant and lossless:
+
+```bash
+FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
+SKILL_ROOT="$(git rev-parse --show-toplevel)/.claude/skills/kb-tutorial-video"
+OUTRO="$SKILL_ROOT/assets/splash_intro_BD.webm"
+TUTORIAL=out-<slug>/word-cloud-narrated.webm
+
+# Build concat list
+printf "file '%s'\nfile '%s'\n" "$TUTORIAL" "$OUTRO" > /tmp/concat-<slug>.txt
+
+$FFMPEG -y -f concat -safe 0 -i /tmp/concat-<slug>.txt -c copy \
+  out-<slug>/narrated-with-outro.webm
+```
+
+If resolutions differ, re-encode with `filter_complex`:
+
+```bash
+$FFMPEG -y \
+  -i "$TUTORIAL" \
+  -i "$OUTRO" \
+  -filter_complex \
+    "[0:v]scale=1440:900,format=yuv420p[v0];\
+     [1:v]scale=1440:900,format=yuv420p[v1];\
+     [v0][0:a][v1][1:a]concat=n=2:v=1:a=1[vout][aout]" \
+  -map "[vout]" -map "[aout]" \
+  -c:v libvpx-vp9 -b:v 0 -crf 30 -r 25 \
+  -c:a libopus -ar 48000 \
+  out-<slug>/narrated-with-outro.webm
+```
+
+### Last-resort fallback (only if committed asset is missing/corrupt)
+
+If `assets/splash_intro_BD.webm` is unavailable for any reason, generate a
+static branded outro with ffmpeg using the aha-video-branding plugin assets:
 
 ```python
-# Step 1 — build the outro frame (run once; save to a shared path)
+# Step 1 — build a static outro frame
 from PIL import Image
-import subprocess, os
+import subprocess
 
 ASSETS = "/Users/claude/.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-video-branding/skills/aha-video-branding/assets"
-VIDEO_W, VIDEO_H = <match tutorial resolution>   # e.g. 1440, 900
-
-# Scale bg-alt-purple.png to match the tutorial's resolution
+VIDEO_W, VIDEO_H = 1440, 900
 bg = Image.open(f"{ASSETS}/bg-alt-purple.png").convert("RGB").resize((VIDEO_W, VIDEO_H), Image.LANCZOS)
-
-# Overlay the white logo at top-right, 24px from each edge, 62px tall
-subprocess.run(["rsvg-convert", "-h", "62", f"{ASSETS}/Ahaslides-Logo-White.svg",
-                "-o", "/tmp/aha-logo-white-62.png"])
+subprocess.run(["rsvg-convert", "-h", "62", f"{ASSETS}/Ahaslides-Logo-White.svg", "-o", "/tmp/aha-logo-white-62.png"])
 logo = Image.open("/tmp/aha-logo-white-62.png").convert("RGBA")
 bg.paste(logo, (VIDEO_W - logo.width - 24, 24), logo)
 bg.save("/tmp/aha-outro-frame.png")
 ```
 
 ```bash
-# Step 2 — render the outro clip (3s, matching tutorial fps)
-FFMPEG=./node_modules/ffmpeg-static/ffmpeg
+# Step 2 — render 3s static clip
+FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
 FONT_BOLD="/Users/claude/Library/Fonts/PlusJakartaSans-ExtraBold.ttf"
-FONT_REG="/Users/claude/Library/Fonts/PlusJakartaSans-Regular.ttf"
-
-$FFMPEG -y \
-  -loop 1 -i /tmp/aha-outro-frame.png \
-  -vf "drawtext=fontfile='$FONT_BOLD':text='Make every session count':fontsize=64:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2+40:alpha=0.95,\
-       drawtext=fontfile='$FONT_REG':text='ahaslides.com':fontsize=26:fontcolor='white@0.65':x=(w-text_w)/2:y=(h-text_h)/2+120:alpha=0.9,\
-       fade=t=in:st=0:d=0.4:alpha=0,fade=t=out:st=2.6:d=0.4" \
-  -t 3.0 \
-  -c:v libvpx-vp9 -b:v 0 -crf 33 -r <tutorial_fps> \
-  -an \
-  /tmp/aha-outro-video.webm
+$FFMPEG -y -loop 1 -i /tmp/aha-outro-frame.png \
+  -vf "drawtext=fontfile='$FONT_BOLD':text='Make every session count':fontsize=64:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2+40" \
+  -t 3.0 -c:v libvpx-vp9 -b:v 0 -crf 33 -r 25 -an /tmp/aha-outro-static.webm
 ```
 
-### Concatenating outro onto the tutorial
-
-The outro must be the same resolution, fps, and pixel format as the tutorial
-clip. Use `filter_complex` concat (not the `-f concat` demuxer) to normalize
-format and add a silent audio track to the outro:
-
-```bash
-FFMPEG=./node_modules/ffmpeg-static/ffmpeg
-TUTORIAL=out-<slug>/narrated.webm
-OUTRO=/tmp/aha-outro-video.webm   # or splash_intro_BD.webm if available
-
-$FFMPEG -y \
-  -i "$TUTORIAL" \
-  -i "$OUTRO" \
-  -filter_complex \
-    "[0:v]format=yuv420p[v0];[1:v]format=yuv420p[v1];\
-     [v0][0:a][v1][1:a]concat=n=2:v=1:a=1[vout][aout]" \
-  -map "[vout]" -map "[aout]" \
-  -c:v libvpx-vp9 -b:v 0 -crf 33 -r <fps> \
-  -c:a libopus -ar 48000 \
-  out-<slug>/narrated-with-outro.webm
-```
-
-Note: `[1:a]` assumes the outro already has an audio stream. If the outro is
-video-only, add `-f lavfi -i anullsrc=r=48000:cl=mono` as a third input and
-use `[2:a]` for the outro audio track.
-
-### Reusable outro asset path
-
-A pre-rendered, reusable outro clip lives at (once produced):
-`~/AhaSlides/onboarding-videos/aha-outro-reusable.webm`
-
-If it does not exist yet, produce it once from the steps above and save it
-there. All subsequent videos concat from this path. The resolution must be
-re-matched to each tutorial (if tutorials vary in resolution, produce a 1440x900
-and a 1280x720 variant and pick the right one).
+Then concat using the `filter_complex` path above (the static clip has no audio,
+so add `-f lavfi -i anullsrc=r=48000:cl=mono` as a third input and use `[2:a]`
+for the outro audio).
 
 ## Phase 4 — Upload to YouTube
 
