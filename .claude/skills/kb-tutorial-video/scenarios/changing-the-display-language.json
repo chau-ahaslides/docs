@@ -2,18 +2,19 @@
   "steps": [
     {
       "id": "lang-welcome",
-      "path": "/apps/presentations",
-      "title": "Two ways to set your language",
-      "description": "AhaSlides lets you set two different languages: the presenter interface language (what you see), and the audience display language (what participants see on their phones). Let's walk through both.",
+      "path": "/apps/*",
+      "title": "Two language settings on AhaSlides",
+      "description": "AhaSlides gives you two separate language controls: the presenter interface language (your menus and buttons), and the audience display language (what participants see). Let's set both.",
       "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
       "action": null
     },
     {
       "id": "lang-globe-click",
-      "path": "/apps/presentations",
-      "title": "Change the presenter interface language",
-      "description": "Click the globe icon in the top-right corner to change the language of the AhaSlides interface — menus, buttons, and labels — for you as the presenter.",
+      "path": "/apps/*",
+      "title": "Presenter interface language — 27 options",
+      "description": "Click the globe icon to open the presenter language menu. Choose from 27 languages: Čeština, Deutsch, English, Español, Français, Hrvatski, Italiano, Polski, Português, Tiếng Việt, 中文, 日本語 and more. The interface switches instantly.",
       "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
+      "pauseMs": 2000,
       "action": {
         "type": "click",
         "selector": "[data-testid=\"multiple-language-trigger-button\"]",
@@ -22,18 +23,18 @@
     },
     {
       "id": "lang-dropdown-show",
-      "path": "/apps/presentations",
-      "title": "Pick your interface language",
-      "description": "A dropdown menu lists all 27 supported interface languages. Select the one you want — the presenter app will switch instantly.",
+      "path": "/apps/*",
+      "title": "Presenter language selected instantly",
+      "description": "The dropdown lists all 27 interface languages — scroll to find yours and the AhaSlides presenter interface updates immediately, no page reload needed.",
       "targetSelector": "[data-testid=\"multiple-language-trigger-button\"]",
-      "pauseMs": 1500,
+      "pauseMs": 2000,
       "action": null
     },
     {
       "id": "lang-new-pres",
-      "path": "/apps/presentations",
+      "path": "/apps/*",
       "title": "Now set the audience language",
-      "description": "The audience display language is found inside any presentation's Settings. Click 'New presentation' to open the editor — then we'll show you where to find it.",
+      "description": "The audience display language is found inside any presentation's Settings — it is per-presentation, so different presentations can target different audiences. Click 'New presentation' to open the editor.",
       "targetSelector": ".new-presentation-button",
       "action": {
         "type": "click",
@@ -45,7 +46,7 @@
       "id": "lang-add-slide",
       "path": "/presentation/*",
       "title": "Start with a Poll slide",
-      "description": "Every presentation can have its own display language. Click 'Poll' to add a slide — then we'll head straight to the language settings.",
+      "description": "Every presentation can have its own display language for the audience. Click 'Poll' to add a slide — then we'll head straight to the language settings.",
       "targetSelector": "[aria-label=\"Poll\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "pauseMs": 4000,
       "action": {
@@ -58,7 +59,7 @@
       "id": "lang-editor-ready",
       "path": "/presentation/*",
       "title": "Slide added — heading to Settings",
-      "description": "The Poll slide is in your deck. Now let's open Settings to set the audience display language.",
+      "description": "The Poll slide is in your deck. Now let's open Settings to choose the audience display language.",
       "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
       "pauseMs": 2500,
       "action": null
@@ -67,7 +68,7 @@
       "id": "lang-settings-btn",
       "path": "/presentation/*",
       "title": "Open the presentation Settings",
-      "description": "Click the Settings icon on the right-hand panel. This is where you control how the presentation behaves for your audience.",
+      "description": "Click the Settings icon on the right-hand panel. This controls how the presentation behaves for your audience.",
       "targetSelector": "[data-testid=\"editor-side-right-nav-settings-button\"]",
       "action": {
         "type": "click",
@@ -78,8 +79,8 @@
     {
       "id": "lang-settings-opening",
       "path": "/presentation/*",
-      "title": "Settings is loading",
-      "description": "The Settings panel is opening — you'll see options for your entire presentation.",
+      "title": "Settings panel is loading",
+      "description": "The Settings panel is opening — here you control how this presentation behaves for your audience, from joining rules to language.",
       "targetSelector": ".aha-modal__content",
       "pauseMs": 2500,
       "action": null
@@ -88,7 +89,7 @@
       "id": "lang-settings-modal",
       "path": "/presentation/*",
       "title": "Go to Presentation language",
-      "description": "The Settings panel is open. Click 'Presentation language' in the left menu to access the audience language option.",
+      "description": "The Settings panel is open. Click 'Presentation language' in the left menu to reach the audience language dropdown.",
       "targetSelector": ".aha-modal__content",
       "pauseMs": 1000,
       "action": {
@@ -98,28 +99,37 @@
       }
     },
     {
-      "id": "lang-nav-loading",
+      "id": "lang-audience-select",
       "path": "/presentation/*",
-      "title": "Navigating to Presentation language",
-      "description": "Navigating to the Presentation language tab — here you'll find the dropdown for your audience's language.",
+      "title": "Audience display language — 32 options",
+      "description": "This dropdown controls what language participants see on their devices. AhaSlides supports 32 audience languages including Bahasa Indonesia, Deutsch, English, Español, Français, Polski, Português, Tiếng Việt, Türkçe, 中文, 日本語 and more.",
       "targetSelector": "[data-testid=\"presentation-settings-language-select\"]",
-      "pauseMs": 2000,
+      "pauseMs": 2500,
       "action": null
     },
     {
-      "id": "lang-audience-select",
+      "id": "lang-select-spanish",
       "path": "/presentation/*",
-      "title": "Choose the audience display language",
-      "description": "Use the dropdown to pick the language your audience will see on their devices — questions, answer options, and the join screen all update instantly. AhaSlides supports 32 display languages.",
+      "title": "Choosing Español for our audience",
+      "description": "Let's select Spanish — Español — for this presentation. Once selected, all participant-facing text switches to Spanish: questions, answer options, the join screen, and navigation.",
       "targetSelector": "[data-testid=\"presentation-settings-language-select\"]",
       "pauseMs": 1500,
+      "mainInteractions": [
+        {
+          "type": "select",
+          "selector": "[data-testid=\"presentation-settings-language-select\"]",
+          "value": "es",
+          "label": "select Español (value=es)",
+          "pauseAfterMs": 3000
+        }
+      ],
       "action": null
     },
     {
       "id": "lang-close-settings",
       "path": "/presentation/*",
-      "title": "Language saved — close Settings",
-      "description": "The language is saved automatically. Click the X to close Settings and head back to the editor.",
+      "title": "Español set — close Settings",
+      "description": "The audience language is saved to Español automatically. Click the X to close Settings and return to the editor.",
       "targetSelector": ".aha-modal",
       "action": {
         "type": "click",
@@ -130,8 +140,8 @@
     {
       "id": "lang-preview-open",
       "path": "/presentation/*",
-      "title": "Preview the audience experience",
-      "description": "Click Preview to see exactly what your audience will see when you go live — including the language you just set.",
+      "title": "Preview — see the audience view in Spanish",
+      "description": "Click Preview to see exactly what Spanish-speaking participants will see — the entire audience interface now appears in Español.",
       "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
       "pauseMs": 1500,
       "action": {
@@ -141,10 +151,10 @@
       }
     },
     {
-      "id": "lang-preview-audience",
+      "id": "lang-preview-spanish",
       "path": "/presentation/*",
-      "title": "This is your audience's view",
-      "description": "Your audience sees AhaSlides in the language you chose — questions, answer options, and the join screen all appear in that language on their phones.",
+      "title": "Audience view in Español",
+      "description": "Your audience sees AhaSlides in Spanish — the join screen, buttons, and instructions all appear in Español on participants' devices.",
       "targetSelector": ".iframe-wrapper-audience",
       "pauseMs": 10000,
       "action": null
@@ -153,7 +163,7 @@
       "id": "lang-done",
       "path": "/presentation/*",
       "title": "All set!",
-      "description": "That's it — your audience display language is saved automatically. Combine it with the presenter interface language to run fully bilingual sessions. Click Present when you're ready to go live.",
+      "description": "Both language settings are saved automatically. Combine the presenter interface language with the audience display language to run fully multilingual sessions. Click Present when you're ready to go live.",
       "targetSelector": "[data-testid=\"editor-header-present-button\"]",
       "action": null
     }
