@@ -82,6 +82,8 @@ By using Categorise slides, you can turn any sorting task — from scientific cl
 
 The embed below is a ready-made Categorise activity — "Sort It Out: Parts of Speech" — that you can copy straight into your own account. Students sort 11 words (mountain, run, brilliant, and more) into Noun, Verb, and Adjective buckets in real time.
 
+![Sort It Out: Parts of Speech — Categorise template preview showing Noun, Verb, and Adjective columns](.gitbook/assets/categorise-sort-parts-of-speech-preview.png)
+
 {% embed url="https://presenter.ahaslides.com/shared-template/1781516241606-55jdubirlh?hideAccessCode=true&hideText=true" %}
 Sort It Out: Parts of Speech — live Categorise template
 {% endembed %}
