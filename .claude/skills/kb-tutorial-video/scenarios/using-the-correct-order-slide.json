@@ -1,0 +1,108 @@
+{
+  "steps": [
+    {
+      "id": "co-welcome",
+      "path": "/apps/presentations",
+      "title": "Let's build a Correct Order slide!",
+      "description": "A Correct Order slide challenges participants to arrange shuffled statements in the right sequence — perfect for timelines, processes, and ranked lists. We'll build one together in under a minute. Click Next to begin.",
+      "targetSelector": ".new-presentation-button",
+      "action": null
+    },
+    {
+      "id": "co-create",
+      "path": "/apps/presentations",
+      "title": "Create a new presentation",
+      "description": "Click 'New Presentation' to open a fresh deck.",
+      "targetSelector": ".new-presentation-button",
+      "action": {
+        "type": "click",
+        "selector": ".new-presentation-button",
+        "hint": "Click 'New Presentation' to continue"
+      }
+    },
+    {
+      "id": "co-pick-type",
+      "path": "/presentation/*",
+      "title": "Pick the Correct Order slide type",
+      "description": "Select 'Correct Order' from the slide type picker in the Quiz section.",
+      "targetSelector": "[aria-label=\"Correct Order\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+      "pauseMs": 5000,
+      "action": {
+        "type": "click",
+        "selector": "[aria-label=\"Correct Order\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
+        "hint": "Click 'Correct Order' to continue"
+      }
+    },
+    {
+      "id": "co-type-question",
+      "path": "/presentation/*",
+      "title": "Write your question",
+      "description": "Type the challenge for your audience. A question, a task, or simple instructions — whatever makes the sequence clear to participants.",
+      "targetSelector": "[aria-label=\"Question text\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": "[aria-label=\"Question text\"]",
+        "value": "Put these events in chronological order",
+        "hint": "Type your question"
+      }
+    },
+    {
+      "id": "co-statements",
+      "path": "/presentation/*",
+      "title": "Add your statements",
+      "description": "Enter each statement in the correct order — AhaSlides shuffles them automatically for participants. Pro tip: keep it to 5 items maximum for the smoothest drag-and-drop experience on mobile.",
+      "targetSelector": "[placeholder=\"Statement 1\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": "[placeholder=\"Statement 1\"]",
+        "value": "World War I begins",
+        "hint": "Type statement 1"
+      }
+    },
+    {
+      "id": "co-tip-distinct",
+      "path": "/presentation/*",
+      "title": "Pro tip: make each item distinct",
+      "description": "Avoid statements that could plausibly swap positions — each item should have only one correct placement in the sequence. Clear, unique items make for a fairer and more satisfying quiz.",
+      "targetSelector": "[placeholder=\"Statement 2\"]",
+      "pauseMs": 1200,
+      "action": null
+    },
+    {
+      "id": "co-settings",
+      "path": "/presentation/*",
+      "title": "Configure time and points",
+      "description": "Scroll down to set the time limit (default: 45 seconds), reward points, and whether faster answers earn more points. Pro tip: a logical sequence — timeline, process steps, or ranked list — gives participants a fair shot.",
+      "targetSelector": "[data-testid=\"editor-side-right-quiz-max-point-input\"]",
+      "pauseMs": 1500,
+      "action": null,
+      "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-middle-preview-button\"]",
+          "label": "open preview via JS click (bypasses overlay backdrop)",
+          "pauseAfterMs": 10000
+        }
+      ]
+    },
+    {
+      "id": "co-preview-audience",
+      "path": "/presentation/*",
+      "title": "Participants drag statements into order",
+      "description": "When your audience joins, they see the shuffled statements and drag them into the sequence they think is correct. They tap Submit when done — all within the time limit you set.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 3000,
+      "action": null
+    },
+    {
+      "id": "co-preview-results",
+      "path": "/presentation/*",
+      "title": "Results appear live on your screen",
+      "description": "The presenter view shows a real-time leaderboard and the correct order revealed. Hit Present when you're ready to go live — participants will race to arrange the statements correctly on their phones.",
+      "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 3000,
+      "action": null
+    }
+  ]
+}

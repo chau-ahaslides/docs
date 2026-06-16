@@ -1,0 +1,104 @@
+{
+  "voice_primary": "Liam",
+  "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
+  "tts_engine": "elevenlabs",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
+  "video_duration_sec": null,
+  "youtube_id": "K5YPdRXDscU",
+  "generated_round": 3,
+  "notes": "AKB-12 r3: ALL Liam (single voice, replaces alternating Liam+Alice from r1). Adds: 5-item-max tip in co-statements, distinct-items tip in co-tip-distinct, logical-sequence tip in co-settings, participant/results view via Preview. Overlap check must pass before mix.",
+  "steps": [
+    {
+      "id": "co-welcome",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 0.0,
+      "window_sec": 5.5,
+      "display_text": "A Correct Order slide challenges participants to arrange shuffled statements in the right sequence.",
+      "tts_text": "A Correct Order slide challenges participants to arrange shuffled statements in the right sequence.",
+      "audio_duration_sec": 4.86
+    },
+    {
+      "id": "co-create",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 5.02,
+      "window_sec": 2.5,
+      "display_text": "Click New Presentation to open a fresh deck.",
+      "tts_text": "Click New Presentation to open a fresh deck.",
+      "audio_duration_sec": 2.32
+    },
+    {
+      "id": "co-pick-type",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 11.5,
+      "window_sec": 3.0,
+      "display_text": "Select Correct Order from the slide type picker.",
+      "tts_text": "Select Correct Order from the slide type picker.",
+      "audio_duration_sec": 2.51
+    },
+    {
+      "id": "co-type-question",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 15.0,
+      "window_sec": 2.5,
+      "display_text": "Type the challenge for your audience.",
+      "tts_text": "Type the challenge for your audience.",
+      "audio_duration_sec": 1.93
+    },
+    {
+      "id": "co-statements",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 17.09,
+      "window_sec": 5.5,
+      "display_text": "Enter statements in the correct order. Pro tip: keep it to five items maximum for mobile.",
+      "tts_text": "Enter statements in the correct order. Pro tip: keep it to five items maximum for mobile.",
+      "audio_duration_sec": 4.86
+    },
+    {
+      "id": "co-tip-distinct",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 22.11,
+      "window_sec": 4.0,
+      "display_text": "Make each item distinct — avoid statements that could swap positions.",
+      "tts_text": "Make each item distinct — avoid statements that could swap positions.",
+      "audio_duration_sec": 3.79
+    },
+    {
+      "id": "co-settings",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 26.06,
+      "window_sec": 5.5,
+      "display_text": "Set the time limit and points. Use a logical sequence — timeline, process steps, or ranked list.",
+      "tts_text": "Set the time limit and points. Use a logical sequence — timeline, process steps, or ranked list.",
+      "audio_duration_sec": 5.38
+    },
+    {
+      "id": "co-preview-audience",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 31.60,
+      "window_sec": 5.5,
+      "display_text": "In Preview, the presenter and participant screens appear side by side. Hit Present when you're ready to go live.",
+      "tts_text": "In Preview, the presenter and participant screens appear side by side. Hit Present when you're ready to go live.",
+      "audio_duration_sec": 5.46
+    },
+    {
+      "id": "co-preview-results",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": null,
+      "window_sec": null,
+      "display_text": "(combined into co-preview-audience clip s08c — no separate audio)",
+      "tts_text": null,
+      "audio_duration_sec": null,
+      "_merged_into": "co-preview-audience"
+    }
+  ]
+}
