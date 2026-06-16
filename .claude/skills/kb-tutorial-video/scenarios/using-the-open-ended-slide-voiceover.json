@@ -3,11 +3,11 @@
   "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
   "model": "eleven_multilingual_v2",
   "video_duration_sec": 43.5,
-  "generated_round": 7,
+  "generated_round": 8,
   "youtube_id": "TBD",
   "youtube_chapters": "0:00 Intro\n0:12 Configure the slide\n0:24 Preview and present live",
-  "youtube_chapters_notes": "3 chapters, all >=10s apart, validated against r7 (46.15s = 43.5s tutorial + 2.65s outro). Apply by pasting into YouTube video description at publish time. Also stored in using-the-open-ended-slide.chapters.txt.",
-  "notes": "r7: Added oe-present step — after Preview results, back-to-editor animation shows and video ends on Present button in editor. Fixed outro: r6 used aha-outro-reusable-1440x900.webm (wrong), r7 uses splash_intro_BD.webm (correct). Re-recorded from scenario (9 steps), cut settings section (t=35.5-48.5s) same as r6. Added s09 VO at 40.0s. check_vo_overlap.py PASS. Single voice Liam. Video 43.5s (39s content + 4.5s back-to-editor+present). Branded outro splash_intro_BD.webm 2.65s appended. Total: 46.15s.",
+  "youtube_chapters_notes": "3 chapters, all >=10s apart, validated against r8 (46.15s = 43.5s tutorial + 2.65s outro). Apply by pasting into YouTube video description at publish time. Also stored in using-the-open-ended-slide.chapters.txt.",
+  "notes": "r8: Removed redundant s08 VO ('Answers appear live...') at ~0:37; kept only s09 as closing line. s09 tts_text uses 'lyve' spelling for /laɪv/ pronunciation (ElevenLabs alias). s09 start_sec moved from 40.0s to 35.2s to fill gap left by removed s08. s09 audio_duration 2.95s. check_vo_overlap.py PASS. 8 clips total (s01-s07 + s09). Same visual track as r7 (43.5s). Branded outro splash_intro_BD.webm 2.65s. Total: 46.15s.",
   "steps": [
     {
       "id": "oe-welcome",
@@ -80,25 +80,15 @@
       "audio_duration_sec": 4.18
     },
     {
-      "id": "oe-preview-results",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 35.2,
-      "window_sec": 4.8,
-      "display_text": "Answers appear live — this is what your audience sees on their devices.",
-      "tts_text": "Answers appear live — this is what your audience sees on their devices.",
-      "audio_duration_sec": 2.32
-    },
-    {
       "id": "oe-present",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 40.0,
-      "window_sec": 3.5,
+      "start_sec": 35.2,
+      "window_sec": 8.3,
       "display_text": "When you're ready, hit Present to go live with your audience.",
-      "tts_text": "When you're ready, hit Present to go live with your audience.",
-      "audio_duration_sec": 2.77
+      "tts_text": "When you're ready, hit Present to go lyve with your audience.",
+      "audio_duration_sec": 2.95
     }
   ],
-  "mix_command": "ffmpeg -y -i open-ended-r7-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -i vo/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=24200|24200[a6];[7:a]adelay=29200|29200[a7];[8:a]adelay=35200|35200[a8];[9:a]adelay=40000|40000[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r7-narrated.webm"
+  "mix_command": "ffmpeg -y -i open-ended-r7-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=24200|24200[a6];[7:a]adelay=29200|29200[a7];[8:a]adelay=35200|35200[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r8-narrated.webm"
 }
