@@ -51,3 +51,12 @@ In the AhaSlides editor, select the Correct Order slide from the *Quiz* section 
    - **Time to answer** — The time limit in seconds. Defaults to 45 seconds; adjust it to suit your question.
 
 > 💡 For more help on quizzes, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).
+
+## How to create a good Correct Order slide
+
+- **Keep the list to 5 items max** — fewer items = less cognitive load and easier to drag on mobile.
+- **Make each item distinct** — avoid items that could plausibly swap positions.
+- **Use a clear, unambiguous question** — e.g. "Put these steps in the correct order."
+- **Choose a logical sequence type** — chronological events, process steps, or ranked priorities work best.
+- **Keep item text concise** — short phrases (3–7 words) are easier to read and drag.
+- **Avoid numbering items** — don't write "Step 1: …" in the text, as it gives the answer away.
