@@ -154,12 +154,6 @@ If streaming animation is enabled, the diagram animates in when the slide first 
 
 The Diagram slide is not currently supported by the AhaSlides MCP `create_slides()` tool. Add Diagram slides manually in the editor.
 
----
-
-> **Note:** This article reflects the GitBook version of this guide. The canonical Zoho Help Center article may differ — port any significant changes there separately.
-
----
-
 ## Remaining pre-publish steps
 
 1. **Zoho article ID** — a Zoho Help Center article ID must be added to the frontmatter (`id:` and `zoho_url:`) before this draft can be published and synced.
