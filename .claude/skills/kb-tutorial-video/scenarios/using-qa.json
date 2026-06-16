@@ -46,14 +46,39 @@
         "selector": "[aria-label=\"Question text\"]",
         "value": "Got a question? Ask away!",
         "hint": "Type your Q&A heading, then click away"
-      }
+      },
+      "mainInteractions": [
+        {
+          "type": "jsEval",
+          "js": "document.querySelector('[data-testid=\"editor-side-right-nav-settings-button\"]')?.click()",
+          "label": "open Presentation Settings to set language to English",
+          "pauseAfterMs": 2500
+        },
+        {
+          "selector": "[data-testid=\"presentation-settings-tab-presentation-language-button\"]",
+          "label": "click Presentation Language tab",
+          "pauseAfterMs": 1500
+        },
+        {
+          "type": "select",
+          "selector": "[data-testid=\"presentation-settings-language-select\"]",
+          "value": "en",
+          "label": "set audience language to English",
+          "pauseAfterMs": 1500
+        },
+        {
+          "selector": ".aha-modal__close-button",
+          "label": "close Presentation Settings modal",
+          "pauseAfterMs": 1000
+        }
+      ]
     },
     {
       "id": "qa-settings-when",
       "path": "/presentation/*",
       "title": "When can the audience ask?",
       "description": "Choose whether questions arrive only on this dedicated Q&A slide, or on every slide throughout your presentation. 'Only on Q&A slides' gives you tighter control of the timing.",
-      "targetSelector": "[data-testid=\"editor-side-right-qna-only-qna-slides-radio\"]",
+      "targetSelector": ".right-panel-container",
       "pauseMs": 5500,
       "action": null
     },
@@ -62,7 +87,7 @@
       "path": "/presentation/*",
       "title": "Filter profanity",
       "description": "Tick 'Filter profanity' to automatically block swear words in submitted questions — ideal for school events or public audiences.",
-      "targetSelector": "[data-testid=\"editor-side-right-qna-profanity-filter-checkbox\"]",
+      "targetSelector": ".right-panel-container",
       "pauseMs": 5000,
       "action": null
     },
@@ -70,8 +95,8 @@
       "id": "qa-settings-moderation",
       "path": "/presentation/*",
       "title": "Moderate questions before they appear",
-      "description": "Enable 'Moderate audience’s questions' to approve each question privately before it shows on screen. A dedicated moderation link lets you or a co-host filter questions in a separate tab.",
-      "targetSelector": "[data-testid=\"editor-side-right-qna-moderation-input-checkbox\"]",
+      "description": "Enable 'Moderate audience's questions' to approve each question privately before it shows on screen. A dedicated moderation link lets you or a co-host filter questions in a separate tab.",
+      "targetSelector": ".right-panel-container",
       "pauseMs": 7500,
       "action": null
     },
@@ -80,7 +105,7 @@
       "path": "/presentation/*",
       "title": "Let the audience see each other's questions",
       "description": "When on, each audience member can see all submitted questions on their own device — great for transparency and encouraging upvotes.",
-      "targetSelector": "[data-testid=\"editor-side-right-qna-audience-see-each-other-checkbox\"]",
+      "targetSelector": ".right-panel-container",
       "pauseMs": 5000,
       "action": null
     },
@@ -89,7 +114,7 @@
       "path": "/presentation/*",
       "title": "Allow anonymous questions",
       "description": "Turn this on to let participants skip entering their name. It encourages more candid questions in sensitive topics or team retrospectives.",
-      "targetSelector": "[data-testid=\"editor-side-right-qna-allow-anonymous-checkbox\"]",
+      "targetSelector": ".right-panel-container",
       "pauseMs": 5500,
       "action": null
     },
@@ -100,28 +125,6 @@
       "description": "That's your Q&A slide set up with all the right settings. Hit 'Present' and your audience starts sending questions on their phones — you organise and answer them all from one screen.",
       "targetSelector": ".aha-button-present",
       "pauseMs": 7000,
-      "action": null
-    },
-    {
-      "id": "qa-preview-enter",
-      "path": "/presentation/*",
-      "title": "See the audience view",
-      "description": "Click Preview to see exactly what your participants experience when the Q&A slide is live.",
-      "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
-      "pauseMs": 500,
-      "action": {
-        "type": "click",
-        "selector": "[data-testid=\"editor-middle-preview-button\"]",
-        "hint": "Click Preview to see the audience view"
-      }
-    },
-    {
-      "id": "qa-audience-view",
-      "path": "/presentation/*",
-      "title": "What your audience sees",
-      "description": "In Preview you can see the audience experience: a clean text box where participants type their questions live. This is what shows on every phone when your Q&A slide is active.",
-      "targetSelector": ".iframe-wrapper-audience",
-      "pauseMs": 6000,
       "action": null
     }
   ]
