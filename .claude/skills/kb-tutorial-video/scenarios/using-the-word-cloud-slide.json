@@ -69,12 +69,56 @@
       }
     },
     {
+      "id": "wc-preview-submit",
+      "path": "/presentation/*",
+      "title": "This is your audience's phone",
+      "description": "In the participant screen on the right, audience members type their words and tap Submit. Watch the cloud respond in real time on the presenter screen.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 10000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-word-cloud-word-input\"]",
+          "index": 0,
+          "type": "type",
+          "value": "amazing",
+          "label": "type word 1 — amazing",
+          "pauseAfterMs": 600
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-word-cloud-word-input\"]",
+          "index": 1,
+          "type": "type",
+          "value": "amazing",
+          "label": "type word 2 — amazing (repeat for larger cloud size)",
+          "pauseAfterMs": 600
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-word-cloud-word-input\"]",
+          "index": 2,
+          "type": "type",
+          "value": "exciting",
+          "label": "type word 3 — exciting",
+          "pauseAfterMs": 600
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-word-cloud-submit-button\"]",
+          "label": "submit",
+          "pauseAfterMs": 3500
+        }
+      ]
+    },
+    {
       "id": "wc-preview-cloud",
       "path": "/presentation/*",
-      "title": "Watch the cloud come alive",
-      "description": "As each response arrives, a new word pops into the cloud in a random colour. The most-submitted word grows biggest and moves to the centre — no two sessions look the same.",
+      "title": "The cloud builds in real time",
+      "description": "Every word lands in the cloud the moment it's submitted — the most popular grows biggest and moves to the centre. No two sessions look the same.",
       "targetSelector": ".iframe-wrapper-presenter",
-      "pauseMs": 8000,
+      "pauseMs": 4000,
       "action": null
     },
     {
