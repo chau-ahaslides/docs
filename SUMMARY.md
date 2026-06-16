@@ -74,6 +74,7 @@
 ## Integrations
 
 * [AhaSlides for Microsoft Teams](KB-Teams-Add-in.md)
+* [Using the AhaSlides App on Zoom](using-the-ahaslides-app-on-zoom.md)
 * [AhaSlides MCP — Getting Started Guide](ahaslides-mcp-getting-started-guide.md)
 
 ## Teams and Enterprise

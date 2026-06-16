@@ -130,10 +130,10 @@ AhaSlides connects with the tools you already use:
 | **PDF** | Import a PDF as static slides and add interactive elements in between | [Importing a PowerPoint or PDF](importing-a-powerpoint-or-pdf-file-from-your-computer.md) |
 | **Website / iFrame** | Embed an AhaSlides presentation directly on any webpage using an iframe | [Embedding AhaSlides to your website](embedding-ahaslides-to-your-website.md) |
 | **AI / MCP** | Let AI assistants (e.g. Claude) create and manage AhaSlides presentations on your behalf via the MCP server | [AhaSlides MCP — Getting Started](ahaslides-mcp-getting-started-guide.md) |
-| **Zoom** | Present AhaSlides inside a Zoom meeting so participants can respond without leaving the call | No KB article yet |
+| **Zoom** | Present AhaSlides inside a Zoom meeting so participants can respond without leaving the call | [Using the AhaSlides App on Zoom](using-the-ahaslides-app-on-zoom.md) |
 | **RingCentral** | Run interactive presentations within RingCentral meetings | No KB article yet |
 
-> **Note on Zoom and RingCentral:** These integrations are listed on the [AhaSlides integrations page](https://ahaslides.com/integrations/) but do not yet have dedicated KB articles. Check the integrations page for setup instructions.
+> **Note on RingCentral:** This integration is listed on the [AhaSlides integrations page](https://ahaslides.com/integrations/) but does not yet have a dedicated KB article. Check the integrations page for setup instructions.
 
 ---
 
