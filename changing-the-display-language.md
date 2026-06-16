@@ -28,7 +28,7 @@ You can create, navigate, and display presentations in multiple languages on Aha
 Walk through both language settings and see the audience view in under a minute
 {% endembed %}
 
-## Changing the Language in the AhaSlides Presenter App
+## Changing the language in the AhaSlides presenter app
 
 The presenter interface language controls menus, buttons, and labels — everything you see as a presenter.
 
@@ -40,7 +40,7 @@ Currently, the presenter app is available in **27 languages**:
 
 Čeština, Deutsch, Nederlands, English, Español, Français, Hrvatski, Íslenska, Italiano, Latviešu, Lietuvių, Magyar, Norsk, Polski, Português, Română, Shqip, Slovenčina, Srbija (Latinica), Tiếng Việt, Български, Eλληνικά, Pусский, Српски (Ћирилица), 中文, 日本語, 한국어
 
-## Changing the Display Language for the Audience
+## Changing the display language for the audience
 
 The audience display language controls what participants see on their devices — questions, answer options, and the join screen. This setting is per-presentation and is found in the presentation Settings.
 

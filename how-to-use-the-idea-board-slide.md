@@ -88,7 +88,7 @@ Once you're ready to organize:
 3. **Create new groups**: Click the **+** button next to the last group (or press **G** on your keyboard).
 4. **Delete groups**: Click the 3-dot menu next to a group's name to delete it (**empty groups** only).
 
-## How to use the Vote function
+## How to use the vote function
 
 If the Vote option is enabled, you can move to the **Vote** stage by:
 

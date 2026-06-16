@@ -7,7 +7,7 @@
 
 ---
 
-## Quick Reference
+## Quick reference
 
 | Slug | Category | Plan | MCP Actions? |
 |------|----------|------|--------------|
@@ -78,7 +78,7 @@
 
 ---
 
-## 📚 Getting Started
+## 📚 Getting started
 
 ### what-is-ahaslides
 **Plan:** Free | **MCP Actions:** No
@@ -102,7 +102,7 @@
 
 ---
 
-## 🎮 Using Slide Types
+## 🎮 Using slide types
 
 ### how-to-make-and-run-a-quiz
 **Plan:** Free | **MCP Actions:** ✅ Yes
@@ -192,7 +192,7 @@
 
 ---
 
-## ⚙️ Features and Functions
+## ⚙️ Features and functions
 
 ### collecting-audience-information
 **Plan:** Pro | **MCP Actions:** ✅ Yes
@@ -287,7 +287,7 @@
 
 ---
 
-## 👥 Teams & Enterprise
+## 👥 Teams & enterprise
 
 ### managing-your-team-members
 **Plan:** Enterprise | **MCP Actions:** No
@@ -306,7 +306,7 @@
 
 ---
 
-## 💳 Price Plans
+## 💳 Price plans
 
 ### what-is-included-in-the-free-account
 **Plan:** Free | **MCP Actions:** No
@@ -359,7 +359,7 @@
 
 ---
 
-## 👤 Account Management
+## 👤 Account management
 
 ### change-or-reset-your-password
 **Plan:** All | **MCP Actions:** No
@@ -388,7 +388,7 @@
 
 ---
 
-## 🧾 After Purchase
+## 🧾 After purchase
 
 ### billing-information-and-invoicereceipt
 **Plan:** All | **MCP Actions:** No
@@ -407,7 +407,7 @@
 
 ---
 
-## 🔧 MCP Tools Reference (AhaSlides)
+## 🔧 MCP tools reference (AhaSlides)
 
 > Quick reference for all AhaSlides MCP tools used across articles.
 
@@ -421,7 +421,7 @@
 | `skip_slide_when_presenting(slide_id, skip_when_presenting)` | Show/hide a slide during live presentation |
 | `get_presentation_detail_tool(presentation_id)` | Get full details of a presentation including all slide IDs |
 
-### Slide Types Available via `create_slides`
+### Slide types available via `create_slides`
 | slide_type | Description |
 |-----------|-------------|
 | `pick_answer_quiz` | Multiple choice quiz — mark correct answers |

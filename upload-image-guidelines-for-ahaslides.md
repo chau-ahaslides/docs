@@ -24,7 +24,7 @@ description: "For the best image quality on AhaSlides, please follow the recomme
 
 For the best image quality on AhaSlides, please follow the recommendations below.
 
-## Supported Image Formats
+## Supported image formats
 
 AhaSlides supports the following image formats:
 
@@ -34,11 +34,11 @@ AhaSlides supports the following image formats:
 
 After upload, images are automatically optimized and converted to **.webm** format to improve performance and playback speed.
 
-## Maximum File Size
+## Maximum file size
 
 The maximum upload file size is **15 MB**.
 
-## Image Dimensions & Aspect Ratio
+## Image dimensions & aspect ratio
 
 Images will look best when their aspect ratio closely matches your presentation screen ratio.
 
@@ -49,7 +49,7 @@ The standard screen ratios are:
 
 You may use other dimensions, but matching your presentation ratio will provide the best visual results.
 
-## Resolution Recommendations
+## Resolution recommendations
 
 For full-screen background images, we recommend using **2K resolution (2560 × 1440)**. This ensures a sharp display while maintaining smooth performance, even on large screens or projectors.
 
@@ -57,10 +57,10 @@ The maximum supported resolution after processing is **2560 × 1440 (2K)**.
 
 Currently, *Original quality* **background rendering is not supported**.
 
-## Image Compression & Quality
+## Image compression & quality
 
 All uploaded images are automatically optimized to ensure smooth presentation performance. There is currently **no option to disable compression** or preserve original quality after upload.
 
-## Presentation Rendering
+## Presentation rendering
 
 During playback, presentations are rendered **locally on the presenter's device**, not streamed from AhaSlides' servers. This helps ensure stable and responsive performance during live sessions.

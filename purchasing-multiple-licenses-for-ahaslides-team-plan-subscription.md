@@ -24,15 +24,15 @@ The AhaSlides Team Plan offers a powerful collaborative experience, allowing use
 
 # How to Purchase Multiple Licenses for Your Team Plan
 
-## **1. Log in to Your AhaSlides Account**
+## **1. Log in to your AhaSlides account**
 
 Visit the AhaSlides website and [log in](https://presenter.ahaslides.com/pages/login) to your existing account. If you don't have an account, you'll need to create one before proceeding.
 
-## **2. Select the Team Plan from Pricing Details**
+## **2. Select the team plan from pricing details**
 
 There are two convenient methods to acquire the Team Plan subscription:
 
-### **2.1. AhaSlides Pricing & Plans page**
+### **2.1. AhaSlides pricing & plans page**
 
 Click on the link provided to view pricing details [Pricing & Plans | Flexible & Great Value | AhaSlides](https://ahaslides.com/pricing/). This will direct you to the AhaSlides Pricing & Plans page, where you can explore different subscription options.
 
@@ -42,21 +42,21 @@ After selecting the desired number of licenses, the total amount for the subscri
 
 Once you are satisfied with your selection, click the **'Buy Now'** button to initiate the purchase process. This will redirect you to the payment page.
 
-### **2.2. Your "My Plan" Page**
+### **2.2. Your "my plan" page**
 
 While logged into your account, access the [My Plan](https://presenter.ahaslides.com/apps/user-plan) page and scroll down to find the Team plan section. Here, you can choose a plan and the number of licenses to suit the size of your team.
 
 Upon satisfaction with your selection, click '**Buy Now**', then you will be redirected you to the payment page.
 
-### **2.3. Your Team Members Page**
+### **2.3. Your team members page**
 
 While logged into your account, go to the [Team Members](https://presenter.ahaslides.com/apps/team/members) page and click on **Upgrade team** or **Upgrade for more**. This will take you directly to the [My plan page](https://presenter.ahaslides.com/apps/user-plan).
 
-## **3. Enter Payment Information:**
+## **3. Enter payment information:**
 
 On the payment page, enter your credit card or debit card details as prompted. Double-check the information to ensure accuracy. Once entered, click on the **'Subscribe'** button to proceed with the payment.
 
-## **4. Set Up Team Plans and Add Members:**
+## **4. Set up team plans and add members:**
 
 Upon successful payment, you will receive a confirmation email from AhaSlides. This email will contain essential instructions on setting up your team plans and adding team members.
 

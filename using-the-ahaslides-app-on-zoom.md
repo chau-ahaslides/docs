@@ -35,7 +35,7 @@ The AhaSlides app for Zoom lets you seamlessly integrate interactive presentatio
 
 ---
 
-## Installing the AhaSlides App
+## Installing the AhaSlides app
 
 1. Open your Zoom Workplace or Webinar app and sign in.
 2. Go to **Apps** > **Add apps**.
@@ -45,7 +45,7 @@ The AhaSlides app for Zoom lets you seamlessly integrate interactive presentatio
 
 ---
 
-## Hosting a Presentation in a Zoom Meeting
+## Hosting a presentation in a Zoom meeting
 
 1. Start or join your Zoom meeting.
 2. Open the AhaSlides app from **Zoom Apps**.
@@ -59,7 +59,7 @@ The AhaSlides app for Zoom lets you seamlessly integrate interactive presentatio
 
 ---
 
-## How Participants Join
+## How participants join
 
 Participants have three ways to open the AhaSlides panel during the meeting:
 
@@ -71,7 +71,7 @@ Once connected, participants submit their answers in the AhaSlides controller wi
 
 ---
 
-## Uninstalling the App
+## Uninstalling the app
 
 1. Log in to the [Zoom App Marketplace](https://marketplace.zoom.us).
 2. Go to **Manage** > **Added apps**.
@@ -79,7 +79,7 @@ Once connected, participants submit their answers in the AhaSlides controller wi
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Do participants need to install the AhaSlides app?**
 No. Participants can accept the host's invitation or open AhaSlides from their Zoom Apps panel. They do not need a separate AhaSlides account.
@@ -95,7 +95,7 @@ No. The AhaSlides Zoom integration is only supported on the Zoom Workplace/Webin
 
 ---
 
-## Related Articles
+## Related articles
 
 - [AhaSlides for Microsoft Teams](KB-Teams-Add-in.md)
 - [Using your Google Slides Presentation with AhaSlides](using-your-google-slides-presentation-with-ahaslides.md)

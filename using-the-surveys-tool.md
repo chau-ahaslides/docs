@@ -28,7 +28,7 @@ AhaSlides Surveys let you collect structured, multi-question feedback — build 
 
 ---
 
-## Step 1: Creating a Survey
+## Step 1: creating a Survey
 
 Surveys live in their own section of your AhaSlides dashboard, separate from your presentations.
 
@@ -40,7 +40,7 @@ Surveys live in their own section of your AhaSlides dashboard, separate from you
 
 ---
 
-## Step 2: Adding and Editing Questions
+## Step 2: adding and editing questions
 
 Inside the Survey editor you can mix as many question types as you need:
 
@@ -60,11 +60,11 @@ Your changes auto-save as a **Draft** until you publish.
 
 ---
 
-## Step 3: Publishing and Sharing
+## Step 3: publishing and sharing
 
 While a Survey is a Draft it is not collecting responses. When you are happy with your questions, publish it — the status changes to **Published** and it is ready for respondents.
 
-### Method 1 — Run it as a standalone Survey
+### Method 1 — run it as a standalone Survey
 
 1. Open the Survey's sharing options and copy the link, or use the QR code.
 2. Send the link to your respondents (email, Slack, LMS, poster — anywhere).
@@ -72,7 +72,7 @@ While a Survey is a Draft it is not collecting responses. When you are happy wit
 
 Responses collect for as long as the Survey stays open. To stop accepting new responses, close the Survey (status returns to Draft).
 
-### Method 2 — Run a Survey inside your presentation
+### Method 2 — run a Survey inside your presentation
 
 Use this when you want structured feedback from your audience while they are still in the room — end-of-session forms, mid-workshop check-ins, event feedback.
 
@@ -87,7 +87,7 @@ Use this when you want structured feedback from your audience while they are sti
 
 ---
 
-## Checking your Survey Responses
+## Checking your Survey responses
 
 You can check results at any time:
 
@@ -96,7 +96,7 @@ You can check results at any time:
 
 ---
 
-## Two Ways to Run the Same Survey
+## Two ways to run the same Survey
 
 **Two ways to run the same Survey:**
 
@@ -111,7 +111,7 @@ Build a Survey once, then share a standalone link or drop it live into your pres
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **What is the difference between a Survey and a Poll slide?**
 A Poll slide asks one question at a time, results show live on the big screen, and everyone answers together while you present. A Survey is a multi-question form on one page — participants scroll through all the questions and submit once. Use polls for in-the-moment reactions; use a Survey when you want structured feedback across several questions.

@@ -24,17 +24,17 @@ description: "AhaSlides offers a seamless feature that lets users effortlessly t
 
 AhaSlides offers a seamless feature that lets users effortlessly turn their documents, images, PowerPoint (PPT), or PDF files into interactive quizzes with our AI-powered tool. This functionality not only saves time but also enhances engagement during training sessions. Here's how it works:
 
-## Click on the Import Button:
+## Click on the import button:
 
 - Locate and click the **'Import'** button on the **My Presentation** dashboard
 
 - Or in the editing screen.
 
-## Upload and Generate:
+## Upload and generate:
 
 Click the upload area to select a file, or drag the file you want to import into it.
 
-## Complete Import:
+## Complete import:
 
 After selecting your file, you can choose what you want to do with it.
 
@@ -50,7 +50,7 @@ After selecting an option, click **Start** to complete the import.
 
 If you pick **Import and generate slides with AI** or **Generate interactive slides**, the AI will read the file and create slides based on its contents.
 
-## Benefits of Using AhaSlides for Quiz Creation
+## Benefits of using AhaSlides for Quiz creation
 
 - **Time Efficiency:** Quickly transform existing presentations into interactive quizzes.
 - **Enhanced Engagement:** Interactive quizzes make training sessions more engaging.

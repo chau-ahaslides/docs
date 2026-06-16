@@ -22,11 +22,11 @@ description: "The One-Time plan triggers when one of your presentations reaches 
 
 # One-Time Plans
 
-## 15-Second Explainer ⏰: One-Time Plan
+## 15-Second explainer ⏰: one-time plan
 
 > 📹 [Watch video](https://www.youtube.com/embed/rCY0i16layQ)
 
-## How Does it Work?
+## How does it work?
 
 The One-Time plan will trigger when one of your presentations **reaches 8 participants** and will **stay active for 24 hours**. You can have an unlimited number of presentations during that 24 hours. Pressing the *'present'* button won't affect your plan at all.
 

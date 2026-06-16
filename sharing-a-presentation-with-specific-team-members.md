@@ -24,7 +24,7 @@ description: "Learn how to share a presentation with specific members of your te
 
 Sharing a presentation in the [Team Workspace](managing-your-team-members.md) makes it accessible to everyone in your team, but here's how to **share it with specific members of your team**, as opposed to the *whole* team.
 
-## From the Editor
+## From the editor
 
 Click on the presentation you would like to share. On the editor....
 
@@ -39,11 +39,11 @@ Some of the other features here are...
 2. **Include response data**. Check to send all responses, emoji reactions, and Q&A questions from your audience (if any) along with the presentation.
 3. **Small tick in the right-hand column.** This shows that you have already sent a copy of the presentation to this team member. Hover over the check to see the date you sent it.
 
-## From the Dashboard
+## From the dashboard
 
 You can also do this from the dashboard by clicking the 3-dot menu on the right of the presentation name, then clicking **Share**. From here you can simply follow the steps above.
 
-## Where does the Presentation go?
+## Where does the presentation go?
 
 Once you've sent a copy of your presentation to your team member(s), it will arrive in their **Personal Workspace** in the usual **My Presentations** tab.
 

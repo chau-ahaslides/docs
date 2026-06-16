@@ -24,19 +24,19 @@ description: "Learn how to show or hide the link that invites participants to si
 
 You can choose to show or hide a link that invites your participants to download your slides at the end of your presentation.
 
-## What is the Audience Get slides button?
+## What is the audience get slides button?
 
 The audience Get slides button is a small banner that your audience will see on their devices when you are presenting the final slide of your presentation. The banner will invite your audiences to download your slides
 
 **The Get slides button appears at the final slide of all slide types except for the 'Content' slide.**
 
-## How to Hide the Audience Get slides button
+## How to hide the audience get slides button
 
 1. Navigate to **Settings** in the top toolbar of the editor.
 1. Click on **Other settings**
 1. Uncheck the checkbox that says **Allow audience to download the slides**.
 
-## How to Show the Audience Get slides button
+## How to show the audience get slides button
 
 - To enable your audience to download your slides, ensure that the '**Allow audience to download the slides**' checkbox is selected.
 - Additionally, if you wish to have control over this feature and require approval before downloads, check the '**Require my approval**' box located under '**Allow audience to download the slides**'. This option grants you the authority to approve or deny slide downloads by your audience.

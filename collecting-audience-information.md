@@ -28,9 +28,9 @@ Collect audience information like names, email addresses and names of organisati
 
 **Please note** that while this feature is available on all paid plans, only **certain paid plans** can see collected participant information in the [Excel export](https://help.ahaslides.com/portal/en/kb/articles/exporting-to-excel) after the presentation is over: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
 
-## How to Collect Audience Info
+## How to collect audience info
 
-### 1. In the Setting menu:
+### 1. In the setting menu:
 
 a. Head to the **Settings** menu and click on **Collect audience info**.
 
@@ -38,7 +38,7 @@ b. Check the box labelled **Ask participants for info before they join** - This 
 
 c. Start by writing the heading to your form, then you can click the  button next to **Add fields** to select information fields to add.
 
-### 2. In an Open-Ended or Brainstorm slide
+### 2. In an Open-ended or Brainstorm slide
 
 a. When editing an Open-Ended or Brainstorm slide, click the  button next to **Collect audience info.** This option will allow you to collect information from participants when they answer this particular slide.
 
@@ -83,7 +83,7 @@ When participants join your presentation, they will see a form prompting them to
 
 > When participants join, they will see the same background as the slide the presenter is displaying at that moment.
 
-## Seeing Collected Info in the Excel Export
+## Seeing collected info in the Excel export
 
 **Once participants have entered their info, it will be stored in the Excel file that contains your full presentation report.**
 

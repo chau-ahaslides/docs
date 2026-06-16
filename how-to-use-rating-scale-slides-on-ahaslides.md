@@ -26,7 +26,7 @@ description: "Rating Scale slide is a great one to use if you're looking for mor
 
 Rating Scale slide is a great one to use if you're looking for more nuanced responses that you can't get from a simple 'yes or no' option on a multiple-choice slide.
 
-## How do Rating Scale Slides Work?
+## How do Rating Scale slides work?
 
 1. **The host** poses a broad question, offers specific statements to that question, and asks the audience to rate their opinions on those specific statements on a sliding scale.
 
@@ -34,9 +34,9 @@ Rating Scale slide is a great one to use if you're looking for more nuanced resp
 
 3. **The resulting data** is shown on a graph that reveals what and how many responses each statement received. It also shows the average numbered response for each statement.
 
-## Setting up a Rating Scale Slide
+## Setting up a Rating Scale slide
 
-### #1 – Your Question
+### #1 – Your question
 
 **Pretty self-explanatory; 'your question' is the main question you want to ask your audience.**
 
@@ -78,14 +78,14 @@ When presenting, you can click the "Submission closed" icon to enable the audien
 
 Hides all of the results until the host presses the 'show results' button. You can click "Apply to all questions" to apply this feature to all questions.
 
-### #7 – Other Settings
+### #7 – Other settings
 
 **There are 2 'other settings' on an AhaSlides scale slide that you can choose to check on or off:**
 
 1. **Show the average line for all statements**: Displays a vertical line that reveals the average response number across all statements of your broad question.
 2. **Must rate all statements**: Removes the 'skip' option for statements and makes it mandatory to rate every statement.
 
-## Understanding your Response Data
+## Understanding your response data
 
 Once you receive response data, it will look something like this:
 

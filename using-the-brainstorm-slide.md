@@ -41,7 +41,7 @@ In the AhaSlides editor, click *New slide*, choose the **Brainstorm** slide and 
 
 When you present, your audience moves through **3 stages:**
 
-### Stage 1: Submitting ideas
+### Stage 1: submitting ideas
 
 Participants write their ideas and fill in any additional fields you set up. Ideas appear on the presenter's screen in the order they are submitted.
 
@@ -49,7 +49,7 @@ Up to 200 ideas can be submitted per slide.
 
 *Note:* You can show or hide submissions on the screen at any time by clicking the eye icon under *Submission*.
 
-### Stage 2: Voting
+### Stage 2: voting
 
 When everyone has submitted, click *Next: Voting* to open the voting stage. Participants see all submitted ideas and vote for their favourites.
 
@@ -57,7 +57,7 @@ You can adjust how many votes each participant gets in the slide settings.
 
 *Note:* You can hide the vote count during voting by clicking the eye icon under *Voting*, which makes for a more dramatic reveal at the end.
 
-### Stage 3: Result
+### Stage 3: result
 
 Click *Next: Result* to rank all submissions by vote count. You can click any idea to enlarge it on screen.
 

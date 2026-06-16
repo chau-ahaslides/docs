@@ -29,7 +29,7 @@ You can now allow multiple presenters to run the same presentation at the same t
 > - The **Present role** **will not work on the PowerPoint add-in**. If you would like multiple users to use the same presentation at once, they will need their own copies.
 > - **Features of the owner's plan/subscription will not be shared through the collaboration feature**. If you require a plan for multiple users, we recommend checking out our Team Plan: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 
-## Invite your collaborators as Presenter
+## Invite your collaborators as presenter
 
 There are two ways to add collaborators to your presentation:
 
@@ -40,7 +40,7 @@ Either of these options will take you to the invitation menu. From here, you can
 
 Collaborators will then be able to use your presentation at any time, each with their own unique join link and QR code. Even though they're accessing the same presentation, each session is treated separately and runs independently from the others.
 
-## How does Presenter Role work?
+## How does presenter role work?
 
 Collaborator added as **Presenter** can find your presentation in the [**Share with me**](https://presenter.ahaslides.com/apps/shared-presentations) page after logging in.
 

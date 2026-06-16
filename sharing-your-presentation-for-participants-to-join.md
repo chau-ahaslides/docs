@@ -46,7 +46,7 @@ If the participants have the access code, they can go here to enter the code and
 
 You can also find your URL access code by clicking on **Share** in the top-right of the editor. In the **Invite Audience** tab, you will find a link under **Audience can join at**. You can click the **Copy** button here to copy the code to your clipboard...
 
-### Changing your URL Access Code
+### Changing your URL access code
 
 > This feature is available to **Pro plan** users.
 
@@ -60,23 +60,23 @@ A customised access code must...
 
 Once you've updated your code and it's been accepted, click the **'Save'** button.
 
-### Your Permanent Access Code
+### Your permanent access code
 
 In the Share tab of the presentation editor, you can also **copy your permanent access code**. This long URL code will also provide your participants access to your presentation, but this link cannot be changed. No matter how many times you change your short access code, your long URL code will remain the same.
 
 To get the link, click the **three-dot** icon next to the **Copy** button, which will reveal the **Copy permanent link**
 
-## Sharing the QR Code
+## Sharing the QR code
 
 > Each presentation will have **only one unique QR code**. This QR code **does not change**, even if you change the URL access code.
 
 There are two ways to share the unique QR code of your presentation with your participants.
 
-### Presentation Side Column
+### Presentation side column
 
 When presenting, click anywhere in the top bar (or press **'Q'** on your keyboard) to reveal a separate column on the left containing your QR code. This column will stay here while you present your slides (until you manually close it), allowing participants to scan the code with their phone cameras at any time during your session.
 
-### QR Code Slide
+### QR code slide
 
 You can create a slide in your presentation that reveals the QR code to your audience when you arrive at that slide.
 

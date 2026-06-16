@@ -29,7 +29,7 @@ At AhaSlides, we make it convenient for customers to access and download invoice
 
 > **Note:** Our company is a **non-GST registered** company - we don't collect any tax from our customers. Therefore, **we don't have tax invoices**.
 
-## Change Billing information
+## Change billing information
 
 1. Log in to your AhaSlides account.
 2. Click on your profile image and select '**Billing**'
@@ -41,7 +41,7 @@ Or go to the [My Plan](https://presenter.ahaslides.com/apps/user-plan) page, the
 
 - Fill in the required billing details, then scroll down and click '**Save**' to confirm the changes.
 
-## Download Invoice or Receipt with Billing information
+## Download invoice or receipt with billing information
 
 Once you've updated your billing information, you can effortlessly download your invoices or receipts:
 

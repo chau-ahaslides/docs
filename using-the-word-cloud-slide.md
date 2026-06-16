@@ -58,13 +58,13 @@ The settings panel gives you six options to customise how your Word Cloud behave
 
 **6. Filter profanity**: Automatically censors English-language swear words as they arrive. Checking this applies the filter across your entire presentation.
 
-### Step 3: Present and watch the cloud build
+### Step 3: present and watch the cloud build
 
 Click **Present** to go live. Participants join on their phones, type up to their allowed number of words, and hit Submit. Each new response appears in the cloud in a random colour — the most-submitted word grows largest and moves to the centre. Words around it shift to new random positions with every update.
 
 You can delete any word in the cloud by clicking it during the live session. If you remove the most popular word, the next most common one takes centre place.
 
-## Smart Grouping your Word Clouds
+## Smart grouping your word clouds
 
 On AhaSlides, you have the capability to intelligently group word clouds. Enhancing the presenter's ability to interpret audience responses effectively. With Smart Grouping, words with similar meanings are clustered together, enabling a swift understanding of prevalent patterns within the responses.
 

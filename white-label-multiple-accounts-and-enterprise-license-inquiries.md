@@ -22,11 +22,11 @@ description: "If you're considering buying more than 1 AhaSlides license at once
 
 # White Label, Multiple Accounts and Enterprise License inquiries
 
-### Multiple accounts - Team accounts - Enterprise Deals
+### Multiple accounts - team accounts - enterprise deals
 
 If you're considering to buy more than 1 AhaSlides license at once, please contact us at [hi@ahaslides.com](mailto:hi@ahaslides.com).
 
-### White Label
+### White label
 
 With the White Label license, there will be no mention of AhaSlides at all, so it's like you're using AhaSlides as your own software.
 

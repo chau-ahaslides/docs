@@ -37,13 +37,13 @@ No API key needed — you'll sign in with your AhaSlides account when you connec
 
 # Setup: Adding AhaSlides to Claude Code
 
-## Option 1: Quick Add via CLI
+## Option 1: quick add via CLI
 
 Run this command in your terminal:
 
 > `claude mcp add ahaslides --transport http https://mcp.ahaslides.com/mcp`
 
-## Option 2: Manual Configuration
+## Option 2: manual configuration
 
 Add the following to your Claude Code MCP settings (settings.json or .mcp.json):
 
@@ -58,7 +58,7 @@ Add the following to your Claude Code MCP settings (settings.json or .mcp.json):
 }
 ```
 
-## Signing In
+## Signing in
 
 The first time you use an AhaSlides tool, Claude Code will open a browser window for you to sign in with your AhaSlides account (email/password, Google, or Microsoft). After signing in, you're all set.
 

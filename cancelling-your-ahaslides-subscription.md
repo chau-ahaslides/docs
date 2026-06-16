@@ -30,7 +30,7 @@ Monthly plans will **renew automatically after 1 month**, and Yearly plans will 
 
 You can **turn off auto-renewal anytime** on AhaSlides, by using:
 
-### 1. Using the 'Cancel subscription' button on the [My Plan](https://presenter.ahaslides.com/apps/user-plan) page.
+### 1. Using the 'cancel subscription' button on the [my plan](https://presenter.ahaslides.com/apps/user-plan) page.
 
 > **Note:** If this option doesn't work, please try the second option [below](#2_Using_the_Cancel_subscription_button_on_Billing_page)
 
@@ -39,7 +39,7 @@ After clicking the button, there will be 2 options that you can choose from:
 1. **Get extra free month**: you can get **1 month** for Monthly plans or **2 months** for Yearly plans if you choose this option instead of cancelling your AhaSlides Subscription.
 1. **Continue to cancel**: this will turns off the auto-renewal - you can of course still use AhaSlides until the end of the period you have paid for! With that in mind, you are free to make the renewal cancellation whenever you like.
 
-### 2. Using the 'Cancel subscription' button on 'Billing' page
+### 2. Using the 'cancel subscription' button on 'billing' page
 
 To find this option, please click on your profile image and select '**Billing**'
 

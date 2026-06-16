@@ -28,7 +28,7 @@ If your credit card was declined while making a payment, this is normally a resu
 
 If this happens to you, please make sure your credit card information is correct. In case of a transaction failure, we recommend first trying an alternative credit card, or giving it another try with the same credit card again but at a later time. In most cases, this would solve the issue.
 
-### PayPal Payment
+### PayPal payment
 
 Moreover, when your account has enough balance but the system still shows the following indication - '*Your card has insufficient funds'* you can continue your transaction with PayPal.
 

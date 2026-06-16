@@ -34,7 +34,7 @@ Collaborative editing lets you work together on presentations or folders with ot
 
 # Adding your Collaborators
 
-## 1. Add Collaborators to your Presentation
+## 1. Add collaborators to your presentation
 
 There are two ways to add collaborators to your presentation:
 
@@ -60,7 +60,7 @@ To use it:
 
 When recipients open the link, they will be prompted to sign in (if they are not already). After signing in, they will gain access to your presentation as an **Editor**.
 
-## 2. Add Collaborators to your Folder
+## 2. Add collaborators to your folder
 
 a. From the [**My Presentation**](https://presenter.ahaslides.com/apps/presentations) view, locate and select the folder you wish to share.
 

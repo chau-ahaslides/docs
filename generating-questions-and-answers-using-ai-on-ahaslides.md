@@ -26,7 +26,7 @@ AhaSlides now offers AI-powered answer generation for quizzes and poll helping y
 
 > For a complete guide to creating and running quizzes on AhaSlides, see our article: [How to Make and Run a Quiz](how-to-make-and-run-a-quiz.md).
 
-## How to Generate Questions Using AI
+## How to generate questions using AI
 
 1. **Create a Presentation**
    Start by creating a presentation and giving it a name.
@@ -37,7 +37,7 @@ AhaSlides now offers AI-powered answer generation for quizzes and poll helping y
 
 > Currently, AI question generation is available on all quiz slides.
 
-## How to Generate Answers Using AI
+## How to generate answers using AI
 
 1. **Create a Quiz or Poll slide**
    Start by creating any quiz or Poll slide within your presentation.

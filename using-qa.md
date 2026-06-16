@@ -31,13 +31,13 @@ Watch the quick tutorial below to see how to set up a Q&A slide and configure al
 Set up a Q&A slide on AhaSlides and configure all settings
 {% endembed %}
 
-## How Does Q&A Work?
+## How does Q&A work?
 
 On AhaSlides, 'Q&A' refers your audience sending you questions during a presentation, you seeing those questions and then answering them vocally.
 
 There are **2 ways** in which you can hold a Q&A with your audience...
 
-### 1. The Q&A Slide
+### 1. The Q&A slide
 
 If you want questions from your audience to come at a certain time in your presentation, you can set up a Q&A slide to gather those questions and address them one by one. Participants will only be able to send you questions while you're presenting this slide.
 
@@ -49,7 +49,7 @@ If your presentation includes more than one Q&A slide, **all submitted questions
 
 For example, a question submitted on one Q&A slide will also be visible on any other Q&A slide in the same presentation. This makes it easy to collect questions throughout your session and address them whenever the timing is right.
 
-### 2. On all Slides
+### 2. On all slides
 
 > This function is only available on **Essential, Pro, Enterprise** and **Edu Large** plans
 
@@ -63,7 +63,7 @@ To set this up, click **Settings** in the right menu bar, then find the **'When 
 
 It's possible to select the **On all slides** setting and have a dedicated Q&A slide at the same time. This way, your audience can send you questions throughout your presentation and you can address them all when you reach the slide.
 
-## How to Arrange Q&A Questions
+## How to arrange Q&A questions
 
 When you open up the Q&A interface, you will see any unanswered questions in the centre and a column of **5 filters** on the left. The filter you choose will affect the order in which you see the questions in the centre of the interface. Those filters are...
 
@@ -77,7 +77,7 @@ When you open up the Q&A interface, you will see any unanswered questions in the
 
 5. **Answered** - All the questions you've **Marked as answered**. Once you're done answering a question, you can mark it as answered by hovering over it on the interface and clicking the button labelled 'mark as answered'.
 
-## Q&A Settings
+## Q&A settings
 
 Regardless of whether you hold your Q&A on all slides or only on a dedicated Q&A slide, you can change the same settings. Find them in the **Content** panel of your Q&A slide, or in **Settings** > **Q&A with your audience**.
 

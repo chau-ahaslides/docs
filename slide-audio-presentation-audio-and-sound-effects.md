@@ -28,7 +28,7 @@ Enhance your presentations on AhaSlides with slide or presentation-level audio, 
 
 # Audio
 
-## How Audio Works
+## How audio works
 
 On AhaSlides, you can set audio to play on each slide as you present (**Slide Audio**) or throughout the entire presentation (**Presentation Audio**).
 
@@ -45,7 +45,7 @@ It is possible to have both **Presentation Audio** and **Slide Audio** set up in
 
 > **Note:** Please note that it is not possible to set up audio on the **Spinner Wheel**, **YouTube slide**, and **QR Code slide**.
 
-## How to Set Up Slide Audio
+## How to set up slide audio
 
 1. Select the slide on which you would like to play the audio and click the **Audio** section on the right side of the editing screen.
 2. Under the **Slide** tab, either click the dropdown menu to select a song from the AhaSlides audio library or press the **Upload** button to embed your own audio (**mp3** format only with a maximum file size of **15mb**).
@@ -58,7 +58,7 @@ It is possible to have both **Presentation Audio** and **Slide Audio** set up in
 
 > **Note:** Please note that **some devices** may **prevent audio** tracks from **automatically playing**. In that case, the participant will **see a prompt to press the play button**.
 
-## How to Set Up Presentation Audio
+## How to set up presentation audio
 
 1. Select any slide in your presentation and click the **Audio** section on the right side of the editing screen.
 2. Under the **Presentation** tab, select a song from the dropdown menu.
@@ -69,7 +69,7 @@ It is possible to have both **Presentation Audio** and **Slide Audio** set up in
 
 # Sound effects
 
-## How Sound effects work
+## How sound effects work
 
 Sound effects can play on both the presenter's and participants' sides, depending on the interaction.
 
@@ -88,7 +88,7 @@ Sound effects can play on both the presenter's and participants' sides, dependin
   - Time's up
   - Answer streaks
 
-## How to enable/disable Sound effect
+## How to enable/disable sound effect
 
 1. Select any slide in your presentation and click the **Audio** section on the right side of the editing screen.
 2. Under the **Presentation** tab, click on the toggles under **Sound effects**, next to **On the presenting screen**, or **On participants' devices** to enable/disable them.

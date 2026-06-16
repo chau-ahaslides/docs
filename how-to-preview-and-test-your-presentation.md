@@ -24,11 +24,11 @@ description: "Preview mode lets you see how your presentation will look on both 
 
 Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event.
 
-## 15-Second Explainer ⏰: Preview Mode
+## 15-Second explainer ⏰: preview mode
 
 > 📹 [Watch video](https://www.youtube.com/embed/1LoPRfQueSg)
 
-## How Does it Work?
+## How does it work?
 
 Preview mode is a separate mode in your presentation that allows you to see and interact with your own slides, the way that your audience would do in your real event.
 
