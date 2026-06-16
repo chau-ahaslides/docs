@@ -20,25 +20,22 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "Learn how to import your Google Slides presentation into AhaSlides, navigate through it and add interactive elements to bring it to life!"
 ---
 
-# Using your Google Slides Presentation with AhaSlides
+# Using your Google Slides presentation with AhaSlides
 
-You can embed a Google Slides presentation into AhaSlides. Once embedded, you can present it within AhaSlides.
+Keep the deck you already have. Embed your Google Slides presentation into AhaSlides and layer in polls, quizzes, or word clouds without rebuilding anything from scratch.
 
-## Importing your Google Slides Presentation
+## Importing your Google Slides presentation
 
-1. On your Google Slides presentation, click on **File >>> Share >>> Publish to web**
-
-2. Click the **Publish** button.
-
+1. In Google Slides, click **File > Share > Publish to web**.
+2. Click **Publish**.
 3. Copy the link.
+4. In AhaSlides, create a Google Slides slide, then paste the link into the **Google Slides' Published link** field. Your Google Slides deck is now embedded and ready to present inside AhaSlides.
 
-4. Go to AhaSlides and create a Google Slides slide, then paste the link into the box: **Google Slides' Published link**. Your Google Slides deck is now embedded into your AhaSlides presentation.
+## Navigating your Google Slides presentation in AhaSlides
 
-## Navigating your Google Slides Presentation on AhaSlides
+While presenting, use the navigation arrows in the bottom-left corner of the frame to move through your slides.
 
-When presenting your Google Slides presentation in AhaSlides, you can use the navigation arrows in the bottom-left corner of the frame to proceed through your presentation.
-
-You can also open the Google Slides presentation menu by clicking the 3-dot symbol in the bottom-left corner of the frame. This gives you a range of tools from Google Slides that you can use while presenting, such as...
+You can also open the Google Slides presentation menu by clicking the three-dot symbol in the bottom-left corner. This gives you access to familiar Google Slides tools, including:
 
 - Speaker notes
 - Laser pointer
@@ -46,9 +43,8 @@ You can also open the Google Slides presentation menu by clicking the 3-dot symb
 - Full-screen mode
 - Auto-play
 
-## Adding Interactive Slides
+## Adding interactive slides
 
-You can use AhaSlides' interactive slide types before and after your Google Slides presentation.
+You can add AhaSlides interactive slides before or after your embedded Google Slides presentation. In the slide panel on the left, add a new slide and position it wherever it fits in your flow.
 
-In the navigation column on the left, simply add a new slide and **place it before or after your Google Slides**.
-
+This is how most presenters use the integration: a Google Slides content section, a live poll to check understanding, back to slides, then a quiz at the end.

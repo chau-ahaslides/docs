@@ -19,56 +19,54 @@ mcp_actions:
   configure: "update_slide_properties_tool(type: \"brainstormActivity\", limitChoice: int)"
   delete: "update_slide_properties_tool(type: \"brainstormActivity\", deleted: true)"
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
-description: "A Brainstorm slide lets your participants put forward ideas and then vote for their favourites. It guides audiences through three stages \u2014 submitting ideas, voting, and viewing results."
+description: "A Brainstorm slide lets your participants put forward ideas and then vote for their favourites. It guides audiences through three stages — submitting ideas, voting, and viewing results."
 ---
 
-# Using the Brainstorm Slide
+# Using the Brainstorm slide
 
-A Brainstorm slide lets your participants put forward ideas and then vote for their favourites.
+The Brainstorm slide turns your session into a group thinking exercise: participants submit ideas, vote for their favourites, and you reveal the results ranked by popularity. Three stages, one slide.
 
-## Setting up your Brainstorm Slide
+## Setting up your Brainstorm slide
 
 Check out this video for a 1-minute explainer on how to make a Brainstorm slide 👇
 
 > 📹 [Watch video](https://www.youtube.com/embed/npIv2Ag-aMU)
 
-On the AhaSlides editor, click *new slide*, choose the **brainstorm** slide and do the following...
+In the AhaSlides editor, click *New slide*, choose the **Brainstorm** slide and do the following:
 
 1. Write your question.
-2. Add any additional fields for your participants to fill out, such as 'name', 'email' etc.
-3. Specify how many votes each participant will get to vote on others' ideas.
-4. Choose whether or not to allow participants to put forward one or multiple ideas.
+2. Add any additional fields for your participants to fill out, such as 'name' or 'email'.
+3. Specify how many votes each participant gets to cast on others' ideas.
+4. Choose whether participants can submit one idea or multiple ideas.
 
-When you present your Brainstorm slide, you'll take your audience through **3 different stages:**
+When you present, your audience moves through **3 stages:**
 
-### Stage 1: Submitting Ideas
+### Stage 1: Submitting ideas
 
-Your participants write their ideas and also offer up any other information you requested in the 'additional fields'. The ideas will be shown in the order they are submitted on the presenter's screen.
+Participants write their ideas and fill in any additional fields you set up. Ideas appear on the presenter's screen in the order they are submitted.
 
-Up to 200 ideas can be submitted.
+Up to 200 ideas can be submitted per slide.
 
-*Note:* You can choose to show or hide submissions on the screen by clicking the eye icon under 'submission'.
+*Note:* You can show or hide submissions on the screen at any time by clicking the eye icon under *Submission*.
 
 ### Stage 2: Voting
 
-When your participants have submitted their ideas, click the button labelled *Next: Voting* to move onto stage 2. In this stage, participants will be presented with all of the idea submissions and will be able to vote for their favourites.
+When everyone has submitted, click *Next: Voting* to open the voting stage. Participants see all submitted ideas and vote for their favourites.
 
-You can change how many votes each participant gets in the settings of your Brainstorm slide.
+You can adjust how many votes each participant gets in the slide settings.
 
-*Note:* You can choose to show or hide the vote count on the screen by clicking the eye icon under 'Voting'. This makes for a more dramatic reveal in the next stage!
+*Note:* You can hide the vote count during voting by clicking the eye icon under *Voting*, which makes for a more dramatic reveal at the end.
 
 ### Stage 3: Result
 
-With all the votes in, you can click the button labelled *Next: Result* to order the submissions by the number of votes they received.
+Click *Next: Result* to rank all submissions by vote count. You can click any idea to enlarge it on screen.
 
-You can click on any of the ideas to enlarge it on the screen.
+> Maximum submissions per Brainstorm slide: 200
 
-> Maximum Brainstorm Submissions: 200
+## Brainstorm slide in self-paced mode
 
-**Note: Brainstorm slide in self-paced mode**
+If participants are accessing the slide in [self-paced mode](setting-up-a-self-paced-presentation-on-ahaslides.md), they move through the three stages on their own device, without waiting for the presenter to advance.
 
-If your participants are accessing this slide in [self-paced mode](setting-up-a-self-paced-presentation-on-ahaslides.md), they will proceed through each of the 3 stages on their own.
+There is one limitation to keep in mind: participants who go through the slide earlier cannot see ideas submitted after they voted, so late submitters have fewer votes coming their way.
 
-Because of this, there is an **unavoidable disadvantage** for participants who submit their ideas later, as participants who go through the slide earlier will not be able to see the later idea submissions, and therefore cannot vote for them.
-
-You can avoid this by telling your participants to submit their own ideas, then come back to the presentation at a later date when all of the ideas have been submitted.
+To work around this, ask participants to submit their ideas first, then return to the presentation later once all submissions are in before voting begins.
