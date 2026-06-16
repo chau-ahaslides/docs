@@ -6,7 +6,7 @@ permalink: using-the-word-cloud-slide
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-06-15
+last_updated: 2026-06-16
 tags: ["cloud", "ahaslides", "word cloud", "grouping", "word", "live", "group"]
 keywords: []
 summary: A word cloud lets you pose a question and have participants submit short written responses. All the responses are displayed on one screen, with the most popular responses appearing larger in the cloud.
@@ -34,8 +34,8 @@ In the example above, the word *'hola'* was entered by participants more often t
 
 ## Setting up your Word Cloud
 
-{% embed url="https://www.youtube.com/watch?v=3pj2L3lhxjQ" %}
-How to use the Word Cloud slide on AhaSlides — quick tutorial (0:43)
+{% embed url="https://www.youtube.com/watch?v=L89bd83WaYU" %}
+How to use the Word Cloud slide on AhaSlides — quick tutorial (0:50)
 {% endembed %}
 
 #### Step 1: Create your slide and write your question
