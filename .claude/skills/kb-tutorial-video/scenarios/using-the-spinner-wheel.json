@@ -4,7 +4,7 @@
       "id": "sw-welcome",
       "path": "/apps/presentations",
       "title": "The Spinner Wheel — powered by your audience",
-      "description": "The Spinner Wheel's standout feature: participants submit entries from their phones and the wheel fills itself automatically. No copying names, no manual typing. Spin to pick a winner live. Click Next to see how.",
+      "description": "The Spinner Wheel's standout feature: participants scan your QR code, enter their name to join, and the wheel fills itself with every participant automatically. No manual typing needed. Spin to pick a winner live. Click Next to see how.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -36,7 +36,7 @@
       "id": "sw-autofill",
       "path": "/presentation/*",
       "title": "Audience autofill — the star feature",
-      "description": "Check 'Participant name autofill' in the right panel. The wheel fills itself with every participant's name as they join from their phone — no manual typing needed. Perfect for picking a random winner from a live crowd.",
+      "description": "Check 'Participant name autofill' in the right panel. Participants scan your QR code and enter their name to join — the wheel fills itself with every participant's name automatically. Perfect for picking a random winner from a live crowd.",
       "targetSelector": "[data-testid=\"editor-side-right-spinner-wheel-autofill-checkbox\"]",
       "pauseMs": 2000,
       "action": null

@@ -42,6 +42,13 @@ any macOS TTS voice) are allowed in published KB videos.
 
 Common pitfalls (test with a one-line ElevenLabs render):
 - `"live"` used as a verb — must rhyme with "hive" (/laɪv/), not "give".
+- `"present"` used as a verb — must be /prəˈzent/ (prih-ZENT, stressed second
+  syllable), NOT the noun /ˈprezənt/ (PREZ-ent). This arises when narrating
+  "Hit Present to go live" or "when you present your slides". ElevenLabs may
+  default to the noun stress without context. **Fix:** Add "to go live" after
+  the word to supply verb context (e.g. "Hit Present to go live"), or use a
+  phonetic respelling in `tts_text` only (e.g. "prih-ZENT to go live") while
+  keeping `display_text` natural. Test a one-line render before mixing.
 - Product-specific terms — `"Categorise"` must use British -ise, not US -ize.
 - Any slide-type name spelled differently from the AhaSlides UI (capitalised
   proper noun, British spelling where applicable).
@@ -50,7 +57,8 @@ Common pitfalls (test with a one-line ElevenLabs render):
 1. Get the auto-captions (yt-dlp `--write-auto-subs`) and search for the
    suspected words.
 2. Auto-captions reflect what YouTube STT heard — if it transcribed "categorized"
-   the pronunciation is likely wrong.
+   the pronunciation is likely wrong. For "present", if STT wrote "present"
+   with noun stress, the audio likely mispronounced it.
 3. Alternatively, listen at 0.75× speed at the relevant timestamp.
 
 **Fix:** Update `tts_text` in the voiceover JSON with phonetic respelling;
@@ -243,7 +251,7 @@ Use this as a quick-reference before closing any video task:
 
 **Human:**
 - [ ] 1a. VO voice is Liam or Alice — no other voice IDs
-- [ ] 1b. Pronunciation spot-checked (especially "live" verb, "Categorise" -ise)
+- [ ] 1b. Pronunciation spot-checked (especially "live" verb /laɪv/, "present" verb /prəˈzent/ prih-ZENT, "Categorise" -ise)
 - [ ] 1c. No gaps > 2s — silencedetect confirms, or voiceover JSON timeline reviewed
 - [ ] 1d. Creator-uploaded CC track present (not just auto-captions)
 - [ ] 1e. Video ends with participant/results view (not editor-only)

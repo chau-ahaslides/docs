@@ -4,11 +4,14 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
-  "video_duration_sec": 40.44,
-  "generated_round": 3,
-  "youtube_id": "7bbzdJ9hx6g",
-  "pronunciation_map": {"1,200": "twelve hundred"},
-  "notes": "AKB-15 r3 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). No Liam. Video leads with audience autofill as standout feature. Short v2/v3 clips used for s01, s04, s07, s08 to fit within visual windows.",
+  "video_duration_sec": 42.36,
+  "generated_round": 4,
+  "youtube_id": "TBD — upload blocked by daily quota; video ready at out-spinner-r4/spinner-wheel-r4-narrated-v2.webm; supersedes 7bbzdJ9hx6g",
+  "pronunciation_map": {
+    "1,200": "twelve hundred",
+    "Present (verb /prəˈzent/)": "Use 'Hit Present to go live' — the 'to go live' context cues ElevenLabs to stress the verb form prih-ZENT, not the noun PREZ-ent"
+  },
+  "notes": "AKB-15 r4 — SINGLE VOICE throughout: Alice only (Xb7hH8MSUJpSbSDYk0k2). No Liam. CORRECTIONS from r3: (1) scenario sw-welcome and sw-autofill descriptions corrected from 'participants submit entries' to 'scan QR + enter name to join'; (2) s08 uses 'Hit Present to go live' for verb pronunciation /prəˈzent/. New visual re-recorded with corrected scenario text. Supersedes 7bbzdJ9hx6g (r3). YouTube upload blocked by daily account quota on 2026-06-16 — Chau to upload out-spinner-r4/spinner-wheel-r4-narrated-v2.webm manually and update article embed + this youtube_id field.",
   "steps": [
     {
       "id": "sw-welcome",
@@ -17,9 +20,9 @@
       "file": "s01_v2.mp3",
       "start_sec": 0.0,
       "window_sec": 4.5,
-      "display_text": "The Spinner Wheel's standout feature: your audience submits entries from their phones and the wheel fills itself automatically.",
-      "tts_text": "The Spinner Wheel's standout feature: your audience submits entries from their phones and the wheel fills itself automatically.",
-      "audio_duration_sec": 6.50
+      "display_text": "Participants scan your QR code, enter their name, and the wheel fills itself. Spin to pick a winner live.",
+      "tts_text": "Participants scan your QR code, enter their name, and the wheel fills itself. Spin to pick a winner live.",
+      "audio_duration_sec": 6.82
     },
     {
       "id": "sw-create",
@@ -30,74 +33,74 @@
       "window_sec": 3.5,
       "display_text": "Click New Presentation to start a fresh deck.",
       "tts_text": "Click New Presentation to start a fresh deck.",
-      "audio_duration_sec": 2.82
+      "audio_duration_sec": 3.24
     },
     {
       "id": "sw-pick-type",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s03.mp3",
-      "start_sec": 10.0,
+      "start_sec": 11.0,
       "window_sec": 4.0,
       "display_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
       "tts_text": "Select Spinner Wheel from the slide type picker in the Quiz section.",
-      "audio_duration_sec": 4.00
+      "audio_duration_sec": 4.13
     },
     {
       "id": "sw-autofill",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "file": "s04_v2.mp3",
-      "start_sec": 14.3,
+      "file": "s04_v6.mp3",
+      "start_sec": 15.5,
       "window_sec": 5.0,
-      "display_text": "Check Participant name autofill — the wheel fills itself with every participant's name as they join. No typing needed.",
-      "tts_text": "Check Participant name autofill — the wheel fills with every name as participants join.",
-      "audio_duration_sec": 5.93
+      "display_text": "Check Participant name autofill — participants scan your QR code, enter their name to join, and the wheel fills itself automatically.",
+      "tts_text": "Tick Participant name autofill. Scan QR, enter name to join — wheel fills itself.",
+      "audio_duration_sec": 6.16
     },
     {
       "id": "sw-add-entries",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s05.mp3",
-      "start_sec": 20.5,
+      "start_sec": 22.0,
       "window_sec": 7.0,
       "display_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
       "tts_text": "Or prefer a fixed list? Type entries one per line in the Entries field, or paste a whole list at once.",
-      "audio_duration_sec": 6.87
+      "audio_duration_sec": 7.00
     },
     {
       "id": "sw-save-entries",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
       "file": "s06.mp3",
-      "start_sec": 27.5,
+      "start_sec": 29.3,
       "window_sec": 5.0,
       "display_text": "Click Save — each entry appears as a coloured segment on the wheel.",
       "tts_text": "Click Save — each entry appears as a coloured segment on the wheel.",
-      "audio_duration_sec": 4.62
+      "audio_duration_sec": 5.02
     },
     {
       "id": "sw-spin-time",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "file": "s07_v3.mp3",
-      "start_sec": 32.2,
+      "file": "s07.mp3",
+      "start_sec": 34.6,
       "window_sec": 5.5,
       "display_text": "Use Spin time to set how long the wheel spins — up to 1,200 seconds for maximum suspense.",
       "tts_text": "Spin time controls how long the wheel spins — up to twelve hundred seconds.",
-      "audio_duration_sec": 4.96
+      "audio_duration_sec": 5.02
     },
     {
       "id": "sw-present",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "file": "s08_v2.mp3",
-      "start_sec": 37.5,
+      "file": "s08.mp3",
+      "start_sec": 39.9,
       "window_sec": 3.0,
-      "display_text": "Hit Present, then press the centre of the wheel to spin. The winner is revealed!",
-      "tts_text": "Hit Present, press the centre of the wheel, and the winner is revealed!",
-      "audio_duration_sec": 4.26
+      "display_text": "Hit Present to go live — then press the centre of the wheel, and the winner is revealed!",
+      "tts_text": "Hit Present to go live — then press the centre of the wheel, and the winner is revealed!",
+      "audio_duration_sec": 5.20
     }
   ],
-  "mix_command": "ffmpeg -y -i spinner-wheel-r3b-final.webm -i s01_v2.mp3 -i s02.mp3 -i s03.mp3 -i s04_v2.mp3 -i s05.mp3 -i s06.mp3 -i s07_v3.mp3 -i s08_v2.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=7000|7000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=14300|14300[a4];[5:a]adelay=20500|20500[a5];[6:a]adelay=27500|27500[a6];[7:a]adelay=32200|32200[a7];[8:a]adelay=37500|37500[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k spinner-wheel-r3b-narrated.webm"
+  "mix_command": "cd ~/AhaSlides/onboarding-videos && ffmpeg -y -i out-spinner-r4/spinner-wheel-r4-final.webm -i out-spinner-r4/s01_v2.mp3 -i out-spinner-r4/s02.mp3 -i out-spinner-r4/s03.mp3 -i out-spinner-r4/s04_v6.mp3 -i out-spinner-r4/s05.mp3 -i out-spinner-r4/s06.mp3 -i out-spinner-r4/s07.mp3 -i out-spinner-r4/s08.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=7000|7000[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=15500|15500[a4];[5:a]adelay=22000|22000[a5];[6:a]adelay=29300|29300[a6];[7:a]adelay=34600|34600[a7];[8:a]adelay=39900|39900[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r4/spinner-wheel-r4-narrated-v2.webm"
 }
