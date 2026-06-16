@@ -57,11 +57,11 @@ Click the **Entries** field and type your first entry. Hit **⏎ Enter** after e
 
 ### #2 - Autofill Entries with Participants' Names
 
-You may want to use the Spinner Wheel to select one of your presentation's participants at random. If that's the case, check the box labelled **Participant name autofill** in the right panel of the editor — the wheel fills itself with every participant's name as they join. No manual typing needed.
+You may want to use the Spinner Wheel to select one of your presentation's participants at random. If that's the case, check the box labelled **Participant name autofill** in the right panel of the editor — the wheel fills itself with every participant's name as they scan your QR code and join by entering their name. No manual typing needed.
 
 You can also turn on this option while in presentation mode.
 
-With this box checked, when participants reach this slide, they will be prompted for their names and an avatar, the same way they are when they are [joining a quiz](how-to-make-and-run-a-quiz.md).
+With this box checked, participants scan the QR code shown on your presenter screen (or go to the join URL) and enter their name and an avatar to join — the same way they join a quiz. See [how participants join](how-to-make-and-run-a-quiz.md) for the full joining flow.
 
 If you had any quiz slide before your Spinner Wheel slide, then checking the **Participant name autofill** box will automatically fill in the names of your quiz players — they won't need to enter them again.
 

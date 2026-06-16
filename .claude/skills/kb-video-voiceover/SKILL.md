@@ -66,6 +66,12 @@ See `scenarios/using-the-categorise-slide-voiceover.json` as a reference example
 ElevenLabs handles English context well. Do NOT add phonetic respellings
 unless a test render sounds wrong. Always verify:
 - "live" used as a verb (not the adjective) — ElevenLabs sometimes mis-stresses it.
+- "present" used as a verb /prəˈzent/ (prih-ZENT, stress on second syllable)
+  — NOT the noun /ˈprezənt/ (PREZ-ent). When narrating "Hit Present" (button
+  label) or "when you present your slides", supply verb context in `tts_text`:
+  e.g. "Hit Present to go live" rather than bare "Hit Present". If a test render
+  still uses noun stress, use a phonetic respelling in `tts_text` only:
+  "Hit prih-ZENT to go live". Keep `display_text` natural.
 - Product-specific terms like "Categorise" — listen to a test clip first.
 
 Use respellings in `tts_text` only; keep `display_text` natural.
