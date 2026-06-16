@@ -4,7 +4,7 @@
       "id": "mp-welcome",
       "path": "/apps/presentations",
       "title": "Let's build a Match Pairs quiz slide!",
-      "description": "A Match Pairs slide challenges participants to connect prompts with answers — great for vocabulary, capitals, dates, and more. Tip: keep each item short and unambiguous so every prompt has exactly one clear answer. Click Next to begin.",
+      "description": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, capitals, and definitions. Keep each item short and unambiguous so every prompt has exactly one clear match. Click Next to begin.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -12,7 +12,7 @@
       "id": "mp-create",
       "path": "/apps/presentations",
       "title": "Create a new presentation",
-      "description": "Click 'New Presentation' to start a fresh deck.",
+      "description": "Click 'New Presentation' to open a fresh deck.",
       "targetSelector": ".new-presentation-button",
       "action": {
         "type": "click",
@@ -24,7 +24,7 @@
       "id": "mp-pick-type",
       "path": "/presentation/*",
       "title": "Pick the Match Pairs slide type",
-      "description": "Select 'Match Pairs' from the slide type picker. You'll find it in the Quiz section — it's the one that turns matching tasks into a scored game.",
+      "description": "Select 'Match Pairs' from the Quiz section of the slide type picker. It turns any matching challenge into a timed, scored game.",
       "targetSelector": "[aria-label=\"Match Pairs\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "action": {
         "type": "click",
@@ -36,7 +36,7 @@
       "id": "mp-type-question",
       "path": "/presentation/*",
       "title": "Write your question",
-      "description": "Type your matching challenge here. Participants will use this as their cue for what to connect.",
+      "description": "Type the matching challenge here. This appears at the top so participants know what to connect.",
       "targetSelector": "[aria-label=\"Question text\"]",
       "pauseMs": 1500,
       "action": {
@@ -49,13 +49,13 @@
     {
       "id": "mp-pair-1-prompt",
       "path": "/presentation/*",
-      "title": "Enter your first prompt",
-      "description": "Type the first item your participants must match. Aim for 3–4 pairs — enough to be engaging without crowding a mobile screen. Keep each item a single word or short phrase.",
-      "targetSelector": "[data-testid=\"editor-side-right-match-pair-prompt-input\"]",
+      "title": "Enter pair 1 — prompt",
+      "description": "Type the first item participants must match. Aim for 3 to 4 pairs — enough to be engaging without crowding a small screen.",
+      "targetSelector": ".mb-4 > div:nth-child(1) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
       "pauseMs": 1000,
       "action": {
         "type": "input-match",
-        "selector": "[data-testid=\"editor-side-right-match-pair-prompt-input\"]",
+        "selector": ".mb-4 > div:nth-child(1) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
         "value": "France",
         "hint": "Type the first prompt"
       }
@@ -63,22 +63,78 @@
     {
       "id": "mp-pair-1-answer",
       "path": "/presentation/*",
-      "title": "Enter the matching answer",
-      "description": "Now type the answer that goes with your first prompt. The answer column shuffles automatically on the canvas — so participants can't just copy the order.",
-      "targetSelector": "[data-testid=\"editor-side-right-match-pair-answer-input\"]",
+      "title": "Enter pair 1 — answer",
+      "description": "Type the answer for this prompt. The answer column shuffles automatically on the canvas so participants cannot just copy the order.",
+      "targetSelector": ".mb-4 > div:nth-child(1) .match-pair-option [data-testid=\"editor-side-right-match-pair-answer-input\"]",
       "pauseMs": 500,
       "action": {
         "type": "input-match",
-        "selector": "[data-testid=\"editor-side-right-match-pair-answer-input\"]",
+        "selector": ".mb-4 > div:nth-child(1) .match-pair-option [data-testid=\"editor-side-right-match-pair-answer-input\"]",
         "value": "Paris",
         "hint": "Type the matching answer"
+      }
+    },
+    {
+      "id": "mp-pair-2-prompt",
+      "path": "/presentation/*",
+      "title": "Add pair 2 — prompt",
+      "description": "Type the second prompt. Use parallel structure — if the left column uses country names, keep that format throughout.",
+      "targetSelector": ".mb-4 > div:nth-child(2) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": ".mb-4 > div:nth-child(2) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
+        "value": "Japan",
+        "hint": "Type the second prompt"
+      }
+    },
+    {
+      "id": "mp-pair-2-answer",
+      "path": "/presentation/*",
+      "title": "Add pair 2 — answer",
+      "description": "Type the matching answer for pair 2.",
+      "targetSelector": ".mb-4 > div:nth-child(2) .match-pair-option [data-testid=\"editor-side-right-match-pair-answer-input\"]",
+      "pauseMs": 500,
+      "action": {
+        "type": "input-match",
+        "selector": ".mb-4 > div:nth-child(2) .match-pair-option [data-testid=\"editor-side-right-match-pair-answer-input\"]",
+        "value": "Tokyo",
+        "hint": "Type the second answer"
+      }
+    },
+    {
+      "id": "mp-pair-3-prompt",
+      "path": "/presentation/*",
+      "title": "Add pair 3 — prompt",
+      "description": "Add a third pair to make the game challenging and fair. Three to four pairs is the sweet spot for engagement on any screen size.",
+      "targetSelector": ".mb-4 > div:nth-child(3) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
+      "pauseMs": 1000,
+      "action": {
+        "type": "input-match",
+        "selector": ".mb-4 > div:nth-child(3) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
+        "value": "Germany",
+        "hint": "Type the third prompt"
+      }
+    },
+    {
+      "id": "mp-pair-3-answer",
+      "path": "/presentation/*",
+      "title": "Add pair 3 — answer",
+      "description": "Type the answer for pair 3. The canvas preview on the left updates in real time — three complete pairs are now visible.",
+      "targetSelector": ".mb-4 > div:nth-child(3) .match-pair-option [data-testid=\"editor-side-right-match-pair-answer-input\"]",
+      "pauseMs": 500,
+      "action": {
+        "type": "input-match",
+        "selector": ".mb-4 > div:nth-child(3) .match-pair-option [data-testid=\"editor-side-right-match-pair-answer-input\"]",
+        "value": "Berlin",
+        "hint": "Type the third answer"
       }
     },
     {
       "id": "mp-present",
       "path": "/presentation/*",
       "title": "Ready to go live!",
-      "description": "That's all it takes to build a Match Pairs quiz slide. Notice both columns use the same format — countries left, capitals right — that's parallel structure, and it keeps the pattern clear for participants. Add up to 4 pairs, adjust the time limit and points below, then hit 'Present'.",
+      "description": "Three matched pairs are set up. Adjust the time limit and points in the Settings panel, then hit 'Present' — your participants will race to drag every pair into position.",
       "targetSelector": ".aha-button-present",
       "action": null
     }

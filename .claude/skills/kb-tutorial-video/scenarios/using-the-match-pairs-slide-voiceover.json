@@ -1,87 +1,126 @@
 {
   "voices": {
-    "Liam": "ElevenLabs, voice_id: VCgLBmBjldJmfphyB8sZ",
-    "Alice": "ElevenLabs, voice_id: Xb7hH8MSUJpSbSDYk0k2"
+    "Liam": "ElevenLabs, voice_id: VCgLBmBjldJmfphyB8sZ"
   },
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 35.0,
-  "generated_round": 3,
-  "youtube_id": "BeBn5a1raxU",
+  "video_duration_sec": 53.0,
+  "generated_round": 4,
+  "youtube_id": "yBYeRuQYhbs",
   "pronunciation_map": {},
-  "notes": "AKB-13 r3: tips woven in. s01 (welcome) narrates unambiguous tip; s05 narrates 3-4 pairs tip; s07 wrap-up only (parallel structure tip is on-screen tooltip). ONLY Liam (VCgLBmBjldJmfphyB8sZ) and Alice (Xb7hH8MSUJpSbSDYk0k2) used.",
+  "notes": "AKB-13 r4b: ONE voice only — Liam (VCgLBmBjldJmfphyB8sZ) throughout. No Alice. 3 pairs filled (France/Paris, Japan/Tokyo, Germany/Berlin). Video = 45s trimmed + 8s last-frame freeze = 53s total. check_vo_overlap PASS.",
   "steps": [
     {
       "id": "mp-welcome",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 0.0,
-      "window_sec": 11.5,
-      "display_text": "A Match Pairs slide challenges participants to connect prompts with answers — great for vocabulary, capitals, and more. Keep each item short and unambiguous so every prompt has exactly one clear match.",
-      "tts_text": "A Match Pairs slide challenges participants to connect prompts with answers — great for vocabulary, capitals, and more. Keep each item short and unambiguous so every prompt has exactly one clear match.",
-      "audio_duration_sec": 11.42
+      "window_sec": 11.3,
+      "display_text": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, capitals, and more. Keep each item short and unambiguous so every prompt has exactly one clear match.",
+      "tts_text": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, capitals, and more. Keep each item short and unambiguous so every prompt has exactly one clear match.",
+      "audio_duration_sec": 11.28
     },
     {
       "id": "mp-create",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 11.5,
-      "window_sec": 2.5,
-      "display_text": "Click New Presentation to start a fresh deck.",
-      "tts_text": "Click New Presentation to start a fresh deck.",
-      "audio_duration_sec": 2.22
+      "window_sec": 2.3,
+      "display_text": "Click New Presentation to open a fresh deck.",
+      "tts_text": "Click New Presentation to open a fresh deck.",
+      "audio_duration_sec": 2.27
     },
     {
       "id": "mp-pick-type",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 14.0,
-      "window_sec": 3.5,
-      "display_text": "Select Match Pairs from the slide type picker in the Quiz section.",
-      "tts_text": "Select Match Pairs from the slide type picker in the Quiz section.",
-      "audio_duration_sec": 3.29
+      "start_sec": 13.8,
+      "window_sec": 3.8,
+      "display_text": "Select Match Pairs from the Quiz section of the slide type picker.",
+      "tts_text": "Select Match Pairs from the Quiz section of the slide type picker.",
+      "audio_duration_sec": 3.79
     },
     {
       "id": "mp-type-question",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 17.4,
-      "window_sec": 0.6,
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 17.8,
+      "window_sec": 2.5,
       "display_text": "Type your matching challenge in the question field.",
       "tts_text": "Type your matching challenge in the question field.",
-      "audio_duration_sec": 3.06
+      "audio_duration_sec": 2.51
     },
     {
       "id": "mp-pair-1-prompt",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 20.6,
-      "window_sec": 5.4,
-      "display_text": "Type the first prompt. Aim for 3 to 4 pairs — enough to be engaging without crowding a mobile screen.",
-      "tts_text": "Type the first prompt. Aim for 3 to 4 pairs — enough to be engaging without crowding a mobile screen.",
-      "audio_duration_sec": 7.00
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 20.5,
+      "window_sec": 5.1,
+      "display_text": "Enter the first prompt. Aim for three to four pairs — enough to engage without crowding a mobile screen.",
+      "tts_text": "Enter the first prompt. Aim for three to four pairs — enough to engage without crowding a mobile screen.",
+      "audio_duration_sec": 5.02
     },
     {
       "id": "mp-pair-1-answer",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 27.7,
-      "window_sec": 5.5,
-      "display_text": "Now type the matching answer. The answer column shuffles automatically so participants can't just copy the order.",
-      "tts_text": "Now type the matching answer. The answer column shuffles automatically so participants can't just copy the order.",
-      "audio_duration_sec": 6.03
+      "start_sec": 25.7,
+      "window_sec": 5.7,
+      "display_text": "Now type the matching answer. The answer column shuffles automatically so participants cannot copy the order.",
+      "tts_text": "Now type the matching answer. The answer column shuffles automatically so participants cannot copy the order.",
+      "audio_duration_sec": 5.69
+    },
+    {
+      "id": "mp-pair-2-prompt",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 31.5,
+      "window_sec": 5.9,
+      "display_text": "Add a second prompt. Use parallel structure — if the left column uses country names, keep that format for all prompts.",
+      "tts_text": "Add a second prompt. Use parallel structure — if the left column uses country names, keep that format for all prompts.",
+      "audio_duration_sec": 5.85
+    },
+    {
+      "id": "mp-pair-2-answer",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 37.5,
+      "window_sec": 1.5,
+      "display_text": "Enter the second answer.",
+      "tts_text": "Enter the second answer.",
+      "audio_duration_sec": 1.44
+    },
+    {
+      "id": "mp-pair-3-prompt",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 39.1,
+      "window_sec": 5.6,
+      "display_text": "Add a third pair to make the game challenging. Watch the canvas update in real time as each pair appears.",
+      "tts_text": "Add a third pair to make the game challenging. Watch the canvas update in real time as each pair appears.",
+      "audio_duration_sec": 5.56
+    },
+    {
+      "id": "mp-pair-3-answer",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 44.8,
+      "window_sec": 3.2,
+      "display_text": "Type the third answer. Three complete pairs are now showing.",
+      "tts_text": "Type the third answer. Three complete pairs are now showing.",
+      "audio_duration_sec": 3.19
     },
     {
       "id": "mp-present",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 33.8,
-      "window_sec": 2.6,
-      "display_text": "That is all it takes. Hit Present and your participants race to match every pair.",
-      "tts_text": "That is all it takes. Hit Present and your participants race to match every pair.",
-      "audio_duration_sec": 3.89
+      "start_sec": 48.1,
+      "window_sec": 6.8,
+      "display_text": "All done. Adjust the time limit and points in Settings, then hit Present — your participants race to drag every pair into position.",
+      "tts_text": "All done. Adjust the time limit and points in Settings, then hit Present — your participants race to drag every pair into position.",
+      "audio_duration_sec": 6.77
     }
   ],
-  "mix_command": "ffmpeg -y -i match-pairs-r3-trimmed.webm -i s01.mp3 -i s02.mp3 -i s03.mp3 -i s04.mp3 -i s05b.mp3 -i s06.mp3 -i s07c.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=11500|11500[a2];[3:a]adelay=14000|14000[a3];[4:a]adelay=17400|17400[a4];[5:a]adelay=20600|20600[a5];[6:a]adelay=27700|27700[a6];[7:a]adelay=33800|33800[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k match-pairs-r3-narrated.webm"
+  "mix_command": "ffmpeg -y -i match-pairs-r4b-extended.webm -i s01.mp3 -i s02.mp3 -i s03.mp3 -i s04.mp3 -i s05.mp3 -i s06.mp3 -i s07.mp3 -i s08.mp3 -i s09.mp3 -i s10.mp3 -i s11.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=11500|11500[a2];[3:a]adelay=13800|13800[a3];[4:a]adelay=17800|17800[a4];[5:a]adelay=20500|20500[a5];[6:a]adelay=25700|25700[a6];[7:a]adelay=31500|31500[a7];[8:a]adelay=37500|37500[a8];[9:a]adelay=39100|39100[a9];[10:a]adelay=44800|44800[a10];[11:a]adelay=48100|48100[a11];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]amix=inputs=11:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k match-pairs-r4b-narrated.webm"
 }
