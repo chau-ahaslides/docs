@@ -2,12 +2,12 @@
   "voice_primary": "Liam",
   "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
   "model": "eleven_multilingual_v2",
-  "video_duration_sec": 53.72,
-  "generated_round": 4,
+  "video_duration_sec": 59.67,
+  "generated_round": 5,
   "youtube_id": "PENDING — YouTube daily upload quota exceeded 2026-06-16; Chau to upload out-word-cloud-r4/word-cloud-narrated-r4.webm manually as unlisted, then update this field + article embed in using-the-word-cloud-slide.md (replace L89bd83WaYU). List L89bd83WaYU for deletion.",
   "supersedes_youtube_id": "L89bd83WaYU",
-  "notes": "r4: Added wc-preview-submit step so Preview shows a POPULATED word cloud. New step submits 'amazing'×2 + 'exciting'×1 via audience iframe previewInteractions, giving 'amazing' a larger cloud size. s07+s08 are new/updated VO; s01-s06 + s09 + s10 reuse r3 audio. British spellings in display_text; US spellings in tts_text for correct ElevenLabs pronunciation. start_sec values calibrated from frame inspection of word-cloud-final-r4.webm (53.72s). Overlap check PASSED (10 clips). Narrated video mixed and ready.",
-  "mix_command": "ffmpeg -y -i out-word-cloud-r4/word-cloud-final-r4.webm -i out-word-cloud-r4/vo/s01.mp3 -i out-word-cloud-r4/vo/s02.mp3 -i out-word-cloud-r4/vo/s03.mp3 -i out-word-cloud-r4/vo/s04.mp3 -i out-word-cloud-r4/vo/s05.mp3 -i out-word-cloud-r4/vo/s06.mp3 -i out-word-cloud-r4/vo/s07.mp3 -i out-word-cloud-r4/vo/s08.mp3 -i out-word-cloud-r4/vo/s09.mp3 -i out-word-cloud-r4/vo/s10.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=8250|8250[a2];[3:a]adelay=10600|10600[a3];[4:a]adelay=14540|14540[a4];[5:a]adelay=18800|18800[a5];[6:a]adelay=27710|27710[a6];[7:a]adelay=30640|30640[a7];[8:a]adelay=42000|42000[a8];[9:a]adelay=47330|47330[a9];[10:a]adelay=50750|50750[a10];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10]amix=inputs=10:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-word-cloud-r4/word-cloud-narrated-r4.webm",
+  "notes": "r5: Bridged 5.5s silent gap at 0:36–0:42 (wc-preview-building step, Liam, 5.33s). Gap was between wc-preview-submit end (36.52s) and wc-preview-cloud start (42.0s). New VO line: 'As responses come in, the cloud builds live — the more often a word is submitted, the bigger it grows.' Audio file: out-word-cloud-r5/vo/s_bridge.mp3. silencedetect -40dB d=1s: no gaps. 11-track mix. video_duration_sec corrected from 53.72 to 59.67 (actual r4 final video duration). VTT regenerated to cover all 11 steps to 59.71s.",
+  "mix_command": "ffmpeg -y -i out-word-cloud-r4/word-cloud-final-r4.webm -i out-word-cloud-r4/vo/s01.mp3 -i out-word-cloud-r4/vo/s02.mp3 -i out-word-cloud-r4/vo/s03.mp3 -i out-word-cloud-r4/vo/s04.mp3 -i out-word-cloud-r4/vo/s05.mp3 -i out-word-cloud-r4/vo/s06.mp3 -i out-word-cloud-r4/vo/s07.mp3 -i out-word-cloud-r5/vo/s_bridge.mp3 -i out-word-cloud-r4/vo/s08.mp3 -i out-word-cloud-r4/vo/s09.mp3 -i out-word-cloud-r4/vo/s10.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=8250|8250[a2];[3:a]adelay=10600|10600[a3];[4:a]adelay=14540|14540[a4];[5:a]adelay=18800|18800[a5];[6:a]adelay=27710|27710[a6];[7:a]adelay=30640|30640[a7];[8:a]adelay=36520|36520[a8];[9:a]adelay=42000|42000[a9];[10:a]adelay=47330|47330[a10];[11:a]adelay=50750|50750[a11];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11]amix=inputs=11:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-word-cloud-r5/word-cloud-narrated-r5.webm",
   "steps": [
     {
       "id": "wc-welcome",
@@ -78,6 +78,16 @@
       "audio_duration_sec": 5.88,
       "display_text": "On the participant screen, audience members type their words and tap Submit — watch the cloud react instantly.",
       "tts_text": "On the participant screen, audience members type their words and tap Submit — watch the cloud react instantly."
+    },
+    {
+      "id": "wc-preview-building",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 36.52,
+      "window_sec": 5.48,
+      "audio_duration_sec": 5.33,
+      "display_text": "As responses come in, the cloud builds live — the more often a word is submitted, the bigger it grows.",
+      "tts_text": "As responses come in, the cloud builds live — the more often a word is submitted, the bigger it grows."
     },
     {
       "id": "wc-preview-cloud",
