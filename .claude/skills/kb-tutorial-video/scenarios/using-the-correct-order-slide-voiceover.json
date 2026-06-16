@@ -4,120 +4,140 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": null,
+  "video_duration_sec": 71.4,
   "youtube_id": "K5YPdRXDscU",
-  "generated_round": 4,
-  "notes": "AKB-12 r4: ALL Liam (single voice). Fixes: (1) new co-set-language-en step sets audience language to English before preview; (2) separate co-open-preview step; (3) proper co-preview-audience (English) + co-preview-results closing beat. Overlap check must pass before mix.",
+  "generated_round": 5,
+  "notes": "AKB-12 r5: ALL Liam (single voice). Changes: (1) co-set-language-en REMOVED — language set silently in co-settings mainInteractions; (2) audience participant joins + Start clicked in previewInteractions; (3) timer expires showing correct results; (4) back-to-editor + present steps added. Timings finalized with actual ElevenLabs audio durations (second-pass overlap check PASS).",
   "steps": [
     {
       "id": "co-welcome",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 0.0,
-      "window_sec": 5.5,
+      "window_sec": 3.5,
       "display_text": "A Correct Order slide challenges participants to arrange shuffled statements in the right sequence.",
       "tts_text": "A Correct Order slide challenges participants to arrange shuffled statements in the right sequence.",
-      "audio_duration_sec": 4.86
+      "audio_duration_sec": 4.68
     },
     {
       "id": "co-create",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 5.02,
+      "start_sec": 5.0,
       "window_sec": 2.5,
       "display_text": "Click New Presentation to open a fresh deck.",
       "tts_text": "Click New Presentation to open a fresh deck.",
-      "audio_duration_sec": 2.32
+      "audio_duration_sec": 2.22
     },
     {
       "id": "co-pick-type",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 11.5,
-      "window_sec": 3.0,
+      "start_sec": 7.5,
+      "window_sec": 4.0,
       "display_text": "Select Correct Order from the slide type picker.",
       "tts_text": "Select Correct Order from the slide type picker.",
-      "audio_duration_sec": 2.51
+      "audio_duration_sec": 2.74
     },
     {
       "id": "co-type-question",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 15.0,
+      "start_sec": 12.5,
       "window_sec": 2.5,
       "display_text": "Type the challenge for your audience.",
       "tts_text": "Type the challenge for your audience.",
-      "audio_duration_sec": 1.93
+      "audio_duration_sec": 1.75
     },
     {
       "id": "co-statements",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 17.09,
-      "window_sec": 5.5,
+      "start_sec": 14.6,
+      "window_sec": 5.0,
       "display_text": "Enter statements in the correct order. Pro tip: keep it to five items maximum for mobile.",
       "tts_text": "Enter statements in the correct order. Pro tip: keep it to five items maximum for mobile.",
-      "audio_duration_sec": 4.86
+      "audio_duration_sec": 5.20
     },
     {
       "id": "co-tip-distinct",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 22.11,
+      "start_sec": 20.0,
       "window_sec": 4.0,
       "display_text": "Make each item distinct — avoid statements that could swap positions.",
       "tts_text": "Make each item distinct — avoid statements that could swap positions.",
-      "audio_duration_sec": 3.79
+      "audio_duration_sec": 3.84
     },
     {
       "id": "co-settings",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 26.06,
+      "start_sec": 24.0,
       "window_sec": 5.0,
       "display_text": "Set the time limit and points. Use a logical sequence — timeline, process steps, or ranked list.",
       "tts_text": "Set the time limit and points. Use a logical sequence — timeline, process steps, or ranked list.",
-      "audio_duration_sec": 5.38
-    },
-    {
-      "id": "co-set-language-en",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 31.44,
-      "window_sec": 5.5,
-      "display_text": "In Settings, set the audience language to English so participants see everything in English on their devices.",
-      "tts_text": "In Settings, set the audience language to English so participants see everything in English on their devices.",
-      "audio_duration_sec": 5.43
+      "audio_duration_sec": 5.75
     },
     {
       "id": "co-open-preview",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 37.1,
+      "start_sec": 30.0,
       "window_sec": 6.0,
       "display_text": "Click Preview to see the presenter and participant screens side by side.",
       "tts_text": "Click Preview to see the presenter and participant screens side by side.",
-      "audio_duration_sec": 3.94
+      "audio_duration_sec": 3.89
     },
     {
       "id": "co-preview-audience",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 42.81,
-      "window_sec": 5.5,
-      "display_text": "When your audience joins, they see the shuffled statements in English and drag them into the correct order.",
-      "tts_text": "When your audience joins, they see the shuffled statements in English and drag them into the correct order.",
-      "audio_duration_sec": 4.68
+      "start_sec": 38.0,
+      "window_sec": 6.0,
+      "display_text": "Participants join on their phones — they see the shuffled statements and drag them into the order they think is correct.",
+      "tts_text": "Participants join on their phones — they see the shuffled statements and drag them into the order they think is correct.",
+      "audio_duration_sec": 5.43
+    },
+    {
+      "id": "co-preview-start",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 47.5,
+      "window_sec": 5.0,
+      "display_text": "Hit Start to begin — the participant submits their answer before the timer runs out.",
+      "tts_text": "Hit Start to begin — the participant submits their answer before the timer runs out.",
+      "audio_duration_sec": 4.31
     },
     {
       "id": "co-preview-results",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 47.49,
-      "window_sec": 6.5,
-      "display_text": "The presenter view shows the leaderboard and the correct order revealed. Hit Present when you're ready to go live.",
-      "tts_text": "The presenter view shows the leaderboard and the correct order revealed. Hit Present when you're ready to go live.",
-      "audio_duration_sec": 5.67
+      "start_sec": 57.5,
+      "window_sec": 5.0,
+      "display_text": "The presenter view shows the correct order revealed and the leaderboard updating in real time.",
+      "tts_text": "The presenter view shows the correct order revealed and the leaderboard updating in real time.",
+      "audio_duration_sec": 4.62
+    },
+    {
+      "id": "co-back-to-editor",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 62.5,
+      "window_sec": 3.5,
+      "display_text": "Click Back to Editor to return to your slide.",
+      "tts_text": "Click Back to Editor to return to your slide.",
+      "audio_duration_sec": 2.46
+    },
+    {
+      "id": "co-present",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 65.5,
+      "window_sec": 5.5,
+      "display_text": "Hit Present when you're ready to go live — participants will race to arrange the statements correctly.",
+      "tts_text": "Hit prih-ZENT when you're ready to go live — participants will race to arrange the statements correctly.",
+      "audio_duration_sec": 4.91
     }
   ]
 }
