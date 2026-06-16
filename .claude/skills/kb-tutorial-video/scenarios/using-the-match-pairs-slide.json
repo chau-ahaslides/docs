@@ -161,7 +161,7 @@
       "path": "/presentation/*",
       "title": "This is your participant's phone",
       "description": "Participants scan the code or visit the link to join. They enter a name and tap 'Join the game!' — then wait for the host to start.",
-      "targetSelector": ".iframe-wrapper-audience",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
       "pauseMs": 14000,
       "action": null,
       "previewInteractions": [
@@ -192,7 +192,7 @@
       "path": "/presentation/*",
       "title": "Participants drag pairs into place",
       "description": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They drag each answer to its matching prompt before time runs out.",
-      "targetSelector": ".iframe-wrapper-presenter",
+      "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
       "pauseMs": 3000,
       "action": null,
       "previewInteractions": [
