@@ -62,15 +62,48 @@
       "title": "Tune your settings",
       "description": "Toggle on Time limit to keep answers snappy, Hide results to reveal responses on your schedule, or Allow images so participants can share photos instead of text. Each setting is independent.",
       "targetSelector": "[data-testid=\"editor-side-right-allow-image-submission-checkbox\"]",
-      "pauseMs": 500,
-      "action": null
+      "pauseMs": 2000,
+      "action": null,
+      "mainInteractions": [
+        {
+          "selector": "[data-testid=\"editor-middle-preview-button\"]",
+          "label": "open preview via JS click (bypasses overlay backdrop)",
+          "pauseAfterMs": 8000
+        }
+      ]
     },
     {
-      "id": "oe-present",
+      "id": "oe-preview-audience",
       "path": "/presentation/*",
-      "title": "Ready — hit Present!",
-      "description": "That's everything. When your audience joins, they type their answers and responses appear on your screen in real time. Hit Present to go live.",
-      "targetSelector": ".aha-button-present",
+      "title": "Audience types their answer here",
+      "description": "When your audience joins, they type their answer in this box and hit Submit. Responses arrive on your screen the moment they're sent.",
+      "targetSelector": ".iframe-wrapper-audience",
+      "pauseMs": 2000,
+      "action": null,
+      "previewInteractions": [
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-open-ended-textarea\"]",
+          "type": "type",
+          "value": "Shorter weekly stand-ups",
+          "label": "type open-ended answer",
+          "pauseAfterMs": 1500
+        },
+        {
+          "frameMatch": "audience.",
+          "selector": "[data-testid=\"audience-open-ended-submit-button\"]",
+          "label": "submit answer",
+          "pauseAfterMs": 3000
+        }
+      ]
+    },
+    {
+      "id": "oe-preview-results",
+      "path": "/presentation/*",
+      "title": "Responses appear live on your screen",
+      "description": "Each submission pops up instantly on the presenter view. Hit Present when you're ready to go live — your audience sees the same experience on their phones.",
+      "targetSelector": ".iframe-wrapper-presenter",
+      "pauseMs": 3000,
       "action": null
     }
   ]

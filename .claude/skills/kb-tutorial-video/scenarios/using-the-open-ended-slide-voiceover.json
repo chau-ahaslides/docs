@@ -1,73 +1,91 @@
 {
   "voice_primary": "Liam",
   "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
-  "voice_secondary": "Alice",
-  "voice_secondary_id": "Xb7hH8MSUJpSbSDYk0k2",
-  "video_duration_sec": 25.76,
-  "generated_round": 1,
-  "youtube_id": "16Mg_DutcHA",
-  "notes": "6-clip mix (s06b merges settings + present steps because final two steps rendered same tooltip in recording). Liam for intro/setup steps, Alice for action/feature/closing steps. Mean audio level -18.9 dB, no clipping. No overlap in 0:00-0:08 window (s01 starts at 0.0s, s02 at 5.5s).",
+  "video_duration_sec": 32.0,
+  "generated_round": 2,
+  "youtube_id": "TBD",
+  "notes": "8-clip mix, ALL Liam (was Liam+Alice in r1). Fixes: (1) VO overlap at 16-18.91s now eliminated by remixing with single voice and new timing; (2) audience/results view added via Preview mode with previewInteractions (type + submit); (3) single-voice policy now compliant. Checks: no overlap, all clips Liam.",
   "steps": [
     {
       "id": "oe-welcome",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 0.0,
-      "window_sec": 5.5,
+      "window_sec": 6.0,
       "display_text": "An Open Ended slide lets your audience answer in their own words — no fixed choices, just real responses.",
       "tts_text": "An Open Ended slide lets your audience answer in their own words — no fixed choices, just real responses.",
       "audio_duration_sec": 5.85
     },
     {
       "id": "oe-create",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 5.5,
-      "window_sec": 3.06,
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 6.0,
+      "window_sec": 3.0,
       "display_text": "Click New presentation to start a fresh deck.",
       "tts_text": "Click New presentation to start a fresh deck.",
-      "audio_duration_sec": 3.06
+      "audio_duration_sec": 2.35
     },
     {
       "id": "oe-pick-type",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 8.0,
-      "window_sec": 2.4,
+      "start_sec": 9.0,
+      "window_sec": 3.0,
       "display_text": "Select Open Ended from the slide type picker.",
       "tts_text": "Select Open Ended from the slide type picker.",
       "audio_duration_sec": 2.40
     },
     {
       "id": "oe-type-question",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 10.0,
-      "window_sec": 4.86,
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 12.0,
+      "window_sec": 4.5,
       "display_text": "Type your question. Make it specific enough to spark a real response.",
       "tts_text": "Type your question. Make it specific enough to spark a real response.",
-      "audio_duration_sec": 4.86
+      "audio_duration_sec": 3.60
     },
     {
       "id": "oe-layout",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 14.5,
-      "window_sec": 4.41,
+      "start_sec": 16.5,
+      "window_sec": 5.0,
       "display_text": "Pick Grid to show all responses at once, or One by one to reveal them individually.",
       "tts_text": "Pick Grid to show all responses at once, or One by one to reveal them individually.",
       "audio_duration_sec": 4.41
     },
     {
-      "id": "oe-settings+present",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 16.0,
-      "window_sec": 9.33,
-      "display_text": "Toggle on Time limit, Hide results, or Allow images to fine-tune your slide. Then hit Present — responses appear live on your screen.",
-      "tts_text": "Toggle on Time limit, Hide results, or Allow images to fine-tune your slide. Then hit Present — responses appear live on your screen.",
-      "audio_duration_sec": 9.33
+      "id": "oe-settings",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 21.5,
+      "window_sec": 5.0,
+      "display_text": "Toggle on Time limit, Hide results, or Allow images to fine-tune your slide.",
+      "tts_text": "Toggle on Time limit, Hide results, or Allow images to fine-tune your slide.",
+      "audio_duration_sec": 4.44
+    },
+    {
+      "id": "oe-preview-audience",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 26.5,
+      "window_sec": 3.5,
+      "display_text": "When your audience joins, they type their answer here and hit Submit.",
+      "tts_text": "When your audience joins, they type their answer here and hit Submit.",
+      "audio_duration_sec": 3.37
+    },
+    {
+      "id": "oe-preview-results",
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 30.0,
+      "window_sec": 3.0,
+      "display_text": "Each response appears live — hit Present to go live.",
+      "tts_text": "Each response appears live — hit Present to go live.",
+      "audio_duration_sec": 3.00
     }
   ],
-  "mix_command": "ffmpeg -y -i open-ended-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06b.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=5500|5500[a2];[3:a]adelay=8000|8000[a3];[4:a]adelay=10000|10000[a4];[5:a]adelay=14500|14500[a5];[6:a]adelay=16000|16000[a6];[a1][a2][a3][a4][a5][a6]amix=inputs=6:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-narrated.webm"
+  "mix_command": "ffmpeg -y -i open-ended-r2-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=9000|9000[a3];[4:a]adelay=12000|12000[a4];[5:a]adelay=16500|16500[a5];[6:a]adelay=21500|21500[a6];[7:a]adelay=26500|26500[a7];[8:a]adelay=30000|30000[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r2-narrated.webm"
 }
