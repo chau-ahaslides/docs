@@ -34,6 +34,14 @@ transition needs to complete before the step acts.
 **`action`** — one of:
 - `null` — tooltip-only; the recorder clicks Next. Use for welcome/closing
   steps and for Preview steps where you anchor the tooltip to a pane wrapper.
+  **Caveat — `action:null` cannot hold for long.** A long `pauseMs` (≥~5s) on
+  an `action:null` step silently breaks the overlay: the recorder's Next-button
+  click stops registering and the spotlight collapses, so a step you wanted to
+  *hold* under a 7s VO clip instead snaps away early (AKB-15 r9). To hold a
+  spotlight for the full duration of a long VO line, give the step a **real
+  `action`** (e.g. a `{"type":"click", ...}` on a harmless toggle/checkbox)
+  with the long `pauseMs` — only steps with a real action type reliably hold
+  for 7+ seconds.
 - `{"type": "click", "selector": "..."}` — advance by clicking the spotlighted
   target. The `selector` is what gets clicked; `targetSelector` is what the
   spotlight ring anchors to (they can differ — e.g., spotlight on a dialog,
