@@ -2,12 +2,12 @@
   "voice_primary": "Liam",
   "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
   "model": "eleven_multilingual_v2",
-  "video_duration_sec": 50.6,
-  "generated_round": 5,
+  "video_duration_sec": 39.0,
+  "generated_round": 6,
   "youtube_id": "TBD",
-  "youtube_chapters": "0:00 Intro\n0:15 Configure the slide\n0:35 Preview and present live",
-  "youtube_chapters_notes": "3 chapters, all >=10s, validated against r5 (53.27s = 50.66s tutorial + 2.61s outro). Apply by pasting into YouTube video description at publish time. Also stored in using-the-open-ended-slide.chapters.txt.",
-  "notes": "r5: Full rebuild from scratch per AKB-14 SCOPE. Single voice Liam throughout. VO re-timed against fresh recording visual timeline. Key fixes vs r4: (1) oe-settings VO now at 25.0s when settings tooltip is actually visible (r4 had it at 20.5s while layout tooltip still on screen); (2) oe-preview-audience gap fixed — audience VO at 40.0s, no 4.8s silent gap; (3) oe-preview-open VO shifted to 35.0s matching preview load completion. check_vo_overlap.py PASS. Single voice Liam. Audio tail 2.28s. Video 50.6s (trimmed from 79.4s raw). Branded outro appended separately. Participant screen in English verified at f035. Results populated at f045+.",
+  "youtube_chapters": "0:00 Intro\n0:12 Configure the slide\n0:24 Preview and present live",
+  "youtube_chapters_notes": "3 chapters, all >=10s apart, validated against r6 (42s = 39s tutorial + 3s outro). Apply by pasting into YouTube video description at publish time. Also stored in using-the-open-ended-slide.chapters.txt.",
+  "notes": "r6: Removed oe-settings step (settings section at ~0:26 in r5). Re-stitched r5 video by cutting 24.2s-35.0s (settings tooltip + preview loading), joining directly to oe-preview-open. VO re-timed: s06=24.2s (was s07 at 35s), s07=29.2s (was s08 at 40s), s08=35.2s (was s09 at 46s). check_vo_overlap.py PASS. Single voice Liam. Video 39.0s (cut from 50.64s by removing 10.8s settings section). Branded outro 3s appended. Tail 1.48s. No settings VO in narration.",
   "steps": [
     {
       "id": "oe-welcome",
@@ -54,26 +54,16 @@
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 20.0,
-      "window_sec": 5.0,
+      "window_sec": 4.2,
       "display_text": "Grid shows all responses at once. One by one reveals them individually.",
       "tts_text": "Grid shows all responses at once. One by one reveals them individually.",
-      "audio_duration_sec": 4.00
-    },
-    {
-      "id": "oe-settings",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 25.0,
-      "window_sec": 10.0,
-      "display_text": "Toggle Time limit, Hide results, or Allow images to suit your session.",
-      "tts_text": "Toggle Time limit, Hide results, or Allow images to suit your session.",
       "audio_duration_sec": 4.00
     },
     {
       "id": "oe-preview-open",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 35.0,
+      "start_sec": 24.2,
       "window_sec": 5.0,
       "display_text": "Hit Preview to rehearse the slide and see the participant view before going live.",
       "tts_text": "Hit Preview to rehearse the slide and see the participant view before going live.",
@@ -83,7 +73,7 @@
       "id": "oe-preview-audience",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 40.0,
+      "start_sec": 29.2,
       "window_sec": 6.0,
       "display_text": "Participants type their answer and hit Submit. Responses arrive instantly.",
       "tts_text": "Participants type their answer and hit Submit. Responses arrive instantly.",
@@ -93,12 +83,12 @@
       "id": "oe-preview-results",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 46.0,
-      "window_sec": 4.6,
+      "start_sec": 35.2,
+      "window_sec": 3.8,
       "display_text": "Answers appear live. Hit Present to go.",
       "tts_text": "Answers appear live. Hit Present to go.",
       "audio_duration_sec": 2.32
     }
   ],
-  "mix_command": "ffmpeg -y -i open-ended-r5-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -i vo/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=25000|25000[a6];[7:a]adelay=35000|35000[a7];[8:a]adelay=40000|40000[a8];[9:a]adelay=46000|46000[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r5-narrated.webm"
+  "mix_command": "ffmpeg -y -i open-ended-r6-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=10000|10000[a3];[4:a]adelay=15000|15000[a4];[5:a]adelay=20000|20000[a5];[6:a]adelay=24200|24200[a6];[7:a]adelay=29200|29200[a7];[8:a]adelay=35200|35200[a8];[a1][a2][a3][a4][a5][a6][a7][a8]amix=inputs=8:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k open-ended-r6-narrated.webm"
 }
