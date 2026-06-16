@@ -23,7 +23,7 @@ description: "AhaSlides YouTube Slides let you play YouTube videos on both the p
 
 # How to Use YouTube Slides on AhaSlides
 
-## AhaSlides YouTube Slides let you play YouTube videos on both the presenter and audience screen.
+## AhaSlides YouTube slides let you play YouTube videos on both the presenter and audience screen.
 
 ### Here's how:
 

@@ -20,7 +20,7 @@ description: "The Diagram slide lets you build and display structured visual dia
 
 The Diagram slide lets you build and display structured visual diagrams — flowcharts, hierarchies, charts, timelines, comparisons, and more — directly inside AhaSlides. Instead of pasting a static screenshot, you define your content in a structured form in the right panel, and the diagram renders automatically. No external tool is required, and you can update the content at any time before presenting.
 
-## What the Diagram slide is for
+## What the diagram slide is for
 
 Use a Diagram slide any time you need to show relationships, processes, data, or structure rather than a list of words or a poll result. The slide supports seven diagram types covering a wide range of visual needs:
 
@@ -70,7 +70,7 @@ You define items with a **Label** and a numeric **Value**. Use this for showing 
 
 **Variants:** Bar, Column, Line, Pie, Donut
 
-### Word cloud
+### Word Cloud
 
 **Description:** Words sized by weight.
 
@@ -92,7 +92,7 @@ You define groups of items (each group has a label and optional items with label
 
 You type raw AntV Infographic markup in a text area. There is no Variant dropdown for this type. Use this when none of the structured types covers your use case and you need full control. A link to the AntV Infographic gallery is provided in the panel for syntax reference: [infographic.antv.vision/gallery](https://infographic.antv.vision/gallery)
 
-## Setting up your Diagram slide
+## Setting up your diagram slide
 
 ### 1. Add the slide
 
@@ -126,13 +126,13 @@ Use the **Streaming animation** control to animate the diagram when the slide fi
 
 Type a title in the **Title** field at the top of the right panel. You can also add a short **description** below the title field.
 
-## Presenting the Diagram slide
+## Presenting the diagram slide
 
 When you reach a Diagram slide during a presentation, the diagram fills the slide area on the presenter screen. Participants viewing on their devices see the same visual in a read-only format — there is no response or interaction required from the audience on a Diagram slide.
 
 If streaming animation is enabled, the diagram animates in when the slide first appears. The **Improve** AI button in the editor toolbar is also available on Diagram slides to help refine content via the AI assistant.
 
-## Tips for effective Diagram slides
+## Tips for effective diagram slides
 
 - **Start with the right type.** The Diagram type you choose determines the data model — switching types later resets the content, so pick the right one before filling in items.
 - **Use Relation for connected flows; use Hierarchy for trees.** If items have a strict parent-child nesting with no cross-links, Hierarchy is simpler to manage. If items connect in multiple directions, use Relation.
@@ -140,7 +140,7 @@ If streaming animation is enabled, the diagram animates in when the slide first 
 - **Use animation sparingly.** Streaming animation works best on Relation and Hierarchy types to reveal connections step by step. On dense Charts or Word clouds, Off is usually cleaner.
 - **Use the AI agent.** The AhaSlides AI agent can generate a Diagram slide from a natural-language description — describe the flow or structure you want and let AI build the initial data, then refine in the panel.
 
-## When to use a Diagram slide vs. a Content slide
+## When to use a diagram slide vs. a Content slide
 
 | | Diagram slide | Content slide |
 |---|---|---|

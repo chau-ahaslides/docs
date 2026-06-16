@@ -42,7 +42,7 @@ Interactive demo: try the Poll slide
 
 In a poll, you ask a question and provide between 2 and 30 answer options. Your audience vote for one or more of the answer options on their phones. The poll is updated live, so on the presenter screen you see a chart displaying the results. Once a participant has voted on their phone, they'll see the results on their screen too — you can see both views side by side in the Preview section of the video above.
 
-## How to make a poll question
+## How to make a Poll question
 
 1. On the AhaSlides editor, click **+ New slide** in the top-left corner. (On a brand-new presentation, you can also click **Choose a slide** right on the canvas.)
 2. Pick **Poll** from the slide type list — you'll find it in the **Unscored** section.
@@ -51,7 +51,7 @@ In a poll, you ask a question and provide between 2 and 30 answer options. Your 
 
 This is the **minimum** you need to do for any Poll slide to work. Want to see exactly what your audience will see before going live? Hit **Preview** in the top-right corner — [here's how previewing works](how-to-preview-and-test-your-presentation.md). When your slide is ready for your audience to vote on, [invite your audience to your presentation](sharing-your-presentation-for-participants-to-join.md) and press the 'Present' button in the top-right corner.
 
-## Other Settings on your Poll
+## Other settings on your Poll
 
 - **Hide results** - Keep the results hidden until you press the button to reveal them to your audience. This also hides the results on each participant's phone screen.
 - **Show results on audience's phones** - Allows the audience to see everyone's votes for that slide on their phone screen after they have submitted their own vote.

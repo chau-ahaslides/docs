@@ -43,11 +43,11 @@ Below is an interactive demo, which will help you experience this function:
 
 > 📹 [Watch video](https://capture.navattic.com/cmn2ziwx0000b04jq4aks31wa)
 
-## Adding Entries to the Wheel
+## Adding entries to the wheel
 
 There are **2 ways** you can fill up your wheel with entries of your choice.
 
-### #1 - Add Entries
+### #1 - Add entries
 
 You can add entries to the Spinner Wheel by typing them in the **Entries** field on the right panel of the editor.
 
@@ -55,7 +55,7 @@ Click the **Entries** field and type your first entry. Hit **⏎ Enter** after e
 
 > **Protip** You can also add entries to your Spinner Wheel **while presenting in presentation mode**. There's no need to return to the editor.
 
-### #2 - Autofill Entries with Participants' Names
+### #2 - Autofill entries with participants' names
 
 You may want to use the Spinner Wheel to select one of your presentation's participants at random. If that's the case, check the box labelled **Participant name autofill** in the right panel of the editor — the wheel fills itself with every participant's name as they scan your QR code and join by entering their name. No manual typing needed.
 
@@ -70,7 +70,7 @@ If you had any quiz slide before your Spinner Wheel slide, then checking the **P
 >
 > Create a [Word Cloud](using-the-word-cloud-slide.md) slide and get your participants to submit their wheel entries into the cloud. Then change the slide type from Word Cloud to Spinner Wheel — every submission from the Word Cloud is automatically uploaded as an entry in the wheel.
 
-## How to Remove Entries
+## How to remove entries
 
 To remove a manual entry from the wheel, hover over the entry in the entry list and press the **bin icon** labelled *'Delete this entry'.*
 
@@ -83,7 +83,7 @@ In the right panel of the editor, there are several settings for your Spinner Wh
 1. **Filter profanity** — Hide inappropriate words submitted by the audience on all slides.
 1. **Hide entry board** — Removes the list of entries from the wheel when the presenter is presenting.
 
-## Spinning the Wheel
+## Spinning the wheel
 
 With all your desired entries in the wheel, press the button at the centre of the wheel to spin it. The chosen entry is displayed on both the presenter and audience devices.
 

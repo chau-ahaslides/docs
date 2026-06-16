@@ -26,7 +26,7 @@ Resetting results (or 'clearing the responses') on your presentation means that 
 
 This allows you to reuse presentations for different audiences. Each reset will also **create a new session** in the Report: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
 
-## Video and Interactive demo: Resetting Results (Clearing Responses)
+## Video and interactive demo: resetting results (clearing responses)
 
 This video explains how to reset the result of your presentation, or a single slide:
 
@@ -36,7 +36,7 @@ Below is an interactive demo, which will help you experience this function:
 
 > 📹 [Watch video](https://capture.navattic.com/cmne0ctut000m04jr6hs0gvba)
 
-## What are 'Results'?
+## What are 'results'?
 
 The 'results' of a presentation refer to **anything submitted to your presentation by your audience**. This includes...
 
@@ -46,11 +46,11 @@ The 'results' of a presentation refer to **anything submitted to your presentati
 - Results on a leaderboard
 - All emoji reactions
 
-## What is 'Resetting Results'?
+## What is 'resetting results'?
 
 Reseting the results of a presentation means you will wipe that presentation clear of anything submitted by your participants. This will return your presentation to its state before your participants joined and interacted with it.
 
-## How to Reset all Results
+## How to reset all results
 
 There are 2 ways to reset all the results from your entire presentation.
 
@@ -62,7 +62,7 @@ Click the '**Reset results**' button below the slide canvas.
 
 On the '**My Presentations**' page, click on the 3 dot icon on the right of your presentation (or right-click on the presentation) and choose 'Reset results'.
 
-## How to Reset Results from a Single Slide
+## How to reset results from a single slide
 
 Rather than resetting results from your whole presentation, you can choose to reset the results of **just one slide**. This is useful if there has been an error on your slide and you want to present it again.
 

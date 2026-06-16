@@ -66,7 +66,7 @@ Change the settings of your Ranking slide to your liking. There are 4 settings t
 3. **Close submission**: Close submissions for specific slides can be useful if you need to clarify a question before your audience submits their answers, or for any other reason where you do not want the participants to submit their answers to a question at that moment.
 4. [**Hide results**](https://help.ahaslides.com/portal/en/kb/articles/hide-results): This hides the submitted responses from the presenter's screen as they're submitted. While presenting and receiving submissions, there will be a button in the middle of the slide to reveal the responses whenever you want.
 
-### How the ranking works
+### How the Ranking works
 
 Ranking slide uses a weighted scoring system (Borda count):
 

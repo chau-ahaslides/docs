@@ -28,7 +28,7 @@ The AhaSlides Presentation Report provides detailed insights into your audience'
 
 When at least one person has interacted with your presentation, you'll be able to see a report containing the following:
 
-### 1. Key Metrics
+### 1. Key metrics
 
 - **Total Participants:** The total number of participants who joined your presentation.
 - **Total Reactions:** The total number of reactions from your audience.
@@ -36,7 +36,7 @@ When at least one person has interacted with your presentation, you'll be able t
 - **Accuracy:** The percentage of correct answers on quiz questions.
 - **Rating:** The average rating given by participants.
 
-### 2. Detailed Breakdown
+### 2. Detailed breakdown
 
 **Participants Column:** This section contains detailed information about each participant:
 
@@ -47,7 +47,7 @@ When at least one person has interacted with your presentation, you'll be able t
 
 **Feedback Column:** This section shows all the feedback collected during the presentation, along with the overall rating score given by the audience.
 
-## How to Find your Presentation Report
+## How to find your presentation report
 
 There are two ways to find your presentation report on AhaSlides.
 
@@ -80,15 +80,15 @@ When opening the **Presentation report**, you will see a **Share** button. To sh
 
 The Individual Audience report offers in-depth insights into each audience's responses. This allows presenters to examine each person's answers closely, helping to identify areas where individuals may be struggling or excelling. Presenters can then tailor their presentation to better meet the needs of the audience. Furthermore, this report can be used to evaluate how engaged individual audiences are with the presentation.
 
-## What does the Individual Participant Report include?
+## What does the individual participant report include?
 
 The Participant Summary provides a comprehensive overview of each participant's activity during your presentation. It is divided into several key sections:
 
-### 1. Participant Identification Information
+### 1. Participant identification information
 
 - **Name, Email, Organisation:** Displays the participant's name, email address, and organization (if provided during registration or login). If the participant joins anonymously, this information will not be available.
 
-### 2. Activity Summary
+### 2. Activity summary
 
 Participant activities summary on polls, word clouds, scales, open-ended questions, brainstorming, and Q&A
 
@@ -99,7 +99,7 @@ Participant activities summary on polls, word clouds, scales, open-ended questio
 - **Participant Reactions:** The total number of reactions submitted by the participant during the presentation.
 - **Participant Feedback:** Displays the rating provided by the participant to the presenter, reflecting their overall impression.
 
-### 3. Participant Details
+### 3. Participant details
 
 This section provides a detailed breakdown of the participant's interactions.
 
@@ -128,7 +128,7 @@ This section provides a detailed breakdown of the participant's interactions.
   - **Team Contribution Points:** Shows the points contributed to the team's overall score if the participant was part of a team.
 - **Participant details feedback:** Displays the full ratings and comments provided by the participant to the presentation and presenter.
 
-## How to Find Your Individual Participant Report:
+## How to find your individual participant report:
 
 To locate and access your Individual Audience Report within AhaSlides, you can follow the steps:
 

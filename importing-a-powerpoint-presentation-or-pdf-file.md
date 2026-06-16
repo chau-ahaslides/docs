@@ -34,7 +34,7 @@ By importing your PowerPoint to AhaSlides, you can **insert any of AhaSlides int
 
 There are **two ways** you can import your PowerPoint file to AhaSlides:
 
-### 1. Import on the AhaSlides Dashboard
+### 1. Import on the AhaSlides dashboard
 
 On the **My Presentations** dashboard, you can click the button labelled '**Import**'. Once you've done this, **a pop-up window** will ask you to browse your computer for your PPT, PPTX or PDF PowerPoint file. You can also drag and drop your file on to the pop-up window:
 
@@ -54,13 +54,13 @@ To begin the import process, choose one option and click '**Start**'
 
 > **Note:** You can find out more about generating slides using AI here: [Generating Slides from Imported Files on AhaSlides](generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md)
 
-## What Happens to an Imported PowerPoint/PDF?
+## What happens to an imported PowerPoint/PDF?
 
 Once imported into your AhaSlides presentation, each slide of your PowerPoint will be displayed as a separate [Content slide](using-the-content-slide.md). These slides will contain **static images** of each of your PowerPoint slides, so **animations, embedded audio, and links will not be imported into** **AhaSlides**. However, each of your PowerPoint slides will have the functionality of a normal Content slide, meaning **you can add text, images, GIFs, and emojis**.
 
 The name of each of your PowerPoint slides in AhaSlides will simply be the slide number followed by the name of the PowerPoint file you uploaded. You can change the name of these in the '**Content**' tab of each slide, though this will just be for your own navigation purposes, as your audience will not be able to see the slide names.
 
-## Making a PowerPoint Interactive
+## Making a PowerPoint interactive
 
 While you can't make the PowerPoint slides interactive themselves (except for the default emoji reactions), you can [generate slides using AI](generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md), or **place AhaSlides interactive slides in between the slides of your PowerPoint** to encourage interaction from your audience.
 

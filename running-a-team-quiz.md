@@ -28,13 +28,13 @@ You can set up your quiz to be played in teams. You can also choose the scoring 
 
 > **Note:** Please note that this feature is only available on **Edu Medium, Edu Large, Pro, and Enterprise plans**
 
-## How Does it Work?
+## How does it work?
 
 When teamplay is enabled, players will join other players in teams to compete for points against other teams.
 
 Before presenting your quiz to your players, you will need to set up the teams and the scoring rules. When a player joins your quiz, they will be asked to select one of the teams you have created.
 
-## How to Set Up your Teams
+## How to set up your Teams
 
 1. On the presentation editor, go to ***Settings*** and then **General quiz settings**.
 
@@ -57,7 +57,7 @@ iii. **Fastest answer only** - Only register the score of the fastest answer fro
 
 6. If you would like to hide the individual ranking on the players' screens, you can enable the option **Hide individual leaderboard.** The presenter will still be able to change between team and individual leaderboards.
 
-## How your Participants Join Teams
+## How your participants join Teams
 
 When you present your quiz, your audience will be asked to enter their name, choose an avatar and select one of the teams you have set up...
 

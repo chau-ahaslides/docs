@@ -30,7 +30,7 @@ The Match Pairs slide is a quiz slide type where players must match a set of pro
 How to use the Match Pairs slide on AhaSlides
 {% endembed %}
 
-### How does a Match Pairs Slide Work?
+### How does a Match Pairs slide work?
 
 In a Match Pairs slide, players are presented with a question, as well as two columns of words. In the left-side column are **prompts**, marked by numbers *(1, 2, 3, 4)* and in the right-side column are **answers**, marked by letters *(A, B, C, D).*
 

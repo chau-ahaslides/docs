@@ -24,7 +24,7 @@ description: "Learn how to check and purchase a special Educational Plan at a di
 
 If you're a teacher, student, NGO or plan to use AhaSlides in some educational capacity, you can claim an Educational Plan at a discounted rate. These plans are all **billed annually**.
 
-## Where to Find the Educational Plans
+## Where to find the educational plans
 
 1. Go to [https://ahaslides.com/pricing/?plan=edu](https://ahaslides.com/pricing/?plan=edu)
 2. Click the **'Buy now'** button on the plan you wish to purchase.

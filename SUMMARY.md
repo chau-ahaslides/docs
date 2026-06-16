@@ -2,14 +2,14 @@
 
 * [Welcome](README.md)
 
-## Getting Started
+## Getting started
 
 * [What is AhaSlides?](what-is-ahaslides.md)
 * [Creating your AhaSlides Account](creating-your-ahaslides-account.md)
 * [The 'My Presentations' Dashboard](the-my-presentations-dashboard.md)
 * [AhaSlides Template Library](ahaslides-template-library.md)
 
-## Using Slide Types
+## Using slide types
 
 * [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
 * [Creating a Poll question on AhaSlides](creating-a-poll-question-on-ahaslides.md)
@@ -34,7 +34,7 @@
 * [Using the Word Cloud Slide](using-the-word-cloud-slide.md)
 * [Using your Google Slides Presentation with AhaSlides](using-your-google-slides-presentation-with-ahaslides.md)
 
-## Features and Functions
+## Features and functions
 
 * [Adding notes to your presentation](adding-notes-to-your-presentation.md)
 * [Changing the Display Language](changing-the-display-language.md)
@@ -49,7 +49,7 @@
 * [Slide Audio, Presentation Audio and Sound Effects](slide-audio-presentation-audio-and-sound-effects.md)
 * [Upload Image Guidelines for AhaSlides](upload-image-guidelines-for-ahaslides.md)
 
-## AI-Powered Features
+## AI-powered features
 
 * [Generating Questions and Answers using AI on AhaSlides](generating-questions-and-answers-using-ai-on-ahaslides.md)
 * [Generating Slides from Imported Files on AhaSlides](generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md)
@@ -60,7 +60,7 @@
 * [Setting up a Self-Paced presentation on AhaSlides](setting-up-a-self-paced-presentation-on-ahaslides.md)
 * [Sharing your presentation for participants to join](sharing-your-presentation-for-participants-to-join.md)
 
-## After the Presentation
+## After the presentation
 
 * [AhaSlides Presentation Report and Individual Participant Report](your-ahaslides-presentation-report.md)
 * [Resetting the Results](resetting-the-results.md)
@@ -77,12 +77,12 @@
 * [Using the AhaSlides App on Zoom](using-the-ahaslides-app-on-zoom.md)
 * [AhaSlides MCP — Getting Started Guide](ahaslides-mcp-getting-started-guide.md)
 
-## Teams and Enterprise
+## Teams and enterprise
 
 * [Managing your Team Members](managing-your-team-members.md)
 * [Sharing a Presentation with Specific Team Members](sharing-a-presentation-with-specific-team-members.md)
 
-## Account Management
+## Account management
 
 * [Billing address](billing-address.md)
 * [Change or reset your password](change-or-reset-your-password.md)
@@ -90,7 +90,7 @@
 * [How to log out of AhaSlides from all other devices and browsers](how-to-log-out-of-ahaslides-from-all-other-devices-and-browsers.md)
 * [Sharing your AhaSlides account](sharing-your-ahaslides-account.md)
 
-## Price Plans
+## Price plans
 
 * [Annual Subscriptions](annual-subscriptions.md)
 * [Educational Subscriptions](educational-subscriptions.md)
@@ -111,7 +111,7 @@
 * [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 * [What currencies can be used to purchase?](what-currencies-can-be-used-to-purchase.md)
 
-## After Purchase
+## After purchase
 
 * [Billing information and Invoice/Receipt](billing-information-and-invoicereceipt.md)
 * [Cancelling your AhaSlides Subscription](cancelling-your-ahaslides-subscription.md)

@@ -25,7 +25,7 @@ description: "The Content slide lets you create and customise text and images. T
 
 The Content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
 
-## How does the Content Slide work?
+## How does the Content slide work?
 
 The Content slide is a non-interactive slide, meaning that your participants will see the slide on their phones, but cannot interact with it (besides sending reactions).
 
@@ -43,14 +43,14 @@ This slide works in **blocks**, just like a normal PowerPoint slide. You can add
 >
 > 
 
-## Editing the Content Slide
+## Editing the Content slide
 
 The Content slide comes with two blocks as default. To edit...
 
 1. **a block**, simply click the block once. This will allow you to move and rotate the block, as well as give you the options to *duplicate* the block and *delete* it.
 2. **the content within a block**, click the block twice. This will allow you to alter the text, formatting, colour, alignment, add images and more.
 
-## Adding New Blocks
+## Adding new blocks
 
 To add a new block to your Content slide, you can use any of the **5 icons at the top of the slide**.
 
@@ -64,13 +64,13 @@ To add a new block to your Content slide, you can use any of the **5 icons at th
 >
 > 
 
-## Positioning Blocks
+## Positioning blocks
 
 Blocks on the Content slide have a **layered structure**. This means that a block 'on top' of another block will obscure it. You can change the layered structure of each block by bringing it 'forward' or sending it 'backward'.
 
 You can also use the **alignment guides** to perfectly align your blocks along the vertical or horizontal centre. Simply drag your block into the middle of the canvas and it will snap into position along either the vertical line, the horizontal line, or both (if directly in the centre).
 
-## Adding Animation to Blocks
+## Adding animation to blocks
 
 Enhance the dynamism of your slides by incorporating animations into objects within the Content slides.
 
@@ -82,7 +82,7 @@ Follow these steps to add animation to any block on the Content slide:
 
 To remove any animation, simply select '**No animation**.'
 
-## The Content Slide Preview
+## The Content slide preview
 
 The Content slide is the only slide type that, in the left column on the editor, shows a **full preview** of the content within it. This is to help navigation of presentations with multiple Content slides.
 

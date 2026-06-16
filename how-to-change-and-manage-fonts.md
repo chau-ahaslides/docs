@@ -26,7 +26,7 @@ You can change the font used throughout your AhaSlides presentation and arrange 
 
 > **Note:** Please note that this feature is only available on **Pro and Enterprise plans.**
 
-## How to Change Font
+## How to change font
 
 In the AhaSlides editor, select any of the slides in your presentation.
 
@@ -36,7 +36,7 @@ Use the dropdown menu to select your desired font.
 
 > **Note:** This will change the font across your entire presentation. It will also be visible on your audience's screens.
 
-## How to Manage your Fonts
+## How to manage your fonts
 
 Click on the dropdown menu under '**Text**' in the '**Design**' tab of a slide. Then, click the '**More fonts**' option at the top.
 
@@ -50,7 +50,7 @@ Those fonts you selected will now be available in the '**Text**' dropdown menu.
 
 > **Note:** Once you have selected your fonts from the font library, those fonts will be your immediate options across **all presentations in your account**.
 
-## How Fonts Work with the Content Slide
+## How fonts work with the Content slide
 
 The Content slide has its own small font library, which is displayed in the top left corner of the editor when editing text.
 

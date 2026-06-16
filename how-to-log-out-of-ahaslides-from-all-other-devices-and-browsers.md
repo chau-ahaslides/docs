@@ -22,7 +22,7 @@ description: "The Log out everywhere function on AhaSlides will log you out from
 
 # How to log out of AhaSlides from all other devices and browsers
 
-## The Log out everywhere function on AhaSlides will log you out from all other devices and browsers.
+## The log out everywhere function on AhaSlides will log you out from all other devices and browsers.
 
 ### **Here's how:**
 

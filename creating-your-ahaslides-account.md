@@ -24,28 +24,28 @@ description: "Welcome to AhaSlides! Follow these simple steps to create your Aha
 
 Welcome to AhaSlides! Follow these simple steps to create your AhaSlides account, using the method that works best for you.
 
-## 1. Create AhaSlides Account by Entering Your Email
+## 1. Create AhaSlides account by entering your email
 
 1. Go to the [sign-up page](https://presenter.ahaslides.com/pages/register).
 2. Enter your email and choose a password.
 3. Enter your full name.
 4. Press **Sign Up**.
 
-## 2. Using Your Microsoft Account
+## 2. Using your Microsoft account
 
 1. Go to the [sign-up page](https://presenter.ahaslides.com/pages/register).
 2. Choose the **Sign up with Microsoft** option.
 3. Select the email account you would like to sign up with.
 4. Sign in.
 
-## 3. Sign Up by Connecting with Your Google Account
+## 3. Sign up by connecting with your Google account
 
 1. Go to the [sign-up page](https://presenter.ahaslides.com/pages/register).
 2. Choose the **Sign up with Google** option.
 3. Select the email account you would like to sign up with.
 4. Sign in.
 
-## 4. Sign Up Using Single Sign-On (SSO)
+## 4. Sign up using single sign-on (SSO)
 
 1. Go to the [sign-up page](https://presenter.ahaslides.com/pages/register).
 2. Choose the **Sign up with SSO** option.

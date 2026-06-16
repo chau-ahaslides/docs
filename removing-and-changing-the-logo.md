@@ -26,13 +26,13 @@ You can hide the logo in the top-right of your slides or change it to a logo/ima
 
 > Please note that this feature is only available on **Pro and Enterprise plans.**
 
-## What is the Logo?
+## What is the logo?
 
 The logo sits in the top-right corner of all of the slides in your presentation. Your audience will see it on their phones as well as the presenter's screen.
 
 By default, the logo will be the AhaSlides logo, but users on a Pro plan can hide it or change it to their own logo. Doing this once on any slide will take affect across your whole presentation.
 
-## How to Hide the Logo
+## How to hide the logo
 
 Hiding the logo means that you will have **no logo** showing in the top-right of your slides.
 
@@ -40,7 +40,7 @@ Hiding the logo means that you will have **no logo** showing in the top-right of
 2. Click the logo and select **'Hide'**.
 3. To reveal the logo once again, hover over the space in the top-right corner and click **'Unhide'**.
 
-## How to Change the Logo
+## How to change the logo
 
 You can replace AhaSlides logo with your own, or even any other image or GIF you want. It will show at the top-right of each of your slides.
 

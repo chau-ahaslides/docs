@@ -28,7 +28,7 @@ description: "Learn everything about creating and hosting a live quiz for your a
 
 On AhaSlides, you can host a live quiz and have all of your participants competing for points. Build a quiz using quiz question slides and see who ranks top of the leaderboard at the end!
 
-## Video and Interactive demo: How to Make a Live Quiz on AhaSlides
+## Video and interactive demo: how to make a live Quiz on AhaSlides
 
 This video explains how to make a live quiz, including everything in this article. If you are looking for a specific part in the video, please click the bottom-right button to watch it on YouTube, where you can find each section time-stamped in the video description.
 
@@ -38,7 +38,7 @@ Below is an interactive demo, which will help you experience this function:
 
 > 📹 [Watch video](https://capture.navattic.com/cmma91d5i000004l89f6i63x4)
 
-## How Does a Quiz Work?
+## How does a Quiz work?
 
 In a quiz, participants in your presentation compete against each other to get the most points by submitting the most correct answers to your quiz questions.
 
@@ -46,7 +46,7 @@ You progress through the quiz, pausing at each slide for players to answer the q
 
 Here you can see the screens of the **quiz host** (on the left-hand computer) and the **quiz player** (on the right-hand phone).
 
-### Step 1: Choosing a Quiz Slide
+### Step 1: choosing a Quiz slide
 
 On the presentation editor, create a new slide and select any of the 5 'quiz' slides as the format for that question (Spinner Wheel is *not* a scored quiz slide).
 
@@ -68,7 +68,7 @@ You can also use a **Pop-up Leaderboard** by pressing **L** on your keyboard (or
 
 More details can be found in this article: [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
 
-### Step 2: Editing a Quiz Slide
+### Step 2: editing a Quiz slide
 
 Now you are able to edit your slide. Here's what a 'pick answer' slide will look like when it's ready to edit:
 
@@ -112,7 +112,7 @@ Hints will appear both on the presenter's screen and the audience's screens.
 
 If you are on the **Pro or Enterprise** plan, you can also add accompanying audio to your quiz questions. [Check this guide out for more](slide-audio-presentation-audio-and-sound-effects.md).
 
-### Step 3: Joining a Quiz
+### Step 3: joining a Quiz
 
 When you have created your quiz slides, you can either **invite your players** to join your presentation, or you can **join it yourself** on your phone to test it out (which we recommend).
 
@@ -129,7 +129,7 @@ To join the quiz, **the host needs to present a quiz slide**. When they do...
 - The host will see the **lobby** on their screen. This is where they can see all the players who have joined the quiz and are waiting to play.
 - The player will be asked to **enter their name** and choose an avatar for the quiz. Once they have chosen, they will be shown in the quiz lobby.
 
-### Step 4: Presenting a Quiz
+### Step 4: presenting a Quiz
 
 When all your players have joined the quiz and are showing in the quiz lobby, you can press the blue button below that says '**Start the Quiz!'**
 
@@ -145,7 +145,7 @@ Find the report by clicking 'View presentation report' button in the top right t
 
 [(Click here to see more about reports)](your-ahaslides-presentation-report.md)
 
-## Other Settings for Quizzes
+## Other settings for quizzes
 
 Aside from the settings you can make on each slide (see step 2 for more details), you can also enable/disable the general settings for the whole quiz. These settings can be found by navigating to **'Settings'** in the right side menu bar, followed by **'General quiz settings'**.
 
@@ -163,7 +163,7 @@ Sound effects will accompany the countdown on quiz slides, signaling both the be
 
 On a leaderboard slide, a short jingle will play while the leaderboard is rearranging itself to show the new standings. On the final leaderboard slide, a different, more triumphant jingle will play to announce the winner of the quiz.
 
-### 3. 5s Countdown
+### 3. 5s countdown
 
 When this setting is on, each question is preceded by a 5-second countdown timer, which gives your players time to read the question before they answer.
 
@@ -175,7 +175,7 @@ Players can play the quiz in teams, rather than individuals.
 
 To set this up, please follow this article: [Running a Team Quiz](running-a-team-quiz.md)
 
-### 5. Shuffle Options
+### 5. Shuffle options
 
 This feature is available for **Edu Medium, Edu large, Pro and Enterprise plans**
 
@@ -196,7 +196,7 @@ This option gives you more control over the quiz experience:
 - **Enabled:** Participants will be asked to select an avatar when they join the quiz at the Lobby screen.
 - **Disabled:** Allow participants to join the quiz without avatars.
 
-## Audience-Paced/Self-Paced Quizzes
+## Audience-paced/self-paced quizzes
 
 You can also let your players play a quiz **without a host**.
 
@@ -206,26 +206,26 @@ To set this up, please check out our guide: [Setting up a Self-Paced presentatio
 
 ## FAQ
 
-### 1. Why isn't my quiz asking players for their names?
+### 1. Why isn't my Quiz asking players for their names?
 
 Usually, your quiz isn't asking players to fill out their name for one of two reasons:
 
 1. You may have chosen a **'poll' slide instead of a 'pick answer' slide**. These slides look very similar, but only the *pick answer* slide is a quiz slide, so only the *pick answer* slide will ask players for their names while you're presenting the slide.
 2. You may be **presenting any other non-quiz slide**. If your players join your presentation when you're presenting a heading, list, image or any other non-quiz slide type, it will not ask for their names. Once you move onto the first quiz slide of your quiz, your players will be asked for their names.
 
-### 2. How can I clear player answers on my quiz?
+### 2. How can I clear player answers on my Quiz?
 
 If you've just tested your quiz with a real device, want to reuse a quiz, or made a mistake and want to start a quiz over, you can clear any answers submitted to your quiz, all without affecting the content of your quiz.
 
 You can clear *all* responses in your quiz or *just* the responses from one question. [Check out this article to find out how.](resetting-the-results.md)
 
-### 3. How can I test my quiz?
+### 3. How can I test my Quiz?
 
 The best way to test a quiz is by using [Preview Mode](how-to-preview-and-test-your-presentation.md). This is a test mode where you can try out your quiz from both the presenter screen and the player screen.
 
 You can also test out a quiz by simply joining it on your own phone or getting some friends to join, then playing along as if it were a real quiz. If you use this method, remember to [clear your own answers](https://help.ahaslides.com/how-to-reset-the-results) after you've tested your quiz.
 
-### 4. How "Everyone Has Answered" (auto end quiz timer) works
+### 4. How "everyone has answered" (auto end Quiz timer) works
 
 AhaSlides includes a feature called **"Everyone has answered,"** which automatically ends the quiz timer once all participants have submitted their answers. This feature counts the **highest number of participants who were in the quiz at the same time** after the presenter clicked **"Present."**
 

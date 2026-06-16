@@ -33,7 +33,7 @@ As the Owner of a team on AhaSlides, the Team Members tab allows you to add and 
 >
 > To purchase or get more licenses for your team plan, please check out this guide: [Purchasing Multiple Licenses for AhaSlides Team Plan Subscription](purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md)
 
-## Creating a Team
+## Creating a team
 
 If you do not yet have a team, you can click the **Add Team Member** button in the left-side panel.
 
@@ -43,11 +43,11 @@ After that, you will be redirected to the Team Member dashboard.
 
 > **Alert:** At the moment, the team owner has yet to be able to **change the team name** after team creation. If you would like to update the team name, please **contact [hi@ahaslides.com](mailto:hi@ahaslides.com) using the team owner's email address.**
 
-## Accessing the Team Members Dashboard
+## Accessing the team members dashboard
 
 To manage your team members, click on the **Members** button under your team name in the left-hand panel of the dashboard. On the right side, you can view the number of licenses used and the expiration date of your licenses.
 
-## Inviting Team Members
+## Inviting team members
 
 > **Note — Inviting Team Members on Team Plans (purchasing multiple licences)**
 > If you are using a Team plan, 1 licence will be deducted each time someone accepts your invitation. That user will have their account automatically upgraded to the Team plan (or will be prompted to create an account if they don't yet have one).
@@ -66,20 +66,20 @@ Any members you invite will receive an email and a notification at the top of th
 
 Once they accept the invitation, they will be automatically added to your team, and you will be able to see them in the **'Members'** tab on the Team Members dashboard.
 
-## Changing Team Members' Roles
+## Changing team members' roles
 
 As the **Owner**, you can change any team member's role between **Member** and **Admin.**
 
 You can do that by navigating to their name on the **Team Members** dashboard, opening the dropdown menu under **Role,** and selecting either **Admin** or **Member**.
 
-## Removing Team Members
+## Removing team members
 
 > **Note — Removing Team Members in a Team Plan**
 > If you are using a Team plan, you will regain 1 licence each time you remove a team member. That user will automatically have their account downgraded back to the Free plan.
 
 To remove a member from your team, simply navigate to their name on the **Team Members** dashboard, then click the 'X' icon labelled 'Remove from team' on the far right-hand side.
 
-## Leaving your Team
+## Leaving your team
 
 > **Note:** If the team's owner leaves, **the team will be deleted**. Deleting your team will disband all its members and remove their access to presentations and folders shared specifically with the team.
 

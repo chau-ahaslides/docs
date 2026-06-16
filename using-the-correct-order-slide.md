@@ -30,7 +30,7 @@ The Correct Order quiz slide asks participants to place randomized statements in
 How to set up a Correct Order slide on AhaSlides — full walkthrough in under a minute.
 {% endembed %}
 
-## How does a Correct Order Slide work?
+## How does a Correct Order slide work?
 
 A Correct Order slide is a quiz slide type and forms part of a [quiz](how-to-make-and-run-a-quiz.md).
 
@@ -40,7 +40,7 @@ On a Correct Order slide, players are presented with a question and a row of shu
 >
 > Players need to get every statement in the correct order to score points. Even one misplaced statement results in 0 points.
 
-## Setting up your Correct Order Slide
+## Setting up your Correct Order slide
 
 In the AhaSlides editor, select the Correct Order slide from the *Quiz* section of the slide type picker, then do the following:
 

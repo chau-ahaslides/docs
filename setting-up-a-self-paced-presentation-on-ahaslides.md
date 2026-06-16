@@ -32,7 +32,7 @@ This is great for:
 - Quiz masters who want to give their players freedom to complete a quiz at a time that suits them.
 - Trainers who want to carry out a survey that participants can complete at their own pace.
 
-## How to turn on Self-paced mode
+## How to turn on self-paced mode
 
 > 📹 [Watch video](https://www.loom.com/embed/63b00aabd7eb4f4a9a09d173a8fba81c)
 
