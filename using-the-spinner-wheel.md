@@ -53,8 +53,6 @@ You can add entries to the Spinner Wheel by typing them in the **Entries** field
 
 Click the **Entries** field and type your first entry. Hit **⏎ Enter** after each one to add the next, or paste a list you have copied to your clipboard all at once. Then click the **Save** button.
 
-> **Protip** You can also add entries to your Spinner Wheel **while presenting in presentation mode**. There's no need to return to the editor.
-
 ### #2 - Autofill entries with participants' names
 
 You may want to use the Spinner Wheel to select one of your presentation's participants at random. If that's the case, check the box labelled **Participant name autofill** in the right panel of the editor — the wheel fills itself with every participant's name as they scan your QR code and join by entering their name. No manual typing needed.
