@@ -1,14 +1,12 @@
 {
   "voice_primary": "Liam",
   "voice_primary_id": "VCgLBmBjldJmfphyB8sZ",
-  "voice_secondary": "Alice",
-  "voice_secondary_id": "Xb7hH8MSUJpSbSDYk0k2",
   "model": "eleven_multilingual_v2",
-  "video_duration_sec": 43.4,
-  "generated_round": 1,
-  "youtube_id": "3pj2L3lhxjQ",
-  "notes": "Non-overlapping timing: each clip starts after previous ends. s01-s05, s08, s09 use Liam; s06-s07 use Alice. No overlap verified via silencedetect — first silence at 18.32s. 0:00-0:08 verified clean.",
-  "mix_command": "ffmpeg -y -i word-cloud-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -i vo/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=7890|7890[a2];[3:a]adelay=10240|10240[a3];[4:a]adelay=14180|14180[a4];[5:a]adelay=18440|18440[a5];[6:a]adelay=24790|24790[a6];[7:a]adelay=28370|28370[a7];[8:a]adelay=37640|37640[a8];[9:a]adelay=41060|41060[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k word-cloud-narrated.webm",
+  "video_duration_sec": 50.0,
+  "generated_round": 3,
+  "youtube_id": "L89bd83WaYU",
+  "notes": "Single-voice (Liam only). r3 Axis-1 fixes: (1) British spelling pronunciation — tts_text uses 'center'/'color' instead of 'centre'/'colour' for s01 and s07 (display_text keeps British for article readability). (2) s06/s07 switched from Alice to Liam (one-voice policy). (3) s05 extended with settings panel callout (1f). (4) s09 updated to mention participants joining on phones (1e). Non-overlapping: each clip starts at max(visual_start, prev_end). Overlap verified via check_vo_overlap.py.",
+  "mix_command": "ffmpeg -y -i word-cloud-final.webm -i vo/s01.mp3 -i vo/s02.mp3 -i vo/s03.mp3 -i vo/s04.mp3 -i vo/s05.mp3 -i vo/s06.mp3 -i vo/s07.mp3 -i vo/s08.mp3 -i vo/s09.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=8250|8250[a2];[3:a]adelay=10600|10600[a3];[4:a]adelay=14540|14540[a4];[5:a]adelay=18800|18800[a5];[6:a]adelay=27710|27710[a6];[7:a]adelay=30640|30640[a7];[8:a]adelay=37640|37640[a8];[9:a]adelay=41060|41060[a9];[a1][a2][a3][a4][a5][a6][a7][a8][a9]amix=inputs=9:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k word-cloud-narrated-r3.webm",
   "steps": [
     {
       "id": "wc-welcome",
@@ -16,15 +14,15 @@
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 0.0,
       "window_sec": 4.0,
-      "audio_duration_sec": 7.89,
+      "audio_duration_sec": 8.25,
       "display_text": "A Word Cloud slide lets participants submit words and phrases, and displays them all on screen — with the most popular growing largest at the centre.",
-      "tts_text": "A Word Cloud slide lets participants submit words and phrases, and displays them all on screen — with the most popular growing largest at the centre."
+      "tts_text": "A Word Cloud slide lets participants submit words and phrases, and displays them all on screen — with the most popular growing largest at the center."
     },
     {
       "id": "wc-create",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 7.89,
+      "start_sec": 8.25,
       "window_sec": 5.5,
       "audio_duration_sec": 2.35,
       "display_text": "Click New Presentation to open a fresh deck.",
@@ -34,7 +32,7 @@
       "id": "wc-pick-type",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 10.24,
+      "start_sec": 10.6,
       "window_sec": 4.5,
       "audio_duration_sec": 3.94,
       "display_text": "Select Word Cloud from the slide type picker — it's in the Interactive section.",
@@ -44,7 +42,7 @@
       "id": "wc-type-question",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 14.18,
+      "start_sec": 14.54,
       "window_sec": 5.0,
       "audio_duration_sec": 4.26,
       "display_text": "Type the prompt your audience will respond to. A short, open-ended question works best.",
@@ -54,31 +52,31 @@
       "id": "wc-entries",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 18.44,
+      "start_sec": 18.8,
       "window_sec": 5.0,
-      "audio_duration_sec": 6.35,
-      "display_text": "Choose how many words each participant can submit — from 1 to 10. The default of 3 is a great starting point.",
-      "tts_text": "Choose how many words each participant can submit — from 1 to 10. The default of 3 is a great starting point."
+      "audio_duration_sec": 8.91,
+      "display_text": "Choose how many words each participant can submit — from 1 to 10. The default of 3 is a great starting point. You'll also find options for a time limit, profanity filter, and hiding results in the same panel.",
+      "tts_text": "Choose how many words each participant can submit — from 1 to 10. The default of 3 is a great starting point. You'll also find options for a time limit, profanity filter, and hiding results in the same panel."
     },
     {
       "id": "wc-preview",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 24.79,
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 27.71,
       "window_sec": 5.0,
-      "audio_duration_sec": 3.58,
+      "audio_duration_sec": 2.93,
       "display_text": "Click Preview to see how the cloud looks before you go live.",
       "tts_text": "Click Preview to see how the cloud looks before you go live."
     },
     {
       "id": "wc-preview-cloud",
-      "voice": "Alice",
-      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "start_sec": 28.37,
+      "voice": "Liam",
+      "voice_id": "VCgLBmBjldJmfphyB8sZ",
+      "start_sec": 30.64,
       "window_sec": 5.0,
-      "audio_duration_sec": 9.27,
+      "audio_duration_sec": 6.87,
       "display_text": "As each response arrives, a new word pops into the cloud in a random colour. The most-submitted word grows biggest and moves to the centre.",
-      "tts_text": "As each response arrives, a new word pops into the cloud in a random colour. The most-submitted word grows biggest and moves to the centre."
+      "tts_text": "As each response arrives, a new word pops into the cloud in a random color. The most-submitted word grows biggest and moves to the center."
     },
     {
       "id": "wc-back-to-editor",
@@ -96,9 +94,9 @@
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
       "start_sec": 41.06,
       "window_sec": 5.9,
-      "audio_duration_sec": 7.42,
-      "display_text": "That's your Word Cloud slide set up. Hit Present — participants join on their phones and the cloud builds in real time right in front of the whole room.",
-      "tts_text": "That's your Word Cloud slide set up. Hit Present — participants join on their phones and the cloud builds in real time right in front of the whole room."
+      "audio_duration_sec": 8.96,
+      "display_text": "That's your Word Cloud slide set up. Hit Present — participants join on their phones, type their responses, and tap Submit. The cloud builds in real time right in front of the whole room.",
+      "tts_text": "That's your Word Cloud slide set up. Hit Present — participants join on their phones, type their responses, and tap Submit. The cloud builds in real time right in front of the whole room."
     }
   ]
 }
