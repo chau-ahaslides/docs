@@ -45,6 +45,7 @@
 | [sharing-a-copy-of-your-presentation-with-other-ahaslides-users](#sharing-a-copy-of-your-presentation-with-other-ahaslides-users) | After Presentation | Free | No |
 | [removing-and-changing-the-logo](#removing-and-changing-the-logo) | Branding | Pro | No |
 | [how-to-change-and-manage-fonts](#how-to-change-and-manage-fonts) | Branding | Pro | No |
+| [using-the-ahaslides-app-on-zoom](#using-the-ahaslides-app-on-zoom) | Integrations | Free | No |
 | [managing-your-team-members](#managing-your-team-members) | Teams & Enterprise | Enterprise | No |
 | [sharing-a-presentation-with-specific-team-members](#sharing-a-presentation-with-specific-team-members) | Teams & Enterprise | Pro | No |
 | [white-label-multiple-accounts-and-enterprise-license-inquiries](#white-label-multiple-accounts-and-enterprise-license-inquiries) | Teams & Enterprise | Enterprise | No |
@@ -274,6 +275,15 @@
 **Plan:** Pro | **MCP Actions:** No
 **Summary:** Change the font used throughout your AhaSlides presentation and arrange favourite fonts for easy access. Pro and Enterprise only.
 **File:** `how-to-change-and-manage-fonts.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-change-and-manage-fonts
+
+---
+
+## 🔗 Integrations
+
+### using-the-ahaslides-app-on-zoom
+**Plan:** Free | **MCP Actions:** No
+**Summary:** Install the AhaSlides app from the Zoom Marketplace and run interactive presentations directly inside Zoom meetings or webinars. Desktop only (PC/laptop); Zoom mobile is not supported. Only the host needs an AhaSlides account.
+**File:** `using-the-ahaslides-app-on-zoom.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-ahaslides-app-on-zoom
 
 ---
 
