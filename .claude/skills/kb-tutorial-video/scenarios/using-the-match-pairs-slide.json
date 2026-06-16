@@ -4,7 +4,7 @@
       "id": "mp-welcome",
       "path": "/apps/presentations",
       "title": "Let's build a Match Pairs quiz slide!",
-      "description": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, capitals, and definitions. Keep each item short and unambiguous so every prompt has exactly one clear match. Click Next to begin.",
+      "description": "A Match Pairs slide challenges participants to drag prompts to their correct answers — great for vocabulary, definitions, and categorisation. Keep each item short and unambiguous so every prompt has exactly one clear match. Click Next to begin.",
       "targetSelector": ".new-presentation-button",
       "action": null
     },
@@ -133,14 +133,14 @@
     {
       "id": "mp-settings",
       "path": "/presentation/*",
-      "title": "Fine-tune with Settings",
-      "description": "Click the Settings gear to set the time limit and point value. Shorter time limits add urgency; higher points reward accuracy.",
+      "title": "Fine-tune with Slide Settings",
+      "description": "Click the Slide Settings control to set the time limit and point value. Shorter time limits add urgency; higher points reward accuracy.",
       "targetSelector": "[data-testid=\"editor-side-left-slide-settings-button\"]",
       "pauseMs": 1000,
       "action": {
         "type": "click",
         "selector": "[data-testid=\"editor-side-left-slide-settings-button\"]",
-        "hint": "Click the Settings gear to open settings"
+        "hint": "Click the Slide Settings control to open settings"
       }
     },
     {
@@ -186,15 +186,15 @@
       "path": "/presentation/*",
       "title": "Participants drag pairs into place",
       "description": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They drag each answer to its matching prompt before time runs out.",
-      "targetSelector": ".iframe-wrapper-audience",
+      "targetSelector": ".iframe-wrapper-presenter",
       "pauseMs": 5000,
       "action": null,
       "previewInteractions": [
         {
-          "frameMatch": "presenting=true",
-          "selector": "button.start-quiz-btn, [class*='start-quiz'], button:has-text('Start')",
-          "label": "host clicks Start",
-          "pauseAfterMs": 8000
+          "type": "matchPairsApiSubmit",
+          "count": 3,
+          "label": "simulate 3 participant responses",
+          "pauseAfterMs": 5000
         }
       ]
     },
