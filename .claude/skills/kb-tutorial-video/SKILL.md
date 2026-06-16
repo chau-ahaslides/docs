@@ -1,11 +1,32 @@
 ---
 name: kb-tutorial-video
-description: End-to-end pipeline for producing a KB tutorial video and refreshing its article — record an AhaSlides product-tour webm from a JSON scenario, tighten it, append the standard branded outro, upload to YouTube, embed it as a playable block in the GitBook KB article, and update the article's steps against the recorded UI. Use this whenever the user asks to make/record/generate/refresh a video for a KB article, create an onboarding or walkthrough video for a feature, upload a tutorial to YouTube, or add/embed a video in the knowledge base — even if they only mention one phase (recording, trimming, uploading, embedding, or article updates), since the phases share setup and gotchas documented here. Designed to be run per-article across many articles.
+description: "Unscored Interactive Slide video tutorial pipeline — end-to-end pipeline for producing KB tutorial videos covering UNSCORED interactive AhaSlides slide types (Word Cloud, Q&A, Brainstorm, Open-ended, Match Pairs, Correct Order, Spinner Wheel, Categorise, Pin on Image, Rating Scale, Ranking, Idea Board, and similar). Covers recording a product-tour webm from a JSON scenario, trimming, voiceover, branded outro, YouTube chapter markers, upload, embedding in the GitBook KB article, and article step refreshes. Use this whenever the user asks to make/record/generate/refresh a video for a KB article about any UNSCORED interactive slide, upload a tutorial to YouTube, or add/embed a video in the knowledge base. NOTE: SCORED quiz-style slides (Quiz / scored multiple-choice with leaderboard, points, timer) are a separate tutorial approach handled by a different skill (companion 'scored quiz tutorial' skill — future)."
 ---
 
-# KB Tutorial Video Pipeline
+# KB Tutorial Video Pipeline — Unscored Interactive Slides
 
-Proven end-to-end on `using-the-word-cloud-slide.md` (approved r6/r7 quality
+## Scope: Unscored Interactive Slides only
+
+This pipeline is for **unscored interactive** AhaSlides slide types. These are
+slides where the audience participates freely — submitting words, answers,
+rankings, or positions — with no points, no leaderboard, and no timer.
+
+**In scope (this skill):**
+Word Cloud, Q&A, Brainstorm, Open-ended, Match Pairs, Correct Order, Spinner
+Wheel, Categorise, Pin on Image, Rating Scale, Ranking, Idea Board, Poll (when
+used without scoring).
+
+**Out of scope (separate skill — scored quiz tutorial, future):**
+Quiz slides and any multiple-choice slide configured with scoring (points,
+leaderboard, countdown timer). Scored tutorials follow a different structure
+(score reveal, leaderboard animation, timer countdown) and require their own
+pipeline documentation. A companion "scored quiz tutorial" skill is the intended
+counterpart to this one — create it when the first scored-quiz video is
+produced.
+
+---
+
+Proven end-to-end on `using-the-word-cloud-slide.md` (approved r8 quality
 bar — see AKB-17). Also proven on `creating-a-poll-question-on-ahaslides.md`
 (result: https://www.youtube.com/watch?v=GK6fQhHYybo, 0:48). Run the phases
 in order, one article at a time.
@@ -32,6 +53,7 @@ Every new KB tutorial video must meet these same criteria before upload:
 | Ending | Scenario ends with a `prompt` step so the visual fades out on an intentional editor state (not a half-loaded page). Audio ends with 1–1.5s of silence after the last VO clip. |
 | Audio tail | Visual duration must be ≥ audio end time + 0.3s. Use `tpad` freeze-last-frame if needed to add tail room. Target ≤1.5s tail. |
 | Outro | Standard branded outro appended as the final ~3s — see Phase 3c below. Non-negotiable. |
+| Chapter markers | YouTube chapter markers derived and stored BEFORE upload — `<slug>.chapters.txt` + `youtube_chapters` field in voiceover JSON. ≥3 chapters, each ≥10s, first at `0:00`. See Phase 3d below. |
 
 These rules were hard-won across six re-records (AKB-17). Deviating from them
 requires an explicit sign-off in the task note.
@@ -223,52 +245,98 @@ Then concat using the `filter_complex` path above (the static clip has no audio,
 so add `-f lavfi -i anullsrc=r=48000:cl=mono` as a third input and use `[2:a]`
 for the outro audio).
 
-## Phase 4 — Upload to YouTube
+## Phase 3d — Derive and store YouTube chapter markers (required, pre-upload)
 
-Read `references/upload-embed.md` for the full upload workflow, auth
-quirks, channel IDs, and housekeeping notes.
+Every tutorial video MUST have YouTube chapter markers. Prepare them BEFORE
+uploading to YouTube so they can be pasted into the description immediately at
+publish time. The chapter list is derived from the voiceover JSON step timings
+and stored in two places so it survives across rounds and agents.
 
-### Chapters (required — YouTube rejects < 3 chapters or any chapter < 10s)
+Use the bundled script: `scripts/youtube_chapters.py` in this skill's
+`scripts/` directory (first proven on Word Cloud r8, AKB-17 Round 9).
 
-After upload, add compliant chapters to every video using the bundled script:
-`scripts/youtube_chapters.py` in this skill's `scripts/` directory.
+### Step 1 — Derive the chapter list
 
 ```bash
-# VALIDATE a hand-crafted chapter file:
-python3 <skill-dir>/scripts/youtube_chapters.py validate chapters.txt \
-    --video-duration <total_seconds>
+SKILL_DIR="$(git rev-parse --show-toplevel)/.claude/skills/kb-tutorial-video"
+python3 "$SKILL_DIR/scripts/youtube_chapters.py" derive \
+    "$SKILL_DIR/scenarios/<slug>-voiceover.json"
+```
 
-# DERIVE a compliant chapter list from the voiceover JSON (auto-merges short steps):
-python3 <skill-dir>/scripts/youtube_chapters.py derive \
-    scenarios/<slug>-voiceover.json
+The `derive` command reads each step's `display_text` and `start_sec`, then
+greedy-merges adjacent short steps until every group is ≥ 10 seconds. It
+prints a compliant chapter block — but the auto-generated titles are mechanical.
+**Rename them to human-readable section labels** before saving (e.g. "Create
+and configure the slide" not "A Word Cloud slide lets participants submit…").
 
-# DRY-RUN the description update (shows what would be written):
-python3 <skill-dir>/scripts/youtube_chapters.py upload \
-    --video-id <VIDEO_ID> --chapters chapters.txt \
-    --access-token <TOKEN> --video-duration <seconds> --dry-run
+### Step 2 — Validate the chapter list
 
-# UPLOAD chapters to YouTube (requires youtube.force-ssl scope):
-python3 <skill-dir>/scripts/youtube_chapters.py upload \
-    --video-id <VIDEO_ID> --chapters chapters.txt \
-    --access-token <TOKEN> --video-duration <seconds>
+```bash
+# VALIDATE a hand-crafted or edited chapter file:
+python3 "$SKILL_DIR/scripts/youtube_chapters.py" validate \
+    "$SKILL_DIR/scenarios/<slug>.chapters.txt" \
+    --video-duration <total_seconds_incl_outro>
 ```
 
 YouTube's rules enforced by the script:
 - First chapter MUST be `0:00`.
 - At least 3 chapters.
-- Every chapter MUST be >= 10 seconds long.
+- Every chapter MUST be ≥ 10 seconds long.
 - Timestamps must be strictly ascending.
 - Format: `M:SS Title` or `H:MM:SS Title`.
 
-The script's `derive` command reads `display_text` from each voiceover step and
-greedy-merges adjacent steps until every group is >= 10s, producing a valid
-baseline. Rename the chapter titles to human-readable labels before uploading.
+### Step 3 — Store the chapter list
 
-**Auth note:** `videos.update` (used by the `upload` command) requires the
+Store the validated chapter list in two places so the next agent has it:
+
+**a) `scenarios/<slug>.chapters.txt`** — a standalone file committed alongside
+the voiceover JSON. Header comment documents the video path, total duration,
+and per-group second counts. See `scenarios/using-the-word-cloud-slide.chapters.txt`
+for the canonical example format.
+
+**b) `youtube_chapters` field in `scenarios/<slug>-voiceover.json`** — store
+the same chapter block as a newline-separated string in the voiceover JSON so
+everything is in one record. Also add a `youtube_chapters_notes` field with a
+one-liner validation summary (chapter count, duration, round). See
+`using-the-word-cloud-slide-voiceover.json` for the reference example.
+
+Commit both files together with the voiceover JSON. Chapters are pre-work, not
+post-work — they must exist before the video is uploaded.
+
+### Step 4 — Apply at publish time (requires force-ssl OAuth)
+
+Chapters are pasted into the YouTube description as the first lines when the
+video goes live. Alternatively, apply programmatically via the `upload` command:
+
+```bash
+# DRY-RUN (shows what would be written):
+python3 "$SKILL_DIR/scripts/youtube_chapters.py" upload \
+    --video-id <VIDEO_ID> --chapters "$SKILL_DIR/scenarios/<slug>.chapters.txt" \
+    --access-token <TOKEN> --video-duration <seconds> --dry-run
+
+# LIVE UPLOAD chapters to YouTube description:
+python3 "$SKILL_DIR/scripts/youtube_chapters.py" upload \
+    --video-id <VIDEO_ID> --chapters "$SKILL_DIR/scenarios/<slug>.chapters.txt" \
+    --access-token <TOKEN> --video-duration <seconds>
+```
+
+**Auth dependency:** `videos.update` (used by the `upload` command) requires
 `youtube.force-ssl` scope. The `youtube-uploader` MCP's `authenticate` tool
 hardcodes only `youtube.upload + youtube.readonly` — it CANNOT obtain
-`force-ssl`. If chapters or captions fail with 403, Chau must open the
-manual auth URL below and paste back the `code=` value to `accesstoken`:
+`force-ssl`. Until Chau re-auths with the manual URL (see Phase 4 below), paste
+the chapter block into the YouTube description manually via YouTube Studio. The
+stored `.chapters.txt` is the source of truth for that paste.
+
+## Phase 4 — Upload to YouTube
+
+Read `references/upload-embed.md` for the full upload workflow, auth
+quirks, channel IDs, and housekeeping notes.
+
+### force-ssl OAuth URL (for chapters + captions)
+
+`videos.update` requires `youtube.force-ssl`. The `youtube-uploader` MCP
+cannot obtain this scope. If chapters or captions fail with 403, Chau must
+open this URL and paste the `code=` value back to `accesstoken`:
 
 ```
 https://accounts.google.com/o/oauth2/auth?client_id=246925459518-vgaado7j62ngu64amnfs27ji54bolanj.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.force-ssl+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.readonly&access_type=offline&prompt=consent&state=force-ssl-reauth
