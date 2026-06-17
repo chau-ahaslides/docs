@@ -1,6 +1,6 @@
-# Correct Order tutorial — r8 chapters
-# Total duration: 65.16s (including 2.6s branded outro)
-# Video: out-correct-order-r8/co-r8-cut.webm
+# Correct Order tutorial — r9 chapters
+# Total duration: 65.14s (including 2.6s branded outro)
+# Video: out-correct-order-r9/co-r9-final.webm
 # 4 chapters, each >= 10s
 
 0:00 Introduction
