@@ -4,15 +4,15 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
-  "video_duration_sec": 48.12,
-  "generated_round": 10,
-  "youtube_id": "TBD — upload pending; video ready at out-spinner-r10/spinner-wheel-r10-narrated.webm",
+  "video_duration_sec": 51.14,
+  "generated_round": 11,
+  "youtube_id": "TBD — upload pending; video ready at out-spinner-r11/spinner-wheel-r11-final.mp4",
   "pronunciation_map": {
     "Present (verb /prəˈzent/)": "Use 'Hit Present to go live' — the 'to go live' context cues ElevenLabs to stress the verb form prih-ZENT, not the noun PREZ-ent"
   },
   "youtube_chapters": "0:00 Create and set up a Spinner Wheel slide\n0:22 Add entries and preview the spin\n0:40 Go live and reveal the winner",
-  "youtube_chapters_notes": "3 chapters, 48.12s total, r10 — autofill visual extended to match VO",
-  "notes": "AKB-15 r10 — Visual track rebuilt from out-spinner-r10d recording. sw-autofill step now uses pauseMs:7000 + real click action so the autofill spotlight holds for ~7s (matches s03 VO duration of 7.34s). Trim: raw r10d at 3.0s start (removes loading white screen). Trimmed visual: 45.12s + 3.00s outro = 48.12s total. VO timings adjusted to fit: s01@1.0s, s02@9.8s, s03@14.2s (0.27s gap after s02), s04@22.0s, s05@29.8s, s06@35.0s (1.8s before visual beat, bridges save→spin), s07@40.5s. All audio ends at 47.55s, well within 48.12s. check_vo_overlap.py PASS. Reused r9 s01 (option-3 opening VO) + r8b s02-s07 audio clips.",
+  "youtube_chapters_notes": "3 chapters, 51.14s total, r11 — VO dropout bug fixed; all 7 clips present",
+  "notes": "AKB-15 r11 — ROOT CAUSE FIX: r10 final had audio truncated to ~10.99s (only s01+s02). Bug was introduced during outro concat: the outro (aha-outro-reusable-1440x900.webm) has no audio stream; when concatenated using filtergraph concat with the mixed narrated webm, only the first ~11s of audio from the narrated file survived (the webm muxer used the outro's audio duration as an upper bound). Fix: (1) add silent audio to outro via anullsrc before concat, (2) use concat demuxer (not filtergraph) for the final assembly. r11 is identical in VO timing to r10 (s01@1.0s through s07@40.5s). Total: 48.12s narrated + 3.00s outro = 51.14s. check_vo_overlap.py PASS (timeline + audio). All 7 VO clips verified by energy scan (-23 to -25 dB at each timestamp). Autofill spotlight intact (real checkbox click action). Not on YouTube (channel cap). Article embed unchanged.",
   "steps": [
     {
       "id": "sw-create",
@@ -92,5 +92,5 @@
       "audio_duration_sec": 7.05
     }
   ],
-  "mix_command": "cd ~/AhaSlides/onboarding-videos && node_modules/ffmpeg-static/ffmpeg -y -i out-spinner-r10/spinner-wheel-r10d-trimmed.webm -i out-spinner-r9/s01.mp3 -i out-spinner-r8b/s02.mp3 -i out-spinner-r8b/s03.mp3 -i out-spinner-r8b/s04_r8.mp3 -i out-spinner-r8b/s05.mp3 -i out-spinner-r8b/s06_r8.mp3 -i out-spinner-r8b/s07_r8.mp3 -filter_complex '[1:a]adelay=1000|1000[a1];[2:a]adelay=9800|9800[a2];[3:a]adelay=14200|14200[a3];[4:a]adelay=22000|22000[a4];[5:a]adelay=29800|29800[a5];[6:a]adelay=35000|35000[a6];[7:a]adelay=40500|40500[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-spinner-r10/spinner-wheel-r10d-narrated.webm"
+  "mix_command": "cd ~/AhaSlides/onboarding-videos && FFMPEG=node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out-spinner-r10/spinner-wheel-r10d-trimmed.webm -i out-spinner-r9/s01.mp3 -i out-spinner-r8b/s02.mp3 -i out-spinner-r8b/s03.mp3 -i out-spinner-r8b/s04_r8.mp3 -i out-spinner-r8b/s05.mp3 -i out-spinner-r8b/s06_r8.mp3 -i out-spinner-r8b/s07_r8.mp3 -filter_complex '[0:v]tpad=stop_mode=clone:stop_duration=5[vpad];[1:a]adelay=1000|1000[a1];[2:a]adelay=9800|9800[a2];[3:a]adelay=14200|14200[a3];[4:a]adelay=22000|22000[a4];[5:a]adelay=29800|29800[a5];[6:a]adelay=35000|35000[a6];[7:a]adelay=40500|40500[a7];[a1][a2][a3][a4][a5][a6][a7]amix=inputs=7:normalize=0:duration=longest[aout]' -map '[vpad]' -map '[aout]' -c:v libvpx -b:v 800k -c:a libopus -b:a 64k out-spinner-r11/spinner-wheel-r11-narrated.webm && $FFMPEG -y -i aha-outro-reusable-1440x900.webm -f lavfi -i anullsrc=r=48000:cl=mono -c:v libvpx -b:v 400k -c:a libopus -b:a 32k -shortest /tmp/spinner-r11-outro-with-audio.webm && $FFMPEG -y -i out-spinner-r11/spinner-wheel-r11-narrated.webm -t 48.12 -c copy /tmp/spinner-r11-trimmed-narrated.webm && echo 'file /tmp/spinner-r11-trimmed-narrated.webm' > /tmp/r11-concat.txt && echo 'file /tmp/spinner-r11-outro-with-audio.webm' >> /tmp/r11-concat.txt && $FFMPEG -y -f concat -safe 0 -i /tmp/r11-concat.txt -c copy out-spinner-r11/spinner-wheel-r11-final.webm && $FFMPEG -y -i out-spinner-r11/spinner-wheel-r11-final.webm -c:v libx264 -preset medium -crf 22 -pix_fmt yuv420p -c:a aac -b:a 128k out-spinner-r11/spinner-wheel-r11-final.mp4"
 }
