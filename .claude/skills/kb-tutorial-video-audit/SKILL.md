@@ -71,6 +71,17 @@ re-render just the affected clips; re-mix; re-upload.
 A gap > 2s between VO clips is noticeable dead air. App-loading transitions
 commonly cause 5–6s silences if no filler VO is planned.
 
+> **⚠️ Always scan the FINAL delivered file end-to-end, never an intermediate.**
+> The outro asset has no audio stream, and a naive concat truncates the mixed VO
+> to the outro's audio length — silencing everything after the first few seconds
+> (AKB-15 r10: *"no VO after 0:05"*). This breakage happens in the outro-concat
+> step, so `check_vo_overlap.py` on the pre-outro narrated file passes while the
+> shipped file is broken. Run the silence scan below on the exact
+> `narrated-with-outro` file that will be uploaded/embedded, and confirm a speech
+> segment exists at **every** VO timestamp — especially the back half. A single
+> long silent span running to the end (beyond the ~3s outro) = the truncation
+> bug; FAIL the audit. See kb-tutorial-video SKILL Phase 3c for the `anullsrc` fix.
+
 **How to detect:**
 ```bash
 yt-dlp -x --audio-format wav -o /tmp/<slug>.wav '<youtube-url>'

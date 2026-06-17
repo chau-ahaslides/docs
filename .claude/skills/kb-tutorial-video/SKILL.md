@@ -178,40 +178,85 @@ OUTRO="$SKILL_ROOT/assets/splash_intro_BD.webm"
 If the resolution of your tutorial differs from 1440x900, re-scale before
 concat (see the `-vf scale=` note below).
 
-### Concatenating outro onto the tutorial (fast -c copy path)
+### ⚠️ The outro has NO audio stream — guard against silent-tail truncation
 
-When the tutorial and the committed outro are already the same resolution,
-fps, and codec (VP9/opus), use the simple `-f concat -c copy` path — it
-is instant and lossless:
+**Incident (AKB-15 r10→r11):** the reusable outro webm carries **no audio
+stream**. When you concat `tutorial (has audio) + outro (no audio)`, ffmpeg's
+muxer caps the output audio track at the outro's audio duration — which is
+**zero/short** — so the mixed VO is silently **truncated to ~the outro length**
+and everything past the first few seconds goes mute. The intermediate
+`...-narrated.webm` is fine and passes `check_vo_overlap.py`; the breakage
+happens **in this concat step**, so a check that ran before the concat will not
+catch it. Real reviewer report: *"There's no VO after 0:05."*
+
+**Rule: never feed a no-audio outro straight into concat.** First probe the
+outro, and if it lacks an audio stream, give it a matched-length **silent**
+track (`anullsrc`). Then the `-c copy` fast path is unsafe (mismatched streams)
+— use the concat *demuxer* with a normalized outro, or the `filter_complex`
+path with `anullsrc`.
 
 ```bash
 FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
+FFPROBE=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/../ffprobe-static/ffprobe
 SKILL_ROOT="$(git rev-parse --show-toplevel)/.claude/skills/kb-tutorial-video"
 OUTRO="$SKILL_ROOT/assets/splash_intro_BD.webm"
 TUTORIAL=out-<slug>/word-cloud-narrated.webm
 
-# Build concat list
-printf "file '%s'\nfile '%s'\n" "$TUTORIAL" "$OUTRO" > /tmp/concat-<slug>.txt
+# 1. Does the outro have an audio stream?
+HAS_AUDIO=$($FFMPEG -i "$OUTRO" 2>&1 | grep -c "Audio:")
+# 2. If not, bake a silent audio track of the SAME duration into a normalized outro.
+DUR=$($FFMPEG -i "$OUTRO" 2>&1 | sed -n 's/.*Duration: \([0-9:.]*\).*/\1/p')
+if [ "$HAS_AUDIO" -eq 0 ]; then
+  $FFMPEG -y -i "$OUTRO" -f lavfi -i anullsrc=r=48000:cl=mono \
+    -shortest -c:v copy -c:a libopus -ar 48000 \
+    out-<slug>/outro-with-silence.webm
+  OUTRO=out-<slug>/outro-with-silence.webm
+fi
+```
 
-$FFMPEG -y -f concat -safe 0 -i /tmp/concat-<slug>.txt -c copy \
+Then concat (resolutions match → concat demuxer; differ → `filter_complex`):
+
+```bash
+# Same res/fps/codec — concat DEMUXER (re-mux; both inputs now carry audio)
+printf "file '%s'\nfile '%s'\n" "$TUTORIAL" "$OUTRO" > /tmp/concat-<slug>.txt
+$FFMPEG -y -f concat -safe 0 -i /tmp/concat-<slug>.txt \
+  -c:v copy -c:a libopus -ar 48000 \
   out-<slug>/narrated-with-outro.webm
 ```
 
-If resolutions differ, re-encode with `filter_complex`:
+If resolutions differ, re-encode with `filter_complex` — and if the outro had
+no audio, source its segment from `anullsrc` instead of `[1:a]`:
 
 ```bash
 $FFMPEG -y \
   -i "$TUTORIAL" \
   -i "$OUTRO" \
+  -f lavfi -t "$DUR" -i anullsrc=r=48000:cl=mono \
   -filter_complex \
     "[0:v]scale=1440:900,format=yuv420p[v0];\
      [1:v]scale=1440:900,format=yuv420p[v1];\
-     [v0][0:a][v1][1:a]concat=n=2:v=1:a=1[vout][aout]" \
+     [v0][0:a][v1][2:a]concat=n=2:v=1:a=1[vout][aout]" \
   -map "[vout]" -map "[aout]" \
   -c:v libvpx-vp9 -b:v 0 -crf 30 -r 25 \
   -c:a libopus -ar 48000 \
   out-<slug>/narrated-with-outro.webm
 ```
+(Use `[1:a]` only if the probe confirmed the outro really has audio.)
+
+### ⚠️ MANDATORY: energy-scan the FINAL delivered file, not the intermediate
+
+After the concat, run an audio-energy scan over the **whole** final
+`narrated-with-outro` file (the exact file you will upload/embed) and confirm a
+speech segment exists at **every** VO timestamp — especially the clips that land
+in the back half, after the truncation point. `check_vo_overlap.py` on the
+pre-outro narrated file is **not** sufficient (it passed on the broken r10).
+Cheap check:
+
+```bash
+$FFMPEG -i out-<slug>/narrated-with-outro.webm -af silencedetect=n=-40dB:d=0.5 -f null - 2>&1 \
+  | grep silence_   # large silent spans after 0:05 = truncation bug is back
+```
+Do not report success on a final file you have not audio-scanned end-to-end.
 
 ### Last-resort fallback (only if committed asset is missing/corrupt)
 
