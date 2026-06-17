@@ -1,9 +1,9 @@
-# Correct Order tutorial — r7 chapters
-# Total duration: 70.63s (including 2.6s branded outro)
-# Video: out-correct-order-r7/co-r7-with-outro.webm
+# Correct Order tutorial — r8 chapters
+# Total duration: 65.16s (including 2.6s branded outro)
+# Video: out-correct-order-r8/co-r8-cut.webm
 # 4 chapters, each >= 10s
 
 0:00 Introduction
 0:10 Build the slide
 0:30 Preview with live audience
-0:53 Go live with Present
+0:48 Go live with Present
