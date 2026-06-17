@@ -1,8 +1,8 @@
 # YouTube chapter markers — using-the-spinner-wheel
-# Video: out-spinner-r9/spinner-wheel-r9-narrated-with-outro.webm
-# Total duration: 51.95s (49.32s tutorial + 2.63s branded outro)
-# Validated: 3 chapters, each >= 10s — PASS (AKB-15 r9)
+# Video: out-spinner-r12/spinner-wheel-r12-final.mp4
+# Total duration: 52.73s (50.12s narrated + 2.61s branded outro splash_intro_BD.webm)
+# Validated: 3 chapters, each >= 10s — PASS (AKB-15 r12)
 
 0:00 Create and set up a Spinner Wheel slide
-0:21 Add entries and preview the spin
-0:37 Go live and reveal the winner
+0:22 Add entries and preview the spin
+0:40 Go live and reveal the winner
