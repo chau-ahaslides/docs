@@ -198,8 +198,8 @@
       "previewInteractions": [
         {
           "frameMatch": "presenting=true",
-          "selector": "button.start-quiz-btn, [class*='start-quiz'], button:has-text('Start')",
-          "label": "host clicks Start — pre-submitted responses now render",
+          "selector": "button.start-quiz-btn, [class*='start-quiz'], button:has-text('Start'), button:has-text('Comenzar')",
+          "label": "host clicks Start — game countdown begins",
           "pauseAfterMs": 10000
         }
       ]
