@@ -166,7 +166,16 @@ Purple background, animated logo reveal.
 This is the canonical reusable outro for all KB tutorial videos. It is a
 VP9 WebM at 1440x900 25fps, converted from the official Remotion-rendered
 `splash_intro_BD.mov` (QuickTime qtrle, 1920x1080, 25fps, 2.6s) supplied
-by Chau in AKB-17 r8. Committed file size: ~112 KB.
+by Chau in AKB-17 r8. Committed file size: ~112 KB. It carries a real
+**audio stream** (opus stereo 48kHz), so the normal concat keeps the VO intact.
+
+> **❌ Do NOT substitute any other outro file.** Use ONLY this committed
+> `splash_intro_BD.webm`. Earlier files such as `aha-outro-reusable-1440x900.webm`
+> are NOT the brand outro and have **no audio stream** — substituting one both
+> uses the wrong branding (reviewer caught it: *"you are using the wrong outro"*,
+> AKB-15) and triggers the silent-tail truncation below. If for some reason this
+> asset is missing, regenerate it per the last-resort fallback — never reach for
+> a stray reusable webm.
 
 Resolve the absolute path from the workspace root:
 
