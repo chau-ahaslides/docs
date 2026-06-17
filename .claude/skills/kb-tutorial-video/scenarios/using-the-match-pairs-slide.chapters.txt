@@ -1,0 +1,15 @@
+# Match Pairs tutorial — AKB-13 r10
+# Video: out-match-pairs-r10-p10/match-pairs-r10-narrated.mp4
+# Duration: 83.13s (including 2.61s outro)
+# Validated: 4 chapters, each ≥10s, starts at 0:00
+#
+# Sections (seconds):
+# 0:00–0:14 — Intro + create slide (14s)
+# 0:14–0:30 — Enter question and all pairs (16s)
+# 0:30–0:43 — Slide Settings + Preview (13s)
+# 0:43–1:20 — Live preview: participant joins, game starts, Present (37s)
+
+0:00 Introduction to Match Pairs
+0:14 Add your question and pairs
+0:30 Slide Settings and Preview
+0:43 Participant experience and Present

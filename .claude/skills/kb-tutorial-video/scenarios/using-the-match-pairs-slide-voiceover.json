@@ -8,8 +8,10 @@
   "video_duration_sec": 81.4,
   "generated_round": 9,
   "youtube_id": null,
+  "youtube_chapters": "0:00 Introduction to Match Pairs\n0:14 Add your question and pairs\n0:30 Slide Settings and Preview\n0:43 Participant experience and Present",
+  "youtube_chapters_notes": "4 chapters, 83.13s total (incl. 2.61s outro), validated PASS — r10",
   "pronunciation_map": {},
-  "notes": "AKB-13 r9: ONE voice only — Liam (VCgLBmBjldJmfphyB8sZ) throughout. Fix: pre-submit 3 API responses during audience-join, then click Start in presenter iframe during audience-playing — game countdown runs (5-4-3-2-1) then game board shows with 3 responses and timer 00:23. back-to-editor works (game exits preview). Ends on Hit Present in editor. VO re-timed: mp-audience-playing 58.5→62.0, mp-back-to-editor 63.6→74.0, mp-present 66.6→77.5. Reused all TTS clips from r8.",
+  "notes": "AKB-13 r10: English UI fix — account language changed to English (was Spanish from r9). Re-recorded presentation 529988 with all English text. All 4 checklist: capitals France→Paris/Japan→Tokyo/Germany→Berlin correct, Settings VO aligned, preview shows game active with timer, ends on Present. TTS clips reused from r9 (Liam VCgLBmBjldJmfphyB8sZ). Video: 83.13s incl. 2.61s branded outro.",
   "steps": [
     {
       "id": "mp-welcome",
