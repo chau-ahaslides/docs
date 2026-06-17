@@ -1,4 +1,6 @@
 
-# Agent-Fleet local config (contains API token)
-.agent-fleet/
+# Agent-Fleet local files (secrets + sidecars stay ignored; shared config is committed)
+.agent-fleet/*
+!.agent-fleet/config.json
+!.agent-fleet/config.example.json
 .env
