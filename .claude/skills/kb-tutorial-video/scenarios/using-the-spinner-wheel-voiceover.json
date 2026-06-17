@@ -5,14 +5,14 @@
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.50, "similarity_boost": 0.75, "style": 0.3},
   "video_duration_sec": 52.73,
-  "generated_round": 12,
+  "generated_round": 14,
   "youtube_id": "TBD — upload pending; video ready at out-spinner-r12/spinner-wheel-r12-final.mp4",
   "pronunciation_map": {
-    "Present (verb /prəˈzent/)": "Use 'Hit Present to go live' — the 'to go live' context cues ElevenLabs to stress the verb form prih-ZENT, not the noun PREZ-ent"
+    "Present (verb /prəˈzent/)": "PHONETIC RESPELLING in tts_text: 'prih-ZENT' forces ElevenLabs to stress the second syllable (verb form). Context cueing alone was unreliable (failed r8-r13). IPA /prɪˈzɛnt/. display_text kept natural."
   },
   "youtube_chapters": "0:00 Create and set up a Spinner Wheel slide\n0:22 Add entries and preview the spin\n0:40 Go live and reveal the winner",
   "youtube_chapters_notes": "3 chapters, 52.73s total, r12 — correct branded outro (splash_intro_BD.webm, animated AhaSlides splash, has opus audio); VO body identical to r11 (all 7 clips present)",
-  "notes": "AKB-15 r12 — OUTRO FIX: r11 used wrong outro (aha-outro-reusable-1440x900.webm — not the brand outro). r12 uses the committed canonical outro: .claude/skills/kb-tutorial-video/assets/splash_intro_BD.webm (animated AhaSlides splash, vp9, 2.61s, has opus stereo audio). Assembled via filter_complex concat from r11 narrated (50.12s) + branded outro (2.61s) = 52.73s. Energy scan confirms VO speech 1.06s–47.16s (all 7 clips, no silent tail). Outro frames at 50.5s show animated Radical Pink/Purple burst; at 51.5s shows AhaSlides logo reveal. Not on YouTube (channel cap). Article embed unchanged.",
+  "notes": "AKB-15 r14 — PRONUNCIATION FIX: sw-present clip re-rendered with phonetic respelling 'prih-ZENT' in tts_text to force verb stress (IPA /prɪˈzɛnt/). Context cueing ('Hit Present to go live') was unreliable across r8-r13; the explicit respelling is the reliable override per kb-video-voiceover skill spec. Only sw-present was re-rendered (all other 6 clips byte-identical from r11). Re-mixed by muting old sw-present window (40.5-48.81s) in r11 narrated audio and overlaying new clip. Energy scan confirms speech at 40.57-48.55s. Outro = splash_intro_BD.webm (2.61s, vp9, opus stereo). Final: out-videos/out-spinner-r14/spinner-wheel-r14-final.mp4 (52.73s). Not on YouTube (no creds + channel cap). Article embed unchanged.",
   "steps": [
     {
       "id": "sw-create",
@@ -84,13 +84,13 @@
       "id": "sw-present",
       "voice": "Alice",
       "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
-      "file": "out-spinner-r8b/s07_r8.mp3",
+      "file": "out-videos/out-spinner-r14/sw-present-r14.mp3",
       "start_sec": 40.5,
       "window_sec": 7.12,
       "display_text": "Hit Present to go live — then press the centre of the wheel to spin for your audience. The winner appears on every screen at once!",
-      "tts_text": "Hit Present to go live — then press the centre of the wheel to spin for your audience. The winner appears on every screen at once!",
-      "audio_duration_sec": 7.05
+      "tts_text": "Hit prih-ZENT to go live — then press the centre of the wheel to spin for your audience. The winner appears on every screen at once!",
+      "audio_duration_sec": 8.31
     }
   ],
-  "mix_command": "r12 outro fix — cd ~/AhaSlides/onboarding-videos && FFMPEG=node_modules/ffmpeg-static/ffmpeg && OUTRO=~/AhaSlides/ahaslides-kb/.claude/skills/kb-tutorial-video/assets/splash_intro_BD.webm && $FFMPEG -y -i out-spinner-r11/spinner-wheel-r11-narrated.webm -i $OUTRO -filter_complex '[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[vout][aout]' -map '[vout]' -map '[aout]' -c:v libx264 -crf 20 -preset medium -c:a aac -ar 48000 -ac 1 out-spinner-r12/spinner-wheel-r12-final.mp4"
+  "mix_command": "r14 pronunciation fix — mute old sw-present window + overlay new clip, then concat outro: FFMPEG=$(node -p \"require('ffmpeg-static')\") && $FFMPEG -y -i out-videos/out-spinner-r11/spinner-wheel-r11-narrated.webm -i out-videos/out-spinner-r14/sw-present-r14.mp3 -filter_complex '[0:a]volume=enable=between(t\\,40.5\\,48.81):volume=0[a_muted];[1:a]adelay=40500|40500[a_new];[a_muted][a_new]amix=inputs=2:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out-videos/out-spinner-r14/spinner-wheel-r14-narrated.webm && OUTRO=\"$(git rev-parse --show-toplevel)/.claude/skills/kb-tutorial-video/assets/splash_intro_BD.webm\" && $FFMPEG -y -i out-videos/out-spinner-r14/spinner-wheel-r14-narrated.webm -i $OUTRO -filter_complex '[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[vout][aout]' -map '[vout]' -map '[aout]' -c:v libx264 -crf 20 -preset medium -c:a aac -ar 48000 -ac 1 out-videos/out-spinner-r14/spinner-wheel-r14-final.mp4"
 }
