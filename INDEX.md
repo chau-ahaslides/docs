@@ -25,10 +25,20 @@
 | [how-to-use-rating-scale-slides-on-ahaslides](#how-to-use-rating-scale-slides-on-ahaslides) | Using Slide Types | All | ✅ Yes |
 | [using-qa](#using-qa) | Using Slide Types | Free | ✅ Yes |
 | [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Using Slide Types | All | ✅ Yes |
+| [creating-a-poll-question-on-ahaslides](#creating-a-poll-question-on-ahaslides) | Using Slide Types | All | ✅ Yes |
+| [using-the-categorise-slide](#using-the-categorise-slide) | Using Slide Types | All | ✅ Yes |
+| [using-the-content-slide](#using-the-content-slide) | Using Slide Types | All | ✅ Yes |
+| [using-the-open-ended-slide](#using-the-open-ended-slide) | Using Slide Types | All | ✅ Yes |
+| [using-the-ranking-slide](#using-the-ranking-slide) | Using Slide Types | All | ✅ Partial |
+| [how-to-use-the-idea-board-slide](#how-to-use-the-idea-board-slide) | Using Slide Types | All | No |
 | [using-the-surveys-tool](#using-the-surveys-tool) | Using Slide Types + Surveys | All | No |
 | [using-the-content-v2-slide](#using-the-content-v2-slide) | Using Slide Types | All | No |
 | [using-the-diagram-slide](#using-the-diagram-slide) | Using Slide Types | All | No |
 | [using-the-pin-on-image-slide](#using-the-pin-on-image-slide) | Using Slide Types | All | No |
+| [adding-notes-to-your-presentation](#adding-notes-to-your-presentation) | Features | All | No |
+| [how-to-preview-and-test-your-presentation](#how-to-preview-and-test-your-presentation) | Features | All | No |
+| [presenter-role](#presenter-role) | Features | Pro | No |
+| [resetting-the-results](#resetting-the-results) | Features | All | No |
 | [collecting-audience-information](#collecting-audience-information) | Features | Pro | ✅ Yes |
 | [how-to-collaborate-on-presentations-and-folders](#how-to-collaborate-on-presentations-and-folders) | Features | All | ✅ Partial |
 | [moving-and-editing-multiple-slides](#moving-and-editing-multiple-slides) | Features | All | ✅ Yes |
@@ -42,11 +52,17 @@
 | [how-to-show-or-hide-the-audience-get-slides-button](#how-to-show-or-hide-the-audience-get-slides-button) | Using Slide Types | All | No |
 | [importing-a-powerpoint-presentation-or-pdf-file](#importing-a-powerpoint-presentation-or-pdf-file) | Features | All | No |
 | [using-your-google-slides-presentation-with-ahaslides](#using-your-google-slides-presentation-with-ahaslides) | Features | Free | No |
+| [generating-questions-and-answers-using-ai-on-ahaslides](#generating-questions-and-answers-using-ai-on-ahaslides) | AI-powered | All | No |
+| [generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides](#generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides) | AI-powered | All | No |
+| [how-to-use-profanity-filter](#how-to-use-profanity-filter) | Presenting | All | No |
+| [setting-up-a-self-paced-presentation-on-ahaslides](#setting-up-a-self-paced-presentation-on-ahaslides) | Presenting | All | No |
 | [sharing-your-presentation-for-participants-to-join](#sharing-your-presentation-for-participants-to-join) | Presenting | Pro | No |
+| [your-ahaslides-presentation-report](#your-ahaslides-presentation-report) | After Presentation | All | No |
 | [sharing-a-copy-of-your-presentation-with-other-ahaslides-users](#sharing-a-copy-of-your-presentation-with-other-ahaslides-users) | After Presentation | Free | No |
 | [removing-and-changing-the-logo](#removing-and-changing-the-logo) | Branding | Pro | No |
 | [how-to-change-and-manage-fonts](#how-to-change-and-manage-fonts) | Branding | Pro | No |
 | [using-the-ahaslides-app-on-zoom](#using-the-ahaslides-app-on-zoom) | Integrations | Free | No |
+| [ahaslides-mcp-getting-started-guide](#ahaslides-mcp-getting-started-guide) | Integrations | All | No |
 | [managing-your-team-members](#managing-your-team-members) | Teams & Enterprise | Enterprise | No |
 | [sharing-a-presentation-with-specific-team-members](#sharing-a-presentation-with-specific-team-members) | Teams & Enterprise | Pro | No |
 | [white-label-multiple-accounts-and-enterprise-license-inquiries](#white-label-multiple-accounts-and-enterprise-license-inquiries) | Teams & Enterprise | Enterprise | No |
@@ -55,6 +71,7 @@
 | [annual-subscriptions](#annual-subscriptions) | Price Plans | All | No |
 | [one-time-plans](#one-time-plans) | Price Plans | All | No |
 | [educational-subscriptions](#educational-subscriptions) | Price Plans | All | No |
+| [purchasing-multiple-licenses-for-ahaslides-team-plan-subscription](#purchasing-multiple-licenses-for-ahaslides-team-plan-subscription) | Payment | Pro | No |
 | [ahaslides-payment-methods](#ahaslides-payment-methods) | Payment | All | No |
 | [what-currencies-can-be-used-to-purchase](#what-currencies-can-be-used-to-purchase) | Payment | All | No |
 | [how-to-add-discount-code-to-your-purchase](#how-to-add-discount-code-to-your-purchase) | Payment | All | No |
@@ -170,6 +187,41 @@
 **Summary:** Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
 **File:** `how-to-show-or-hide-the-audience-get-slides-button.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
 
+### creating-a-poll-question-on-ahaslides
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** A Poll slide is a quick and easy way to get live opinions from your audience — ask a question, provide up to 30 answer options, and see results update live as participants vote.
+**MCP:** `create_slides(slide_type: "poll", heading: "...", options: [{text}])` | `update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")`
+**File:** `creating-a-poll-question-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/creating-a-poll-question-on-ahaslides
+
+### using-the-categorise-slide
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** The Categorise slide is a quiz type where participants sort items into predefined categories on their phones — results update live. Great for knowledge checks, training, and classroom activities.
+**MCP:** `create_slides(slide_type: "categorise_quiz", heading: "...", options: [{name, items[]}])` | `update_slide_properties_tool(type: "categoriseQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
+**File:** `using-the-categorise-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-categorise-slide
+
+### using-the-content-slide
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** The Content slide lets you create and customise text and images directly on the canvas, giving you full control over the layout.
+**MCP:** `create_slides(slide_type: "content", heading: "...", paragraphs: [])` | `update_slide_properties_tool(type: "staticContent", deleted: true)`
+**File:** `using-the-content-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-content-slide
+
+### using-the-open-ended-slide
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** An Open Ended slide collects free-text responses from your audience in their own words, displayed in grid or one-by-one layout. Supports image submission.
+**MCP:** `create_slides(slide_type: "open_ended_survey", heading: "...")` | `update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)`
+**File:** `using-the-open-ended-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-open-ended-slide
+
+### using-the-ranking-slide
+**Plan:** All | **MCP Actions:** ✅ Partial
+**Summary:** A Ranking slide lets your audience prioritize a list of options — instead of picking a favourite, participants rank what matters most. Results update instantly.
+**MCP:** `create_slides(slide_type: "poll", heading: "...", options: [{text}])` — Ranking is a poll variant.
+**File:** `using-the-ranking-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-ranking-slide
+
+### how-to-use-the-idea-board-slide
+**Plan:** All | **MCP Actions:** No
+**Summary:** An Idea Board slide lets your audience submit ideas organized into themes in real time, helping you spot patterns and turn raw feedback into structured insights.
+**File:** `how-to-use-the-idea-board-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-the-idea-board-slide
+
 ### using-the-surveys-tool
 **Plan:** All | **MCP Actions:** No
 **Summary:** AhaSlides Surveys let you collect structured, multi-question feedback in two modes: share a standalone link for async responses, or add the Survey as a slide in your presentation deck so your live audience completes it on the spot. Both modes use the same survey — build it once in the Surveys section of the dashboard, then choose how to launch it.
@@ -199,6 +251,26 @@
 ---
 
 ## ⚙️ Features and functions
+
+### adding-notes-to-your-presentation
+**Plan:** All | **MCP Actions:** No
+**Summary:** Write speaker notes for each slide. During your presentation, notes are visible on your monitor via Remote Control — your audience cannot see them.
+**File:** `adding-notes-to-your-presentation.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/adding-notes-to-your-presentation
+
+### how-to-preview-and-test-your-presentation
+**Plan:** All | **MCP Actions:** No
+**Summary:** Preview mode lets you see how your presentation will look on both your and your audience's devices, and interact with your own slides before going live.
+**File:** `how-to-preview-and-test-your-presentation.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-preview-and-test-your-presentation
+
+### presenter-role
+**Plan:** Pro | **MCP Actions:** No
+**Summary:** Allow multiple presenters to run the same presentation simultaneously without affecting each other. The owner can view reports from all sessions separately.
+**File:** `presenter-role.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/presenter-role
+
+### resetting-the-results
+**Plan:** All | **MCP Actions:** No
+**Summary:** Clear all participant submissions from a presentation to reuse it for a new audience. Slide content (questions, options) is unaffected — only responses are erased.
+**File:** `resetting-the-results.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/resetting-the-results
 
 ### collecting-audience-information
 **Plan:** Pro | **MCP Actions:** ✅ Yes
@@ -256,7 +328,31 @@
 
 ---
 
+## 🤖 AI-powered features
+
+### generating-questions-and-answers-using-ai-on-ahaslides
+**Plan:** All | **MCP Actions:** No
+**Summary:** Use AI to generate quiz and poll questions with answer options automatically. Works for pick-answer quizzes, short-answer quizzes, and polls.
+**File:** `generating-questions-and-answers-using-ai-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/generating-questions-and-answers-using-ai-on-ahaslides
+
+### generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides
+**Plan:** All | **MCP Actions:** No
+**Summary:** Import a PPT, PDF, or image file and let AI generate interactive quiz slides from your content — saves time and boosts engagement for training sessions.
+**File:** `generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides
+
+---
+
 ## 🎤 Presenting
+
+### how-to-use-profanity-filter
+**Plan:** All | **MCP Actions:** No
+**Summary:** The profanity filter blocks swear words submitted by participants across word clouds, open-ended slides, Q&A, short answer quizzes, and name fields.
+**File:** `how-to-use-profanity-filter.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-profanity-filter
+
+### setting-up-a-self-paced-presentation-on-ahaslides
+**Plan:** All | **MCP Actions:** No
+**Summary:** In self-paced mode, participants proceed through a presentation at their own speed without a live host — ideal for async quizzes and surveys.
+**File:** `setting-up-a-self-paced-presentation-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/setting-up-a-self-paced-presentation-on-ahaslides
 
 ### sharing-your-presentation-for-participants-to-join
 **Plan:** Pro | **MCP Actions:** No
@@ -267,6 +363,15 @@
 **Plan:** Free | **MCP Actions:** No
 **Summary:** Share a copy of your presentation with other AhaSlides users so they can copy it to their own accounts.
 **File:** `sharing-a-copy-of-your-presentation-with-other-ahaslides-users.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/sharing-a-copy-of-your-presentation-with-other-ahaslides-users
+
+---
+
+## 📊 After the presentation
+
+### your-ahaslides-presentation-report
+**Plan:** All | **MCP Actions:** No
+**Summary:** The Presentation Report provides detailed insights into your audience's engagement — statistics on participant interactions, individual scores, and written feedback to evaluate your presentation's impact.
+**File:** `your-ahaslides-presentation-report.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/your-ahaslides-presentation-report
 
 ---
 
@@ -290,6 +395,11 @@
 **Plan:** Free | **MCP Actions:** No
 **Summary:** Install the AhaSlides app from the Zoom Marketplace and run interactive presentations directly inside Zoom meetings or webinars. Desktop only (PC/laptop); Zoom mobile is not supported. Only the host needs an AhaSlides account.
 **File:** `using-the-ahaslides-app-on-zoom.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-ahaslides-app-on-zoom
+
+### ahaslides-mcp-getting-started-guide
+**Plan:** All | **MCP Actions:** Not applicable
+**Summary:** The AhaSlides MCP server lets AI assistants like Claude create presentations, build quizzes, manage slides, and analyse responses just by describing what you want in plain language.
+**File:** `ahaslides-mcp-getting-started-guide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/ahaslides-mcp-getting-started-guide
 
 ---
 
@@ -347,6 +457,11 @@
 **Plan:** All | **MCP Actions:** No
 **Summary:** Purchase AhaSlides plans with cards or credit balance. Payments handled securely by Stripe.
 **File:** `ahaslides-payment-methods.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/ahaslides-payment-methods
+
+### purchasing-multiple-licenses-for-ahaslides-team-plan-subscription
+**Plan:** Pro | **MCP Actions:** No
+**Summary:** Step-by-step guide to purchasing multiple licences for the AhaSlides Team Plan subscription — enabling collaborative features across your organisation.
+**File:** `purchasing-multiple-licenses-for-ahaslides-team-plan-subscription.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/purchasing-multiple-licenses-for-ahaslides-team-plan-subscription
 
 ### what-currencies-can-be-used-to-purchase
 **Plan:** All | **MCP Actions:** No
@@ -450,4 +565,4 @@
 
 ---
 
-*Last synced from Zoho Desk: 2026-06-04 | org_id: 736517018*
+*Last synced from Zoho Desk: 2026-06-18 | org_id: 736517018*
