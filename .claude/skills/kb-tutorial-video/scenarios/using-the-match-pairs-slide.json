@@ -24,7 +24,7 @@
       "id": "mp-pick-type",
       "path": "/presentation/*",
       "title": "Pick the Match Pairs slide type",
-      "description": "Select 'Match Pairs' from the Quiz section of the slide type picker. It turns any matching challenge into a timed, scored game.",
+      "description": "Select 'Match Pairs' from the Quiz section of the slide type picker.",
       "targetSelector": "[aria-label=\"Match Pairs\"][data-testid=\"editor-new-slide-type-item-v2-button\"]",
       "action": {
         "type": "click",
@@ -106,7 +106,7 @@
       "id": "mp-pair-3-prompt",
       "path": "/presentation/*",
       "title": "Add pair 3 — prompt",
-      "description": "Add a third pair to make the game challenging and fair. Three to four pairs is the sweet spot for engagement on any screen size.",
+      "description": "Add a third pair to make the game challenging and fair. Three to four pairs is the sweet spot for engagement.",
       "targetSelector": ".mb-4 > div:nth-child(3) .match-pair-option [data-testid=\"editor-side-right-match-pair-prompt-input\"]",
       "pauseMs": 1000,
       "action": {
@@ -131,23 +131,10 @@
       }
     },
     {
-      "id": "mp-settings",
-      "path": "/presentation/*",
-      "title": "Fine-tune with Slide Settings",
-      "description": "Click the Slide Settings control to set the time limit and point value. Shorter time limits add urgency; higher points reward accuracy.",
-      "targetSelector": "[data-testid=\"editor-side-left-slide-settings-button\"]",
-      "pauseMs": 1000,
-      "action": {
-        "type": "click",
-        "selector": "[data-testid=\"editor-side-left-slide-settings-button\"]",
-        "hint": "Click the Slide Settings control to open settings"
-      }
-    },
-    {
       "id": "mp-preview",
       "path": "/presentation/*",
       "title": "Preview how participants see it",
-      "description": "Click Preview to see both the presenter screen and the participant's phone side by side. Watch participants join and drag each pair into place.",
+      "description": "Click Preview to see both the presenter screen and the participant's phone side by side.",
       "targetSelector": "[data-testid=\"editor-middle-preview-button\"]",
       "pauseMs": 500,
       "action": {
@@ -191,7 +178,7 @@
       "id": "mp-audience-playing",
       "path": "/presentation/*",
       "title": "Participants drag pairs into place",
-      "description": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They drag each answer to its matching prompt before time runs out.",
+      "description": "Once the host starts the round, each participant's screen shows the prompts and shuffled answers. They drag each answer to its matching prompt.",
       "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
       "pauseMs": 3000,
       "action": null,
@@ -208,7 +195,7 @@
       "id": "mp-back-to-editor",
       "path": "/presentation/*",
       "title": "Ready to go live!",
-      "description": "Your three pairs are set up and the experience is ready for participants. Hit 'Present' when you're ready — participants race to drag every pair into position.",
+      "description": "Your three pairs are set up and the experience is ready for participants. Hit Present when you're ready — participants race to drag every pair into position.",
       "targetSelector": "[data-testid=\"editor-middle-back-to-editor-button\"]",
       "action": {
         "type": "click",

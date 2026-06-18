@@ -5,13 +5,15 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 81.4,
-  "generated_round": 9,
-  "youtube_id": null,
-  "youtube_chapters": "0:00 Introduction to Match Pairs\n0:14 Add your question and pairs\n0:30 Slide Settings and Preview\n0:43 Participant experience and Present",
-  "youtube_chapters_notes": "4 chapters, 83.13s total (incl. 2.61s outro), validated PASS — r10",
-  "pronunciation_map": {},
-  "notes": "AKB-13 r10: English UI fix — account language changed to English (was Spanish from r9). Re-recorded presentation 529988 with all English text. All 4 checklist: capitals France→Paris/Japan→Tokyo/Germany→Berlin correct, Settings VO aligned, preview shows game active with timer, ends on Present. TTS clips reused from r9 (Liam VCgLBmBjldJmfphyB8sZ). Video: 83.13s incl. 2.61s branded outro.",
+  "video_duration_sec": 74.0,
+  "generated_round": 11,
+  "youtube_id": "W3Diw_84Rj0",
+  "youtube_chapters": "0:00 Introduction to Match Pairs\n0:14 Add your question and pairs\n0:30 Preview the participant experience\n0:43 Start the game and go live",
+  "youtube_chapters_notes": "4 chapters, 76.58s total (incl. 2.58s outro), validated PASS — r11",
+  "pronunciation_map": {
+    "Present": "prih-ZENT"
+  },
+  "notes": "AKB-13 r11: removed mp-settings (time-limit scene), removed targetSelector from audience steps, fixed Present pronunciation to prih-ZENT. 14 steps → no settings step. Reuse r9/r10 TTS clips where unchanged; regenerate mp-present (new pronunciation).",
   "steps": [
     {
       "id": "mp-welcome",
@@ -114,20 +116,10 @@
       "audio_duration_sec": 1.33
     },
     {
-      "id": "mp-settings",
-      "voice": "Liam",
-      "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 39.5,
-      "window_sec": 4.5,
-      "display_text": "Click the slide settings control to adjust the time limit and point value.",
-      "tts_text": "Click the slide settings control to adjust the time limit and point value.",
-      "audio_duration_sec": 3.76
-    },
-    {
       "id": "mp-preview",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 43.5,
+      "start_sec": 39.5,
       "window_sec": 3.0,
       "display_text": "Hit Preview to see both screens side by side.",
       "tts_text": "Hit Preview to see both screens side by side.",
@@ -137,8 +129,8 @@
       "id": "mp-audience-join",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 47.5,
-      "window_sec": 10.5,
+      "start_sec": 43.5,
+      "window_sec": 12.0,
       "display_text": "Participants scan the code or visit the link. They enter a name and tap Join to wait for the host.",
       "tts_text": "Participants scan the code or visit the link. They enter a name and tap Join to wait for the host.",
       "audio_duration_sec": 5.62
@@ -147,7 +139,7 @@
       "id": "mp-audience-playing",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 62.0,
+      "start_sec": 58.0,
       "window_sec": 12.0,
       "display_text": "Once the host starts, participants see the shuffled answers and drag each to its matching prompt.",
       "tts_text": "Once the host starts, participants see the shuffled answers and drag each to its matching prompt.",
@@ -157,8 +149,8 @@
       "id": "mp-back-to-editor",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 74.0,
-      "window_sec": 3.5,
+      "start_sec": 63.5,
+      "window_sec": 4.0,
       "display_text": "Three pairs set up — the experience is ready for your audience.",
       "tts_text": "Three pairs set up — the experience is ready for your audience.",
       "audio_duration_sec": 2.95
@@ -167,11 +159,11 @@
       "id": "mp-present",
       "voice": "Liam",
       "voice_id": "VCgLBmBjldJmfphyB8sZ",
-      "start_sec": 77.5,
+      "start_sec": 68.0,
       "window_sec": 2.0,
       "display_text": "Hit Present to go live.",
-      "tts_text": "Hit Present to go live.",
-      "audio_duration_sec": 1.49
+      "tts_text": "Hit prih-ZENT to go live.",
+      "audio_duration_sec": 1.38
     }
   ]
 }
