@@ -3,11 +3,13 @@
   "tts_engine": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {"stability": 0.45, "similarity_boost": 0.75, "style": 0.4},
-  "video_duration_sec": 77.2,
-  "generated_round": 9,
-  "youtube_id": "BX-jRVudVRk",
-  "pronunciation_map": {},
-  "notes": "Round 9 — VO overlap fix (check_vo_overlap.py): 2 overlaps detected in r8 manifest: [4→5] pin-add-image ends 26.68s / pin-switch-tab starts 26.5s = 0.18s overlap; [5→6] pin-switch-tab ends 29.30s / pin-image-library starts 28.0s = 1.30s overlap. Fixed by pushing step 5 (pin-switch-tab) from 26.5→27.0 and step 6 (pin-image-library) from 28.0→30.0. Also migrated from Bella (EXAVITQu4vr4xnSDxMaL) to Liam (VCgLBmBjldJmfphyB8sZ) per AKB-19 voice standard. Re-recorded visual (r9), re-generated all 14 VO clips with Liam, re-mixed. audio_duration_sec values are Liam measurements; re-run check_vo_overlap.py after any future edit.",
+  "video_duration_sec": 79.48,
+  "generated_round": 11,
+  "youtube_id": "pc18uoqDQv0",
+  "pronunciation_map": {
+    "Present": "Hit Present to go live with your slide"
+  },
+  "notes": "Round 11 — AKB-4 fixes: (1) added filler VO at gap 2 (46.5s, pin-image-saved) and gap 3 (61.5s, pin-responses-in); (2) regenerated s14/pin-present with explicit verb-context phrasing to fix PREZ-ent noun-stress risk; (3) appended 3s branded outro; (4) generated VTT caption track; (5) added YouTube chapter markers. Gap 0:34-0:38 (stock photo search loading) intentionally left silent per requester. Round 9 notes: VO overlap fix (check_vo_overlap.py): 2 overlaps detected in r8 manifest: [4->5] pin-add-image ends 26.68s / pin-switch-tab starts 26.5s = 0.18s overlap; [5->6] pin-switch-tab ends 29.30s / pin-image-library starts 28.0s = 1.30s overlap. Fixed by pushing step 5 (pin-switch-tab) from 26.5->27.0 and step 6 (pin-image-library) from 28.0->30.0. Also migrated from Bella (EXAVITQu4vr4xnSDxMaL) to Liam (VCgLBmBjldJmfphyB8sZ) per AKB-19 voice standard.",
   "steps": [
     {
       "id": "pin-welcome",
@@ -60,7 +62,7 @@
     {
       "id": "pin-image-library",
       "start_sec": 30.0,
-      "window_sec": 10.0,
+      "window_sec": 8.5,
       "display_text": "Type a keyword to find the perfect photo — we're searching for a world map.",
       "tts_text": "Type a keyword to find the perfect photo — we're searching for a world map.",
       "audio_duration_sec": 4.49
@@ -76,10 +78,18 @@
     {
       "id": "pin-save-image",
       "start_sec": 42.5,
-      "window_sec": 9.0,
+      "window_sec": 4.0,
       "display_text": "Adjust the crop if you like, then hit Save to add the world map to your slide.",
       "tts_text": "Adjust the crop if you like, then hit Save to add the world map to your slide.",
       "audio_duration_sec": 3.89
+    },
+    {
+      "id": "pin-image-saved",
+      "start_sec": 46.5,
+      "window_sec": 5.5,
+      "display_text": "Your image is now saved to the slide.",
+      "tts_text": "Your image is now saved to the slide.",
+      "audio_duration_sec": 2.22
     },
     {
       "id": "pin-preview-open",
@@ -92,10 +102,18 @@
     {
       "id": "pin-preview-audience",
       "start_sec": 56.5,
-      "window_sec": 9.0,
+      "window_sec": 5.0,
       "display_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
       "tts_text": "The participant screen shows your image. Your audience taps it on their phone to drop a pin.",
       "audio_duration_sec": 4.55
+    },
+    {
+      "id": "pin-responses-in",
+      "start_sec": 61.5,
+      "window_sec": 4.0,
+      "display_text": "Responses appear on screen as each participant drops their pin.",
+      "tts_text": "Responses appear on screen as each participant drops their pin.",
+      "audio_duration_sec": 3.58
     },
     {
       "id": "pin-preview-results",
@@ -116,11 +134,15 @@
     {
       "id": "pin-present",
       "start_sec": 73.5,
-      "window_sec": 3.7,
+      "window_sec": 3.0,
       "display_text": "That's all it takes. Hit Present when you're ready to go live.",
-      "tts_text": "That's all it takes. Hit Present when you're ready to go live.",
-      "audio_duration_sec": 3.00
+      "tts_text": "That's all it takes. Hit Present to go live with your slide.",
+      "audio_duration_sec": 2.82
     }
   ],
-  "mix_command": "FFMPEG=./node_modules/ffmpeg-static/ffmpeg && $FFMPEG -y -i out/pin-on-image-r9-trimmed.webm -i out-r9-vo/s01.mp3 -i out-r9-vo/s02.mp3 -i out-r9-vo/s03.mp3 -i out-r9-vo/s04.mp3 -i out-r9-vo/s05.mp3 -i out-r9-vo/s06.mp3 -i out-r9-vo/s07.mp3 -i out-r9-vo/s08.mp3 -i out-r9-vo/s09.mp3 -i out-r9-vo/s10.mp3 -i out-r9-vo/s11.mp3 -i out-r9-vo/s12.mp3 -i out-r9-vo/s13.mp3 -i out-r9-vo/s14.mp3 -filter_complex '[1:a]adelay=0|0[a1];[2:a]adelay=6000|6000[a2];[3:a]adelay=11000|11000[a3];[4:a]adelay=16000|16000[a4];[5:a]adelay=22000|22000[a5];[6:a]adelay=27000|27000[a6];[7:a]adelay=30000|30000[a7];[8:a]adelay=38500|38500[a8];[9:a]adelay=42500|42500[a9];[10:a]adelay=52000|52000[a10];[11:a]adelay=56500|56500[a11];[12:a]adelay=65500|65500[a12];[13:a]adelay=70000|70000[a13];[14:a]adelay=73500|73500[a14];[a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11][a12][a13][a14]amix=inputs=14:normalize=0[aout]' -map 0:v -map '[aout]' -c:v copy -c:a libopus -b:a 64k out/pin-on-image-r9-narrated.webm"
+  "filler_clips": {
+    "pin-image-saved": "out-r10-vo/f15.mp3",
+    "pin-responses-in": "out-r10-vo/f16.mp3"
+  },
+  "mix_command": "see render script — r9 clips + r10 fillers + new s14"
 }
