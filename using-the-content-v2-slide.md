@@ -28,7 +28,7 @@ In the editor, click **New slide**, then scroll to the **Content** section of th
 
 ## Two ways to build your slide
 
-### Option 1: Start from a layout
+### Option 1: start from a layout
 
 The right panel shows a **Layouts** section with more than 25 named templates. Click **Browse all →** to see the full list. Clicking a layout fills the canvas with a matching arrangement of pre-styled blocks that you can edit straight away.
 
@@ -66,7 +66,7 @@ Available layouts include:
 
 Once a layout is applied, each block on the canvas is independently editable.
 
-### Option 2: Insert blocks manually
+### Option 2: insert blocks manually
 
 Click the **+ Insert** button at the top of the right panel to open the block picker. A search bar lets you filter by name. Blocks are grouped into five categories:
 

@@ -50,7 +50,7 @@ After selecting an option, click **Start** to complete the import.
 
 If you pick **Import and generate slides with AI** or **Generate interactive slides**, the AI will read the file and create slides based on its contents.
 
-## Benefits of using AhaSlides for Quiz creation
+## Benefits of using AhaSlides for quiz creation
 
 - **Time Efficiency:** Quickly transform existing presentations into interactive quizzes.
 - **Enhanced Engagement:** Interactive quizzes make training sessions more engaging.

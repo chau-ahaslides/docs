@@ -38,7 +38,7 @@ b. Check the box labelled **Ask participants for info before they join** - This 
 
 c. Start by writing the heading to your form, then you can click the  button next to **Add fields** to select information fields to add.
 
-### 2. In an Open-ended or Brainstorm slide
+### 2. In an open-ended or Brainstorm slide
 
 a. When editing an Open-Ended or Brainstorm slide, click the  button next to **Collect audience info.** This option will allow you to collect information from participants when they answer this particular slide.
 
