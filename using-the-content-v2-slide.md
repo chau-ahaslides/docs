@@ -22,6 +22,8 @@ The Content v2 slide is a design canvas for creating polished, structured presen
 
 Like the original Content slide, Content v2 is **non-interactive**: participants see the slide on their screens but cannot submit a response. The upgrade is in the authoring experience: a structured block system replaces the free-floating canvas, giving you a richer set of content types and purpose-built layout templates.
 
+> **Tip — let AI do the heavy lifting:** The AhaSlides AI slide agent can generate a ready-to-use Content v2 slide from a plain-text prompt. Open the AI slide agent, describe what you need (e.g. "a cover slide for a product launch" or "a comparison table for three pricing tiers"), and the agent creates the slide with blocks and content already in place. Editing a generated slide is much faster than building one from scratch.
+
 ## How to add a Content v2 slide
 
 In the editor, click **New slide**, then scroll to the **Content** section of the slide type picker and select **Content v2**. The slide opens with a prompt: *"Choose a layout or insert elements →"*
@@ -30,41 +32,11 @@ In the editor, click **New slide**, then scroll to the **Content** section of th
 
 ### Option 1: Start from a layout
 
-The right panel shows a **Layouts** section with more than 25 named templates. Click **Browse all →** to see the full list. Clicking a layout fills the canvas with a matching arrangement of pre-styled blocks that you can edit straight away.
+AhaSlides ships a growing gallery of named, pre-designed layouts — cover slides, agenda grids, callout cards, comparison tables, image-and-text pairs, and more. The gallery is regularly expanded, so you may see more options than are listed anywhere in this article.
 
-Available layouts include:
+To browse the gallery, look for the **Layouts** section in the right panel (visible when no block is selected), then click **Browse all →** to open the full picker. Scroll through or search by name to find a starting point that matches your content. Examples of available layouts include *Cover Hero*, *Agenda*, *Feature matrix*, *Pull quote*, and *Process steps* — but these are illustrative; the full gallery inside the editor is the authoritative list.
 
-| Layout name | Best for |
-|---|---|
-| Cover · Hero | Opening slides with a strong headline |
-| Cover · Minimal | Clean, typographic title slides |
-| Statement · headline + body | Making a single key point |
-| Big stat · one hero number | Highlighting a key metric |
-| Image left, text right | Side-by-side photo and copy |
-| Image right, text left | Side-by-side copy and photo |
-| Image + text | Mixed image and body text |
-| Photo overlay | Full-bleed image with text on top |
-| Agenda · 6-section grid | Session agendas or topic lists |
-| Section break | Transition slides between topics |
-| Feature matrix | Comparing features or options |
-| Pull quote | Highlighting a quote or testimonial |
-| Pull quote · rich | Quote with additional styling |
-| Big question | Posing a large discussion prompt |
-| CTA · next steps | Closing slides with action items |
-| Manifesto | Bold statement or values slide |
-| Process steps | Sequential steps or workflows |
-| Timeline / Roadmap | Chronological or project views |
-| Logo wall · 4×2 | Sponsor or partner logo grids |
-| Wave accent | Visually accented background slide |
-| Definition slide | Glossary or key term definitions |
-| Editorial · cream | Magazine-style editorial layout |
-| FAQ | Frequently asked questions |
-| Tip callout | Highlighting a tip or advice |
-| Centered headline + body | Balanced centred text layout |
-| 10 min break | Break announcement slide |
-| Video hero | Full-width video with text |
-
-Once a layout is applied, each block on the canvas is independently editable.
+Clicking any layout fills the canvas with a matching arrangement of pre-styled blocks that you can edit straight away. Once applied, each block is independently editable.
 
 ### Option 2: Insert blocks manually
 
