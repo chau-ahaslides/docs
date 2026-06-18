@@ -6,7 +6,7 @@ permalink: using-q-and-a
 category: Using Slide Types on AhaSlides
 category_id: 570272000074885296
 permission: ALL
-last_updated: 2026-06-15
+last_updated: 2026-06-18
 tags: ["qa", "question", "answer", "on all slides", "moderation", "moderate"]
 keywords: ["Q&A", "QA", "question", "answer", "question and answer", "moderate", "moderation", "moderation mode", "moderator", "on all slides"]
 summary: Learn how to use the Q&A feature in your AhaSlides presentation, as well as the settings to get the most out of it.
@@ -27,7 +27,7 @@ The Q&A feature lets you gather questions from your audience. You can then organ
 
 Watch the quick tutorial below to see how to set up a Q&A slide and configure all its settings:
 
-{% embed url="https://www.youtube.com/watch?v=wbsYkltjeW8" %}
+{% embed url="https://www.youtube.com/watch?v=2qvmBwf5MQ8" %}
 Set up a Q&A slide on AhaSlides and configure all settings
 {% endembed %}
 

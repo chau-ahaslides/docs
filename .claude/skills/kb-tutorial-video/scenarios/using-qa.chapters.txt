@@ -1,0 +1,9 @@
+# Q&A Tutorial — AKB-10 r8
+# Video: /Users/claude/AhaSlides/onboarding-videos/out-qa-r8/using-qa-r8-with-outro.webm
+# Total duration: 59.45s
+# Chapters: 4, each >= 10s, first at 0:00
+
+0:00 Introduction & Setup
+0:10 Pick Q&A & Add Heading
+0:24 Configure Settings
+0:49 Present to Audience
