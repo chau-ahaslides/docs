@@ -26,7 +26,7 @@ description: "Learn how to use the Correct Order slide in an AhaSlides quiz. The
 
 The Correct Order quiz slide asks participants to place randomized statements in the correct order.
 
-{% embed url="https://www.youtube.com/watch?v=K5YPdRXDscU" %}
+{% embed url="https://www.youtube.com/watch?v=PHq5U5hm89s" %}
 How to set up a Correct Order slide on AhaSlides — full walkthrough in under a minute.
 {% endembed %}
 
