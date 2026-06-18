@@ -26,6 +26,7 @@
 | [using-qa](#using-qa) | Using Slide Types | Free | ✅ Yes |
 | [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Using Slide Types | All | ✅ Yes |
 | [using-the-surveys-tool](#using-the-surveys-tool) | Using Slide Types + Surveys | All | No |
+| [using-the-content-v2-slide](#using-the-content-v2-slide) | Using Slide Types | All | No |
 | [using-the-diagram-slide](#using-the-diagram-slide) | Using Slide Types | All | No |
 | [using-the-pin-on-image-slide](#using-the-pin-on-image-slide) | Using Slide Types | All | No |
 | [collecting-audience-information](#collecting-audience-information) | Features | Pro | ✅ Yes |
@@ -174,6 +175,11 @@
 **Summary:** AhaSlides Surveys let you collect structured, multi-question feedback in two modes: share a standalone link for async responses, or add the Survey as a slide in your presentation deck so your live audience completes it on the spot. Both modes use the same survey — build it once in the Surveys section of the dashboard, then choose how to launch it.
 **File:** `using-the-surveys-tool.md`
 **Video:** https://www.youtube.com/watch?v=LXRHtEqirN0 (supersedes m6fRdEv3Cqg — please delete old video in YouTube Studio)
+
+### using-the-content-v2-slide
+**Plan:** All | **MCP Actions:** No
+**Summary:** The Content v2 slide is a fully flexible design canvas for creating polished, layout-driven slides. Start from a ready-made layout or build your own by inserting text, callout, visual, media, and data blocks from scratch.
+**File:** `using-the-content-v2-slide.md`
 
 ### using-the-diagram-slide
 **Plan:** All | **MCP Actions:** No (slide_type string unconfirmed — see draft)

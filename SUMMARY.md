@@ -26,6 +26,7 @@
 * [Using the Diagram Slide](using-the-diagram-slide.md)
 * [Using the Pin on Image Slide](using-the-pin-on-image-slide.md)
 * [Using the Content Slide](using-the-content-slide.md)
+* [Using the Content v2 Slide](using-the-content-v2-slide.md)
 * [Using the Correct Order Slide](using-the-correct-order-slide.md)
 * [Using the Match Pairs Slide](using-the-match-pairs-slide.md)
 * [Using the Open Ended Slide](using-the-open-ended-slide.md)
