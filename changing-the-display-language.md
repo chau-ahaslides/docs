@@ -6,7 +6,7 @@ permalink: changing-the-display-language
 category: Features and Functions on AhaSlides
 category_id: 570272000074885546
 permission: ALL
-last_updated: 2026-06-16
+last_updated: 2026-06-18
 tags: ["français","dansk","polski","language","pусский","íslenska","tiếng việt","eλληνικά","deutsch","lietuvių","english","türkçe","日本語","french","spanish","español","slovenščina","display","português","indonesia","nederlands","latviešu valoda","中文","svenska","italiano","ahaslides","български","čeština","hrvatski","română"]
 keywords: []
 summary: You can create, navigate, and display presentations in multiple languages on AhaSlides. This tutorial will guide you through the simple steps to change your language settings on the presenter interface and audience app.
@@ -24,7 +24,7 @@ description: "You can create, navigate, and display presentations in multiple la
 
 You can create, navigate, and display presentations in multiple languages on AhaSlides. AhaSlides has two separate language settings: one for the presenter interface (what you see), and one for the audience display (what participants see on their devices).
 
-{% embed url="https://www.youtube.com/watch?v=A7vjgJjMOWA" %}
+{% embed url="https://www.youtube.com/watch?v=YTZ_9R6K940" %}
 Walk through both language settings and see the audience view in under a minute
 {% endembed %}
 

@@ -1,43 +1,40 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:04.360
-AhaSlides has two language settings — one for the presenter, one for the audience.
+00:00:00.000 --> 00:00:05.200
+AhaSlides has two language settings — one for the presenter interface, one for the audience.
 
-00:00:04.500 --> 00:00:07.690
-Click the globe icon to change the presenter interface language.
+00:00:05.500 --> 00:00:09.030
+Click the globe icon in the header to open the presenter language list.
 
-00:00:08.000 --> 00:00:11.890
-Pick from 27 interface languages — the app switches instantly.
+00:00:09.500 --> 00:00:18.700
+Choose from 27 interface languages — English, Español, Français, Deutsch, 中文, 日本語 and more. The interface switches instantly.
 
-00:00:12.000 --> 00:00:16.000
-The audience language is in presentation Settings. Click New presentation.
+00:00:19.000 --> 00:00:22.890
+Now let's set the audience language. It lives inside each presentation's Settings.
 
-00:00:16.500 --> 00:00:19.190
-Click Poll to add a slide — then we'll open Settings.
+00:00:23.000 --> 00:00:27.730
+After opening a presentation, click Poll to add a slide — then we'll go to Settings.
 
-00:00:20.500 --> 00:00:25.750
-The Poll slide is in your deck. Now let's open Settings to set the audience display language.
+00:00:28.000 --> 00:00:31.940
+Click the Settings icon in the right panel to open presentation settings.
 
-00:00:26.000 --> 00:00:28.120
-Click the Settings icon on the right panel.
+00:00:32.000 --> 00:00:36.180
+In the Settings panel, click Presentation language to reach the audience language picker.
 
-00:00:28.500 --> 00:00:32.340
-The Settings panel is opening — you'll see options for your entire presentation.
+00:00:36.500 --> 00:00:46.840
+AhaSlides supports 32 audience languages. English is selected by default. Scroll through Bahasa Indonesia, Čeština, Deutsch, Español, Français, and 27 more.
 
-00:00:33.000 --> 00:00:35.120
-In Settings, click Presentation language.
+00:00:47.000 --> 00:00:51.490
+Let's choose Español. All participant-facing text switches to Spanish immediately.
 
-00:00:35.500 --> 00:00:40.460
-Navigating to the Presentation language tab — here you'll find the dropdown for your audience's language.
+00:00:51.500 --> 00:00:55.500
+The language is saved automatically. Close Settings to return to the editor.
 
-00:00:41.000 --> 00:00:44.600
-Pick from 32 languages — your audience sees the change immediately.
+00:00:55.500 --> 00:00:57.960
+Click Preview to see the audience view in Spanish.
 
-00:00:45.000 --> 00:00:47.870
-The language is saved automatically. Let's close Settings.
+00:00:58.000 --> 00:01:03.620
+The participant screen switches to Spanish — the join text, buttons, and interface all appear in Español.
 
-00:00:48.000 --> 00:00:53.380
-Click Preview to see exactly what your audience will see when you go live — including the language you just set.
-
-00:00:53.500 --> 00:00:56.000
-Your audience sees AhaSlides in their chosen language — questions, options, and the join screen all in their language.
+00:01:03.700 --> 00:01:08.190
+Both settings save automatically. Combine them to run fully multilingual sessions.

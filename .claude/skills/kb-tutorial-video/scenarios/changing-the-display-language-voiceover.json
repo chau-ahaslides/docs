@@ -6,10 +6,10 @@
     "similarity_boost": 0.75,
     "style": 0.4
   },
-  "video_duration_sec": 64.0,
-  "notes": "r7 tour for Changing the Display Language — tour tooltips removed on both language-list display beats using CSS transparency trick (background:transparent on .onboarding-tooltip + children). Presenter list CLEAN at ~12-15s (trimmed). Audience list CLEAN at ~44-49s (trimmed). Drops preview clips s10/s11 (preview step failed in r7 recording). 64.0s trimmed + 2s tpad + 2.6s outro = ~68.6s total. Supersedes r6 (commit c79ae7c).",
-  "youtube_chapters": "0:00 Presenter interface language (27 options)\n0:18 Open a presentation and go to Settings\n0:38 Audience display language (32 options)",
-  "youtube_chapters_notes": "3 chapters, ~68.6s total, AKB-18 r7, no preview section",
+  "video_duration_sec": 62.8,
+  "notes": "r8 tour for Changing the Display Language — tooltip CSS manipulation fully removed from scenario (no .onboarding-tooltip CSS). Fake dropdown injection kept. Preview section fully restored (steps 13-14 in scenario, s10-s13 in VO). 13 VO clips (s01-s13). 62.8s trimmed + 6s tpad = 68.8s + 2.6s outro = 71.4s total. Supersedes r7.",
+  "youtube_chapters": "0:00 Presenter interface language (27 options)\n0:19 Open a presentation and go to Settings\n0:32 Audience display language (32 options)\n0:47 Preview audience view in Spanish",
+  "youtube_chapters_notes": "4 chapters, ~71.5s total, PASS, AKB-18 r8, includes preview section",
   "steps": [
     {
       "id": "s01",
@@ -24,7 +24,7 @@
       "id": "s02",
       "scenario_step": "lang-globe-click",
       "start_sec": 5.5,
-      "window_sec": 4.5,
+      "window_sec": 3.0,
       "display_text": "Click the globe icon in the header to open the presenter language list.",
       "tts_text": "Click the globe icon in the header to open the presenter language list.",
       "audio_duration_sec": 3.53
@@ -32,8 +32,8 @@
     {
       "id": "s03",
       "scenario_step": "lang-dropdown-show",
-      "start_sec": 10.0,
-      "window_sec": 9.5,
+      "start_sec": 9.5,
+      "window_sec": 8.0,
       "display_text": "Choose from 27 interface languages — English, Español, Français, Deutsch, 中文, 日本語 and more. The interface switches instantly.",
       "tts_text": "Choose from 27 interface languages — English, Español, Français, Deutsch, 中文, 日本語 and more. The interface switches instantly.",
       "audio_duration_sec": 9.20
@@ -41,8 +41,8 @@
     {
       "id": "s04",
       "scenario_step": "lang-dropdown-close",
-      "start_sec": 19.5,
-      "window_sec": 4.5,
+      "start_sec": 19.0,
+      "window_sec": 4.0,
       "display_text": "Now let's set the audience language. It lives inside each presentation's Settings.",
       "tts_text": "Now let's set the audience language. It lives inside each presentation's Settings.",
       "audio_duration_sec": 3.89
@@ -50,8 +50,8 @@
     {
       "id": "s05",
       "scenario_step": "lang-add-slide",
-      "start_sec": 23.5,
-      "window_sec": 5.5,
+      "start_sec": 23.0,
+      "window_sec": 4.0,
       "display_text": "After opening a presentation, click Poll to add a slide — then we'll go to Settings.",
       "tts_text": "After opening a presentation, click Poll to add a slide — then we'll go to Settings.",
       "audio_duration_sec": 4.73
@@ -59,8 +59,8 @@
     {
       "id": "s06",
       "scenario_step": "lang-settings-btn",
-      "start_sec": 28.5,
-      "window_sec": 5.5,
+      "start_sec": 28.0,
+      "window_sec": 4.0,
       "display_text": "Click the Settings icon in the right panel to open presentation settings.",
       "tts_text": "Click the Settings icon in the right panel to open presentation settings.",
       "audio_duration_sec": 3.94
@@ -68,8 +68,8 @@
     {
       "id": "s07",
       "scenario_step": "lang-settings-modal",
-      "start_sec": 33.5,
-      "window_sec": 5.5,
+      "start_sec": 32.0,
+      "window_sec": 4.0,
       "display_text": "In the Settings panel, click Presentation language to reach the audience language picker.",
       "tts_text": "In the Settings panel, click Presentation language to reach the audience language picker.",
       "audio_duration_sec": 4.18
@@ -77,8 +77,8 @@
     {
       "id": "s08",
       "scenario_step": "lang-audience-expand",
-      "start_sec": 38.5,
-      "window_sec": 10.5,
+      "start_sec": 36.5,
+      "window_sec": 8.0,
       "display_text": "AhaSlides supports 32 audience languages. English is selected by default. Scroll through Bahasa Indonesia, Čeština, Deutsch, Español, Français, and 27 more.",
       "tts_text": "AhaSlides supports 32 audience languages. English is selected by default — scroll through Bahasa Indonesia, Čeština, Deutsch, Español, Français, and 27 more.",
       "audio_duration_sec": 10.34
@@ -86,10 +86,46 @@
     {
       "id": "s09",
       "scenario_step": "lang-select-spanish",
-      "start_sec": 49.5,
-      "window_sec": 5.0,
+      "start_sec": 47.0,
+      "window_sec": 3.5,
       "display_text": "Let's choose Español. All participant-facing text switches to Spanish immediately.",
       "tts_text": "Let's choose Español. All participant-facing text switches to Spanish immediately.",
+      "audio_duration_sec": 4.49
+    },
+    {
+      "id": "s10",
+      "scenario_step": "lang-close-settings",
+      "start_sec": 51.5,
+      "window_sec": 2.5,
+      "display_text": "The language is saved automatically. Close Settings to return to the editor.",
+      "tts_text": "The language is saved automatically. Close Settings to return to the editor.",
+      "audio_duration_sec": 4.00
+    },
+    {
+      "id": "s11",
+      "scenario_step": "lang-preview-open",
+      "start_sec": 55.5,
+      "window_sec": 2.5,
+      "display_text": "Click Preview to see the audience view in Spanish.",
+      "tts_text": "Click Preview to see the audience view in Spanish.",
+      "audio_duration_sec": 2.46
+    },
+    {
+      "id": "s12",
+      "scenario_step": "lang-preview-spanish",
+      "start_sec": 58.0,
+      "window_sec": 5.6,
+      "display_text": "The participant screen switches to Spanish — the join text, buttons, and interface all appear in Español.",
+      "tts_text": "The participant screen switches to Spanish — the join text, buttons, and interface all appear in Español.",
+      "audio_duration_sec": 5.62
+    },
+    {
+      "id": "s13",
+      "scenario_step": "lang-done",
+      "start_sec": 63.7,
+      "window_sec": 4.5,
+      "display_text": "Both settings save automatically. Combine them to run fully multilingual sessions.",
+      "tts_text": "Both settings save automatically. Combine them to run fully multilingual sessions.",
       "audio_duration_sec": 4.49
     }
   ]
