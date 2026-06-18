@@ -1,0 +1,11 @@
+{
+  "enabledPlugins": {
+    "aha-branding@aha-claude-plugins": true,
+    "aha-fleet@aha-claude-plugins": true,
+    "aha-template-publisher@aha-claude-plugins": true,
+    "aha-bot-v2@aha-claude-plugins": true
+  },
+  "enabledMcpjsonServers": [
+    "youtube-uploader"
+  ]
+}

@@ -2,12 +2,12 @@
   "mcpServers": {
     "youtube-uploader": {
       "type": "stdio",
-      "command": "/Users/claude/.local/bin/youtube-uploader-mcp-darwin-arm64",
+      "command": "${HOME}/.local/bin/youtube-uploader-mcp-darwin-arm64",
       "args": [
         "-client_secret_file",
-        "/Users/claude/.config/youtube-uploader/client_secret.json",
+        "${HOME}/.config/youtube-uploader/client_secret.json",
         "-working_dir",
-        "/Users/claude/.config/youtube-uploader"
+        "${HOME}/.config/youtube-uploader"
       ],
       "env": {}
     }
