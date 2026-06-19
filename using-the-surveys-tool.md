@@ -28,7 +28,7 @@ AhaSlides Surveys let you collect structured, multi-question feedback — build 
 
 ---
 
-## Step 1: creating a Survey
+## Step 1: creating a survey
 
 Surveys live in their own section of your AhaSlides dashboard, separate from your presentations.
 
@@ -64,7 +64,7 @@ Your changes auto-save as a **Draft** until you publish.
 
 While a Survey is a Draft it is not collecting responses. When you are happy with your questions, publish it — the status changes to **Published** and it is ready for respondents.
 
-### Method 1 — run it as a standalone Survey
+### Method 1 — run it as a standalone survey
 
 1. Open the Survey's sharing options and copy the link, or use the QR code.
 2. Send the link to your respondents (email, Slack, LMS, poster — anywhere).
@@ -72,7 +72,7 @@ While a Survey is a Draft it is not collecting responses. When you are happy wit
 
 Responses collect for as long as the Survey stays open. To stop accepting new responses, close the Survey (status returns to Draft).
 
-### Method 2 — run a Survey inside your presentation
+### Method 2 — run a survey inside your presentation
 
 Use this when you want structured feedback from your audience while they are still in the room — end-of-session forms, mid-workshop check-ins, event feedback.
 
@@ -87,7 +87,7 @@ Use this when you want structured feedback from your audience while they are sti
 
 ---
 
-## Checking your Survey responses
+## Checking your survey responses
 
 You can check results at any time:
 
@@ -96,7 +96,7 @@ You can check results at any time:
 
 ---
 
-## Two ways to run the same Survey
+## Two ways to run the same survey
 
 **Two ways to run the same Survey:**
 

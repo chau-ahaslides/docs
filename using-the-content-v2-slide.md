@@ -30,7 +30,7 @@ In the editor, click **New slide**, then scroll to the **Content** section of th
 
 ## Two ways to build your slide
 
-### Option 1: Start from a layout
+### Option 1: start from a layout
 
 AhaSlides ships a growing gallery of named, pre-designed layouts — cover slides, agenda grids, callout cards, comparison tables, image-and-text pairs, and more. The gallery is regularly expanded, so you may see more options than are listed anywhere in this article.
 
@@ -38,7 +38,7 @@ To browse the gallery, look for the **Layouts** section in the right panel (visi
 
 Clicking any layout fills the canvas with a matching arrangement of pre-styled blocks that you can edit straight away. Once applied, each block is independently editable.
 
-### Option 2: Insert blocks manually
+### Option 2: insert blocks manually
 
 Click the **+ Insert** button at the top of the right panel to open the block picker. A search bar lets you filter by name. Blocks are grouped into five categories:
 

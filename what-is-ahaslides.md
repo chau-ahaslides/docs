@@ -94,7 +94,7 @@ AhaSlides supports the following interactive slide types:
 
 ---
 
-## AhaSlides as a Quiz tool
+## AhaSlides as a quiz tool
 
 With AhaSlides, you can build a scored quiz using quiz slide types. Participants compete to answer correctly before the timer runs out. At the end, a **leaderboard** announces the winner.
 

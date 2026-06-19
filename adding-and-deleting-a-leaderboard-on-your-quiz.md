@@ -51,7 +51,7 @@ Any leaderboard slide will show the top 5 participants, and the presenter can sc
 
 The leaderboard is also viewable on the audience's mobile devices. Every quiz player can see their own position in the table and can scroll up and down to reveal all positions on the leaderboard.
 
-## Pop-up Leaderboard
+## Pop-up leaderboard
 
 By pressing **L** on the keyboard or clicking on the **Trophy icon** in the Control bar, presenters can now access a pop-up Leaderboard anytime during a presentation to view real-time scores.
 
