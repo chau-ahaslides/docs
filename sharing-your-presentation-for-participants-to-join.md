@@ -39,6 +39,12 @@ The access code is the string after ahaslides.com/ in the URL.
 
 This instruction bar can be hidden by checking the option **"Hide the joining instruction bar"**, which can be found in **Settings > Other settings**
 
+### Auto-hide controls on the presenter's screen
+
+You can also have the top and bottom bars on the presenter's screen hide themselves automatically when your mouse is idle. Enable this by checking **"Auto-hide controls on the presenter's screen"** in **Settings > Other settings**.
+
+Once enabled, the join bar at the top and the control bar at the bottom will fade out when your mouse is inactive. Move your mouse to bring them back.
+
 Your participants can also type the join URL into their phone's browser. Once the page has loaded on their phone, they will have joined your presentation.
 If the participants have the access code, they can go here to enter the code and join your presentation: [http://audience.ahaslides.com/](http://audience.ahaslides.com/)
 
