@@ -77,20 +77,20 @@ AhaSlides supports the following interactive slide types:
 - [Rating scale](how-to-use-rating-scale-slides-on-ahaslides.md) — star or numerical ratings for feedback
 
 **Quiz and competition**
-- Multiple choice quiz — scored answers with a countdown timer
-- Type answer quiz — participants type the correct answer
-- Correct order — arrange items in the right sequence
-- Match pairs — link items from two columns
-- Categorise — sort items into the right categories
-- Spinner wheel — random picker for icebreakers and selections
+- [Multiple choice quiz](how-to-make-and-run-a-quiz.md) — scored answers with a countdown timer
+- [Type answer quiz](how-to-make-and-run-a-quiz.md) — participants type the correct answer
+- [Correct order](using-the-correct-order-slide.md) — arrange items in the right sequence
+- [Match pairs](using-the-match-pairs-slide.md) — link items from two columns
+- [Categorise](using-the-categorise-slide.md) — sort items into the right categories
+- [Spinner wheel](using-the-spinner-wheel.md) — random picker for icebreakers and selections
 
 **Conversation**
-- [Q&A](using-q-and-a.md) — participants submit questions; you upvote and answer live
-- Idea board — structured brainstorm with sticky-note cards
+- [Q&A](using-qa.md) — participants submit questions; you upvote and answer live
+- [Idea board](how-to-use-the-idea-board-slide.md) — structured brainstorm with sticky-note cards
 
 **Content**
-- Content slide — static text, images, or video (acts as a title or break slide)
-- YouTube slide — play a video in your presentation with audience reactions
+- [Content slide](using-the-content-slide.md) — static text, images, or video (acts as a title or break slide)
+- [YouTube slide](how-to-use-youtube-slides-on-ahaslides.md) — play a video in your presentation with audience reactions
 
 ---
 
