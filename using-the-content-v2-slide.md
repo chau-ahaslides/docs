@@ -42,41 +42,13 @@ Clicking any layout fills the canvas with a matching arrangement of pre-styled b
 
 Click the **+ Insert** button at the top of the right panel to open the block picker. A search bar lets you filter by name. Blocks are grouped into five categories:
 
-**TEXT**
-- Title
-- Body
-- Bullets
-- Numbered (list)
-- Quote
-- Section header
-
-**CALLOUTS**
-- Note
-- Info
-- Tip
-- Important
-- Warning
-- Caution
-- Success
-- Question
-
-**VISUAL**
-- Image
-- Rectangle
-- Circle
-- Line
-- Arrow
-- Divider
-- Icon
-
-**MEDIA**
-- Video
-- Timer
-
-**DATA**
-- Table
-- Big stat
-- Code
+| Category | Blocks |
+|---|---|
+| **Text** | Title, Body, Bullets, Numbered (list), Quote, Section header |
+| **Callouts** | Note, Info, Tip, Important, Warning, Caution, Success, Question |
+| **Visual** | Image, Rectangle, Circle, Line, Arrow, Divider, Icon |
+| **Media** | Video, Timer |
+| **Data** | Table, Big stat, Code |
 
 Each block you insert appears on the canvas and can be repositioned, resized, and styled independently.
 
