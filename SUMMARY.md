@@ -6,7 +6,7 @@
 
 * [What is AhaSlides?](what-is-ahaslides.md)
 * [Creating your AhaSlides Account](creating-your-ahaslides-account.md)
-* [The 'My Presentations' Dashboard](the-my-presentations-dashboard.md)
+* [The Presentations section](the-my-presentations-dashboard.md)
 * [AhaSlides Template Library](ahaslides-template-library.md)
 
 ## Using slide types

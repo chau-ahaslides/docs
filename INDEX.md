@@ -110,7 +110,7 @@
 
 ### the-my-presentations-dashboard
 **Plan:** All | **MCP Actions:** No
-**Summary:** 'My Presentations' is your dashboard in AhaSlides where you can see and manage all of your presentations. It is the first screen you see when you log in.
+**Summary:** The Presentations section is the main area of AhaSlides where you can see and manage all of your presentations. It is the first screen you see when you log in.
 **File:** `the-my-presentations-dashboard.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/the-my-presentations-dashboard
 
 ### ahaslides-template-library

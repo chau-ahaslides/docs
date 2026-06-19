@@ -1,6 +1,6 @@
 ---
 id: 570272000000633331
-title: The 'My Presentations' Dashboard
+title: The Presentations section
 status: Published
 permalink: the-my-presentations-dashboard
 category: Getting Started
@@ -9,7 +9,7 @@ permission: ALL
 last_updated: 2026-06-19
 tags: ["presentation", "my presentation", "folder", "sub-folder", "new presentation", "ahaslides", "getting started", "dashboard", "sidebar", "bulk select", "delete", "duplicate", "move", "report"]
 keywords: []
-summary: "'My Presentations' is your dashboard in AhaSlides where you can see and manage all of your presentations. It is the first screen you see when you log in to AhaSlides."
+summary: "The Presentations section is the main area of AhaSlides where you can see and manage all of your presentations. It is the first screen you see when you log in to AhaSlides."
 plan_required: All
 zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000633331
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/the-my-presentations-dashboard
@@ -17,126 +17,97 @@ related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
 warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
-description: "'My Presentations' is your dashboard in AhaSlides where you can see and manage all of your presentations. It is the first screen you see when you log in to AhaSlides."
+description: "The Presentations section is the main area of AhaSlides where you can see and manage all of your presentations. It is the first screen you see when you log in to AhaSlides."
 ---
 
-**My Presentations** is your dashboard in AhaSlides — the first screen you see after logging in. From here you can create, organise, and manage all your presentations.
+# The Presentations section
 
-## The left sidebar
+The **Presentations** section is the main workspace in AhaSlides — the first thing you see after logging in. From here you can create, organise, and manage all your presentations.
 
-The sidebar runs along the left side of the screen and is your primary navigation. It is divided into four groups:
+In the left sidebar, click **Presentations** to expand it. You will see three views underneath:
 
-### (No group label — top)
+- **My Presentations** — all presentations you own, including any folders you have created.
+- **Shared with Me** — presentations and folders that other AhaSlides users have shared with you.
+- **Trash** — presentations you have moved to trash. Items here can be restored or permanently deleted.
 
-- **Home** — your personalised home page showing recent activity and quick-start options.
+# Creating a new presentation
 
-### Workspace
+1. In the **My Presentations** view, click the **New Presentation** button near the top of the screen.
+2. Give your presentation a name and, if you want, a customised access code.
+3. You will be taken straight to the editor where you can start adding slides.
 
-- **Presentations** (expandable) — expands to reveal three sub-items:
-  - **My Presentations** — all presentations you own, including any folders you have created.
-  - **Shared with Me** — presentations and folders that other AhaSlides users have shared with you.
-  - **Trash** — presentations you have moved to trash. Items here can be restored or permanently deleted.
-- **Reports** — a session-level view of response data across all your presentations (available on supported plans).
+You can also click the arrow next to the button and choose **From a Template** to start from a ready-made design.
 
-### Team
+# Sorting presentations into folders
 
-- If you have not yet created a team, a **Create your team** item is shown here.
-- Once a team exists, the team name appears as a link that takes you to the team management page (Members, Settings, and Analytics tabs). Non-admin members on plans that hide team management see the team name without a clickable link.
+You can keep your presentations organised by grouping them into folders.
 
-### Exploration
+1. Click the **New Folder** button in the toolbar.
+2. Give your folder a name and confirm.
+3. To move presentations into it, select the presentations you want (see Bulk actions below), then click **Move to** and choose your folder.
 
-- **Templates** — the AhaSlides Template Library, where you can browse and copy ready-made presentations.
-- **Marketplace** — integrations with third-party tools (Zoom, Google Slides, PowerPoint, and others).
+You can also create a new presentation directly from within a folder — open the folder first, then click **New Presentation**.
 
----
+# Organising sub-folders
 
-## Creating a new presentation
+> Each folder can contain up to 200 presentations. Sub-folders are supported up to 10 levels deep.
 
-Click the **New Presentation** button in the top-right area of the main content panel. You can start from scratch or choose **From a Template** from the dropdown.
+To create a sub-folder inside an existing folder:
 
----
-
-## Organising presentations into folders
-
-### Creating a folder
-
-1. Click **New Folder** in the toolbar.
-2. Give the folder a name and confirm.
-
-### Sub-folders
-
-Folders support up to 10 levels of nesting, and each folder can contain up to 200 presentations.
-
-1. Open the folder in which you want to create a sub-folder.
+1. Open the folder in which you want the sub-folder.
 2. Click **New Folder** from within that folder.
-3. Name the sub-folder and confirm.
+3. Give the sub-folder a name and confirm.
+4. Move presentations into the sub-folder using the **Move to** option.
 
----
+# Actions on a presentation
 
-## Actions on a single presentation
+Hover over any presentation to reveal quick-action buttons. You can also click the **⋮** menu on the right side of any presentation row to see the full list of actions:
 
-Hover over a presentation row to reveal inline buttons, then open the **⋮ (kebab) menu** for the full list of actions:
+- **Present** — launches the presentation in live-presenting mode straight away. This button also appears inline when you hover a row so you can start in one click.
+- **Rename** — opens an inline field to rename the presentation.
+- **View Report** — opens the response data report for that presentation (requires at least one completed session).
+- **Reset results** — clears all response data collected for that presentation. This action is permanent and cannot be undone.
+- **Duplicate** — creates an identical copy in your current folder.
+- **Share** — opens the sharing dialog where you can invite collaborators or generate a share link.
+- **Move to** — moves the presentation to a different folder.
+- **Move to trash** — sends the presentation to the Trash. You can restore it from there or delete it permanently.
+- **Leave** — removes your access to a presentation that was shared with you (appears on shared presentations only).
 
-| Action | What it does |
-|---|---|
-| **Present** | Launches the presentation in live-presenting mode immediately. |
-| **Rename** | Opens an inline field to rename the presentation. |
-| **View Report** | Opens the response-data report for that presentation (requires at least one access code). |
-| **Reset results** | Clears all response data collected for that presentation (permanent; cannot be undone). |
-| **Duplicate** | Creates an identical copy of the presentation in your current folder. |
-| **Share** | Opens the sharing dialog so you can invite collaborators or generate a share link. |
-| **Move to** | Moves the presentation to a different folder. |
-| **View Detail** | (Mobile only) Shows presentation metadata — owner, access code, slide count, participant totals, creation date, and last-updated date. |
-| **Move to trash** | Sends the presentation to the Trash. It can be restored from there, or deleted permanently. |
-| **Leave** | (Shared presentations only) Removes your access to a presentation that was shared with you. |
+# Actions on a folder
 
-The **Present** button also appears inline (without opening the menu) when you hover a row, so you can start presenting in one click.
+Click the **⋮** menu on any folder row to see what you can do with it:
 
-The **Report** link appears inline on the row for presentations that have response data.
+- **Rename** — renames the folder.
+- **Share** — invites collaborators to the folder (available on team plans).
+- **Delete** — permanently deletes the folder and all presentations inside it.
+- **Leave** — removes your access to a shared folder (appears on shared folders only).
 
----
+# Bulk actions
 
-## Actions on a folder
+To act on several presentations at once:
 
-Open the **⋮ (kebab) menu** on any folder row:
-
-| Action | What it does |
-|---|---|
-| **Rename** | Renames the folder. |
-| **Share** | Invites collaborators to the folder (team plans). |
-| **Delete** | Permanently deletes the folder and its contents. |
-| **Leave** | (Shared folders only) Removes your access to a folder shared with you. |
-
----
-
-## Bulk actions
-
-You can act on multiple presentations at once without opening any menu:
-
-1. **Select presentations** — click the checkbox that appears when you hover a row. A floating action bar appears at the bottom of the screen as soon as at least one item is selected.
-2. From the action bar you can:
-   - **Select all** — selects every presentation in the current view.
+1. Hover over any presentation row and click the checkbox that appears. A floating action bar appears at the bottom of the screen as soon as at least one item is selected.
+2. Select as many presentations as you need. You can also click **Select all** in the action bar to select everything in the current view.
+3. From the action bar, choose:
    - **Move to** — moves all selected presentations to a folder you choose.
    - **Move to trash** — sends all selected presentations to the Trash at once.
-3. Click **✕** in the action bar to deselect everything and dismiss the bar.
+4. To cancel, click **✕** in the action bar to deselect everything and dismiss the bar.
 
-> Bulk actions are not available in the **Shared with Me** view. The **Move to trash** button is hidden when you are viewing shared presentations.
+> Bulk actions are not available in the **Shared with Me** view.
 
----
+# Sorting and searching
 
-## Sorting and searching
-
-- **Sort by** — click the sort control (top-right of the list) to order presentations by *Recently edited*, *Recently created*, *Alphabetical*, or their reverse equivalents.
+- **Sort** — click the sort control at the top of the list to order your presentations by *Recently edited*, *Recently created*, *Alphabetical*, or their reverse equivalents.
 - **Search** — use the search bar in the top header to find any presentation by name across all your folders.
 
----
+# Importing a presentation
 
-## Importing a presentation
+To bring in an existing file from outside AhaSlides:
 
-Click the **Import** button in the toolbar to upload an existing file (such as a PowerPoint deck) and convert it into an AhaSlides presentation.
+1. Click the **Import** button in the toolbar.
+2. Upload your file (for example, a PowerPoint deck).
+3. AhaSlides will convert it into an editable presentation in your library.
 
----
-
-## The support chat bubble
+# The support chat bubble
 
 The blue chat bubble in the bottom-right corner connects you directly to the AhaSlides support team. Check the [Help Centre](https://help.ahaslides.com/portal/en/kb) first — many common questions are already answered there.
