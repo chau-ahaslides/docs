@@ -133,8 +133,6 @@ AhaSlides connects with the tools you already use:
 | **Zoom** | Present AhaSlides inside a Zoom meeting so participants can respond without leaving the call | [Using the AhaSlides App on Zoom](using-the-ahaslides-app-on-zoom.md) |
 | **RingCentral** | Run interactive presentations within RingCentral meetings | No KB article yet |
 
-> **Note on RingCentral:** This integration is listed on the [AhaSlides integrations page](https://ahaslides.com/integrations/) but does not yet have a dedicated KB article. Check the integrations page for setup instructions.
-
 ---
 
 ## Start for free
