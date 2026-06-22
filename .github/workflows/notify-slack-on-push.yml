@@ -13,6 +13,11 @@ jobs:
   slack-notify:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Post Slack alert
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
@@ -25,11 +30,83 @@ jobs:
           COMPARE_URL: ${{ github.event.compare }}
           COMMIT_URL: ${{ github.event.head_commit.url }}
           COMMIT_COUNT: ${{ toJson(github.event.commits) }}
+          BEFORE_SHA: ${{ github.event.before }}
         run: |
           # Extract the first line of the commit message and the short SHA
           FIRST_LINE=$(printf '%s' "$HEAD_MSG" | head -n1)
           SHORT=$(printf '%s' "$SHORT_SHA" | cut -c1-7)
           COUNT=$(printf '%s' "$COMMIT_COUNT" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))" 2>/dev/null || echo "?")
+
+          # ── Compute changed KB article files ─────────────────────────────────
+          # Guard against the all-zeros "before" sha on first push to a branch
+          ZERO_SHA="0000000000000000000000000000000000000000"
+          if [ "$BEFORE_SHA" = "$ZERO_SHA" ] || [ -z "$BEFORE_SHA" ]; then
+            # First push — list files touched by the head commit
+            CHANGED_RAW=$(git show --name-only --pretty='' "$SHORT_SHA" 2>/dev/null || true)
+          else
+            CHANGED_RAW=$(git diff --name-only "$BEFORE_SHA" "$SHORT_SHA" 2>/dev/null || true)
+          fi
+
+          # Filter: keep only *.md files; exclude known non-article files
+          ARTICLE_FILES=$(printf '%s\n' "$CHANGED_RAW" \
+            | grep -E '\.md$' \
+            | grep -vE '^(README|SUMMARY|INDEX|CLAUDE)\.md$' \
+            | grep -vE '^(\.github|\.claude|scripts)/' \
+            || true)
+
+          # ── Map article file → GitBook URL via SUMMARY.md ────────────────────
+          PAGES_BLOCK=$(python3 << 'PYEOF'
+import os, re, sys
+
+def slugify(text):
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'\s+', '-', text.strip())
+    text = re.sub(r'-+', '-', text)
+    return text
+
+# Build filename → section_slug map from SUMMARY.md
+file_to_section = {}
+current_section = None
+try:
+    with open('SUMMARY.md', 'r') as f:
+        for line in f:
+            line = line.rstrip()
+            m = re.match(r'^##\s+(.+)$', line)
+            if m:
+                current_section = slugify(m.group(1))
+                continue
+            m = re.match(r'^\*\s+\[.*?\]\((.+\.md)\)$', line)
+            if m and current_section:
+                file_to_section[m.group(1)] = current_section
+except Exception as e:
+    print(f"(could not parse SUMMARY.md: {e})", file=sys.stderr)
+
+article_files_raw = os.environ.get('ARTICLE_FILES', '').strip()
+if not article_files_raw:
+    print("No KB pages changed.")
+    sys.exit(0)
+
+lines = []
+for filepath in article_files_raw.splitlines():
+    filepath = filepath.strip()
+    if not filepath:
+        continue
+    section = file_to_section.get(filepath)
+    # page-slug: strip leading path prefix and .md suffix
+    page_slug = re.sub(r'\.md$', '', os.path.basename(filepath))
+    if section:
+        url = f"https://docs.ahaslides.com/{section}/{page_slug}"
+        lines.append(f"• <{url}|{page_slug}>")
+    else:
+        lines.append(f"• {filepath} _(not in nav)_")
+
+if lines:
+    print("*Changed KB pages:*\n" + "\n".join(lines))
+else:
+    print("No KB pages changed.")
+PYEOF
+          )
 
           PAYLOAD=$(jq -n \
             --arg channel  "$SLACK_CHANNEL_ID" \
@@ -41,13 +118,15 @@ jobs:
             --arg sha      "$SHORT" \
             --arg compare  "$COMPARE_URL" \
             --arg url      "$COMMIT_URL" \
+            --arg pages    "$PAGES_BLOCK" \
             '{
               channel: $channel,
               text: ("*New push to " + $repo + "* (`" + $branch + "`)\n" +
                      "• *Pushed by:* " + $actor + "\n" +
                      "• *Commits:* " + $count + "\n" +
                      "• *Head commit:* `" + $sha + "` — " + $msg + "\n" +
-                     "• *Diff:* <" + $compare + "|View changes> | <" + $url + "|Head commit>")
+                     "• *Diff:* <" + $compare + "|View changes> | <" + $url + "|Head commit>\n\n" +
+                     $pages)
             }')
 
           RESPONSE=$(curl -fsS -X POST https://slack.com/api/chat.postMessage \
