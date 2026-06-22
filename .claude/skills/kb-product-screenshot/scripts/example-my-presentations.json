@@ -1,0 +1,18 @@
+{
+  "_comment": "Example config for My Presentations page. Run from ahaslides-kb root:",
+  "_usage": "PRESENTER_TOKEN=$PRESENTER_TOKEN node .claude/skills/kb-product-screenshot/scripts/inject-boxes.js .claude/skills/kb-product-screenshot/scripts/example-my-presentations.json",
+  "url": "https://presenter.ahaslides.com/apps/presentations",
+  "waitMs": 2000,
+  "clickBefore": [
+    { "text": "My presentations", "waitMs": 2000 }
+  ],
+  "boxes": [
+    { "selector": "header",                        "label": "Header" },
+    { "selector": "aside",                         "label": "Sidebar" },
+    { "text": "New presentation", "tag": "button", "label": "New presentation" },
+    { "text": "Import",           "tag": "button", "label": "Import" },
+    { "text": "New folder",       "tag": "button", "label": "New folder" },
+    { "selector": "table, [role='table']",         "label": "Presentations table" }
+  ],
+  "output": "out-screenshots/my-presentations.png"
+}

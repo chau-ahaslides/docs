@@ -1,0 +1,22 @@
+{
+  "_comment": "Example config for the Slide Editor. Run from ahaslides-kb root:",
+  "_usage": "PRESENTER_TOKEN=$PRESENTER_TOKEN PRESENTATION_ID=9545237 node .claude/skills/kb-product-screenshot/scripts/inject-boxes.js .claude/skills/kb-product-screenshot/scripts/example-editor.json",
+  "_note": "Replace PRESENTATION_ID in the url below with the actual presentation id",
+  "url": "https://presenter.ahaslides.com/presentation/9545237?presenting=true",
+  "waitFor": ".aha-presentation-editor-wrapper",
+  "waitMs": 3000,
+  "escapePresenter": true,
+  "boxes": [
+    { "selector": ".aha-presentation-editor-header",      "label": "Toolbar" },
+    { "text": "Preview",     "tag": "button",              "label": "Preview" },
+    { "text": "Present",     "tag": "button",              "label": "Present" },
+    { "text": "Results",     "tag": "button",              "label": "Results" },
+    { "text": "New slide",   "tag": "button",              "label": "New slide" },
+    { "text": "Improve",     "tag": "button",              "label": "Improve" },
+    { "selector": "[class*='aha-left-column']",            "label": "Slides panel" },
+    { "selector": ".top-panel--canvas-stack",             "label": "Slide canvas" },
+    { "text": "Participant view", "tag": "button",         "label": "Participant view" },
+    { "text": "Reset results",    "tag": "button",         "label": "Reset results" }
+  ],
+  "output": "out-screenshots/editor.png"
+}
