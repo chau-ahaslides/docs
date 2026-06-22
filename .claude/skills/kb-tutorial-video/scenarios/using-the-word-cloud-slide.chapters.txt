@@ -1,5 +1,5 @@
 # YouTube chapter markers for "Using the Word Cloud Slide" tutorial video
-# Video: onboarding-videos/out-word-cloud-r8/word-cloud-narrated-r8.webm (63.35s)
+# Video: out-videos/out-word-cloud-r8/word-cloud-narrated-r8.webm (63.35s)
 # YouTube rules: first chapter 0:00, ≥3 chapters, each ≥10s, ascending, "M:SS Title" format
 # Apply: paste this block into the YouTube video description when publishing.
 #

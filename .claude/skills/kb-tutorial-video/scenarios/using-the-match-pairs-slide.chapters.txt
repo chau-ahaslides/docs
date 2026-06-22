@@ -1,7 +1,7 @@
-# Match Pairs tutorial (r11) — 76.58s total (incl. 2.58s outro)
-# Derived from using-the-match-pairs-slide-voiceover.json
-# Groups: welcome+create+pick=14.5s | pairs=16s | preview=13s | audience=20s | present=10.5s
+# Match Pairs tutorial — r14
+# Video: out-videos/out-match-pairs-r14/match-pairs-r14-narrated-with-outro.webm
+# Total duration: 61.97s
+# Chapters: 3 groups | 13s + 27s + 22s
 0:00 Introduction to Match Pairs
-0:14 Add your question and pairs
-0:30 Preview the participant experience
-0:43 Start the game and go live
+0:13 Add your question and pairs
+0:40 Preview and go live

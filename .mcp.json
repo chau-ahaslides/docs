@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "ahaslides-kb": {
+      "type": "http",
+      "url": "https://mcp.ahaslides.com/mcp"
+    },
     "youtube-uploader": {
       "type": "stdio",
       "command": "${HOME}/.local/bin/youtube-uploader-mcp-darwin-arm64",

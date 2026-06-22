@@ -3,7 +3,7 @@
 // previewInteractions — works for ANY slide type.
 //
 // Usage (run FROM the recording workspace so playwright resolves):
-//   cd ~/AhaSlides/onboarding-videos
+//   cd "$(git rev-parse --show-toplevel)"   # the repo root (recording workspace)
 //   source <plugin>/test-env.sh        # exports AHA_TOKEN (never write to disk)
 //   node <skill-dir>/scripts/probe_preview_audience.mjs <deckId>
 //

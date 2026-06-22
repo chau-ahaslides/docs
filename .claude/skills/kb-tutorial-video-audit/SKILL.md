@@ -86,7 +86,7 @@ commonly cause 5–6s silences if no filler VO is planned.
 ```bash
 yt-dlp -x --audio-format wav -o /tmp/<slug>.wav '<youtube-url>'
 # OR extract audio from local file:
-FFMPEG=~/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
+FFMPEG=$(node -p "require('ffmpeg-static')")   # from the repo root
 $FFMPEG -i <local.webm> -vn -ar 44100 -ac 1 /tmp/<slug>.wav
 
 # Detect silences > 1.5s
@@ -286,7 +286,7 @@ yt-dlp --write-auto-subs --sub-lang en -o /tmp/<slug> '<youtube-url>'
 
 ### Extract frames at 1fps
 ```bash
-FFMPEG=~/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
+FFMPEG=$(node -p "require('ffmpeg-static')")   # from the repo root
 $FFMPEG -i <video.webm> -vf fps=1 /tmp/frames/f%03d.png
 ```
 

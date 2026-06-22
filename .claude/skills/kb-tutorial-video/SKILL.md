@@ -31,13 +31,18 @@ bar — see AKB-17). Also proven on `creating-a-poll-question-on-ahaslides.md`
 (result: https://www.youtube.com/watch?v=GK6fQhHYybo, 0:48). Run the phases
 in order, one article at a time.
 
-Recording workspace: `~/AhaSlides/onboarding-videos/` (playwright + chromium +
-`ffmpeg-static` installed; recorder scripts copied from the
-`aha-onboarding-video` plugin — they MUST run from this dir because ESM
-resolves `playwright` relative to the script location). The local
-`scripts/record-onboarding.mjs` carries two patches the plugin lacks: a
-per-step `pauseMs` field (extra settle time before acting) and a sanitized
-healed-scenario filename for remote mode.
+Recording workspace: **the repo root itself** (`$(git rev-parse --show-toplevel)`).
+`npm install` here provides `playwright`, `ffmpeg-static`, and `ffprobe-static`
+in `./node_modules` (gitignored), and `npx playwright install chromium` provides
+the browser. The recorder scripts live in the repo's `scripts/` dir
+(`record-remote-tour.mjs`, `record-onboarding.mjs`, copied from the
+`aha-onboarding-video` plugin) — they MUST run from the repo root because ESM
+resolves `playwright` relative to `node_modules` at that root. All rendered
+video lands under `out-videos/` (gitignored — published copy lives on YouTube).
+`scripts/record-onboarding.mjs` is intended to carry two patches the plugin
+lacks: a per-step `pauseMs` field (extra settle time before acting) and a
+sanitized healed-scenario filename for remote mode — re-apply them if this copy
+is the stock plugin version.
 
 ## Approved Quality Bar — Word Cloud Video (AKB-17)
 
@@ -76,20 +81,20 @@ participation in Preview). Keep this summary in mind:
 ## Phase 2 — Record (remote mode only)
 
 ```bash
-cd ~/AhaSlides/onboarding-videos && rm -rf out && \
-source /Users/claude/.claude/plugins/cache/aha-claude-plugins/aha-onboarding-video/*/skills/record-onboarding-video/test-env.sh && \
-SCENARIO_FILE=$PWD/scenarios/<slug>.json \
+cd "$(git rev-parse --show-toplevel)" && rm -rf out-videos/out && \
+source ~/.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-onboarding-video/skills/record-onboarding-video/test-env.sh && \
+SCENARIO_FILE=$PWD/.claude/skills/kb-tutorial-video/scenarios/<slug>.json \
 WORKER_URL=https://aha-onboarding-scenario-host.ahaslides-game.workers.dev \
 BASE_URL='https://ab214fb69c15de4b3d300d0e323bc3a4d29327d6.presenter.sandbox.ahaslide.com/apps/presentations' \
-OUT_DIR=$PWD/out node scripts/record-remote-tour.mjs
+OUT_DIR=$PWD/out-videos/out node scripts/record-remote-tour.mjs
 ```
 
 Never use local mode (`STEPS_FILE` + `onboarding=<key>` only) — the app
 renders its built-in tour, not yours, and everything desyncs.
 
 Verify before moving on: the log must say `walk finished — N/N step(s)
-executed`. Visually check `out/shots/step-*.png` with the Read tool.
-Preserve good takes before re-running (`mv out out-<label>`) — each run
+executed`. Visually check `out-videos/out/shots/step-*.png` with the Read tool.
+Preserve good takes before re-running (`mv out-videos/out out-videos/out-<label>`) — each run
 wipes `OUT_DIR`. Tours create REAL presentations on the sandbox test
 account; accepted, don't clean up.
 
@@ -107,8 +112,8 @@ Quick checklist before moving on:
 ## Phase 3 — Trim (always)
 
 Use the bundled script — it does both passes in one re-encode:
-`scripts/trim_video.py` (relative to this skill). Run it FROM the recording
-workspace so it finds `node_modules/ffmpeg-static/ffmpeg`.
+`scripts/trim_video.py` (relative to this skill). Run it FROM the repo root
+so it finds `node_modules/ffmpeg-static/ffmpeg`.
 
 1. Find where the boot loader ends — the app's emoji loader runs anywhere
    from 3s to 20s+ at the start. CAUTION: the same loader appears a SECOND
@@ -118,13 +123,13 @@ workspace so it finds `node_modules/ffmpeg-static/ffmpeg`.
    light dashboard UI as blank):
 
    ```bash
-   node_modules/ffmpeg-static/ffmpeg -i out/<take>.webm -t 25 -vf fps=1 /tmp/frames/f%02d.png
+   node_modules/ffmpeg-static/ffmpeg -i out-videos/out/<take>.webm -t 25 -vf fps=1 /tmp/frames/f%02d.png
    ```
 
 2. Trim (use `--dry-run` first):
 
    ```bash
-   python3 <skill-dir>/scripts/trim_video.py out/<take>.webm out/<slug>-final.webm \
+   python3 <skill-dir>/scripts/trim_video.py out-videos/out/<take>.webm out-videos/out/<slug>-final.webm \
      --boot-cut <loader-end>
    ```
 
@@ -205,11 +210,14 @@ track (`anullsrc`). Then the `-c copy` fast path is unsafe (mismatched streams)
 path with `anullsrc`.
 
 ```bash
-FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
-FFPROBE=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/../ffprobe-static/ffprobe
+# Binaries resolve from the repo's own node_modules (machine-independent).
+# ffprobe-static ships an x86_64 binary mislabeled as arm64, so prefer a real
+# system ffprobe (Homebrew) and fall back to the package only off Apple Silicon.
+FFMPEG=$(node -p "require('ffmpeg-static')")
+FFPROBE=$(command -v ffprobe || node -p "require('ffprobe-static').path")
 SKILL_ROOT="$(git rev-parse --show-toplevel)/.claude/skills/kb-tutorial-video"
 OUTRO="$SKILL_ROOT/assets/splash_intro_BD.webm"
-TUTORIAL=out-<slug>/word-cloud-narrated.webm
+TUTORIAL=out-videos/out-<slug>/word-cloud-narrated.webm
 
 # 1. Does the outro have an audio stream?
 HAS_AUDIO=$($FFMPEG -i "$OUTRO" 2>&1 | grep -c "Audio:")
@@ -218,8 +226,8 @@ DUR=$($FFMPEG -i "$OUTRO" 2>&1 | sed -n 's/.*Duration: \([0-9:.]*\).*/\1/p')
 if [ "$HAS_AUDIO" -eq 0 ]; then
   $FFMPEG -y -i "$OUTRO" -f lavfi -i anullsrc=r=48000:cl=mono \
     -shortest -c:v copy -c:a libopus -ar 48000 \
-    out-<slug>/outro-with-silence.webm
-  OUTRO=out-<slug>/outro-with-silence.webm
+    out-videos/out-<slug>/outro-with-silence.webm
+  OUTRO=out-videos/out-<slug>/outro-with-silence.webm
 fi
 ```
 
@@ -230,7 +238,7 @@ Then concat (resolutions match → concat demuxer; differ → `filter_complex`):
 printf "file '%s'\nfile '%s'\n" "$TUTORIAL" "$OUTRO" > /tmp/concat-<slug>.txt
 $FFMPEG -y -f concat -safe 0 -i /tmp/concat-<slug>.txt \
   -c:v copy -c:a libopus -ar 48000 \
-  out-<slug>/narrated-with-outro.webm
+  out-videos/out-<slug>/narrated-with-outro.webm
 ```
 
 If resolutions differ, re-encode with `filter_complex` — and if the outro had
@@ -248,7 +256,7 @@ $FFMPEG -y \
   -map "[vout]" -map "[aout]" \
   -c:v libvpx-vp9 -b:v 0 -crf 30 -r 25 \
   -c:a libopus -ar 48000 \
-  out-<slug>/narrated-with-outro.webm
+  out-videos/out-<slug>/narrated-with-outro.webm
 ```
 (Use `[1:a]` only if the probe confirmed the outro really has audio.)
 
@@ -262,7 +270,7 @@ pre-outro narrated file is **not** sufficient (it passed on the broken r10).
 Cheap check:
 
 ```bash
-$FFMPEG -i out-<slug>/narrated-with-outro.webm -af silencedetect=n=-40dB:d=0.5 -f null - 2>&1 \
+$FFMPEG -i out-videos/out-<slug>/narrated-with-outro.webm -af silencedetect=n=-40dB:d=0.5 -f null - 2>&1 \
   | grep silence_   # large silent spans after 0:05 = truncation bug is back
 ```
 Do not report success on a final file you have not audio-scanned end-to-end.
@@ -277,7 +285,8 @@ static branded outro with ffmpeg using the aha-video-branding plugin assets:
 from PIL import Image
 import subprocess
 
-ASSETS = "/Users/claude/.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-video-branding/skills/aha-video-branding/assets"
+import os
+ASSETS = os.path.expanduser("~/.claude/plugins/marketplaces/aha-claude-plugins/plugins/aha-video-branding/skills/aha-video-branding/assets")
 VIDEO_W, VIDEO_H = 1440, 900
 bg = Image.open(f"{ASSETS}/bg-alt-purple.png").convert("RGB").resize((VIDEO_W, VIDEO_H), Image.LANCZOS)
 subprocess.run(["rsvg-convert", "-h", "62", f"{ASSETS}/Ahaslides-Logo-White.svg", "-o", "/tmp/aha-logo-white-62.png"])
@@ -288,8 +297,10 @@ bg.save("/tmp/aha-outro-frame.png")
 
 ```bash
 # Step 2 — render 3s static clip
-FFMPEG=/Users/claude/AhaSlides/onboarding-videos/node_modules/ffmpeg-static/ffmpeg
-FONT_BOLD="/Users/claude/Library/Fonts/PlusJakartaSans-ExtraBold.ttf"
+FFMPEG=$(node -p "require('ffmpeg-static')")
+# NOTE: PlusJakartaSans-ExtraBold.ttf is not bundled — install it to ~/Library/Fonts
+# (or point FONT_BOLD at any available bold .ttf). This fallback path is rarely used.
+FONT_BOLD="$HOME/Library/Fonts/PlusJakartaSans-ExtraBold.ttf"
 $FFMPEG -y -loop 1 -i /tmp/aha-outro-frame.png \
   -vf "drawtext=fontfile='$FONT_BOLD':text='Make every session count':fontsize=64:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2+40" \
   -t 3.0 -c:v libvpx-vp9 -b:v 0 -crf 33 -r 25 -an /tmp/aha-outro-static.webm

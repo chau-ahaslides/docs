@@ -4,3 +4,10 @@
 !.agent-fleet/config.json
 !.agent-fleet/config.example.json
 .env
+.agent-fleet/*.local
+
+# Tutorial video render outputs — kept local, never committed (published copy lives on YouTube)
+out-videos/
+
+# Node workspace for the tutorial-video recording pipeline
+node_modules/

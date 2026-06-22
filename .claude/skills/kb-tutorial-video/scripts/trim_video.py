@@ -6,7 +6,7 @@ Usage:
                           [--keep-head 1.7] [--keep-tail 0.3]
                           [--noise -55dB] [--min-freeze 1.8] [--dry-run]
 
-Run from the recording workspace (~/AhaSlides/onboarding-videos) so the
+Run from the repo root (the recording workspace) so the
 default ffmpeg path resolves, or set FFMPEG=/path/to/ffmpeg.
 
 What it does (one re-encode total):

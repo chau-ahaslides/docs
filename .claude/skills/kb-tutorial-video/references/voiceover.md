@@ -51,7 +51,7 @@ the full render run. Use respellings in the `tts_text` field only (keep
 import subprocess, json, os
 
 el_key = subprocess.check_output(
-    "grep ELEVENLABS_API_KEY /Users/claude/AhaSlides/ahaslides-kb/.env | cut -d'=' -f2",
+    "grep ELEVENLABS_API_KEY \"$(git rev-parse --show-toplevel)/.env\" | cut -d'=' -f2",
     shell=True).decode().strip()
 outdir = "/path/to/out-<slug>"
 voice_id = "VCgLBmBjldJmfphyB8sZ"  # Liam — approved voice (alt: Alice Xb7hH8MSUJpSbSDYk0k2)
@@ -87,7 +87,7 @@ pace (useful if lines overflow their window).
 ### Mixing MP3 clips onto the trimmed visual with ffmpeg
 
 ```bash
-FFMPEG=./node_modules/ffmpeg-static/ffmpeg   # in onboarding-videos workspace
+FFMPEG=$(node -p "require('ffmpeg-static')")   # from the repo root
 # Timestamps from voiceover JSON start_sec → milliseconds for adelay
 $FFMPEG -y \
   -i visual-trimmed.webm \

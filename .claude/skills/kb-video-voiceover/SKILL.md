@@ -82,7 +82,7 @@ Use respellings in `tts_text` only; keep `display_text` natural.
 import subprocess, json, os
 
 el_key = subprocess.check_output(
-    "grep ELEVENLABS_API_KEY /Users/claude/AhaSlides/ahaslides-kb/.env | cut -d'=' -f2",
+    "grep ELEVENLABS_API_KEY \"$(git rev-parse --show-toplevel)/.env\" | cut -d'=' -f2",
     shell=True).decode().strip()
 outdir = "/path/to/out-<slug>"
 voice_id = "VCgLBmBjldJmfphyB8sZ"  # Liam (approved) — OR use Alice: Xb7hH8MSUJpSbSDYk0k2
@@ -150,7 +150,7 @@ python3 .claude/skills/kb-tutorial-video/scripts/check_vo_overlap.py \
 ## Step 5 — Mix MP3 clips onto the trimmed visual with ffmpeg
 
 ```bash
-FFMPEG=./node_modules/ffmpeg-static/ffmpeg   # run from ~/AhaSlides/onboarding-videos/
+FFMPEG=$(node -p "require('ffmpeg-static')")   # run from the repo root
 $FFMPEG -y \
   -i visual-trimmed.webm \
   -i out/s01.mp3 -i out/s02.mp3 -i out/s03.mp3 \

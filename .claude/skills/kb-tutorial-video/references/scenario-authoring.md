@@ -100,7 +100,7 @@ Recipe for a NEW slide type:
 2. Discover the audience-side selectors with the bundled probe:
 
    ```bash
-   cd ~/AhaSlides/onboarding-videos && source <plugin>/test-env.sh && \
+   cd "$(git rev-parse --show-toplevel)" && source <plugin>/test-env.sh && \
    node <skill-dir>/scripts/probe_preview_audience.mjs <deckId>
    ```
 

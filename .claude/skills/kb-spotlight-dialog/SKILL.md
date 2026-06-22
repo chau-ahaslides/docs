@@ -109,7 +109,7 @@ after close.
 
 ## Discovering dialog selectors
 
-Use a probe script in the `~/AhaSlides/onboarding-videos/` workspace dir with
+Use a probe script run from the repo root (the recording workspace) with
 `force: true` clicks (leftover onboarding panels intercept pointer events).
 Open the dialog, then query the DOM to find which elements are present. See
 also `references/spotlight-dialog-handling.md` under the `kb-tutorial-video`
