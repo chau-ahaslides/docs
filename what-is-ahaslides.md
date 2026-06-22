@@ -34,7 +34,7 @@ description: "Turn your next presentation into a two-way conversation. AhaSlides
 
 **Does it need an app?** No. Participants join by typing a **URL** or scanning a **QR code** — no download required.
 
-**Can I import PowerPoint slides?** Yes. You can [import PPT, PPTX, or PDF files](importing-a-powerpoint-or-pdf-file-from-your-computer.md) and insert interactive slides in between your existing content.
+**Can I import PowerPoint slides?** Yes. You can [import PPT, PPTX, or PDF files](https://docs.ahaslides.com/features-and-functions/importing-a-powerpoint-presentation-or-pdf-file) and insert interactive slides in between your existing content.
 
 ---
 
@@ -61,7 +61,7 @@ Three steps:
 
 At any poll slide, for example, participants vote from their phones the moment you present it. When they respond, results update on screen in real time — the whole room sees it together.
 
-You can also [import PowerPoint presentations](importing-a-powerpoint-or-pdf-file-from-your-computer.md) into AhaSlides and **insert interactive slides between your existing PowerPoint slides**, so you keep your content and add engagement at the same time.
+You can also [import PowerPoint presentations](https://docs.ahaslides.com/features-and-functions/importing-a-powerpoint-presentation-or-pdf-file) into AhaSlides and **insert interactive slides between your existing PowerPoint slides**, so you keep your content and add engagement at the same time.
 
 ---
 
@@ -126,8 +126,8 @@ AhaSlides connects with the tools you already use:
 |---|---|---|
 | **Microsoft Teams** | Run live polls, quizzes, and icebreakers directly inside a Teams meeting — no browser tabs or extra links | [AhaSlides for Microsoft Teams](KB-Teams-Add-in.md) |
 | **Google Slides** | Embed a Google Slides deck into AhaSlides and present it with interactive slides alongside your content | [Using your Google Slides presentation](using-your-google-slides-presentation-with-ahaslides.md) |
-| **PowerPoint** | Import PPT or PPTX files and insert interactive slides between your existing PowerPoint slides | [Importing a PowerPoint or PDF](importing-a-powerpoint-or-pdf-file-from-your-computer.md) |
-| **PDF** | Import a PDF as static slides and add interactive elements in between | [Importing a PowerPoint or PDF](importing-a-powerpoint-or-pdf-file-from-your-computer.md) |
+| **PowerPoint** | Import PPT or PPTX files and insert interactive slides between your existing PowerPoint slides | [Importing a PowerPoint or PDF](https://docs.ahaslides.com/features-and-functions/importing-a-powerpoint-presentation-or-pdf-file) |
+| **PDF** | Import a PDF as static slides and add interactive elements in between | [Importing a PowerPoint or PDF](https://docs.ahaslides.com/features-and-functions/importing-a-powerpoint-presentation-or-pdf-file) |
 | **Website / iFrame** | Embed an AhaSlides presentation directly on any webpage using an iframe | [Embedding AhaSlides to your website](embedding-ahaslides-to-your-website.md) |
 | **AI / MCP** | Let AI assistants (e.g. Claude) create and manage AhaSlides presentations on your behalf via the MCP server | [AhaSlides MCP — Getting Started](ahaslides-mcp-getting-started-guide.md) |
 | **Zoom** | Present AhaSlides inside a Zoom meeting so participants can respond without leaving the call | [Using the AhaSlides App on Zoom](using-the-ahaslides-app-on-zoom.md) |
@@ -137,6 +137,6 @@ AhaSlides connects with the tools you already use:
 
 ## Start for free
 
-Ready to run your first interactive presentation? [Create your free AhaSlides account](https://ahaslides.com/signup) — no credit card, no time limit.
+Ready to run your first interactive presentation? [Create your free AhaSlides account](https://presenter.ahaslides.com/pages/register) — no credit card, no time limit.
 
-> **Next step:** [Sharing your presentation with participants](sharing-your-presentation-for-participants-to-join.md)
+> **Next step:** [Creating your AhaSlides account](https://docs.ahaslides.com/getting-started/creating-your-ahaslides-account)
