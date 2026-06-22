@@ -11,14 +11,12 @@ tags: ["submit image", "ended", "ahaslides", "open ended", "open", "open-ended"]
 keywords: ["open ended", "open end", "write answer", "write response", "image", "photo", "grid", "one by one", "submit image"]
 summary: An Open Ended slide helps you see things from others' perspectives as you get feedback in their own words instead of stock answers. Open-ended questions allow respondents to answer in open text format so that they can answer based on their complete knowledge, feeling, and understanding.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000004256060
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-open-ended-slide
 related_articles: ["collecting-participants-information", "sharing-images-with-open-ended-slide", "resetting-the-results-clearing-the-responses"]
 mcp_actions:
   create: 'create_slides(slide_type: "open_ended_survey", heading: "...")'
   configure: 'update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)'
   delete: 'update_slide_properties_tool(type: "openEndedQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "An Open Ended slide helps you see things from others' perspectives as you get feedback in their own words instead of stock answers. Open-ended questions allow respondents to answer in open text format so that they can answer based on their complete knowledge, feeling, and understanding."
 ---
 

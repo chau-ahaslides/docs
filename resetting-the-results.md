@@ -11,12 +11,10 @@ tags: ["result", "reuse", "data", "restart", "response", "clear", "ahaslides", "
 keywords: []
 summary: Resetting results (or 'clearing the responses') on your presentation means that all submissions made by participants will be erased from your presentation. This allows you to reuse presentations for different audiences.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000822074
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/resetting-the-results
 related_articles: ["your-ahaslides-presentation-report"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Resetting results (or 'clearing the responses') on your presentation means that all submissions made by participants will be erased from your presentation. This allows you to reuse presentations for different audiences."
 ---
 

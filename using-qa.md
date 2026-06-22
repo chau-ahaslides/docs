@@ -11,13 +11,11 @@ tags: ["qa", "question", "answer", "on all slides", "moderation", "moderate"]
 keywords: ["Q&A", "QA", "question", "answer", "question and answer", "moderate", "moderation", "moderation mode", "moderator", "on all slides"]
 summary: Learn how to use the Q&A feature in your AhaSlides presentation, as well as the settings to get the most out of it.
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000817195
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-q-and-a
 related_articles: ["how-to-use-profanity-filter"]
 mcp_actions:
   create: "create_slides(slide_type: \"q&a\", heading: \"...\")"
   delete: "update_slide_properties_tool(type: \"q&a\", deleted: true)"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to use the Q&A feature in your AhaSlides presentation, as well as the settings to get the most out of it."
 ---
 

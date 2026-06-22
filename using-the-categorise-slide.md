@@ -11,14 +11,12 @@ tags: ["quiz", "categorise", "ahaslides"]
 keywords: []
 summary: The Categorise slide is a quiz type where participants sort items into predefined categories on their phones — results update live on your screen. Great for knowledge checks, training, and classroom activities.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000069894001
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-categorise-slide
 related_articles: []
 mcp_actions:
   create: 'create_slides(slide_type: "categorise_quiz", heading: "...", options: [{name, items[]}])'
   configure: 'update_slide_properties_tool(type: "categoriseQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)'
   delete: 'update_slide_properties_tool(type: "categoriseQuizQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "The Categorise slide is a quiz type where participants sort items into predefined categories on their phones — results update live on your screen. Great for knowledge checks, training, and classroom activities."
 ---
 

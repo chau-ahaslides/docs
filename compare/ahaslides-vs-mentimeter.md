@@ -12,7 +12,6 @@ plan_required: Free
 related_articles: ["what-is-included-in-the-free-account", "educational-subscriptions", "monthly-plan", "annual-subscriptions", "generating-questions-and-answers-using-ai-on-ahaslides", "ahaslides-mcp-getting-started-guide"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "A side-by-side comparison of AhaSlides and Mentimeter — covering activity types, AI and integrations, free plan limits, and pricing — so you can make an informed choice."
 ---
 

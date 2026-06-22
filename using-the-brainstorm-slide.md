@@ -11,14 +11,12 @@ tags: ["brainstorm", "idea", "ahaslides", "voting", "submission", "vote"]
 keywords: ["brainstorm", "vote", "voting", "idea", "submission", "stage"]
 summary: A Brainstorm slide lets your participants put forward ideas and then vote for their favourites. It guides audiences through three stages — submitting ideas, voting, and viewing results.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000696001
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-brainstorm-slide
 related_articles: ["setting-up-a-self-paced-quiz-on-ahaslides"]
 mcp_actions:
   create: "create_slides(slide_type: \"brainstorm\", heading: \"...\")"
   configure: "update_slide_properties_tool(type: \"brainstormActivity\", limitChoice: int)"
   delete: "update_slide_properties_tool(type: \"brainstormActivity\", deleted: true)"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "A Brainstorm slide lets your participants put forward ideas and then vote for their favourites. It guides audiences through three stages — submitting ideas, voting, and viewing results."
 ---
 

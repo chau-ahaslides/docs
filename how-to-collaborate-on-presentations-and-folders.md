@@ -11,13 +11,11 @@ tags: ["work together", "move", "access", "folders", "edit", "share presentation
 keywords: []
 summary: Collaborative editing lets you work together on presentations or folders with other AhaSlides users. Whether you're collaborating within your team or with people outside it, here's how it works.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000817147
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-collaborate-on-presentations-and-folders
 related_articles: ["managing-your-team-members", "purchasing-multiple-licenses-for-ahaslides-team-plan-subscription", "presenter-role"]
 mcp_actions:
   create_presentation: 'create_presentation_tool(name: "...", lang: "en")'
   note: 'Folder/sharing management not available via MCP. Use AhaSlides web UI.'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Collaborative editing lets you work together on presentations or folders with other AhaSlides users. Whether you're collaborating within your team or with people outside it, here's how it works."
 ---
 

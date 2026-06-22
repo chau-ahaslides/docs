@@ -11,12 +11,10 @@ tags: ["quiz", "answer", "ai", "generate", "ai generator"]
 keywords: []
 summary: AhaSlides now offers AI-powered answer generation for quizzes and polls, helping you quickly create questions and answer options.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000072589313
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/generating-questions-and-answers-using-ai-on-ahaslides
 related_articles: ["how-to-make-and-run-a-quiz"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "AhaSlides now offers AI-powered answer generation for quizzes and polls, helping you quickly create questions and answer options."
 ---
 

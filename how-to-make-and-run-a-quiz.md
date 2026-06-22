@@ -11,7 +11,6 @@ tags: [quiz, deduct, test, emoji, sound, teamplay, trivia, run, avatar, point, r
 keywords: [Quiz, Test, Play, Run, Host, Trivia, Quiz question]
 summary: Learn everything about creating and hosting a live quiz for your audience. On AhaSlides, you can host a live quiz and have all of your participants competing for points using quiz question slides and a leaderboard.
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000633069
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-make-and-run-a-quiz
 related_articles: [adding-and-deleting-a-leaderboard-on-your-quiz, generating-questions-and-answers-using-ai-on-ahaslides, using-the-match-pairs-slide, slide-and-presentation-audio, running-a-team-quiz, setting-up-a-self-paced-presentation-on-ahaslides, sharing-a-presentation-to-your-participants, your-ahaslides-presentation-report, resetting-the-results, how-to-preview-your-presentation]
 mcp_actions:
@@ -20,7 +19,6 @@ mcp_actions:
   create_leaderboard: 'create_slides(slide_type: "leaderboard")'
   configure: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)'
   delete: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn everything about creating and hosting a live quiz for your audience. On AhaSlides, you can host a live quiz and have all of your participants competing for points using quiz question slides and a leaderboard."
 ---
 

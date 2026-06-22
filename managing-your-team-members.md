@@ -11,12 +11,10 @@ tags: ["view", "role", "team accounts", "edit", "enterprise", "add member", "aha
 keywords: ["team", "invite", "enterprise", "member", "remove", "add", "manage", "admin", "license", "lisense", "role", "edit", "view"]
 summary: Learn how to manage the members of your team, change their roles and add more licences for Enterprise use. As the Owner of a team on AhaSlides, the Team Members tab allows you to add and remove team members, set team roles, and upgrade the team plan/add more licenses.
 plan_required: Enterprise
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000756001
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/managing-your-team-members
 related_articles: ["purchasing-multiple-licenses-for-ahaslides-team-plan-subscription"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to manage the members of your team, change their roles and add more licences for Enterprise use. As the Owner of a team on AhaSlides, the Team Members tab allows you to add and remove team members, set team roles, and upgrade the team plan/add more licenses."
 ---
 

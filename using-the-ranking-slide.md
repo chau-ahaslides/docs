@@ -11,13 +11,11 @@ tags: ["rank", "ranking", "poll", "items", "option"]
 keywords: []
 summary: A Ranking slide lets your audience prioritize a list of options, not just pick their favorite. Instead of asking "What do you like?", you're asking "What matters most?" Results update instantly as responses come in.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000171154277
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-ranking-slide
 related_articles: ["hide-results"]
 mcp_actions:
   create: 'create_slides(slide_type: "poll", heading: "...", options: [{text}])'
   note: 'Ranking is a poll variant — use poll slide_type'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "A Ranking slide lets your audience prioritize a list of options, not just pick their favorite. Instead of asking \"What do you like?\", you're asking \"What matters most?\" Results update instantly as responses come in."
 ---
 

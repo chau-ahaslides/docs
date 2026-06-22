@@ -1,6 +1,6 @@
 # Agent instructions — ahaslides-kb
 
-This repository contains the AhaSlides knowledge base: Markdown articles published to the Zoho Help Center. There is no live publication pipeline from this repo — Zoho is the public surface. Never guess or pattern-construct public article URLs.
+This repository contains the AhaSlides knowledge base: Markdown articles for the standalone AhaSlides Help Center. The local `.md` files are the source of truth. Never guess or pattern-construct public article URLs.
 
 ## Repository conventions
 
@@ -43,7 +43,7 @@ curl -H "Authorization: Bearer $GITHUB_PAT" \
 - You need to enumerate exact options the product supports (shape types, interaction modes, export formats, etc.).
 - You are writing a step-by-step procedure and must confirm exact UI label or field name.
 - A feature is new or has recently changed and existing KB articles may be stale.
-- The Zoho Help Center article or any public doc is absent or vague.
+- The KB article or any public doc is absent or vague.
 
 ### What not to do
 

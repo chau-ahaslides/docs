@@ -11,12 +11,10 @@ tags: ["presentation", "song", "mp3", "music", "lobby", "slide", "sound", "audio
 keywords: ["audio", "music", "song", "slide", "presentation", "embed", "lobby", "MP3", "sound", "autoplay"]
 summary: Learn how to set up Slide Audio and Presentation Audio on AhaSlides. Enhance your presentations with slide or presentation-level audio, along with sound effects for greater control over the experience.
 plan_required: Pro
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000696177
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/slide-and-presentation-audio
 related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to set up Slide Audio and Presentation Audio on AhaSlides. Enhance your presentations with slide or presentation-level audio, along with sound effects for greater control over the experience."
 ---
 

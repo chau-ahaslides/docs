@@ -11,12 +11,10 @@ tags: ["billing information", "ahaslides", "bill", "billing address"]
 keywords: []
 summary: Add billing address and other information into your receipt. Log in, go to My Profile, fill in the Billing Address section, and click Update profile.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000705212
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/billing-address
 related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Add billing address and other information into your receipt. Log in, go to My Profile, fill in the Billing Address section, and click Update profile."
 ---
 

@@ -3,4 +3,4 @@ alias_for: managing-your-team-members
 note: "This slug may be outdated or unpublished. See [[managing-your-team-members]] for team management."
 ---
 
-> ⚠️ This slug was not found on Zoho. See [[managing-your-team-members]] for the closest related article.
+> ⚠️ This slug is an alias. See [Managing your team members](managing-your-team-members.md) for the current article.

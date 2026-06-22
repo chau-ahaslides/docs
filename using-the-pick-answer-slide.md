@@ -11,14 +11,12 @@ tags: ["quiz", "pick answer", "multiple choice", "scored", "ahaslides"]
 keywords: ["pick answer", "multiple choice quiz", "scored question", "quiz slide", "correct answer", "partial scoring", "points", "leaderboard"]
 summary: The Pick Answer slide is a scored multiple-choice quiz question where participants choose from up to 8 answer options on their phones. Mark one or more options correct, set points and a timer, and crown the winner on the leaderboard.
 plan_required: Free
-zoho_url:
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-pick-answer-slide
 related_articles: ["how-to-make-and-run-a-quiz", "using-the-type-answer-slide", "adding-and-deleting-a-leaderboard-on-your-quiz", "generating-questions-and-answers-using-ai-on-ahaslides"]
 mcp_actions:
   create: 'create_slides(slide_type: "pick_answer_quiz", heading: "...", options: [{text, correct: bool}])'
   configure: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)'
   delete: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "The Pick Answer slide is a scored multiple-choice quiz question where participants choose from up to 8 answer options on their phones. Mark one or more options correct, set points and a timer, and crown the winner on the leaderboard."
 ---
 

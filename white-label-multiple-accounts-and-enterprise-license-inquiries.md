@@ -11,12 +11,10 @@ tags: ["multiple accounts", "white label", "team accounts", "enterprise", "multi
 keywords: []
 summary: If you're considering buying more than 1 AhaSlides license at once, please contact us at hi@ahaslides.com. With the White Label license, there will be no mention of AhaSlides at all, so it's like you're using AhaSlides as your own software.
 plan_required: Enterprise
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000763001
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/white-label-multiple-accounts-and-enterprise-license-inquiries
 related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "If you're considering buying more than 1 AhaSlides license at once, please contact us at hi@ahaslides.com. With the White Label license, there will be no mention of AhaSlides at all, so it's like you're using AhaSlides as your own software."
 ---
 

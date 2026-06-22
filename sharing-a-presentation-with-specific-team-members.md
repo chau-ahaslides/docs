@@ -11,12 +11,10 @@ tags: ["individual", "one", "member", "ahaslides", "share", "share presentation"
 keywords: ["team", "member", "share", "share presentation", "individual", "certain", "specific", "one"]
 summary: Learn how to share a presentation with specific members of your team, as opposed to your whole team. Sharing a presentation in the Team Workspace makes it accessible to everyone, but you can also send a copy to selected individuals.
 plan_required: Pro
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000705258
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/sharing-a-presentation-with-specific-team-members
 related_articles: ["using-your-team-workspace", "adding-notes-to-your-presentation"]
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to share a presentation with specific members of your team, as opposed to your whole team. Sharing a presentation in the Team Workspace makes it accessible to everyone, but you can also send a copy to selected individuals."
 ---
 

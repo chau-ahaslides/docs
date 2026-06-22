@@ -11,12 +11,10 @@ tags: ["presentation", "ahaslides", "share", "share presentation", "copy", "copy
 keywords: []
 summary: Don't know how to share your presentation with other users on AhaSlides? Or how they can copy it to their accounts? Check out the guide below!
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000705111
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/sharing-a-copy-of-your-presentation-with-other-ahaslides-users
 related_articles: ["sharing-a-presentation-to-your-participants", "sharing-your-ahaslides-account"]
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Don't know how to share your presentation with other users on AhaSlides? Or how they can copy it to their accounts? Check out the guide below!"
 ---
 

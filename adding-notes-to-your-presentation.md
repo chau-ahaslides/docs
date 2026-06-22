@@ -11,12 +11,10 @@ tags: ["notes", "speaker", "speaker notes", "ahaslides", "backstage"]
 keywords: []
 summary: You can write your own notes for each slide. During your presentation, these notes will be visible on your monitor through Remote control; your audience won't be able to see them.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000009414272
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/adding-notes-to-your-presentation
 related_articles: ["remote-control"]
 mcp_actions:
   note: "move_slide / skip_slide_when_presenting tools available for slide management; notes are editor-only"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "You can write your own notes for each slide. During your presentation, these notes will be visible on your monitor through Remote control; your audience won't be able to see them."
 ---
 

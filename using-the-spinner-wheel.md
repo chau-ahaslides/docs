@@ -11,14 +11,12 @@ tags: ["random", "wheel", "spin", "lucky wheel", "ahaslides", "spinner wheel", "
 keywords: ["spinner wheel", "random wheel", "wheel picker", "spin picker", "random spin", "ahaslides help"]
 summary: Learn how to use the AhaSlides Spinner Wheel in your presentations. The Spinner Wheel is a slide type that lets a presenter pick any entry at random by spinning the wheel.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000696049
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-spinner-wheel
 related_articles: ["how-to-make-and-run-a-quiz", "making-a-live-word-cloud"]
 mcp_actions:
   create: 'create_slides(slide_type: "spinner_wheel", heading: "...", options: [{text}], max: 50)'
   configure: 'update_slide_properties_tool(type: "spinnerWheelQuestion", metadata.spinningDuration: int max 1200, metadata.autoFillParticipantName: bool)'
   delete: 'update_slide_properties_tool(type: "spinnerWheelQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to use the AhaSlides Spinner Wheel in your presentations. The Spinner Wheel is a slide type that lets a presenter pick any entry at random by spinning the wheel."
 ---
 

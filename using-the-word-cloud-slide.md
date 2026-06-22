@@ -11,14 +11,12 @@ tags: ["cloud", "ahaslides", "word cloud", "grouping", "word", "live", "group"]
 keywords: []
 summary: A word cloud lets you pose a question and have participants submit short written responses. All the responses are displayed on one screen, with the most popular responses appearing larger in the cloud.
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000696395
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-word-cloud-slide
 related_articles: []
 mcp_actions:
   create: 'create_slides(slide_type: "word_cloud", heading: "...")'
   configure: 'update_slide_properties_tool(type: "wordCloudQuestion", entriesPerParticipant: int)'
   delete: 'update_slide_properties_tool(type: "wordCloudQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "A word cloud lets you pose a question and have participants submit short written responses. All the responses are displayed on one screen, with the most popular responses appearing larger in the cloud."
 ---
 

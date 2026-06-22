@@ -11,14 +11,12 @@ tags: ["image", "voters", "multiple", "ahaslides", "multiple choice", "anonymous
 keywords: []
 summary: A Poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000844051
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/creating-a-poll-question-on-ahaslides
 related_articles: ["sharing-your-presentation-to-your-participants", "setting-up-a-self-paced-quiz"]
 mcp_actions:
   create: 'create_slides(slide_type: "poll", heading: "...", options: [{text}])'
   configure: 'update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")'
   delete: 'update_slide_properties_tool(type: "pollQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "A Poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes."
 ---
 

@@ -18,7 +18,6 @@ related_articles: ["creating-a-poll-question-on-ahaslides", "how-to-use-rating-s
 mcp_actions:
   create: 'create_slides(slide_type: "survey", heading: "...")'
   note: 'Surveys are standalone objects managed from the Surveys dashboard section, not created as regular slides; add to a presentation by linking a published Survey to a Survey slide type'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Build multi-question Surveys with Multiple Choice, Rating Scale, Open-ended, and Matrix questions, then run them standalone or live inside your presentation deck."
 ---
 

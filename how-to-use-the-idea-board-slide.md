@@ -11,12 +11,10 @@ tags: []
 keywords: []
 summary: An Idea Board slide lets your audience submit ideas and see them organized into themes, not just read a scattered list of responses. Results are updated in real time, helping you spot patterns and turn raw feedback into structured insights instantly.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000176786449
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-use-the-idea-board-slide
 related_articles: ["collecting-participants-information", "hide-results"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "An Idea Board slide lets your audience submit ideas and see them organized into themes, not just read a scattered list of responses. Results are updated in real time, helping you spot patterns and turn raw feedback into structured insights instantly."
 ---
 

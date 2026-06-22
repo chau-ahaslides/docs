@@ -11,12 +11,10 @@ tags: ["quiz", "template", "library", "templates", "ahaslides", "pre-made"]
 keywords: []
 summary: The AhaSlides Template Library is a time-saving feature that allows you to download and customize ready-made templates for your presentations.
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000633461
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/ahaslides-template-library
 related_articles: ["resetting-the-results"]
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "The AhaSlides Template Library is a time-saving feature that allows you to download and customize ready-made templates for your presentations."
 ---
 

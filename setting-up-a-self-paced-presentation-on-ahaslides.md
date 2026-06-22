@@ -11,12 +11,10 @@ tags: ["quiz", "offline", "self-run", "no presenter", "audience pacing", "asynch
 keywords: []
 summary: Find out how your audience can play a quiz or complete a survey in their own time. Choosing the self-paced setting lets your audience proceed through a presentation without a host.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000821461
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/setting-up-a-self-paced-presentation-on-ahaslides
 related_articles: ["turning-on-private-mode-for-your-presentation"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type — self-paced mode configured via presentation settings in web UI"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Find out how your audience can play a quiz or complete a survey in their own time. Choosing the self-paced setting lets your audience proceed through a presentation without a host."
 ---
 

@@ -11,14 +11,12 @@ tags: ["quiz", "sequence", "correct", "statement", "ahaslides", "correct order"]
 keywords: ["correct", "order", "arrange", "list", "timeline", "sequence", "quiz", "statement", "rank"]
 summary: Learn how to use the Correct Order slide in an AhaSlides quiz. The Correct Order quiz slide asks participants to place randomized statements in the correct order.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000638001
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-correct-order-slide
 related_articles: ["how-to-make-and-run-a-quiz"]
 mcp_actions:
   create: "create_slides(slide_type: \"correct_order_quiz\", heading: \"...\", options: [{position, text}], max: 7)"
   configure: "update_slide_properties_tool(type: \"correctOrderQuizQuestion\", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)"
   delete: "update_slide_properties_tool(type: \"correctOrderQuizQuestion\", deleted: true)"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to use the Correct Order slide in an AhaSlides quiz. The Correct Order quiz slide asks participants to place randomized statements in the correct order."
 ---
 

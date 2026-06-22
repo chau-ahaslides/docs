@@ -11,12 +11,10 @@ tags: ["typography", "typo", "manager", "branding", "design", "text", "font"]
 keywords: ["branding", "font", "manager", "typo", "typography", "design", "text"]
 summary: Learn how to change the font of your AhaSlides presentation and create a customised library of easy-access fonts. You can change the font used throughout your AhaSlides presentation and arrange your favourite fonts for easy, immediate access.
 plan_required: Pro
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000817103
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-change-manage-fonts
 related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to change the font of your AhaSlides presentation and create a customised library of easy-access fonts. You can change the font used throughout your AhaSlides presentation and arrange your favourite fonts for easy, immediate access."
 ---
 

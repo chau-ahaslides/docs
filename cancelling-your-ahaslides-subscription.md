@@ -11,12 +11,10 @@ tags: ["cancel", "renewal", "unsubscribe", "ahaslides", "auto-renew", "subscript
 keywords: []
 summary: Find out how to turn off the auto-renewal of your subscription. Monthly plans will renew automatically after 1 month, and Yearly plans will renew automatically after 1 year.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000763279
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/cancelling-your-ahaslides-subscription
 related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Find out how to turn off the auto-renewal of your subscription. Monthly plans will renew automatically after 1 month, and Yearly plans will renew automatically after 1 year."
 ---
 

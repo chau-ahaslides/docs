@@ -11,12 +11,10 @@ tags: ["quiz", "generative", "pdf", "import", "ppt", "ai", "ahaslides", "generat
 keywords: []
 summary: AhaSlides offers a seamless feature that lets users effortlessly turn their documents, images, PowerPoint (PPT), or PDF files into interactive quizzes with our AI-powered tool.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000058596038
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides
 related_articles: []
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "AhaSlides offers a seamless feature that lets users effortlessly turn their documents, images, PowerPoint (PPT), or PDF files into interactive quizzes with our AI-powered tool."
 ---
 

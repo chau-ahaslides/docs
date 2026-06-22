@@ -11,12 +11,10 @@ tags: []
 keywords: []
 summary: You can now allow multiple presenters to run the same presentation at the same time, without affecting each other. You can also view reports of their sessions separately, while they can only view their own sessions.
 plan_required: Pro
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000108115168
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/presenter-role
 related_articles: ["purchasing-multiple-licenses-for-ahaslides-team-plan-subscription", "your-ahaslides-presentation-report"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type — presenter role managed via web UI only"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "You can now allow multiple presenters to run the same presentation at the same time, without affecting each other. You can also view reports of their sessions separately, while they can only view their own sessions."
 ---
 

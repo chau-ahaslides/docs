@@ -11,14 +11,12 @@ tags: ["quiz", "type answer", "short answer", "accepted answer", "scored", "ahas
 keywords: ["type answer", "short answer quiz", "typed answer", "accepted answers", "correct answer to display", "open question", "scored question", "leaderboard"]
 summary: The Type Answer slide is a scored quiz question with no options to choose from — participants type their answer, which must match one of the answers you accept. Harder to guess than multiple choice, it gives a truer picture of what your audience knows.
 plan_required: Free
-zoho_url:
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-type-answer-slide
 related_articles: ["how-to-make-and-run-a-quiz", "using-the-pick-answer-slide", "adding-and-deleting-a-leaderboard-on-your-quiz", "how-to-use-profanity-filter"]
 mcp_actions:
   create: 'create_slides(slide_type: "short_answer_quiz", heading: "...", correct_answer: "...")'
   configure: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)'
   delete: 'update_slide_properties_tool(type: "multipleChoiceQuizQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "The Type Answer slide is a scored quiz question with no options to choose from — participants type their answer, which must match one of the answers you accept. Harder to guess than multiple choice, it gives a truer picture of what your audience knows."
 ---
 

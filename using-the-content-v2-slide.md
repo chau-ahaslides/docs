@@ -12,7 +12,6 @@ plan_required: All
 related_articles: ["using-the-content-slide", "using-the-diagram-slide"]
 mcp_actions:
   note: "The Content v2 slide is not currently supported by the AhaSlides MCP create_slides() tool. Add Content v2 slides manually in the editor."
-warning: "DRAFT — Zoho article ID not yet assigned. Do not publish to Zoho until an ID is confirmed."
 description: "The Content v2 slide is a fully flexible design canvas for creating polished, layout-driven slides. Start from a ready-made layout or build your own by inserting text, callout, visual, media, and data blocks from scratch."
 ---
 
@@ -95,4 +94,4 @@ The Content v2 slide is not currently supported by the AhaSlides MCP `create_sli
 
 ## Remaining pre-publish steps
 
-1. **Zoho article ID** — a Zoho Help Center article ID must be added to the frontmatter (`id:` and `zoho_url:`) before this draft can be published and synced.
+1. **Article ID** — assign a KB article ID in the frontmatter (`id:`) before publishing.

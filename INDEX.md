@@ -3,7 +3,7 @@
 > **For agents:** Read this file first to find the right article before opening individual files.
 > Each entry includes the local slug (filename without `.md`), summary, plan requirement, and whether AhaSlides MCP actions are available.
 >
-> **⚠️ Do NOT use local `.md` body content to update Zoho articles** — images and videos exist in Zoho but are only referenced as URLs here. Always fetch live HTML from Zoho first via `ZohoDesk_getArticle(orgId: "736517018")`.
+> **ℹ️ AhaSlides KB is now a standalone knowledge base.** Zoho Help Center is no longer the publication target. The local `.md` files are the source of truth.
 
 ---
 
@@ -585,4 +585,4 @@
 
 ---
 
-*Last synced from Zoho Desk: 2026-06-18 | org_id: 736517018*
+*Last updated: 2026-06-22*

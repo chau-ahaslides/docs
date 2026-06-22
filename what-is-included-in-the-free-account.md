@@ -11,12 +11,10 @@ tags: ["ahaslides", "free", "free plan", "demo", "trial"]
 keywords: []
 summary: AhaSlides offers a free plan with access to a range of features for as long as you like, including up to 50 live participants, unlimited presentations, and AI features. Free accounts support up to 5 Quiz or 3 Poll-type slides before a 3-participant limit applies.
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000705463
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/what-is-included-in-the-free-account
 related_articles: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "AhaSlides offers a free plan with access to a range of features for as long as you like, including up to 50 live participants, unlimited presentations, and AI features. Free accounts support up to 5 Quiz or 3 Poll-type slides before a 3-participant limit applies."
 ---
 

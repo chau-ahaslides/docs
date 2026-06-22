@@ -12,7 +12,6 @@ plan_required: All
 related_articles: ["using-the-content-slide"]
 mcp_actions:
   note: "The Diagram slide is not currently supported by the AhaSlides MCP create_slides() tool. Add diagram slides manually in the editor."
-warning: "DRAFT — Zoho article ID not yet assigned. Do not publish to Zoho until an ID is confirmed."
 description: "The Diagram slide lets you build and display structured visual diagrams — flowcharts, hierarchies, charts, timelines, comparisons, and more — directly in your AhaSlides presentation, with no image uploads required."
 ---
 
@@ -156,4 +155,4 @@ The Diagram slide is not currently supported by the AhaSlides MCP `create_slides
 
 ## Remaining pre-publish steps
 
-1. **Zoho article ID** — a Zoho Help Center article ID must be added to the frontmatter (`id:` and `zoho_url:`) before this draft can be published and synced.
+1. **Article ID** — assign a KB article ID in the frontmatter (`id:`) before publishing.

@@ -1,0 +1,26 @@
+name: Lint Zoho references
+
+# Ensures no article body contains a reader-facing reference to Zoho.
+# AhaSlides KB is now a standalone knowledge base — Zoho Help Center is no
+# longer the canonical public surface. See scripts/lint-zoho-refs.sh for
+# the full rule and rationale.
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-zoho-refs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Zoho reference lint
+        run: ./scripts/lint-zoho-refs.sh

@@ -11,12 +11,10 @@ tags: ["presentation", "answer", "report", "ahaslides", "participant"]
 keywords: ["report", "data", "responses", "share report", "participant report"]
 summary: The AhaSlides Presentation Report provides detailed insights into your audience's engagement with your presentation. It includes statistics on participant interactions and written feedback, helping you evaluate your presentation's impact.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000822194
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/your-ahaslides-presentation-report
 related_articles: ["resetting-the-results"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "The AhaSlides Presentation Report provides detailed insights into your audience's engagement with your presentation. It includes statistics on participant interactions and written feedback, helping you evaluate your presentation's impact."
 ---
 

@@ -15,7 +15,6 @@ related_articles:
   - using-your-google-slides-presentation-with-ahaslides.md
   - importing-a-powerpoint-presentation-or-pdf-file.md
   - embedding-ahaslides-to-your-website.md
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to install the AhaSlides app for Zoom and run interactive presentations directly inside your Zoom meetings and webinars."
 ---
 
@@ -97,4 +96,4 @@ No. The AhaSlides Zoom integration is only supported on the Zoom Workplace/Webin
 - [Using your Google Slides Presentation with AhaSlides](using-your-google-slides-presentation-with-ahaslides.md)
 - [Importing a PowerPoint Presentation or PDF File](importing-a-powerpoint-presentation-or-pdf-file.md)
 
-> **Note (AKB-22 audit):** The Zoho source page also links to "AhaSlides App for Hopin" and "How to integrate AhaSlides into your WebEx meeting" — these articles do not yet exist in this repo. Add them when those KB articles are created.
+> **Note (AKB-22 audit):** Related articles for "AhaSlides App for Hopin" and "How to integrate AhaSlides into your WebEx meeting" do not yet exist in this repo. Add them when those KB articles are created.

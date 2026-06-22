@@ -11,12 +11,10 @@ tags: ["nonprofit", "educational", "non-governmental", "edu", "ngo", "organizati
 keywords: ["educational", "plan", "edu", "educational plan", "edu plan", "teacher", "student", "NGO", "non-profit", "subscription", "nonprofit"]
 summary: Learn how to check and purchase a special Educational Plan at a discounted rate on AhaSlides. If you're a teacher, student, NGO or plan to use AhaSlides in some educational capacity, you can claim an Educational Plan at a discounted rate, billed annually.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000763195
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/educational-subscriptions
 related_articles: ["cancelling-your-ahaslides-subscription"]
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to check and purchase a special Educational Plan at a discounted rate on AhaSlides. If you're a teacher, student, NGO or plan to use AhaSlides in some educational capacity, you can claim an Educational Plan at a discounted rate, billed annually."
 ---
 

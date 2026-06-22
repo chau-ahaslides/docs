@@ -11,12 +11,10 @@ tags: ["preview", "mode", "test", "phone", "ahaslides", "second device"]
 keywords: ["Preview", "Test", "Presentation", "Try", "Check", "mode"]
 summary: Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000844001
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-preview-and-test-your-presentation
 related_articles: []
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event."
 ---
 

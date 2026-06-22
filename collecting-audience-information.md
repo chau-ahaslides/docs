@@ -11,14 +11,12 @@ tags: ["audience admission", "personal info", "ahaslides", "audience info", "inf
 keywords: []
 summary: Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide.
 plan_required: Pro
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000696221
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/collecting-participants-information
 related_articles: ["exporting-to-excel", "your-ahaslides-presentation-report"]
 mcp_actions:
   create: 'create_slides(slide_type: "open_ended_survey", heading: "...")'
   configure: 'update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)'
   delete: 'update_slide_properties_tool(type: "openEndedQuestion", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide."
 ---
 

@@ -11,12 +11,10 @@ tags: ["pptx", "ptt", "pdf", "file", "import", "upload", "powerpoint"]
 keywords: ["powerpoint", "import presentation", "PPT", "PPTX", "PDF", "interactive powerpoint", "upload"]
 summary: Learn how to import a PowerPoint presentation in AhaSlides and how to make it interactive. You can import a PowerPoint presentation to AhaSlides in PPT, PPTX or PDF format, allowing you to put interactive slides from AhaSlides in between your PowerPoint slides.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000633417
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/importing-a-powerpoint-or-pdf-file-from-your-computer
 related_articles: ["using-the-content-slide", "generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides"]
 mcp_actions:
   note: Import not available via MCP. Use AhaSlides web UI to import PowerPoint/PDF.
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Learn how to import a PowerPoint presentation in AhaSlides and how to make it interactive. You can import a PowerPoint presentation to AhaSlides in PPT, PPTX or PDF format, allowing you to put interactive slides from AhaSlides in between your PowerPoint slides."
 ---
 

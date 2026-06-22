@@ -11,13 +11,11 @@ tags: ["add image", "powerpoint slide", "content", "content slide", "animation"]
 keywords: ["content", "content slide", "add image", "powerpoint slide"]
 summary: The Content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout.
 plan_required: All
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000012795111
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/using-the-content-slide
 related_articles: []
 mcp_actions:
   create: 'create_slides(slide_type: "content", heading: "...", paragraphs: [])'
   delete: 'update_slide_properties_tool(type: "staticContent", deleted: true)'
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "The Content slide lets you create and customise text and images. This slide type lets you edit directly on the canvas, so you have full control over the layout."
 ---
 

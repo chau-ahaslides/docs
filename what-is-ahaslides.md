@@ -11,12 +11,10 @@ tags: ["what is ahaslides", "interactive presentation", "live polling", "audienc
 keywords: ["what is ahaslides", "use ahaslides", "how to use", "live polling", "audience response system", "ARS", "interactive quiz maker", "remote engagement tool", "Mentimeter alternative", "Slido alternative", "interactive presentation tool", "free presentation software"]
 summary: AhaSlides is a free interactive presentation tool that lets audiences respond to polls, quizzes, word clouds, and Q&A in real time from their phones. Used by 2M+ presenters across classrooms, meetings, webinars, and training sessions worldwide.
 plan_required: Free
-zoho_url: https://desk.zoho.com/agent/ahaslides/helpcenter/en/kb/articles/570272000000633249
 portal_url: https://help.ahaslides.com/portal/en/kb/articles/what-is-ahaslides
 related_articles: ["sharing-a-presentation-to-your-participants", "creating-a-poll-question-on-ahaslides", "importing-a-powerpoint-or-pdf-file-from-your-computer", "how-to-make-and-run-a-quiz", "using-the-word-cloud-slide", "using-the-open-ended-slide", "using-the-brainstorm-slide", "using-q-and-a", "how-to-use-rating-scale-slides-on-ahaslides"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-warning: "Do not update article body via ZohoDesk_updateArticle using this local .md file — images and videos exist in Zoho but are referenced here as markdown only. Fetch live HTML from Zoho first."
 description: "Turn your next presentation into a two-way conversation. AhaSlides is a free interactive presentation tool with live polls, quizzes, word clouds, and Q&A that your audience joins from their phones — no app needed."
 ---
 
