@@ -30,6 +30,8 @@
 * [Using the Correct Order Slide](using-the-correct-order-slide.md)
 * [Using the Match Pairs Slide](using-the-match-pairs-slide.md)
 * [Using the Open Ended Slide](using-the-open-ended-slide.md)
+* [Using the Pick Answer Slide](using-the-pick-answer-slide.md)
+* [Using the Type Answer Slide](using-the-type-answer-slide.md)
 * [Using the Spinner Wheel](using-the-spinner-wheel.md)
 * [Using the Surveys Tool](using-the-surveys-tool.md)
 * [Using the Word Cloud Slide](using-the-word-cloud-slide.md)

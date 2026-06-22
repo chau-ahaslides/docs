@@ -22,6 +22,8 @@
 | [using-the-brainstorm-slide](#using-the-brainstorm-slide) | Using Slide Types | All | ✅ Yes |
 | [using-the-match-pairs-slide](#using-the-match-pairs-slide) | Using Slide Types | All | ✅ Yes |
 | [using-the-correct-order-slide](#using-the-correct-order-slide) | Using Slide Types | All | ✅ Yes |
+| [using-the-pick-answer-slide](#using-the-pick-answer-slide) | Using Slide Types | Free | ✅ Yes |
+| [using-the-type-answer-slide](#using-the-type-answer-slide) | Using Slide Types | Free | ✅ Yes |
 | [how-to-use-rating-scale-slides-on-ahaslides](#how-to-use-rating-scale-slides-on-ahaslides) | Using Slide Types | All | ✅ Yes |
 | [using-qa](#using-qa) | Using Slide Types | Free | ✅ Yes |
 | [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Using Slide Types | All | ✅ Yes |
@@ -157,6 +159,18 @@
 **Summary:** The Correct Order quiz slide asks participants to place randomised statements in the correct order. Max 7 items.
 **MCP:** `create_slides(slide_type: "correct_order_quiz", options: [{position, text}], max: 7)` | `update_slide_properties_tool(type: "correctOrderQuizQuestion", minPoint, maxPoint, timeToAnswer)`
 **File:** `using-the-correct-order-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-correct-order-slide
+
+### using-the-pick-answer-slide
+**Plan:** Free | **MCP Actions:** ✅ Yes
+**Summary:** The Pick Answer slide is a scored multiple-choice quiz question where participants choose from up to 8 answer options on their phones. Mark one or more options correct, set points and a timer, and crown the winner on the leaderboard.
+**MCP:** `create_slides(slide_type: "pick_answer_quiz", heading: "...", options: [{text, correct: bool}])` | `update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
+**File:** `using-the-pick-answer-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-pick-answer-slide
+
+### using-the-type-answer-slide
+**Plan:** Free | **MCP Actions:** ✅ Yes
+**Summary:** The Type Answer slide is a scored quiz question with no options to choose from — participants type their answer, which must match one of the answers you accept. Also known as the Short Answer slide.
+**MCP:** `create_slides(slide_type: "short_answer_quiz", heading: "...", correct_answer: "...")` | `update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
+**File:** `using-the-type-answer-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-type-answer-slide
 
 ### how-to-use-rating-scale-slides-on-ahaslides
 **Plan:** All | **MCP Actions:** ✅ Yes
