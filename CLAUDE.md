@@ -7,6 +7,7 @@ This repository contains the AhaSlides knowledge base: Markdown articles publish
 - One Markdown file per KB article, named in `kebab-case`.
 - `INDEX.md` and `SUMMARY.md` are navigation manifests; update both when adding or removing articles.
 - `scripts/lint-slide-names.sh` validates article filenames. Run it before committing new articles.
+- KB-to-KB links MUST be relative `<article>.md`, never an absolute `docs.ahaslides.com` URL or a github/gitbook `.md` source URL. `scripts/lint-kb-links.sh` enforces this (also runs in CI via `.github/workflows/lint-kb-links.yml`); run it before committing.
 - `.env` contains secrets (never commit it — it is already in `.gitignore`).
 
 ## Researching AhaSlides features from source
