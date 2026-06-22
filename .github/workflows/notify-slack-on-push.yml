@@ -1,0 +1,64 @@
+name: Notify Slack on push
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  slack-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post Slack alert
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          ACTOR: ${{ github.actor }}
+          HEAD_MSG: ${{ github.event.head_commit.message }}
+          SHORT_SHA: ${{ github.sha }}
+          COMPARE_URL: ${{ github.event.compare }}
+          COMMIT_URL: ${{ github.event.head_commit.url }}
+          COMMIT_COUNT: ${{ toJson(github.event.commits) }}
+        run: |
+          # Extract the first line of the commit message and the short SHA
+          FIRST_LINE=$(printf '%s' "$HEAD_MSG" | head -n1)
+          SHORT=$(printf '%s' "$SHORT_SHA" | cut -c1-7)
+          COUNT=$(printf '%s' "$COMMIT_COUNT" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))" 2>/dev/null || echo "?")
+
+          PAYLOAD=$(jq -n \
+            --arg channel  "$SLACK_CHANNEL_ID" \
+            --arg repo     "$REPO" \
+            --arg branch   "$BRANCH" \
+            --arg actor    "$ACTOR" \
+            --arg count    "$COUNT" \
+            --arg msg      "$FIRST_LINE" \
+            --arg sha      "$SHORT" \
+            --arg compare  "$COMPARE_URL" \
+            --arg url      "$COMMIT_URL" \
+            '{
+              channel: $channel,
+              text: ("*New push to " + $repo + "* (`" + $branch + "`)\n" +
+                     "• *Pushed by:* " + $actor + "\n" +
+                     "• *Commits:* " + $count + "\n" +
+                     "• *Head commit:* `" + $sha + "` — " + $msg + "\n" +
+                     "• *Diff:* <" + $compare + "|View changes> | <" + $url + "|Head commit>")
+            }')
+
+          RESPONSE=$(curl -fsS -X POST https://slack.com/api/chat.postMessage \
+            -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$PAYLOAD")
+
+          echo "Slack response: $RESPONSE"
+          OK=$(printf '%s' "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('ok','false'))")
+          if [ "$OK" != "True" ] && [ "$OK" != "true" ]; then
+            echo "ERROR: Slack API returned ok=false"
+            exit 1
+          fi
+          echo "Slack notification sent successfully."
