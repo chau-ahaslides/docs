@@ -12,8 +12,7 @@
 ## Using slide types
 
 * [How to Make and Run a Quiz](how-to-make-and-run-a-quiz.md)
-* [Creating a Poll question on AhaSlides](creating-a-poll-question-on-ahaslides.md)
-* [How to Show or Hide the Audience Get slides button](how-to-show-or-hide-the-audience-get-slides-button.md)
+* [How to Make and Run a Poll](creating-a-poll-question-on-ahaslides.md)
 * [Using the Brainstorm Slide](using-the-brainstorm-slide.md)
 * [Using the Categorise Slide](using-the-categorise-slide.md)
 * [Using the Content Slide](using-the-content-slide.md)
@@ -43,6 +42,7 @@
 * [Collecting Audience Information](collecting-audience-information.md)
 * [How to Collaborate on Presentations and Folders](how-to-collaborate-on-presentations-and-folders.md)
 * [How to Preview and Test your Presentation](how-to-preview-and-test-your-presentation.md)
+* [How to Show or Hide the Audience Get slides button](how-to-show-or-hide-the-audience-get-slides-button.md)
 * [Importing a PowerPoint presentation or PDF file](importing-a-powerpoint-presentation-or-pdf-file.md)
 * [Moving and Editing Multiple Slides](moving-and-editing-multiple-slides.md)
 * [Multiple Presenters, One Presentation with the Presenter Role](presenter-role.md)

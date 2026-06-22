@@ -1,6 +1,6 @@
 ---
 id: 570272000000844051
-title: Creating a Poll question on AhaSlides
+title: How to Make and Run a Poll
 status: Published
 permalink: creating-a-poll-question-on-ahaslides
 category: Using Slide Types on AhaSlides
@@ -22,7 +22,7 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "A Poll slide is a quick and easy way to get live opinions in poll format from your audience. You can ask a question, provide up to 30 answer options, and see results update live as your audience votes."
 ---
 
-# Creating a Poll question on AhaSlides
+# How to Make and Run a Poll
 
 A Poll slide is a quick and easy way to get live opinions in poll format from your audience.
 

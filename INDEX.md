@@ -51,7 +51,7 @@
 | [running-a-team-quiz](#running-a-team-quiz) | Features | Pro | ✅ Partial |
 | [how-to-use-youtube-slides-on-ahaslides](#how-to-use-youtube-slides-on-ahaslides) | Using Slide Types | All | ✅ Partial |
 | [embedding-ahaslides-to-your-website](#embedding-ahaslides-to-your-website) | Presenting | All | No |
-| [how-to-show-or-hide-the-audience-get-slides-button](#how-to-show-or-hide-the-audience-get-slides-button) | Using Slide Types | All | No |
+| [how-to-show-or-hide-the-audience-get-slides-button](#how-to-show-or-hide-the-audience-get-slides-button) | Features | All | No |
 | [importing-a-powerpoint-presentation-or-pdf-file](#importing-a-powerpoint-presentation-or-pdf-file) | Features | All | No |
 | [using-your-google-slides-presentation-with-ahaslides](#using-your-google-slides-presentation-with-ahaslides) | Using Slide Types | Free | No |
 | [generating-questions-and-answers-using-ai-on-ahaslides](#generating-questions-and-answers-using-ai-on-ahaslides) | AI-powered | All | No |
@@ -131,15 +131,11 @@
 **File:** `how-to-make-and-run-a-quiz.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-make-and-run-a-quiz
 
 ### creating-a-poll-question-on-ahaslides
+**Title:** How to Make and Run a Poll
 **Plan:** All | **MCP Actions:** ✅ Yes
 **Summary:** A Poll slide is a quick and easy way to get live opinions from your audience — ask a question, provide up to 30 answer options, and see results update live as participants vote.
 **MCP:** `create_slides(slide_type: "poll", heading: "...", options: [{text}])` | `update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")`
 **File:** `creating-a-poll-question-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/creating-a-poll-question-on-ahaslides
-
-### how-to-show-or-hide-the-audience-get-slides-button
-**Plan:** All | **MCP Actions:** No
-**Summary:** Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
-**File:** `how-to-show-or-hide-the-audience-get-slides-button.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
 
 ### using-the-brainstorm-slide
 **Plan:** All | **MCP Actions:** ✅ Yes
@@ -280,6 +276,11 @@
 **Plan:** All | **MCP Actions:** No
 **Summary:** Preview mode lets you see how your presentation will look on both your and your audience's devices, and interact with your own slides before going live.
 **File:** `how-to-preview-and-test-your-presentation.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-preview-and-test-your-presentation
+
+### how-to-show-or-hide-the-audience-get-slides-button
+**Plan:** All | **MCP Actions:** No
+**Summary:** Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
+**File:** `how-to-show-or-hide-the-audience-get-slides-button.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
 
 ### presenter-role
 **Plan:** Pro | **MCP Actions:** No
