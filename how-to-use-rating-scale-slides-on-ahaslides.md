@@ -1,6 +1,6 @@
 ---
 id: 570272000000696303
-title: How to Use Rating Scale Slides on AhaSlides
+title: Using the Rating Scale Slide
 status: Published
 permalink: how-to-use-rating-scale-slides-on-ahaslides
 category: Using Slide Types on AhaSlides
@@ -22,7 +22,7 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "Rating Scale slide is a great one to use if you're looking for more nuanced responses that you can't get from a simple 'yes or no' option on a multiple-choice slide. It allows the host to pose a broad question with specific statements that the audience rates on a sliding scale."
 ---
 
-# How to Use Rating Scale Slides on AhaSlides
+# Using the Rating Scale Slide
 
 Rating Scale slide is a great one to use if you're looking for more nuanced responses that you can't get from a simple 'yes or no' option on a multiple-choice slide.
 

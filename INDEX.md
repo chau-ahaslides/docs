@@ -26,7 +26,7 @@
 | [using-the-type-answer-slide](#using-the-type-answer-slide) | Using Slide Types | Free | ✅ Yes |
 | [how-to-use-rating-scale-slides-on-ahaslides](#how-to-use-rating-scale-slides-on-ahaslides) | Using Slide Types | All | ✅ Yes |
 | [using-qa](#using-qa) | Using Slide Types | Free | ✅ Yes |
-| [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Using Slide Types | All | ✅ Yes |
+| [adding-and-deleting-a-leaderboard-on-your-quiz](#adding-and-deleting-a-leaderboard-on-your-quiz) | Features | All | ✅ Yes |
 | [creating-a-poll-question-on-ahaslides](#creating-a-poll-question-on-ahaslides) | Using Slide Types | All | ✅ Yes |
 | [using-the-categorise-slide](#using-the-categorise-slide) | Using Slide Types | All | ✅ Yes |
 | [using-the-content-slide](#using-the-content-slide) | Using Slide Types | All | ✅ Yes |
@@ -50,10 +50,10 @@
 | [upload-image-guidelines-for-ahaslides](#upload-image-guidelines-for-ahaslides) | Features | All | No |
 | [running-a-team-quiz](#running-a-team-quiz) | Features | Pro | ✅ Partial |
 | [how-to-use-youtube-slides-on-ahaslides](#how-to-use-youtube-slides-on-ahaslides) | Using Slide Types | All | ✅ Partial |
-| [embedding-ahaslides-to-your-website](#embedding-ahaslides-to-your-website) | Using Slide Types | All | No |
+| [embedding-ahaslides-to-your-website](#embedding-ahaslides-to-your-website) | Presenting | All | No |
 | [how-to-show-or-hide-the-audience-get-slides-button](#how-to-show-or-hide-the-audience-get-slides-button) | Using Slide Types | All | No |
 | [importing-a-powerpoint-presentation-or-pdf-file](#importing-a-powerpoint-presentation-or-pdf-file) | Features | All | No |
-| [using-your-google-slides-presentation-with-ahaslides](#using-your-google-slides-presentation-with-ahaslides) | Features | Free | No |
+| [using-your-google-slides-presentation-with-ahaslides](#using-your-google-slides-presentation-with-ahaslides) | Using Slide Types | Free | No |
 | [generating-questions-and-answers-using-ai-on-ahaslides](#generating-questions-and-answers-using-ai-on-ahaslides) | AI-powered | All | No |
 | [generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides](#generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides) | AI-powered | All | No |
 | [how-to-use-profanity-filter](#how-to-use-profanity-filter) | Presenting | All | No |
@@ -130,82 +130,22 @@
 **MCP:** `create_slides(slide_type: "pick_answer_quiz" | "short_answer_quiz" | "leaderboard")`
 **File:** `how-to-make-and-run-a-quiz.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-make-and-run-a-quiz
 
-### using-the-spinner-wheel
+### creating-a-poll-question-on-ahaslides
 **Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** The spinner wheel lets a presenter pick any entry at random by spinning the wheel. Supports up to 5,000 entries, autofill with participant names, and configurable spin duration.
-**MCP:** `create_slides(slide_type: "spinner_wheel", options: [{text}], max: 50)` | `update_slide_properties_tool(type: "spinnerWheelQuestion", metadata.spinningDuration, metadata.autoFillParticipantName)`
-**File:** `using-the-spinner-wheel.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-spinner-wheel
-
-### using-the-word-cloud-slide
-**Plan:** Free | **MCP Actions:** ✅ Yes
-**Summary:** A word cloud lets participants submit short written responses, displayed together with the most popular appearing larger in the cloud.
-**MCP:** `create_slides(slide_type: "word_cloud", heading: "...")` | `update_slide_properties_tool(type: "wordCloudQuestion", entriesPerParticipant: int)`
-**File:** `using-the-word-cloud-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-word-cloud-slide
-
-### using-the-brainstorm-slide
-**Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** A Brainstorm slide lets participants put forward ideas and vote for their favourites, guiding audiences through submitting ideas, voting, and viewing results.
-**MCP:** `create_slides(slide_type: "brainstorm", heading: "...")` | `update_slide_properties_tool(type: "brainstormActivity", limitChoice: int)`
-**File:** `using-the-brainstorm-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-brainstorm-slide
-
-### using-the-match-pairs-slide
-**Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** The Match Pairs slide is a quiz slide where players must match a set of prompts with a set of answers. Max 4 pairs.
-**MCP:** `create_slides(slide_type: "match_pairs_quiz", pairs: [{left_item, right_item}], max: 4)` | `update_slide_properties_tool(type: "matchPairsQuizQuestion", minPoint, maxPoint, timeToAnswer)`
-**File:** `using-the-match-pairs-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-match-pairs-slide
-
-### using-the-correct-order-slide
-**Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** The Correct Order quiz slide asks participants to place randomised statements in the correct order. Max 7 items.
-**MCP:** `create_slides(slide_type: "correct_order_quiz", options: [{position, text}], max: 7)` | `update_slide_properties_tool(type: "correctOrderQuizQuestion", minPoint, maxPoint, timeToAnswer)`
-**File:** `using-the-correct-order-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-correct-order-slide
-
-### using-the-pick-answer-slide
-**Plan:** Free | **MCP Actions:** ✅ Yes
-**Summary:** The Pick Answer slide is a scored multiple-choice quiz question where participants choose from up to 8 answer options on their phones. Mark one or more options correct, set points and a timer, and crown the winner on the leaderboard.
-**MCP:** `create_slides(slide_type: "pick_answer_quiz", heading: "...", options: [{text, correct: bool}])` | `update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
-**File:** `using-the-pick-answer-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-pick-answer-slide
-
-### using-the-type-answer-slide
-**Plan:** Free | **MCP Actions:** ✅ Yes
-**Summary:** The Type Answer slide is a scored quiz question with no options to choose from — participants type their answer, which must match one of the answers you accept. Also known as the Short Answer slide.
-**MCP:** `create_slides(slide_type: "short_answer_quiz", heading: "...", correct_answer: "...")` | `update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
-**File:** `using-the-type-answer-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-type-answer-slide
-
-### how-to-use-rating-scale-slides-on-ahaslides
-**Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** Rating Scale slides allow hosts to pose a broad question with specific statements that the audience rates on a sliding scale — great for nuanced responses.
-**MCP:** `create_slides(slide_type: "scale", scale_config: {low_label, high_label, low_value, high_value, must_rate, show_average, show_mid_values})`
-**File:** `how-to-use-rating-scale-slides-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-rating-scale-slides-on-ahaslides
-
-### using-qa
-**Plan:** Free | **MCP Actions:** ✅ Yes
-**Summary:** The Q&A slide lets audience members submit questions to the presenter during a live presentation.
-**MCP:** `create_slides(slide_type: "q&a", heading: "...")`
-**File:** `using-qa.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-qa
-
-### adding-and-deleting-a-leaderboard-on-your-quiz
-**Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** The Leaderboard displays rankings and scores of quiz participants. Works only with quiz slides (Pick Answer, Short Answer, Match Pairs, Correct Order, Categorise).
-**MCP:** `create_slides(slide_type: "leaderboard")` | `update_slide_properties_tool(type: "leaderboard", deleted: true)`
-**File:** `adding-and-deleting-a-leaderboard-on-your-quiz.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/adding-and-deleting-a-leaderboard-on-your-quiz
-
-### how-to-use-youtube-slides-on-ahaslides
-**Plan:** All | **MCP Actions:** ✅ Partial
-**Summary:** AhaSlides YouTube Slides let you play YouTube videos on both the presenter and audience screen.
-**MCP:** `create_slides(slide_type: "content", paragraphs: ["..."])` — No dedicated YouTube slide type in MCP.
-**File:** `how-to-use-youtube-slides-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-youtube-slides-on-ahaslides
+**Summary:** A Poll slide is a quick and easy way to get live opinions from your audience — ask a question, provide up to 30 answer options, and see results update live as participants vote.
+**MCP:** `create_slides(slide_type: "poll", heading: "...", options: [{text}])` | `update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")`
+**File:** `creating-a-poll-question-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/creating-a-poll-question-on-ahaslides
 
 ### how-to-show-or-hide-the-audience-get-slides-button
 **Plan:** All | **MCP Actions:** No
 **Summary:** Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
 **File:** `how-to-show-or-hide-the-audience-get-slides-button.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
 
-### creating-a-poll-question-on-ahaslides
+### using-the-brainstorm-slide
 **Plan:** All | **MCP Actions:** ✅ Yes
-**Summary:** A Poll slide is a quick and easy way to get live opinions from your audience — ask a question, provide up to 30 answer options, and see results update live as participants vote.
-**MCP:** `create_slides(slide_type: "poll", heading: "...", options: [{text}])` | `update_slide_properties_tool(type: "pollQuestion", showPercentage: bool, addCorrectOption: bool, multipleChoice: bool, limitChoice: int, typeChart: "barChart"|"donutChart"|"pieChart")`
-**File:** `creating-a-poll-question-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/creating-a-poll-question-on-ahaslides
+**Summary:** A Brainstorm slide lets participants put forward ideas and vote for their favourites, guiding audiences through submitting ideas, voting, and viewing results.
+**MCP:** `create_slides(slide_type: "brainstorm", heading: "...")` | `update_slide_properties_tool(type: "brainstormActivity", limitChoice: int)`
+**File:** `using-the-brainstorm-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-brainstorm-slide
 
 ### using-the-categorise-slide
 **Plan:** All | **MCP Actions:** ✅ Yes
@@ -219,22 +159,77 @@
 **MCP:** `create_slides(slide_type: "content", heading: "...", paragraphs: [])` | `update_slide_properties_tool(type: "staticContent", deleted: true)`
 **File:** `using-the-content-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-content-slide
 
+### using-the-content-v2-slide
+**Plan:** All | **MCP Actions:** No
+**Summary:** The Content v2 slide is a fully flexible design canvas for creating polished, layout-driven slides. Start from a ready-made layout or build your own by inserting text, callout, visual, media, and data blocks from scratch.
+**File:** `using-the-content-v2-slide.md`
+
+### using-the-correct-order-slide
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** The Correct Order quiz slide asks participants to place randomised statements in the correct order. Max 7 items.
+**MCP:** `create_slides(slide_type: "correct_order_quiz", options: [{position, text}], max: 7)` | `update_slide_properties_tool(type: "correctOrderQuizQuestion", minPoint, maxPoint, timeToAnswer)`
+**File:** `using-the-correct-order-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-correct-order-slide
+
+### using-the-diagram-slide
+**Plan:** All | **MCP Actions:** No (slide_type string unconfirmed — see draft)
+**Summary:** The Diagram slide lets you build and display visual diagrams — such as flowcharts, mind maps, or org charts — directly in your AhaSlides presentation, turning complex relationships into clear, structured visuals for your audience.
+**File:** `using-the-diagram-slide.md`
+
+### how-to-use-the-idea-board-slide
+**Plan:** All | **MCP Actions:** No
+**Title:** Using the Idea Board Slide
+**Summary:** An Idea Board slide lets your audience submit ideas organized into themes in real time, helping you spot patterns and turn raw feedback into structured insights.
+**File:** `how-to-use-the-idea-board-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-the-idea-board-slide
+
+### using-the-match-pairs-slide
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** The Match Pairs slide is a quiz slide where players must match a set of prompts with a set of answers. Max 4 pairs.
+**MCP:** `create_slides(slide_type: "match_pairs_quiz", pairs: [{left_item, right_item}], max: 4)` | `update_slide_properties_tool(type: "matchPairsQuizQuestion", minPoint, maxPoint, timeToAnswer)`
+**File:** `using-the-match-pairs-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-match-pairs-slide
+
 ### using-the-open-ended-slide
 **Plan:** All | **MCP Actions:** ✅ Yes
 **Summary:** An Open Ended slide collects free-text responses from your audience in their own words, displayed in grid or one-by-one layout. Supports image submission.
 **MCP:** `create_slides(slide_type: "open_ended_survey", heading: "...")` | `update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)`
 **File:** `using-the-open-ended-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-open-ended-slide
 
+### using-the-pick-answer-slide
+**Plan:** Free | **MCP Actions:** ✅ Yes
+**Summary:** The Pick Answer slide is a scored multiple-choice quiz question where participants choose from up to 8 answer options on their phones. Mark one or more options correct, set points and a timer, and crown the winner on the leaderboard.
+**MCP:** `create_slides(slide_type: "pick_answer_quiz", heading: "...", options: [{text, correct: bool}])` | `update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
+**File:** `using-the-pick-answer-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-pick-answer-slide
+
+### using-the-pin-on-image-slide
+**Plan:** All | **MCP Actions:** No
+**Summary:** The Pin on Image slide lets participants tap or click to place a pin anywhere on a custom image — great for heatmaps, location spotting, diagram labelling, and spatial feedback.
+**File:** `using-the-pin-on-image-slide.md`
+
+### using-qa
+**Plan:** Free | **MCP Actions:** ✅ Yes
+**Title:** Using the Q&A Slide
+**Summary:** The Q&A slide lets audience members submit questions to the presenter during a live presentation.
+**MCP:** `create_slides(slide_type: "q&a", heading: "...")`
+**File:** `using-qa.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-qa
+
 ### using-the-ranking-slide
 **Plan:** All | **MCP Actions:** ✅ Partial
+**Title:** Using the Ranking Slide
 **Summary:** A Ranking slide lets your audience prioritize a list of options — instead of picking a favourite, participants rank what matters most. Results update instantly.
 **MCP:** `create_slides(slide_type: "poll", heading: "...", options: [{text}])` — Ranking is a poll variant.
 **File:** `using-the-ranking-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-ranking-slide
 
-### how-to-use-the-idea-board-slide
-**Plan:** All | **MCP Actions:** No
-**Summary:** An Idea Board slide lets your audience submit ideas organized into themes in real time, helping you spot patterns and turn raw feedback into structured insights.
-**File:** `how-to-use-the-idea-board-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-the-idea-board-slide
+### how-to-use-rating-scale-slides-on-ahaslides
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Title:** Using the Rating Scale Slide
+**Summary:** Rating Scale slides allow hosts to pose a broad question with specific statements that the audience rates on a sliding scale — great for nuanced responses.
+**MCP:** `create_slides(slide_type: "scale", scale_config: {low_label, high_label, low_value, high_value, must_rate, show_average, show_mid_values})`
+**File:** `how-to-use-rating-scale-slides-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-rating-scale-slides-on-ahaslides
+
+### using-the-spinner-wheel
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** The spinner wheel lets a presenter pick any entry at random by spinning the wheel. Supports up to 5,000 entries, autofill with participant names, and configurable spin duration.
+**MCP:** `create_slides(slide_type: "spinner_wheel", options: [{text}], max: 50)` | `update_slide_properties_tool(type: "spinnerWheelQuestion", metadata.spinningDuration, metadata.autoFillParticipantName)`
+**File:** `using-the-spinner-wheel.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-spinner-wheel
 
 ### using-the-surveys-tool
 **Plan:** All | **MCP Actions:** No
@@ -242,29 +237,39 @@
 **File:** `using-the-surveys-tool.md`
 **Video:** https://www.youtube.com/watch?v=LXRHtEqirN0 (supersedes m6fRdEv3Cqg — please delete old video in YouTube Studio)
 
-### using-the-content-v2-slide
-**Plan:** All | **MCP Actions:** No
-**Summary:** The Content v2 slide is a fully flexible design canvas for creating polished, layout-driven slides. Start from a ready-made layout or build your own by inserting text, callout, visual, media, and data blocks from scratch.
-**File:** `using-the-content-v2-slide.md`
+### using-the-type-answer-slide
+**Plan:** Free | **MCP Actions:** ✅ Yes
+**Summary:** The Type Answer slide is a scored quiz question with no options to choose from — participants type their answer, which must match one of the answers you accept. Also known as the Short Answer slide.
+**MCP:** `create_slides(slide_type: "short_answer_quiz", heading: "...", correct_answer: "...")` | `update_slide_properties_tool(type: "multipleChoiceQuizQuestion", minPoint, maxPoint, timeToAnswer, fastAnswerGetMorePoint)`
+**File:** `using-the-type-answer-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-type-answer-slide
 
-### using-the-diagram-slide
-**Plan:** All | **MCP Actions:** No (slide_type string unconfirmed — see draft)
-**Summary:** The Diagram slide lets you build and display visual diagrams — such as flowcharts, mind maps, or org charts — directly in your AhaSlides presentation, turning complex relationships into clear, structured visuals for your audience.
-**File:** `using-the-diagram-slide.md`
+### using-the-word-cloud-slide
+**Plan:** Free | **MCP Actions:** ✅ Yes
+**Summary:** A word cloud lets participants submit short written responses, displayed together with the most popular appearing larger in the cloud.
+**MCP:** `create_slides(slide_type: "word_cloud", heading: "...")` | `update_slide_properties_tool(type: "wordCloudQuestion", entriesPerParticipant: int)`
+**File:** `using-the-word-cloud-slide.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-the-word-cloud-slide
 
-### using-the-pin-on-image-slide
-**Plan:** All | **MCP Actions:** No
-**Summary:** The Pin on Image slide lets participants tap or click to place a pin anywhere on a custom image — great for heatmaps, location spotting, diagram labelling, and spatial feedback.
-**File:** `using-the-pin-on-image-slide.md`
+### how-to-use-youtube-slides-on-ahaslides
+**Plan:** All | **MCP Actions:** ✅ Partial
+**Title:** Using the YouTube Slide
+**Summary:** AhaSlides YouTube Slides let you play YouTube videos on both the presenter and audience screen.
+**MCP:** `create_slides(slide_type: "content", paragraphs: ["..."])` — No dedicated YouTube slide type in MCP.
+**File:** `how-to-use-youtube-slides-on-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/how-to-use-youtube-slides-on-ahaslides
 
-### embedding-ahaslides-to-your-website
-**Plan:** All | **MCP Actions:** No
-**Summary:** Embed AhaSlides into your website using an iframe code pointing to your presentation's audience link.
-**File:** `embedding-ahaslides-to-your-website.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/embedding-ahaslides-to-your-website
+### using-your-google-slides-presentation-with-ahaslides
+**Plan:** Free | **MCP Actions:** No
+**Summary:** Import your Google Slides presentation into AhaSlides and add interactive elements to bring it to life. Import via web UI only.
+**File:** `using-your-google-slides-presentation-with-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-your-google-slides-presentation-with-ahaslides
 
 ---
 
 ## ⚙️ Features and functions
+
+### adding-and-deleting-a-leaderboard-on-your-quiz
+**Plan:** All | **MCP Actions:** ✅ Yes
+**Summary:** The Leaderboard displays rankings and scores of quiz participants. Works only with quiz slides (Pick Answer, Short Answer, Match Pairs, Correct Order, Categorise).
+**MCP:** `create_slides(slide_type: "leaderboard")` | `update_slide_properties_tool(type: "leaderboard", deleted: true)`
+**File:** `adding-and-deleting-a-leaderboard-on-your-quiz.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/adding-and-deleting-a-leaderboard-on-your-quiz
 
 ### adding-notes-to-your-presentation
 **Plan:** All | **MCP Actions:** No
@@ -330,11 +335,6 @@
 **Summary:** Import a PowerPoint (PPT/PPTX) or PDF into AhaSlides and add interactive slides between your existing slides. Import via web UI only.
 **File:** `importing-a-powerpoint-presentation-or-pdf-file.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/importing-a-powerpoint-presentation-or-pdf-file
 
-### using-your-google-slides-presentation-with-ahaslides
-**Plan:** Free | **MCP Actions:** No
-**Summary:** Import your Google Slides presentation into AhaSlides and add interactive elements to bring it to life. Import via web UI only.
-**File:** `using-your-google-slides-presentation-with-ahaslides.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/using-your-google-slides-presentation-with-ahaslides
-
 ### upload-image-guidelines-for-ahaslides
 **Plan:** All | **MCP Actions:** No
 **Summary:** Supports JPEG, PNG, GIF. Max 15MB upload. Recommended 2K resolution (2560×1440) for full-screen backgrounds.
@@ -357,6 +357,11 @@
 ---
 
 ## 🎤 Presenting
+
+### embedding-ahaslides-to-your-website
+**Plan:** All | **MCP Actions:** No
+**Summary:** Embed AhaSlides into your website using an iframe code pointing to your presentation's audience link.
+**File:** `embedding-ahaslides-to-your-website.md` | **Portal:** https://help.ahaslides.com/portal/en/kb/articles/embedding-ahaslides-to-your-website
 
 ### how-to-use-profanity-filter
 **Plan:** All | **MCP Actions:** No

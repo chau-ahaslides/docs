@@ -1,6 +1,6 @@
 ---
 id: 570272000176786449
-title: How to use the Idea Board slide
+title: Using the Idea Board Slide
 status: Published
 permalink: how-to-use-the-idea-board-slide
 category: Using Slide Types on AhaSlides
@@ -20,7 +20,7 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "An Idea Board slide lets your audience submit ideas and see them organized into themes, not just read a scattered list of responses. Results are updated in real time, helping you spot patterns and turn raw feedback into structured insights instantly."
 ---
 
-# How to use the Idea Board slide
+# Using the Idea Board Slide
 
 An Idea Board slide lets your audience submit ideas and see them organized into themes, not just read a scattered list of responses. Instead of asking "What do you think?", you're asking: "What themes emerge from our collective thinking?"
 

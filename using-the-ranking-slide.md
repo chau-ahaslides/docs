@@ -1,6 +1,6 @@
 ---
 id: 570272000171154277
-title: How to Use the Ranking Slide in AhaSlides
+title: Using the Ranking Slide
 status: Published
 permalink: using-the-ranking-slide
 category: Using Slide Types on AhaSlides
@@ -21,7 +21,7 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "A Ranking slide lets your audience prioritize a list of options, not just pick their favorite. Instead of asking \"What do you like?\", you're asking \"What matters most?\" Results update instantly as responses come in."
 ---
 
-# How to Use the Ranking Slide in AhaSlides
+# Using the Ranking Slide
 
 A Ranking slide lets your audience **prioritize a list of options**, not just pick their favorite. Instead of asking "What do you like?", you're asking: **"What matters most?"**
 

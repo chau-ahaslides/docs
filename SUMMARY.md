@@ -11,34 +11,33 @@
 
 ## Using slide types
 
-* [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
-* [Creating a Poll question on AhaSlides](creating-a-poll-question-on-ahaslides.md)
-* [Embedding AhaSlides to your Website](embedding-ahaslides-to-your-website.md)
 * [How to Make and Run a Quiz](how-to-make-and-run-a-quiz.md)
+* [Creating a Poll question on AhaSlides](creating-a-poll-question-on-ahaslides.md)
 * [How to Show or Hide the Audience Get slides button](how-to-show-or-hide-the-audience-get-slides-button.md)
-* [How to Use Rating Scale Slides on AhaSlides](how-to-use-rating-scale-slides-on-ahaslides.md)
-* [How to use the Idea Board slide](how-to-use-the-idea-board-slide.md)
-* [How to Use the Ranking Slide in AhaSlides](using-the-ranking-slide.md)
-* [How to Use YouTube Slides on AhaSlides](how-to-use-youtube-slides-on-ahaslides.md)
-* [Using Q&A](using-qa.md)
 * [Using the Brainstorm Slide](using-the-brainstorm-slide.md)
 * [Using the Categorise Slide](using-the-categorise-slide.md)
-* [Using the Diagram Slide](using-the-diagram-slide.md)
-* [Using the Pin on Image Slide](using-the-pin-on-image-slide.md)
 * [Using the Content Slide](using-the-content-slide.md)
 * [Using the Content v2 Slide](using-the-content-v2-slide.md)
 * [Using the Correct Order Slide](using-the-correct-order-slide.md)
+* [Using the Diagram Slide](using-the-diagram-slide.md)
+* [Using the Idea Board Slide](how-to-use-the-idea-board-slide.md)
 * [Using the Match Pairs Slide](using-the-match-pairs-slide.md)
 * [Using the Open Ended Slide](using-the-open-ended-slide.md)
 * [Using the Pick Answer Slide](using-the-pick-answer-slide.md)
-* [Using the Type Answer Slide](using-the-type-answer-slide.md)
+* [Using the Pin on Image Slide](using-the-pin-on-image-slide.md)
+* [Using the Q&A Slide](using-qa.md)
+* [Using the Ranking Slide](using-the-ranking-slide.md)
+* [Using the Rating Scale Slide](how-to-use-rating-scale-slides-on-ahaslides.md)
 * [Using the Spinner Wheel](using-the-spinner-wheel.md)
 * [Using the Surveys Tool](using-the-surveys-tool.md)
+* [Using the Type Answer Slide](using-the-type-answer-slide.md)
 * [Using the Word Cloud Slide](using-the-word-cloud-slide.md)
+* [Using the YouTube Slide](how-to-use-youtube-slides-on-ahaslides.md)
 * [Using your Google Slides Presentation with AhaSlides](using-your-google-slides-presentation-with-ahaslides.md)
 
 ## Features and functions
 
+* [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
 * [Adding notes to your presentation](adding-notes-to-your-presentation.md)
 * [Changing the Display Language](changing-the-display-language.md)
 * [Collecting Audience Information](collecting-audience-information.md)
@@ -59,6 +58,7 @@
 
 ## Presenting
 
+* [Embedding AhaSlides to your Website](embedding-ahaslides-to-your-website.md)
 * [How to Use the Profanity Filter](how-to-use-profanity-filter.md)
 * [Setting up a Self-Paced presentation on AhaSlides](setting-up-a-self-paced-presentation-on-ahaslides.md)
 * [Sharing your presentation for participants to join](sharing-your-presentation-for-participants-to-join.md)

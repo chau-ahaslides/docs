@@ -1,6 +1,6 @@
 ---
 id: 570272000000817195
-title: Using Q&A
+title: Using the Q&A Slide
 status: Published
 permalink: using-q-and-a
 category: Using Slide Types on AhaSlides
@@ -21,7 +21,7 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "Learn how to use the Q&A feature in your AhaSlides presentation, as well as the settings to get the most out of it."
 ---
 
-# Using Q&A
+# Using the Q&A Slide
 
 The Q&A feature lets you gather questions from your audience. You can then organise all these questions and answer them all one-by-one.
 

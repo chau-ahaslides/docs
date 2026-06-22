@@ -1,6 +1,6 @@
 ---
 id: 570272000000817017
-title: How to Use YouTube Slides on AhaSlides
+title: Using the YouTube Slide
 status: Published
 permalink: how-to-use-youtube-slides-on-ahaslides
 category: Using Slide Types on AhaSlides
@@ -21,7 +21,7 @@ warning: "Do not update article body via ZohoDesk_updateArticle using this local
 description: "AhaSlides YouTube Slides let you play YouTube videos on both the presenter and audience screen. Audience members need to click the Play button on the video themselves."
 ---
 
-# How to Use YouTube Slides on AhaSlides
+# Using the YouTube Slide
 
 ## AhaSlides YouTube slides let you play YouTube videos on both the presenter and audience screen.
 
