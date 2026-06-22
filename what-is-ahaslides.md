@@ -24,7 +24,7 @@ description: "Turn your next presentation into a two-way conversation. AhaSlides
 
 **AhaSlides is a free interactive presentation tool that lets audiences respond to polls, quizzes, word clouds, and Q&A in real time from their phones.** Used by 2M+ presenters at companies, schools, and events in 142,000+ organisations worldwide, it turns one-way presentations into live two-way conversations — in any classroom, meeting room, or webinar.
 
-> 📹 **Watch a 2-minute overview** → [What is AhaSlides?](https://www.youtube.com/embed/4xyVd-qWTxs)
+{% embed url="https://www.youtube.com/watch?v=4xyVd-qWTxs" %}
 
 ---
 
