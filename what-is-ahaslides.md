@@ -15,7 +15,7 @@ portal_url: https://help.ahaslides.com/portal/en/kb/articles/what-is-ahaslides
 related_articles: ["sharing-a-presentation-to-your-participants", "creating-a-poll-question-on-ahaslides", "importing-a-powerpoint-or-pdf-file-from-your-computer", "how-to-make-and-run-a-quiz", "using-the-word-cloud-slide", "using-the-open-ended-slide", "using-the-brainstorm-slide", "using-q-and-a", "how-to-use-rating-scale-slides-on-ahaslides"]
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-description: "Turn your next presentation into a two-way conversation. AhaSlides is a free interactive presentation tool with live polls, quizzes, word clouds, and Q&A that your audience joins from their phones — no app needed."
+description: "AhaSlides is a free interactive presentation tool with live polls, quizzes, word clouds, and Q&A that your audience joins from their phones. No app needed."
 ---
 
 # What is AhaSlides?
