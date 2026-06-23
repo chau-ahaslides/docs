@@ -11,3 +11,7 @@ out-videos/
 
 # Node workspace for the tutorial-video recording pipeline
 node_modules/
+
+# Zoho MCP local secrets / token cache (mcp/zoho/.env is covered by the .env rule above)
+mcp/zoho/access_token.txt
+__pycache__/

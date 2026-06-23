@@ -4,6 +4,27 @@
       "type": "http",
       "url": "https://mcp.ahaslides.com/mcp"
     },
+    "zoho": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--python",
+        "3.11",
+        "--with",
+        "fastmcp",
+        "--with",
+        "requests",
+        "--with",
+        "python-dotenv",
+        "--directory",
+        "./mcp/zoho",
+        "fastmcp",
+        "run",
+        "mcp_server.py:mcp"
+      ],
+      "env": {}
+    },
     "youtube-uploader": {
       "type": "stdio",
       "command": "${HOME}/.local/bin/youtube-uploader-mcp-darwin-arm64",
