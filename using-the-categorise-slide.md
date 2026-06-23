@@ -84,9 +84,7 @@ By using Categorise slides, you can turn any sorting task — from scientific cl
 
 Want a ready-made example? This template runs three Categorise rounds built for onboarding: sort company values into **Strategic Priority** or **Cultural Pillar**, classify customer complaints by **support tier**, and assign onboarding tasks to **HR**, **IT**, or **Manager**.
 
-{% embed url="https://presenter.ahaslides.com/shared-template/1782226095960-ea9alcp4ex?hideAccessCode=true&hideText=true" %}
-Corporate Training & Onboarding — a ready-made Categorise quiz template
-{% endembed %}
+<iframe src="https://presenter.ahaslides.com/shared-template/1782226095960-ea9alcp4ex?hideAccessCode=true&hideText=true" style="width: 100%; height: 480px; border: none; border-radius: 8px;" allowfullscreen> <p>Your browser does not support iframes. <a href="https://presenter.ahaslides.com/shared-template/1782226095960-ea9alcp4ex?hideAccessCode=true&hideText=true">Open the Corporate Training &#38; Onboarding template</a>.</p> </iframe>
 
 <p align="center"><a href="https://presenter.ahaslides.com/demo/?refer=using-the-categorise-slide&sourcePresentation=9558419" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;background:#6A1EBB;color:#fff;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;text-decoration:none;line-height:1;">Use this template →</a></p>
 
