@@ -80,14 +80,6 @@ On the participant screen, items appear shuffled in a list. Participants tap and
 
 By using Categorise slides, you can turn any sorting task — from scientific classification to sales objection handling — into an engaging live activity that keeps your audience actively thinking, not passively watching.
 
-## Try it: Classroom template
-
-A ready-made Categorise activity — "Sort It Out: Parts of Speech" — that you can copy straight into your own account. Students sort 11 words (mountain, run, brilliant, and more) into Noun, Verb, and Adjective buckets in real time.
-
-![Sort It Out: Parts of Speech — Categorise template preview showing Noun, Verb, and Adjective columns](.gitbook/assets/categorise-sort-parts-of-speech-preview.png)
-
-<p align="center"><a href="https://presenter.ahaslides.com/share/sort-it-out-parts-of-speech-classroom-categorise-activity-1781516241606-55jdubirlh" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;background:#6A1EBB;color:#fff;padding:0 24px;height:44px;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;text-decoration:none;">Use this template →</a></p>
-
 ## Common use cases
 
 The Categorise slide works wherever sorting or grouping reveals knowledge — here are some of the most common contexts:
