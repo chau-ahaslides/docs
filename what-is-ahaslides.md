@@ -138,3 +138,5 @@ AhaSlides connects with the tools you already use:
 Ready to run your first interactive presentation? [Create your free AhaSlides account](https://presenter.ahaslides.com/pages/register) — no credit card, no time limit.
 
 > **Next step:** [Creating your AhaSlides account](creating-your-ahaslides-account.md)
+
+*Last updated: 2026-06-22*

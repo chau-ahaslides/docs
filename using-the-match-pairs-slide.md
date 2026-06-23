@@ -57,3 +57,5 @@ In the AhaSlides editor, add a Match Pairs slide and do the following:
 - **Test for red herrings.** Read all right-side options together and make sure none of them almost fit multiple left-side items in a misleading way, unless that's intentional difficulty.
 
 For more help, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).
+
+*Last updated: 2026-06-22*

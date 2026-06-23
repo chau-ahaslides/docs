@@ -104,3 +104,5 @@ The Categorise slide works wherever sorting or grouping reveals knowledge — he
 
 - **Market research and customer sessions**
   Ask participants to sort product attributes into "must-have", "nice-to-have", and "not needed" columns, or group use cases by department. The live category totals give instant, unfiltered signal on how your audience thinks about your product.
+
+*Last updated: 2026-06-23*

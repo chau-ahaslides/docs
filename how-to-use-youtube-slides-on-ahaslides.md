@@ -41,3 +41,5 @@ Remember to check the box **Also show on audience's smartphones** if you want to
 4. Press Enter.
 
 *The Shorts link will be converted into a regular YouTube watch link, which you can then embed into AhaSlides.*
+
+*Last updated: 2026-06-22*

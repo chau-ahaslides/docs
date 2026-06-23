@@ -126,3 +126,5 @@ Check the Survey's status in your Surveys list. If it is still **Draft**, it has
 
 **Can I test my Survey before sending it out?**
 Yes. Click **Preview** to see how it looks on respondent devices and submit a test response. Remember to remove your test submission from the results before sharing the Survey for real.
+
+*Last updated: 2026-06-22*

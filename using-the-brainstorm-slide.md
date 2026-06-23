@@ -68,3 +68,5 @@ If participants are accessing the slide in [self-paced mode](setting-up-a-self-p
 There is one limitation to keep in mind: participants who go through the slide earlier cannot see ideas submitted after they voted, so late submitters have fewer votes coming their way.
 
 To work around this, ask participants to submit their ideas first, then return to the presentation later once all submissions are in before voting begins.
+
+*Last updated: 2026-06-22*

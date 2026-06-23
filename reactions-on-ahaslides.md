@@ -42,3 +42,5 @@ You can let your audience send live reactions during your presentation, so parti
 3. Choose which reactions your audience can send during the presentation: Like, Love, Haha, Wow, and Sad.
 
 Once enabled, your audience can tap the reactions you selected on their devices, and the reactions appear live during your presentation.
+
+*Last updated: 2026-06-23*

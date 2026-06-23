@@ -158,4 +158,4 @@ Here are example prompts to get started:
 
 - AhaSlides Support: hi@ahaslides.com
 
-*Last updated: April 2026*
+*Last updated: 2026-06-22*

@@ -47,3 +47,4 @@ You can replace AhaSlides logo with your own, or even any other image or GIF you
 3. Upload your logo.
 4. Reset the logo to the original AhaSlides logo by hovering over it and clicking **'Reset'**.
 
+*Last updated: 2026-06-22*

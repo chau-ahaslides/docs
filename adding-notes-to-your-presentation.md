@@ -51,3 +51,5 @@ After you click **Start**, the Remote control window opens and displays the note
 {% hint style="info" %}
 Your notes are visible only on the Remote control window. They never appear on the audience screen or on the projected presentation.
 {% endhint %}
+
+*Last updated: 2026-06-23*

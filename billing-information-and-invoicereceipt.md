@@ -48,3 +48,5 @@ Once you've updated your billing information, you can effortlessly download your
 2. You'll be redirected to a page where you can choose to download either your invoice or receipt.
 
 We hope this guide simplifies your billing management on AhaSlides. If you encounter any challenges or have further questions, please don't hesitate to contact our support team.
+
+*Last updated: 2026-06-22*

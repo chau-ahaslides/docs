@@ -96,3 +96,5 @@ When participants join, they see the same background as the slide the presenter 
 Once participants enter their info, it is stored in the Excel file that contains your full presentation report.
 
 Any user not on the Free plan can download this Excel file from the **Results** tab in the editor toolbar by clicking **Request Excel file**. Open the downloaded file and click the second sheet, labelled **Participants**, to see all collected participant info.
+
+*Last updated: 2026-06-23*

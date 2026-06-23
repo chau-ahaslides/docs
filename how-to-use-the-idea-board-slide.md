@@ -171,3 +171,5 @@ Collect stakeholder needs and organize them into a prioritized roadmap. Similar 
 - **Don't over-organize:** Aim for 6-8 groups maximum. Too many defeats the purpose of finding patterns.
 - **Let divergence complete before convergence:** Don't start grouping ideas while people are still submitting. Let the brainstorming phase finish first.
 - **Move submissions that don't fit:** Outliers either reveal a new theme you missed or represent creative thinking worth exploring. Create a new group or mark it as "Other" for discussion.
+
+*Last updated: 2026-06-22*

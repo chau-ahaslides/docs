@@ -32,3 +32,4 @@ Moreover, when your account has enough balance but the system still shows the fo
 
 When you are at the checkout screen, please click on the "click here" text under the "Alternative payment methods" section (which is at the bottom of the page) and the PayPal button will appear. After that, you can click on the PayPal button to continue with your payment.
 
+*Last updated: 2026-06-22*

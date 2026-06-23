@@ -78,3 +78,5 @@ On the participant's screen, the image fills most of the display. They tap or cl
 - **Product and UX feedback** — Show a website screenshot and ask where they'd expect to find the pricing button.
 - **Training and assessment** — Display an anatomy diagram or equipment schematic and ask participants to identify a specific part.
 - **Team retrospectives** — Load a 2×2 matrix image and ask everyone to pin where the last sprint landed.
+
+*Last updated: 2026-06-18*

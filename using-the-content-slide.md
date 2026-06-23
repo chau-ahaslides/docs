@@ -84,3 +84,4 @@ To remove any animation, simply select '**No animation**.'
 
 The Content slide is the only slide type that, in the left column on the editor, shows a **full preview** of the content within it. This is to help navigation of presentations with multiple Content slides.
 
+*Last updated: 2026-06-22*

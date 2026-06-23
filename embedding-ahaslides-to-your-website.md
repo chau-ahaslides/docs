@@ -31,3 +31,5 @@ To embed AhaSlides, use this iframe code on your website:
 You can change the link to your own presentation link, or change the size of the audience frame.
 
 > **Note:** Please note that this embedding feature is not officially supported so there might be unexpected bugs.
+
+*Last updated: 2026-06-22*

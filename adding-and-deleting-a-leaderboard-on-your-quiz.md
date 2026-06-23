@@ -79,3 +79,5 @@ When you open the pop-up leaderboard, the audience screens stay unchanged. The l
 {% hint style="info" %}
 The pop-up leaderboard always displays the final scores accumulated from all completed quizzes, regardless of when or where you open it.
 {% endhint %}
+
+*Last updated: 2026-06-23*

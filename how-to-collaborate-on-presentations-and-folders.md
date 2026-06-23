@@ -113,3 +113,5 @@ You can move a presentation to a folder only if you have edit access to all thre
 1. Click the checkbox next to the thumbnail of the presentation. You can select multiple presentations, and the checkbox appears only for presentations you are able to move. Then click **Move to** on the toolbar at the bottom of the page. You can also right-click a presentation, or open its option menu, to find **Move to**.
 2. Choose the destination folder and click **Move**.
 3. The result depends on the folders involved. Moving a presentation from one private folder to another private folder happens immediately. In all other cases, a message about changing access rights appears first; click **Move** to proceed, and the presentation moves to the destination folder.
+
+*Last updated: 2026-06-23*

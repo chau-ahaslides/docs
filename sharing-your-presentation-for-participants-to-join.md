@@ -88,3 +88,4 @@ Click the  icon, then select **'QR Code'**. You can drag this slide to the start
 
 > In the **'Invite Audience'** section of the **'Share'** menu, you can see the option to **download** the QR code. Clicking this will download a PNG image file of your QR code, so that you can share it another way, such as printing it out or emailing it.
 
+*Last updated: 2026-06-22*

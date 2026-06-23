@@ -108,3 +108,5 @@ WD="$HOME/.config/youtube-uploader"
   [`.claude/skills/kb-tutorial-video/scripts/README-captions.md`](./.claude/skills/kb-tutorial-video/scripts/README-captions.md).
 - `.mcp.json` uses `${HOME}` so the config is portable across hosts; only these
   two local files differ per machine.
+
+*Last updated: 2026-06-18*

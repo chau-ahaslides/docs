@@ -95,3 +95,5 @@ The Content v2 slide is not currently supported by the AhaSlides MCP `create_sli
 ## Remaining pre-publish steps
 
 1. **Article ID** — assign a KB article ID in the frontmatter (`id:`) before publishing.
+
+*Last updated: 2026-06-22*

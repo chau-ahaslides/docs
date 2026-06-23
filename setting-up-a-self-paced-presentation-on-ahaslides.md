@@ -48,3 +48,4 @@ This is great for:
 
 Once you turn on the **Self-paced** feature, your audience will be able to navigate through the slides at their own pace, without the need for a presenter. The **Back and Next navigation bars** can be used to move to the previous or next slide. This feature makes it easy for your audience to follow along with your presentation and complete it on their own time.
 
+*Last updated: 2026-06-22*

@@ -80,3 +80,5 @@ Each imported slide is named with its slide number followed by the name of the f
 ## Making a PowerPoint interactive
 
 You cannot make the imported slides themselves interactive, apart from the default emoji reactions. To add interaction, you can [generate slides using AI](generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md), or place AhaSlides interactive slides between your imported slides to encourage responses from your audience.
+
+*Last updated: 2026-06-23*

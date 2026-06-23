@@ -74,3 +74,4 @@ Navigate to your slide in the left column of the editor, right-click on the slid
 
 Hover the mouse cursor on the **Menu** icon, then click "**Reset this slide**"
 
+*Last updated: 2026-06-22*

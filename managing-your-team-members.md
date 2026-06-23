@@ -83,3 +83,4 @@ To remove a member from your team, simply navigate to their name on the **Team M
 
 The owner and team members can leave the team at any time. Simply navigate to the **Team Members** dashboard, then click the '**Leave team**' icon on the far right-hand side of their name in the member list. When a member leaves, the system will remove their access to presentations and folders shared specifically with the team.
 
+*Last updated: 2026-06-22*

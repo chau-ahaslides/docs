@@ -70,3 +70,5 @@ When presenting, you can click the "Submission closed" icon to enable the audien
 While running the Poll slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
 
 **💡** *__Note:__ If you're using a multiple choice slide for a do-at-home survey, you can allow your participants to cast their votes in the poll without needing you to present it live. For more info, [check out our article on self-paced presentations](setting-up-a-self-paced-presentation-on-ahaslides.md).*
+
+*Last updated: 2026-06-22*

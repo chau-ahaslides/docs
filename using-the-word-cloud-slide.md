@@ -86,3 +86,5 @@ To group responses within a Word Cloud slide, follow these steps:
 This action will instantly organize words with similar meanings, enhancing the clarity and efficiency of your analysis. Click on the icon again to ungroup.
 
 > **The Word Cloud slide supports a maximum of 5,000 submissions. However, depending on the word sizes, and for the best experience, approximately 200 words can appear on the slide simultaneously.**
+
+*Last updated: 2026-06-22*

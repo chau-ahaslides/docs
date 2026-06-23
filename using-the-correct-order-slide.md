@@ -58,3 +58,5 @@ In the AhaSlides editor, select the Correct Order slide from the *Quiz* section 
 - **Choose a logical sequence type** — chronological events, process steps, or ranked priorities work best.
 - **Keep item text concise** — short phrases (3–7 words) are easier to read and drag.
 - **Avoid numbering items** — don't write "Step 1: …" in the text, as it gives the answer away.
+
+*Last updated: 2026-06-22*

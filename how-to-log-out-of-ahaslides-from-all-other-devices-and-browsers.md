@@ -28,3 +28,4 @@ description: "The Log out everywhere function on AhaSlides will log you out from
 2. Choose **Log out everywhere else**
 3. Press **Log out** - This will log you out from all other devices and browsers.
 
+*Last updated: 2026-06-22*

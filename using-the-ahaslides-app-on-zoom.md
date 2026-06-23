@@ -97,3 +97,5 @@ No. The AhaSlides Zoom integration is only supported on the Zoom Workplace/Webin
 - [Importing a PowerPoint Presentation or PDF File](importing-a-powerpoint-presentation-or-pdf-file.md)
 
 > **Note (AKB-22 audit):** Related articles for "AhaSlides App for Hopin" and "How to integrate AhaSlides into your WebEx meeting" do not yet exist in this repo. Add them when those KB articles are created.
+
+*Last updated: 2026-06-22*

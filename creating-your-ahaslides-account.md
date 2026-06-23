@@ -53,3 +53,5 @@ Welcome to AhaSlides! Follow these simple steps to create your AhaSlides account
 If you want to use Single Sign-On (SSO) for your team, please contact our sales team via this form: [https://ahaslides.com/enterprise/](https://ahaslides.com/enterprise/)
 
 Start your journey with AhaSlides today and make your presentations more interactive and engaging.
+
+*Last updated: 2026-06-22*

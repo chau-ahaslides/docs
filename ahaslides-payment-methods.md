@@ -40,3 +40,4 @@ To use the balance, you only need to make purchase/upgrade normally, and the bal
 
 The same applies for renewing your plan. You can see the information in the **Billing & Payments** page (by clicking **Manage** on the [My Plan](https://presenter.ahaslides.com/apps/user-plan) page):
 
+*Last updated: 2026-06-22*

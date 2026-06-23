@@ -44,3 +44,5 @@ The AhaSlides Template Library is a time-saving feature that allows you to downl
 Once the template is added to your list, you can either start editing the slides to fit your presentation goals or use it as is for your session.
 
 The AhaSlides Template Library will be growing all the time, so remember to check back regularly for new presentations that can save you a lot of time.
+
+*Last updated: 2026-06-22*

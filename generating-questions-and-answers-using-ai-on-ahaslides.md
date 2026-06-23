@@ -47,3 +47,5 @@ AhaSlides now offers AI-powered answer generation for quizzes and poll helping y
 > AI answer generation is available on all quiz and poll slides.
 
 This feature uses AI services from OpenAI and Groq, and we do not send any personal information to these providers. For more details, please review [OpenAI's Privacy Policy](https://openai.com/policies/privacy-policy) and [Groq's Privacy Policy](https://groq.com/privacy-policy/).
+
+*Last updated: 2026-06-22*

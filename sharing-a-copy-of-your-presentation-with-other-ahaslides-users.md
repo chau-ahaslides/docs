@@ -43,3 +43,5 @@ Are you looking for other ways to share on AhaSlides? - Check out these helpful 
 
 - [Sharing a Presentation with your Participants](sharing-your-presentation-for-participants-to-join.md)
 - [Sharing your AhaSlides account](sharing-your-ahaslides-account.md)
+
+*Last updated: 2026-06-22*

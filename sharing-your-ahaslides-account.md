@@ -29,3 +29,4 @@ The presenter moreover needs their personal accounts for security reasons. Resul
 
 [Sign up here](https://presenter.ahaslides.com/pages/register) - It's free!
 
+*Last updated: 2026-06-22*
