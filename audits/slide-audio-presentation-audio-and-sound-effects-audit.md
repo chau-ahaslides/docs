@@ -1,10 +1,10 @@
 # Audit — slide-audio-presentation-audio-and-sound-effects
 **File:** `slide-audio-presentation-audio-and-sound-effects.md`
 **URL:** https://help.ahaslides.com/portal/en/kb/articles/slide-and-presentation-audio
-**Date:** 2026-06-22
+**Date:** 2026-06-23
 **Audited against:** kb-article-writer / kb-article-auditor SKILL.md
 
-Part of the "Features and functions" batch rewrite (AKB-44).
+Re-audit of the "Features and functions" batch (AKB-51). Audited against the verbatim local `.md` file.
 
 ## Frontmatter
 
@@ -13,7 +13,7 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | `description` present and accurate | OK |
 | `questions_answered` has 3+ questions | OK — 6 questions |
 | `user_intents` present | OK — 2 intents |
-| `plan_required` set | OK — `Pro` (Slide/Presentation audio paid; sound effects on all plans, stated inline) |
+| `plan_required` set | OK — `Pro` |
 | `tags` include feature name and synonyms | OK — audio, slide audio, presentation audio, sound effects, music, autoplay |
 | `related` links to companion articles | OK — none applicable; left empty |
 | `zoho_id` present | OK |
@@ -23,20 +23,23 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | Check | Status |
 |-------|--------|
 | Opening answers the core question | OK |
-| Headings descriptive and self-contained | OK — flattened source's two H1 sections ("Audio" / "Sound effects") into a single H1 + H2 sections |
-| Sentence case headings | OK |
+| Headings descriptive and self-contained | OK |
+| Sentence case headings | OK — minor: section headings write "slide audio"/"presentation audio" lowercase while the body and FAQ capitalise the feature names "Slide audio"/"Presentation audio"; defensible as sentence case but inconsistent |
+| First word after a colon capitalised | OK — no colon headings |
 | Paragraphs ≤4 lines | OK |
 | Steps numbered, one action each | OK |
-| One user intent | OK — audio and sound effects setup (one cohesive audio topic) |
+| One user intent | OK — presentation/slide audio and sound effects |
+| FAQ section with 3+ `###` questions | OK — 5 questions |
+| Slide-type media gate | N/A — not a slide-type article |
 
 ## Agent readability
 
 | Check | Status |
 |-------|--------|
 | Self-contained paragraphs | OK |
-| Plan requirement inline | OK — hint: "Slide audio and Presentation audio are available only on paid plans. Sound effects are available on all plans." |
-| Conditions explicit | OK — "Slide audio takes priority on the slides that have it", "cannot set up audio on the Spinner Wheel, YouTube slide, or QR Code slide" |
-| Named entities in full | OK — "Musical note icon", "Lobby screen", "Show media controls" |
+| Plan requirement inline | OK — Slide/Presentation audio paid-only; sound effects all plans, stated in body |
+| Conditions explicit | OK — Slide audio plays on devices, Presentation audio does not; priority rule when both set; mp3 ≤15 MB; Spinner Wheel / YouTube / QR Code exceptions |
+| Named entities in full | OK — Audio section, Slide tab, Presentation tab, Autoplay, On repeat, Playable on audience's devices, Show media controls, Musical note icon |
 | No ambiguous conditionals | OK |
 | Causal language explicit | OK |
 
@@ -45,7 +48,7 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | Check | Status |
 |-------|--------|
 | Answer-first opening | OK |
-| No filler | OK — removed "Enhance your presentations... for greater control" marketing framing from body lead |
+| No filler | OK |
 | No corporate jargon | OK |
 | No AI filler words | OK |
 | No em dashes | OK |
@@ -58,10 +61,10 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | Check | Status |
 |-------|--------|
 | No draft/internal notes | OK |
-| Video links watchable | N/A |
+| Video links watchable | N/A — no video |
 | External links resolve | OK |
-| Related articles linked | OK |
+| Related articles linked | OK — none applicable |
 
 ## NOT OK — summary of issues to fix
 
-None. All checks pass.
+None blocking. Minor consistency note: the section headings "How to set up slide audio" and "How to set up presentation audio" lowercase the feature names, while the body and FAQ headings capitalise "Slide audio" and "Presentation audio". Align the heading casing with the body for consistency.

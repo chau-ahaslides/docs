@@ -1,10 +1,10 @@
 # Audit — how-to-collaborate-on-presentations-and-folders
 **File:** `how-to-collaborate-on-presentations-and-folders.md`
 **URL:** https://help.ahaslides.com/portal/en/kb/articles/how-to-collaborate-on-presentations-and-folders
-**Date:** 2026-06-22
+**Date:** 2026-06-23
 **Audited against:** kb-article-writer / kb-article-auditor SKILL.md
 
-Part of the "Features and functions" batch rewrite (AKB-44).
+Re-audit of the "Features and functions" batch (AKB-51). Audited against the verbatim local `.md` file.
 
 ## Frontmatter
 
@@ -13,9 +13,9 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | `description` present and accurate | OK |
 | `questions_answered` has 3+ questions | OK — 7 questions |
 | `user_intents` present | OK — 2 intents |
-| `plan_required` set | OK — `All` (team collaboration on all plans; external collaboration plan-gated, stated inline) |
-| `tags` include feature name and synonyms | OK — collaboration, co-edit, share presentation, share folder |
-| `related` links to companion articles | OK — 3 related |
+| `plan_required` set | OK — `All` |
+| `tags` include feature name and synonyms | OK — collaboration, co-edit, share folder, editor role |
+| `related` links to companion articles | OK — managing-your-team-members, purchasing-multiple-licenses..., presenter-role |
 | `zoho_id` present | OK |
 
 ## Structure
@@ -23,20 +23,23 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | Check | Status |
 |-------|--------|
 | Opening answers the core question | OK |
-| Headings descriptive and self-contained | OK — flattened source's mixed H1/H2 hierarchy into a single H1 + H2 sections |
+| Headings descriptive and self-contained | OK |
 | Sentence case headings | OK |
+| First word after a colon capitalised | OK — no colon headings |
 | Paragraphs ≤4 lines | OK |
 | Steps numbered, one action each | OK |
-| One user intent | OK — collaboration on presentations and folders |
+| One user intent | OK — collaborating on presentations and folders |
+| FAQ section with 3+ `###` questions | OK — 5 questions |
+| Slide-type media gate | N/A — not a slide-type article |
 
 ## Agent readability
 
 | Check | Status |
 |-------|--------|
 | Self-contained paragraphs | OK |
-| Plan requirement inline | OK — hint block names Pro/Edu Large/Enterprise for external collaboration |
-| Conditions explicit | OK — "only if you have edit access to all three of the following" |
-| Named entities in full | OK — "Editor", "Presenter", "My Presentations", "Shared with Me" |
+| Plan requirement inline | OK — team collaboration on all plans; external collaboration on Pro/Edu Large/Enterprise (promo note stated) |
+| Conditions explicit | OK — "only one person can actively edit or present at any given time"; move-folder access rules stated |
+| Named entities in full | OK — Add Collaborators, Invite editors via link, Editor/Presenter roles, Shared with Me, Take over, Move to |
 | No ambiguous conditionals | OK |
 | Causal language explicit | OK |
 
@@ -58,9 +61,9 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | Check | Status |
 |-------|--------|
 | No draft/internal notes | OK |
-| Video links watchable | N/A |
-| External links resolve | OK — `managing-your-team-members.md`, `purchasing-multiple-licenses...md`, `presenter-role.md` all exist locally; verified by `lint-kb-links.sh` |
-| Related articles linked | OK |
+| Video links watchable | N/A — no video |
+| External links resolve | OK |
+| Related articles linked | OK — three companion articles, all relative `.md` links |
 
 ## NOT OK — summary of issues to fix
 

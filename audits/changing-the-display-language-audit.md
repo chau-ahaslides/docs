@@ -1,10 +1,10 @@
 # Audit — changing-the-display-language
 **File:** `changing-the-display-language.md`
 **URL:** https://help.ahaslides.com/portal/en/kb/articles/changing-the-display-language
-**Date:** 2026-06-22
+**Date:** 2026-06-23
 **Audited against:** kb-article-writer / kb-article-auditor SKILL.md
 
-Part of the "Features and functions" batch rewrite (AKB-44).
+Re-audit of the "Features and functions" batch (AKB-51). Audited against the verbatim local `.md` file.
 
 ## Frontmatter
 
@@ -14,7 +14,7 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | `questions_answered` has 3+ questions | OK — 5 questions |
 | `user_intents` present | OK — 2 intents |
 | `plan_required` set | OK — `All` |
-| `tags` include feature name and synonyms | OK — language, display language, presentation language, interface language |
+| `tags` include feature name and synonyms | OK — language, display language, interface language, translate, localisation |
 | `related` links to companion articles | OK — none applicable; left empty |
 | `zoho_id` present | OK |
 
@@ -22,12 +22,15 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 
 | Check | Status |
 |-------|--------|
-| Opening answers the core question | OK — "AhaSlides has two separate language settings..." |
+| Opening answers the core question | OK — distinguishes presenter vs audience language up front |
 | Headings descriptive and self-contained | OK |
-| Sentence case headings | OK — script-normalised |
+| Sentence case headings | OK |
+| First word after a colon capitalised | OK — "Step 1: Log in...", "Step 2: Open...", "Step 3: Select...", "Step 4: Select..." |
 | Paragraphs ≤4 lines | OK |
-| Steps numbered, one action each | OK — split into Step 1–4 per section |
-| One user intent | OK — language settings only |
+| Steps numbered, one action each | OK — two numbered step blocks, one action each |
+| One user intent | OK — changing language (both surfaces) |
+| FAQ section with 3+ `###` questions | OK — 5 questions |
+| Slide-type media gate | N/A — not a slide-type article |
 
 ## Agent readability
 
@@ -35,17 +38,17 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 |-------|--------|
 | Self-contained paragraphs | OK |
 | Plan requirement inline | OK — All plan |
-| Conditions explicit | OK — "This setting applies to your whole account" vs "per presentation" |
-| Named entities in full | OK — "presenter interface", "audience display", "Settings panel" |
+| Conditions explicit | OK — presenter setting is account-wide, audience setting is per presentation |
+| Named entities in full | OK — globe icon, Settings icon, Presentation language; full language lists given |
 | No ambiguous conditionals | OK |
-| Causal language explicit | OK — independence of the two settings stated in a hint |
+| Causal language explicit | OK — explains why audience and presenter may differ |
 
 ## Voice and tone
 
 | Check | Status |
 |-------|--------|
 | Answer-first opening | OK |
-| No filler | OK — removed "Thanks to contributions from our amazing user community" and the future-plans line |
+| No filler | OK |
 | No corporate jargon | OK |
 | No AI filler words | OK |
 | No em dashes | OK |
@@ -58,10 +61,10 @@ Part of the "Features and functions" batch rewrite (AKB-44).
 | Check | Status |
 |-------|--------|
 | No draft/internal notes | OK |
-| Video links watchable | OK — converted to `youtube.com/watch?v=` embed |
+| Video links watchable | OK — YouTube `watch?v=` URL, not an embed URL |
 | External links resolve | OK |
-| Related articles linked | OK |
+| Related articles linked | OK — none applicable |
 
 ## NOT OK — summary of issues to fix
 
-None. All checks pass. Language counts (27 presenter / 32 audience) preserved verbatim from source.
+None. All checks pass.

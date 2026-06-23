@@ -1,10 +1,10 @@
 # Audit — upload-image-guidelines-for-ahaslides
 **File:** `upload-image-guidelines-for-ahaslides.md`
 **URL:** https://help.ahaslides.com/portal/en/kb/articles/what-image-formats-does-ahaslides-support
-**Date:** 2026-06-22
+**Date:** 2026-06-23
 **Audited against:** kb-article-writer / kb-article-auditor SKILL.md
 
-Part of the "Features and functions" batch rewrite (AKB-44). Reference-style article.
+Re-audit of the "Features and functions" batch (AKB-51). Audited against the verbatim local `.md` file.
 
 ## Frontmatter
 
@@ -25,20 +25,23 @@ Part of the "Features and functions" batch rewrite (AKB-44). Reference-style art
 | Opening answers the core question | OK |
 | Headings descriptive and self-contained | OK |
 | Sentence case headings | OK |
+| First word after a colon capitalised | OK — no colon headings |
 | Paragraphs ≤4 lines | OK |
-| Steps numbered, one action each | N/A — reference article, no procedure |
+| Steps numbered, one action each | OK — reference article; no procedure required |
 | One user intent | OK — image upload guidelines |
+| FAQ section with 3+ `###` questions | OK — 5 questions |
+| Slide-type media gate | N/A — not a slide-type article |
 
 ## Agent readability
 
 | Check | Status |
 |-------|--------|
-| Self-contained paragraphs | OK — each spec section stands alone |
+| Self-contained paragraphs | OK |
 | Plan requirement inline | OK — All plan |
-| Conditions explicit | OK — "maximum supported resolution after processing is 2560 x 1440", "no option to disable compression" |
-| Named entities in full | OK — JPEG, PNG, GIF, .webm, 2K resolution |
+| Conditions explicit | OK — formats (JPEG/PNG/GIF), 15 MB max, 2K (2560 x 1440) max after processing, 16:9 / 4:3 ratios; original-quality rendering not supported |
+| Named entities in full | OK — formats, .webm conversion, exact resolution and size figures |
 | No ambiguous conditionals | OK |
-| Causal language explicit | OK — "rendered locally... which helps keep performance stable" |
+| Causal language explicit | OK — explains why images are compressed and rendered locally |
 
 ## Voice and tone
 
@@ -58,10 +61,10 @@ Part of the "Features and functions" batch rewrite (AKB-44). Reference-style art
 | Check | Status |
 |-------|--------|
 | No draft/internal notes | OK |
-| Video links watchable | N/A |
+| Video links watchable | N/A — no video |
 | External links resolve | OK |
-| Related articles linked | OK |
+| Related articles linked | OK — none applicable |
 
 ## NOT OK — summary of issues to fix
 
-None. All checks pass. Used `x` instead of the `×` multiplication sign in resolution values (2560 x 1440) for plain-ASCII consistency.
+None. All checks pass.

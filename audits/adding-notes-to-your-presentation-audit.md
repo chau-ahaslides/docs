@@ -1,54 +1,57 @@
 # Audit — adding-notes-to-your-presentation
 **File:** `adding-notes-to-your-presentation.md`
 **URL:** https://help.ahaslides.com/portal/en/kb/articles/adding-notes-to-your-presentation
-**Date:** 2026-06-22
-**Audited against:** kb-article-writer / kb-article-auditor SKILL.md (installed in `.claude/skills/`)
+**Date:** 2026-06-23
+**Audited against:** kb-article-writer / kb-article-auditor SKILL.md
 
-Part of the "Features and functions" batch rewrite (AKB-44). Rewritten per the KB writing standard and audited below.
+Re-audit of the "Features and functions" batch (AKB-51). Audited against the verbatim local `.md` file.
 
 ## Frontmatter
 
 | Check | Status |
 |-------|--------|
-| `description` present and accurate (1–2 sentences, complete) | OK |
-| `questions_answered` has 3+ natural-language questions | OK — 5 questions |
-| `user_intents` describes what user is trying to do | OK — 2 intents |
-| `plan_required` field set | OK — `All` |
-| `tags` include feature name and synonyms | OK — notes, speaker notes, remote control |
+| `description` present and accurate | OK |
+| `questions_answered` has 3+ questions | OK — 5 questions |
+| `user_intents` present | OK — 2 intents |
+| `plan_required` set | OK — `All` |
+| `tags` include feature name and synonyms | OK — notes, speaker notes, backstage, remote control |
 | `related` links to companion articles | OK — `presenter-role` |
-| `zoho_id` present | OK — preserved as `zoho_id` and legacy `id` |
+| `zoho_id` present | OK |
 
 ## Structure
 
 | Check | Status |
 |-------|--------|
-| Opening sentence answers the core question without preamble | OK — "You can write private notes for each slide." |
-| Every heading is descriptive and makes sense out of context | OK |
-| Every heading uses sentence case | OK — `sentence-case-headings.py` passes |
-| Paragraphs are ≤4 lines | OK |
-| Steps numbered, one action each | N/A — short how-to, no multi-step procedure |
-| Article covers one user intent | OK — adding and viewing notes only |
+| Opening answers the core question | OK |
+| Headings descriptive and self-contained | OK |
+| Sentence case headings | OK |
+| First word after a colon capitalised | OK — no colon headings |
+| Paragraphs ≤4 lines | OK |
+| Steps numbered, one action each | OK — short how-to, action sequence clear in prose |
+| One user intent | OK — adding and viewing speaker notes |
+| FAQ section with 3+ `###` questions | OK — 4 questions |
+| Slide-type media gate | N/A — not a slide-type article |
 
 ## Agent readability
 
 | Check | Status |
 |-------|--------|
 | Self-contained paragraphs | OK |
-| Plan requirement stated inline | OK — All plan; no gate to state |
-| All conditions explicit | OK — "visible only on the Remote control window" |
-| Named entities spelled out in full | OK — "Remote control", "AhaSlides editor" |
+| Plan requirement inline | OK — All plan |
+| Conditions explicit | OK — notes appear only when presenting with Remote control |
+| Named entities in full | OK — Remote control window, notes box, Start button |
 | No ambiguous conditionals | OK |
-| Causal language explicit | OK |
+| Causal language explicit | OK — explains why notes are not visible without Remote control |
 
 ## Voice and tone
 
 | Check | Status |
 |-------|--------|
 | Answer-first opening | OK |
-| No filler sentences | OK |
-| No corporate jargon or noun stacks | OK |
+| No filler | OK |
+| No corporate jargon | OK |
 | No AI filler words | OK |
-| No em dashes (—) anywhere in the body | OK — verified by grep |
+| No em dashes | OK |
 | No hype | OK |
 | Audience-centric framing | OK |
 | No hedging | OK |
@@ -57,10 +60,10 @@ Part of the "Features and functions" batch rewrite (AKB-44). Rewritten per the K
 
 | Check | Status |
 |-------|--------|
-| No draft or internal notes published | OK |
-| Video links use watchable URLs | N/A — no video |
-| External links resolve correctly | OK — no body links; `remote-control.md` absent locally, so no broken relative link added |
-| Related articles linked where relevant | OK — `presenter-role` in frontmatter |
+| No draft/internal notes | OK |
+| Video links watchable | N/A — no video |
+| External links resolve | OK |
+| Related articles linked | OK — `presenter-role` |
 
 ## NOT OK — summary of issues to fix
 
