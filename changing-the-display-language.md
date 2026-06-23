@@ -46,15 +46,15 @@ Walk through both language settings and see the audience view in under a minute
 
 The presenter interface language controls the menus, buttons, and labels you see as a presenter. This setting applies to your whole account.
 
-### Step 1: log in to your account
+### Step 1: Log in to your account
 
 Log in to your AhaSlides account and open the dashboard.
 
-### Step 2: open the language menu
+### Step 2: Open the language menu
 
 Click the **globe icon** in the top-right corner of the dashboard.
 
-### Step 3: select your language
+### Step 3: Select your language
 
 A dropdown menu lists every supported interface language. Select your preferred language, and the interface switches instantly.
 
@@ -64,19 +64,19 @@ The presenter app is currently available in 27 languages: Čeština, Deutsch, Ne
 
 The audience display language controls what participants see on their devices: questions, answer options, and the join screen. This setting is per presentation and lives in the presentation Settings, so different presentations can use different audience languages.
 
-### Step 1: open the presentation
+### Step 1: Open the presentation
 
 Open any presentation in the editor, or create a new one.
 
-### Step 2: open the settings panel
+### Step 2: Open the settings panel
 
 Click the **Settings** icon in the right-hand panel.
 
-### Step 3: open presentation language
+### Step 3: Open presentation language
 
 In the Settings panel, click **Presentation language** in the left menu.
 
-### Step 4: select your audience's language
+### Step 4: Select your audience's language
 
 Use the dropdown to select your audience's language. The change takes effect immediately.
 

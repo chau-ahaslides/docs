@@ -51,22 +51,22 @@ When teamplay is enabled, players join teams to compete for points against other
 
 ## How to set up your Teams
 
-### Step 1: open the Quiz settings
+### Step 1: Open the Quiz settings
 
 In the presentation editor, go to **Settings**, then **General quiz settings**.
 
-### Step 2: turn on play as team
+### Step 2: Turn on play as team
 
 Click the switch next to **Play as team**, then click the blue **Set up** text. The team setup menu appears.
 
-### Step 3: set the number of Teams and team size
+### Step 3: Set the number of Teams and team size
 
 Set the number of teams that will play and the maximum number of players allowed in each team. If you do not know these numbers yet, estimate a high number so everyone can join the team they want.
 
 - Maximum number of teams: 500
 - Maximum team size: 1200
 
-### Step 4: choose how Teams score points
+### Step 4: Choose how Teams score points
 
 Choose one of three scoring rules:
 
@@ -74,11 +74,11 @@ Choose one of three scoring rules:
 2. **Total score of all members**. This rule handicaps teams with fewer members.
 3. **Fastest answer only**, which registers only the score of the fastest answer from each team, even if it is incorrect.
 
-### Step 5: name your Teams
+### Step 5: Name your Teams
 
 Change the team names. If you plan to let players choose their own team names, they need to tell you the name so you can enter it here.
 
-### Step 6: hide the individual Leaderboard (optional)
+### Step 6: Hide the individual Leaderboard (optional)
 
 To hide individual rankings on the players' screens, turn on **Hide individual leaderboard**. As the presenter, you can still switch between team and individual leaderboards.
 
