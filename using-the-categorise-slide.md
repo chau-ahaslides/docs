@@ -84,6 +84,8 @@ By using Categorise slides, you can turn any sorting task — from scientific cl
 
 Want a ready-made example? This template runs three Categorise rounds built for onboarding: sort company values into **Strategic Priority** or **Cultural Pillar**, classify customer complaints by **support tier**, and assign onboarding tasks to **HR**, **IT**, or **Manager**.
 
+![Corporate Training & Onboarding — Categorise template preview showing Strategic Priority and Cultural Pillar columns](.gitbook/assets/categorise-corporate-onboarding-preview.png)
+
 {% embed url="https://presenter.ahaslides.com/shared-template/1782226095960-ea9alcp4ex?hideAccessCode=true&hideText=true" %}
 Corporate Training & Onboarding — a ready-made Categorise quiz template
 {% endembed %}
