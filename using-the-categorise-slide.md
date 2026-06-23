@@ -26,10 +26,6 @@ The Categorise slide turns sorting into a live quiz. Participants drag items int
 
 ![Categorise slide in preview mode — presenter screen showing Noun and Verb category columns with responses, alongside the participant phone screen](.gitbook/assets/categorise-slide-preview.png)
 
-{% embed url="https://www.youtube.com/watch?v=PeAS2yPtA_0" %}
-How to create a Categorise quiz slide on AhaSlides — quick tutorial (0:47)
-{% endembed %}
-
 ## How the Categorise slide works
 
 When you present a Categorise slide, participants see a list of shuffled items on their devices. They drag each item into the category they think it belongs in. The more items they get right — and the faster they answer — the more points they earn.
@@ -65,6 +61,12 @@ Scroll down in the Content panel to configure scoring and timing:
 - **Partial scoring** — Toggle this on to award points for each correctly sorted item, even if the participant doesn't get them all right.
 - **Time limit** — Set how many seconds participants have to answer. The default is 45 seconds.
 - **Leaderboard** — Toggle this on to show a leaderboard slide automatically after the Categorise slide.
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=PeAS2yPtA_0" %}
+How to create a Categorise quiz slide on AhaSlides — quick tutorial (0:47)
+{% endembed %}
 
 ## Previewing and presenting
 
