@@ -24,10 +24,6 @@ description: "Learn how to use the Correct Order slide in an AhaSlides quiz. The
 
 The Correct Order quiz slide asks participants to place randomized statements in the correct order.
 
-{% embed url="https://www.youtube.com/watch?v=PHq5U5hm89s" %}
-How to set up a Correct Order slide on AhaSlides — full walkthrough in under a minute.
-{% endembed %}
-
 ## How does a Correct Order slide work?
 
 A Correct Order slide is a quiz slide type and forms part of a [quiz](how-to-make-and-run-a-quiz.md).
@@ -49,6 +45,12 @@ In the AhaSlides editor, select the Correct Order slide from the *Quiz* section 
    - **Time to answer** — The time limit in seconds. Defaults to 45 seconds; adjust it to suit your question.
 
 > 💡 For more help on quizzes, learn [how to make and run a quiz](how-to-make-and-run-a-quiz.md).
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=PHq5U5hm89s" %}
+How to set up a Correct Order slide on AhaSlides — full walkthrough in under a minute.
+{% endembed %}
 
 ## How to create a good Correct Order slide
 

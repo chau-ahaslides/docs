@@ -26,10 +26,6 @@ The Brainstorm slide turns your session into a group thinking exercise: particip
 
 ## Setting up your Brainstorm slide
 
-Check out this video for a 1-minute explainer on how to make a Brainstorm slide 👇
-
-> 📹 [Watch video](https://www.youtube.com/embed/npIv2Ag-aMU)
-
 In the AhaSlides editor, click *New slide*, choose the **Brainstorm** slide and do the following:
 
 1. Write your question.
@@ -60,6 +56,12 @@ You can adjust how many votes each participant gets in the slide settings.
 Click *Next: Result* to rank all submissions by vote count. You can click any idea to enlarge it on screen.
 
 > Maximum submissions per Brainstorm slide: 200
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=npIv2Ag-aMU" %}
+A 1-minute explainer on how to make a Brainstorm slide on AhaSlides
+{% endembed %}
 
 ## Brainstorm slide in self-paced mode
 

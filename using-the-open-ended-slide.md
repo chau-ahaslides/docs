@@ -24,10 +24,6 @@ description: "An Open Ended slide helps you see things from others' perspectives
 
 An Open Ended slide lets your audience answer in their own words — no fixed choices, just real responses that reflect what people actually think.
 
-{% embed url="https://www.youtube.com/watch?v=16Mg_DutcHA" %}
-How to use the Open Ended slide on AhaSlides — quick tutorial (0:26)
-{% endembed %}
-
 ## What is an Open Ended question?
 
 Open-ended questions let respondents answer in free text, so they can express their complete thoughts, feelings, and knowledge. The response is not limited to a set of options — your audience types whatever they want.
@@ -67,6 +63,12 @@ The right panel has several toggles and checkboxes:
 Click **Present** — your audience joins on their devices, types their answers, and responses appear on your screen in real time. You can manually delete any response by clicking the **×** icon next to it.
 
 To reuse the slide in a future session, [clear its results](resetting-the-results.md) first.
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=16Mg_DutcHA" %}
+How to use the Open Ended slide on AhaSlides — quick tutorial (0:26)
+{% endembed %}
 
 ## Smart grouping for Open Ended submissions
 

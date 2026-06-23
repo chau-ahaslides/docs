@@ -31,12 +31,6 @@ The Spinner Wheel is a slide type that a presenter can use to pick any entry at 
 > Spin results **will not** be saved in the Excel export file.
 > The Spinner Wheel supports up to **5,000 entries**.
 
-Watch this quick tutorial to see the Spinner Wheel in action:
-
-{% embed url="https://www.youtube.com/watch?v=7bbzdJ9hx6g" %}
-How to use the Spinner Wheel on AhaSlides — including audience autofill
-{% endembed %}
-
 Below is an interactive demo, which will help you experience this function:
 
 > 📹 [Watch video](https://capture.navattic.com/cmn2ziwx0000b04jq4aks31wa)
@@ -80,6 +74,12 @@ In the right panel of the editor, there are several settings for your Spinner Wh
 1. **Duplicate entries** — Multiply the entries already in your wheel by up to 10 times. Uncheck the box to clear.
 1. **Filter profanity** — Hide inappropriate words submitted by the audience on all slides.
 1. **Hide entry board** — Removes the list of entries from the wheel when the presenter is presenting.
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=7bbzdJ9hx6g" %}
+How to use the Spinner Wheel on AhaSlides — including audience autofill
+{% endembed %}
 
 ## Spinning the wheel
 

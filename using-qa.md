@@ -23,12 +23,6 @@ description: "Learn how to use the Q&A feature in your AhaSlides presentation, a
 
 The Q&A feature lets you gather questions from your audience. You can then organise all these questions and answer them all one-by-one.
 
-Watch the quick tutorial below to see how to set up a Q&A slide and configure all its settings:
-
-{% embed url="https://www.youtube.com/watch?v=2qvmBwf5MQ8" %}
-Set up a Q&A slide on AhaSlides and configure all settings
-{% endembed %}
-
 ## How does Q&A work?
 
 On AhaSlides, 'Q&A' refers your audience sending you questions during a presentation, you seeing those questions and then answering them vocally.
@@ -102,6 +96,12 @@ Turning on this setting will mean that each audience member will be able to see 
 ### 4. Allow anonymous questions
 
 Turning on this setting will give each audience member the chance to submit their question without entering their name. The box to enter their name will be there, but it won't be mandatory to fill it in.
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=2qvmBwf5MQ8" %}
+Set up a Q&A slide on AhaSlides and configure all settings
+{% endembed %}
 
 > **Q&A slide supports up to 1,000 questions per presentation.**
 

@@ -44,10 +44,6 @@ In the example above, the word *'hola'* was entered by participants more often t
 | 8 | Return to editor to fine-tune | **X** / close Preview |
 | 9 | Go live; cloud builds as responses arrive | **Present** button |
 
-{% embed url="https://www.youtube.com/watch?v=L89bd83WaYU" %}
-How to use the Word Cloud slide on AhaSlides — quick tutorial (0:54) — TODO: replace L89bd83WaYU with new video id once out-word-cloud-r4/word-cloud-narrated-r4.webm is uploaded to YouTube as unlisted; then delete L89bd83WaYU
-{% endembed %}
-
 #### Step 1: Create your slide and write your question
 
 Create a new presentation and select **Word Cloud** from the slide type picker. Type your prompt in the **Your question** field — a short, open-ended question works best, such as "Describe today's vibe in one word".
@@ -73,6 +69,12 @@ The settings panel gives you six options to customise how your Word Cloud behave
 Click **Present** to go live. Participants join on their phones, type up to their allowed number of words, and hit Submit. Each new response appears in the cloud in a random colour — the most-submitted word grows largest and moves to the centre. Words around it shift to new random positions with every update.
 
 You can delete any word in the cloud by clicking it during the live session. If you remove the most popular word, the next most common one takes centre place.
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=L89bd83WaYU" %}
+How to use the Word Cloud slide on AhaSlides — quick tutorial (0:54) — TODO: replace L89bd83WaYU with new video id once out-word-cloud-r4/word-cloud-narrated-r4.webm is uploaded to YouTube as unlisted; then delete L89bd83WaYU
+{% endembed %}
 
 ## Smart grouping your word clouds
 

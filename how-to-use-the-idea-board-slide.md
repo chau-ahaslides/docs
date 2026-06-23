@@ -43,10 +43,6 @@ Results are updated in real time, helping you spot patterns and turn raw feedbac
    - **AI grouping:** Let ideas cluster by AI after receiving them while presenting (best for discovery)
 5. (Optional) Add an image to your question by clicking the image icon next to it.
 
-### Watch the tutorial video
-
-> 📹 [Watch video](https://www.youtube.com/embed/O691TLPtsto)
-
 ### Change the settings
 
 You can customize your Idea Board slide with these settings:
@@ -61,6 +57,12 @@ You can customize your Idea Board slide with these settings:
 8. **Allow audience to submit more than once:** Participants can submit multiple times.
 9. **Allow audience to submit images:** Participants can submit images alongside their answers.
 10. **Filter profanity:** Hide swear words from the audience (English only).
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=O691TLPtsto" %}
+How to set up and use the Idea Board slide on AhaSlides
+{% endembed %}
 
 ## How the grouping works
 

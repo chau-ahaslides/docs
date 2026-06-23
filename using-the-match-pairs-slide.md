@@ -24,10 +24,6 @@ description: "Learn how to use the Match Pairs slide type in an AhaSlides quiz. 
 
 The Match Pairs slide is a quiz slide type where players must match a set of prompts with a set of answers.
 
-{% embed url="https://www.youtube.com/watch?v=W3Diw_84Rj0" %}
-How to use the Match Pairs slide on AhaSlides
-{% endembed %}
-
 ### How does a Match Pairs slide work?
 
 In a Match Pairs slide, players are presented with a question, as well as two columns of words. In the left-side column are **prompts**, marked by numbers *(1, 2, 3, 4)* and in the right-side column are **answers**, marked by letters *(A, B, C, D).*
@@ -46,6 +42,12 @@ In the AhaSlides editor, add a Match Pairs slide and do the following:
    - **Faster answers get more points**: Rewards speed — a player with 80 seconds left on a 100-second timer earns 80 out of 100 points.
    - **Partial scoring**: Rewards each correctly matched pair individually, even if the player doesn't match them all. For example, 1 out of 4 correct = 25% of points.
    - **Time limit**: How many seconds participants have to match all pairs.
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=W3Diw_84Rj0" %}
+How to use the Match Pairs slide on AhaSlides
+{% endembed %}
 
 ## Tips for creating a good Match Pairs slide
 

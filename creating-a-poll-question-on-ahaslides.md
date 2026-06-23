@@ -24,12 +24,6 @@ description: "A Poll slide is a quick and easy way to get live opinions in poll 
 
 A Poll slide is a quick and easy way to get live opinions in poll format from your audience.
 
-Watch how to create a poll from start to finish — including previewing it before you go live:
-
-{% embed url="https://www.youtube.com/watch?v=hJvW96emNxo" %}
-How to create a Poll question on AhaSlides
-{% endembed %}
-
 Below is an interactive demo, which will help you experience this function:
 
 {% embed url="https://capture.navattic.com/cmnho6ycy002x04l1hcxk0ob4" %}
@@ -70,5 +64,11 @@ When presenting, you can click the "Submission closed" icon to enable the audien
 While running the Poll slides, you have the option to turn off the timer or change the time limit. If you turn off the timer, you cannot turn it on again in the present mode. You will need to switch back to edit mode to enable the timer again.
 
 **💡** *__Note:__ If you're using a multiple choice slide for a do-at-home survey, you can allow your participants to cast their votes in the poll without needing you to present it live. For more info, [check out our article on self-paced presentations](setting-up-a-self-paced-presentation-on-ahaslides.md).*
+
+### Watch the tutorial
+
+{% embed url="https://www.youtube.com/watch?v=hJvW96emNxo" %}
+How to create a Poll question on AhaSlides — start to finish, including previewing
+{% endembed %}
 
 *Last updated: 2026-06-22*
