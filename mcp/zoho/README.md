@@ -1,11 +1,22 @@
 # Zoho Desk MCP (kb-local)
 
-A small [FastMCP](https://github.com/jlowin/fastmcp) stdio server exposing one tool,
-`get_zoho_convo(ticket_id, thread_id)`, which fetches a Zoho Desk ticket thread.
+A small [FastMCP](https://github.com/jlowin/fastmcp) stdio server exposing the Zoho Desk
+ticket-reading tools. **Every** tool routes its result through the same masking seam,
+`_mask_identity()` in `mcp_server.py`, so no matter which endpoint an agent calls the
+customer's identity is redacted (end-user names, emails, phones, avatar URLs — agent
+names preserved):
+
+- `get_zoho_convo(ticket_id, thread_id)` — a single conversation thread.
+- `get_zoho_ticket(ticket_id)` — ticket detail (`GET /tickets/{id}`).
+- `get_zoho_ticket_conversations(ticket_id)` — the full thread list (`GET /tickets/{id}/conversations`).
+- `list_zoho_tickets(limit, from_, status)` — the ticket list (`GET /tickets`, envelope
+  `{"data": [...]}`; masking recurses into every ticket).
 
 This is a **kb-only fork** of `scrum-master-slave/tools/zoho/mcp_server.py`, kept here so
-customer-identity masking can be added without diverging the shared upstream tool. The
-masking seam is `_mask_identity()` in `mcp_server.py`.
+customer-identity masking can be added without diverging the shared upstream tool.
+
+Offline masking tests live in `test_masking.py` (no network — payloads are constructed
+directly); they cover the thread, ticket-detail and ticket-list shapes.
 
 ## Setup
 
