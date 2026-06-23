@@ -1,44 +1,61 @@
 ---
 id: 570272000000844001
-title: How to Preview and Test your Presentation
+title: "How to preview and test your presentation"
 status: Published
 permalink: how-to-preview-and-test-your-presentation
-category: Features and Functions on AhaSlides
+category: "Features and functions"
 category_id: 570272000074885546
 permission: ALL
-last_updated: 2025-10-03
-tags: ["preview", "mode", "test", "phone", "ahaslides", "second device"]
-keywords: ["Preview", "Test", "Presentation", "Try", "Check", "mode"]
-summary: Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event.
 plan_required: All
-portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-preview-and-test-your-presentation
-related_articles: []
+last_updated: 2026-06-22
+tags:
+  - preview
+  - test
+  - preview mode
+  - second device
+  - participant screen
+keywords: []
+summary: "Preview mode lets you see and interact with your own slides the way your audience will during a live event, on both the presenter screen and the participant screen."
+description: "How to use Preview mode on AhaSlides to test your presentation before going live. See the presenter screen and participant screen side by side and interact with your slides as your audience would."
+questions_answered:
+  - "How do I preview my AhaSlides presentation before presenting?"
+  - "How do I test how my audience will interact with my slides?"
+  - "What is Preview mode on AhaSlides?"
+  - "How do I check my slides on a participant view?"
+  - "How do I exit Preview mode?"
+user_intents:
+  - "Test a presentation and its interactions before a live event"
+  - "See how participants will experience the slides on their own devices"
+related: []
 mcp_actions:
   not_applicable: "No AhaSlides MCP slide actions for this article type"
-description: "Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event."
+portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-preview-and-test-your-presentation
+zoho_id: "570272000000844001"
 ---
 
-# How to Preview and Test your Presentation
+# How to preview and test your presentation
 
-Preview mode lets you see how your presentation will look on both your and your audience's devices. In Preview Mode you can interact with your own slides to see how your audience can interact during your real event.
+Preview mode lets you see and interact with your own slides the way your audience will during a live event. You can test every interaction before you present for real.
 
-## 15-Second explainer ⏰: preview mode
+{% embed url="https://www.youtube.com/watch?v=1LoPRfQueSg" %}
+A 15-second walkthrough of Preview mode
+{% endembed %}
 
-> 📹 [Watch video](https://www.youtube.com/embed/1LoPRfQueSg)
+## How preview mode works
 
-## How does it work?
+Preview mode is a separate mode that lets you see and interact with your own slides, the way your audience would during a real event.
 
-Preview mode is a separate mode in your presentation that allows you to see and interact with your own slides, the way that your audience would do in your real event.
+To open Preview mode, go to the presentation editor and click the grey **Preview** button in the top bar.
 
-To access preview mode, head to the presentation editor and click the grey **'Preview'** button in the top bar.
+Once in Preview mode, you see two screens:
 
-Once in preview mode, you will see two screens:
+1. **The presenter screen**: what your screen looks like during the presentation. This is the screen you share with your audience during your event.
+2. **The participant screen**: what each participant's screen looks like during the presentation.
 
-1. **The 'presenter screen'**. This is what your screen will look like during the presentation. You will be sharing this screen for all of your audience to see during your event.
-2. **The 'participant screen'**. This is what each of your participants' screens will look like during the presentation.
+Use the participant screen on the right to interact with the presenter screen on the left. This shows you how your participants will interact with your presentation during the real event.
 
-In preview mode, you can use the participant screen on the right to interact with the presenter screen on the left. This way, you can see how your participants will interact with your presentation in your real event.
+To move through your presentation and test the interaction on different slides, use the arrows beside the presenter screen, or the left and right arrow keys on your keyboard.
 
-You can use the arrows to the side of the presenter screen, or the left/right arrow key on your keyboard to go through your presentation and test how the interaction works on different slides.
+## Exiting preview mode
 
-Once you've tested out your presentation, head back to the editor by clicking the **'Back to Editor'** button in the top-left corner.
+Once you have finished testing, return to the editor by clicking the **Back to Editor** button in the top-left corner.

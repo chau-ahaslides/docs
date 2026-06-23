@@ -1,87 +1,101 @@
 ---
 id: 570272000000638057
-title: Moving and Editing Multiple Slides
+title: "Moving and editing multiple slides"
 status: Published
 permalink: moving-and-editing-multiple-slides
-category: Features and Functions on AhaSlides
+category: "Features and functions"
 category_id: 570272000074885546
 permission: ALL
-last_updated: 2026-02-19
-tags: ["view", "move", "edit", "grid", "multiple", "multiple slides", "duplicating", "duplicate", "moving", "editing"]
-keywords: ["edit", "multiple", "slides", "moving", "move", "editing", "duplicate", "duplicating", "grid", "view"]
-summary: Learn how to move, edit and delete multiple slides at once, both with and without using Grid View.
 plan_required: All
-portal_url: https://help.ahaslides.com/portal/en/kb/articles/moving-and-editing-multiple-slides
-related_articles: []
+last_updated: 2026-06-22
+tags:
+  - multiple slides
+  - grid view
+  - move slides
+  - duplicate slides
+  - edit slides
+  - rearrange slides
+keywords: []
+summary: "You can move, edit, duplicate, and delete multiple slides at once, either from the navigation column or in Grid View."
+description: "How to select and work with multiple slides at once on AhaSlides, with and without Grid View: move, rearrange, edit backgrounds and audio, duplicate, copy to other presentations, clear results, and delete."
+questions_answered:
+  - "How do I select multiple slides at once in AhaSlides?"
+  - "How do I move several slides to a new position?"
+  - "What is Grid View and how do I open it?"
+  - "How do I edit the background or audio of multiple slides at once?"
+  - "How do I duplicate or copy multiple slides?"
+  - "How do I delete multiple slides at the same time?"
+user_intents:
+  - "Reorder, edit, or delete several slides in one action"
+  - "Copy or duplicate multiple slides, including across presentations"
+related: []
 mcp_actions:
   move: "move_slide(slide_id: int, presentation_id: int, insert_after_slide_id: int)"
   delete: "update_slide_properties_tool(slides: [{id, type, deleted: true}])"
   skip: "skip_slide_when_presenting(slide_id: int, skip_when_presenting: bool)"
-description: "Learn how to move, edit and delete multiple slides at once, both with and without using Grid View."
+portal_url: https://help.ahaslides.com/portal/en/kb/articles/moving-and-editing-multiple-slides
+zoho_id: "570272000000638057"
 ---
 
-# Moving and Editing Multiple Slides
+# Moving and editing multiple slides
 
-You can edit the design and embedded audio of multiple slides at the same time, either with or without Grid View.
+You can move, edit, duplicate, and delete multiple slides at once, either from the navigation column or in Grid View.
 
 ## Editing slides without grid view
 
-To quickly edit multiple slides, you can simply use the navigation column on the left-side of your editor.
+To quickly select multiple slides, use the navigation column on the left of the editor.
 
-1. Hold **CTRL + click** on each slide to select it.
-2. Hold **SHIFT + click** to select a range of slides from A to B.
+- Hold **CTRL** and click each slide to select it.
+- Hold **SHIFT** and click to select a range of slides from one point to another.
 
 ## What is grid view?
 
-Opening the Grid View on the editor will let you preview all the slides in your presentation in a grid. For presentations with many slides, this is the best way to rearrange, delete and edit multiple slides.
+Grid View shows all the slides in your presentation in a grid, so you can preview the whole presentation at once. For presentations with many slides, Grid View is the easiest way to rearrange, delete, and edit multiple slides.
 
 ## Editing slides with grid view
 
-### 1. Opening grid view
+### Opening grid view
 
-To open Grid View in the AhaSlides editor, click on **Grid View** at the bottom of the left-hand panel:
+To open Grid View, click **Grid View** at the bottom of the left-hand panel. To close it, click **Close** in the right corner of the bottom panel.
 
-From here, you can close the grid view by clicking 'Close' in the right corner of the bottom panel.
+### Selecting multiple slides
 
-### 2. Selecting multiple slides
+To select multiple slides, click the **Select** button in the top panel, click the slides you want, then click **Done** when finished.
 
-To select multiple slides at once, click the **'Select' button** in the top panel. Click the slides that you want to select, then click the **'Done' button** when finished.
+You can also use keyboard shortcuts: hold **CTRL** and click each slide to select it, or hold **SHIFT** and click to select a range of slides.
 
-⌨️ **Keyboard Shortcuts:**
-– Hold **CTRL + click** on each slide to select it.
-– Hold **SHIFT + click** to select a range of slides from A to B.
+### Editing multiple slides
 
-### 3. Editing multiple slides
+Grid View lets you edit the backgrounds and audio of multiple slides at the same time. Select the slides you want to edit, then use the right-hand panel:
 
-Grid view allows you to edit the **backgrounds** and **audio** of multiple slides at the same time. To do this, select the slides you wish to edit and come to the right-hand panel:
+- Under the **Design** tab, you can change text colour, base colour, background image, and background visibility.
+- Under the **Audio** tab, you can add an audio track and edit its playback settings.
 
-- Under the **'Design'** tab, you can change text colour, base colour, background image and background visibility.
-- Under the **'Audio'** tab, you can add an audio track and edit the playback settings of that track.
+### Moving individual or multiple slides
 
-### 4. Moving individual or multiple slides
+In Grid View, you can drag and drop one or more slides to a different position.
 
-On grid view, you can drag-and-drop one or more slides to a different position in your presentation.
+- To move a single slide, select it and drag it to your desired position.
+- To move multiple slides, select the slides, drag them to your desired position, then click **Done** when finished.
 
-- To move an **individual slide**, simply select it, then drag-and-drop it to your desired position.
-- To move **multiple slides**, select the slides you want to move, then drag-and-drop them to your desired position. Click the 'Done' button when finished.
+You can also use the **Rearrange** button in the bottom panel. Select the slides you want to move, click **Rearrange**, then select the position you want to move them to.
 
-You can also use the **'Rearrange' button** in the bottom panel to move one or more slides. Just select the slides you want to move, click the 'Rearrange' button and select what slide position you want to move your selected slides to:
+### Duplicating multiple slides
 
-### 5. Duplicating multiple slides
+To duplicate multiple slides at once, select the slides you want and click the **Duplicate** button in the bottom panel.
 
-To duplicate multiple slides at once, select the slides you want to duplicate and click the **'Duplicate' button** in the bottom panel:
+### Copying multiple slides to other presentations
 
-### 6. Copying multiple slides to other presentations
+To copy slides to another presentation, select the slides and click the **Copy to** button in the bottom panel. Then select the destination presentation and the position for the copied slides within it.
 
-To copy multiple slides to another presentation, select the slides you want to copy and click the **'Copy to…' button** in the bottom panel. Then, select the presentation to which you want to copy those slides, as well as their new slide position in that presentation:
+{% hint style="info" %}
+This is a quick way to merge two presentations into one. Create a new presentation, then use the **Copy to** button to copy the slides you want from each existing presentation into it.
+{% endhint %}
 
-> **Protip:** This is a great way to merge two presentations into one. To do this, you can create a new presentation and use the **'Copy to…' button** to copy the slides you want from your two existing presentations into your new presentation!
+### Clearing audience response data on multiple slides
 
-### 7. Clearing audience response data on multiple slides
+To erase audience response data across multiple slides, select the slides, then click **Clear result** in the panel.
 
-To erase any response data from your audience across multiple slides, select the slides on which you want to erase the audience responses, then click the **'Clear result'** in the panel.
+### Deleting multiple slides
 
-### 8. Deleting multiple slides
-
-To delete multiple slides at the same time, click the **'Select' button**, select the slides you want to delete, and click **'Done'**. Then, click the **'Delete' button** in the panel.
-
+To delete multiple slides at once, click the **Select** button, select the slides you want to delete, and click **Done**. Then click the **Delete** button in the panel.

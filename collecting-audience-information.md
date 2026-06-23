@@ -1,91 +1,98 @@
 ---
 id: 570272000000696221
-title: Collecting Audience Information
+title: "Collecting audience information"
 status: Published
 permalink: collecting-participants-information
-category: Features and Functions on AhaSlides
+category: "Features and functions"
 category_id: 570272000074885546
 permission: ALL
-last_updated: 2026-04-10
-tags: ["audience admission", "personal info", "ahaslides", "audience info", "information", "participant information", "collect", "authentication"]
-keywords: []
-summary: Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide.
 plan_required: Pro
-portal_url: https://help.ahaslides.com/portal/en/kb/articles/collecting-participants-information
-related_articles: ["exporting-to-excel", "your-ahaslides-presentation-report"]
+last_updated: 2026-06-22
+tags:
+  - audience info
+  - participant information
+  - collect information
+  - audience admission
+  - authentication
+  - custom fields
+keywords: []
+summary: "Collect audience information such as names, email addresses, and organisation names from participants before they join your presentation or while they answer an Open Ended or Brainstorm slide."
+description: "How to collect audience information on AhaSlides through a join form or an Open Ended or Brainstorm slide, including default and custom fields and where to find the collected data in the Excel export."
+questions_answered:
+  - "How do I collect names and emails from my audience on AhaSlides?"
+  - "How do I ask participants for their information before they join?"
+  - "How do I add custom fields to the audience info form?"
+  - "Where do I find the participant information I collected?"
+  - "Which plans can collect audience information?"
+  - "How many fields can I add to the audience info form?"
+user_intents:
+  - "Gather participant contact and identity details during a presentation"
+  - "Add custom questions to the join form and export the responses"
+related:
+  - your-ahaslides-presentation-report
 mcp_actions:
   create: 'create_slides(slide_type: "open_ended_survey", heading: "...")'
   configure: 'update_slide_properties_tool(type: "openEndedQuestion", layout: "grid"|"oneByOne", imageSubmission: bool)'
   delete: 'update_slide_properties_tool(type: "openEndedQuestion", deleted: true)'
-description: "Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide."
+portal_url: https://help.ahaslides.com/portal/en/kb/articles/collecting-participants-information
+zoho_id: "570272000000696221"
 ---
 
-# Collecting Audience Information
+# Collecting audience information
 
-Collect audience information like names, email addresses and names of organisations from your participants before they join your presentation or while they answer an Open-Ended or Brainstorm slide.
+Collect audience information such as names, email addresses, and organisation names from participants before they join your presentation or while they answer an Open Ended or Brainstorm slide.
 
-**Please note** that while this feature is available on all paid plans, only **certain paid plans** can see collected participant information in the [Excel export](https://help.ahaslides.com/portal/en/kb/articles/exporting-to-excel) after the presentation is over: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
+{% hint style="info" %}
+Collecting audience information is available on all paid plans. Only certain paid plans can view the collected information in the Excel export after the presentation ends. See [Your AhaSlides presentation report](your-ahaslides-presentation-report.md) for plan details.
+{% endhint %}
 
 ## How to collect audience info
 
-### 1. In the setting menu:
+You can collect audience info in two places: on the join form, or on an Open Ended or Brainstorm slide.
 
-a. Head to the **Settings** menu and click on **Collect audience info**.
+### In the settings menu
 
-b. Check the box labelled **Ask participants for info before they join** - This will show an entry form that participants are asked to fill in when they join your presentation.
+1. Go to the **Settings** menu and click **Collect audience info**.
+2. Check the box labelled **Ask participants for info before they join**. This shows an entry form that participants fill in when they join your presentation.
+3. Write the heading for your form, then click the button next to **Add fields** to select which information fields to add.
 
-c. Start by writing the heading to your form, then you can click the  button next to **Add fields** to select information fields to add.
+### In an Open Ended or Brainstorm slide
 
-### 2. In an open-ended or Brainstorm slide
-
-a. When editing an Open-Ended or Brainstorm slide, click the  button next to **Collect audience info.** This option will allow you to collect information from participants when they answer this particular slide.
-
-b. You can then click on the field that you want to add.
+1. While editing an Open Ended or Brainstorm slide, click the button next to **Collect audience info**. This collects information from participants when they answer that specific slide.
+2. Click the field you want to add.
 
 ## Adding information fields
 
-You can add up to 8 fields, including:
+You can add up to 8 fields: 3 default fields (Name, Email, Avatar) and up to 5 custom fields.
 
-1. 3 default fields: Name, Email, Avatar
-1. 5 custom fields.
+### Default fields
 
-### 1. Default fields
+To add a default field, choose one of the three default fields after clicking the add button. You cannot rename a default field, but you can edit the question that participants see on their devices.
 
-To add a default field, you only need to choose one of them after clicking the  button.
+### Custom fields
 
-While you cannot change a default field's name, it is possible to **edit** its question, which will appear on participants' devices.
+To add a custom field, choose **Custom field +** after clicking the add button. A window opens for you to set up the field with these options:
 
-### 2. Custom field
+- **Field name**: your internal label, used for sorting or filtering data in the Excel report. Participants do not see this name.
+- **Question shown to participants**: the question or label participants see when filling out the form.
+- **Required**: turn on this switch to make the field mandatory for participants.
 
-To add a custom field, choose **Custom field +** after clicking the  button.
+After filling out the fields in the window, click **Add field** to create the custom field. It is then added to the list.
 
-A window will pop-up for you to set up the custom field.
+### Reordering and editing fields
 
-There will be:
+To remove a field or mark it as required, click the three-dot button next to it. To rearrange fields, drag them using the six-dot button at the front of each field.
 
-- **Field name**: This is your internal label — perfect for sorting or filtering data in the Excel report. It won't be shown to participants.
-- **Question shown to participants**: This is what participants will see as the question or label when filling out the form.
-- **Required**: Enable this switch to make this field mandatory for participants.
+## What participants see on their devices
 
-After filling out the fields in the pop-up window, you can click **Add field** to create the custom field.
+When participants join your presentation, they see a form prompting them to enter the information you requested before they can join.
 
-The field will then be added to the list:
-
-### 3. Additional settings
-
-You can **Remove** a field or **Mark it as required** for participants by clicking the three-dot button next to it. You can also rearrange the fields by dragging them using the six-dot button at the front of each field.
-
-## On participants' devices
-
-When participants join your presentation, they will see a form prompting them to enter the information you've requested before they can join.
-
-> When participants join, they will see the same background as the slide the presenter is displaying at that moment.
+{% hint style="info" %}
+When participants join, they see the same background as the slide the presenter is displaying at that moment.
+{% endhint %}
 
 ## Seeing collected info in the Excel export
 
-**Once participants have entered their info, it will be stored in the Excel file that contains your full presentation report.**
+Once participants enter their info, it is stored in the Excel file that contains your full presentation report.
 
-Any user not on the free plan can download this Excel file by heading to the **Results** tab in the editor toolbar and clicking the button labelled *'Request Excel file'*.
-
-Download the Excel file and click on the second sheet here, labelled *'Participants'.* Here you will see all of your collected participant info.
-
+Any user not on the Free plan can download this Excel file from the **Results** tab in the editor toolbar by clicking **Request Excel file**. Open the downloaded file and click the second sheet, labelled **Participants**, to see all collected participant info.

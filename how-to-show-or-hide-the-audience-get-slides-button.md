@@ -1,41 +1,59 @@
 ---
 id: 570272000000696345
-title: How to Show or Hide the Audience Get slides button
+title: "How to show or hide the audience Get slides button"
 status: Unpublished
 permalink: how-to-show-or-hide-the-audience-get-slides-button
-category: Using Slide Types on AhaSlides
-category_id: 570272000074885296
+category: "Features and functions"
+category_id: 570272000074885546
 permission: ALL
-last_updated: 2024-12-06
-tags: ["ad", "branding", "link", "show", "sign", "advert", "signup", "adverts", "ads", "cta", "hide", "call to action", "ahaslides", "pop-up", "up", "sign-up"]
-keywords: ["show", "hide", "signup", "sign", "up", "sign-up", "link", "CTA", "call to action", "ad", "advert", "branding", "pop-up", "pop"]
-summary: Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation.
 plan_required: All
-portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
-related_articles: []
+last_updated: 2026-06-22
+tags:
+  - get slides
+  - download slides
+  - audience download
+  - call to action
+  - sign up
+keywords: []
+summary: "You can show or hide the link that invites participants to download your slides at the end of your presentation, and require your approval before downloads."
+description: "How to show or hide the audience Get slides button on AhaSlides, the banner that lets participants download your slides at the end of a presentation, and how to require approval before downloads."
+questions_answered:
+  - "How do I let my audience download my slides?"
+  - "How do I hide the Get slides button from my audience?"
+  - "What is the audience Get slides button?"
+  - "How do I require approval before my audience downloads my slides?"
+  - "Why does a download banner appear on my audience's devices at the end?"
+user_intents:
+  - "Allow or block audience downloads of the slides at the end of a presentation"
+  - "Require approval before participants can download the slides"
+related: []
 mcp_actions:
   not_applicable: No AhaSlides MCP slide actions for this article type
-description: "Learn how to show or hide the link that invites participants to sign up to AhaSlides at the end of your presentation."
+portal_url: https://help.ahaslides.com/portal/en/kb/articles/how-to-show-or-hide-the-audience-get-slides-button
+zoho_id: "570272000000696345"
 ---
 
-# How to Show or Hide the Audience Get slides button
+# How to show or hide the audience Get slides button
 
-You can choose to show or hide a link that invites your participants to download your slides at the end of your presentation.
+You can show or hide the link that invites participants to download your slides at the end of your presentation.
 
 ## What is the audience get slides button?
 
-The audience Get slides button is a small banner that your audience will see on their devices when you are presenting the final slide of your presentation. The banner will invite your audiences to download your slides
+The audience Get slides button is a small banner that participants see on their devices when you present the final slide. The banner invites your audience to download your slides.
 
-**The Get slides button appears at the final slide of all slide types except for the 'Content' slide.**
+The Get slides button appears on the final slide of every slide type except the Content slide.
 
 ## How to hide the audience get slides button
 
-1. Navigate to **Settings** in the top toolbar of the editor.
-1. Click on **Other settings**
-1. Uncheck the checkbox that says **Allow audience to download the slides**.
+1. Go to **Settings** in the top toolbar of the editor.
+2. Click **Other settings**.
+3. Uncheck the checkbox labelled **Allow audience to download the slides**.
 
 ## How to show the audience get slides button
 
-- To enable your audience to download your slides, ensure that the '**Allow audience to download the slides**' checkbox is selected.
-- Additionally, if you wish to have control over this feature and require approval before downloads, check the '**Require my approval**' box located under '**Allow audience to download the slides**'. This option grants you the authority to approve or deny slide downloads by your audience.
+1. Go to **Settings** in the top toolbar of the editor, then click **Other settings**.
+2. Check the checkbox labelled **Allow audience to download the slides**.
 
+{% hint style="info" %}
+To approve each download yourself, check the **Require my approval** box under **Allow audience to download the slides**. With this enabled, you can approve or deny each download request from your audience.
+{% endhint %}
