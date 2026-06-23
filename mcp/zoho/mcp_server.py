@@ -23,12 +23,24 @@ from dotenv import load_dotenv
 
 HERE = Path(__file__).parent
 
-# Load credentials from the .env next to this file (gitignored).
-load_dotenv(HERE / '.env', override=True)
+# Credentials may live in the kb repo-root .env (the repo's established secret
+# store, per CLAUDE.md) or in a local mcp/zoho/.env. Load in increasing priority
+# (later wins): repo-root, then local, then an explicit ZOHO_ENV_FILE override.
+for _env in (HERE.parent.parent / '.env', HERE / '.env', os.getenv('ZOHO_ENV_FILE')):
+    if _env and Path(_env).is_file():
+        load_dotenv(_env, override=True)
 
 CLIENT_ID = os.getenv("ZOHO_CLIENT_ID")
 CLIENT_SECRET = os.getenv("ZOHO_CLIENT_SECRET")
+# Optional: only set for the older refresh_token grant. Absent -> client_credentials.
 REFRESH_TOKEN = os.getenv("ZOHO_REFRESH_TOKEN")
+# Zoho Desk organization id — required by the client_credentials (Self Client) grant,
+# which scopes the token via soid=ZohoDesk.<orgId>. Not a secret.
+ORG_ID = os.getenv("ZOHO_ORG_ID")
+# Datacenter-specific endpoints (override for .eu/.in/.com.au/.jp accounts).
+ACCOUNTS_URL = os.getenv("ZOHO_ACCOUNTS_URL", "https://accounts.zoho.com").rstrip("/")
+API_BASE = os.getenv("ZOHO_API_BASE", "https://desk.zoho.com").rstrip("/")
+SCOPE = os.getenv("ZOHO_SCOPE", "Desk.tickets.READ")
 
 # Optional bearer auth for the MCP transport itself.
 auth_token_str = os.getenv("AUTH_TOKEN")
@@ -51,18 +63,35 @@ TOKEN_PATH = HERE / 'access_token.txt'
 
 
 def fetch_access_token():
-    url = "https://accounts.zoho.com/oauth/v2/token"
+    """Mint a Zoho access token.
+
+    Grant is chosen by which credentials are present:
+      - ZOHO_REFRESH_TOKEN set -> refresh_token grant (legacy)
+      - otherwise              -> client_credentials grant (Self Client),
+                                  which needs ZOHO_ORG_ID for soid scoping.
+    """
+    url = f"{ACCOUNTS_URL}/oauth/v2/token"
     params = {
-        'refresh_token': REFRESH_TOKEN,
         'client_id': CLIENT_ID,
         'client_secret': CLIENT_SECRET,
-        'scope': 'Desk.tickets.READ',
-        'redirect_uri': 'https://www.ahaslides.com',
-        'grant_type': 'refresh_token'
+        'scope': SCOPE,
     }
+    if REFRESH_TOKEN:
+        params.update({
+            'grant_type': 'refresh_token',
+            'refresh_token': REFRESH_TOKEN,
+            'redirect_uri': 'https://www.ahaslides.com',
+        })
+    else:
+        params['grant_type'] = 'client_credentials'
+        if ORG_ID:
+            params['soid'] = f'ZohoDesk.{ORG_ID}'
     resp = requests.post(url, params=params)
     data = resp.json()
-    return data.get('access_token')
+    token = data.get('access_token')
+    if not token:
+        raise RuntimeError(f"Zoho token request failed: {data}")
+    return token
 
 
 def refresh_access_token():
@@ -140,13 +169,30 @@ def _collect_customer_names(node, names, in_person=False):
     return names
 
 
+def _expand_names(names):
+    """Expand full names into their individual tokens (first/last) so a name
+    leaks neither whole nor in part. Tokens shorter than 3 chars are dropped to
+    avoid redacting initials and common short words."""
+    expanded = set()
+    for n in names:
+        n = (n or "").strip()
+        if len(n) >= 3:
+            expanded.add(n)
+        for tok in re.split(r"\s+", n):
+            tok = tok.strip(".,;:'\"()")
+            if len(tok) >= 3:
+                expanded.add(tok)
+    return expanded
+
+
 def _scrub_text(text, names=()):
     if not isinstance(text, str):
         return text
     text = _EMAIL_RE.sub(REDACT_EMAIL, text)
     text = _PHONE_RE.sub(REDACT_PHONE, text)
-    # Redact known customer names that appear in signatures / body prose.
-    for name in names:
+    # Redact known customer names in signatures / body prose. Longest first so a
+    # full name is replaced before its component tokens.
+    for name in sorted(names, key=len, reverse=True):
         text = re.sub(r"\b" + re.escape(name) + r"\b", REDACT_NAME, text, flags=re.IGNORECASE)
     return text
 
@@ -195,15 +241,17 @@ def _mask_identity(data):
     """
     if not _MASKING_ENABLED:
         return data
-    names = _collect_customer_names(data, set())
+    names = _expand_names(_collect_customer_names(data, set()))
     return _mask_node(data, names)
 
 
 def fetch_zoho_convo(ticket_id: str, thread_id: str):
-    url = f'https://desk.zoho.com/api/v1/tickets/{ticket_id}/threads/{thread_id}'
+    url = f'{API_BASE}/api/v1/tickets/{ticket_id}/threads/{thread_id}'
     headers = {
         'Authorization': f'Zoho-oauthtoken {get_access_token()}'
     }
+    if ORG_ID:
+        headers['orgId'] = str(ORG_ID)
     return requests.get(url, headers=headers).json()
 
 
