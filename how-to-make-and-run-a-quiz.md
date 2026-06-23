@@ -26,7 +26,7 @@ description: "Learn everything about creating and hosting a live quiz for your a
 
 On AhaSlides, you can host a live quiz and have all of your participants competing for points. Build a quiz using quiz question slides and see who ranks top of the leaderboard at the end!
 
-## Video and interactive demo: how to make a live quiz on AhaSlides
+## Video and interactive demo: How to make a live quiz on AhaSlides
 
 This video explains how to make a live quiz, including everything in this article. If you are looking for a specific part in the video, please click the bottom-right button to watch it on YouTube, where you can find each section time-stamped in the video description.
 
@@ -44,7 +44,7 @@ You progress through the quiz, pausing at each slide for players to answer the q
 
 Here you can see the screens of the **quiz host** (on the left-hand computer) and the **quiz player** (on the right-hand phone).
 
-### Step 1: choosing a quiz slide
+### Step 1: Choosing a quiz slide
 
 On the presentation editor, create a new slide and select any of the 5 'quiz' slides as the format for that question (Spinner Wheel is *not* a scored quiz slide).
 
@@ -66,7 +66,7 @@ You can also use a **Pop-up Leaderboard** by pressing **L** on your keyboard (or
 
 More details can be found in this article: [Adding and Deleting a Leaderboard on your Quiz](adding-and-deleting-a-leaderboard-on-your-quiz.md)
 
-### Step 2: editing a quiz slide
+### Step 2: Editing a quiz slide
 
 Now you are able to edit your slide. Here's what a 'pick answer' slide will look like when it's ready to edit:
 
@@ -110,7 +110,7 @@ Hints will appear both on the presenter's screen and the audience's screens.
 
 If you are on the **Pro or Enterprise** plan, you can also add accompanying audio to your quiz questions. [Check this guide out for more](slide-audio-presentation-audio-and-sound-effects.md).
 
-### Step 3: joining a quiz
+### Step 3: Joining a quiz
 
 When you have created your quiz slides, you can either **invite your players** to join your presentation, or you can **join it yourself** on your phone to test it out (which we recommend).
 
@@ -127,7 +127,7 @@ To join the quiz, **the host needs to present a quiz slide**. When they do...
 - The host will see the **lobby** on their screen. This is where they can see all the players who have joined the quiz and are waiting to play.
 - The player will be asked to **enter their name** and choose an avatar for the quiz. Once they have chosen, they will be shown in the quiz lobby.
 
-### Step 4: presenting a quiz
+### Step 4: Presenting a quiz
 
 When all your players have joined the quiz and are showing in the quiz lobby, you can press the blue button below that says '**Start the Quiz!'**
 

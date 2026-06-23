@@ -24,7 +24,7 @@ Resetting results (or 'clearing the responses') on your presentation means that 
 
 This allows you to reuse presentations for different audiences. Each reset will also **create a new session** in the Report: [Your AhaSlides Presentation Report](your-ahaslides-presentation-report.md)
 
-## Video and interactive demo: resetting results (clearing responses)
+## Video and interactive demo: Resetting results (clearing responses)
 
 This video explains how to reset the result of your presentation, or a single slide:
 

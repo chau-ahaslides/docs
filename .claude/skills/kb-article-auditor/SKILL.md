@@ -54,6 +54,7 @@ For frontmatter checks marked `?`, note that the raw file needs to be inspected.
 | Opening sentence answers the core question without preamble | |
 | Every heading is descriptive and makes sense out of context | |
 | Every heading uses sentence case (first word + proper nouns only) | |
+| First word after a colon in a heading is capitalised (e.g. "Step 1: Log in...") — a lowercase first word after a colon is a FAIL | |
 | Paragraphs are ≤4 lines | |
 | Steps are numbered and each step contains exactly one action | |
 | Article covers one user intent | |
@@ -161,6 +162,11 @@ Use these to calibrate your judgement. Each is a check that passed with a real e
 **Sentence case headings**
 > "How to add a Content v2 slide" ✅
 > "How to set up your Teams" ✅ (proper noun capitalised)
+
+**First word after a colon capitalised**
+> "Step 1: Log in to your account" ✅ / "Option 2: Manual configuration" ✅
+> "Step 1: log in to your account" ❌ FAIL (lowercase first word after the colon)
+> Sentence case still applies to the rest of the heading — only the first word after the colon is forced to capital.
 
 **Article covers one user intent**
 All three audited articles stayed on topic — no scope creep into a second unrelated feature.

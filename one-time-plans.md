@@ -20,7 +20,7 @@ description: "The One-Time plan triggers when one of your presentations reaches 
 
 # One-Time Plans
 
-## 15-Second explainer ⏰: one-time plan
+## 15-Second explainer ⏰: One-time plan
 
 > 📹 [Watch video](https://www.youtube.com/embed/rCY0i16layQ)
 

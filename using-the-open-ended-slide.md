@@ -34,24 +34,24 @@ Open-ended questions let respondents answer in free text, so they can express th
 
 ## How to set up an Open Ended slide
 
-### Step 1: add the slide and write your question
+### Step 1: Add the slide and write your question
 
 In the editor, click **New slide** (top-left) and select **Open Ended** from the slide type picker. Type your question in the **Your question** field on the right panel.
 
 A good Open Ended question is specific enough to spark a real response. "What's one thing you'd improve about our onboarding?" tends to get more useful answers than "What do you think?"
 
-### Step 2: collect audience info (optional)
+### Step 2: Collect audience info (optional)
 
 Expand **Collect audience info** in the right panel to add fields like name or team. This lets you see who said what alongside each response. See [collecting audience information](collecting-audience-information.md) for details.
 
-### Step 3: choose a layout
+### Step 3: Choose a layout
 
 Under **Results → Layout**, pick one of two display styles:
 
 - **Grid** — shows all responses at once as they come in. Great for spotting patterns across a large audience.
 - **One by one** — reveals responses individually. Useful when you want to read each answer aloud or discuss it with the room.
 
-### Step 4: adjust settings
+### Step 4: Adjust settings
 
 The right panel has several toggles and checkboxes:
 
@@ -62,7 +62,7 @@ The right panel has several toggles and checkboxes:
 5. **Allow audience to submit images**: Participants can share a photo instead of typing text. See [sharing images with the Open Ended slide](https://help.ahaslides.com/portal/en/kb/articles/sharing-images-with-open-ended-slide) for how this works on the audience side.
 6. **Filter profanity**: Automatically censors English swear words in submitted responses. Note: enabling this applies the profanity filter to your entire presentation.
 
-### Step 5: present and collect responses
+### Step 5: Present and collect responses
 
 Click **Present** — your audience joins on their devices, types their answers, and responses appear on your screen in real time. You can manually delete any response by clicking the **×** icon next to it.
 

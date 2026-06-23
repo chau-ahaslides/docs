@@ -252,6 +252,19 @@ def sentence_case_heading(heading_text):
                 text = text[:i] + ch.upper() + text[i+1:]
             break
 
+    # -----------------------------------------------------------------------
+    # Phase 6: Capitalize the first word after a colon (AKB-44 colon rule).
+    # A heading that introduces a subtitle/value with a colon ("Step 1: log in",
+    # "Option 2: manual configuration") must capitalize the first word AFTER the
+    # colon — a lowercase first word after a colon is an audit FAIL. The space
+    # requirement after the colon means URL schemes ("https://...", no space) are
+    # never matched. Proper nouns and ALL-CAPS tokens are already cased above, so
+    # this only ever uppercases an otherwise-lowercased first letter.
+    # -----------------------------------------------------------------------
+    text = re.sub(r'(:\s+)([a-z])',
+                  lambda m: m.group(1) + m.group(2).upper(),
+                  text)
+
     return text
 
 

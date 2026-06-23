@@ -27,7 +27,7 @@ AhaSlides Surveys let you collect structured, multi-question feedback — build 
 
 ---
 
-## Step 1: creating a survey
+## Step 1: Creating a survey
 
 Surveys live in their own section of your AhaSlides dashboard, separate from your presentations.
 
@@ -39,7 +39,7 @@ Surveys live in their own section of your AhaSlides dashboard, separate from you
 
 ---
 
-## Step 2: adding and editing questions
+## Step 2: Adding and editing questions
 
 Inside the Survey editor you can mix as many question types as you need:
 
@@ -59,7 +59,7 @@ Your changes auto-save as a **Draft** until you publish.
 
 ---
 
-## Step 3: publishing and sharing
+## Step 3: Publishing and sharing
 
 While a Survey is a Draft it is not collecting responses. When you are happy with your questions, publish it — the status changes to **Published** and it is ready for respondents.
 

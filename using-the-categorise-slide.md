@@ -80,7 +80,7 @@ On the participant screen, items appear shuffled in a list. Participants tap and
 
 By using Categorise slides, you can turn any sorting task — from scientific classification to sales objection handling — into an engaging live activity that keeps your audience actively thinking, not passively watching.
 
-## Try it: classroom template
+## Try it: Classroom template
 
 A ready-made Categorise activity — "Sort It Out: Parts of Speech" — that you can copy straight into your own account. Students sort 11 words (mountain, run, brilliant, and more) into Noun, Verb, and Adjective buckets in real time.
 

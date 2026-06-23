@@ -68,7 +68,7 @@ The settings panel gives you six options to customise how your Word Cloud behave
 
 **6. Filter profanity**: Automatically censors English-language swear words as they arrive. Checking this applies the filter across your entire presentation.
 
-### Step 3: present and watch the cloud build
+### Step 3: Present and watch the cloud build
 
 Click **Present** to go live. Participants join on their phones, type up to their allowed number of words, and hit Submit. Each new response appears in the cloud in a random colour — the most-submitted word grows largest and moves to the centre. Words around it shift to new random positions with every update.
 
