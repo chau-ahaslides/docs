@@ -27,3 +27,5 @@ The Yearly plan lets you use AhaSlides for as many occasions as you want, such a
 After purchasing a Yearly plan, you can **turn off auto-renewal anytime** on AhaSlides, by using the **'Cancel subscription'** button on the [My Plan](https://presenter.ahaslides.com/apps/user-plan) page to avoid being charged for a second year.
 
 Want more information regarding different subscriptions? [Visit our plans page](http://ahaslides.com/pricing).
+
+*Last updated: 2026-06-22*

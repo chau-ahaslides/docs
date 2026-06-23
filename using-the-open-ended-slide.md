@@ -81,3 +81,5 @@ AhaSlides can automatically cluster similar responses so you can spot patterns a
 3. Click the icon again to ungroup.
 
 > **The Open Ended slide supports unlimited submissions.**
+
+*Last updated: 2026-06-22*

@@ -79,3 +79,5 @@ Follow the instructions in the confirmation email to set up your team plans. Add
 4. Select **Confirm** to confirm your updates
 
 > If you need assistance with adding additional licenses, feel free to contact us via our support email at **hi@ahaslides.com**
+
+*Last updated: 2026-06-22*

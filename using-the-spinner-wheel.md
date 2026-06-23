@@ -85,3 +85,4 @@ In the right panel of the editor, there are several settings for your Spinner Wh
 
 With all your desired entries in the wheel, press the button at the centre of the wheel to spin it. The chosen entry is displayed on both the presenter and audience devices.
 
+*Last updated: 2026-06-22*

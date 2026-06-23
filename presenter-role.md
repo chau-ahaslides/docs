@@ -76,3 +76,5 @@ As the presentation owner, you can view reports for sessions run by you and by y
 To see all sessions, open the [report page of the presentation](your-ahaslides-presentation-report.md) and click the **Session list** box next to the owner's name. A window opens with the list of sessions for you to select.
 
 Collaborators with the Presenter role can access reports only for the sessions they ran themselves.
+
+*Last updated: 2026-06-23*

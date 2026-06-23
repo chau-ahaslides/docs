@@ -24,3 +24,4 @@ AhaSlides accepts USD, however when you make your payment with an international 
 
 The rate will depend on your bank.
 
+*Last updated: 2026-06-22*

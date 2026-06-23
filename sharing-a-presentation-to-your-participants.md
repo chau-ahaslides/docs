@@ -4,3 +4,5 @@ note: "This slug is outdated. Use [[sharing-your-presentation-for-participants-t
 ---
 
 > ⚠️ This is an old slug. The current article is [[sharing-your-presentation-for-participants-to-join]].
+
+*Last updated: 2026-06-04*

@@ -48,3 +48,5 @@ Then, you will see the '**Cancel subscription**' button.
 ## What happens to my presentations when my account is downgraded?
 
 All of the existing presentations and results will remain in your account if you cancel your subscription. You will still have access to the free account features but will no longer have access to the paid features.
+
+*Last updated: 2026-06-22*

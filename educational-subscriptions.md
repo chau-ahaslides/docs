@@ -31,3 +31,5 @@ If you're a teacher, student, NGO or plan to use AhaSlides in some educational c
 After purchasing an Edu plan, you can **turn off auto-renewal** right away, following this guide: [Cancelling your AhaSlides Subscription](cancelling-your-ahaslides-subscription.md) to **avoid being charged for your second year**.
 
 > Want more information regarding different subscriptions? [Visit our plans page](http://ahaslides.com/pricing): [https://ahaslides.com/pricing/](https://ahaslides.com/pricing/)
+
+*Last updated: 2026-06-22*

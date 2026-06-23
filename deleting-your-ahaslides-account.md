@@ -39,3 +39,4 @@ If you don't wish to delete your account entirely, you can consider changing you
 5. Choose a reason for account deletion and confirm by typing your email address connected to your account.
 6. Click **Delete account**
 
+*Last updated: 2026-06-22*

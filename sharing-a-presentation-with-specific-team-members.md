@@ -50,3 +50,5 @@ A green icon on the thumbnail will specify that this presentation was received f
 💡 To see how to manage your team members, please check out [this article](sharing-a-presentation-with-specific-team-members.md).
 
 > To get **more licenses for your team**, you can tell us how many you need in [this 1-minute form](https://form.typeform.com/to/sC0I4AXE?typeform). We'll take care of it.
+
+*Last updated: 2026-06-22*

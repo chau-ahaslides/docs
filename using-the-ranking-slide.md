@@ -100,3 +100,5 @@ Ranking slides are useful anytime you need a group to agree on what matters most
   Understand which programs, benefits, or development areas employees value most.
 - **Customer research and surveys**
   Capture deeper insights by asking respondents to prioritize needs, preferences, or features.
+
+*Last updated: 2026-06-22*

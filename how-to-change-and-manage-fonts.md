@@ -55,3 +55,5 @@ The Content slide has its own small font library, which is displayed in the top 
 However, it is still possible to change to a font in your font library by selecting the '**Design**' tab and finding your preferred font in the '**Text**' dropdown menu.
 
 > **Note:** Please note that it is currently **not possible to import fonts** to AhaSlides.
+
+*Last updated: 2026-06-22*

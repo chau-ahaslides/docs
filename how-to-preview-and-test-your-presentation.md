@@ -59,3 +59,5 @@ To move through your presentation and test the interaction on different slides, 
 ## Exiting preview mode
 
 Once you have finished testing, return to the editor by clicking the **Back to Editor** button in the top-left corner.
+
+*Last updated: 2026-06-23*

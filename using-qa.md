@@ -104,3 +104,5 @@ Turning on this setting will mean that each audience member will be able to see 
 Turning on this setting will give each audience member the chance to submit their question without entering their name. The box to enter their name will be there, but it won't be mandatory to fill it in.
 
 > **Q&A slide supports up to 1,000 questions per presentation.**
+
+*Last updated: 2026-06-22*

@@ -53,3 +53,5 @@ If you pick **Import and generate slides with AI** or **Generate interactive sli
 - **Time Efficiency:** Quickly transform existing presentations into interactive quizzes.
 - **Enhanced Engagement:** Interactive quizzes make training sessions more engaging.
 - **Versatility:** Supports many file formats.
+
+*Last updated: 2026-06-22*

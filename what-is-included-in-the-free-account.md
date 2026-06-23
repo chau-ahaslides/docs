@@ -42,3 +42,5 @@ AhaSlides offers a free plan with access to a range of features for as long as y
 **Support:**
 
 You have access to [AhaSlides Help Center](https://help.ahaslides.com/portal/en/kb) where you can find other useful articles like this one! Additionally, you can reach out to our support agents via live chat on our website.
+
+*Last updated: 2026-06-22*

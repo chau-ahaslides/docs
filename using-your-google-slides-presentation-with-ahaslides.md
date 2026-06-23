@@ -46,3 +46,5 @@ You can also open the Google Slides presentation menu by clicking the three-dot 
 You can add AhaSlides interactive slides before or after your embedded Google Slides presentation. In the slide panel on the left, add a new slide and position it wherever it fits in your flow.
 
 This is how most presenters use the integration: a Google Slides content section, a live poll to check understanding, back to slides, then a quiz at the end.
+
+*Last updated: 2026-06-22*

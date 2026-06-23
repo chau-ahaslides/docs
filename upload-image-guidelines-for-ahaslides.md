@@ -67,3 +67,5 @@ All uploaded images are automatically optimised to keep presentations running sm
 ## Presentation rendering
 
 During playback, presentations are rendered locally on the presenter's device rather than streamed from AhaSlides servers. This helps keep performance stable and responsive during live sessions.
+
+*Last updated: 2026-06-23*

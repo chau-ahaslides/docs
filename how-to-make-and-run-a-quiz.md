@@ -233,3 +233,4 @@ The count will only reset when the presenter exits presenting mode and clicks **
 
 The presenter can also manually end the quiz timer by hovering the cursor on the timer, then clicking **End now**
 
+*Last updated: 2026-06-22*

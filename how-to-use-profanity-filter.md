@@ -49,3 +49,5 @@ There are **3** **places** on the AhaSlides editor where you can toggle the prof
 Currently, the profanity filter works with the vast majority of profanities in English. If you have noticed an error in the filter or would like to make a suggestion, please contact us at [hi@ahaslides.com](mailto:hi@ahaslides.com).
 
 **Tip 💡** You can also censor any quiz name submission on the lobby or leaderboard screen of a quiz, regardless of whether it's profanity or not. [Click here](https://help.ahaslides.com/how-to-censor-inappropriate-names) for a quick guide on how to do it.
+
+*Last updated: 2026-06-22*

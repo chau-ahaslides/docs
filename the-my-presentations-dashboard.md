@@ -109,3 +109,5 @@ To bring in an existing file from outside AhaSlides:
 # The support chat bubble
 
 The blue chat bubble in the bottom-right corner connects you directly to the AhaSlides support team. Check the [Help Centre](https://help.ahaslides.com/portal/en/kb) first — many common questions are already answered there.
+
+*Last updated: 2026-06-22*

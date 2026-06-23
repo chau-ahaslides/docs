@@ -106,3 +106,5 @@ Click **Preview** in the top header to rehearse the slide from both the presente
 - **Corporate training** — confirm trainees can produce a key term or figure from memory, not just recognise it in a list.
 - **Trivia nights** — make rounds harder and more rewarding by removing the multiple-choice safety net.
 - **Brand and product knowledge** — check that staff can name a value, feature, or policy unprompted.
+
+*Last updated: 2026-06-22*

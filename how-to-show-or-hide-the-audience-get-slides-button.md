@@ -57,3 +57,5 @@ The Get slides button appears on the final slide of every slide type except the 
 {% hint style="info" %}
 To approve each download yourself, check the **Require my approval** box under **Allow audience to download the slides**. With this enabled, you can approve or deny each download request from your audience.
 {% endhint %}
+
+*Last updated: 2026-06-23*

@@ -95,3 +95,4 @@ If you hover your mouse over each circle, you can see how many responses each va
 
 You can also hover your mouse over the statements on the right, or the circle averages at the bottom, to get an isolated view of how each statement fared in the response data.
 
+*Last updated: 2026-06-22*

@@ -93,3 +93,5 @@ You can add a new team from the quiz lobby by clicking the **+ Add a team** butt
 {% endhint %}
 
 When you reach a leaderboard in your quiz, you see the scores of each team. Click **Show Individual Ranking** to reveal how each player on each team is performing.
+
+*Last updated: 2026-06-23*

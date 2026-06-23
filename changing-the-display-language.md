@@ -85,3 +85,5 @@ The audience display language is currently available in 32 languages: Bahasa Ind
 {% hint style="info" %}
 The two settings are independent. Changing your presenter interface language does not change what your audience sees, and changing the audience display language does not change your menus.
 {% endhint %}
+
+*Last updated: 2026-06-23*

@@ -133,3 +133,4 @@ To locate and access your Individual Audience Report within AhaSlides, you can f
 1. **Access Your Presentation Report:** You can follow the guide in the [How to Find your Presentation Report](#How_to_Find_your_Presentation_Report) section above to open the Presentation report.
 2. **Access the Individual Audience Report:** To view the Individual Audience Report for a specific participant, simply click on their name within the participant list. Doing this action will display the detailed report for that individual.
 
+*Last updated: 2026-06-22*

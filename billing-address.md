@@ -28,3 +28,5 @@ Add billing address and other information into your receipt.
 2. Go to *'My Profile'* or use [this link](https://presenter.ahaslides.com/apps/user-profile)
 3. Fill in the *'Billing Address'* section
 4. Click *'Update profile'*
+
+*Last updated: 2026-06-22*

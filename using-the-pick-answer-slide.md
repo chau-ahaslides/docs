@@ -106,3 +106,5 @@ On their phones, players see the question and tap the answer option they think i
 - **Corporate training and onboarding** — verify that policies, product facts, or compliance points have landed.
 - **Trivia and icebreakers** — fast, fun rounds that energise meetings, webinars, and events.
 - **Live audience polling with a "right" answer** — when you want to test the room's knowledge rather than just gather opinions.
+
+*Last updated: 2026-06-22*

@@ -99,3 +99,5 @@ To erase audience response data across multiple slides, select the slides, then 
 ### Deleting multiple slides
 
 To delete multiple slides at once, click the **Select** button, select the slides you want to delete, and click **Done**. Then click the **Delete** button in the panel.
+
+*Last updated: 2026-06-23*

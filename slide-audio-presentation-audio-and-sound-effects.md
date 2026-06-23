@@ -102,3 +102,5 @@ On participants' devices, sound effects provide feedback during interactions:
 
 1. Select any slide in your presentation, then click the **Audio** section on the right side of the editor.
 2. Under the **Presentation** tab, use the toggles under **Sound effects** next to **On the presenting screen** or **On participants' devices** to enable or disable them.
+
+*Last updated: 2026-06-23*

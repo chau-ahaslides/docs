@@ -124,3 +124,5 @@ Yes. The AhaSlides panel stays open while you present. Browse your library and c
 
 **Is the add-in available on mobile Teams?**
 The presenter experience is optimised for desktop Teams. Participants can always respond from any device.
+
+*Last updated: 2026-06-10*

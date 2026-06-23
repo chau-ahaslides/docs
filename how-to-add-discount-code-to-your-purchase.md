@@ -29,3 +29,4 @@ On the Checkout page, locate the **'Add promotion code'** text right under the *
 **3. Enter the Code**
 Enter your discount code in the field that appears, then click **'Apply'**.
 
+*Last updated: 2026-06-22*

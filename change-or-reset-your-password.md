@@ -37,3 +37,5 @@ That's it. You've successfully updated your password!
 2. Type in your email address using **only lowercase letters**. Capital letters might prevent the system from recognizing your address.
 3. Click **Reset Password**
 4. You can follow the instructions sent to your email to reset your password.
+
+*Last updated: 2026-06-22*
