@@ -97,4 +97,26 @@ Once participants enter their info, it is stored in the Excel file that contains
 
 Any user not on the Free plan can download this Excel file from the **Results** tab in the editor toolbar by clicking **Request Excel file**. Open the downloaded file and click the second sheet, labelled **Participants**, to see all collected participant info.
 
+## Frequently asked questions
+
+### How do I collect names and emails from my audience on AhaSlides?
+
+Go to the **Settings** menu, click **Collect audience info**, check **Ask participants for info before they join**, then add the fields you want. You can also collect info on an individual Open Ended or Brainstorm slide.
+
+### How do I add custom fields to the audience info form?
+
+After clicking the add button, choose **Custom field +**. You can set an internal field name, the question shown to participants, and whether the field is required.
+
+### How many fields can I add to the audience info form?
+
+You can add up to 8 fields: 3 default fields (Name, Email, Avatar) and up to 5 custom fields.
+
+### Where do I find the participant information I collected?
+
+It is stored in the Excel file with your presentation report. Download it from the **Results** tab by clicking **Request Excel file**, then open the second sheet, labelled **Participants**.
+
+### Which plans can collect audience information?
+
+Collecting audience information is available on all paid plans. Viewing the collected information in the Excel export is available to any user not on the Free plan.
+
 *Last updated: 2026-06-23*

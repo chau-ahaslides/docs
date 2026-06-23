@@ -77,4 +77,26 @@ To see all sessions, open the [report page of the presentation](your-ahaslides-p
 
 Collaborators with the Presenter role can access reports only for the sessions they ran themselves.
 
+## Frequently asked questions
+
+### How do I let multiple people present the same AhaSlides presentation?
+
+Add them as collaborators with the **Presenter** role: click the profile-image-and-**+** icon in the editor toolbar, or open the **Share** menu and choose **Add Collaborators**, then enter their emails and assign the Presenter role. Each presenter gets their own join link and QR code.
+
+### What can a collaborator with the Presenter role do?
+
+A Presenter can view the presentation, present it, reset results, and view and export the report for their own sessions. They run independent sessions that do not affect other presenters.
+
+### Why can't presenters edit the presentation?
+
+The Presenter role intentionally excludes editing. When you make changes as the owner, presenters can click **Get the latest** to receive the updated version.
+
+### How do I view reports for sessions run by my collaborators?
+
+As the owner, open the report page and click the **Session list** box next to your name to select any session run by you or your presenters. Presenters themselves can only access reports for sessions they ran.
+
+### Which plan is required for the Presenter role?
+
+The Presenter role requires the Pro plan. It also does not work on the PowerPoint add-in.
+
 *Last updated: 2026-06-23*

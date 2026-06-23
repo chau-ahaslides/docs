@@ -81,4 +81,26 @@ Each imported slide is named with its slide number followed by the name of the f
 
 You cannot make the imported slides themselves interactive, apart from the default emoji reactions. To add interaction, you can [generate slides using AI](generating-quiz-questions-from-imported-ppt-or-pdf-files-on-ahaslides.md), or place AhaSlides interactive slides between your imported slides to encourage responses from your audience.
 
+## Frequently asked questions
+
+### How do I import a PowerPoint presentation into AhaSlides?
+
+Click the **Import** button on the **My Presentations** dashboard, or the **Import** button inside the editor to add a file to an existing presentation. Browse for your PPT, PPTX, or PDF file, or drag and drop it onto the window.
+
+### Can I import a PDF file into AhaSlides?
+
+Yes. AhaSlides accepts PPT, PPTX, and PDF files through the same Import button.
+
+### What file size and slide limits apply to imports?
+
+You can import any PowerPoint or PDF file up to 50 MB and 100 slides. Larger files may take a while to fully import.
+
+### What happens to animations and audio when I import a PowerPoint?
+
+Each slide is imported as a static image on a Content slide, so animations, embedded audio, and links are not imported. You can still add text, images, GIFs, and emojis to each Content slide.
+
+### How do I make my imported PowerPoint interactive?
+
+You cannot make the imported slides themselves interactive, apart from default emoji reactions. Instead, use AI to generate interactive slides, or place AhaSlides interactive slides between your imported slides.
+
 *Last updated: 2026-06-23*

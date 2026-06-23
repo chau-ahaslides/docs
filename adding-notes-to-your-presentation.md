@@ -52,4 +52,22 @@ After you click **Start**, the Remote control window opens and displays the note
 Your notes are visible only on the Remote control window. They never appear on the audience screen or on the projected presentation.
 {% endhint %}
 
+## Frequently asked questions
+
+### How do I add speaker notes to my AhaSlides presentation?
+
+In the AhaSlides editor, type into the notes box below each slide preview. Your notes save automatically and stay attached to that slide.
+
+### Can my audience see my presenter notes?
+
+No. Your notes are visible only on the Remote control window. They never appear on the audience screen or on the projected presentation.
+
+### How do I view my notes while presenting?
+
+Present with Remote control. After you click **Start**, the Remote control window opens on your own screen and displays the notes you wrote for each slide as you present it.
+
+### Why can't I see my notes during the presentation?
+
+Notes appear only when you present with Remote control. If you started the presentation without Remote control, your notes will not be shown.
+
 *Last updated: 2026-06-23*

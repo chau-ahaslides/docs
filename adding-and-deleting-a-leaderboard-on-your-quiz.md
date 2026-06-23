@@ -80,4 +80,30 @@ When you open the pop-up leaderboard, the audience screens stay unchanged. The l
 The pop-up leaderboard always displays the final scores accumulated from all completed quizzes, regardless of when or where you open it.
 {% endhint %}
 
+## Frequently asked questions
+
+### How do I add a leaderboard to my AhaSlides quiz?
+
+A leaderboard is added automatically when you create any quiz slide except the Spinner Wheel, and it is placed right after that quiz slide. If you turned a leaderboard off, open the Content tab of the quiz slide and turn on the Leaderboard switch.
+
+### How do I delete a leaderboard slide from my quiz?
+
+Delete the leaderboard slide the same way you delete any slide. This does not affect the quiz slide that generated it.
+
+### I deleted my leaderboard slide, how do I add it back?
+
+Open the Content tab of the quiz slide that the leaderboard belonged to, then turn on the Leaderboard switch.
+
+### Why isn't a leaderboard showing up after my quiz slide?
+
+Leaderboards work only with quiz slide types: Pick Answer, Short Answer, Match Pairs, Correct Order, and Categorize. If you added a Poll slide instead of a quiz slide, no leaderboard is created.
+
+### Why doesn't my leaderboard update in real time?
+
+A leaderboard slide is designed for live presentations, so it does not update in real time. It fetches the latest results only when you refresh it or when you move to it from another slide.
+
+### How do I open the pop-up leaderboard during a presentation?
+
+Press **L** on your keyboard, or click the **Trophy icon** in the control bar. The audience screens stay unchanged, and it always shows the final scores accumulated from all completed quizzes.
+
 *Last updated: 2026-06-23*

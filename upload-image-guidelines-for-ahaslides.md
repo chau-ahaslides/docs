@@ -68,4 +68,26 @@ All uploaded images are automatically optimised to keep presentations running sm
 
 During playback, presentations are rendered locally on the presenter's device rather than streamed from AhaSlides servers. This helps keep performance stable and responsive during live sessions.
 
+## Frequently asked questions
+
+### Which image formats does AhaSlides support?
+
+AhaSlides supports JPEG, PNG, and GIF images. After upload, images are automatically optimised and converted to .webm format to improve performance.
+
+### What is the maximum image upload size on AhaSlides?
+
+The maximum upload file size is 15 MB.
+
+### What resolution should I use for a full-screen background image?
+
+Use 2K resolution (2560 x 1440), which is also the maximum supported resolution after processing. This keeps the display sharp while maintaining smooth performance on large screens and projectors.
+
+### What aspect ratio works best for AhaSlides images?
+
+Images look best when their aspect ratio closely matches your presentation screen ratio, most commonly 16:9 or 4:3. Other dimensions work, but matching your presentation ratio gives the best visual results.
+
+### Can I keep the original quality of my uploaded images?
+
+No. All uploaded images are automatically compressed and optimised, and there is no option to disable compression or preserve original quality after upload.
+
 *Last updated: 2026-06-23*

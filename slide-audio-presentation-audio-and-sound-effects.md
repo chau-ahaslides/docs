@@ -103,4 +103,26 @@ On participants' devices, sound effects provide feedback during interactions:
 1. Select any slide in your presentation, then click the **Audio** section on the right side of the editor.
 2. Under the **Presentation** tab, use the toggles under **Sound effects** next to **On the presenting screen** or **On participants' devices** to enable or disable them.
 
+## Frequently asked questions
+
+### What is the difference between Slide audio and Presentation audio?
+
+Slide audio plays on a single slide and can play on participants' devices. Presentation audio plays across the whole presentation but autoplays only on the presenter's device.
+
+### How do I add audio to a single slide on AhaSlides?
+
+Select the slide, click the **Audio** section on the right of the editor, and under the **Slide** tab choose a song from the library or click **Upload** to add your own mp3 (up to 15 MB). You can then set Autoplay, On repeat, and Playable on audience's devices.
+
+### What happens when a slide has both Slide audio and Presentation audio?
+
+Slide audio takes priority on the slides that have it. Any slide without Slide audio reverts to playing the Presentation audio.
+
+### How do I turn sound effects on or off?
+
+Select any slide, click the **Audio** section, and under the **Presentation** tab use the toggles under **Sound effects** for **On the presenting screen** and **On participants' devices**.
+
+### Which plans include Slide and Presentation audio?
+
+Slide audio and Presentation audio are available only on paid plans. Sound effects are available on all plans.
+
 *Last updated: 2026-06-23*

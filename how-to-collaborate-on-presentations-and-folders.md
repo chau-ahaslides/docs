@@ -114,4 +114,26 @@ You can move a presentation to a folder only if you have edit access to all thre
 2. Choose the destination folder and click **Move**.
 3. The result depends on the folders involved. Moving a presentation from one private folder to another private folder happens immediately. In all other cases, a message about changing access rights appears first; click **Move** to proceed, and the presentation moves to the destination folder.
 
+## Frequently asked questions
+
+### How do I share an AhaSlides presentation with someone else to edit?
+
+In the editor toolbar, click the icon with your profile image and a **+**, or open the **Share** menu and choose **Add Collaborators**. Enter your collaborators' email addresses and give each one the **Editor** role.
+
+### Can two people edit the same AhaSlides presentation at the same time?
+
+No. Collaborators can edit and present the same presentation, but only one person can actively edit or present at any given time. A viewer can press **Take over** to become the editor.
+
+### How do I invite editors with a link?
+
+In the **Share** menu, turn on the **Invite editors via link** toggle, then click **Copy** and send the link. Recipients sign in and gain Editor access. This option does not support the Presenter role.
+
+### Where do I find presentations shared with me?
+
+Any presentation or folder you were invited to appears in the **Shared with Me** tab. To leave one, right-click it or click its 3-dot button, then choose **Leave**.
+
+### Which plans support collaborating with people outside my team?
+
+External collaboration is supported on Pro, Edu Large, and Enterprise plans, though all users can use it during the current promotional offer. Collaborating with members of your own team plan is available on all plans.
+
 *Last updated: 2026-06-23*

@@ -43,4 +43,22 @@ You can let your audience send live reactions during your presentation, so parti
 
 Once enabled, your audience can tap the reactions you selected on their devices, and the reactions appear live during your presentation.
 
+## Frequently asked questions
+
+### How do I let my audience send reactions during a presentation?
+
+While editing your presentation, go to the **Settings** menu, click **Other settings**, and choose the reactions to enable. Your audience can then tap them on their devices during the presentation.
+
+### Which reactions can my audience send on AhaSlides?
+
+Your audience can send Like, Love, Haha, Wow, and Sad reactions.
+
+### How do I choose which reactions are available?
+
+Under **Settings** then **Other settings**, select which of the five reactions your audience can send. Only the ones you choose appear on participants' devices.
+
+### Do reactions interrupt my presentation?
+
+No. Reactions let participants respond in the moment without interrupting the flow, and they appear live on screen during your presentation.
+
 *Last updated: 2026-06-23*

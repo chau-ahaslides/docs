@@ -94,4 +94,26 @@ You can add a new team from the quiz lobby by clicking the **+ Add a team** butt
 
 When you reach a leaderboard in your quiz, you see the scores of each team. Click **Show Individual Ranking** to reveal how each player on each team is performing.
 
+## Frequently asked questions
+
+### How do I run a team quiz on AhaSlides?
+
+In the presentation editor, go to **Settings**, then **General quiz settings**, turn on the switch next to **Play as team**, and click **Set up**. From there you set the number of teams, team size, scoring rules, and team names.
+
+### How do teams score points in a team quiz?
+
+You choose one of three scoring rules: the average score of all members (including zeros), the total score of all members (which handicaps larger teams less), or the fastest answer only from each team.
+
+### How do participants join a team?
+
+When you present, participants enter their name, choose an avatar, and select one of the teams you set up. They can still change team from the lobby screen by clicking **(change team)**.
+
+### Can I hide the individual leaderboard during a team quiz?
+
+Yes. In the team setup, turn on **Hide individual leaderboard** to hide individual rankings on players' screens. As the presenter, you can still switch between team and individual leaderboards.
+
+### Which plans support team quizzes?
+
+The team quiz feature is available only on the Edu Medium, Edu Large, Pro, and Enterprise plans.
+
 *Last updated: 2026-06-23*

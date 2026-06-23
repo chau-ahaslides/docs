@@ -100,4 +100,26 @@ To erase audience response data across multiple slides, select the slides, then 
 
 To delete multiple slides at once, click the **Select** button, select the slides you want to delete, and click **Done**. Then click the **Delete** button in the panel.
 
+## Frequently asked questions
+
+### How do I select multiple slides at once in AhaSlides?
+
+In the navigation column or in Grid View, hold **CTRL** and click each slide, or hold **SHIFT** and click to select a range. In Grid View you can also click the **Select** button, click the slides, then click **Done**.
+
+### What is Grid View and how do I open it?
+
+Grid View shows all your slides in a grid so you can preview the whole presentation at once, which makes rearranging, deleting, and editing many slides easier. Open it by clicking **Grid View** at the bottom of the left-hand panel.
+
+### How do I edit the background or audio of multiple slides at once?
+
+In Grid View, select the slides, then use the right-hand panel. The **Design** tab edits text colour, base colour, background image, and background visibility, and the **Audio** tab adds a track and edits its playback settings.
+
+### How do I duplicate or copy multiple slides?
+
+Select the slides in Grid View, then click **Duplicate** in the bottom panel. To copy them into another presentation, click **Copy to**, then choose the destination presentation and position.
+
+### How do I delete multiple slides at the same time?
+
+Click the **Select** button, select the slides you want to delete, click **Done**, then click the **Delete** button in the panel.
+
 *Last updated: 2026-06-23*

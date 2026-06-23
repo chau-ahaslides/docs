@@ -86,4 +86,26 @@ The audience display language is currently available in 32 languages: Bahasa Ind
 The two settings are independent. Changing your presenter interface language does not change what your audience sees, and changing the audience display language does not change your menus.
 {% endhint %}
 
+## Frequently asked questions
+
+### How do I change the language of the AhaSlides interface?
+
+Click the **globe icon** in the top-right corner of the dashboard and select your preferred language from the dropdown. The interface switches instantly, and the setting applies to your whole account.
+
+### How do I change the language my audience sees on their devices?
+
+Open the presentation, click the **Settings** icon in the right-hand panel, click **Presentation language**, then select your audience's language from the dropdown. This setting is per presentation, so different presentations can use different audience languages.
+
+### Which languages does AhaSlides support?
+
+The presenter interface is available in 27 languages, and the audience display is available in 32 languages. The two lists differ slightly, so a language may be available for one but not the other.
+
+### Why is my audience seeing a different language than my presenter app?
+
+The presenter interface language and the audience display language are two independent settings. Changing your menus does not change what your audience sees, and changing the audience display language does not change your menus.
+
+### Can I run a presentation in a different language than my menus?
+
+Yes. Because the two settings are independent, you can keep your presenter menus in one language while setting the audience display language to another for a specific presentation.
+
 *Last updated: 2026-06-23*

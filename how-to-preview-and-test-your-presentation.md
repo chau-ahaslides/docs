@@ -60,4 +60,22 @@ To move through your presentation and test the interaction on different slides, 
 
 Once you have finished testing, return to the editor by clicking the **Back to Editor** button in the top-left corner.
 
+## Frequently asked questions
+
+### What is Preview mode on AhaSlides?
+
+Preview mode is a separate mode that lets you see and interact with your own slides the way your audience would during a real event, so you can test every interaction before you present.
+
+### How do I preview my AhaSlides presentation before presenting?
+
+In the presentation editor, click the grey **Preview** button in the top bar. You then see the presenter screen and the participant screen side by side.
+
+### How do I test how my audience will interact with my slides?
+
+Use the participant screen on the right to interact with the presenter screen on the left. Move through your slides with the arrows beside the presenter screen, or the left and right arrow keys.
+
+### How do I exit Preview mode?
+
+Click the **Back to Editor** button in the top-left corner to return to the editor.
+
 *Last updated: 2026-06-23*

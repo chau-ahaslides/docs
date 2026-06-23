@@ -57,6 +57,16 @@ For frontmatter checks marked `?`, note that the raw file needs to be inspected.
 | Paragraphs are ≤4 lines | |
 | Steps are numbered and each step contains exactly one action | |
 | Article covers one user intent | |
+| **A `## Frequently asked questions` section is present with 3+ `###` question headings** *(blocking — see below)* | |
+
+{% hint style="warning" %}
+**Missing FAQ is an automatic NOT OK.** Every KB article must include a `## Frequently asked questions`
+section containing at least three `###` question headings (each written as a user would type it, with a
+self-contained 1–3 sentence answer). If the article has no FAQ section, mark this check **NOT OK** and
+**fail the whole audit** — the article cannot pass regardless of how every other check scores. A
+dedicated FAQ-type article satisfies this inherently (its body *is* the FAQ); every other article type
+(how-to, troubleshooting, conceptual, reference) must carry an FAQ section of its own.
+{% endhint %}
 
 ### Agent readability
 
