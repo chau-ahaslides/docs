@@ -58,6 +58,7 @@ For frontmatter checks marked `?`, note that the raw file needs to be inspected.
 | Steps are numbered and each step contains exactly one action | |
 | Article covers one user intent | |
 | **A `## Frequently asked questions` section is present with 3+ `###` question headings** *(blocking — see below)* | |
+| **(Slide-type articles only) Preview-mode screenshot + tutorial-video placement meet the slide-type standard** *(blocking — see below)* | |
 
 {% hint style="warning" %}
 **Missing FAQ is an automatic NOT OK.** Every KB article must include a `## Frequently asked questions`
@@ -66,6 +67,26 @@ self-contained 1–3 sentence answer). If the article has no FAQ section, mark t
 **fail the whole audit** — the article cannot pass regardless of how every other check scores. A
 dedicated FAQ-type article satisfies this inherently (its body *is* the FAQ); every other article type
 (how-to, troubleshooting, conceptual, reference) must carry an FAQ section of its own.
+{% endhint %}
+
+{% hint style="warning" %}
+**Slide-type articles must meet the slide-type media standard (two blocking gates).** A *slide-type
+article* documents one interactive slide type (Categorise, Word Cloud, Q&A, Brainstorm, Open-ended,
+Match Pairs, Correct Order, Spinner Wheel, Pin on Image, Rating Scale, Ranking, Idea Board, Quiz, Poll,
+and similar). For these articles, both of the following are required, and **failing either one fails the
+whole audit**:
+
+1. **Preview-mode screenshot** at the top of the article (after the H1) — a screenshot of the slide type
+   in preview mode showing **both the presenter screen and the audience screen** in one image, with
+   **responses populated** (not an empty slide), exported at **1920 × 1080**.
+2. **Product-tour tutorial video** embedded in its own `### Watch the tutorial` H3 **after the setup
+   steps** (before "Previewing and presenting"), using a watchable YouTube URL in a `{% embed %}` block —
+   **not** stacked at the top next to the hero image.
+
+See the **kb-slide-type-standard** skill for the full spec, the canonical reference
+(`using-the-categorise-slide.md`), and the audit checklist. Non-slide-type articles (account,
+billing, general how-to, conceptual) are exempt from this gate — mark the check **OK** with a note that
+it does not apply.
 {% endhint %}
 
 ### Agent readability
