@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": false,
+        "noEmit": true,
+        "allowJs": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "@gitbook/runtime",
+        "types": ["@cloudflare/workers-types"]
+    },
+    "exclude": ["node_modules"]
+}

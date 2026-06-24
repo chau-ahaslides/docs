@@ -1,0 +1,20 @@
+{
+    "name": "ahaslides-embed",
+    "version": "0.1.0",
+    "private": true,
+    "description": "GitBook ContentKit integration that embeds a live, interactive AhaSlides template in your docs.",
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "build": "gitbook check",
+        "publish-integration": "gitbook publish ."
+    },
+    "dependencies": {
+        "@gitbook/api": "^0.185.0",
+        "@gitbook/runtime": "^0.23.3"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20260624.1",
+        "@gitbook/cli": "^0.28.0",
+        "typescript": "^5.5.0"
+    }
+}

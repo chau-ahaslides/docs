@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.gitbook-cli/
+*.log
+.DS_Store

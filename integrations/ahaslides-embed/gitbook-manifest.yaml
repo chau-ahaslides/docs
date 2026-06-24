@@ -1,0 +1,48 @@
+name: ahaslides-embed
+title: AhaSlides
+description: Embed a live, interactive AhaSlides template or slide deck directly in your docs.
+# Replace `your-org` with your GitBook organization id/subdomain before publishing
+# (find it in GitBook → Organization settings → General, or run `gitbook whoami`).
+organization: your-org
+# Private: visible only inside your own organization (not the public marketplace).
+visibility: private
+script: ./src/index.tsx
+summary: |
+    # Overview
+
+    Embed a live, interactive AhaSlides template or slide deck inside your GitBook
+    documentation — the same "Try it" experience as the AhaSlides blog, rendered in
+    a sandboxed frame on the page.
+
+    # How it works
+
+    Paste an AhaSlides template or share link into the GitBook editor:
+
+      - `https://presenter.ahaslides.com/shared-template/<id>`
+      - `https://presenter.ahaslides.com/share/<id>`
+      - `https://ahaslides.com/share/<id>`
+
+    The integration turns the link into a live embed. You can also insert the block
+    from the editor's `/` menu and configure the link afterwards. The embed defaults
+    to `?hideAccessCode=true&hideText=true` to match the clean blog "Try it" frame.
+
+    # Configure
+
+    Enable the integration on the space (or organization) that hosts your docs. No
+    account connection is required — it only needs to render the public presenter URL.
+# Read-only scope; the block only needs to render a public URL inside the space.
+# (`space:views:read` from the original spec is not a valid ContentKit scope —
+# the CLI validator's enum has no such value; `space:content:read` is the
+# minimal valid read scope for a render-only block.)
+scopes:
+    - space:content:read
+blocks:
+    - id: embed
+      title: AhaSlides
+      description: Live, interactive AhaSlides template embed
+      urlUnfurl:
+          - https://presenter.ahaslides.com/shared-template/**
+          - https://presenter.ahaslides.com/share/**
+          - https://ahaslides.com/share/**
+          - https://www.ahaslides.com/share/**
+target: space
