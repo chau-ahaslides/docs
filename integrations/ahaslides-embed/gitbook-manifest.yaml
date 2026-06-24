@@ -3,7 +3,7 @@ title: AhaSlides
 description: Embed a live, interactive AhaSlides template or slide deck directly in your docs.
 # Replace `your-org` with your GitBook organization id/subdomain before publishing
 # (find it in GitBook → Organization settings → General, or run `gitbook whoami`).
-organization: your-org
+organization: s9gAzAyvBpnhcgGDYG4e
 # Private: visible only inside your own organization (not the public marketplace).
 visibility: private
 script: ./src/index.tsx
