@@ -1,0 +1,113 @@
+{
+  "projectType": "saas",
+  "projectName": "AhaSlides",
+  "projectDescription": "AhaSlides is an interactive presentation platform that lets audiences respond to live polls, quizzes, word clouds, and Q&A in real time from their phones.",
+  "theme": "almond",
+  "primaryColor": "#fb4082",
+  "lightColor": "#6a1cbd",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help Center",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "creating-your-account",
+              "the-presentations-dashboard",
+              "template-library"
+            ]
+          },
+          {
+            "group": "Slide Types",
+            "pages": [
+              "slides/poll",
+              "slides/quiz",
+              "slides/word-cloud",
+              "slides/open-ended",
+              "slides/qa",
+              "slides/spinner-wheel",
+              "slides/other-slides"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/ai-features",
+              "features/importing-files",
+              "features/presenting",
+              "features/branding",
+              "features/collaboration",
+              "features/reports"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/microsoft-teams",
+              "integrations/zoom",
+              "integrations/google-slides",
+              "integrations/embed"
+            ]
+          },
+          {
+            "group": "Plans & Billing",
+            "pages": [
+              "billing/free-plan",
+              "billing/plans-overview",
+              "billing/payment",
+              "billing/team-management",
+              "billing/account-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Live polls with real-time bar, pie, and donut chart results",
+    "Scored quiz slides with leaderboard and countdown timer",
+    "Live word cloud with smart grouping",
+    "Q&A slide with question moderation, upvoting, and anonymous submission",
+    "Spinner wheel for random participant selection",
+    "PowerPoint and PDF import with AI-generated interactive slides",
+    "Google Slides and Microsoft Teams integration",
+    "Self-paced (audience-paced) presentation mode",
+    "Team workspace with member roles and shared folders",
+    "AI-powered question and slide generation",
+    "Profanity filter and content moderation",
+    "Presentation reports with per-participant data"
+  ],
+  "publicApiSurface": [
+    "Poll slide (multiple choice, bar/pie/donut chart, multiple selection)",
+    "Quiz — Pick Answer slide (scored, timer, hints, partial scoring)",
+    "Quiz — Type Answer slide (typed correct answer)",
+    "Quiz — Match Pairs slide",
+    "Quiz — Correct Order slide",
+    "Quiz — Categorise slide",
+    "Word Cloud slide (entries per participant, smart grouping)",
+    "Open Ended slide (free text responses)",
+    "Brainstorm slide (collaborative idea board with voting)",
+    "Rating Scale slide (star or numerical rating)",
+    "Q&A slide (moderation, anonymous, on-all-slides mode)",
+    "Idea Board slide",
+    "Spinner Wheel slide (manual entries or participant autofill)",
+    "Content slide (text, images, video)",
+    "YouTube slide",
+    "Diagram slide",
+    "Ranking slide",
+    "Pin on Image slide",
+    "Leaderboard slide",
+    "PowerPoint/PDF import (up to 50 MB, 100 slides)",
+    "Google Slides embed integration",
+    "Microsoft Teams add-in",
+    "Zoom app integration",
+    "iFrame embed for websites",
+    "Self-paced presentation mode",
+    "Presentation report (results export)",
+    "Team workspace (member roles: Owner, Admin, Member)",
+    "AI slide generation from imported files"
+  ]
+}

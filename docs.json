@@ -1,72 +1,77 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Help",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#fb4082",
+    "light": "#6a1cbd"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://media.brand.dev/42413810-14f2-476d-a782-5374c9bb1f64.png",
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Help Center",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "creating-your-account",
+              "the-presentations-dashboard",
+              "template-library"
+            ]
+          },
+          {
+            "group": "Slide Types",
+            "pages": [
+              "slides/poll",
+              "slides/quiz",
+              "slides/word-cloud",
+              "slides/open-ended",
+              "slides/qa",
+              "slides/spinner-wheel",
+              "slides/other-slides"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/ai-features",
+              "features/importing-files",
+              "features/presenting",
+              "features/branding",
+              "features/collaboration",
+              "features/reports"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/microsoft-teams",
+              "integrations/zoom",
+              "integrations/google-slides",
+              "integrations/embed"
+            ]
+          },
+          {
+            "group": "Plans & Billing",
+            "pages": [
+              "billing/free-plan",
+              "billing/plans-overview",
+              "billing/payment",
+              "billing/team-management",
+              "billing/account-management"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Go to AhaSlides",
+      "href": "https://ahaslides.com"
     }
   }
 }
