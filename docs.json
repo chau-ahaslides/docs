@@ -2,6 +2,17 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "AhaSlides",
   "theme": "almond",
+  "fonts": {
+    "family": "Plus Jakarta Sans",
+    "heading": {
+      "family": "Plus Jakarta Sans",
+      "weight": 700
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "weight": 400
+    }
+  },
   "colors": {
     "primary": "#1be49c",
     "light": "#0c8c5c",
