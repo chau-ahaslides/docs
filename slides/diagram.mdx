@@ -1,0 +1,91 @@
+---
+title: "How to Build Flowcharts and Diagrams with the Diagram Slide"
+sidebarTitle: "Diagram"
+description: "Build flowcharts, org charts, timelines, and data charts directly inside your presentation — data-driven visuals that update live, no image uploads needed."
+---
+
+The Diagram slide lets you build and display structured visual diagrams — flowcharts, hierarchies, charts, timelines, comparisons, and more — directly inside AhaSlides. Instead of pasting a static screenshot, you define your content in a structured form in the right panel and the diagram renders automatically, with no external tool required.
+
+## What the Diagram Slide Is For
+
+Use a Diagram slide any time you need to show relationships, processes, data, or structure rather than a list of words or a poll result. The slide supports seven diagram types:
+
+- **Process flows and network diagrams** — show how steps or systems connect.
+- **Org charts and decision trees** — build hierarchies with nested levels.
+- **Bar, column, line, pie, and donut charts** — display labelled numerical data.
+- **Timelines, roadmaps, and pyramids** — lay out sequential or layered items.
+- **Comparisons** — SWOT analyses, quadrants, binary comparisons.
+- **Word clouds** — visualise terms sized by weight.
+- **Custom infographics** — write raw AntV syntax for full control.
+
+Unlike a Content slide with a static image, the Diagram slide is data-driven: you enter labels and values in the panel and the visual updates live.
+
+## Diagram Types
+
+| Type | Description | Variants |
+|---|---|---|
+| **Relation** | Flow / network diagrams from nodes and edges. Define **Nodes** and **Connections** between them, with an optional edge label. | Flow (left → right), Flow (top → bottom), Flow LR (animated), Flow TB (animated), Circle (progress), Circle (icons), Network |
+| **Hierarchy** | Tree with nested children. Define a root node and nest children and grandchildren beneath it. | Radial tree, Tree (top → bottom), Tree (left → right), Tree (right → left), Tree (bottom → top), Tech-style tree |
+| **Items** | Flat list or step sequence. Define a list of items, each with a label and an optional description. | Pyramid, Horizontal arrows, Row (icon arrows), Vertical arrows, Grid, Grid (progress), Zigzag (down), Zigzag (up), Sector, Sector (half), Stairs, Timeline, Roadmap, Funnel, Circular, Steps, Snake steps, Pyramid (sequence) |
+| **Chart** | Bar, column, line, pie, or donut from labelled values. Define items with a **Label** and a numeric **Value**. | Bar, Column, Line, Pie, Donut |
+| **Word Cloud** | Words sized by weight. Define a list of words, each with a numeric **Weight** (minimum 1). | Standard |
+| **Compare** | Side-by-side comparison. Define groups of items, each with a label and optional items. Default template is a SWOT analysis. | Quadrant (cards), plus additional binary and hierarchy variants |
+| **Advanced** | Hand-write raw AntV infographic markup directly — no Variant dropdown. | — |
+
+<Note>
+  The Word Cloud diagram type produces a static, weighted word cloud you configure yourself — it's distinct from the interactive [Word Cloud slide](/slides/word-cloud) where participants submit live responses.
+</Note>
+
+## Setting Up Your Diagram Slide
+
+<Steps>
+  <Step title="Add the slide">
+    In the editor, click **New slide** and select **Diagram** from the **Content** section of the slide type picker. The slide is labelled **New** in the picker.
+  </Step>
+  <Step title="Choose a diagram type">
+    In the right panel, open the **Diagram type** dropdown and choose the type that fits your content. The canvas previews the diagram as you switch types.
+  </Step>
+  <Step title="Choose a variant">
+    Open the **Variant** dropdown to choose how the diagram is laid out visually. Visual previews appear in the dropdown to help you pick.
+  </Step>
+  <Step title="Fill in your content">
+    Depending on the type: add nodes and connections (**Relation**), nest child nodes under a root (**Hierarchy**), add items with labels and descriptions (**Items**), add data points with labels and values (**Chart**), add words with weights (**Word Cloud**), add groups and their items (**Compare**), or type AntV syntax directly (**Advanced**).
+  </Step>
+  <Step title="Set streaming animation (optional)">
+    Use the **Streaming animation** control to animate the diagram when the slide first appears. Options are **Off** (default), **Slow**, **Medium**, and **Fast**.
+  </Step>
+  <Step title="Add a title (optional)">
+    Type a title in the **Title** field at the top of the right panel, with an optional short description underneath.
+  </Step>
+</Steps>
+
+## Presenting the Diagram Slide
+
+When you reach a Diagram slide during a presentation, the diagram fills the slide area on the presenter screen. Participants viewing on their devices see the same visual in a read-only format — there is no response or interaction required from the audience on a Diagram slide. If streaming animation is enabled, the diagram animates in when the slide first appears.
+
+<Tip>
+  The **Improve** AI button in the editor toolbar is also available on Diagram slides — describe the flow or structure you want in natural language and let AI build the initial data, then refine it in the panel.
+</Tip>
+
+## Diagram Slide vs. Content Slide
+
+| | Diagram slide | Content slide |
+|---|---|---|
+| Source | Data entered in the right panel | Static image upload |
+| Editable in editor | Yes — change labels and values | No (re-upload to change) |
+| Best for | Flows, trees, charts, timelines, SWOT | Photo, screenshot, infographic |
+| Auto-layout | Yes — variant controls layout automatically | No |
+| Participant interaction | None (display only) | None (display only) |
+
+## Tips for Effective Diagram Slides
+
+<Tip>
+  - **Start with the right type** — switching types later resets the content, so pick the right one before filling in items.
+  - **Use Relation for connected flows; use Hierarchy for trees** — if items have strict parent-child nesting with no cross-links, Hierarchy is simpler to manage.
+  - **Preview before presenting** — click **Preview** in the editor header to check how the diagram renders at full screen.
+  - **Use animation sparingly** — streaming animation works best on Relation and Hierarchy types to reveal connections step by step; on dense Charts or Word clouds, Off is usually cleaner.
+</Tip>
+
+<Note>
+  The Diagram slide is not currently supported by the AhaSlides MCP `create_slides()` tool. Add Diagram slides manually in the editor.
+</Note>

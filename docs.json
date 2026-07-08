@@ -45,15 +45,30 @@
             ]
           },
           {
-            "group": "Slide Types",
+            "group": "Using Slide Types",
             "pages": [
+              "slides/overview",
               "slides/poll",
               "slides/quiz",
               "slides/word-cloud",
               "slides/open-ended",
               "slides/qa",
+              "slides/brainstorm",
+              "slides/idea-board",
+              "slides/rating-scale",
+              "slides/ranking",
+              "slides/pin-on-image",
               "slides/spinner-wheel",
-              "slides/other-slides"
+              "slides/pick-answer",
+              "slides/type-answer",
+              "slides/match-pairs",
+              "slides/correct-order",
+              "slides/categorise",
+              "slides/diagram",
+              "slides/content",
+              "slides/content-v2",
+              "slides/surveys",
+              "slides/youtube"
             ]
           },
           {

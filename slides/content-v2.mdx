@@ -1,0 +1,90 @@
+---
+title: "How to Build Slides with the Content v2 Design Canvas"
+sidebarTitle: "Content v2"
+description: "Create polished, layout-driven slides in AhaSlides using ready-made templates or custom text, callout, visual, media, and data blocks."
+---
+
+The Content v2 slide is a design canvas for building polished, structured presentation slides. Choose a pre-built layout or compose the slide block by block — mixing text, images, tables, callouts, shapes, and more — then present it to your audience.
+
+## How It Works
+
+Like the original [Content](/slides/content) slide, Content v2 is **non-interactive** — participants see the slide on their screens but can't submit a response. The upgrade is in the authoring experience: a structured block system replaces the free-floating canvas, giving you a richer set of content types and purpose-built layout templates.
+
+<Tip>
+  **Let AI do the heavy lifting**: the AhaSlides AI slide agent can generate a ready-to-use Content v2 slide from a plain-text prompt. Open the AI slide agent, describe what you need (e.g. *"a cover slide for a product launch"* or *"a comparison table for three pricing tiers"*), and the agent builds the slide with blocks and content already in place.
+</Tip>
+
+## Adding a Content v2 Slide
+
+<Steps>
+  <Step title="Add a new slide">
+    Click **New slide**, then scroll to the **Content** section of the slide type picker.
+  </Step>
+  <Step title="Select Content v2">
+    Choose **Content v2**. The slide opens with a prompt: *"Choose a layout or insert elements →"*
+  </Step>
+</Steps>
+
+## Two Ways to Build Your Slide
+
+<AccordionGroup>
+  <Accordion title="Option 1: Start from a layout">
+    AhaSlides ships a growing gallery of named, pre-designed layouts — cover slides, agenda grids, callout cards, comparison tables, image-and-text pairs, and more. Examples include *Cover Hero*, *Agenda*, *Feature matrix*, *Pull quote*, and *Process steps* — but the full gallery inside the editor is the authoritative list, since it's regularly expanded.
+
+    To browse it, look for the **Layouts** section in the right panel (visible when no block is selected), then click **Browse all →** to open the full picker. Scroll or search by name for a starting point that matches your content. Clicking a layout fills the canvas with a matching arrangement of pre-styled blocks — each independently editable straight away.
+  </Accordion>
+  <Accordion title="Option 2: Insert blocks manually">
+    Click **+ Insert** at the top of the right panel to open the block picker, which has a search bar to filter by name. Blocks are grouped into five categories:
+
+    | Category | Blocks |
+    |---|---|
+    | **Text** | Title, Body, Bullets, Numbered (list), Quote, Section header |
+    | **Callouts** | Note, Info, Tip, Important, Warning, Caution, Success, Question |
+    | **Visual** | Image, Rectangle, Circle, Line, Arrow, Divider, Icon |
+    | **Media** | Video, Timer |
+    | **Data** | Table, Big stat, Code |
+
+    Each block you insert appears on the canvas and can be repositioned, resized, and styled independently.
+  </Accordion>
+</AccordionGroup>
+
+## Editing Blocks
+
+Click any block to select it. The right panel switches to that block's settings across three tabs:
+
+- **Style** — font family, formatting, and colour controls, plus a Markdown input (blocks accept Markdown syntax, so `# Heading`, `**bold**`, and `- list item` all render correctly).
+- **Layout** — size, position, and alignment options for the selected block.
+- **Animate** — animation settings for when the block appears during a presentation.
+
+The canvas toolbar for a selected block also gives quick access to bold, italic, underline, strikethrough, font size, text colour, and text alignment without opening the panel.
+
+To delete a block, select it and click **Delete** in the canvas toolbar, or press the Delete key.
+
+## Formatting with Markdown
+
+All text blocks accept **Markdown**: type into the Markdown text area in the Style tab and the canvas renders the output live. Standard syntax works — headings (`#`, `##`), bold (`**text**`), italic (`*text*`), bullet lists (`-`), numbered lists (`1.`), inline code (`` `code` ``), and links (`[label](url)`).
+
+## Using the AI Assistant
+
+Click **Improve with AI** on any selected block to open the AI assistant for that block — it can rewrite, expand, or shorten the block's text based on your instructions. The **Improve** button in the editor header bar opens the AI assistant for the whole slide.
+
+## Presenting
+
+When your presentation reaches a Content v2 slide, the canvas fills the presenter screen. Participants viewing on their phones or browsers see the same layout in a read-only view — no response is required.
+
+## Content v2 vs. Content
+
+| | Content v2 | [Content](/slides/content) (original) |
+|---|---|---|
+| Authoring model | Structured blocks | Free-floating canvas |
+| Layouts | 25+ named templates | None |
+| Block types | Text, callouts, visual, media, data | Text, image, GIF, emoji, shape |
+| Markdown support | Yes | No |
+| AI per-block | Yes | Slide-level only |
+| Participant interaction | None (display only) | None (display only) |
+
+Use **Content v2** for polished, well-structured slides — cover slides, data callouts, FAQs, or branded layouts. Use the original **Content** slide when you need freeform, pixel-precise drag-and-drop placement.
+
+<Note>
+  Content v2 slides aren't currently supported by the AhaSlides MCP `create_slides()` tool. Add them manually in the editor.
+</Note>
