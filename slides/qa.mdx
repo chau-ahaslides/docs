@@ -1,100 +1,69 @@
 ---
 title: "Using Q&A to Gather Audience Questions in AhaSlides"
 sidebarTitle: "Q&A"
-description: "Let your audience submit questions during your presentation and answer them live — with moderation, anonymous submissions, upvoting, and pin-to-top."
+description: "Let your audience submit questions at any point — either from a dedicated Q&A slide or persistently across all slides — with moderation and upvoting built in."
 ---
 
-The Q&A feature lets your audience send you questions during a presentation, which you then organise and answer one by one. It's a structured alternative to open-floor questions — instead of raised hands and interruptions, participants type their questions on their devices, and you work through them at your own pace.
+The Q&A feature in AhaSlides gives your audience a channel to submit questions throughout your presentation. Questions appear in a live queue you can answer, pin, or archive — and participants can upvote questions they want answered most.
 
-## Two ways to use Q&A
-
-### Dedicated Q&A slide
-
-Add a standalone Q&A slide to your presentation and participants can only submit questions while you are presenting that specific slide. This is the right choice when you want a defined question-and-answer block at a particular point in your session — for example, at the end of a talk.
-
-To set it up, click **+ New slide** and select **Q&A** as the slide type. Type a welcoming heading in the **Heading** field — something like *"Got a question? Ask away!"* — then configure the settings in the right panel.
-
-<Note>
-  If your presentation has more than one Q&A slide, all submitted questions appear on **every** Q&A slide. Q&A works as a single shared session across the whole presentation, not as separate question boards per slide.
-</Note>
-
-### On all slides
-
-Enable this option so participants can send you questions from any slide in your presentation, at any moment — not just during a dedicated Q&A slide. A button labelled **Ask a question** appears at the bottom of their screen throughout.
-
-You'll see a counter on your presenter screen showing how many unanswered questions have been submitted. Click the counter at any time to open the Q&A interface and start working through them, without interrupting the flow of your presentation.
-
-To enable it, go to **Settings** in the right menu bar, find **When can the audience send you questions?**, and select **On all slides**.
-
-<Note>
-  The **On all slides** setting is available on Essential, Pro, Enterprise, and Edu Large plans.
-</Note>
-
-<Tip>
-  You can use both modes together: enable **On all slides** so participants can submit questions throughout, then include a dedicated Q&A slide at the end to work through everything you collected.
-</Tip>
-
-## How to arrange and answer questions
-
-When you open the Q&A interface — either by presenting a Q&A slide or by clicking the question counter — you'll see unanswered questions in the centre of the screen and five filters in a column on the left.
+## Two Q&A Modes
 
 <Tabs>
-  <Tab title="Top questions">
-    Arranges questions from most upvoted to least. Participants can upvote any question from their device, so this filter naturally surfaces the questions the room cares about most. This is the default filter.
+  <Tab title="Dedicated Q&A Slide">
+    Add a **Q&A slide** to your presentation deck from the slide type picker. Q&A submissions are only active when you are on that specific slide. This is best for structured question sessions — for example, a dedicated Q&A block at the end of a talk or after a key section.
+
+    To add one, click **+** in the slide panel and select **Q&A**.
   </Tab>
-  <Tab title="Pinned">
-    Shows only the questions you've manually pinned. Hover over any question and click **Pin** to move it here. Pinned questions also stick to the top of the Top questions filter.
-  </Tab>
-  <Tab title="Newest">
-    Lists questions from most recently submitted to oldest — useful when you want to address fresh questions first.
-  </Tab>
-  <Tab title="Oldest">
-    Lists questions from least recently submitted to newest — useful for working through questions in the order they arrived.
-  </Tab>
-  <Tab title="Answered">
-    Shows all questions you've marked as answered. Hover over a question and click **Mark as answered** to move it here once you've addressed it live.
+  <Tab title="Q&A on All Slides">
+    Enable **Q&A on all slides** in your presentation settings. When active, a Q&A button appears on participants' devices throughout the entire presentation — not just on a dedicated Q&A slide — so they can submit questions at any moment.
+
+    This mode is best for long sessions, webinars, or lectures where questions may arise during any part of the content rather than only at the end.
   </Tab>
 </Tabs>
 
-## Q&A settings
+## Managing Questions
 
-Configure these in the **Content** panel of your Q&A slide, or in **Settings → Q&A with your audience** for the on-all-slides version.
+The Q&A queue on your presenter screen lets you sort and manage incoming questions using the following filters:
 
-<Accordion title="Filter profanity">
-  Automatically blocks English-language swear words from submitted questions. Enable this to keep the Q&A board clean in public or mixed-audience sessions.
-</Accordion>
+- **Top** — sorts by most upvoted questions first, so the most popular questions rise to the top.
+- **Pinned** — shows only questions you have pinned, keeping your priority items visible.
+- **Newest** — sorts by most recently submitted.
+- **Oldest** — sorts by earliest submitted, useful for working through questions in the order they arrived.
+- **Answered** — shows questions you have already marked as answered.
 
-<Accordion title="Moderate audience questions">
-  Adds an approval step before any question appears on your Q&A board. When enabled, you receive a link to a **moderation screen** — you (or a designated moderator) opens it in a separate tab or device and reviews each incoming question.
+**To answer a question:**
+1. Click the question in the queue.
+2. Click **Answer** to mark it as answered. The question moves to the Answered tab and out of the active queue.
 
-  - Click **Approve** to let a question through to the presentation.
-  - Click **Dismiss** to remove it.
-  - Approved and dismissed questions are sorted into their respective categories. You can move a question back to **Pending** if you made a mistake.
+**To pin a question:**
+Click **Pin** on any question to keep it locked at the top of your presenter view. Pin a question when you want to come back to it or when it's currently being discussed.
 
-  <Note>
-    Moderation is available on Pro, Enterprise, and Edu Large plans.
-  </Note>
-</Accordion>
+## Q&A Settings
 
-<Accordion title="Allow audience to see each other's questions">
-  When enabled, every submitted question is visible to all participants on their own devices — not just on your presenter screen. Participants can also upvote questions they like, which helps surface the most important ones through the Top questions filter.
-</Accordion>
+<AccordionGroup>
+  <Accordion title="Profanity Filter">
+    Automatically block questions containing offensive language before they appear in the live queue. Enable this for any session where the audience is large or not fully known.
+  </Accordion>
+  <Accordion title="Moderation">
+    Review questions before they appear in the live queue. When moderation is on, submitted questions are held in a pending review list — you approve each one manually before it becomes visible to other participants. Recommended for public webinars and large events.
+  </Accordion>
+  <Accordion title="Anonymous Questions">
+    Allow participants to submit questions without their name being displayed. Participants choose at submission time whether to send anonymously. Anonymous submissions can increase honesty, especially on sensitive topics.
+  </Accordion>
+  <Accordion title="Audience Visibility">
+    Control whether participants can see other people's submitted questions and upvote them. Disabling this creates a private queue visible only to the presenter — useful when you don't want participants to be influenced by what others have asked.
+  </Accordion>
+</AccordionGroup>
 
-<Accordion title="Allow anonymous questions">
-  Participants can submit questions without entering their name. The name field is still shown, but filling it in becomes optional. Use this when you want to encourage candid questions on sensitive topics.
-</Accordion>
+## Participant Limits by Plan
 
-## Plan requirements at a glance
-
-| Feature | Plans |
+| Plan | Max Questions per Session |
 |---|---|
-| Dedicated Q&A slide | All plans |
-| Q&A on all slides | Essential, Pro, Enterprise, Edu Large |
-| Moderation | Pro, Enterprise, Edu Large |
-| Profanity filter | All plans |
-| Anonymous questions | All plans |
-| Audience sees each other's questions | All plans |
+| Free | 50 |
+| Essential | 200 |
+| Pro | 1,000 |
+| Enterprise | 1,000 |
 
-<Note>
-  The Q&A slide supports up to **1,000 questions per presentation**.
-</Note>
+<Tip>
+  Enable **Moderation** for webinars or large public events to prevent off-topic or inappropriate questions from appearing live. You can review and approve questions in real time from the presenter dashboard without the audience seeing the delay.
+</Tip>

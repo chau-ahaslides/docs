@@ -1,104 +1,90 @@
 ---
 title: "Using the Open Ended Slide for Free-Text Responses"
 sidebarTitle: "Open Ended"
-description: "Collect free-text responses on a live wall — ideal for feedback, icebreakers, brainstorming, and any question where no fixed answer options are needed."
+description: "Collect free-text responses on a live wall — ideal for feedback, icebreakers, and brainstorming where fixed answer options would limit what people say."
 ---
 
-An Open Ended slide lets your audience respond in their own words, with no fixed options to choose from. Responses appear on a live wall on your presenter screen as they arrive, giving you real, unfiltered feedback from the room. Unlike a poll that constrains opinion to pre-set choices, an Open Ended question captures what people actually think — in their own voice.
+An Open Ended slide lets your audience respond in their own words. Responses appear on a live wall on your presenter screen as they arrive — giving you real, unfiltered input without constraining people to preset options.
 
-## How the Open Ended slide works
+## How It Works
 
-Participants join on their devices, type their answer in a free-text field, and submit. Each response appears on your presenter screen in real time. You can display responses in a grid (all at once) or reveal them one at a time. You can also delete any response by clicking the **×** next to it during the live session.
+Participants type a response of up to the configured character limit directly on their device. There is no list of options to choose from — the text field is open and unconstrained. As each person submits, their response appears as a card on the **response wall** on your presenter screen in real time.
 
-## Set up an Open Ended slide
+While presenting, you can interact with individual responses:
+
+- **Pin** a response to keep it visually prominent at the top of the wall.
+- **Highlight** a response to draw the audience's attention to it.
+- **Delete** a response to remove it from the wall immediately.
+
+## Setting Up an Open Ended Slide
 
 <Steps>
-  <Step title="Add the slide">
-    In the editor, click **+ New slide** and select **Open Ended** from the slide type picker.
+  <Step title="Add a new slide">
+    Click the **+** button in the slide panel to insert a new slide.
   </Step>
-  <Step title="Write your question">
-    Type your question in the **Your question** field. Specific questions get better answers — *"What's one thing you'd improve about our onboarding?"* works better than *"What do you think?"*
+  <Step title="Select Open Ended">
+    Choose **Open Ended** from the list of slide types.
   </Step>
-  <Step title="Choose a display layout">
-    Under **Results → Layout**, pick how submitted responses are shown on your presenter screen:
-    - **Grid** — all responses appear at once as they come in. Good for spotting patterns across a large audience.
-    - **One by one** — responses are revealed individually. Useful when you want to read each answer aloud or discuss it with the room.
+  <Step title="Type your question">
+    Enter your prompt in the question field. Open, reflective questions work best — for example, *"What's one thing you'd change about today's session?"* or *"What idea are you leaving with?"*
   </Step>
-  <Step title="Adjust settings">
-    Configure the optional settings in the right panel to match your session needs.
+  <Step title="Configure settings">
+    Set your time limit, moderation preferences, and any other options (see below) before presenting.
   </Step>
-  <Step title="Present">
-    Click **Present** and share the join link or QR code. Responses appear on your screen as participants submit.
+  <Step title="Present and watch responses flow in">
+    Navigate to the slide. Participants see the question on their devices and can begin typing immediately. Each submission appears on your response wall as it arrives.
   </Step>
 </Steps>
 
 ## Settings
 
-<Accordion title="Time limit">
-  Set a countdown timer between **5 seconds and 20 minutes**. When the timer runs out, no new responses are accepted.
+<AccordionGroup>
+  <Accordion title="Time Limit">
+    Set a countdown timer in seconds. Submissions close automatically when the timer reaches zero. Leave this off to keep the response wall open for as long as you need.
+  </Accordion>
+  <Accordion title="Close Submissions">
+    Manually stop accepting new responses at any point during presenting by toggling **Close Submissions**. The response wall remains visible so you can continue discussing what's already been submitted.
+  </Accordion>
+  <Accordion title="Hide Results">
+    Keep the response wall hidden from the audience while responses are being submitted. When you're ready to share, toggle off **Hide Results** to reveal the full wall at once.
+  </Accordion>
+  <Accordion title="Multiple Submissions">
+    Allow a participant to submit more than one response. Useful for brainstorming sessions or when you want participants to contribute several ideas rather than just one.
+  </Accordion>
+  <Accordion title="Image Submissions">
+    Let participants attach an image alongside their text response. Images appear as cards on the response wall alongside text submissions. Useful for visual feedback or photo-based activities.
+  </Accordion>
+  <Accordion title="Profanity Filter">
+    Automatically block offensive language before it appears on the response wall. Recommended for any session where the audience is not fully known or when presenting in a public setting.
+  </Accordion>
+  <Accordion title="Audience Info Collection">
+    Prompt participants to enter their name or other identifying details before they submit a response. This links each submission to a named participant in your results export. Available on paid plans.
+  </Accordion>
+</AccordionGroup>
 
-  <Note>Available on Edu Medium, Edu Large, Essential, Pro, and Enterprise plans.</Note>
-</Accordion>
+## Smart Grouping
 
-<Accordion title="Close submission">
-  Manually block new responses while presenting. Use this once everyone has answered and you're ready to discuss, without advancing to the next slide.
+Open Ended responses can be grouped by theme using **Smart Grouping**. Enable it in the slide settings panel — AhaSlides analyses the text of each submission and clusters semantically similar responses together automatically.
 
-  <Note>Available on Edu Medium, Edu Large, Essential, Pro, and Enterprise plans.</Note>
-</Accordion>
+This means you can surface the main themes from dozens (or hundreds) of responses without reading every individual answer. Groups are labelled by the dominant concept in that cluster, giving you an at-a-glance summary of what your audience is saying.
 
-<Accordion title="Hide results">
-  Keeps submitted responses hidden on your screen until you choose to reveal them. Useful for moderated discussions where you don't want responses influencing each other.
-
-  <Note>Available on Edu Large, Pro, and Enterprise plans.</Note>
-</Accordion>
-
-<Accordion title="Allow audience to submit more than once">
-  Lets each participant submit multiple responses — there's no cap on how many times they can contribute.
-</Accordion>
-
-<Accordion title="Allow audience to submit images">
-  Participants can share a photo instead of (or alongside) typed text. Useful for show-and-tell activities, design feedback, or any visual context.
-</Accordion>
-
-<Accordion title="Filter profanity">
-  Automatically censors English-language swear words in responses. Enabling this applies the profanity filter across your **entire presentation**.
-</Accordion>
-
-<Accordion title="Collect audience info">
-  Add fields such as name or team before the response box so you can see who said what alongside each submission. Skip this if you've already enabled audience info collection in your presentation-level settings.
-</Accordion>
-
-## Smart grouping
-
-When your slide has received **more than 10 submissions**, AhaSlides can automatically cluster similar responses into themes — helping you find patterns without reading every line.
-
-To group responses while presenting:
-
-1. Wait until most participants have submitted.
-2. Click the **Group** icon at the bottom of the presenter screen.
-3. Click it again to ungroup.
-
-<Warning>
-  Smart Grouping works **once per session per slide**. Use it after everyone has submitted — you can't regroup a second time in the same live session.
-</Warning>
-
-## Common use cases
+## Common Use Cases
 
 <CardGroup cols={2}>
-  <Card title="Feedback collection" icon="comment-dots">
-    Ask *"What's one thing we should change?"* after a training, event, or sprint review. Free-text responses surface specific, actionable feedback you'd never get from a poll.
-  </Card>
-  <Card title="Icebreakers" icon="fire">
-    Open a session with *"Share one word that describes your week"* or *"What are you hoping to leave with today?"* Seeing everyone's answers on screen warms up the room.
+  <Card title="Feedback" icon="comment">
+    *"What's one thing you'd change about today's session?"* Captures specific, actionable input that a rating scale alone can't provide.
   </Card>
   <Card title="Brainstorming" icon="lightbulb">
-    Use Open Ended as a first-pass idea collection before moving to a vote or discussion. The response wall gives everyone a voice, including quieter participants.
+    *"What ideas do you have for the new product name?"* Surfaces diverse ideas from the whole group simultaneously, not just the loudest voices in the room.
   </Card>
-  <Card title="Audience reflection" icon="brain">
-    In training or education settings, ask *"In your own words, explain…"* to check comprehension without a scored quiz. Responses show you where the gaps are.
+  <Card title="Icebreakers" icon="ice-cream">
+    *"Describe your weekend in one word."* A low-stakes, fun opener that gets everyone participating immediately and sets an interactive tone.
+  </Card>
+  <Card title="Reflection" icon="graduation-cap">
+    *"What's the most important thing you learned today?"* Encourages active recall and gives you insight into which messages landed with your audience.
   </Card>
 </CardGroup>
 
-<Tip>
-  For a more structured brainstorm with voting, consider the **Brainstorm** or **Idea Board** slides — they add a voting stage on top of the open response collection. See [Other Slides](/slides/other-slides) for details.
-</Tip>
+<Note>
+  Open Ended is a **Poll-type slide**. The free plan allows up to **3 Poll-type slides** per presentation at full participant capacity. Poll and Word Cloud slides also count toward this limit.
+</Note>

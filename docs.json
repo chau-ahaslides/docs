@@ -1,12 +1,24 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "Help",
+  "name": "AhaSlides",
   "theme": "almond",
   "colors": {
-    "primary": "#fb4082",
-    "light": "#6a1cbd"
+    "primary": "#1be49c",
+    "light": "#0c8c5c",
+    "dark": "#0c0c0c"
   },
-  "favicon": "https://media.brand.dev/42413810-14f2-476d-a782-5374c9bb1f64.png",
+  "logo": {
+    "light": "https://media.brand.dev/07fcb57b-76a5-49f6-abdb-740da69c791f.svg",
+    "dark": "https://media.brand.dev/07fcb57b-76a5-49f6-abdb-740da69c791f.svg"
+  },
+  "favicon": "https://media.brand.dev/483ee27f-08fb-4d32-842d-86b4c40f9fb4.png",
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Go to AhaSlides",
+      "href": "https://ahaslides.com"
+    }
+  },
   "navigation": {
     "tabs": [
       {
@@ -66,12 +78,5 @@
         ]
       }
     ]
-  },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Go to AhaSlides",
-      "href": "https://ahaslides.com"
-    }
   }
 }

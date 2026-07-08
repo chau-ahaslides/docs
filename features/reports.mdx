@@ -1,193 +1,122 @@
 ---
 title: "Presentation Reports, Session History, and Audience Data"
 sidebarTitle: "Reports"
-description: "View participation metrics, individual responses, and session history. Export results to Excel, collect audience info, and reset results between sessions."
+description: "View per-session response data, individual participant breakdowns, and export results to Excel — all from the Report section of any presentation."
 ---
 
-After your presentation, AhaSlides automatically compiles a report of everything your audience submitted. You can review overall participation metrics, drill into each participant's individual responses, export the full dataset to Excel, and reset results so the presentation is ready for your next audience.
+After each live session, AhaSlides automatically saves all response data in a presentation report. You can view summary metrics, drill into individual participant responses, share a read-only report link with stakeholders, and export data to Excel.
 
----
+## Opening a Report
 
-## The presentation report
+<Steps>
+  <Step title="Go to the Presentations Dashboard">
+    Log in to AhaSlides and navigate to your Presentations Dashboard.
+  </Step>
+  <Step title="Find the presentation">
+    Locate the presentation whose report you want to view.
+  </Step>
+  <Step title="Open the menu">
+    Click the **⋯** (more options) menu on the presentation card.
+  </Step>
+  <Step title="Click View Report">
+    Select **View Report** from the menu. Alternatively, open the presentation in the editor and click **View Report** from the top toolbar.
+  </Step>
+</Steps>
 
-The presentation report gives you a high-level summary of how your audience engaged with your slides. It is available as soon as at least one person has interacted with your presentation.
+## Report Overview
 
-### How to find your report
-
-<CardGroup cols={2}>
-  <Card title="From the editor" icon="chart-bar">
-    Click the **Report** button in the top-right toolbar of the presentation editor.
-  </Card>
-  <Card title="From the dashboard" icon="house">
-    On the **My Presentations** dashboard, hover over a presentation and click the purple **Report** button.
-  </Card>
-</CardGroup>
-
-### What the report includes
-
-**Key metrics at a glance:**
+At the top of every report, a summary bar shows high-level metrics for the selected session:
 
 | Metric | What it shows |
 |---|---|
-| Total Participants | Number of participants who joined |
-| Total Reactions | Total emoji reactions from the audience |
-| Average Submissions | Average submissions per participant across polls, word clouds, scales, open-ended, brainstorm, and Q&A |
-| Accuracy | Percentage of correct answers on quiz questions |
-| Rating | Average rating given by participants |
+| **Participants** | Total number of unique participants who joined the session |
+| **Reactions** | Total emoji reactions sent by participants during the session |
+| **Avg. Submissions** | Average number of question responses submitted per participant |
+| **Accuracy** | Percentage of correct answers across all quiz slides in the session |
+| **Avg. Rating** | Average score across all Rating Scale slides in the session |
 
-**Participants column** — a detailed row for each participant:
-- Name (if provided)
-- Leaderboard ranking (for quiz sessions)
-- Accuracy (correct, incorrect, and unanswered quiz questions)
-- Total submissions across all interactive slide types
+Below the summary metrics, the **Participants table** lists every participant by their display name or anonymous ID, alongside a summary of their activity — slides answered, overall accuracy, and points scored.
 
-**Feedback column** — all written feedback collected during the presentation, plus the overall audience rating score.
+## Individual Participant Report
 
-### Sharing your report
+Click on any participant's row in the Participants table to open their individual report. The individual report shows:
 
-To share the report with stakeholders who were not in the session, click the **Share** button on the report page and select **Share report via link**. Click **Copy** and send the link. Anyone with the link can view the full presentation report.
+- **Participant ID** and display name (or anonymous ID if names were not collected)
+- **Join time** — when they entered the session
+- **Slide-by-slide response breakdown** — their exact answer for each slide, whether the answer was correct (on quiz slides), and points scored
 
----
+Use individual reports to identify who needs follow-up, recognise top performers, or verify completion in training scenarios.
 
-## Individual participant report
+## Session History
 
-Click any participant's name in the report to open their individual report. This gives you a detailed breakdown of everything that person submitted during the presentation.
+Every time you reset the results on a presentation, a new session is created. All past sessions are stored and accessible from the session dropdown at the top of the report view.
 
-### What the individual report includes
+Switch between sessions using the dropdown to:
+- Review responses from a previous run
+- Compare participation and accuracy across multiple groups
+- Track how results change over time if you run the same presentation repeatedly
 
-<Accordion title="Participant identification">
-  - **Name**, **Email**, and **Organisation** (if provided on the join form or during login). Anonymous participants will not have this information.
-</Accordion>
+<Note>
+  Collaborators with the **Presenter role** only see session data from sessions **they ran themselves**. They cannot see sessions run by you or other presenters.
+</Note>
 
-<Accordion title="Activity summary">
-  - **Total Submissions** — across polls, word clouds, scales, open-ended, brainstorm, and Q&A
-  - **Accuracy** — overall correct-answer rate on quiz questions
-  - **Final Score** and **Ranking** — quiz leaderboard data
-  - **Participant Reactions** — total reactions sent
-  - **Participant Feedback** — any rating or comments submitted
-</Accordion>
+## Sharing a Report
 
-<Accordion title="Detailed response breakdown">
-  **For polls, word clouds, scales, open-ended, brainstorm, and Q&A:**
-  - Specific responses, word cloud contributions, scale ratings, open-ended answers, brainstorm ideas, and Q&A questions asked and votes cast
+Click **Share Report** in the report view to generate a read-only report link. Anyone with the link can view the full report — participant data, metrics, and slide-by-slide results — without needing an AhaSlides account.
 
-  **For quiz questions:**
-  - The participant's answer for each question
-  - The correct answer
-  - Answer status: **Correct**, **Not Correct**, or **Not Submitted**
-  - Response time
-  - Points earned (personal points and team contribution points if applicable)
-</Accordion>
+Share the link with stakeholders, managers, or clients who need to review the session results without accessing your AhaSlides account.
 
----
+## Resetting Results
 
-## Session history
+Resetting clears the active session's response data and starts a fresh session, so your next run begins with a clean slate.
 
-Every time someone resets the presentation's results, AhaSlides creates a new session entry in the report. This means you can review data from past sessions even after running the presentation multiple times.
+<Steps>
+  <Step title="Open the Reset Results option">
+    In the editor, click the **Reset Results** button in the top toolbar. Alternatively, use the **⋯** menu on the presentation card in the Dashboard.
+  </Step>
+  <Step title="Confirm the reset">
+    A confirmation dialog appears. Click **Reset** to confirm.
+  </Step>
+  <Step title="A new session begins">
+    The current session moves to session history and is available in the session dropdown. A fresh session starts automatically for your next presentation.
+  </Step>
+</Steps>
+
+<Warning>
+  Resetting is **permanent for the active session** — the live response data is cleared and cannot be restored. The session is moved to history (it is not deleted), but once cleared, you cannot reactivate it as the current session. Make sure you've exported or reviewed the data before resetting.
+</Warning>
+
+## Exporting to Excel
 
 <Steps>
   <Step title="Open the report">
-    Click the **Report** button in the editor toolbar or hover over the presentation on the dashboard and click **Report**.
+    Navigate to the report for the presentation you want to export.
   </Step>
-  <Step title="Click Session list">
-    Click the **Session list** box next to the owner's name on the report page.
+  <Step title="Click the Results tab">
+    Click the **Results** tab within the report view to see the full data table.
   </Step>
-  <Step title="Select a session">
-    A window lists all recorded sessions. Click any session to view its report.
+  <Step title="Click Request Excel file">
+    Click **Request Excel file**. AhaSlides queues the export.
   </Step>
-</Steps>
-
-<Note>
-  If you use the **Presenter role** for collaborators, each collaborator can only access reports for the sessions they ran themselves. As the owner, you can access all sessions.
-</Note>
-
----
-
-## Resetting results
-
-Resetting results clears all audience submissions from your presentation — votes, answers, reactions, word cloud entries, and leaderboard data — and returns it to the state it was in before anyone joined. Your slide content (questions, options, settings) is not affected. Each reset creates a new session in the report.
-
-### Reset the entire presentation
-
-<Tabs>
-  <Tab title="From the editor">
-    Click the **Reset results** button below the slide canvas in the editor.
-  </Tab>
-  <Tab title="From the dashboard">
-    On the **My Presentations** page, click the **3-dot icon** next to your presentation (or right-click it) and choose **Reset results**.
-  </Tab>
-</Tabs>
-
-### Reset a single slide
-
-<Tabs>
-  <Tab title="While editing">
-    Right-click the slide in the left navigation panel, then click **Reset results**.
-  </Tab>
-  <Tab title="While presenting">
-    Hover over the **Menu** icon during the presentation, then click **Reset this slide**.
-  </Tab>
-</Tabs>
-
-<Warning>
-  Resetting results is permanent. Audience responses cannot be recovered after a reset. Download your Excel export before resetting if you want to keep a record of the data.
-</Warning>
-
----
-
-## Collecting audience information
-
-Before participants join your presentation, you can ask them to provide their name, email, organisation, and any custom information you need. This data is stored alongside their responses in the Excel export.
-
-<Note>
-  Collecting audience information is available on all **paid plans**. The Excel export with participant info is available to all users not on the Free plan.
-</Note>
-
-### Setting up a join form
-
-<Steps>
-  <Step title="Open Settings">
-    Click the **Settings** menu in the editor.
-  </Step>
-  <Step title="Click Collect audience info">
-    Click **Collect audience info**.
-  </Step>
-  <Step title="Enable the join form">
-    Check **Ask participants for info before they join**. Write a heading for the form.
-  </Step>
-  <Step title="Add fields">
-    Click **Add fields** to choose which information to collect. You can add up to **8 fields** in total: 3 default fields and up to 5 custom fields.
-
-    | Field type | Details |
-    |---|---|
-    | **Default fields** | Name, Email, Avatar — cannot be renamed, but you can edit the label participants see |
-    | **Custom fields** | Set an internal field name (for your Excel export), a question shown to participants, and whether the field is required |
+  <Step title="Receive the download link">
+    AhaSlides emails a download link to your account email address when the file is ready. Click the link to download the Excel file.
   </Step>
 </Steps>
 
-### Collecting info on a specific slide
+The Excel export contains:
+- All response data per slide
+- All response data per participant
+- Session metadata (date, participant count, duration)
 
-You can also collect audience information on individual **Open Ended** or **Brainstorm** slides, instead of (or in addition to) the join form.
+## Collecting Audience Info
 
-<Steps>
-  <Step title="Edit an Open Ended or Brainstorm slide">
-    Open the slide in the editor.
-  </Step>
-  <Step title="Click Collect audience info">
-    Click the button next to **Collect audience info** and select the field you want to collect from participants when they answer that slide.
-  </Step>
-</Steps>
+On paid plans, you can ask participants to fill in a custom form when they first join a session — before they see any slides.
 
-### Accessing collected data
+To enable and configure the join form:
 
-<Steps>
-  <Step title="Open the Results tab">
-    In the editor toolbar, click **Results**.
-  </Step>
-  <Step title="Request the Excel file">
-    Click **Request Excel file**. AhaSlides generates and downloads the file.
-  </Step>
-  <Step title="Open the Participants sheet">
-    In the downloaded Excel file, click the second sheet labelled **Participants** to see all collected participant information alongside their responses.
-  </Step>
-</Steps>
+1. Open the presentation in the editor.
+2. Go to **Presentation Settings → Audience Info**.
+3. Click **Configure Join Form**.
+4. Add up to **8 fields**: name, email address, and up to 5 custom text fields (for example, department, employee ID, or location).
+
+All data collected via the join form appears in the session report and in the Excel export, linked to each participant's responses.

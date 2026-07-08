@@ -1,166 +1,121 @@
 ---
 title: "How to Make and Host a Scored Live Quiz on AhaSlides"
 sidebarTitle: "Quiz"
-description: "Build a scored live quiz with 5 question types, a leaderboard, team play, and speed-based points — then host it for any audience in minutes."
+description: "Build competitive live quizzes with five question types, speed-based scoring, a live leaderboard, team mode, and sound effects for maximum audience engagement."
 ---
 
-A quiz on AhaSlides is a live competition where participants answer scored questions on their phones and climb a leaderboard. You build the quiz in the editor using one or more of the five quiz slide types, then present it while your audience competes in real time. Whether you're running a classroom review, a corporate training check, or a trivia night, every quiz works the same way: question slides, points, and a winner.
+Quiz slides in AhaSlides let you run competitive, scored games. Participants earn points for correct answers — faster answers score more — and a live leaderboard builds excitement between rounds.
 
-## The five quiz slide types
+## Quiz Question Types
 
 <CardGroup cols={2}>
-  <Card title="Pick Answer" icon="list-check" href="/slides/other-slides#pick-answer">
-    Classic multiple-choice with up to 8 options. Mark one or more as correct. Supports partial scoring, hints, and image answers.
+  <Card title="Pick Answer" icon="circle-dot">
+    Multiple-choice questions with up to 8 answer options. Images are supported on both the question and each option. Partial scoring is available when multiple correct answers are set.
   </Card>
-  <Card title="Type Answer" icon="keyboard" href="/slides/other-slides#type-answer">
-    No options — participants type their answer. You define correct answers and accepted alternatives. Harder to guess, truer test of knowledge.
+  <Card title="Type Answer" icon="keyboard">
+    Participants type a free-text response. You can define accepted alternatives (e.g. alternate spellings or abbreviations) so they all count as correct. A manual accept option lets you judge edge cases on the fly.
   </Card>
-  <Card title="Match Pairs" icon="link" href="/slides/other-slides#match-pairs">
-    Two columns of up to 4 items. Participants drag to match each prompt on the left to its answer on the right. Supports partial scoring.
+  <Card title="Match Pairs" icon="link">
+    Present up to 4 pairs for participants to match correctly — using text, images, or a combination. Partial scoring awards points for each correctly matched pair.
   </Card>
-  <Card title="Correct Order" icon="arrow-down-1-9" href="/slides/other-slides#correct-order">
-    Up to 7 statements shown in a shuffled order. Participants drag them into the sequence you defined. Full correctness required to score.
+  <Card title="Correct Order" icon="list-ol">
+    Show up to 7 statements or items that participants must arrange in the right sequence. Great for history timelines, process steps, or ranking exercises.
   </Card>
-  <Card title="Categorise" icon="folder-tree" href="/slides/other-slides#categorise">
-    Items that must be sorted into up to 8 predefined category buckets. Supports partial scoring. Great for classification and sorting tasks.
+  <Card title="Categorise" icon="table-columns">
+    Participants sort items into up to 8 categories. Partial scoring gives credit for each item placed in the correct category, even if others are wrong.
   </Card>
 </CardGroup>
 
-<Note>
-  The Spinner Wheel appears in the slide type list alongside quiz slides but is **not a scored quiz slide**. It does not award points or appear on the leaderboard.
-</Note>
-
-## How scoring works
-
-Every quiz slide has its own point settings. You set a **maximum** and **minimum** point value for each question.
-
-- If **Faster answers get more points** is **off**, every correct answer earns the maximum points.
-- If **Faster answers get more points** is **on**, points scale with how quickly a participant answers. For example, with a 100-second timer and 100 max / 0 min points, a player who answers with 80 seconds remaining earns 80 points.
-
-### Partial scoring
-
-On **Pick Answer**, **Match Pairs**, and **Categorise** slides you can enable partial scoring:
-
-- **On** — participants score points for each correct answer or correctly matched item, but any incorrect selection results in 0 points.
-- **Off** — participants must get every answer right to score any points.
-
-## Create a quiz: step by step
+## Creating a Quiz Slide
 
 <Steps>
-  <Step title="Add a quiz slide">
-    In the editor, click **+ New slide** and select any of the five quiz slide types from the **Quiz** section of the picker. A leaderboard slide is automatically added after it.
+  <Step title="Add a new slide">
+    Click the **+** button in the slide panel to add a new slide.
   </Step>
-  <Step title="Write your question and answers">
-    Type your question in the **Your question** field. Then fill in the answer options (or statements, or pairs, depending on the slide type) and mark the correct answer(s).
+  <Step title="Choose a quiz type">
+    Select one of the five quiz types: **Pick Answer**, **Type Answer**, **Match Pairs**, **Correct Order**, or **Categorise**.
   </Step>
-  <Step title="Configure scoring and timing">
-    Scroll down in the right panel to set the point values, toggle **Faster answers get more points**, and set a time limit. Adjust these per question — they don't need to match across slides.
+  <Step title="Enter your question">
+    Type your question in the question field. You can also add an image or media to the question for visual context.
   </Step>
-  <Step title="Add more questions">
-    Repeat steps 1–3 for each question. Rearrange slides by dragging them in the left panel. Delete leaderboard slides between questions if you only want one final leaderboard at the end.
+  <Step title="Add answer options, pairs, or categories">
+    Depending on the quiz type, fill in your answer options, the two sides of each pair, the ordered sequence, or the categories and their items.
   </Step>
-  <Step title="Invite players">
-    Click **Present**. Players join the quiz lobby using the URL code or QR code shown on your screen, then enter their name and choose an avatar.
+  <Step title="Set the correct answer(s)">
+    Mark the correct answer(s), matching pairs, correct order, or correct category assignments so AhaSlides can score responses automatically.
   </Step>
-  <Step title="Start the quiz">
-    Once your players appear in the lobby, click **Start the Quiz!** to begin. Progress through each question, then reveal the final leaderboard when all questions are done.
+  <Step title="Configure time limit and points">
+    Set a time limit (in seconds) for the question and the base point value awarded for a correct answer.
+  </Step>
+  <Step title="Save">
+    Click **Save**. Your quiz slide is ready to present.
   </Step>
 </Steps>
 
-<Tip>
-  Test your quiz before going live by using **Preview mode** — it lets you play through the quiz as both presenter and participant without needing extra devices.
-</Tip>
+## Scoring
 
-## Leaderboard
+AhaSlides uses a **speed-based scoring** system to reward both accuracy and quick thinking.
 
-A leaderboard slide is added automatically after each quiz slide you create. It shows the top 5 participants, and the presenter can scroll to see everyone. Participants can see their own rank on their devices.
-
-**The leaderboard does not update in real time.** It fetches the latest results only when you navigate to it or refresh it.
-
-To show the leaderboard just once at the end of a round, delete all the intermediate leaderboard slides and keep only the final one. To restore a deleted leaderboard, open the **Content** tab of the relevant quiz slide and toggle **Leaderboard** back on.
-
-You can also open a **pop-up leaderboard** at any moment without changing the audience screen: press **L** on your keyboard or click the **Trophy icon** in the control bar.
-
-## General quiz settings
-
-Find these in **Settings → General quiz settings** in the right menu bar.
-
-<Accordion title="Sound effects">
-  Plays music and sound effects automatically in the quiz lobby, on quiz slides, and on each leaderboard screen. Toggle it on or off directly on screen during a live session.
-</Accordion>
-
-<Accordion title="5-second countdown">
-  Adds a five-second countdown before each question starts, giving participants time to read before the timer begins.
-</Accordion>
-
-<Accordion title="Shuffle options">
-  Randomly shuffles answer options for every participant on all Pick Answer, Match Pairs, and Correct Order slides. Makes it harder for participants to share answers by showing each other their screens.
-
-  <Note>Available on Edu Medium, Edu Large, Pro, and Enterprise plans.</Note>
-</Accordion>
-
-<Accordion title="Manually show correct answers">
-  After each question ends, holds the correct answer reveal until you press a button — giving you time to explain or discuss before showing who got it right.
-
-  <Note>Available on all paid plans. Does not work in self-paced mode.</Note>
-</Accordion>
-
-<Accordion title="Participant avatars">
-  Controls whether participants are asked to choose an avatar when they join the quiz lobby. Disable this to let players join with a name only.
-</Accordion>
-
-<Accordion title="Live chat">
-  Opens a chat window in the quiz lobby so you and your participants can exchange messages and build atmosphere before the quiz starts.
-</Accordion>
-
-## Team quiz
-
-Players can compete in teams instead of individually. Set up teams in **Settings → General quiz settings → Play as team**.
-
-<Steps>
-  <Step title="Turn on Play as team">
-    Click the **Play as team** switch, then click **Set up**.
-  </Step>
-  <Step title="Set team count and size">
-    Define how many teams will play and the maximum number of players per team.
-  </Step>
-  <Step title="Choose a scoring rule">
-    Pick one of three rules:
-    - **Average score of all members** — includes zeros for non-answers; best for equal-sized teams.
-    - **Total score of all members** — adds every member's score together, which handicaps teams with fewer members.
-    - **Fastest answer only** — registers only the fastest response from each team.
-  </Step>
-  <Step title="Name your teams">
-    Enter a name for each team. Players select their team from this list when they join.
-  </Step>
-</Steps>
+- **Speed-based scoring**: Participants who answer correctly **and** faster earn more points. The bonus scales proportionally — the first correct answer earns the full speed bonus, and latecomers earn progressively less.
+- **Partial scoring**: Available on **Pick Answer** (multiple correct answers), **Match Pairs**, and **Categorise**. Participants earn points for each correct element even if they don't get every element right.
 
 <Note>
-  Team quiz is available on Edu Medium, Edu Large, Pro, and Enterprise plans.
+  **Correct Order** does not support partial scoring. Participants must arrange all items in the exact correct sequence to earn any points for that question.
 </Note>
 
-## Adding hints
+## The Leaderboard
 
-On **Pick Answer** slides, you can add up to 3 hints to help players along. Only you as the presenter can choose to reveal a hint during a live question — hints won't appear automatically.
+After each quiz slide — or at the end of your quiz — display the **Leaderboard slide** to show current rankings to the whole room. Participants can also see their own position and score on their own devices as results come in.
 
-1. Click **Add hint** above the question field.
-2. Write up to 3 hints in the boxes.
-3. While presenting, press the arrow to reveal each hint one by one.
+Add a Leaderboard slide anywhere in your deck by clicking **+** and selecting **Leaderboard**. You can place it after every question for maximum drama or save it for the end.
 
-## Frequently asked questions
+## Quiz Settings
 
-<Accordion title="Why isn't my quiz asking players for their names?">
-  This usually means you've added a **Poll** slide instead of a **Pick Answer** slide — they look similar but only Pick Answer (and other quiz slides) prompt players for a name. It can also happen if players join while you're on a non-quiz slide; names are only requested when you present a quiz slide.
-</Accordion>
+<AccordionGroup>
+  <Accordion title="Time Limit">
+    Set a per-question countdown in seconds. When the timer reaches zero, the question closes and scores are calculated. Set to **0** to remove the timer entirely for untimed quizzes.
+  </Accordion>
+  <Accordion title="Hints">
+    Add optional hint text that participants can choose to reveal on their device. Useful for educational quizzes where guidance helps learning without giving the answer away.
+  </Accordion>
+  <Accordion title="Shuffle Answers">
+    Randomise the order of answer options for each participant. This prevents participants from coordinating or copying the answer position (e.g. "it's always B") rather than the content.
+  </Accordion>
+  <Accordion title="Manual Answer Reveal">
+    Hold back the correct answer reveal until you choose to show it. This lets you discuss the question with the audience before confirming what's right.
+  </Accordion>
+  <Accordion title="Sound Effects">
+    Enable countdown ticking sounds as the timer runs down and result sounds when the answer is revealed. Sound effects significantly increase energy in live in-person sessions.
+  </Accordion>
+  <Accordion title="Avatars">
+    When Avatars are enabled, participants choose a character avatar when they join the session. Avatars appear alongside names on the leaderboard, adding personality to the competition.
+  </Accordion>
+  <Accordion title="Live Chat">
+    Allow participants to send chat messages during the quiz. Chat appears on the presenter screen and on participants' devices. Useful for online sessions where side commentary builds engagement.
+  </Accordion>
+</AccordionGroup>
 
-<Accordion title="How do I clear player answers to reuse a quiz?">
-  Go to the presentation report or use the **Reset results** option in the editor. You can clear all responses at once or clear just one question's responses.
-</Accordion>
+## Team Quiz
 
-<Accordion title="How does the 'everyone has answered' auto-end feature work?">
-  AhaSlides counts the highest number of participants who were in the quiz simultaneously. If a player leaves after the peak count is set, the timer won't auto-end until all original participants have answered — or you manually end the timer by hovering over it and clicking **End now**.
-</Accordion>
+Run the quiz as a team competition instead of an individual one:
 
-<Accordion title="Can players complete the quiz without a live host?">
-  Yes. Enable **Self-paced mode** in the presentation settings to let players work through the quiz on their own time, without you presenting it live.
-</Accordion>
+1. Enable **Team Mode** in the quiz settings panel.
+2. When participants join, they are prompted to enter a **team name**.
+3. All participants on the same team pool their points together.
+4. The leaderboard displays **team standings** rather than individual scores.
+
+Team mode is ideal for classroom competitions, corporate team-building events, and conference icebreakers where you want to encourage collaboration.
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="How are points calculated?">
+    A correct answer earns the base points you set for that question. On top of that, a **speed bonus** is added based on how quickly the participant answered relative to the time limit. The faster the correct answer, the higher the bonus — the first correct submission earns the maximum speed bonus, which decreases linearly until the time limit expires.
+  </Accordion>
+  <Accordion title="Can I run a quiz without a time limit?">
+    Yes. Set the **Time Limit** to **0** to remove the countdown timer entirely. Participants can answer at their own pace, and submissions stay open until you manually close them or advance to the next slide.
+  </Accordion>
+  <Accordion title="How many quiz slides can I have on the free plan?">
+    The free plan supports up to **5 Quiz slides** per presentation at full **50-participant** capacity. Additional quiz slides beyond this limit are still usable but may have reduced participant capacity.
+  </Accordion>
+</AccordionGroup>
