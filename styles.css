@@ -1,0 +1,31 @@
+/* AhaSlides docs — custom styles */
+
+/*
+ * Full-width media embeds.
+ * The "almond" theme caps the article column at ~576px for readability, which
+ * makes video/template iframes look small. Let any <Frame> that wraps an
+ * <iframe> break out wider than the reading column, centered under it, without
+ * colliding with the left nav or the on-this-page TOC.
+ */
+.frame:has(iframe) {
+  width: min(820px, 92vw);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.frame:has(iframe) > div {
+  width: 100%;
+}
+
+.frame:has(iframe) iframe {
+  width: 100% !important;
+}
+
+/* On tablet/mobile the side columns collapse — keep embeds in normal flow. */
+@media (max-width: 1024px) {
+  .frame:has(iframe) {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+}
